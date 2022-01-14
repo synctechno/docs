@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/index.rst:9
+msgid "Welcome to OPNsense's documentation!"
+msgstr ""
+
+#: ../../source/index.rst:10
+msgid ""
+"`OPNsense® <https://opnsense.org>`__ is an open source, easy-to-use and "
+"easy-to-build HardenedBSD based firewall and routing platform."
+msgstr ""
+
+#: ../../source/index.rst:13
+msgid ""
+"**OPNsense** includes most of the features available in expensive "
+"commercial firewalls, and more in many cases. It brings the rich feature "
+"set of commercial offerings with the benefits of open and verifiable "
+"sources."
+msgstr ""
+
+#: ../../source/index.rst:19
+msgid "Table of Contents"
+msgstr ""
+

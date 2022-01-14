@@ -1,0 +1,867 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/settingsmenu.rst:3
+msgid "Settings"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:5
+msgid ""
+"Besides the configuration options that every component has, OPNsense also"
+" contains a lot of general settings that you can tweak. This page "
+"contains an overview of them."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:10
+msgid "Administration"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:12
+msgid ""
+"The settings on this page concerns logging into OPNsense. The “Secure "
+"Shell” settings are described under :ref:`Creating Users & Groups<SSH and"
+" console login>`."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:16
+#: ../../source/manual/settingsmenu.rst:123
+#: ../../source/manual/settingsmenu.rst:179
+#: ../../source/manual/settingsmenu.rst:215
+#: ../../source/manual/settingsmenu.rst:287
+msgid "Setting"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:16
+#: ../../source/manual/settingsmenu.rst:123
+#: ../../source/manual/settingsmenu.rst:179
+#: ../../source/manual/settingsmenu.rst:215
+#: ../../source/manual/settingsmenu.rst:287
+msgid "Explanation"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:18
+msgid "**Web GUI**"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:20
+msgid "Protocol"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:20
+msgid "It is strongly recommended to leave this on “HTTPS”"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:22
+msgid "SSL Certificate"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:22
+msgid ""
+"By default, a self-signed certificate is used. Certificates can be added "
+"via :menuselection:`System --> Trust --> Certificates`."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:25
+msgid "SSL Ciphers"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:25
+msgid ""
+"Can be used to limit SSL cipher selection in case the system defaults are"
+" undesired. Note that restrictive use may lead to an inaccessible web "
+"GUI."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:29
+msgid "Enable HTTP Strict Transport Security"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:29
+msgid ""
+"Enforces loading the web GUI over HTTPS, even when the connection is "
+"hijacked (man-in-the-middle attack), and do not allow the user to trust "
+"an invalid certificate for the web GUI."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:33
+msgid "TCP port"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:33
+msgid ""
+"Can be useful if there are other services that are reachable via port "
+"80/443 of the external IP, for example."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:36
+msgid "Disable web GUI redirect rule"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:36
+msgid ""
+"If you change the port, a redirect rule from port 80/443 will be created."
+" Check this to disable creating this rule."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:39
+msgid "Disable logging of web GUI successful logins"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:41
+msgid "Session Timeout"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:41
+msgid "Time in minutes to expire idle management sessions."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:43
+msgid "Disable DNS Rebinding Checks"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:43
+msgid ""
+"OPNsense contains protection against `DNS rebinding "
+"<https://en.wikipedia.org/wiki/DNS_rebinding>`__ by filtering out DNS "
+"replies with local IPs. Check this box to disable this protection if it "
+"interferes with web GUI access or name resolution in your environment."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:49
+msgid "Alternate Hostnames"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:49
+msgid ""
+"Alternate, valid hostnames (to avoid false positives in referrer/DNS "
+"rebinding protection)."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:52
+msgid "HTTP Compression"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:52
+msgid "Reduces size of transfer, at the cost of slightly higher CPU usage."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:54
+msgid "Enable access log"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:54
+msgid "Log all access to the Web GUI (for debugging/analysis)"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:56
+msgid "Listen interfaces"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:56
+msgid ""
+"Can be used to limit interfaces on which the Web GUI can be accessed. "
+"This allows freeing the interface for other services, such as HAProxy."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:59
+msgid "Disable HTTP_REFERER enforcement check"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:59
+msgid ""
+"The origins of requests are checked in order to provide some protection "
+"against CSRF. You can turn this off of it interferes with external "
+"scripts that interact with the Web GUI."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:63
+msgid "**Console**"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:65
+msgid "Use the virtual terminal driver (vt)"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:65
+msgid "When unchecked, OPNsense will use the older sc driver."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:67
+msgid "Primary Console"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:67
+msgid ""
+"The primary console will show boot script output. All consoles display OS"
+" boot messages, console messages, and the console menu."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:70
+msgid "Secondary Console"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:70
+#: ../../source/manual/settingsmenu.rst:200
+msgid "See above."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:72
+msgid "Serial Speed"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:72
+msgid "Allows adjusting the baud rate. 115200 is the most common."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:74
+msgid "Use USB-based serial ports"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:74
+msgid "Listen on ``/dev/ttyU0``, ``/dev/ttyU1``, … instead of ``/dev/ttyu0``."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:76
+msgid "Password protect the console menu"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:76
+msgid ""
+"Can be unchecked to allow physical console access without password. This "
+"can avoid lock-out, but at the cost of attackers being able to do "
+"anything if they gain physical access to your system."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:80
+msgid "**Authentication**"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:82
+msgid "Server"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:82
+msgid ""
+"Select one or more authentication servers to validate user credentials "
+"against. Multiple servers can make sense with remote authentication "
+"methods to provide a fallback during connectivity issues. When nothing is"
+" specified the default of \"Local Database\" is used."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:88
+msgid "Disable integrated authentication"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:88
+msgid ""
+"When set, console login, SSH, and other system services can only use "
+"standard UNIX account authentication."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:91
+msgid "Sudo"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:91
+msgid "Permit sudo usage for administrators with shell access."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:93
+msgid "User OTP seed"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:93
+msgid ""
+"Select groups which are allowed to generate their own OTP seed on the "
+"password page."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:100
+msgid "Cron"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:102
+msgid ""
+"`Cron <https://en.wikipedia.org/wiki/Cron>`__ is a service that is used "
+"to execute jobs periodically. Cron jobs can be viewed by navigating to "
+":menuselection:`System --> Settings --> Cron`. New jobs can be added by "
+"click the ``+`` button in the lower right corner."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:106
+msgid ""
+"When adding a new job or modifying an existing one, you will be presented"
+" with fields that directly reflect the cron file syntax and that mostly "
+"speak for themselves. A job needs a name, a command, command parameters "
+"(if applicable), a description (optional, but recommend) and most "
+"importantly, a schedule. All time-related fields share the same syntax:"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:111
+msgid "An asterisk (\\*) can be used to mean “any”"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:112
+msgid "Specifying multiple values is possible using the comma: ``1,4,9``"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:113
+msgid "Ranges can be specified using a dash: ``4-9``"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:117
+msgid "General"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:119
+msgid ""
+"The general settings mainly concern network-related settings like the "
+"hostname. The general setting can be set by going to "
+":menuselection:`System --> Settings --> General`. The following settings "
+"are available:"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:125
+msgid "**System**"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:127
+#: ../../source/manual/settingsmenu.rst:294
+msgid "Hostname"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:127
+msgid "Hostname without domain, e.g.: ``firewall``"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:129
+msgid "Domain"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:129
+msgid ""
+"The domain, e.g. ``mycorp.com``, ``home``, ``office``, ``private``, etc. "
+"Do not use 'local' as a domain name. It will cause local hosts running "
+"mDNS (avahi, bonjour, etc.) to be unable to resolve local hosts not "
+"running mDNS."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:133
+msgid "Time zone"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:135
+msgid "Language"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:135
+msgid "Default language. Can be overridden by users."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:137
+msgid "Theme"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:137
+msgid "More themes can be installed via plug-ins."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:139
+msgid "**Networking**"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:141
+msgid "Prefer to use IPv4 even if IPv6 is available"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:144
+msgid "DNS servers"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:144
+msgid ""
+"A list of DNS servers, optionally with a gateway. These DNS servers are "
+"also used for the DHCP service, DNS services and for PPTP VPN clients. "
+"When using multiple WAN connections there should be at least one unique "
+"DNS server per gateway."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:148
+msgid "Allow DNS server list to be overridden by DHCP/PPP on WAN"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:148
+msgid ""
+"If this option is set, DNS servers assigned by a DHCP/PPP server on the "
+"WAN will be used for their own purposes (including the DNS services). "
+"However, they will not be assigned to DHCP and PPTP VPN clients."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:152
+msgid "Do not use the local DNS service as a nameserver for this system"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:152
+msgid ""
+"When enabling local DNS services such as Dnsmasq and Unbound, OPNsense "
+"will use these as a nameserver. Check this option to prevent this."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:156
+msgid "Allow default gateway switching"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:156
+msgid ""
+"If the link where the default gateway resides fails switch the default "
+"gateway to another available one."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:163
+msgid "Tunables"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:165
+msgid ""
+"Tunables are the settings that go into the ``sysctl.conf`` file, which "
+"allows tweaking of low-level system settings. They can be set by going to"
+" :menuselection:`System --> Settings --> Tunables`."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:168
+msgid ""
+"Here, the currently active settings can be viewed and new ones can be "
+"created. All valid ``sysctl.conf`` settings can be added this way if "
+"desired. A list of possible values can be obtained by issuing ``sysctl "
+"-a`` on an OPNsense shell."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:174
+msgid "Miscellaneous"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:176
+msgid ""
+"As the name implies, this section contains the settings that do not fit "
+"anywhere else."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:181
+msgid "**Cryptography settings**"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:182
+msgid "Diffie-Hellman parameters"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:182
+msgid ""
+"The server and client needs to use the same parameters in order to set up"
+" a connection. How parameters are updated can be tweaked. Please leave on"
+" default unless you know why to change it."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:183
+msgid "Hardware acceleration"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:183
+msgid ""
+"Select your method of hardware acceleration, if present. Check the full "
+"help for hardware-specific advice."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:184
+msgid "Use /dev/crypto"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:184
+msgid ""
+"Old hardware crypto drivers expose the /dev/crypto interface. This is not"
+" used by newer hardware or software any more."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:185
+msgid "**Thermal Sensors**"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:186
+msgid "Hardware"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:186
+msgid ""
+"Select between No/ACPI thermal sensor driver and processor-specific "
+"drivers."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:187
+msgid "**Periodic Backups**"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:188
+msgid "Periodic RRD Backup"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:188
+msgid "Periodically backup Round Robin Database."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:189
+msgid "Periodic DHCP Leases Backup"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:189
+msgid "Periodically backup DHCP leases."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:190
+msgid "Periodic NetFlow Backup"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:190
+msgid "Periodically backup Netflow state."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:191
+msgid "Periodic Captive Portal Backup"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:191
+msgid "Periodically backup Captive Portal state."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:192
+msgid "**Power Savings**"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:193
+msgid "Use PowerD"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:193
+msgid ""
+"PowerD allows tweaking power conservation features. The modes are maximum"
+" (high performance), minimum (maximum power saving), adaptive (balanced),"
+" hiadaptive (balanced, but with higher performance)."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:194
+msgid "On AC Power Mode"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:195
+msgid "On Battery Power Mode"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:196
+msgid "On Normal Power Mode"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:197
+msgid "**Disk / Memory Settings**"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:198
+msgid "Swap file"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:198
+msgid ""
+"Create a 2 GB swap file. This can increase performance, at the cost of "
+"increased wear on storage, especially flash."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:199
+msgid "/var RAM disk"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:199
+msgid ""
+"This can be useful to avoid wearing out flash storage. **Everything in "
+"/var, including logs will be lost upon reboot.**"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:200
+msgid "/tmp RAM disk"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:201
+msgid "**System Sounds**"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:202
+msgid "Disable the startup/shutdown beep"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:202
+msgid "Disable beeps via the built-in speaker (“PC Speaker”)"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:208
+msgid "Logging"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:210
+msgid ""
+"Log settings can be found at :menuselection:`System --> Settings --> "
+"Logging`."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:212
+msgid "An overview of the local settings:"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:217
+msgid "Disable circular logs"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:217
+msgid "Disable legacy circular logging and switch to regular file logging"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:218
+msgid "GUI Log Entries to Display"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:218
+msgid "Number of log entries displayed in the GUI."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:219
+msgid "Log File Size (Bytes)"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:219
+msgid ""
+"(circular logs) Maximum size of circular logs (which most OPNsense log "
+"files are)"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:220
+msgid "Preserve logs (Days)"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:220
+msgid ""
+"(when circular logs are disabled) configures the number of days to keep "
+"logs."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:221
+msgid "Log Firewall Default Blocks"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:221
+msgid ""
+"Turning these off means that only hits for your custom rules will be "
+"logged."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:222
+msgid "Web Server Log"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:222
+msgid "If checked, lighttpd errors are displayed in the main system log."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:223
+msgid "Disable writing log files to the local disk"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:223
+msgid ""
+"Useful to avoid wearing out flash memory (if used). Remote logging can be"
+" used to save the logs instead if desired."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:224
+msgid "Reset Logs"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:224
+msgid ""
+"Clear all logs. Note that this will also restart the DHCP server, so make"
+" sure any DHCP settings are saved first."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:229
+msgid ""
+"Switching from legacy circular logs to regular log files doesn't remove "
+"stored data, but regular files will always be considered more recent. If "
+"for some reason you want to switch back to clog, we advice to remove all "
+"logs to avoid older entries being sorted on top of the views. When "
+"possible we advise to reset logs after each switch."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:235
+msgid "Circular Logs"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:237
+msgid ""
+"Most of the core features support writing to circular log files so they "
+"will not grow bigger than a predefined size. You can tune this value via "
+":menuselection:`System --> Settings --> Logging`. There, you can also "
+"disable the writing of logs to disk or reset them all."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:241
+msgid "You can view the contents via CLI with:"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:247
+msgid "or follow the contents via:"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:256
+msgid ""
+"If you can avoid the use of circular logs we strongly advise to do so, "
+"the clog path is longer than the direct file path and therefor is more "
+"expensive in terms of computing power. In the long run clog support will "
+"be dropped, it's not a native FreeBSD syslog feature (and requires "
+"backporting)."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:262
+msgid "Local (non circular) logs"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:264
+msgid ""
+"As of OPNsense 20.7 we will change our default logging method from "
+"circular logs to regular files. These files will use the following "
+"pattern on disk "
+":code:`/var/log/<application>/<application>_[YYYYMMDD].log` (one file per"
+" day). Our user interface provides an integrated view stitching all "
+"collected files together."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:271
+msgid "Plugin Logs"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:273
+msgid ""
+"Many plugins have their own logs. In the UI, they are grouped with the "
+"settings of that plugin. They mostly log to /var/log/ in text format, so "
+"you can view or follow them with *tail*."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:279
+msgid "Logging / targets"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:281
+msgid ""
+"With OPNsense version 19.7, syslog-ng for remote logging was introduced. "
+"If you want to benefit from all new features and already have the legacy "
+"system available, please remove all remote logging from "
+"**System->Settings->Logging** and go to **System->Settings->Logging / "
+"targets** and *Add* a new *Destination*."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:289
+msgid "Enabled"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:289
+msgid "Master on/off switch."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:290
+msgid "Transport"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:290
+msgid "Protocol to use for syslog."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:291
+msgid "Applications"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:291
+msgid ""
+"Select a list of applications to send to remote syslog. Leave empty for "
+"*all*."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:292
+msgid "Levels"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:292
+msgid "Choose which levels to include, omit to select all."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:293
+msgid "Facilities"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:293
+msgid "Choose which facilities to include, omit to select all."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:294
+msgid "Hostname or IP address where to send logs to."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:295
+msgid "Port"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:295
+msgid "Port to use, usually 514."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:296
+msgid "Certificate"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:296
+msgid "Client certificate to use (when selecting a tls transport type)"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:297
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:297
+msgid "Set a description for you own use."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:303
+msgid ""
+"When using syslog over TLS, make sure both ends are configured properly "
+"(certificates and hostnames), certificate errors are quite common in "
+"these type of setups. On OPNsense the general system log usually contains"
+" more details. When it comes to tracking syslog-ng messages, `this "
+"<https://support.oneidentity.com/kb/263658/common-issues-of-tls-"
+"encrypted-message-transfer>`__ is usually a good resource."
+msgstr ""
+
+#: ../../source/manual/settingsmenu.rst:308
+msgid ""
+"A reconfigure doesn't always apply the new tls settings instantly, if "
+"that's not the case best stop and start syslog in OPNsense (using the "
+"gui)."
+msgstr ""
+

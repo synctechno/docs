@@ -1,0 +1,959 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:3
+msgid "Setup SSL VPN Road Warrior"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:8
+msgid ""
+"Road Warriors are remote users who need secure access to the companies "
+"infrastructure. OPNsense uses OpenVPN for its SSL VPN Road Warrior setup "
+"and offers OTP (One Time Password) integration with standard tokens and "
+"Googles Authenticator."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:14
+msgid ""
+"Did you know that OPNsense offers two-factor authentication throughout "
+"the entire system? See for more information: :doc:`/manual/two_factor`"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:17
+msgid ""
+"The main advantages of using SSL VPN for Road Warriors instead of IPsec "
+"are:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:19
+msgid ""
+"Easy setup on almost all mobile clients using OPNsense's Client "
+"Configuration Export."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:20
+msgid ""
+"Fine grained access control by using multiple servers or Client Specific "
+"Overrides."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:21
+msgid "No issues with NAT without NAT-T"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:23
+msgid ""
+"With this how-to we'll show you how to configure OPNsense's SSL VPN for "
+"road warriors and give you configuration examples for:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:26
+msgid "Two Factor Authentication (2FA)"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:27
+msgid "Multi Factor Authentication ( Client Certificate + Password + OTP )"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:28
+msgid "Client configuration on Windows, macOS, iOS and Android"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:32
+msgid ""
+"For the sample we will use a private IP for our WAN connection. This "
+"requires us to disable the default block rule on wan to allow private "
+"traffic. To do so, go to :menuselection:`Interfaces --> [WAN]` and "
+"uncheck \"Block private networks\". *(Dont forget to save and apply)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:43
+msgid "Sample Setup"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:44
+msgid "For the sample configuration we configure OPNsense"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:46
+msgid "**Company Network with Remote Client**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:79
+msgid "Company Network"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:81
+msgid "**Hostname**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:81
+msgid "fw1"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:82
+msgid "**WAN IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:82
+msgid "172.18.0.129"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:83
+msgid "**LAN IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:83
+msgid "192.168.1.1/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:84
+msgid "**LAN DHCP Range**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:84
+msgid "192.168.1.100-192.168.1.200"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:85
+msgid "**SSL VPN Clients**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:85
+msgid "10.10.0.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:92
+msgid "Step 0 - Preparation"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:93
+msgid ""
+"For our example we will use two factor authentication (2FA) and multi "
+"factor authentication. So before we start with the SSL VPN configuration "
+"we will need an TOTP server and a valid signing certificate authority."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:97
+msgid "For completeness of this how-to we will also prepare a user."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:100
+msgid "Configure TOTP server"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:101
+msgid ""
+"To configure a Time based One Time Password server go to "
+":menuselection:`System --> Access --> Servers` and click **Add** in the "
+"top right corner of the form."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:106
+msgid ""
+"You can also use the quick-search to jump right into the the Access "
+"Server configuration. Try it by typing *Ac...* and see for yourself:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:113
+msgid ""
+"Now first change the **Type** to **Local + Timebased One time Password** "
+"Enter a **Descriptive name** such as *TOTP VPN Access Server*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:116
+msgid ""
+"For our example we leave everything else default as we will be using "
+"Google's Authenticator and the defaults are correct for that."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:119
+msgid "When using other tokens you may need to change the **Token length**."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:121
+#: ../../source/manual/how-tos/sslvpn_client.rst:287
+msgid "Click **Save** to add the new server."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:125
+msgid "Add Certificate Authority"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:126
+msgid ""
+"The VPN server needs a certificate authority to sign client or server "
+"certificates."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:128
+msgid ""
+"To setup a new certificate authority go to :menuselection:`System --> "
+"Trust --> Authorities` and click **Add** in the top right corner of the "
+"form."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:131
+msgid "For our example we will use the following setting:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:134
+#: ../../source/manual/how-tos/sslvpn_client.rst:159
+msgid "**Descriptive name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:134
+#: ../../source/manual/how-tos/sslvpn_client.rst:160
+#: ../../source/manual/how-tos/sslvpn_client.rst:202
+msgid "*SSL VPN CA*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:135
+#: ../../source/manual/how-tos/sslvpn_client.rst:158
+#: ../../source/manual/how-tos/sslvpn_client.rst:200
+msgid "**Method**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:135
+msgid "*Create an internal  Certificate Authority*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:136
+#: ../../source/manual/how-tos/sslvpn_client.rst:162
+msgid "**Key length (bits)**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:136
+#: ../../source/manual/how-tos/sslvpn_client.rst:162
+#: ../../source/manual/how-tos/sslvpn_client.rst:204
+msgid "*4096*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:137
+#: ../../source/manual/how-tos/sslvpn_client.rst:163
+#: ../../source/manual/how-tos/sslvpn_client.rst:205
+msgid "**Digest Algorithm**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:137
+#: ../../source/manual/how-tos/sslvpn_client.rst:163
+#: ../../source/manual/how-tos/sslvpn_client.rst:205
+msgid "*SHA512*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:138
+#: ../../source/manual/how-tos/sslvpn_client.rst:164
+msgid "**Lifetime (days)**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:138
+#: ../../source/manual/how-tos/sslvpn_client.rst:164
+msgid "*365*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:139
+#: ../../source/manual/how-tos/sslvpn_client.rst:165
+msgid "**Country Code**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:139
+#: ../../source/manual/how-tos/sslvpn_client.rst:165
+msgid "*NL*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:140
+#: ../../source/manual/how-tos/sslvpn_client.rst:166
+msgid "**State or Province**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:140
+#: ../../source/manual/how-tos/sslvpn_client.rst:166
+msgid "*ZH*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:141
+#: ../../source/manual/how-tos/sslvpn_client.rst:167
+msgid "**City**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:141
+#: ../../source/manual/how-tos/sslvpn_client.rst:167
+msgid "*Middelharnis*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:142
+#: ../../source/manual/how-tos/sslvpn_client.rst:168
+msgid "**Organization**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:142
+#: ../../source/manual/how-tos/sslvpn_client.rst:168
+msgid "*OPNsense*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:143
+#: ../../source/manual/how-tos/sslvpn_client.rst:169
+msgid "**Email Address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:143
+#: ../../source/manual/how-tos/sslvpn_client.rst:169
+msgid "*spam@opnsense.org*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:144
+#: ../../source/manual/how-tos/sslvpn_client.rst:170
+msgid "**Common Name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:144
+msgid "*internal-sslvpn-ca*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:147
+msgid "Click **Save** to add the new Certificate Authority."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:150
+msgid "Create a Server Certificate"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:151
+msgid ""
+"After creating the Authority we will also need a certificate. To create a"
+" new certificate, go to :menuselection:`System --> Trust --> "
+"Certificates` and click **Add** in the upper right corner of the form."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:155
+msgid "Fill in the form with (leave the rest default):"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:158
+#: ../../source/manual/how-tos/sslvpn_client.rst:200
+msgid "*Create an internal Certificate*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:159
+#: ../../source/manual/how-tos/sslvpn_client.rst:170
+msgid "*SSLVPN Server Certificate*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:160
+#: ../../source/manual/how-tos/sslvpn_client.rst:202
+msgid "**Certificate authority**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:161
+#: ../../source/manual/how-tos/sslvpn_client.rst:203
+msgid "**Type**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:161
+msgid "*Server Certificate*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:173
+msgid "Click **Save** to create the certificate."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:176
+msgid "Adding a User"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:177
+msgid ""
+"To add a new user go to :menuselection:`System --> Access --> Users` and "
+"click **Add** in the top right corner."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:180
+msgid ""
+"Creating a user will be done in two steps, the first one is adding a "
+"basic user with a username, password, TOTP seed and user certificate. The"
+" second step (after saving) will be to activate the generated OTP seed "
+"with a Google Authenticator compatible app."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:185
+msgid "For the first step we enter:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:188
+msgid "**Username**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:188
+msgid "*Donald*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:189
+msgid "**Password** (2x)"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:189
+msgid "*S3cr3tP@ssw0rd*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:190
+msgid "**Full name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:190
+msgid "*Donald Duck*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:191
+msgid "**Certificate**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:191
+msgid "*Check “Click to create a user certificate”*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:192
+msgid "**OTP seed**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:192
+msgid "*Check “Generate new secret”*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:195
+msgid ""
+"Click **Save** and you will be redirected to create the User Certificate."
+" Fill in the Certificate form with the following for our example (leave "
+"anything not listed on its presented defaults):"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:201
+msgid "**Descriptive Name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:201
+msgid "*Leave default (Donald)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:203
+msgid "*Client Certificate*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:204
+msgid "**Key length**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:208
+msgid ""
+"Click **Save** and you will be redirected to the User page. Now we will "
+"activate your newly created seed with your Google Authenticator "
+"compatible app. To do so click in the **Click to unhide** button in the "
+"**OTP QR code** row and you will get a QR code to scan with your "
+"smartphone. See also: :doc:`/manual/how-tos/two_factor`"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:217
+msgid ""
+"Always make sure to use the same **Certificate authority** as the "
+"certificate authority created earlier, as this links the clients / users "
+"to the correct openvpn server."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:224
+msgid "Step 1 - Add SSL Server"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:225
+msgid ""
+"Adding a new SSL VPN server is relatively simple. We'll start by adding "
+"one that uses our two factor authentication. This setup offers a good "
+"protection and it is easy to setup on the clients as each client can use "
+"the same configuration."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:229
+msgid ""
+"Go to :menuselection:`VPN --> OpenVPN --> Servers` and click **Add** in "
+"the top right corner of the form."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:232
+msgid "For our example will use the following settings:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:236
+msgid ""
+"The setting **Hardware Crypto** is not used for new systems equipped with"
+" **AES-NI**, when the aesni module is loaded it will be used "
+"automatically."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:240
+msgid "**Description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:240
+msgid "*My SSL VPN Server*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:241
+msgid "**Server Mode**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:241
+msgid "*Remote Access (SSL/TLS + User Auth)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:242
+msgid "**Backend for authentication**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:242
+msgid "*TOTP VPN Access Server*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:243
+msgid "**Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:243
+msgid "*UDP*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:244
+msgid "**Device Mode**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:244
+msgid "*tun*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:245
+msgid "**Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:245
+msgid "*WAN*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:246
+msgid "**Local port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:246
+msgid "*1194*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:247
+msgid "**TLS Authentication**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:247
+msgid "*Leave both on enabled (checked)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:248
+msgid "**Peer Certificate Revocation List**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:248
+msgid "*N/A*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:249
+msgid "**Server Certificate**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:249
+msgid "*SSLVPN Server Certificate (CA: SSL VPN CA)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:250
+msgid "**DH Parameters Length**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:250
+msgid "*4096 bit*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:251
+msgid "**Encryption algorithm**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:251
+msgid "*AES-256-CBC (256-bit key, 128-bit block)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:252
+msgid "**Auth Digest Algorithm**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:252
+msgid "*SHA512 (512-bit)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:253
+msgid "**Hardware Crypto**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:253
+msgid "*No Hardware Crypto Acceleration*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:254
+msgid "**Certificate Depth**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:254
+msgid "*One (Client+Server)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:255
+msgid "**IPv4 Tunnel Network**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:255
+msgid "*10.10.0.0/24*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:256
+msgid "**IPv6 Tunnel Network**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:256
+#: ../../source/manual/how-tos/sslvpn_client.rst:259
+#: ../../source/manual/how-tos/sslvpn_client.rst:260
+#: ../../source/manual/how-tos/sslvpn_client.rst:261
+#: ../../source/manual/how-tos/sslvpn_client.rst:262
+msgid "*Leave Empty*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:257
+msgid "**Redirect Gateway**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:257
+#: ../../source/manual/how-tos/sslvpn_client.rst:264
+#: ../../source/manual/how-tos/sslvpn_client.rst:265
+#: ../../source/manual/how-tos/sslvpn_client.rst:267
+#: ../../source/manual/how-tos/sslvpn_client.rst:269
+#: ../../source/manual/how-tos/sslvpn_client.rst:270
+#: ../../source/manual/how-tos/sslvpn_client.rst:271
+#: ../../source/manual/how-tos/sslvpn_client.rst:272
+#: ../../source/manual/how-tos/sslvpn_client.rst:273
+#: ../../source/manual/how-tos/sslvpn_client.rst:274
+#: ../../source/manual/how-tos/sslvpn_client.rst:275
+msgid "*Leave Unchecked*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:258
+msgid "**IPv4 Local Network/s**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:258
+msgid "*192.168.1.0/24*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:259
+msgid "**IPv6 Local Network/s**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:260
+msgid "**IPv4 Remote Network/s**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:261
+msgid "**IPv6 Remote Network/s**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:262
+msgid "**Concurrent connections**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:263
+msgid "**Compression**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:263
+msgid "*Enabled with Adaptive Compression*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:264
+msgid "**Type-of-Service**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:265
+msgid "**Duplicate Connections**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:266
+msgid "**Disable IPv6**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:266
+msgid "*Checked*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:267
+msgid "**Dynamic IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:268
+msgid "**Address Pool**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:268
+msgid "*Leave Checked*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:269
+msgid "**Topology**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:270
+msgid "**DNS Default Domain**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:271
+msgid "**DNS Servers**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:272
+msgid "**Force DNS cache update**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:273
+msgid "**NTP Servers**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:274
+msgid "**NetBIOS Options**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:275
+msgid "**Client Management Port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:276
+msgid "**Renegotiate time**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:276
+msgid "*0*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:281
+msgid ""
+"**Renegotiate time** is used to renegotiate data channel key after n "
+"seconds (default=3600).When using a one time password, be advised that "
+"your connection will automatically drop because your password is not "
+"valid anymore.Set to 0 to disable, remember to change your client when "
+"changed later."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:294
+msgid ""
+"Use **Strict User/CN Matching** to force the usage of the same username "
+"as certificate CN, this prevents people from logging in using other "
+"credentials than the certificate name supplied. (e.g. **fred** can't "
+"login as **root**)"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:299
+msgid ""
+"The option **Enforce local group** can be used to constraint access to "
+"only users in a specific (set of) group(s)"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:305
+msgid "Step 2 - Firewall Rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:306
+msgid ""
+"To allow SSL VPN client connections, we should allow access to the "
+"OpenVPN server port on the WAN interface. When using multiple servers we "
+"need to open up each port."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:309
+msgid "For our configuration we only use one server, accessible on UDP port 1194."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:314
+msgid ""
+"Next we also need to allow traffic from the VPN clients to our LAN "
+"interface. For our example we will allow client to access anything on our"
+" local area network, however you may decide just to allow traffic to one "
+"or more servers."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:325
+msgid "Step 3 - Export Client Configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:327
+msgid ""
+"Using the **Remote Access Server** dropdown you can select the server for"
+" which you want to download client files, when there are certificates "
+"connected (using the same authority) it will list all available client "
+"certificates and attached users."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:332
+msgid "macOS & Windows"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:333
+msgid ""
+"For macOS & Windows users we recommend using Viscosity from Sparklabs "
+"(https://www.sparklabs.com/viscosity/). Viscosity is very easy to setup "
+"and use and works well on both platforms."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:336
+msgid ""
+"Go to :menuselection:`VPN --> OpenVPN --> Client Export` and select the "
+"newly created VPN server from the list. Leave everything default and "
+"Download the **Viscosity** type from the list of export options under "
+"**Export type**."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:340
+msgid ""
+"Now on your Mac or Windows PC unpack the bundle and import the "
+"Viscosity.visc file. Double clicking it should be enough to get it "
+"imported. When asked for an application to open the file with search and "
+"select Viscosity."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:344
+msgid "Some sample screenshots (macOS):"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:350
+msgid "**Import Configuration**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:355
+msgid "**Connect & login**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:357
+msgid ""
+"In the password field enter your TOTP token first followed by your "
+"password."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:362
+msgid "**Connected**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:370
+msgid "Android"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:371
+msgid ""
+"For Android users we recommend using OpenVPN for Android "
+"(https://play.google.com/store/apps/details?id=de.blinkt.openvpn) from "
+"Arne Schwabe."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:374
+#: ../../source/manual/how-tos/sslvpn_client.rst:389
+msgid ""
+"Go to :menuselection:`VPN --> OpenVPN --> Client Export` and select the "
+"newly created VPN server from the list. Leave everything default and "
+"Download the inline **File only** configuration from the list of export "
+"options under **Export type**."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:378
+msgid ""
+"Import the hostname-udp-1194-android-config.ovpn file into OpenVPN for "
+"Android. Clicking the file should be enough to get it imported. When "
+"asked for an application to open the file with, select OpenVPN for "
+"Android."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:385
+msgid "iOS"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:386
+msgid ""
+"For iOS users we recommend using OpenVPN Connect "
+"(https://itunes.apple.com/us/app/openvpn-connect/id590379981) from "
+"OpenVPN Technologies."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:393
+msgid ""
+"Import the hostname-udp-1194-ios-config.ovpn file into OpenVPN Connect. "
+"Clicking the file should be enough to get it imported. When asked for an "
+"application to open the file with, select OpenVPN Connect."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:401
+msgid "Step 4 - Multi Factor Authentication"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:402
+msgid ""
+"For two factor authentication you need the factors username/password and "
+"a token. OPNsense supports another layer, namely a user certificate. This"
+" means that every user will be uniquely identified by the user "
+"certificate. In this case the multi factors are:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:407
+msgid "User certificate"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:408
+msgid "Username/Password"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:409
+msgid "Token (TOTP)"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:411
+msgid ""
+"Go to :menuselection:`VPN --> OpenVPN --> Servers` and click the pencil "
+"icon next to the server we just created to change the 2FA to multi factor"
+" authentication."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:414
+msgid ""
+"Now change **Server Mode** to *Remote Access (SSL/TLS + User Auth)* and "
+"leave everything else unchanged. Click **Save** on the bottom of the "
+"form."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_client.rst:417
+msgid ""
+"Now when you go to the client exporter, you will see that each user is "
+"listed separately. In our case we see Donald listed. Exporting and "
+"importing this configuration works exactly the same as before, the only "
+"difference is that each user requires a User certificate and therefore "
+"their own configuration."
+msgstr ""
+

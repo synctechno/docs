@@ -1,0 +1,348 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/vendor/deciso/opncentral.rst:3
+msgid "Deciso: OPNcentral"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:5
+msgid ""
+"As part of the OPNsense Business Edition, Deciso offers a plugin to keep "
+"all your firewalls up to date and have an easy entry point to manage "
+"them."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:10
+msgid "Installation"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:12
+msgid ""
+"After acquiring a license, you can switch to the commercial software "
+"repository containing OPNcentral. In order to install, just go to "
+":menuselection:`System->Firmware->Plugins` and search for :code:`os-"
+"OPNcentral`."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:17
+msgid "Register new hosts"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:19
+msgid ""
+"Before adding a host, you need to generate an API key and secret from the"
+" machine you will grant accesss to. API keys are managed in the user "
+"manager (system_usermanager.php), go to the user manager page and select "
+"a user. Somewhere down the page you will find the API section for this "
+"user."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:23
+msgid ""
+"Click on the + sign to add a new key. When the key is created, you will "
+"receive a (single download) with the credentials in one text file (ini "
+"formatted). The contents of this file look like this:"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:32
+msgid ""
+"Next go to the Hosts section of the management menu in "
+":menuselection:`Management->Hosts` and add a new host, copy the url from "
+"the machine and the API key and secret generated above."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:37
+msgid ""
+"You can disable certificate validation if your using a self-signed "
+"certificate, although we advise to generate proper certificates for the "
+"machines."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:46
+msgid "Connect to managed machine"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:48
+msgid ""
+"On various management pages there are direct links available to login to "
+"the firewall in question. Usually connected nodes are shown with a link "
+"which opens in a new tab when clicking."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:51
+msgid ""
+"The example below shows a link in the firmware status page which will "
+"open :code:`https://node1.opnsense.local`."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:57
+msgid ""
+"When the management server is allowed to access the OPNcentral components"
+" on the connected node it will automatically login after the link is "
+"clicked with the proper credentials assigned to the api token user."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:60
+msgid ""
+"If the latests Business Edition is installed on the managed machine, but "
+"access prohibits automatic logins, you will be redirected to the login "
+"page."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:62
+msgid ""
+"When the connected machine is not using the business edition, it's not "
+"possible to use the link, a message such as the following will be "
+"presented to the user:"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:71
+msgid ""
+"Make sure your browser trusts the remote node otherwise the browser can't"
+" access the machine and will signal an issue with the software version."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:76
+msgid "Machine firmware status / upgrade"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:78
+msgid ""
+"All connected and enabled machines can be contacted using the  "
+":menuselection:`Management->Status` page, when visiting the page all "
+"connected machines will automatically be contacted to report their status"
+" and installed version."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:84
+msgid ""
+"When an update is available, it will be shown in the list, including if "
+"this upgrade requires a reboot. The upgrade button starts the upgrade "
+"procedure, but will only upgrade machines that will require a reboot if "
+"**Enable reboot** is checked."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:94
+msgid ""
+"The upgrade wheel starts spinning when an upgrade was requested, since "
+"the upgrade itself can consume some time, you can revisit the status page"
+" later (or press refresh) to show the new status."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:99
+msgid "Machine service status and control"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:101
+msgid ""
+"The service status and control page provides an overview on all managed "
+"OPNsense firewalls connected to OPNcentral and offers the ability to "
+"restart services when needed."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:107
+msgid ""
+"In the screenshot above there are 7 machines managed by OPNcentral, for "
+"every configured service there's an icon reflecting the status of the "
+"service."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:118
+msgid ""
+"When you click one of the service icons, the icon changes into a checkbox"
+" which can be used to restart the selected services with the button below"
+" the table."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:123
+msgid ""
+"The link in the host column brings you directly into the service control "
+"page of the selected firewall."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:127
+msgid "Machine resource status"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:129
+msgid ""
+"In order to gain insights into the managed machines there is a resource "
+"page available which queries all connected firewalls and reports "
+"aggregated status about them."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:132
+msgid ""
+"While collecting data for a machine there's a spinner visible, as soon as"
+" information is collected you can view relevant information per node."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:138
+msgid "From left to right the following information is available:"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:140
+msgid "Host information"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:142
+msgid "Host name (description)"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:143
+msgid "Version installed"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:144
+msgid "Processor type"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:145
+msgid ""
+"Most recent configuration change (tooltip uncovers who made the change "
+"and from which module)"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:147
+msgid "General statistics"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:149
+msgid "Current cpu usage (total percentage)"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:150
+msgid "Total memory usage"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:151
+msgid "Swap file usage"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:152
+msgid "Total interfaces configured (up/down)"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:153
+msgid ""
+"Aggregated HA status (when configured), MASTER when all interfaces are, "
+"BACKUP when at least one is demoted to BACKUP"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:154
+msgid "Root file system usage"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:155
+msgid "Gateway status including maximum delay"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:157
+msgid "Firewall"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:159
+msgid "State table usage"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:160
+msgid "Alias usage (when over 100% the requested entries don't fir in memory)"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:161
+msgid "Source tracking table usage"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:162
+msgid ""
+"Current traffic in/out, tooltip the piechart to show protocol name (or "
+"number) with current rate"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:167
+msgid ""
+"When headings are underlined, a click brings you to the relevant module "
+"of the firewall in question."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:173
+msgid "Provisioning / sharing settings"
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:175
+msgid ""
+"The provisioning tool offers the ability to configure some settings in a "
+"more centralised manner. Inspired by the functionality that is offered "
+"for high-availability setups, you can distribute global settings among "
+"all connected firewalls for various configuration options. The central "
+"host acts as a template in this case."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:179
+msgid ""
+"In order to configure the settings that should be shared, you can "
+"configure the \"classes\" to synchronize in the host settings "
+":menuselection:`Management->Host configuration`."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:184
+msgid ""
+"Here you will find the same options as are available under "
+":menuselection:`System->High Availability->Settings`. After configuring "
+"the desired parameters, you can use the Provisioning page "
+"(:menuselection:`Management->Provisioning`) to inspect status and push "
+"options to the attached firewalls."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:191
+msgid ""
+"Be **very** careful pushing settings to your connected firewall which may"
+" disconnect your session, such as firewall and routing related options. "
+"The central management host can't predict if settings you plan to make "
+"lead to an inaccesible firewall."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:195
+msgid ""
+"All provisioning classes known by the management machine will be shown in"
+" the table, combined with the status of each section. OPNcentral "
+"calculates if settings are equal, keeps track of changes and restarts "
+"related services when needed."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:201
+msgid ""
+"You can either selectlively reconfigure specific hosts with the checkbox "
+"or reconfigure all at once on command."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:213
+msgid ""
+"When users and groups are synchronized, the existing api key+secret is "
+"merged into the user with the same name to prevent access issues after "
+"reconfigure. To avoid issues, make sure there's a unique username with "
+"proper credentials before using the synchronization."
+msgstr ""
+
+#: ../../source/vendor/deciso/opncentral.rst:220
+msgid ""
+"Since various firewall sections depend on aliases, OPNcentral checks if "
+"aliases are used before removing local aliases from the remote firewall."
+msgstr ""
+

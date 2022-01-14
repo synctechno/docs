@@ -1,0 +1,232 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:3
+msgid "Configure IPv6 Tunnel Broker"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:4
+msgid "**Original Author:** Shawn Webb"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:8
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:10
+msgid ""
+"OPNsense supports native IPv6 as well as tunneled IPv6. This article "
+"shows how to set up TunnelBroker, Hurricane Electric's IPv6-in-IPv4 "
+"tunnel, with OPNsense. If you're based in the US and you use Netflix, you"
+" might not want to follow these instructions. Netflix now blocks "
+"TunnelBroker."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:15
+msgid ""
+"If you use IRC or need access to SMTP over the TunnelBroker connection, "
+"Hurricane Electric requires you to go through their free IPv6 "
+"certification process. Their \"sage\" level is the highest level and will"
+" allow you to enable IRC and SMTP. Note that your OPNsense firewall must "
+"be directly connected to the Internet. Being behind a NAT will not work."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:21
+msgid ""
+"The rest of this article assumes you already have a TunnelBroker account."
+" If not, sign up and go through the free IPv6 certification process. "
+"Screenshots are provided throughout this article."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:27
+msgid "Background"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:29
+msgid ""
+"Enable ICMP on the WAN side of your OPNsense firewall. TunnelBroker's UI "
+"will tell you an IP to use when you're setting up your tunnel on their "
+"end."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:32
+msgid ""
+"Now add a tunnel. Make sure to add a routed /48 as we will need that to "
+"dish out individual /64 slices to each network. Once configured, your "
+"tunnel settings should look like this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:41
+msgid "Step 1 - Add GIF tunnel"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:43
+msgid ""
+"To configure OPNsense start with adding a new gif interface. Go to "
+":menuselection:`Interfaces --> Other Types --> GIF` and click on **Add** "
+"in the upper tight corner of the form."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:47
+msgid ""
+"Use the following settings and copy in the IPv4&6 addresses from your "
+"TunnelBroker's UI."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:50
+msgid "**Parent interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:50
+msgid "*WAN*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:51
+msgid "**GIF remote address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:51
+msgid "*Server IPv4 Address*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:52
+msgid "**GIF tunnel local address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:52
+msgid "*Client IPv6 Address*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:53
+msgid "**GIF tunnel remote address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:53
+msgid "*Server IPv6 Address/64*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:54
+msgid "**Route caching**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:54
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:55
+msgid "*disabled*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:55
+msgid "**ECN friendly behavior**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:56
+msgid "**Description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:56
+msgid "*Tunnel Broker*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:64
+msgid "Step 2 - Configure the GIF tunnel as a new interface"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:66
+msgid ""
+"The newly created GIF tunnel must now be assigned as a new interface. Go "
+"to :menuselection:`Interfaces --> Assignments`, select the GIF tunnel for"
+" **New interface** and click the **+** sign next to it."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:70
+msgid ""
+"Then under :menuselection:`Interfaces --> [OPTX]` (or "
+":menuselection:`Interfaces --> [TunnelBroker]` depending on what you "
+"selected) check **Enable Interface** and change the description to e.g., "
+"TUNNELBROKER before hitting **Save**."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:74
+msgid ""
+"The newly created interface must now be set as the default IPv6 gateway "
+"under :menuselection:`System --> Gateways --> Single` by editing the new "
+"gateway entry TUNNELBROKER_TUNNELV6 and checking **Upstream Gateway** "
+"before saving."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:80
+msgid "Step 3 - Basic Firewall Rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:82
+msgid ""
+"Now add basic firewall rules. Since I have a LAN network and a WLAN "
+"network, I allow WLAN to initiate connections to LAN, but not the other "
+"way around. I only have servers on LAN whereas most of my clients are on "
+"WLAN (Wireless LAN). I block all incoming to LAN and WLAN. Of course, "
+"outbound connections are fine."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:92
+msgid "Step 4 - Configure LAN interface"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:94
+msgid ""
+"Now configure your LAN interface. The static IPv6 address we'll give it "
+"is a **/64** address from your assigned **/48**. I won't show the WLAN "
+"settings simply because it's the very same. You'll repeat the same "
+"process for further networks, but assigning the next interface a separate"
+" **/64** address."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:104
+msgid "Step 5 - Configure DHCPv6 SLAAC"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:106
+msgid ""
+"We'll next configure OPNsense for Stateless Address Auto Configuration "
+"(SLAAC). Go to :menuselection:`Services --> Router Advertisements` and "
+"choose an interface."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:109
+msgid ""
+"Set the **Router Advertisements** setting to *Assisted* and the **Router "
+"Priority** setting to *Normal*."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:115
+msgid "Save your settings."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:119
+msgid "Step 6 - Test your Configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_tunnelbroker.rst:121
+msgid ""
+"You should now be set up for IPv6. To test your configuration, bring "
+"online an IPv6 machine, use your favorite tool to determine you have an "
+"IPv6 address. If you're using SLAAC, it may take up to 30 seconds or more"
+" to get an IPv6 address. If you see that your interface has an IPv6 "
+"address, you can try going to an IPv6 only test site, such as "
+"http://6.ifconfig.pro/"
+msgstr ""
+

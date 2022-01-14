@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/api/plugins/bind.rst:2
+msgid "Bind"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:4
+msgid "Resources (AclController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "Method"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "Module"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "Controller"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "Command"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "``POST``"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "bind"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "acl"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "addAcl"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "delAcl"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "$uuid"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "``GET``"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "get"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "getAcl"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "$uuid=null"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "``*``"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "searchAcl"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "set"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "setAcl"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "toggleAcl"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "``<<uses>>``"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid ""
+"*model* `Acl.xml "
+"<https://github.com/opnsense/plugins/blob/master/dns/bind/src/opnsense/mvc/app/models/OPNsense/Bind/Acl.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:19
+msgid "Service (DnsblController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "dnsbl"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid ""
+"*model* `Dnsbl.xml "
+"<https://github.com/opnsense/plugins/blob/master/dns/bind/src/opnsense/mvc/app/models/OPNsense/Bind/Dnsbl.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:28
+msgid "Resources (DomainController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "domain"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "addDomain"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "delDomain"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "getDomain"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "searchDomain"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "setDomain"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "toggleDomain"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid ""
+"*model* `Domain.xml "
+"<https://github.com/opnsense/plugins/blob/master/dns/bind/src/opnsense/mvc/app/models/OPNsense/Bind/Domain.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:43
+msgid "Service (GeneralController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "general"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid ""
+"*model* `General.xml "
+"<https://github.com/opnsense/plugins/blob/master/dns/bind/src/opnsense/mvc/app/models/OPNsense/Bind/General.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:52
+msgid "Resources (RecordController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "record"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "addRecord"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "delRecord"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "getRecord"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "searchRecord"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "setRecord"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "toggleRecord"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid ""
+"*model* `Record.xml "
+"<https://github.com/opnsense/plugins/blob/master/dns/bind/src/opnsense/mvc/app/models/OPNsense/Bind/Record.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:67
+msgid "Service (ServiceController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "service"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "reconfigure"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "restart"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "start"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "status"
+msgstr ""
+
+#: ../../source/development/api/plugins/bind.rst:1
+msgid "stop"
+msgstr ""
+

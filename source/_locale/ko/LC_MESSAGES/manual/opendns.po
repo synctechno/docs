@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/opendns.rst:3
+msgid "OpenDNS"
+msgstr ""
+
+#: ../../source/manual/opendns.rst:5
+msgid ""
+"`OpenDNS <https://www.opendns.com>`__ is a company and service that "
+"extends the Domain Name System (DNS) by adding features such as phishing "
+"protection and optional content filtering in addition to DNS lookup, if "
+"its DNS servers are used."
+msgstr ""
+
+#: ../../source/manual/opendns.rst:8
+msgid ""
+"When your behind a static IP address, usually it should be enough to just"
+" enter their name servers in :menuselection:`System --> Settings --> "
+"General`."
+msgstr ""
+
+#: ../../source/manual/opendns.rst:13
+msgid "Settings"
+msgstr ""
+
+#: ../../source/manual/opendns.rst:15
+msgid "A minimum amount of settings is needed in order to register with OpenDNS."
+msgstr ""
+
+#: ../../source/manual/opendns.rst:20
+msgid "Enabled"
+msgstr ""
+
+#: ../../source/manual/opendns.rst:20
+msgid "If enabled, the firewall will signal OpenDNS about address changes"
+msgstr ""
+
+#: ../../source/manual/opendns.rst:21
+msgid "Username"
+msgstr ""
+
+#: ../../source/manual/opendns.rst:21
+msgid "Username registered with at OpenDNS"
+msgstr ""
+
+#: ../../source/manual/opendns.rst:22
+msgid "Password"
+msgstr ""
+
+#: ../../source/manual/opendns.rst:22
+msgid "Associated password"
+msgstr ""
+
+#: ../../source/manual/opendns.rst:23
+msgid "Network"
+msgstr ""
+
+#: ../../source/manual/opendns.rst:23
+msgid ""
+"The network name configured on the `Networks Dashboard "
+"<https://www.opendns.com/dashboard/networks/>`__ of OpenDNS under 'Manage"
+" your networks'. Used to update the node's IP address whenever the WAN "
+"interface changes its IP address."
+msgstr ""
+
+#: ../../source/manual/opendns.rst:32
+msgid ""
+"When disabling the service, please check your name servers in "
+":menuselection:`System --> Settings --> General`, since this feature "
+"removed the previous ones."
+msgstr ""
+

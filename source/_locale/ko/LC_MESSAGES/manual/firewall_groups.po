@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/firewall_groups.rst:3
+msgid "[Interface] Groups"
+msgstr ""
+
+#: ../../source/manual/firewall_groups.rst:5
+msgid ""
+"To simplify rulesets, you can combine interfaces into **Interface "
+"Groups** and add policies which will be applied to all interfaces in the "
+"group."
+msgstr ""
+
+#: ../../source/manual/firewall_groups.rst:8
+msgid ""
+"Since interface groups are processed before normal interfaces, you "
+"shouldn't have issues with overlapping rules in the interface tabs "
+"itself. More details about processing order can be found  :ref:`here "
+"<Firewall_Rule_Processing_Order>`"
+msgstr ""
+
+#: ../../source/manual/firewall_groups.rst:14
+msgid ""
+"For multiwan setups be careful with groups, since groups are not bound to"
+" a specific interface, they will use the normal routing system to "
+"determine the next hop when applied on WAN type interfaces (:code:`reply-"
+"to` is not used here)."
+msgstr ""
+
+#: ../../source/manual/firewall_groups.rst:20
+msgid "Settings"
+msgstr ""
+
+#: ../../source/manual/firewall_groups.rst:22
+msgid ""
+"Groups are actually pretty easy to setup and don't require a lot of "
+"settings."
+msgstr ""
+
+#: ../../source/manual/firewall_groups.rst:27
+msgid "Name"
+msgstr ""
+
+#: ../../source/manual/firewall_groups.rst:27
+msgid ""
+"The technical name of the group. Has some restrictions which also apply "
+"to the underlying operating system."
+msgstr ""
+
+#: ../../source/manual/firewall_groups.rst:29
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/firewall_groups.rst:29
+msgid "A user friendly description, informational use only"
+msgstr ""
+
+#: ../../source/manual/firewall_groups.rst:30
+msgid "Members"
+msgstr ""
+
+#: ../../source/manual/firewall_groups.rst:30
+msgid "Member interfaces"
+msgstr ""
+

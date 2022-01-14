@@ -1,0 +1,235 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/examples/using_grids.rst:3
+msgid "Using grids  module & plugin"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:16
+msgid "Goal"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:18
+msgid ""
+"The purpose of this example is to show how to build data grids in "
+"OPNsense, using the various components within our framework."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:21
+msgid ""
+"If you haven't read the HelloWorld example yet, we advise you to start "
+"there. This example assumes you already know the basics."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:24
+msgid ""
+"Our topic of choice for this module is a basic list for email addresses, "
+"for which you should be able to add, remove and change items."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:29
+msgid "Model"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:31
+msgid ""
+"Our example starts with a model, which is constructed by creating a php "
+"class deriving from :code:`BaseModel` and an XML file containing the "
+"actual model definition."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:34
+msgid "/usr/local/opnsense/mvc/app/models/OPNsense/GridExample/GridExample.php"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:48
+msgid "/usr/local/opnsense/mvc/app/models/OPNsense/GridExample/GridExample.xml"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:74
+msgid ""
+"Note the :code:`ArrayField` type in the XML, this is a special field type"
+" for nested items in automatically includes an internal uuid for easy "
+"referencing when written to disk. Both other field types are also used in"
+" the HelloWorld example earlier. All the preinstalled types can be found "
+"in our field type directory on `GitHub "
+"<https://github.com/opnsense/core/tree/master/src/opnsense/mvc/app/models/OPNsense/Base/FieldTypes>`__."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:81
+msgid "API controller"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:83
+msgid ""
+"The :code:`ApiMutableModelControllerBase` class supports most model "
+"manipulations, all :code:`*Base` methods embody shared functionality to "
+"operate on either new or existing model items."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:86
+msgid ""
+"Our example below uses the base methods to link all operations we need "
+"and link them on endpoints ending at :code:`Item`:"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:88
+msgid "searchItemAction, queries the items in your configuration"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:89
+msgid ""
+"getItemAction, fetches an existing record (or returns a blank one with "
+"all defaults)"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:90
+msgid "addItemAction, add a new record"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:91
+msgid "setItemAction, update a record"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:92
+msgid "delItemAction, delete a record"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:93
+msgid ""
+"toggleItemAction, toggle [0|1] the \"enabled\" property  (see the enabled"
+" :code:`BooleanField` in the model)"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:95
+msgid "/usr/local/opnsense/mvc/app/controllers/OPNsense/GridExample/Api/SettingsController.php"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:140
+msgid ""
+"The parameters of all methods contain at least the root of the "
+":code:`ArrayField` type you want to operate on and in cases the action "
+"involves form data the name of the root property used as in the container"
+" to transport data in."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:143
+msgid ""
+"For example, a getItem (/api/gridexample/settings/getItem/my-uuid-id) "
+"would return a response like this (highlighted the container):"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:159
+msgid "Define dialog items"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:161
+msgid ""
+"To edit the data we define which fields should be presented to the user "
+"and how they are formatted. Below a simple layout, the id fields "
+"reference the actual data points to map (:code:`address.enabled` for "
+"example), which is exactly what the api endpoint returns."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:165
+msgid "/usr/local/opnsense/mvc/app/controllers/OPNsense/GridExample/forms/dialogAddress.xml"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:185
+msgid "Constructing the volt template"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:187
+msgid ""
+"We ship a javascript wrapper to implement a slightly modified version of "
+"`jquery-bootgrid <http://www.jquery-bootgrid.com/>`__, to use this in our"
+" template (view) we define three different blocks."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:190
+msgid ""
+"First of all we bind a table by id (grid-addresses) using "
+":code:`UIBootgrid()`, then we define the table which will be changed into"
+" a dynamic searchable grid and finally we link our dialog content using a"
+" volt :code:`partial()`."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:193
+msgid ""
+"The basic \"UIBootgrid\" bind connects all actions which we have defined "
+"in our API controller earlier, there are more options available, but "
+"these are not needed for this use-case."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:196
+msgid ""
+"When defining the table, we need to add all fields that should be "
+"displayed and the order in which they should appear. If fields should not"
+" be visible by default, simply use :code:`data-visible=\"false\"` on the "
+":code:`<th>` tag."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:199
+msgid ""
+"Our edit dialog is being written in advance so the javascript code can "
+"open the statically defined form when needed, the last highlighted block "
+"takes care of this. The partial uses three argument, the variable "
+"connected via the controller containing all form entries, the name (id) "
+"of the form, which is referenced in the table (data-editDialog) and the "
+"caption of the dialog."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:205
+msgid "/usr/local/opnsense/mvc/app/views/OPNsense/GridExample/index.volt"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:251
+msgid "UI controller"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:253
+msgid ""
+"The user interface controller sets the template (view) to use and "
+"collects the dialog form properties from the xml file defined earlier."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:256
+msgid "/usr/local/opnsense/mvc/app/controllers/OPNsense/GridExample/IndexController.php"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:274
+msgid "Menu and ACL"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:276
+msgid ""
+"The sample package on `GitHub "
+"<https://github.com/opnsense/plugins/tree/master/devel/grid_example>`__ "
+"also contains a menu definition (xml) and ACL (xml), which are similar to"
+" the ones explained in the hello world example."
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:282
+msgid "Test drive your app"
+msgstr ""
+
+#: ../../source/development/examples/using_grids.rst:284
+msgid "Now go to http[s]://your.host/ui/gridexample and try it out."
+msgstr ""
+

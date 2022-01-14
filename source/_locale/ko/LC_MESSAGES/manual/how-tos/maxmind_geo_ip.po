@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/maxmind_geo_ip.rst:3
+msgid "**MaxMind GeoIP's Setup**"
+msgstr ""
+
+#: ../../source/manual/how-tos/maxmind_geo_ip.rst:5
+msgid ""
+"With the changes MaxMind have implemented it is now a requirement that "
+"anyone using their lists must have an account and by having that account "
+"will have accepted their data protection requirements. It's fairly simple"
+" to set-up so let's get started."
+msgstr ""
+
+#: ../../source/manual/how-tos/maxmind_geo_ip.rst:9
+msgid "Create An Account"
+msgstr ""
+
+#: ../../source/manual/how-tos/maxmind_geo_ip.rst:11
+msgid ""
+"Goto https://www.maxmind.com/en/geolite2/signup and create your account. "
+"Note that the email address you provide will be used to send you the link"
+" you will need to enter in OPNsense, so make sure its a real account."
+msgstr ""
+
+#: ../../source/manual/how-tos/maxmind_geo_ip.rst:15
+msgid "Generate License Key"
+msgstr ""
+
+#: ../../source/manual/how-tos/maxmind_geo_ip.rst:17
+msgid ""
+"Once you have created an account you'll need to create a license key. "
+"Click in the \"My License Key\" link and generate a key. When asked if "
+"you use \"geoipupdate\",  choose \"no\". Save the key ID somewhere "
+"safe!!!"
+msgstr ""
+
+#: ../../source/manual/how-tos/maxmind_geo_ip.rst:19
+msgid "You do not need to download the config at this point."
+msgstr ""
+
+#: ../../source/manual/how-tos/maxmind_geo_ip.rst:23
+msgid "Create Link"
+msgstr ""
+
+#: ../../source/manual/how-tos/maxmind_geo_ip.rst:25
+msgid ""
+"Now we need to create the link we'll need in OPNsense, all you need to do"
+" now is to replace the 'My License key' part of the link below with your "
+"license key."
+msgstr ""
+
+#: ../../source/manual/how-tos/maxmind_geo_ip.rst:27
+msgid ""
+"https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2"
+"-Country-CSV&license_key=My_License_key&suffix=zip"
+msgstr ""
+
+#: ../../source/manual/how-tos/maxmind_geo_ip.rst:29
+msgid ""
+"You can check that you have done it correctly by just pasting the link "
+"into a browser, it should download the zip file."
+msgstr ""
+
+#: ../../source/manual/how-tos/maxmind_geo_ip.rst:34
+msgid "OPNsense"
+msgstr ""
+
+#: ../../source/manual/how-tos/maxmind_geo_ip.rst:36
+msgid ""
+"In OPNsense, goto Firewall:Aliases and select the GeoIP settings tab. "
+"Enter the URL you have created into the URL box and click Apply."
+msgstr ""
+
+#: ../../source/manual/how-tos/maxmind_geo_ip.rst:38
+msgid ""
+"Once you have set up the Maxmind credentials if you have not created a "
+"GeoIP alias you will need to do so. Instructions on how to create the "
+"alias(es) can be found in the Firewall->Aliases section of this wiki."
+msgstr ""
+

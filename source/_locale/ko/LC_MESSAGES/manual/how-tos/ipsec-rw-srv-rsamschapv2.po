@@ -1,0 +1,475 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:3
+msgid "IPsec: Setup OPNsense for IKEv2 Mutual RSA + MSCHAPv2"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:5
+msgid "Index"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:7
+msgid ""
+"Mutual RSA + MSCHAPv2 via IKEv2 is based on client certificate "
+"authentication combined with username and password via MSCHAPv2. Be sure "
+"that the client certificate is installed on your users device."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:13
+msgid "Step 1 - Create Certificates"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:15
+msgid ""
+"For Mutual RSA + MSCHAPv2 with IKEv2 you need to create a Root CA and a "
+"server certificate for your Firewall."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:18
+msgid ""
+"Go to :menuselection:`System --> Trust --> Authorities` and click "
+"**Add**. Give it a **Descriptive Name** and as **Method** choose **Create"
+" internal Certificate Authority**. Increase the **Lifetime** and fill in "
+"the fields matching your local values. Now go to :menuselection:`System "
+"--> Trust --> Certificates` and create a new certificate for the Firewall"
+" itself. Important is to change the **Type** to server. The Common Name "
+"can be the hostname of the Firewall and set as **Alternative Name** the "
+"FQDN your Firewall how it is known to the WAN side. This is most "
+"important as your VPN will drop when the FQDN does not match the ones of "
+"the certificate."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:25
+msgid ""
+"If you already have a CA roll out a server certificate and import the CA "
+"itself via :menuselection:`System --> Trust --> Authorities` and the "
+"certificate with the key in :menuselection:`System --> Trust --> "
+"Certificates`."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:31
+msgid "Step 2 - Mobile Clients"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:32
+msgid ""
+"First we will need to setup the mobile clients network and authentication"
+" source. Go to :menuselection:`VPN --> IPsec --> Mobile Clients`"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:35
+msgid "For our example will use the following settings:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:38
+msgid "IKE Extensions"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:40
+msgid "**Enable**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:40
+msgid "checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:40
+msgid "*check to enable mobile clients*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:41
+msgid "**User Authentication**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:41
+msgid "Local Database"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:41
+msgid "*For the example we use the Local Database*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:42
+msgid "**Group Authentication**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:42
+msgid "none"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:42
+msgid "*Leave on none*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:43
+msgid "**Virtual Address Pool**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:43
+msgid "10.10.0.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:43
+msgid "*Enter the IP range for the remote clients*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:46
+msgid ""
+"You can select other options, but we will leave them all unchecked for "
+"this example."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:48
+msgid ""
+"**Save** your settings and select **Create Phase1** when it appears. Then"
+" enter the Mobile Client Phase 1 setting."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:53
+msgid "Step 3 - Phase 1 Mobile Clients"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:56
+msgid "Phase 1 General information"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:58
+msgid "**Connection method**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:58
+msgid "default"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:58
+msgid "*default is 'Start on traffic'*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:59
+msgid "**Key Exchange version**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:59
+msgid "V2"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:59
+msgid "*only V2 is supported for this type*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:60
+msgid "**Internet Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:60
+msgid "IPv4"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:61
+msgid "**Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:61
+msgid "WAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:61
+msgid "*choose the interface connected to the internet*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:62
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:106
+msgid "**Description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:62
+msgid "MobileIPsec"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:62
+msgid "*freely chosen description*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:66
+msgid "Phase 1 proposal (Authentication)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:68
+msgid "**Authentication method**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:68
+msgid "Mutual RSA + MSCHAPv2"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:68
+msgid "*This is the method we want here*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:69
+msgid "**My identifier**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:69
+msgid "Distinguished Name"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:69
+msgid "*Set the FQDN you used within certificate*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:70
+msgid "**My Certificate**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:70
+msgid "Certificate"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:70
+msgid "*Choose the certificate from dropdown list*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:75
+msgid "Phase 1 proposal (Algorithms)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:77
+msgid "**Encryption algorithm**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:77
+msgid "AES"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:77
+msgid "*For our example we will use AES/256 bits*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:78
+msgid "**Hash algoritm**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:78
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:120
+msgid "SHA1, SHA256"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:78
+msgid "*SHA1 and SHA256 for compatibility*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:79
+msgid "**DH key group**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:79
+msgid "1024, 2048 bit"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:79
+msgid "*1024 and 2048 bit for compatibility*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:80
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:122
+msgid "**Lifetime**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:80
+msgid "28800 sec"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:80
+msgid "*lifetime before renegotiation*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:83
+msgid "Advanced Options are fine by default."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:85
+msgid "**Save** your settings."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:89
+msgid "Step 3 - Phase 2 Mobile Clients"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:90
+msgid "Press the button that says '+ Show 0 Phase-2 entries'"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:95
+msgid "You will see an empty list:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:100
+msgid "Now press the *+* at the right of this list to add a Phase 2 entry."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:103
+msgid "General information"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:105
+msgid "**Mode**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:105
+msgid "Tunnel IPv4"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:105
+msgid "*Select Tunnel mode*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:106
+msgid "MobileIPsecP2"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:106
+msgid "*Freely chosen description*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:110
+msgid "Local Network"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:112
+msgid "**Local Network**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:112
+msgid "LAN subnet"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:112
+msgid "*Route the local LAN subnet*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:116
+msgid "Phase 2 proposal (SA/Key Exchange)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:118
+msgid "**Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:118
+msgid "ESP"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:118
+msgid "*Choose ESP for encryption*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:119
+msgid "**Encryption algorithms**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:119
+msgid "AES / 256"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:119
+msgid "*For this example we use AES 256*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:120
+msgid "**Hash algorithms**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:120
+msgid "*Same as before, mix SHA1 and SHA256*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:121
+msgid "**PFS Key group**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:121
+msgid "off"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:121
+msgid "*Most mobile systems do not support PFS in Phase2*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:122
+msgid "3600 sec"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:125
+msgid "**Save** your settings and **Enable IPsec**, Select:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:132
+msgid ""
+"If you already had IPsec enabled and added Road Warrior setup, it is "
+"important to restart the whole service via services widget in the upper "
+"right corner of IPSec pages or via :menuselection:`System --> Diagnostics"
+" --> Services --> Strongswan` since applying configuration only reloads "
+"it, but a restart also loads the required modules of strongSwan."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:139
+msgid "Step 4 - Add IPsec Users"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:141
+msgid ""
+"Go to :menuselection:`System --> Trust --> Certificates` and create a new"
+" client certificate. Just click **Add**, choose your CA and probably "
+"increase the lifetime. Everything else besides the CN can be left "
+"default. Give a **Common Name** and **Save**. Download the newly created "
+"certificate as PKCS12 and export it to you enduser device."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:147
+msgid ""
+"Switch to :menuselection:`VPN -> IPsec -> Pre-Shared Keys` and press "
+"**Add**. Enter the following into the form:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:151
+msgid "**Identifier**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:151
+msgid "expert"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:152
+msgid "**Pre-Shared Key**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:152
+msgid "&test!9T"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:153
+msgid "**Type**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-srv-rsamschapv2.rst:153
+msgid "EAP"
+msgstr ""
+

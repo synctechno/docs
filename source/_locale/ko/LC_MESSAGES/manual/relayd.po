@@ -1,0 +1,250 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/relayd.rst:3
+msgid "Relayd"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:5
+msgid ""
+"The relayd plugin offers a load balancer which is capable of handling OSI"
+" layer 3 or 7 forwarding services to various backend servers while "
+"validating their availability."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:8
+msgid ""
+"One of the main advantages over other forwarding services available for "
+"OPNsense is that relayd offers a transparant forwarding mode in layer 3 "
+"(redirection), which is lightweight and forwards the unmodified session "
+"to the target host."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:14
+msgid "Types of configuration items"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:16
+msgid ""
+"Relayd defines the following types of objects which build up to a virtual"
+" server definition."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:20
+msgid "Hosts"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:22
+msgid ""
+"These types define the actual target machines being used in your pool, "
+"for basic setups these only define an IP address and a unique name to "
+"identify the machine."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:28
+msgid "Tables"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:30
+msgid ""
+"A table defines a list of hosts and acts as a grouping, a single host "
+"might be used in multiple tables."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:35
+msgid "Table check"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:37
+msgid ""
+"A table check defines how relayd should determine for a group of hosts if"
+" the target is ready to use, this could for example be a simple "
+":code:`icmp` (ping) test or a more advanced check like requesting an uri "
+"from a webserver and check the response code."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:41
+msgid ""
+"By default a list of common checks is installed with the plugin, you can "
+"add additional checks later if needed."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:46
+msgid "Virtual Server"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:48
+msgid ""
+"A virtual server is where it all comes together, this type of object "
+"defines where to accept traffic from (bind address and port) and how to "
+"handle traffic when being recieved."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:51
+msgid ""
+"The server type is one of the most important settings and defines if this"
+" virtual host is acting either as a redirection (using the "
+"firewall/transparant) or a relay (layer 7 mode)."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:54
+msgid ""
+"It is possible to choose two different tables to forward to here, in "
+"standard (non advanced mode) only the primary table is visible including "
+"settings how traffic should be divided (:code:`Scheduler`) and hosts "
+"should be checked as described earlier."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:57
+msgid ""
+"When a backup is specified, it will be used when all hosts in the primary"
+" table are down (according to the configured check)."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:61
+msgid ""
+"If the hosts in the table respond to a different port than the one "
+"listening on, make sure to collapse the advanced settings to gain access "
+"to the (target) port directive."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:67
+msgid "Protocols"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:69
+msgid ""
+"Protocols are templates defining settings and rules for relays.  They "
+"allow setting generic TCP options, SSL settings, and rules for the "
+"selected application layer protocol."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:72
+msgid ""
+"These are only selectable in advanced view mode, for documentation we "
+"refer to the `relayd.conf "
+"<https://www.freebsd.org/cgi/man.cgi?query=relayd.conf&sektion=5&apropos=0&manpath=FreeBSD+12.2-RELEASE+and+Ports#PROTOCOLS>`__"
+" man page."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:76
+msgid "General settings"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:78
+msgid ""
+"The general settings tab is used to enable the service and configure "
+"global settings, such as how often hosts are being checked and the number"
+" of resources relayd is allowed to use."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:84
+msgid "Status"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:86
+msgid ""
+"Using the status page you can gain insights into the running "
+"configuration and perform maintenance tasks on various objects. The easy "
+"to use presets on top of the page offer the ability to save filter "
+"selections locally in your browsers storage for later reuse."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:92
+msgid "Simple example"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:94
+msgid ""
+"One of the easiest setups is a virtual server which monitors backend "
+"servers using icmp (ping) and forwards traffic to a group of mail servers"
+" listening on port 25 (smtp), the graph below shows the connection from a"
+" client to one of the backend servers defined in a table."
+msgstr ""
+
+#: ../../source/manual/relayd.rst:132
+msgid "In order to set up the example scenario, configure the following settings:"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:134
+msgid "Backend Hosts (add 2 new with the following properties)"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:136
+msgid "Enable: [x], Name: host_1, Address: 10.0.0.1"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:137
+msgid "Enable: [x], Name: host_2, Address: 10.0.0.2"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:139
+msgid "Table, add new with the following properties"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:141
+msgid "Name: table"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:142
+msgid "Hosts: host_1,host_2"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:143 ../../source/manual/relayd.rst:148
+msgid "Enable: [x]"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:145
+msgid "Virtual Server, add with the following properties"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:147
+msgid "Name: ExampleServer"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:149
+msgid "Server Type: Redirection"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:150
+msgid "Listen Address: 192.168.1.1"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:151
+msgid "Listen Port: 25"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:152
+msgid "Table: table"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:153
+msgid "Scheduler: Round Robin"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:154
+msgid "Table Check: ICMP"
+msgstr ""
+
+#: ../../source/manual/relayd.rst:156
+msgid ""
+"Make sure to enable relayd on the generic settings tab, save settings and"
+" the new vritual host should be active."
+msgstr ""
+

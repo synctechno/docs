@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/nginx_tls_auth.rst:3
+msgid "nginx: TLS Authentication & Authorization"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_auth.rst:7
+msgid ""
+"Even if this is probably the most secure way to authenticate, a lot of "
+"clients do not support it. In addition, configuring client certificates "
+"can also be hard to do for users."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_auth.rst:11
+msgid ""
+"This authentication mechanism is recommended for machine to machine "
+"communication and experienced users."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_auth.rst:16
+msgid "Background Information"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_auth.rst:18
+msgid ""
+"TLS authentication happens when the HTTPS connection is set up and for "
+"this reason you can not configure it per directory (this information has "
+"not been received yet). If you want to use this authentication type in a "
+"custom application, the nginx plugin configures nginx to send you the "
+"required information like the CN)."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_auth.rst:25
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_auth.rst:27
+msgid "First of all, you need a CA, a client and a server certificate."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_auth.rst:29
+msgid ""
+"Please create it like described in :doc:`sslvpn_client`. If you want, "
+"that your VPN users can log into your application using the same "
+"certificate, you may use the same CA."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_auth.rst:35
+msgid ""
+"Next, choose the CA, the certificate and choose *on* as for client "
+"validation. This will reject any connection by a client, who has no valid"
+" certificate."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_auth.rst:39
+msgid "Testing"
+msgstr ""
+

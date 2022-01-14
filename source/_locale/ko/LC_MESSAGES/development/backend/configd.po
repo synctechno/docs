@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/backend/configd.rst:3
+msgid "Using configd"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:7
+msgid "General"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:9
+msgid ""
+"To add new services and system calls, which can be used from the frontend"
+" system or command line, you can create configd actions."
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:11
+msgid ""
+"All available templates should be installed at the following location on "
+"the OPNsense system:"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:19
+msgid ""
+"*Please note that all actions which should be accessible from the "
+"frontend should have a registered configd action, if possible use "
+"standard rc(8) scripts for service start/stop.*"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:23
+msgid "Naming convention"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:25
+msgid ""
+"Service templates should use distinctive names to identify your service "
+"and contain simple / clear actions."
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:27
+msgid ""
+"For example, we will describe the template for ssh, which is installed by"
+" default."
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:29
+msgid "**File name:**"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:36
+msgid "Our ssh service has two actions available:"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:38
+msgid "restart"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:39
+msgid "starts / restarts ssh service"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:42
+msgid "stop"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:41
+msgid "stops / kills all ssh daemons"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:59
+msgid ""
+"Between brackets [] you find the name of the action, the definition of "
+"the actual call is defined in the following parameter:value pairs. When a"
+" service or module provides a lot of actions, it sometimes is practical "
+"to add another level of operation."
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:62
+msgid ""
+"For example, the restart service call for this service will translate to:"
+" **sshd restart**"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:64
+msgid ""
+"In case we have an action like **filter diag info**, you can create an "
+"actions_filter.conf which contains a section [diag.info]."
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:68
+msgid "Action properties"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:72
+msgid "Property"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:72
+msgid "Syntax"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:72
+msgid "Description"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:74
+msgid "command"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:74
+#: ../../source/development/backend/configd.rst:82
+#: ../../source/development/backend/configd.rst:84
+msgid "text"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:74
+msgid "shell command string to execute"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:76
+msgid "parameters"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:76
+#, python-format
+msgid "%s for every parameter"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:76
+#, python-format
+msgid "list of parameters to use, example : /i %s"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:78
+msgid "type"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:78
+msgid "script|script_output"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:79
+msgid "type of call:"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:79
+msgid "script (only return exit status)"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:80
+msgid "script_output (return result)"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:82
+msgid "message"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:82
+#, python-format
+msgid "Message to send to syslog (you can use %s parameters)"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:84
+msgid "description"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:84
+msgid "User-friendly description, also allows GUI usage"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:90
+msgid "Test action"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:92
+msgid ""
+"To test a new configd action, please restart the configd service first "
+"using:"
+msgstr ""
+
+#: ../../source/development/backend/configd.rst:98
+msgid "Next use the supplied helper command to execute our action:"
+msgstr ""
+

@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/ips-feodo.rst:3
+msgid "IPS SSLBlacklists & Feodo Tracker"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:5
+msgid ""
+"This tutorial explains how to setup the IPS system to drop SSL "
+"certificates listed on the `abuse.ch <https://www.abuse.ch>`__ SSL "
+"Blacklists & Feodo Tracker."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:8
+msgid ""
+"Feodo (also known as Cridex or Bugat) is a Trojan used to commit "
+"e-banking fraud and steal sensitive information from the victim’s "
+"computer, such as credit card details or credentials. For more "
+"information see https://feodotracker.abuse.ch"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:14
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:15
+msgid ""
+"Always upgrade to latest release first. See :doc:`/manual/install` and/or"
+" upgrade to latest release: :menuselection:`System --> Firmware --> Fetch"
+" updates`"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:22
+msgid ""
+"Minimum Advisable Memory is 2 Gigabyte and sufficient free disk space for"
+" logging (>10 GB advisable)."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:25
+msgid "Disable all Hardware Offloading Under **Interface-Settings**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:33
+msgid ""
+"After applying you need to reboot OPNsense otherwise offloading may not "
+"completely be disabled and IPS mode will not function."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:38
+msgid ""
+"Some features described on this page were added in version 16.1.1. Always"
+" keep your system up to date."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:44
+msgid "Setup Intrusion Detection & Prevention"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:45
+msgid ""
+"To enable IDS/IPS just go to :menuselection:`Services --> Intrusion "
+"Detection` and select **enabled & IPS mode**. Make sure you have selected"
+" the right interface for the intrusion detection system too run on. For "
+"our example we will use the WAN interface, as that will most likely be "
+"you connection with the public Internet."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:55
+msgid "Apply configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:56
+msgid ""
+"First apply the configuration by pressing the **Apply** button at the "
+"bottom of the form."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:63
+msgid "Fetch Rule sets"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:64
+msgid ""
+"For this example we will only fetch the abuse.ch SSL & Dodo Tracker "
+"rulesets. To do so: select Enabled after each one."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:70
+msgid "To download the rule sets press **Download & Update Rules**."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:76
+msgid "Change default behavior"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:78
+msgid ""
+"To block matches instead of alerting on them, go to the  "
+":menuselection:`Service -> Intrusion Detection -> Policies` page and add "
+"a new policy. You can easily select the associated rulesets here (all "
+"staring with abuse.ch) and select action \"Alert\" next go to the new "
+"action, which should be \"Drop\"."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:82
+msgid "Apply the settings at the bottom of the page when done."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:86
+msgid "Apply fraud drop actions"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:87
+msgid ""
+"Now press **Download & Update Rules** again to change the behavior to "
+"drop."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:93
+msgid "Keep up to date"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:94
+msgid "Now schedule a regular fetch to keep your server up to date."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:96
+msgid "Click on schedule, a popup window will appear:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:101
+msgid ""
+"Select **enabled** and choose a time. For the example it is set to each "
+"day at 11:12. Select **Save changes** and wait until you have returned to"
+" the IDS screen."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:106
+msgid "DONE"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:107
+msgid ""
+"Your system has now been fully setup to drop known fraudulent SSL "
+"certificates as well data phishing attempts by utilizing the Feodo "
+"tracking list."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:113
+msgid "Sample alert"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-feodo.rst:114
+msgid ""
+"Currently there is no test service available to check your block rules "
+"against, however here is a sample of an actual alert that has been "
+"blocked:"
+msgstr ""
+

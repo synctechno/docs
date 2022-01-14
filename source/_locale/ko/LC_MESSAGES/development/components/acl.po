@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/components/acl.rst:3
+msgid "Access Control List"
+msgstr ""
+
+#: ../../source/development/components/acl.rst:11
+msgid "Overview"
+msgstr ""
+
+#: ../../source/development/components/acl.rst:13
+msgid ""
+"The current ACL system is targeted at delivering backwards compatibility "
+"for legacy code and being able to extend this a little to add new "
+"features without having to reimplement the whole system."
+msgstr ""
+
+#: ../../source/development/components/acl.rst:17
+msgid ""
+"In the legacy system the access control is using the following steps to "
+"determine if a page can be accessed by a user:"
+msgstr ""
+
+#: ../../source/development/components/acl.rst:20
+msgid "The user, stored in the config.xml file at system/user (one item per user)"
+msgstr ""
+
+#: ../../source/development/components/acl.rst:22
+msgid ""
+"One or more groups for that user, stored in system/group which contains "
+"priv sections."
+msgstr ""
+
+#: ../../source/development/components/acl.rst:24
+msgid ""
+"A PHP file binding the priv section content to a page mask (including "
+"wildcards)"
+msgstr ""
+
+#: ../../source/development/components/acl.rst:27
+msgid ""
+"Our temporary solution is to keep the user and the group in place and "
+"replace the PHP file with a simple config in the model which uses the "
+"same mask construction there was in the old codebase. To bind priv to "
+"pages, edit models/OPNsense/Core/ACL\\_Legacy\\_Page\\_Map.txt"
+msgstr ""
+
+#: ../../source/development/components/acl.rst:33
+msgid "Usage from PHP"
+msgstr ""
+
+#: ../../source/development/components/acl.rst:35
+msgid "Using the system from PHP is rather simple:"
+msgstr ""
+
+#: ../../source/development/components/acl.rst:46
+msgid "Usage in Volt templates"
+msgstr ""
+
+#: ../../source/development/components/acl.rst:48
+msgid ""
+"The ACL scheme is bound to the default UI controller, and can be used by "
+"using the acl keyword:"
+msgstr ""
+

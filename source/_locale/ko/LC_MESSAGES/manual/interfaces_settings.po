@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/interfaces_settings.rst:3
+msgid "Settings"
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:5
+msgid ""
+"There are some advanced settings, which you can alter in "
+":menuselection:`Interfaces --> Settings`, most of the time you should "
+"leave these settings default, but advanced scenarios may require specific"
+" settings."
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:8
+msgid ""
+"The settings on this page will be applied after reboot or a "
+"reconfiguration of each interface."
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:12
+msgid "Hardware CRC"
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:13
+msgid ""
+"Disable hardware checksum offloading, which is checked by default, "
+"controls if user-configurable checksum offloading might be handled by the"
+" network card. Not all technologies support this (IPS for example) and "
+"some drivers have issues when enabled. We generally advise to keep this "
+"disabled, the performance gain is debatable as well."
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:17
+msgid ""
+"(the :code:`ifconfig` settings in the OS related to this setting are "
+":code:`txcsum` , :code:`rxcsum` , :code:`txcsum6` , :code:`rxcsum6`)"
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:22
+msgid "Hardware TSO"
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:23
+msgid ""
+"Disable hardware TCP segmentation offload, also checked by default, "
+"prevents the system to offload packet segmentation to the network card. "
+"This option is incompatible with IPS in OPNsense and is broken in some "
+"network cards."
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:26
+msgid ""
+"(the :code:`ifconfig` settings in the OS related to this setting are "
+":code:`tso` ,  :code:`tso4` , :code:`tso6`)"
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:30
+msgid "Hardware LRO"
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:31
+msgid ""
+"Disable hardware large receive offload, which is checked by default, "
+"prevents the network card from aggregating incoming packets into a larger"
+" buffer before passing it further on the network stack (in order to "
+"decrease the number of packets to process)."
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:34
+msgid ""
+"For routing traffic its usually advisable to disable options which queue "
+"traffic in the network card to prevent additional latency."
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:36
+msgid ""
+"Enabling LRO might degrade routing performance or for some drivers is "
+"incompatible with packet-forwarding at all."
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:38
+msgid ""
+"(the :code:`ifconfig` setting in the OS related to this setting is "
+":code:`lro`)"
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:43
+msgid "VLAN Hardware Filtering"
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:45
+msgid ""
+"Set usage of VLAN hardware filtering. This hardware acceleration may be "
+"broken in some device drivers, our advice is to keep this setting on "
+"\"Disable VLAN Hardware Filtering\", which is the default as of 20.7. In "
+"some cases (pre 20.7) we have seen random disconnects when the driver is "
+"forced into a mode it was not set at by default."
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:51
+msgid ""
+"(the :code:`ifconfig` settings in the OS related to this setting are "
+":code:`vlanhwtag`, :code:`vlanhwcsum` ,  :code:`vlanhwfilter` , "
+":code:`vlanhwtso`)"
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:55
+msgid "ARP Handling"
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:56
+msgid ""
+"By default the kernel logs movement of ip addresses from one hardware "
+"address to another and when an arp request is received on the wrong "
+"interface. When checking this option, it will stop doing so, which is "
+"practical if multiple interfaces reside on the same broadcast domain."
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:59
+msgid ""
+"(for a more detailed description, see :code:`man arp` and search "
+":code:`log_arp_wrong_iface` and  :code:`log_arp_movements`)"
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:63
+msgid "DHCP Unique Identifier"
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:64
+msgid ""
+"This option can be used to enter an explicit DUID for use by IPv6 DHCP "
+"clients, the different types are detailed in `section 11 of rfc8415 "
+"<https://tools.ietf.org/html/rfc8415#section-11>`__"
+msgstr ""
+
+#: ../../source/manual/interfaces_settings.rst:67
+msgid ""
+"When not set, the dhcp v6 client (:code:`dhcp6c`) will assign one "
+"automatically."
+msgstr ""
+

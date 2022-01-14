@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/vpnet.rst:3
+msgid "Virtual Private Networking"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:5
+msgid ""
+"A virtual private network secures public network connections and in doing"
+" so it extends the private network into the public network such as "
+"internet. With a VPN you can create large secure networks that can act as"
+" one private network."
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:12
+msgid ""
+"(picture from `wikipedia "
+"<https://en.wikipedia.org/wiki/File:Virtual_Private_Network_overview.svg>`__)"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:14
+msgid ""
+"Companies use this technology for connecting branch offices and remote "
+"users (road warriors)."
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:17
+msgid ""
+"OPNsense supports VPN connections for branch offices as well as remote "
+"users."
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:19
+msgid ""
+"Creating a single secured private network with multiple branch offices "
+"connecting to a single site can easily be setup from within the graphical"
+" user interface. For remote users, certificates can be created and "
+"revoked and a simple to use export utility makes the client configuration"
+" a breeze."
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:26
+msgid "Supported VPN technologies"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:27
+msgid ""
+"OPNsense offers a wide range of VPN technologies ranging from modern SSL "
+"VPNs to well known IPsec as well as older (now considered insecure) "
+"legacy options such as L2TP and PPTP."
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:35
+msgid ""
+"VPN technologies displayed with an open lock are considered to be "
+"insecure."
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:39
+msgid "Integrated VPN options"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:41
+msgid ""
+"Integrated solutions are those that are available within the GUI without "
+"installing any additional package or plugin. These include:"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:44
+msgid "**IPsec**"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:45
+msgid "**OpenVPN (SSL VPN)**"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:50
+msgid "Plugin VPN options"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:52
+msgid "Via plugins additional VPN technologies are offered, including:"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:54
+msgid "**Legacy L2TP & PPTP**"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:55
+msgid ""
+"**OpenConnect** - SSL VPN client, initially build to connect to "
+"commercial vendor appliances like Cisco ASA or Juniper."
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:56
+msgid ""
+"**Stunnel** - Provides an easy to setup universal TLS/SSL tunneling "
+"service, often used to secure unencrypted protocols."
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:57
+msgid "**Tinc** - Automatic Full Mesh Routing"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:58
+msgid ""
+"**WireGuard** - Simple and fast VPN protocol working with public and "
+"private keys."
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:59
+msgid ""
+"**Zerotier** - seamlessly connect everything, requires account from "
+"zerotier.com, free for up to 100 devices."
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:64
+msgid "Log Files"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:66
+msgid ""
+"When troubleshooting problems with your firewall, it is very likely you "
+"have to check the logs available on your system. In the UI of OPNsense, "
+"the log files are generally grouped with the settings of the component "
+"they belong to. The log files can be found here:"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:71
+msgid "**IPsec Log**"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:71
+msgid ":menuselection:`VPN --> IPsec --> Log File`"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:71
+msgid "*Everything around IPsec goes here*"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:72
+msgid "**OpenVPN Log**"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:72
+msgid ":menuselection:`VPN --> OpenVPN --> Log File`"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:72
+msgid "*OpenVPN logs everything here*"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:76
+msgid ""
+"Log files on file system: /var/log/ipsec.log (clog) /var/log/openvpn.log "
+"(clog)"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:83
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:84
+msgid ""
+"Please read our how-tos for configuration examples and more detailed "
+"information."
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:88
+msgid "IPsec"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:113
+msgid "OpenVPN"
+msgstr ""
+
+#: ../../source/manual/vpnet.rst:126
+msgid "Other"
+msgstr ""
+

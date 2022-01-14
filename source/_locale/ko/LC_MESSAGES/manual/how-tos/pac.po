@@ -1,0 +1,515 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/pac.rst:3
+msgid "Setup WPAD / PAC"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:7
+msgid "PAC"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:10
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:12
+msgid ""
+"OPNsense supports generating PAC files to provide automatic proxy "
+"configuration files to clients. For example if your web GUI is running at"
+" http://192.168.0.1/, your PAC URL will be http://192.168.0.1/wpad.dat."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:16
+msgid ""
+"In Firefox you can configure your proxy using PAC by the following steps "
+"manually:"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:19
+msgid "Click the menu Icon and open \"Settings\""
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:20
+msgid "Scroll down to \"Network Proxy\" and click \"Settings\""
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:21
+msgid "Check \"Automatic Proxy Configuration Address\""
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:22
+msgid ""
+"Enter the URL of the PAC file like mentioned in the paragraph above into "
+"the text field and click \"OK\""
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:26
+msgid ""
+"Your browser may be unable to connect to the internet if the PAC file is "
+"not available. This type of configuration is not recommended on mobile "
+"devices like laptops if employees can use the devices for home office. "
+"For such devices WPAD should be used."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:33
+msgid "Configuring PAC"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:36
+msgid "First Step: Creating Matches"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:38
+msgid "Go to :menuselection:`Services --> Proxy --> Configuration` and open Match"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:42
+msgid ""
+"Enter a name for the match and an optional description. Then choose what "
+"to match on. In our example we want to achieve that hostnames without a "
+"FQDN (like server01) and also our internal domain (example.com) will be "
+"excluded from the proxy."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:48
+#: ../../source/manual/how-tos/pac.rst:65
+#: ../../source/manual/how-tos/pac.rst:74
+#: ../../source/manual/how-tos/pac.rst:87
+#: ../../source/manual/how-tos/pac.rst:105
+#: ../../source/manual/how-tos/pac.rst:116
+msgid "Name"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:48
+msgid "A unique name for the match to call it from rules."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:49
+#: ../../source/manual/how-tos/pac.rst:66
+#: ../../source/manual/how-tos/pac.rst:75
+#: ../../source/manual/how-tos/pac.rst:88
+#: ../../source/manual/how-tos/pac.rst:106
+#: ../../source/manual/how-tos/pac.rst:117
+#: ../../source/manual/how-tos/pac.rst:135
+#: ../../source/manual/how-tos/pac.rst:189
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:49
+msgid "A short description for your own reference."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:50
+#: ../../source/manual/how-tos/pac.rst:67
+#: ../../source/manual/how-tos/pac.rst:76
+msgid "Negate"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:50
+msgid "Inverts the match (any that does not match)"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:51
+#: ../../source/manual/how-tos/pac.rst:68
+#: ../../source/manual/how-tos/pac.rst:77
+#: ../../source/manual/how-tos/pac.rst:138
+msgid "Match Type"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:51
+msgid "Choose what you want to match on"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:54
+msgid ""
+"The rest of the fields depend on the used `Match Type`. For example if we"
+" match on \"Plain Hostname\", we do not need any additional parameters."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:58
+msgid ""
+"The match \"Plain Hostname means no dots inside the domain so if we want "
+"to create a fqdn match, we can simply invert this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:65
+msgid "is_fqdn"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:66
+#: ../../source/manual/how-tos/pac.rst:75
+#: ../../source/manual/how-tos/pac.rst:106
+#: ../../source/manual/how-tos/pac.rst:117
+#: ../../source/manual/how-tos/pac.rst:189
+msgid "can stay empty"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:67
+#: ../../source/manual/how-tos/pac.rst:76
+#: ../../source/manual/how-tos/pac.rst:134
+msgid "checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:68
+msgid "Plain Hostname"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:74
+msgid "not_internal"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:77
+msgid "Hostname matches"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:78
+msgid "Host Pattern"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:78
+msgid "Wildcard for your internal domain"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:82
+msgid "Second Step: Create Proxy Servers"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:84
+msgid "Now switch to :menuselection:`PAC --> Proxies` and add new proxy servers."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:87
+msgid "Enter a name which will be shown at the rules view for selection"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:88
+msgid "You can add an optional description for this proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:89
+#: ../../source/manual/how-tos/pac.rst:107
+#: ../../source/manual/how-tos/pac.rst:118
+msgid "Proxy Type"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:89
+msgid "Enter a Proxy type or DIRECT if no proxy should be used"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:90
+#: ../../source/manual/how-tos/pac.rst:108
+#: ../../source/manual/how-tos/pac.rst:119
+msgid "URL"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:90
+msgid "Enter the Proxy URL unless DIRECT has been choosen"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:93
+msgid ""
+"In this case it is assumed that only a single LAN and a DMZ exists and "
+"that internal connections should not run over the proxy. To make "
+"meaningful rules, we need two possible return values:"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:97
+msgid "The LAN Proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:98
+msgid "No Proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:100
+msgid "No proxy is quite simple to configure:"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:105
+msgid "direct"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:107
+msgid "Direct Connection"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:108
+msgid "empty"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:111
+msgid "For outgoing connectins we need the proxy:"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:116
+msgid "lan_proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:118
+msgid "Proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:119
+msgid "Proxy IP + ':' + Proxy Port"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:124
+msgid "Third Step: Create Rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:126
+msgid ""
+"Now as the matches and the proxies exist, rules can be built. For that, "
+"switching to :menuselection:`PAC --> Rules` is required."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:129
+msgid "Now the following rule needs to be created:"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:134
+msgid "Enabled"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:135
+msgid "a description for your reference"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:136
+msgid "Matches"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:136
+msgid "the two previously created matches"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:137
+msgid "Join Type"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:137
+msgid "And"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:138
+msgid "If"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:139
+msgid "Proxies"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:139
+msgid "Select the LAN proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:142
+msgid "Click the orange reload button and you are done."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:146
+msgid "WPAD"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:148
+msgid "Web Proxy Auto Discovery is used to find the PAC file for the domain."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:152
+msgid "Using DNS (Unbound)"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:156
+#: ../../source/manual/how-tos/pac.rst:199
+msgid "Variant 1: Automatic Configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:159
+msgid ""
+"When you use this option, the wpad hosts and the TXT records for the "
+"domain will be overridden. This may break some other records like TXT "
+"records for SPF for this particular domain."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:163
+msgid "In Unbound, you can simply check the following checkbox:"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:167
+msgid ""
+"This will define the host records of any domain configured in DHCP as "
+"CNAME for your firewall host. It will also override TXT records resolve "
+"to the URL to the PAC file."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:173
+#: ../../source/manual/how-tos/pac.rst:219
+msgid "Variant 2: Manual Configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:176
+msgid "When DNS is used, OPNsense must respond via HTTP on port 80."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:178
+msgid ""
+"Open the page :menuselection:`Services --> Unbound DNS --> Overrides` and"
+" add a new host override for the `wpad` host:"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:185
+msgid "Host"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:185
+msgid "wpad"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:186
+msgid "Domain"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:186
+msgid "your domain"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:187
+#: ../../source/manual/how-tos/pac.rst:230
+msgid "Type"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:187
+msgid "A or AAAA"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:188
+msgid "IP"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:188
+msgid "IP of your OPNsense (where the Web interface is reachable"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:192
+msgid "Save the settings and apply the changes."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:195
+msgid "Using DHCP"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:201
+msgid "In the DHCP server settings, you can check the following checkbox:"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:205
+msgid ""
+"In this case, an entry for the protocol and the port of the web interface"
+" will be created with the domain you choose in your system settings "
+"(domain of the firewall). The hostname is `wpad`. If you are running the "
+"OPNsense web interface on port 80 with HTTP. The following URL will be "
+"created:"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:211
+msgid "http://wpad.example.com:80/wpad.dat"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:214
+msgid ""
+"If you have **HTTP Redirect** enabled via :menuselection:`System --> "
+"Settings --> Administration`, make sure your browser accepts the "
+"certificate presented by OPNsense, as it won't download wpad.dat if the "
+"certificate is untrusted."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:221
+msgid ""
+"Open the page :menuselection:`Services --> DHCP --> Server`, select the "
+"correct interface and scroll down to the \"Additional Options\"."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:224
+msgid "Add this line and save:"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:229
+msgid "Number"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:229
+msgid "252"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:230
+msgid "String"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:231
+msgid "Value"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:231
+msgid "PAC file URL enclosed in double quotes"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:236
+msgid "Firefox Configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:239
+msgid "Open Settings Menu"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:241
+msgid ""
+"First, the settings menu must be opened. There are two ways. You can "
+"either"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:245
+msgid "first click `Edit`"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:249
+msgid "then click `Preferences` or you can also"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:253
+msgid "click the menu icon and then click `Preferences`."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:256
+msgid "Configure Proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:260
+msgid ""
+"Then scroll down to the bottom of the page and click `Settings` in the "
+"`Network Proxy` settings."
+msgstr ""
+
+#: ../../source/manual/how-tos/pac.rst:265
+msgid ""
+"In the newly opened window, you can setup your proxy settings. If you "
+"want to force Firefox to use WPAD/PAC, choose `Auto-detect proxy settings"
+" for this Network`. Click save and you are done."
+msgstr ""
+

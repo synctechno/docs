@@ -1,0 +1,823 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:3
+msgid "Setup a routed IPSec Tunnel"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:5
+msgid ""
+"Most Site-to-Site VPNs are policy-based, which means you define a local "
+"and a remote network (or group of networks). Only traffic matching the "
+"defined policy is pushed into the VPN tunnel. As the demands for more "
+"complex and fault tolerant VPN scenarios growed over the years, most "
+"major router vendors implemented a kind of VPN, the route-based IPSec."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:10
+msgid ""
+"The difference is that local and remote network is just 0.0.0.0/0, so "
+"anything can travel through the tunnel, it just needs a route. A new "
+"Virtual Tunnel Interface (VTI) has to be used for this."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:14
+msgid "There are two benefits for this kind of VPN:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:16
+msgid ""
+"First, you can set up two tunnels to the same gateway and failover when "
+"one line goes down. Second, you can run dynamic routing protocols over "
+"the tunnel to create more redundant, or software-defined networks."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:22
+msgid ""
+"For a stable setup, we highly advise using standard IPv4 / IPv6 "
+"addresses, although the web interface allows the use of fully qualified "
+"domain names (e.g. my.own.domain.xyz), this will have side affects (the "
+"tunnel device won't react on name changes for example)."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:29
+msgid "Before you start"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:30
+msgid ""
+"Before starting with the configuration of an IPsec tunnel you need to "
+"have a working OPNsense installation wit a unique LAN IP subnet for each "
+"side of your connection (your local network needs a different one than "
+"the remote network)."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:36
+msgid "Sample Setup"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:37
+msgid ""
+"For the sample configuration we use two OPNsense boxes to simulate a site"
+" to site tunnel, with the following configuration:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:70
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:335
+msgid "Site A"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:72
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:118
+msgid "**Hostname**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:72
+msgid "fw1"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:73
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:119
+msgid "**WAN IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:73
+msgid "1.2.3.4/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:74
+msgid "**LAN IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:74
+msgid "192.168.1.1/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:75
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:121
+msgid "**LAN DHCP Range**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:75
+msgid "192.168.1.100-192.168.1.200"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:115
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:210
+msgid "Site B"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:118
+msgid "fw2"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:119
+msgid "4.3.2.1/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:120
+msgid "**LAN Net**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:120
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:493
+msgid "192.168.2.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:121
+msgid "192.168.2.100-192.168.2.200"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:133
+msgid "Full Network Diagram Including IPsec Tunnel"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:181
+msgid "Firewall Rules Site A & Site B (part 1)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:182
+msgid ""
+"To allow IPsec tunnel connections, the following should be allowed on WAN"
+" for on sites (under :menuselection:`Firewall --> Rules --> WAN`):"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:185
+msgid "Protocol ESP"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:186
+msgid "UDP Traffic on port 500 (ISAKMP)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:187
+msgid "UDP Traffic on port 4500 (NAT-T)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:194
+msgid "You can further limit the traffic by the source IP of the remote host."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:198
+msgid "Step 1 - Phase 1 Site A"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:199
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:324
+msgid ""
+"(Under :menuselection:`VPN --> IPsec --> Tunnel Settings` Press **+**) We"
+" will use the following settings:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:203
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:268
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:328
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:391
+msgid "General information"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:205
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:330
+msgid "**Connection method**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:205
+msgid "default"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:205
+msgid "*Default is “Start on traffic”*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:206
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:331
+msgid "**Key Exchange version**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:206
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:331
+msgid "V2"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:207
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:332
+msgid "**Internet Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:207
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:332
+msgid "IPv4"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:208
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:333
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:468
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:477
+msgid "**Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:208
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:333
+msgid "WAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:208
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:333
+msgid "*Choose the interface connected to the internet*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:209
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:334
+msgid "**Remote gateway**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:209
+msgid "4.3.2.1"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:209
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:334
+msgid "*The public IP address of your remote OPNsense*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:210
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:271
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:335
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:394
+msgid "**Description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:210
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:271
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:335
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:394
+msgid "*Freely chosen description*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:215
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:340
+msgid "Phase 1 proposal (Authentication)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:217
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:342
+msgid "**Authentication method**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:217
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:342
+msgid "Mutual PSK"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:217
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:342
+msgid "*Using a Pre-shared Key*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:218
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:343
+msgid "**My identifier**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:218
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:343
+msgid "My IP address"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:218
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:219
+msgid "*Simple identification for fixed IP*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:219
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:344
+msgid "**Peer identifier**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:219
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:344
+msgid "Peer IP address"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:220
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:345
+msgid "**Pre-Shared Key**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:220
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:345
+msgid "At4aDMOAOub2NwT6gMHA"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:220
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:345
+msgid "*Random key*. **CREATE YOUR OWN!**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:225
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:350
+msgid "Phase 1 proposal (Algorithms)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:227
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:352
+msgid "**Encryption algorithm**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:227
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:352
+msgid "AES"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:227
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:352
+msgid "*For our sample we will use AES/256 bits*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:228
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:353
+msgid "**Hash algoritm**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:228
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:287
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:353
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:410
+msgid "SHA512"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:228
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:353
+msgid "*Use a strong hash like SHA512*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:229
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:354
+msgid "**DH key group**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:229
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:288
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:354
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:411
+msgid "14 (2048 bit)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:229
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:354
+msgid "*2048 bit should be sufficient*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:230
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:289
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:355
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:412
+msgid "**Lifetime**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:230
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:355
+msgid "28800 sec"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:230
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:355
+msgid "*Lifetime before renegotiation*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:235
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:360
+msgid "Advanced Options"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:237
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:362
+msgid "**Install Policy**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:237
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:238
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:239
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:241
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:362
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:363
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:364
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:366
+msgid "Unchecked"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:237
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:362
+msgid "*This has to be unchecked since we want plain routing*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:238
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:363
+msgid "**Disable Rekey**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:238
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:363
+msgid "*Renegotiate when connection is about to expire*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:239
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:364
+msgid "**Disable Reauth**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:239
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:364
+msgid "*For IKEv2 only re-authenticate peer on rekeying*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:240
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:365
+msgid "**NAT Traversal**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:240
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:365
+msgid "Disabled"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:240
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:365
+msgid "*For IKEv2 NAT traversal is always enabled*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:241
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:366
+msgid "**Dead Peer Detection**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:245
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:370
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:416
+msgid "Save your setting by pressing:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:252
+msgid "Step 2 - Phase 2 Site A"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:253
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:379
+msgid "Press the button that says '+ Show 0 Phase-2 entries'"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:257
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:383
+msgid "You will see an empty list:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:262
+msgid ""
+"Now press the **+** at the right of this list to add a Phase 2 entry. As "
+"we do not define a local and remote network, we just use tunnel "
+"addresses, you might already know from OpenVPN. In this example we use "
+"``10.111.1.1`` and ``10.111.1.2``. These will be the gateway addresses "
+"used for routing"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:270
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:393
+msgid "**Mode**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:270
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:393
+msgid "Route-based"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:270
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:393
+msgid "*Select Route-based*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:271
+msgid "Local LAN Site B"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:275
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:398
+msgid "Tunnel Network"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:277
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:400
+msgid "**Local Address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:277
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:400
+msgid "Local Tunnel IP"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:277
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:401
+msgid "*Set IP 10.111.1.1*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:278
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:401
+msgid "**Remote Address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:278
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:401
+msgid "Remote Tunnel IP"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:278
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:400
+msgid "*Set IP 10.111.1.2*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:282
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:406
+msgid "Phase 2 proposal (SA/Key Exchange)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:285
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:408
+msgid "**Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:285
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:408
+msgid "ESP"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:285
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:408
+msgid "*Choose ESP for encryption*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:286
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:409
+msgid "**Encryption algorithms**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:286
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:409
+msgid "AES / 256"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:286
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:409
+msgid "*For the sample we use AES 256*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:287
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:410
+msgid "**Hash algortihms**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:287
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:410
+msgid "*Choose a strong hash like SHA512*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:288
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:411
+msgid "**PFS Key group**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:288
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:411
+msgid "*Not required but enhanced security*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:289
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:412
+msgid "3600 sec"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:292
+msgid "Save your settings by pressing:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:298
+msgid "Enable IPsec for Site A, select:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:302
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:426
+msgid "Save:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:306
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:430
+msgid "And apply changes:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:316
+msgid ""
+"**You are almost done configuring Site A (only some firewall settings "
+"remain, which will be addressed later).** **We will now proceed setting "
+"up Site B.**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:323
+msgid "Step 3 - Phase 1 Site B"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:330
+msgid "Default"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:330
+msgid "*Default is 'Start on traffic'*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:334
+msgid "1.2.3.4"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:343
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:344
+msgid "*Simple identification for fixed ip*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:377
+msgid "Step 4 - Phase 2 Site B"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:388
+msgid "Now press the *+* at the right of this list to add a Phase 2 entry."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:394
+msgid "Local LAN Site A"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:422
+msgid "Enable IPsec for Site B, Select:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:442
+msgid "Firewall Rules Site A & Site B (part 2)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:444
+msgid ""
+"To allow traffic passing to your LAN subnet you need to add a rule to the"
+" IPsec interface (under :menuselection:`Firewall --> Rules --> IPsec`)."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:452
+msgid "IPsec Tunnel Ready"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:454
+msgid ""
+"The tunnel should now be up and routing the both networks. Go to "
+":menuselection:`VPN --> IPsec --> Status Overview` to see current status."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:459
+msgid "Step 5 - Define Gateways"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:461
+msgid ""
+"Now that you have the VPN up and running you have to set up a gateway. Go"
+" to :menuselection:`System --> Gateways --> Single` and add a new "
+"gateway."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:465
+msgid "Gateway Site-A"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:467
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:476
+msgid "**Name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:467
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:476
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:494
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:501
+msgid "VPNGW"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:467
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:476
+msgid "*Set a name for your gateway*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:468
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:477
+msgid "IPSEC1000"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:468
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:477
+msgid "*Choose the IPsec interface*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:469
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:478
+msgid "**IP Address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:469
+msgid "10.111.1.2"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:469
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:478
+msgid "*Set the peer IP address*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:470
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:479
+msgid "**Far Gateway**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:470
+msgid "Checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:470
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:479
+msgid "*This has to be checked as it is a point-to-point connection*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:474
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:498
+msgid "Gateway Site-B"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:478
+msgid "10.111.1.1"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:479
+msgid "checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:484
+msgid "Step 5 - Add Static Routes"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:486
+msgid ""
+"When gateways are set up you can add a route for the remote network "
+"pointing to the new gateway. On Site-A add a route to Site-B and vice "
+"versa. Go to :menuselection:`System --> Routes --> Configuration`."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:491
+msgid "Route Site-A"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:493
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:500
+msgid "**Network Address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:493
+msgid "*Set the network of Site-B*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:494
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:501
+msgid "**Gateway**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:494
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:501
+msgid "*Select the VPN gateway*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:500
+msgid "192.168.1.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:500
+msgid "*Set the network of Site-A*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route.rst:505
+msgid "Now you are all set!"
+msgstr ""
+

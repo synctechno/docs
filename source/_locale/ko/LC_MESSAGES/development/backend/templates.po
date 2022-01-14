@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/backend/templates.rst:3
+msgid "Using Templates"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:7
+msgid "General"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:9
+msgid ""
+"For config file generation, we provide a backend service which can bind "
+"config.xml data to templates written in Jinja2 "
+"(http://jinja.pocoo.org/docs/dev/)."
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:13
+msgid ""
+"All available templates should be installed at the following location on "
+"the OPNsense system:"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:16
+msgid "/usr/local/opnsense/service/templates/"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:21
+msgid "Naming convention"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:23
+msgid ""
+"All templates should be put into a directory structure containing the "
+"vendor and package/application name, our sample application is placed "
+"inside the directory:"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:27
+msgid "/usr/local/opnsense/service/templates/*OPNsense/Sample*"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:29
+msgid "Template package content"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:31
+msgid "Every template directory should contain at least 2 files:"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:33
+msgid "a content descriptor, containing the actual targets, named +TARGETS"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:34
+msgid "one or more template(s)"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:39
+msgid "Targets"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:41
+msgid ""
+"The +TARGETS file contains the source template name inside the template "
+"directory and the (dynamic) target filename divided by a colon (:) "
+"multiple lines may be inserted per file."
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:45
+msgid "For example :"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:51
+msgid ""
+"Will create a file /tmp/template\\_sample/simple\\_page.txt using the "
+"template example\\_simple\\_page.txt."
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:56
+msgid ""
+"Optionally you can specify which file or files to remove on call of "
+"\"template cleanup\", which can be specified by using an extra tag next "
+"to the target, such as: "
+":code:`example_simple_page.txt:/tmp/template_sample/simple_page.txt:/tmp/template_sample/simple_page.*`"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:60
+msgid "By default all targets will be removed when calling cleanup."
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:64
+msgid ""
+"If you want to use information from within the config.xml file as output "
+"filename, you can use tags to address the content, like [version] to "
+"input the tag version from the xml file. When generating multiple files "
+"from 1 template, you can use one wildcard (%) to address a section of the"
+" config file, for example [interfaces.%.if] loops over the interfaces and"
+" outputs the value of **if**."
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:73
+msgid "Target overwrites"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:75
+msgid ""
+"Every template package can specify overwrites, which can be used by "
+"vendors who implement and maintain their own templates for features in "
+"OPNsense."
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:78
+msgid ""
+"Simply add files using the target definition in the **+TARGETS.D** "
+"directory of the templates folder using as extension **.TARGET**."
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:80
+msgid ""
+"For example an overwrite for OPNsense/Sample can use the following name "
+"and location "
+":code:`/usr/local/opnsense/service/templates/OPNsense/Sample/+TARGETS.D/custom.TARGET`"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:84
+msgid ""
+"Be vey careful using this feature, you need to maintain these templates "
+"yourself and features may break after upgrades of OPNsense."
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:89
+msgid "Templates"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:91
+msgid ""
+"For more information of the template language itself, please look at "
+"http://jinja.pocoo.org/docs/dev/ and the examples installed in "
+"/usr/local/opnsense/service/templates/OPNsense/Sample."
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:95
+msgid ""
+"There's one special case when using the template engine, every wildcard "
+"used for the output file generation is also provided to the template, so "
+"you are able to determine which filter let to this output."
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:99
+msgid "Those filters are stored in the variable TARGET\\_FILTERS."
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:108
+msgid "Test usage"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:110
+msgid ""
+"The templates can be rendered via the backend service (configd), to test "
+"this functionality on a running OPNsense system, use:"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:125
+msgid "Python template usage example"
+msgstr ""
+
+#: ../../source/development/backend/templates.rst:127
+msgid ""
+"The template system itself is a separate module which is used by configd,"
+" to use (or test) the system without the daemon, use:"
+msgstr ""
+

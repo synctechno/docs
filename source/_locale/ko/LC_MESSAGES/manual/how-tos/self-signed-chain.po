@@ -1,0 +1,619 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:3
+msgid "Setup Self-Signed Certificate Chains with OPNsense"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:6
+msgid ""
+"This how-to describes the process of creating **self-signed certificate "
+"chains** with the help of OPNsense which has all the tools available to "
+"do so."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:9
+msgid ""
+"Chains give the possibility to verify certificates where a single one is "
+"nothing more than that, a single certificate."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:12
+msgid ""
+"Look at the default install, one certificate is created for the "
+"webgui/dashboard. There is nothing wrong with that certificate if we use "
+"a real world CA, but we do not. We create our own chain so that one has "
+"no purpose once done."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:16
+msgid ""
+"Should you even consider using **self-signed certificate chains** in this"
+" age of free available certificates?"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:19
+msgid "Self-signed certificate are just as secure as real world certificates."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:20
+msgid "They are trustworthy chains, you **know** all parties."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:21
+msgid "Intranets are often set up with these chains."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:22
+msgid ""
+"Depending on what you do with your network/servers this is a good "
+"solution."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:23
+msgid "Creating your own chain will give some insight in the process."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:24
+msgid ""
+"Only use them if you are sure you can. Read about the concept in common "
+"there is a lot of info on the net."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:25
+msgid "They are required for intercepted connections (see proxy chapter)"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:27
+msgid "What you should not do with a self-signed chain:"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:29
+msgid "Use them for a web-facing server."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:30
+msgid ""
+"Intercept encrypted traffic on a public wireless network (for example if "
+"you provide access in a hotel)"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:32
+msgid "What you should know about self-signed certificates:"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:34
+msgid ""
+"They are **only** as trustworty as the person, company or organization "
+"signing it, this is also true for trusted certificates."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:36
+msgid ""
+"A chain will need at least a CA and certificate; an intermediate CA is "
+"not needed, but in case of a compromise the CA key would be compromised "
+"too. The CA private key should be stored offline on an USB stick/HD and "
+"put in a safe, not reachable by malicious software or criminals/burglers."
+" The intermediate CA, which is intended for a shorter lifetime can be "
+"kept on the firewall host."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:41
+msgid ""
+"The chain we are going to create will be made with the following "
+"ingredients:"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:43
+msgid ""
+"**CA** ``=`` certificate authority ``=`` root certificate ``-->`` signs "
+"intermediate certificates"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:44
+msgid ""
+"**Intermediate CA** ``=`` subordinate certificate ``=`` signed by CA  "
+"``-->`` signs certificates"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:45
+msgid ""
+"**Certificate** ``=`` signed by Intermediate CA ``=`` can be used for "
+"different services"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:47
+msgid "Please backup before you proceed."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:52
+msgid "Create a Chain for OPNsense"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:56
+msgid "The Authority"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:58
+msgid ""
+"The first certificate to create is the **CA**. The only thing this CA "
+"does is sign the intermediate CA next in the line of trust."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:63
+msgid ""
+"Self-signed root CA's anchor trust chains, they are vital and OpenSSL "
+"requires them for your chain of trust."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:65
+#: ../../source/manual/how-tos/self-signed-chain.rst:95
+msgid "Go to **Trust/Authorities**"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:69
+msgid ""
+"Some entries in the form are showed here. Click on the thumbnail for a "
+"picture."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:71
+msgid "When you are done save the form, the CA is now generated."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:74
+#: ../../source/manual/how-tos/self-signed-chain.rst:100
+#: ../../source/manual/how-tos/self-signed-chain.rst:119
+#: ../../source/manual/how-tos/self-signed-chain.rst:165
+#: ../../source/manual/how-tos/self-signed-chain.rst:183
+#: ../../source/manual/how-tos/self-signed-chain.rst:205
+msgid "**Descriptive name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:74
+msgid "opnsense-ca"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:74
+#: ../../source/manual/how-tos/self-signed-chain.rst:100
+#: ../../source/manual/how-tos/self-signed-chain.rst:119
+#: ../../source/manual/how-tos/self-signed-chain.rst:183
+#: ../../source/manual/how-tos/self-signed-chain.rst:205
+msgid "*Choose a name that makes sense to you*"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:75
+#: ../../source/manual/how-tos/self-signed-chain.rst:101
+#: ../../source/manual/how-tos/self-signed-chain.rst:120
+#: ../../source/manual/how-tos/self-signed-chain.rst:166
+#: ../../source/manual/how-tos/self-signed-chain.rst:184
+#: ../../source/manual/how-tos/self-signed-chain.rst:206
+msgid "**Method**"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:75
+msgid "create an internal ca"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:75
+#: ../../source/manual/how-tos/self-signed-chain.rst:101
+#: ../../source/manual/how-tos/self-signed-chain.rst:166
+#: ../../source/manual/how-tos/self-signed-chain.rst:184
+msgid "*Main purpose of CA*"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:76
+#: ../../source/manual/how-tos/self-signed-chain.rst:102
+#: ../../source/manual/how-tos/self-signed-chain.rst:167
+#: ../../source/manual/how-tos/self-signed-chain.rst:185
+msgid "**Common Name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:76
+msgid "internal-ca"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:76
+#: ../../source/manual/how-tos/self-signed-chain.rst:102
+msgid "*Default is fine, change to liking*"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:77
+#: ../../source/manual/how-tos/self-signed-chain.rst:168
+msgid "**Lifetime(days)**"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:77
+#: ../../source/manual/how-tos/self-signed-chain.rst:168
+msgid "3650"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:77
+#: ../../source/manual/how-tos/self-signed-chain.rst:168
+msgid "*Longer is also no problem for CA*"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:85
+msgid ""
+"Always use valid email addresses for your certificates. Bogus addresses "
+"can pose a security risk - and not only for certificates. F.I.: If one "
+"should use user@example.com and someone claims example.com mail will be "
+"send there!"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:90
+msgid "The Intermediate"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:92
+msgid ""
+"Time to create the second CA, which is an **intermediate CA**. This "
+"certificate will be signed by the root CA we just created. In return it "
+"will sign the sever certificate for OPNsense."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:97
+msgid "Have a look at the form, create an intermediate CA and save it."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:100
+#: ../../source/manual/how-tos/self-signed-chain.rst:119
+msgid "opnsense-ca-intermediate"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:101
+#: ../../source/manual/how-tos/self-signed-chain.rst:184
+msgid "create an intermediate ca"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:102
+msgid "intermediate-ca"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:109
+msgid "The Certificate"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:111
+msgid ""
+"The thirth certificate will be a **server certificate** signed by the "
+"intermediate CA we just created. This will also be the last one we create"
+" for this chain."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:114
+msgid "Go to **Trust/Certificates**"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:116
+msgid ""
+"Have a look at the next form and notice the common name, create a server "
+"certificate and save it."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:120
+#: ../../source/manual/how-tos/self-signed-chain.rst:206
+msgid "create a server certificate"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:120
+#: ../../source/manual/how-tos/self-signed-chain.rst:206
+msgid "*Main purpose of certificate*"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:121
+#: ../../source/manual/how-tos/self-signed-chain.rst:207
+msgid "**SAN**"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:121
+msgid "opnsense.localdomain"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:121
+msgid "*This should reflect the FQDN see Tip*"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:129
+msgid ""
+"When creating the server certificate make sure the **SAN - Subject "
+"Alternative Name** is in fact the the **FQDN - Fully Qualified Domain "
+"Name**. You can find it on **Linux/Unix** with this command ``hostname "
+"-f``"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:133
+msgid "Now we need to start using the chain:"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:135
+#: ../../source/manual/how-tos/self-signed-chain.rst:297
+msgid "Download the intermediate CA."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:139
+msgid "Open your browser and go to **Preferences/Certificate/Authorities**"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:140
+msgid "Import the downloaded CA."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:141
+msgid "Go back to the dashboard & open **System/Settings/Administration**"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:142
+msgid "Set **SSL-Certificate** to use the new server certificate."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:144
+msgid ""
+"Open your browser and open the OPNsense/webgui page. You should be "
+"presented with a certificate that is verified by your intermediate CA."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:150
+msgid "A Chain for Your Local Nextcloud Server"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:153
+msgid ""
+"The local chain for Nextcloud server so we can use OPNsense backup to "
+"Nextcloud."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:155
+msgid "Go ahead and create a new chain **CA -- intermediate CA -- server cert.**."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:158
+msgid "The Nextcloud Authority"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:160
+msgid "Go to **Trust/Authorities** create a new CA for Nextcloud and save it."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:165
+#: ../../source/manual/how-tos/self-signed-chain.rst:167
+msgid "nextcloud-ca"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:165
+msgid "*Choose a name that makes sense*"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:166
+msgid "create a ca"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:167
+#: ../../source/manual/how-tos/self-signed-chain.rst:185
+msgid "*Change to liking*"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:175
+msgid "The Nextcloud Intermediate CA"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:177
+msgid ""
+"Next in line will be the **intermediate CA** which will be signed by the "
+"root CA we did just create. This intermediate CA will sign the Nextcloud "
+"server certificate."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:180
+msgid "Go to **Trust/Authorities** and create an intermediate CA."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:183
+msgid "nextcloud-intermediate-ca"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:185
+#: ../../source/manual/how-tos/self-signed-chain.rst:207
+msgid "cloud.localdomain"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:191
+msgid "Download the intermediate CA and install it to your browser:"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:193
+msgid ""
+"Head to the webgui **Trust/Authorities** export **nextcloud-intermediate-"
+"ca.crt**"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:194
+msgid "Back to the browser, open **Preferences/Certificate/Authorities**"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:195
+msgid "Import the intermediate CA into the certificate store from your browser."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:198
+msgid "The Nextcloud Server Certificate"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:200
+msgid "Next we create the server certificate for the Nextcloud server."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:202
+msgid "Go to **Trust/Certificates** create a server certificate."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:205
+msgid "cloudserver-cert"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:207
+msgid "*Should reflect the FQDN*"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:213
+msgid ""
+"We need to install this certificate and key to our Nextcloud server, two "
+"ways are shown here."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:215
+msgid "Upload the ***.p12** archive to your Nextcloud server in a safe way."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:216
+msgid ""
+"Extact the archive into a single **PEM** file and create a certificate "
+"and a key."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:217
+msgid "Use the following commands for a key and certificate:"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:225
+#: ../../source/manual/how-tos/self-signed-chain.rst:280
+msgid "Or download the key and certificate separately from OPNsense."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:226
+#: ../../source/manual/how-tos/self-signed-chain.rst:281
+msgid "If SSH is used '-i private-key' is not needed."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:233
+msgid "Or use the next quick and dirty method for a single key/certificate file:"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:234
+msgid "Upload the ***.p12**  archive to your Nextcloud server, in a safe way.."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:235
+msgid "Extact the archive into a single **PEM** file and create a certificate."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:242
+msgid ""
+"**/etc/ssl/localcerts** will be alright for the certificate or choose "
+"your own prefered location."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:243
+msgid ""
+"If the key was extracted separatly, **/etc/ssl/private** would be a good "
+"choice."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:244
+msgid ""
+"Be sure to set sane permissions on the private directory, ``755`` would "
+"do it."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:245
+msgid "You could set ``umask`` too (see) ``man umask`` - on your Linux box."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:246
+msgid ""
+"Edit the webserver config to use the certificate and key or single key-"
+"cert file."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:247
+msgid "Sane permissions, ``400`` read only owner is sufficent."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:249
+msgid "You should now be able to backup to Nextcloud and have a verified page."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:251
+msgid ":doc:`cloud_backup`"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:253
+msgid "After setting up the Nextcloud backup everything should work."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:258
+msgid "Chain for the Local Webserver"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:261
+msgid ""
+"This following **chain** we create is basically the same as the previous "
+"chain for Nextcloud server."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:263
+msgid "If needed use the pictures from the Nextcloud chain."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:265
+msgid "Create a chain for your server **CA - intermediate CA - server cert.**"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:267
+msgid "Once done go through the following points:"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:269
+msgid "Download the server.p12 archive."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:270
+msgid "Upload it to the server and extract the archive."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:271
+msgid ""
+"Store the certificate and key respectively in **/etc/ssl/localcerts** and"
+" **/etc/ssl/private**"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:272
+msgid "Use the following commands for that:"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:288
+msgid "Or if you want to use a single file:"
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:295
+msgid "Some sane permissions on them."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:296
+msgid "Set the server to use the installed certificate."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:298
+msgid "Install it in your browser."
+msgstr ""
+
+#: ../../source/manual/how-tos/self-signed-chain.rst:299
+msgid "Head to the webservers page and be presented with a verified certificate."
+msgstr ""
+

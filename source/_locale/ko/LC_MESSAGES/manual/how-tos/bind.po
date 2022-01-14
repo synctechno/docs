@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/bind.rst:3
+msgid "BIND Plugin"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:7
+msgid "History"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:9
+msgid ""
+"The history of the Bind plugin was a user request on OPNsense subreddit "
+"to create a plugin with a full-featured DNS server, also able to manage "
+"zonefiles with the most popular resource records. In the beginning the "
+"plugin was built with only general features so the community can "
+"contribute and adding wished features with a friendly review of the "
+"OPNsense team."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:15
+msgid ""
+"At the time of writing the plugin is able to be used as a local resolver "
+"and as a nice replacement for pfBlockerNG or PiHole, since it is offering"
+" a DNSBL feature via BIND Reverse Policy Zones."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:19
+msgid "For version 2.0 it is planned to offer full zone-file management."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:23
+msgid "Installation"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:25
+msgid ""
+"First of all, go to :menuselection:`System --> Firmware --> Plugins` and "
+"install **os-bind**. You will finde the plugin at "
+":menuselection:`Services --> BIND`."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:30
+msgid "General Settings"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst
+msgid "Enable BIND Daemon"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:33
+msgid "Enable the BIND service."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst
+msgid "Listen IPs"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:35
+msgid "Set the IP addresses the daemon should listen on."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst
+msgid "Listen IPv6"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:37
+msgid "Set the IPv6 addresses the daemon should listen on."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst
+msgid "Listen Port"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:39
+msgid ""
+"Set the port the daemon should listen on. Per default the port is 53530 "
+"to not interfere with existing Unbound/dnsmasq setups. If you want to "
+"switch to BIND only, make sure to stop Unbound and dnsmasq."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst
+msgid "DNS Forwarders"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:45
+msgid ""
+"A list of IP addresses BIND will forward unknown DNS request to. If empty"
+" BIND tries to resolve directly via the root servers."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst
+msgid "Logsize in MB"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:48
+msgid "The amount for each logfile it can grow."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst
+msgid "Maximum Cache Size"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:50
+msgid "This is the amount of RAM (in percent) the daemon can use for caching."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst
+msgid "Recursion"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:52
+msgid ""
+"You have to set a list of networks via **ACL** tab to allow them using "
+"recursion against BIND."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst
+msgid "DNSSec Validation"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:55
+msgid "Whether to enable or disable DNSSec validation."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:60
+msgid "DNSBL"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst
+msgid "Enable DNSBL"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:63
+msgid ""
+"Enable the DNSBL service. BIND will be configured for Reverse Policy "
+"Zones to blacklist domains. Choose below the lists to use for blacklist "
+"categories."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst
+msgid "Type of DNSBL"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:66
+msgid ""
+"Here you can select the lists to use. Do not just select all and save. "
+"There are websites not loading content when nested ads are not loaded."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst
+msgid "Whitelist Domains"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:69
+msgid ""
+"When a website is blocked due to a false positiv you can enter the domain"
+" name here so it is whitelisted before the blacklists come into play."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:72
+msgid ""
+"The Blacklists are downloaded and updated with every **Save** within BIND"
+" configuration. For production use you can go to :menuselection:`System "
+"--> Settings --> Cron` and add a cronjob. On the dropdown list you'll "
+"find the corret task under **Command**. Set the refresh interval as you "
+"wish and save. This will trigger an update of the selected lists and "
+"reload BIND."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:81
+msgid "ACLs"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:83
+msgid ""
+"On tab ACLs you can create ACLs used for configuration options like "
+"**Recursion**. Add a new ACL via **+**, give it a **Name** and add as "
+"many networks as you wish in **Network List**."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:89
+msgid "Advanced"
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:91
+msgid ""
+"Maybe you want to stick with Unbound as your primary DNS and only use "
+"BIND for blacklisting, you can set in :menuselection:`Services --> "
+"Unbound DNS --> General --> Custom Options`."
+msgstr ""
+
+#: ../../source/manual/how-tos/bind.rst:102
+msgid ""
+"When you are using Overrides in Unbound you can not use ``do-not-query-"
+"localhost``. Please remove the line and let Bind listen to your LAN IP "
+"with port 53530 instead of localhost. After this you can set the LAN IP "
+"in ``forward-addr``."
+msgstr ""
+

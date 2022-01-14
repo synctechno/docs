@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/dashboard.rst:3
+msgid "Dashboard"
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:5
+msgid ""
+"The Dashboard is the first page you will see after you log into OPNsense."
+" Additionally, it can be accessed via :menuselection:`Lobby --> "
+"Dashboard`. The Dashboard provides an overview of your system status."
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:10
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:12
+msgid ""
+"What is shown on the Dashboard can be configured by adding and removing "
+"widgets. Some widgets also allow further configuration."
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:15
+msgid "By default, the following widgets are present:"
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:17
+msgid ""
+"**System Information:**  Shows information about the installation "
+"OPNsense version, the hardware in the computer and resource usage."
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:18
+msgid ""
+"**Services:** Shows running background services and allow starting, "
+"stopping and reloading them."
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:19
+msgid "**Gateways:** Shows used gateways."
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:20
+msgid "**Interfaces:** Shows configured interfaces and their status."
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:22
+msgid "In the upper right corner of every widget, there are three buttons:"
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:24
+msgid ""
+"**Edit (pencil icon):** Click this to modify the widget settings. This "
+"button is always present, but it can be greyed out if the widget has no "
+"configuration options."
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:25
+msgid ""
+"**Minimize (minus icon):** Click this to temporarily collapse this "
+"widget. It can be uncollapsed by clicking the 'plus' icon."
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:26
+msgid "**Remove (cross icon):** Removes the widget from the Dashboard."
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:28
+msgid "In the upper right corner of the page, there are two or three buttons:"
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:30
+msgid ""
+"**Add widget:** Opens a dialog window with a list of widgets that can be "
+"added to the Dashboard. Simply click on an entry in the list to add it to"
+" the Dashboard. Do note that its contents will only show up after you "
+"click **Save Settings**."
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:31
+msgid ""
+"**1/2/3/4/6 columns:** Changes the amount of columns to show widgets in. "
+"By default, this is set to **2**. Do not forget to click **Save "
+"Settings** afterwards."
+msgstr ""
+
+#: ../../source/manual/dashboard.rst:32
+msgid ""
+"**Save Settings:** When you change the amount of columns or collapse a "
+"widget, you can make that change persistent by clicking this button. "
+"Otherwise the changes will be discarded as soon as you reload the page."
+msgstr ""
+

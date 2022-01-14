@@ -1,0 +1,336 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/intro.rst:3
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/intro.rst:5
+msgid ""
+"Welcome to the OPNsense documentation & wiki project! The documentation "
+"is work in progress and is updated frequently. If you would like to "
+"contribute in anyway, please take a look at our guide how to "
+":doc:`contribute`."
+msgstr ""
+
+#: ../../source/intro.rst:14
+msgid "Welcome to OPNsense's documentation!"
+msgstr ""
+
+#: ../../source/intro.rst:15
+msgid ""
+"`OPNsense® <https://opnsense.org>`__ is an open source, easy-to-use and "
+"easy-to-build HardenedBSD based firewall and routing platform."
+msgstr ""
+
+#: ../../source/intro.rst:18
+msgid ""
+"**OPNsense** includes most of the features available in expensive "
+"commercial firewalls, and more in many cases. It brings the rich feature "
+"set of commercial offerings with the benefits of open and verifiable "
+"sources."
+msgstr ""
+
+#: ../../source/intro.rst:24
+msgid "Mission Statement"
+msgstr ""
+
+#: ../../source/intro.rst:26
+msgid ""
+"Give users, developers and businesses a friendly, stable and transparent "
+"environment. Make OPNsense the most widely used open source security "
+"platform. The project’s name is derived from open and sense and stands "
+"for: “Open (source) makes sense.”"
+msgstr ""
+
+#: ../../source/intro.rst:37
+msgid "Reading guide"
+msgstr ""
+
+#: ../../source/intro.rst:39
+msgid ""
+"While reading the documentation, it's good to know how the various topics"
+" are structured, what their purpose is and how to find what you're "
+"looking for. Maybe even more important is what this documentation doesn't"
+" offer."
+msgstr ""
+
+#: ../../source/intro.rst:42
+msgid ""
+"If you're looking for deeper insights about networking and best practices"
+" in designing them, this might not be the best place to look. Most of our"
+" documents and how-to's focus on how to use functionality included in our"
+" software and/or one of it's plugins. Quite some books are written about "
+"networking, there are (online) courses available and wikipedia contains a"
+" lot of relevant articles as well. Some interesting reads include the "
+"fundamentals about the `OSI model "
+"<https://en.wikipedia.org/wiki/OSI_model>`__, `IP addressing "
+"<https://en.wikipedia.org/wiki/IP_address>`__, `routing "
+"<https://en.wikipedia.org/wiki/IP_routing>`__ and `network address "
+"translation "
+"<https://en.wikipedia.org/wiki/Network_address_translation>`__. Likely "
+"these resources are more suitable for learning about general network "
+"concepts. Although we do try to include some context in our documents, "
+"there are often assumptions made about the readers knowledge on (basic) "
+"networking."
+msgstr ""
+
+#: ../../source/intro.rst:52
+msgid ""
+"Like many products and projects, ours grows over time, functionality "
+"extends and changes, which sometimes makes it difficult to find what you "
+"need for the version your using. Although we try to keep our "
+"documentation up to date, sometimes text doesn't reflect reality anymore."
+" If that's the case and you think you found an omission, don't hestitate "
+"to open a report using one of our templates on `GitHub "
+"<https://github.com/opnsense/docs/issues/new/choose>`__ or a pull request"
+" of course if you're able to."
+msgstr ""
+
+#: ../../source/intro.rst:58
+msgid ""
+"Always assume the text is intended for the latest version of our product,"
+" in time we might add a version selector in the documentation, but given "
+"OPNsense is a security product, we advise to keep it up to date anyway to"
+" protect yourself against the latests threats."
+msgstr ""
+
+#: ../../source/intro.rst:62
+msgid ""
+"The releases section contains the changelogs for all versions we "
+"published over the years, if there are remarks for an upgrade, this is a "
+"useful resource to collect the details."
+msgstr ""
+
+#: ../../source/intro.rst:65
+msgid ""
+"Installation and setup is all about getting you started using one of the "
+"target options available."
+msgstr ""
+
+#: ../../source/intro.rst:67
+msgid ""
+"The next sections should be quite familiair when working with OPNsense, "
+"as they reflect the options in the menu of the product. In case you're "
+"not yet used to OPNsense, you can always use the search input in the left"
+" corner of the screen to find your topic."
+msgstr ""
+
+#: ../../source/intro.rst:71
+msgid ""
+"Both community and third-party plugins have their own area available, "
+"although they eventually register into the same menu structure, it's good"
+" to know about possible differences between add-ons and standard "
+"functionality. The level of support may differ between core "
+"functionality, as also explained in the \"Support options\" section, "
+"feature requests and bugs maybe treated different as well (a lot of "
+"questions for a plugin which is being developed by a single person, maybe"
+" less active than a group of people improving a plugin together for "
+"example)."
+msgstr ""
+
+#: ../../source/intro.rst:77
+msgid ""
+"When it it comes to building software on top of OPNsense or extending "
+"existing functionality, the development chapter is the one to read. It "
+"explains all about our architecture, coding style, how to hook into "
+"available facilities and much more."
+msgstr ""
+
+#: ../../source/intro.rst:81
+msgid ""
+"Some pointers when it comes to troubleshooting can be found in the "
+"section with the same name, it explains a bit about our issue workflow "
+"and some tips we collected over the years."
+msgstr ""
+
+#: ../../source/intro.rst:84
+msgid ""
+"Last but not least our documentation includes some pages around project "
+"relations, legal guidelines and ways to contribute to the project."
+msgstr ""
+
+#: ../../source/intro.rst:92
+msgid "Feature set"
+msgstr ""
+
+#: ../../source/intro.rst:94
+msgid ""
+"The feature set of OPNsense includes high-end features such as forward "
+"caching proxy, traffic shaping, intrusion detection and easy OpenVPN "
+"client setup. The latest release is based on a recent HardenedBSD for "
+"long-term support and uses a newly developed MVC-framework based on "
+"Phalcon. OPNsense’s focus on security brings unique features such as the "
+"option to use LibreSSL instead of OpenSSL (selectable in the GUI)."
+msgstr ""
+
+#: ../../source/intro.rst:101
+msgid ""
+"The robust and reliable update mechanism gives OPNsense the ability to "
+"provide important security updates in a timely fashion."
+msgstr ""
+
+#: ../../source/intro.rst:108
+msgid "OPNsense Core Features"
+msgstr ""
+
+#: ../../source/intro.rst:110
+msgid "Traffic Shaper"
+msgstr ""
+
+#: ../../source/intro.rst:111
+msgid "Captive portal"
+msgstr ""
+
+#: ../../source/intro.rst:113
+msgid "Voucher support"
+msgstr ""
+
+#: ../../source/intro.rst:114
+msgid "Template manager"
+msgstr ""
+
+#: ../../source/intro.rst:115
+msgid "Multi zone support"
+msgstr ""
+
+#: ../../source/intro.rst:117
+msgid "Forward Caching Proxy"
+msgstr ""
+
+#: ../../source/intro.rst:119
+msgid "Transparent mode supported"
+msgstr ""
+
+#: ../../source/intro.rst:120
+msgid "Blacklist support"
+msgstr ""
+
+#: ../../source/intro.rst:122
+msgid "Virtual Private Network"
+msgstr ""
+
+#: ../../source/intro.rst:124
+msgid "Site to site"
+msgstr ""
+
+#: ../../source/intro.rst:125
+msgid "Road warrior"
+msgstr ""
+
+#: ../../source/intro.rst:126
+msgid "IPsec"
+msgstr ""
+
+#: ../../source/intro.rst:127
+msgid "OpenVPN"
+msgstr ""
+
+#: ../../source/intro.rst:129
+msgid "High Availability & Hardware Failover"
+msgstr ""
+
+#: ../../source/intro.rst:131
+msgid "Includes configuration synchronization & synchronized state tables"
+msgstr ""
+
+#: ../../source/intro.rst:132
+msgid "Moving virtual IPs"
+msgstr ""
+
+#: ../../source/intro.rst:134
+msgid "Intrusion Detection and Inline Prevention"
+msgstr ""
+
+#: ../../source/intro.rst:136
+msgid "Built-in support for Emerging Threats rules"
+msgstr ""
+
+#: ../../source/intro.rst:137
+msgid "Simple setup by use of rule categories"
+msgstr ""
+
+#: ../../source/intro.rst:138
+msgid "Scheduler for period automatic updates"
+msgstr ""
+
+#: ../../source/intro.rst:140
+msgid "Built-in reporting and monitoring tools"
+msgstr ""
+
+#: ../../source/intro.rst:142
+msgid "System Health, the modern take on RRD Graphs"
+msgstr ""
+
+#: ../../source/intro.rst:143
+msgid "Packet Capture"
+msgstr ""
+
+#: ../../source/intro.rst:144
+msgid "Netflow"
+msgstr ""
+
+#: ../../source/intro.rst:146
+msgid "Support for plugins"
+msgstr ""
+
+#: ../../source/intro.rst:147
+msgid "DNS Server & DNS Forwarder"
+msgstr ""
+
+#: ../../source/intro.rst:148
+msgid "DHCP Server and Relay"
+msgstr ""
+
+#: ../../source/intro.rst:149
+msgid "Dynamic DNS"
+msgstr ""
+
+#: ../../source/intro.rst:150
+msgid "Backup & Restore"
+msgstr ""
+
+#: ../../source/intro.rst:152
+msgid "Encrypted cloud backup to Google Drive and Nextcloud"
+msgstr ""
+
+#: ../../source/intro.rst:153
+msgid "Configuration history with colored diff support"
+msgstr ""
+
+#: ../../source/intro.rst:154
+msgid "Local drive backup & restore"
+msgstr ""
+
+#: ../../source/intro.rst:156
+msgid "Stateful inspection firewall"
+msgstr ""
+
+#: ../../source/intro.rst:157
+msgid "Granular control over state table"
+msgstr ""
+
+#: ../../source/intro.rst:158
+msgid "802.1Q VLAN support"
+msgstr ""
+
+#: ../../source/intro.rst:159
+msgid "and more…"
+msgstr ""
+

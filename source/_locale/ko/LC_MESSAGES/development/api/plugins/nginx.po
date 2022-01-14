@@ -1,0 +1,553 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/api/plugins/nginx.rst:2
+msgid "Nginx"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:4
+msgid "Resources (BansController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "Method"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "Module"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "Controller"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "Command"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "``POST``"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "nginx"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "bans"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delban"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "$uuid"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "``GET``"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "get"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "``*``"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchban"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "set"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "``<<uses>>``"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid ""
+"*model* `Nginx.xml "
+"<https://github.com/opnsense/plugins/blob/master/www/nginx/src/opnsense/mvc/app/models/OPNsense/Nginx/Nginx.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:15
+msgid "Resources (LogsController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "logs"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "accesses"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "$uuid=null"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "errors"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "streamAccesses"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "streamErrors"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "tlsHandshakes"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:25
+msgid "Service (ServiceController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "service"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "reconfigure"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "restart"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "start"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "status"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "stop"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "vts"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:41
+msgid "Resources (SettingsController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "settings"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addcachePath"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addcredential"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addcustompolicy"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "adderrorpage"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addhttprewrite"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addhttpserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addipacl"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addlimitRequestConnection"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addlimitZone"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addlocation"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addnaxsirule"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addsecurityHeader"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addsnifwd"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addstreamserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addsyslogTarget"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addtlsFingerprint"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addupstream"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "addupstreamserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "adduserlist"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delcachePath"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delcredential"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delcustompolicy"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delerrorpage"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delhttprewrite"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delhttpserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delipacl"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "dellimitRequestConnection"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "dellimitZone"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "dellocation"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delnaxsirule"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delsecurityHeader"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delsnifwd"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delstreamserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delsyslogTarget"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "deltlsFingerprint"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delupstream"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "delupstreamserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "deluserlist"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "downloadrules"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getcachePath"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getcredential"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getcustompolicy"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "geterrorpage"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "gethttprewrite"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "gethttpserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getipacl"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getlimitRequestConnection"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getlimitZone"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getlocation"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getnaxsirule"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getsecurityHeader"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getsnifwd"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getstreamserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getsyslogTarget"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "gettlsFingerprint"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getupstream"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getupstreamserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "getuserlist"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchcachePath"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchcredential"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchcustompolicy"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searcherrorpage"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchhttprewrite"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchhttpserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchipacl"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchlimitRequestConnection"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchlimitZone"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchlocation"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchnaxsirule"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchsecurityHeader"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchsnifwd"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchstreamserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchsyslogTarget"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchtlsFingerprint"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchupstream"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchupstreamserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "searchuserlist"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setcachePath"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setcredential"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setcustompolicy"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "seterrorpage"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "sethttprewrite"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "sethttpserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setipacl"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setlimitRequestConnection"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setlimitZone"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setlocation"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setnaxsirule"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setsecurityHeader"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setsnifwd"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setstreamserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setsyslogTarget"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "settlsFingerprint"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setupstream"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setupstreamserver"
+msgstr ""
+
+#: ../../source/development/api/plugins/nginx.rst:1
+msgid "setuserlist"
+msgstr ""
+

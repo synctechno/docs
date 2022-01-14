@@ -1,0 +1,334 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/frontend/controller.rst:3
+msgid "Using controllers and views"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:7
+msgid "General"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:9
+msgid ""
+"After routing is performed, the controller takes care of the actual code "
+"to execute for the request. Because we want to implement some basics for "
+"every request that gets processed you should inherit from our base "
+"classes to ensure basic functionality such as authorisation and CSRF "
+"protection."
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:15
+msgid ""
+"Controllers are placed in the directory "
+"/usr/local/opnsense/mvc/app/controllers/<Vendor\\_name>/<Module\\_name>/ "
+"and should use the standard Phalcon naming conventions, suffix "
+"Controller.php on every class file and suffix Action on all action "
+"methods."
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:19
+msgid ""
+"For a detailed description of how Controllers work in Phalcon, please "
+"look at the Phalcon documentation at "
+"http://docs.phalconphp.com/en/latest/reference/controllers.html"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:24
+msgid "View based controllers"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:26
+msgid ""
+"For rendering standard pages we have chosen to use Volt templates, the "
+"base controller to inherit from in this case is "
+"OPNsense\\\\Base\\\\ControllerBase and should take care of binding a "
+"template to the controller. Every template automatically receives "
+"standard features (such as the menu system)."
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:32
+msgid "The wireframe for implementing a single action should look like this:"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:46
+msgid ""
+"And the volt template SampleVendor/Sample/index.volt could contain "
+"something like:"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:53
+msgid ""
+"A full example can be found in the OPNsense\\\\Sample controller "
+"directory."
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:56
+msgid ""
+"More information on how to write Volt pages can be found here : "
+"http://docs.phalconphp.com/en/latest/reference/volt.html"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:61
+msgid "User forms"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:63
+msgid ""
+"When designers need forms for users to input data, they can use the "
+":code:`getForm()` method on our standard controller to feed a simple xml "
+"file as definition for the template engine to use. The example section "
+"contains a step by step guide how to use these."
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:67
+msgid ""
+"The getForm() method itself merily passes the structure to thew view, "
+"which can use this information to render forms on page load (statically)."
+" In our standard layout `partials "
+"<https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/views/layout_partials/form_input_tr.volt>`__"
+" we offer some different record types which we will detail below:"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:72
+msgid "**Attributes**"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:75
+#: ../../source/development/frontend/controller.rst:95
+msgid "Name"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:75
+#: ../../source/development/frontend/controller.rst:95
+msgid "Description"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:77
+msgid "id"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:77
+msgid "unique id of the attribute"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:78
+msgid "type"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:78
+msgid ""
+"type of input or field. For a list of valid types, use the Type table "
+"below"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:79
+msgid "label"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:79
+msgid "attribute label (visible text)"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:80
+msgid "size"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:80
+msgid "size (width in characters) attribute if applicable"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:81
+msgid "height"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:81
+msgid "height (length in characters) attribute if applicable"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:82
+msgid "help"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:82
+msgid "help text"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:83
+msgid "advanced"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:83
+msgid "property \"is advanced\", only display in advanced mode"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:84
+msgid "hint"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:84
+msgid "input control hint"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:85
+msgid "style"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:85
+msgid ""
+"css class(es) to add, helps identifying items easier using jQuery "
+"selectors"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:86
+msgid "width"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:86
+msgid "width in pixels if applicable"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:87
+msgid "allownew"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:87
+msgid "allow new items (for list) if applicable"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:88
+msgid "readonly"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:88
+msgid "if true, input fields will be readonly"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:92
+msgid "**Types**"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:97
+msgid "header"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:97
+msgid "Header row"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:98
+msgid "text"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:98
+msgid "Single line of text"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:99
+msgid "password"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:99
+msgid "Password field for sensitive input. The contents will not be displayed."
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:100
+msgid "textbox"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:100
+msgid "Multiline text box"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:101
+msgid "checkbox"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:101
+msgid "Checkbox"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:102
+msgid "dropdown"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:102
+msgid "Single item selection from dropdown"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:103
+msgid "select_multiple"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:103
+msgid "Multiple item select from dropdown"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:104
+msgid "hidden"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:104
+msgid "Hidden fields not for user interaction"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:105
+msgid "info"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:105
+msgid "Static text (help icon, no input or editing)"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:111
+msgid "API based controllers"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:113
+msgid ""
+"For API calls a separate class is used to derive from, which implements a"
+" simple interface to handle calls. The main difference with the view "
+"controllers is that an action should return a named array containing "
+"response data instead of picking a template."
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:118
+msgid "A simple index controller to echo a request back looks like this:"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:139
+msgid ""
+"When placed inside the API directory of Vendor/Sample can be called by "
+"sending a post request to /api/sample/test/echo, using jQuery:"
+msgstr ""
+
+#: ../../source/development/frontend/controller.rst:156
+msgid ""
+"OPNsense ships with two standard controllers to incorporate default "
+"action scenario's, such as mutating models and restarting services. These"
+" can be found in our repository `here "
+"<https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/controllers/OPNsense/Base/>`__"
+" and are named :code:`ApiMutableModelControllerBase`, "
+":code:`ApiMutableServiceControllerBase`. Both extend "
+":code:`ApiControllerBase` as described in this chapter. The mutable model"
+" controller is explained in more detail in :doc:`using grids "
+"<../examples/using_grids>`, the service controller is explained in "
+":doc:`api enable services <../examples/api_enable_services>`"
+msgstr ""
+

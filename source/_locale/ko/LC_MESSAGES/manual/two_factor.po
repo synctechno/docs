@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/two_factor.rst:3
+msgid "Two-factor authentication"
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:8
+msgid ""
+"Two-factor authentication also known as 2FA or 2-Step Verification is an "
+"authentication method that requires two components, such as a "
+"pin/password + a token."
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:11
+msgid ""
+"OPNsense (version >=16.1.14) offers support for Two-factor authentication"
+" throughout the entire system, with one exception being console/ssh "
+"access."
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:14
+msgid "Supported services are:"
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:16
+msgid "OPNsense Graphical User Interface"
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:17
+msgid "Captive Portal"
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:18
+msgid "Virtual Private Networking - OpenVPN & IPsec"
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:19
+msgid "Caching Proxy"
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:24
+msgid "Time-based One-time Password"
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:25
+msgid ""
+"TOTP is an algorithm that computes a one-time password from a shared "
+"secret key and the current time. OPNsense supports RFC 6238."
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:31
+msgid "Google Authenticator"
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:32
+msgid ""
+"OPNsense fully supports the use of Google's Authenticator application. "
+"This application can generate tokens on Android, iOS and BlackBerry OS. "
+"The usage of this application is free and very simple to setup using "
+"OPNsense."
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:38
+msgid "Other TOTP tokens"
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:39
+msgid ""
+"The 2FA feature can be used with any time based one-time password token, "
+"although it may be necessary to convert the tokens seed to the used "
+"format (base32)."
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:44
+msgid "Configuration & Setup"
+msgstr ""
+
+#: ../../source/manual/two_factor.rst:45
+msgid "To setup see: :doc:`how-tos/two_factor`."
+msgstr ""
+

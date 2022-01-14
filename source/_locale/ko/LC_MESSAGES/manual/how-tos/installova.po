@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/installova.rst:3
+msgid "Installing OPNsense OVA image"
+msgstr ""
+
+#: ../../source/manual/how-tos/installova.rst:5
+msgid ""
+"OPNsense is available as an Open Virtual Appliance (OVA) package, which "
+"can be deployed in various virtualization products (e.g. VMWare, "
+"Virtualbox)."
+msgstr ""
+
+#: ../../source/manual/how-tos/installova.rst:8
+msgid ""
+"The image is not provided as a community free download, but can be "
+"acquired from Deciso."
+msgstr ""
+
+#: ../../source/manual/how-tos/installova.rst:10
+msgid ""
+"In this document we describe the simple steps when deploying in "
+"VirtualBox, other supported platforms function quite similar."
+msgstr ""
+
+#: ../../source/manual/how-tos/installova.rst:15
+msgid "Step 1 - Import appliance"
+msgstr ""
+
+#: ../../source/manual/how-tos/installova.rst:17
+msgid ""
+"In the top menu, choose :menuselection:`File --> Import appliance` and "
+"select the image you downloaded, it should show a dialog like the "
+"following."
+msgstr ""
+
+#: ../../source/manual/how-tos/installova.rst:23
+msgid ""
+"Just click import, accept the license and the image should be transferred"
+" to your machine."
+msgstr ""
+
+#: ../../source/manual/how-tos/installova.rst:28
+msgid "Step 2 - Network setup"
+msgstr ""
+
+#: ../../source/manual/how-tos/installova.rst:30
+msgid ""
+"The OVA template comes with two interfaces configured by default (you can"
+" add more later if needed). Always choose the right type of network "
+"before using OPNsense, the imported adapters might not be assigned to a "
+"type after import."
+msgstr ""
+
+#: ../../source/manual/how-tos/installova.rst:36
+msgid ""
+"Please be aware that the order of the network cards in the virtualization"
+" product may differ from how they are presented to the operating system. "
+"In VirtualBox \"Adapter 1\" seems to connect to WAN (em1)"
+msgstr ""
+
+#: ../../source/manual/how-tos/installova.rst:42
+msgid "Step 3 - Initial configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/installova.rst:44
+msgid ""
+"The virtual machine is operational now, initial configuration is "
+"performed similar to other setups, as described in :doc:`../install`."
+msgstr ""
+

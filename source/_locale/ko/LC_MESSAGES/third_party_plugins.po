@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/third_party_plugins.rst:3
+msgid "Third-party Plugins"
+msgstr ""
+
+#: ../../source/third_party_plugins.rst:10
+msgid ""
+"Like our community plugins in some cases software is delivered under a "
+"non-free license, the Third-party section contains the documentation for "
+"these packages as provided by Deciso or one of its partners."
+msgstr ""
+
+#: ../../source/third_party_plugins.rst:13
+msgid "For support on this software, please consult the vendor as found below."
+msgstr ""
+
+#: ../../source/third_party_plugins.rst:18
+msgid "Deciso"
+msgstr ""
+
+#: ../../source/third_party_plugins.rst:29
+msgid "Sunnyvalley"
+msgstr ""
+

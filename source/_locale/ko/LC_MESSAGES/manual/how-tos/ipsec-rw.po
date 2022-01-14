@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:3
+msgid "IPsec: Setup Remote Access"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:5
+msgid "Index"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:9
+msgid "Intro"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:11
+msgid ""
+"Remote access to the company's infrastructure is one of most important "
+"and critical services exposed to the internet. IPsec Mobile Clients offer"
+" mobile users (formerly known as Road Warriors) a solution that is easy "
+"to setup and compatible with most current devices."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:15
+msgid ""
+"With this guide we will show you how to configure the server side on "
+"OPNsense with the different authentication methods e.g."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:18
+msgid "EAP-MSCHAPv2"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:19
+msgid "Mutual-PSK + XAuth"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:20
+msgid "Mutual-RSA + XAuth"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:21
+msgid "..."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:26
+msgid ""
+"For the sample we will use a private ip for our WAN connection. This "
+"requires us to disable the default block rule on WAN to allow private "
+"traffic. To do so, go to :menuselection:`Interfaces --> [WAN]` and "
+"uncheck “Block private networks”. *(Don't forget to save and apply)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:35
+msgid "Sample Setup"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:36
+msgid ""
+"All configuration examples are based on the following setup, please read "
+"this carefully as all guides depend on it."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:39
+msgid "**Company Network with Remote Client**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:72
+msgid "Company Network"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:74
+msgid "**Hostname**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:74
+msgid "fw1"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:75
+msgid "**WAN IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:75
+msgid "172.18.0.164"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:76
+msgid "**LAN IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:76
+msgid "192.168.1.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:77
+msgid "**LAN DHCP Range**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:77
+msgid "192.168.1.100-192.168.1.200"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:78
+msgid "**IPsec Clients**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:78
+msgid "10.10.0.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:84
+msgid "Firewall Rules Mobile Users"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:85
+msgid "To allow IPsec Tunnel Connections, the following should be allowed on WAN."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:87
+msgid "Protocol ESP"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:88
+msgid "UDP Traffic on Port 500 (ISAKMP)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:89
+msgid "UDP Traffic on Port 4500 (NAT-T)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:94
+msgid ""
+"To allow traffic passing to your LAN subnet you need to add a rule to the"
+" IPsec interface."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:102
+msgid "VPN compatibility"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:104
+msgid ""
+"In the next table you can see the existing VPN authentication mechanisms "
+"and which client operating systems support it, with links to their "
+"configurations. For Linux testing was done with Ubuntu 18.4 Desktop and "
+"*network-manager-strongswan* and *libcharon-extra-plugins* installed. As "
+"Andoid does not support IKEv2 yet we added notes for combinations with "
+"strongSwan app installed to have a broader compatibility for all systems."
+" Mutual RSA and PSK without XAuth requires L2TP, since this legacy "
+"technology is very error prone we will not cover it here."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:113
+msgid "VPN combinations"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "VPN Method"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "Win7"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "Win10"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "Linux"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "Mac OS X"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "IOS"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "Android"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "OPNsense config"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "IKEv1 Hybrid RSA + XAuth"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "N"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "tbd"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid ":doc:`/manual/how-tos/ipsec-rw-srv-ikev1xauth`"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "IKEv1 Mutual RSA + XAuth"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "Y :doc:`/manual/how-tos/ipsec-rw-android`"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "IKEv1 Mutual PSK + XAuth"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "IKEv2 EAP-TLS"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid ":doc:`/manual/how-tos/ipsec-rw-srv-eaptls`"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "IKEv2 RSA local + EAP remote"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "IKEv2 EAP-MSCHAPv2"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "Y :doc:`/manual/how-tos/ipsec-rw-w7`"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "Y :doc:`/manual/how-tos/ipsec-rw-linux`"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "Y"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid ":doc:`/manual/how-tos/ipsec-rw-srv-mschapv2`"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "IKEv2 Mutual RSA + EAP-MSCHAPv2"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid ":doc:`/manual/how-tos/ipsec-rw-srv-rsamschapv2`"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid "IKEv2 EAP-RADIUS"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw.rst:1
+msgid ":doc:`/manual/how-tos/ipsec-rw-srv-eapradius`"
+msgstr ""
+

@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/frontend/models_constraints.rst:3
+msgid "Adding constraints"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:5
+msgid ""
+"Constraints can be used on top of type validations provided by the base "
+"fields described in the previous chapter. The base class `BaseConstraint`"
+" is used as base type and contains shared functionality."
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:8
+msgid ""
+"Since fields are usually only validated when there's change detected, "
+"it's usually necessary to add back references to chain validations."
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:12
+msgid "DependConstraint"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:14
+msgid ""
+"When choices depend on each other, you can use the `DependConstraint` "
+"type. The following example makes `sslurlonly` depend on the `sslbump` "
+"option, since the `<reference>` tag is needed to make sure when one of "
+"the settings changes, the other is validated again too."
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:40
+msgid "AllOrNoneConstraint"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:42
+msgid "Make sure that options are only valid when selected in combination."
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:45
+msgid "SingleSelectConstraint"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:47
+msgid ""
+"When options are not valid in combination, you can hook options together "
+"so only one of the options can be selected at the same time."
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:51
+msgid "UniqueConstraint"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:53
+msgid ""
+"This constraint helps to make sure all items within an `ArrayField` are "
+"unique, such as the following example which makes sure all \"filenames\" "
+"in this set are unique."
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:68
+#: ../../source/development/frontend/models_constraints.rst:94
+msgid "ComparedToFieldConstraint"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:70
+msgid ""
+"The ComparedToFieldConstraint compares the value of the current field to "
+"the value of a referenced field on the same level (for example in the "
+"same ArrayField). It is for example used for the rspamd_ plugin, to "
+"ensure that some values are in the correct order. This constraint can be "
+"used to compare numeric values."
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:77
+#: ../../source/development/frontend/models_constraints.rst:124
+msgid "Example:"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:88
+msgid ""
+"In this example, the valueof the current field must be greater than the "
+"value of the field \"greylistscore\"."
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:90
+msgid "Field values:"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:93
+#: ../../source/development/frontend/models_constraints.rst:140
+msgid "ValidationMessage"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:93
+#: ../../source/development/frontend/models_constraints.rst:140
+msgid ""
+"Validation message (translateable) which will be shown in case the "
+"validation fails."
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:94
+#: ../../source/development/frontend/models_constraints.rst:141
+msgid "type"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:95
+#: ../../source/development/frontend/models_constraints.rst:142
+msgid "field"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:95
+#: ../../source/development/frontend/models_constraints.rst:142
+msgid "the other field which we reference"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:96
+msgid "operator"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:96
+msgid ""
+"The operator to check the value. Valid operators are gt, gte, lt, lte, "
+"eq, neq"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:99
+msgid "Operators:"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:102
+msgid "gt"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:102
+msgid "greater than"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:103
+msgid "gte"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:103
+msgid "greater than or equal"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:104
+msgid "lt"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:104
+msgid "lesser than"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:105
+msgid "lte"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:105
+msgid "lesser than or equal"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:106
+msgid "eq"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:106
+msgid "equal"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:107
+msgid "neq"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:107
+msgid "not equal"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:114
+#: ../../source/development/frontend/models_constraints.rst:141
+msgid "SetIfConstraint"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:116
+msgid ""
+"The SetIfConstraint is used to make some fields conditionally mandatory. "
+"It is mainly used in the nginx_ plugin for example to choose an "
+"implementation type. In general the other field should be an OptionField,"
+" but does not need to. In general it is a good idea to hide or show "
+"fields which are (not) required by an implementation in the frontend as "
+"well to simplify the web interface. Please note: the checked field is "
+"intended to be on the same level (for example ArrayField)."
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:135
+msgid ""
+"In this example, the value will be mandatory, if the field \"match_type\""
+" has the value \"id\"."
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:137
+msgid "Field Values:"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:143
+msgid "check"
+msgstr ""
+
+#: ../../source/development/frontend/models_constraints.rst:143
+msgid "The value of the other field which makes this field required"
+msgstr ""
+

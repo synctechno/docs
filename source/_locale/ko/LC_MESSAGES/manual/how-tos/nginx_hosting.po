@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:3
+msgid "nginx: Local Website Hosting"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:7
+msgid ""
+"Even if you can host websites directly from OPNsense, it is not "
+"recommended for security reasons - especially when sending requests to a "
+"local PHP interpreter. Do NOT consider using the feature to serve PHP "
+"content locally in enterprise networks. It is intended for home users who"
+" want to save money by saving power and know what they are doing. If you "
+"do not know how to handle a web server properly, do not enable this "
+"feature."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:13
+msgid "Prepare"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:15
+msgid ""
+"First of all, a directory has to be created. For example "
+"`/srv/web_application1`. Please note that this directory must be "
+"accessable by nginx and PHP (both running as `www`)."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:18
+msgid ""
+"For example, you can chmod it (+rx for directories, +r for files for this"
+" user) or `chown` it."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:38
+msgid ""
+"Never use chmod 777 and be careful with write permissions. the most "
+"secure way is to change the owner to www (`chown www filename`) and give "
+"write permission only to the web server user (`chmod o+w filename`). The "
+"same is valid for directories. It would be a good idea not to execute "
+"anything in those directories (for example via a special location block "
+"in nginx). If you write your own applications, it is recommended to store"
+" such data outside of your web root."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:46
+msgid ""
+"When the directory exists, you can create a file in this directory. Let's"
+" say, it should be called test.php and should show some information about"
+" PHP:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:55
+msgid "Press control + d to end the input."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:59
+msgid "you can also use vim if you install vim-lite via pkg."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:68
+msgid ""
+"In a real world scenario, you would probably copy an archive (.tar.gz, "
+".tar.xz, .tar.bz or .zip) via SFTP or SCP on the firewall and execute a "
+"command to extract it. Read the man pages for tar, the compression tool "
+"or unzip for more detailed instructions."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:73
+msgid "Configure Locations"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:77
+msgid "For a location, the following directives are important:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:80
+#: ../../source/manual/how-tos/nginx_hosting.rst:91
+msgid "Directive"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:80
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:82
+#: ../../source/manual/how-tos/nginx_hosting.rst:93
+msgid "Match Type and URL Pattern"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:82
+msgid "How to match the location and the pattern"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:83
+#: ../../source/manual/how-tos/nginx_hosting.rst:94
+msgid "File System Root"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:83
+msgid "Directory of web applicaton"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:84
+#: ../../source/manual/how-tos/nginx_hosting.rst:95
+msgid "Upstream Servers"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:84
+msgid "Send it to a remote interpreter instead of using the local one"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:85
+#: ../../source/manual/how-tos/nginx_hosting.rst:96
+msgid "Pass Request To PHP Interpreter"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:85
+msgid "Check if you want to enable PHP (runs locally as user www) or remotely"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:86
+#: ../../source/manual/how-tos/nginx_hosting.rst:97
+msgid "Router Script"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:86
+msgid "Sends all request to a specific script (entry point of application)"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:91
+msgid "Value"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:93
+msgid "~* .*.php or simmilar"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:94
+msgid "/srv/web_application1"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:95
+#: ../../source/manual/how-tos/nginx_hosting.rst:97
+msgid "empty"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:96
+msgid "checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:102
+msgid "Configure HTTP Server"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:106
+msgid ""
+"Configuring the HTTP server is simple. You need a hostname (for example "
+"website.test), a port (8080/TCP is the HTTP alternative port, so it is "
+"good for testing. For production sites you should stick with the "
+"defaults). Please select the prevously created location to serve web "
+"content. Please also configure a root here, because all requests, which "
+"do not match, will be handled by the server default. The default server "
+"will just serve the static file."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:114
+msgid "Testing"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:116
+msgid ""
+"To test if you web server is running, you can paste call it by its IP and"
+" port."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:120
+msgid ""
+"Please note that IPv6 addresses must be enclosed within square brackets "
+"like http://[::1]/ or http://[::1]:8080/."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:128
+msgid "Security Considerations"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:130
+msgid ""
+"This is nginx and not httpd. It will not care about your .htaccess files."
+" Do not put secret data in unprotected directories. You can protect those"
+" directories by yourself, but make sure you don't forget them. Some "
+"application depend on this file."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:133
+msgid "Do not overlap nor use OPNsense directories as root"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:134
+msgid ""
+"Do not upload badly maintained software. If your firewall gets "
+"compromised, it will become easy to compromise your hosts too."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:136
+msgid "All your applications run under the same user (www)"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:137
+msgid "Watch out for advisories_"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:138
+msgid "Install updates ASAP"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:139
+msgid "Check your logs regularly."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_hosting.rst:140
+msgid ""
+"Consider hardening your directory and file access permission (like making"
+" directories and files read only for nginx and PHP)"
+msgstr ""
+

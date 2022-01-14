@@ -1,0 +1,641 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/guidelines/psr2.rst:3
+msgid "PSR-2 Coding Style Guide"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst
+msgid ""
+"The PSR1 and PSR2 Coding Standards are provided by FIG under a MIT "
+"license."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst
+msgid "See license details: http://www.php-fig.org/bylaws/licensing-policies/"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst
+msgid ""
+"The original content of this page can be found at `php-fig <http://www"
+".php-fig.org/psr/psr-2/>`__"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:11
+msgid ""
+"This guide extends and expands on `PSR-1 <https://github.com/php-fig/fig-"
+"standards/blob/master/accepted/PSR-1-basic-coding-standard.md>`__, the "
+"basic coding standard."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:15
+msgid ""
+"The intent of this guide is to reduce cognitive friction when scanning "
+"code from different authors. It does so by enumerating a shared set of "
+"rules and expectations about how to format PHP code."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:19
+msgid ""
+"The style rules herein are derived from commonalities among the various "
+"member projects. When various authors collaborate across multiple "
+"projects, it helps to have one set of guidelines to be used among all "
+"those projects. Thus, the benefit of this guide is not in the rules "
+"themselves, but in the sharing of those rules."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:24
+msgid ""
+"The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL "
+"NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and "
+"\"OPTIONAL\" in this document are to be interpreted as described in `RFC "
+"2119 <http://www.ietf.org/rfc/rfc2119.txt>`__."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:31
+msgid "1. Overview"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:33
+msgid ""
+"Code MUST follow a \"coding style guide\" PSR [`PSR-1 <https://github.com"
+"/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-"
+"standard.md>`__]."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:36
+msgid "Code MUST use 4 spaces for indenting, not tabs."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:38
+msgid ""
+"There MUST NOT be a hard limit on line length; the soft limit MUST be 120"
+" characters; lines SHOULD be 80 characters or less."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:41
+msgid ""
+"There MUST be one blank line after the ``namespace`` declaration, and "
+"there MUST be one blank line after the block of ``use`` declarations."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:44
+msgid ""
+"Opening braces for classes MUST go on the next line, and closing braces "
+"MUST go on the next line after the body."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:47
+msgid ""
+"Opening braces for methods MUST go on the next line, and closing braces "
+"MUST go on the next line after the body."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:50
+msgid ""
+"Visibility MUST be declared on all properties and methods; ``abstract`` "
+"and ``final`` MUST be declared before the visibility; ``static`` MUST be "
+"declared after the visibility."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:54
+msgid ""
+"Control structure keywords MUST have one space after them; method and "
+"function calls MUST NOT."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:57
+msgid ""
+"Opening braces for control structures MUST go on the same line, and "
+"closing braces MUST go on the next line after the body."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:60
+msgid ""
+"Opening parentheses for control structures MUST NOT have a space after "
+"them, and closing parentheses for control structures MUST NOT have a "
+"space before."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:65
+msgid "1.1. Example"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:67
+msgid "This example encompasses some of the rules below as a quick overview:"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:99
+msgid "2. General"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:102
+msgid "2.1 Basic Coding Standard"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:104
+msgid ""
+"Code MUST follow all rules outlined in `PSR-1 <https://github.com/php-fig"
+"/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md>`__."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:108
+msgid "2.2 Files"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:110
+msgid ""
+"All PHP files MUST use the Unix LF (linefeed) line ending. All PHP files "
+"MUST end with a single blank line."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:113
+msgid "The closing ``?>`` tag MUST be omitted from files containing only PHP."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:116
+msgid "2.3. Lines"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:118
+msgid "There MUST NOT be a hard limit on line length."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:120
+msgid ""
+"The soft limit on line length MUST be 120 characters; automated style "
+"checkers MUST warn but MUST NOT error at the soft limit."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:123
+msgid ""
+"Lines SHOULD NOT be longer than 80 characters; lines longer than that "
+"SHOULD be split into multiple subsequent lines of no more than 80 "
+"characters each."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:127
+msgid "There MUST NOT be trailing whitespace at the end of non-blank lines."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:129
+msgid ""
+"Blank lines MAY be added to improve readability and to indicate related "
+"blocks of code."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:132
+msgid "There MUST NOT be more than one statement per line."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:135
+msgid "2.4. Indenting"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:137
+msgid "Code MUST use an indent of 4 spaces, and MUST NOT use tabs for indenting."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:142
+msgid ""
+"N.b.: Using only spaces, and not mixing spaces with tabs, helps to avoid "
+"problems with diffs, patches, history, and annotations. The use of spaces"
+" also makes it easy to insert fine-grained sub-indentation for inter-line"
+" alignment."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:148
+msgid "2.5. Keywords and True/False/Null"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:150
+msgid ""
+"PHP `keywords <http://php.net/manual/en/reserved.keywords.php>`__ MUST be"
+" in lower case."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:153
+msgid "The PHP constants ``true``, ``false``, and ``null`` MUST be in lower case."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:158
+msgid "3. Namespace and Use Declarations"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:160
+msgid ""
+"When present, there MUST be one blank line after the ``namespace`` "
+"declaration."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:163
+msgid ""
+"When present, all ``use`` declarations MUST go after the ``namespace`` "
+"declaration."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:166
+msgid "There MUST be one ``use`` keyword per declaration."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:168
+msgid "There MUST be one blank line after the ``use`` block."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:170
+msgid "For example:"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:185
+msgid "4. Classes, Properties, and Methods"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:187
+msgid "The term \"class\" refers to all classes, interfaces, and traits."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:190
+msgid "4.1. Extends and Implements"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:192
+msgid ""
+"The ``extends`` and ``implements`` keywords MUST be declared on the same "
+"line as the class name."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:195
+msgid ""
+"The opening brace for the class MUST go on its own line; the closing "
+"brace for the class MUST go on the next line after the body."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:213
+msgid ""
+"Lists of ``implements`` MAY be split across multiple lines, where each "
+"subsequent line is indented once. When doing so, the first item in the "
+"list MUST be on the next line, and there MUST be only one interface per "
+"line."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:237
+msgid "4.2. Properties"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:239
+msgid "Visibility MUST be declared on all properties."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:241
+msgid "The ``var`` keyword MUST NOT be used to declare a property."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:243
+msgid "There MUST NOT be more than one property declared per statement."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:245
+msgid ""
+"Property names SHOULD NOT be prefixed with a single underscore to "
+"indicate protected or private visibility."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:248
+msgid "A property declaration looks like the following."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:261
+msgid "4.3. Methods"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:263
+msgid "Visibility MUST be declared on all methods."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:265
+msgid ""
+"Method names SHOULD NOT be prefixed with a single underscore to indicate "
+"protected or private visibility."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:268
+msgid ""
+"Method names MUST NOT be declared with a space after the method name. The"
+" opening brace MUST go on its own line, and the closing brace MUST go on "
+"the next line following the body. There MUST NOT be a space after the "
+"opening parenthesis, and there MUST NOT be a space before the closing "
+"parenthesis."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:274
+msgid ""
+"A method declaration looks like the following. Note the placement of "
+"parentheses, commas, spaces, and braces:"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:291
+msgid "4.4. Method Arguments"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:293
+msgid ""
+"In the argument list, there MUST NOT be a space before each comma, and "
+"there MUST be one space after each comma."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:296
+msgid ""
+"Method arguments with default values MUST go at the end of the argument "
+"list."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:312
+#: ../../source/development/guidelines/psr2.rst:378
+msgid ""
+"Argument lists MAY be split across multiple lines, where each subsequent "
+"line is indented once. When doing so, the first item in the list MUST be "
+"on the next line, and there MUST be only one argument per line."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:316
+msgid ""
+"When the argument list is split across multiple lines, the closing "
+"parenthesis and opening brace MUST be placed together on their own line "
+"with one space between them."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:337
+msgid "4.5. ``abstract``, ``final``, and ``static``"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:339
+msgid ""
+"When present, the ``abstract`` and ``final`` declarations MUST precede "
+"the visibility declaration."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:342
+msgid ""
+"When present, the ``static`` declaration MUST come after the visibility "
+"declaration."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:363
+msgid "4.6. Method and Function Calls"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:365
+msgid ""
+"When making a method or function call, there MUST NOT be a space between "
+"the method or function name and the opening parenthesis, there MUST NOT "
+"be a space after the opening parenthesis, and there MUST NOT be a space "
+"before the closing parenthesis. In the argument list, there MUST NOT be a"
+" space before each comma, and there MUST be one space after each comma."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:393
+msgid "5. Control Structures"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:395
+msgid "The general style rules for control structures are as follows:"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:397
+msgid "There MUST be one space after the control structure keyword"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:398
+msgid "There MUST NOT be a space after the opening parenthesis"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:399
+msgid "There MUST NOT be a space before the closing parenthesis"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:400
+msgid ""
+"There MUST be one space between the closing parenthesis and the opening "
+"brace"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:402
+msgid "The structure body MUST be indented once"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:403
+msgid "The closing brace MUST be on the next line after the body"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:405
+msgid ""
+"The body of each structure MUST be enclosed by braces. This standardizes "
+"how the structures look, and reduces the likelihood of introducing errors"
+" as new lines get added to the body."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:410
+msgid "5.1. ``if``, ``elseif``, ``else``"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:412
+msgid ""
+"An ``if`` structure looks like the following. Note the placement of "
+"parentheses, spaces, and braces; and that ``else`` and ``elseif`` are on "
+"the same line as the closing brace from the earlier body."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:427
+msgid ""
+"The keyword ``elseif`` SHOULD be used instead of ``else if`` so that all "
+"control keywords look like single words."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:431
+msgid "5.2. ``switch``, ``case``"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:433
+msgid ""
+"A ``switch`` structure looks like the following. Note the placement of "
+"parentheses, spaces, and braces. The ``case`` statement MUST be indented "
+"once from ``switch``, and the ``break`` keyword (or other terminating "
+"keyword) MUST be indented at the same level as the ``case`` body. There "
+"MUST be a comment such as ``// no break`` when fall-through is "
+"intentional in a non-empty ``case`` body."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:461
+msgid "5.3. ``while``, ``do while``"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:463
+msgid ""
+"A ``while`` statement looks like the following. Note the placement of "
+"parentheses, spaces, and braces."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:473
+msgid ""
+"Similarly, a ``do while`` statement looks like the following. Note the "
+"placement of parentheses, spaces, and braces."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:484
+msgid "5.4. ``for``"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:486
+msgid ""
+"A ``for`` statement looks like the following. Note the placement of "
+"parentheses, spaces, and braces."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:497
+msgid "5.5. ``foreach``"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:499
+msgid ""
+"A ``foreach`` statement looks like the following. Note the placement of "
+"parentheses, spaces, and braces."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:510
+msgid "5.6. ``try``, ``catch``"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:512
+msgid ""
+"A ``try catch`` block looks like the following. Note the placement of "
+"parentheses, spaces, and braces."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:528
+msgid "6. Closures"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:530
+msgid ""
+"Closures MUST be declared with a space after the ``function`` keyword, "
+"and a space before and after the ``use`` keyword."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:533
+msgid ""
+"The opening brace MUST go on the same line, and the closing brace MUST go"
+" on the next line following the body."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:536
+msgid ""
+"There MUST NOT be a space after the opening parenthesis of the argument "
+"list or variable list, and there MUST NOT be a space before the closing "
+"parenthesis of the argument list or variable list."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:540
+msgid ""
+"In the argument list and variable list, there MUST NOT be a space before "
+"each comma, and there MUST be one space after each comma."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:543
+msgid ""
+"Closure arguments with default values MUST go at the end of the argument "
+"list."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:546
+msgid ""
+"A closure declaration looks like the following. Note the placement of "
+"parentheses, commas, spaces, and braces:"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:561
+msgid ""
+"Argument lists and variable lists MAY be split across multiple lines, "
+"where each subsequent line is indented once. When doing so, the first "
+"item in the list MUST be on the next line, and there MUST be only one "
+"argument or variable per line."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:566
+msgid ""
+"When the ending list (whether or arguments or variables) is split across "
+"multiple lines, the closing parenthesis and opening brace MUST be placed "
+"together on their own line with one space between them."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:570
+msgid ""
+"The following are examples of closures with and without argument lists "
+"and variable lists split across multiple lines."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:620
+msgid ""
+"Note that the formatting rules also apply when the closure is used "
+"directly in a function or method call as an argument."
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:636
+msgid "7. Conclusion"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:638
+msgid ""
+"There are many elements of style and practice intentionally omitted by "
+"this guide. These include but are not limited to:"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:641
+msgid "Declaration of global variables and global constants"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:643
+msgid "Declaration of functions"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:645
+msgid "Operators and assignment"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:647
+msgid "Inter-line alignment"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:649
+msgid "Comments and documentation blocks"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:651
+msgid "Class name prefixes and suffixes"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:653
+msgid "Best practices"
+msgstr ""
+
+#: ../../source/development/guidelines/psr2.rst:655
+msgid ""
+"Future recommendations MAY revise and extend this guide to address those "
+"or other elements of style and practice."
+msgstr ""
+

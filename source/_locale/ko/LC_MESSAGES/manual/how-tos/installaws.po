@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/installaws.rst:3
+msgid "Installing OPNsense AWS image"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:7
+msgid "To apply for access to the OPNsense Amazon AWS EC2 cloud image, you need:"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:9
+msgid "An active support subscription"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:10
+msgid "see: https://opnsense.org/support-overview/commercial-support/)"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:11
+msgid "Supply your Amazon Account Number"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:12
+msgid "to share the Amazon Machine Image with."
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:14
+msgid "The zone or zones you would like to install the image in"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:14
+msgid "e.g. eu-central-1, us-east-1"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:18
+msgid "Step 1 - New Instance"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:19
+msgid ""
+"Start a new instance and then go to \"instances\", followed by \"launch "
+"instance\" and then \"My AMIs\", don't forget to select \"Shared with "
+"me\""
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:25
+msgid "Step 2 - Select Type"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:26
+msgid "Choose an instance type"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:33
+msgid "Step 3 - Configure security group"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:34
+msgid ""
+"To configure security group, make sure you allow HTTPS access from your "
+"own network."
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:42
+msgid "Step 4 - Configure a disk"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:50
+msgid "Step 5 - Review your settings"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:57
+msgid "Step 6 - SSH keypair"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:58
+msgid ""
+"Select ssh keypair or skip, the ssh key isn’t used for OPNsense, ssh is "
+"disabled by default."
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:65
+msgid "Step 7 - Review status page"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:72
+msgid "Step 8 - AWS instances"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:73
+msgid "Go to your AWS instances"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:78
+msgid ""
+"Select the image, go to “image settings” then “get system log” to obtain "
+"the initial password"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:83
+msgid "Step 9 - Initial root password"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:84
+msgid "Copy your initial root password (line ** set initial….)"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:91
+msgid "Step 10 - Search current address"
+msgstr ""
+
+#: ../../source/manual/how-tos/installaws.rst:97
+msgid "Login to OPNsense using the address provided."
+msgstr ""
+

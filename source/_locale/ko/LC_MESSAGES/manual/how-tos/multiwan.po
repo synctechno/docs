@@ -1,0 +1,600 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/multiwan.rst:3
+msgid "Multi WAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:4
+msgid ""
+"Multi WAN scenarios are commonly used for failover or load balancing, but"
+" combinations are also possible with OPNsense."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:24
+msgid "Configure Failover"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:25
+msgid "To setup Failover the following step will be taken:"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:27
+msgid "Add monitor IPs to the gateways"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:28
+msgid "Add a gateway group"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:29
+msgid "Configure DNS for each gateway"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:30
+msgid "Use policy based routing to utilize our gateway group"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:31
+msgid ""
+"Add a firewall rule for DNS traffic that is intended for the firewall "
+"itself"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:34
+msgid ""
+"Did you know you can browse quick and easy to the right page by using the"
+" search box in the top right corner of your screen? Like this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:41
+msgid "Example configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:42
+msgid ""
+"Our example utilized two previous configured WAN gateways that both are "
+"confirmed to function separately. As DNS's and monitor IPs we will "
+"utilize google's DNS services 8.8.8.8 and 8.8.4.4, of course you can use "
+"your own 'known good' setting."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:46
+msgid "We defined WAN and WAN2, where WAN will be our primary (default) gateway."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:49
+msgid "Step 1 - Add monitor IPs"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:50
+msgid ""
+"You may skip this step if you already have setup the monitoring IP and "
+"both gateways are shown as online."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:53
+msgid ""
+"To add a monitoring IP go to :menuselection:`System --> Gateways --> "
+"Single` and click on the first pencil symbol to edit the first gateway."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:56
+#: ../../source/manual/how-tos/multiwan.rst:66
+msgid "Now make sure the following is configured:"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:59
+#: ../../source/manual/how-tos/multiwan.rst:69
+msgid "**Disable Gateway Monitoring**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:59
+#: ../../source/manual/how-tos/multiwan.rst:61
+#: ../../source/manual/how-tos/multiwan.rst:69
+#: ../../source/manual/how-tos/multiwan.rst:71
+msgid "Unchecked"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:59
+#: ../../source/manual/how-tos/multiwan.rst:69
+msgid "*Make sure monitoring is enabled*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:60
+#: ../../source/manual/how-tos/multiwan.rst:70
+msgid "**Monitor IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:60
+msgid "8.8.8.8"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:60
+msgid "*We use Google's DNS*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:61
+#: ../../source/manual/how-tos/multiwan.rst:71
+msgid "**Mark Gateway as Down**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:64
+msgid "Then click on the second pencil symbol to edit the second gateway."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:70
+msgid "8.8.4.4"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:70
+msgid "*We use Google's second DNS*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:75
+msgid "Step 2 - Add Gateway Group"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:76
+msgid ""
+"Go to :menuselection:`System --> Gateways --> Group` and press **+ Add "
+"Group** in the upper right corner."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:79
+msgid "Use the following settings:"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:82
+msgid "**Group Name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:82
+msgid "WANGWGROUP"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:82
+msgid "*Enter a name for the gw routing later on*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:83
+msgid "**Gateway Priority**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:83
+msgid "WANGW  / Tier 1"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:83
+msgid "*Select the first gateway and Tier 1*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:84
+msgid "*..*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:84
+msgid "WAN2GW / Tier 2"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:84
+msgid "*Select the second gateway and Tier 2*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:85
+msgid "**Trigger Level**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:85
+#: ../../source/manual/how-tos/multiwan.rst:94
+msgid "Packet Loss"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:85
+msgid "*Select the trigger you want to use*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:86
+#: ../../source/manual/how-tos/multiwan.rst:150
+msgid "**Description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:86
+msgid "Failover Group"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:86
+#: ../../source/manual/how-tos/multiwan.rst:150
+msgid "*Freely chosen description*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:90
+msgid "**Trigger Level Explained**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:92
+msgid "Member Down"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:93
+msgid "*Triggers when the gateway has 100% packet loss.*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:95
+msgid ""
+"*Triggers when the packet loss to a gateway is higher than the defined "
+"threshold.*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:96
+msgid "High Latency"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:97
+msgid ""
+"*Triggers when the latency to a gateway higher than its defined "
+"threshold.*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:98
+msgid "Packet Loss or High Latency"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:99
+msgid "*Triggers for either of the above conditions.*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:102
+msgid "Step 3 - Configure DNS for each gateway"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:103
+msgid ""
+"Go to :menuselection:`System --> Settings --> General` and make sure each"
+" gateway has its own DNS setup: like this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:106
+msgid "DNS servers"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:109
+msgid "**8.8.8.8**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:109
+msgid "WANGW"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:110
+msgid "**8.8.4.4**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:110
+msgid "WAN2GW"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:114
+msgid "Step 4 - Policy based routing"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:115
+msgid "Go to :menuselection:`Firewall --> Rules`"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:117
+msgid ""
+"For our example we will update the default LAN pass rule. Click on the "
+"pencil next to this rule (*Default allow LAN to any rule*)."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:120
+msgid "Now under **Gateway** change selection to *WANGWGROUP*."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:122
+msgid "**Save** and **Apply changes**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:125
+msgid ""
+"This rule will utilize the gateway group for all traffic coming from our "
+"LAN network. This also means that traffic intended for the firewall "
+"itself will be routed in this (wrong) direction. That is why Step 5 is "
+"needed for our DNS traffic going to and coming from our DNS forwarder on "
+"the firewall itself."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:131
+msgid "Step 5 - Add allow rule for DNS traffic"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:132
+msgid ""
+"Add a rule just above the default LAN allow rule to make sure traffic to "
+"and from the firewall on port 53 (DNS) is not going to be routed to the "
+"Gateway Group that we just defined."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:136
+msgid "Start with pressing the *+* icon in the bottom left corner."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:138
+msgid "Enter the following details:"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:141
+msgid "**Action**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:141
+msgid "Pass"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:141
+msgid "*Allow this traffic to pass*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:142
+msgid "**Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:142
+msgid "LAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:143
+msgid "**TCP/IP Version**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:143
+msgid "IPv4"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:143
+msgid "*For our example we use IPv4*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:144
+msgid "**Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:144
+msgid "TCP/UDP"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:144
+msgid "*Select the right protocol*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:145
+msgid "**Source**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:145
+msgid "any"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:146
+#: ../../source/manual/how-tos/multiwan.rst:147
+msgid "**Destination**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:146
+msgid "Single host or Network"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:147
+msgid "192.168.1.1/32"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:147
+msgid "*IP of the firewall only hence /32*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:148
+msgid "**Destination port range**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:148
+msgid "DNS - DNS"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:148
+msgid "*Only DNS*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:149
+msgid "**Category**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:149
+msgid "DNS"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:149
+msgid "*See* :doc:`fwcategory`"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:150
+msgid "Local Route DNS"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:151
+msgid "**Gateway**"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:151
+msgid "default"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:151
+msgid "*Select default*"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:155
+msgid ""
+"When using Unbound for DNS resolution you should also enable *Default "
+"Gateway Switching* via **System->Settings->General**, as local generated "
+"traffic will only use the current default gateway which will not change "
+"without this option."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:160
+msgid "Advanced Options"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:161
+msgid ""
+"For each gateway there are several advanced options you can use to change"
+" the default behavior/thresholds. These option can be changed under "
+":menuselection:`System --> Gateways --> Single`, press the pencil icon "
+"next to the Gateway you want to update."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:180
+msgid "The current options are:"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:167
+msgid "Latency thresholds"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:168
+msgid "Low and high thresholds for latency in milliseconds."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:169
+msgid "Packet Loss thresholds"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:170
+msgid "Low and high thresholds for packet loss in %."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:171
+msgid "Probe Interval"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:172
+msgid "How often that an ICMP probe will be sent in seconds."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:173
+msgid "Down"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:174
+msgid "The number of seconds of failed probes before the alarm will fire."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:175
+msgid "Avg Delay Replies Qty"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:176
+msgid ""
+"How many replies should be used to compute average delay for controlling "
+"\"delay\" alarms?"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:177
+msgid "Avg Packet Loss Probes Qty"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:178
+msgid "How many probes should be used to compute average packet loss."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:180
+msgid "Lost Probe Delay"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:180
+msgid "The delay (in qty of probe samples) after which loss is computed."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:184
+msgid "Configure Load Balancing"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:185
+msgid ""
+"To setup load balancing follow the same configuration procedure as for "
+"Failover, but in step 2 choose same **Tier** for both Gateways."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:188
+msgid ""
+"This will change the behavior from failover to equal balancing between "
+"the two gateways."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:192
+msgid "Sticky Connection"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:193
+msgid ""
+"Some web sites don't like changing request IPs for the same session, this"
+" may lead to unexpected behavior. To solve this you can use the option "
+"**Sticky Connections**, this will make sure each subsequent request from "
+"the same user to the same website is send through the same gateway."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:198
+msgid ""
+"To set this option can be set under :menuselection:`Firewall --> Settings"
+" --> Advanced`."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:201
+msgid "Unequal Balancing (Weight)"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:202
+msgid ""
+"If you have a non symmetric setup with one IPS having a much higher "
+"bandwidth than the other then you can set a weight on each gateway to "
+"change the load balance. For instance if you have one line of 10 Mbps and"
+" one of 20 Mbps then set the weight of the first one to 1 and the second "
+"one to 2. This way the second gateway will get twice as many traffic to "
+"handle than the first."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:208
+msgid ""
+"To do so, go to :menuselection:`System --> Gateways --> Single` and press"
+" the pencil icon next to the Gateway you want to update. The weight is "
+"defined under the advanced section."
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:213
+msgid "Combining Balancing & Failover"
+msgstr ""
+
+#: ../../source/manual/how-tos/multiwan.rst:214
+msgid ""
+"To combine Load Balancing with Failover you will have 2 or more WAN "
+"connections for Balancing purposes and 1 or more for Failover. OPNsense "
+"offers 5 tiers (Failover groups) each tier can hold multiple ISPs/WAN "
+"gateways."
+msgstr ""
+

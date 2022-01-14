@@ -1,0 +1,731 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/monit.rst:3
+msgid "Monit"
+msgstr ""
+
+#: ../../source/manual/monit.rst:5
+msgid ""
+"OPNsense uses Monit for monitoring services. Monit has quite extensive "
+"monitoring capatibilities, which is why the configuration options are "
+"extensive as well. This guide will do a quick walk through the setup, "
+"with the configuration options explained in more detail afterwards, along"
+" with some caveats."
+msgstr ""
+
+#: ../../source/manual/monit.rst:11
+msgid "Global setup"
+msgstr ""
+
+#: ../../source/manual/monit.rst:13
+msgid ""
+"Navigate to :menuselection:`Services --> Monit --> Settings`. On the "
+"“General Settings” tab, turn on Monit and fill in the details of your "
+"SMTP server. Save the changes. Then, navigate to the “Alert settings” and"
+" add one for your e-mail address. If your mail server requires the “From”"
+" field to be properly set, enter ``From: sender@example.com`` in the "
+"“Mail format” field. Save the alert and apply the changes."
+msgstr ""
+
+#: ../../source/manual/monit.rst:19
+msgid "Adding an alert"
+msgstr ""
+
+#: ../../source/manual/monit.rst:21
+msgid ""
+"First, you have to decide what you want to monitor and what constitutes a"
+" failure. It helps if you have some knowledge about how Monit alerts are "
+"set up. This is described in the `Monit documentation "
+"<https://mmonit.com/monit/documentation/monit.html#ALERT-MESSAGES>`_."
+msgstr ""
+
+#: ../../source/manual/monit.rst:25
+msgid ""
+"If you have done that, you have to add the condition first. Navigate to "
+"the 'Service Test Settings' tab and look if the condition you want to add"
+" already exists. If it doesn't, click the + button to add it."
+msgstr ""
+
+#: ../../source/manual/monit.rst:28
+msgid ""
+"Now navigate to the 'Service Test' tab and click the + icon. In the "
+"dialog, you can now add your service test. If you're done, save it, then "
+"apply the changes."
+msgstr ""
+
+#: ../../source/manual/monit.rst:31
+msgid ""
+"The fields in the dialogs are described in more detail in the “Settings "
+"overview” section of this document."
+msgstr ""
+
+#: ../../source/manual/monit.rst:35
+msgid "Example 1"
+msgstr ""
+
+#: ../../source/manual/monit.rst:37
+msgid ""
+"In this example, we'll add a service to restart the FTP proxy (running on"
+" port 8021) if it has stopped. To avoid an eternal loop in case something"
+" is wrong, we'll also add a provision to stop trying if the FTP proxy has"
+" had to be restarted five times in a row."
+msgstr ""
+
+#: ../../source/manual/monit.rst:41
+msgid ""
+"First, make sure you have followed the steps under “Global setup”. Then, "
+"navigate to the “Service Tests Settings” tab. Here, you need to add two "
+"tests:"
+msgstr ""
+
+#: ../../source/manual/monit.rst:45 ../../source/manual/monit.rst:55
+#: ../../source/manual/monit.rst:67 ../../source/manual/monit.rst:95
+#: ../../source/manual/monit.rst:107 ../../source/manual/monit.rst:135
+#: ../../source/manual/monit.rst:147 ../../source/manual/monit.rst:174
+#: ../../source/manual/monit.rst:238 ../../source/manual/monit.rst:271
+#: ../../source/manual/monit.rst:297
+msgid "Setting"
+msgstr ""
+
+#: ../../source/manual/monit.rst:45 ../../source/manual/monit.rst:55
+#: ../../source/manual/monit.rst:67 ../../source/manual/monit.rst:95
+#: ../../source/manual/monit.rst:107 ../../source/manual/monit.rst:135
+#: ../../source/manual/monit.rst:147
+msgid "Value"
+msgstr ""
+
+#: ../../source/manual/monit.rst:47 ../../source/manual/monit.rst:57
+#: ../../source/manual/monit.rst:69 ../../source/manual/monit.rst:97
+#: ../../source/manual/monit.rst:109 ../../source/manual/monit.rst:137
+#: ../../source/manual/monit.rst:149 ../../source/manual/monit.rst:275
+#: ../../source/manual/monit.rst:299
+msgid "Name"
+msgstr ""
+
+#: ../../source/manual/monit.rst:47 ../../source/manual/monit.rst:69
+msgid "FTPProxy8021"
+msgstr ""
+
+#: ../../source/manual/monit.rst:49 ../../source/manual/monit.rst:59
+#: ../../source/manual/monit.rst:99 ../../source/manual/monit.rst:139
+#: ../../source/manual/monit.rst:301
+msgid "Condition"
+msgstr ""
+
+#: ../../source/manual/monit.rst:49
+msgid "failed host 127.0.0.1 port 8021 type tcp"
+msgstr ""
+
+#: ../../source/manual/monit.rst:51 ../../source/manual/monit.rst:61
+#: ../../source/manual/monit.rst:101 ../../source/manual/monit.rst:141
+#: ../../source/manual/monit.rst:303
+msgid "Action"
+msgstr ""
+
+#: ../../source/manual/monit.rst:51 ../../source/manual/monit.rst:101
+msgid "Restart"
+msgstr ""
+
+#: ../../source/manual/monit.rst:57
+msgid "RestartLimit5"
+msgstr ""
+
+#: ../../source/manual/monit.rst:59
+msgid "5 restarts within 5 cycles"
+msgstr ""
+
+#: ../../source/manual/monit.rst:61
+msgid "Unmonitor"
+msgstr ""
+
+#: ../../source/manual/monit.rst:64 ../../source/manual/monit.rst:104
+#: ../../source/manual/monit.rst:144
+msgid ""
+"Now, navigate to the “Service Settings” tab. Here, add the following "
+"service:"
+msgstr ""
+
+#: ../../source/manual/monit.rst:71 ../../source/manual/monit.rst:111
+#: ../../source/manual/monit.rst:151 ../../source/manual/monit.rst:277
+msgid "Type"
+msgstr ""
+
+#: ../../source/manual/monit.rst:71
+msgid "Process"
+msgstr ""
+
+#: ../../source/manual/monit.rst:73
+msgid "PID File"
+msgstr ""
+
+#: ../../source/manual/monit.rst:73
+msgid "/var/run/osftpproxy.127_0_0_1_8021.pid"
+msgstr ""
+
+#: ../../source/manual/monit.rst:75 ../../source/manual/monit.rst:115
+#: ../../source/manual/monit.rst:283
+msgid "Start"
+msgstr ""
+
+#: ../../source/manual/monit.rst:75
+msgid "/usr/local/sbin/configctl ftpproxy start 127_0_0_1_8021"
+msgstr ""
+
+#: ../../source/manual/monit.rst:77 ../../source/manual/monit.rst:117
+#: ../../source/manual/monit.rst:285
+msgid "Stop"
+msgstr ""
+
+#: ../../source/manual/monit.rst:77
+msgid "/usr/local/sbin/configctl ftpproxy stop 127_0_0_1_8021"
+msgstr ""
+
+#: ../../source/manual/monit.rst:79 ../../source/manual/monit.rst:119
+#: ../../source/manual/monit.rst:155 ../../source/manual/monit.rst:287
+msgid "Tests"
+msgstr ""
+
+#: ../../source/manual/monit.rst:79
+msgid "FTPProxy8021, RestartLimit5"
+msgstr ""
+
+#: ../../source/manual/monit.rst:82 ../../source/manual/monit.rst:122
+msgid "Save and apply."
+msgstr ""
+
+#: ../../source/manual/monit.rst:86
+msgid "Example 2"
+msgstr ""
+
+#: ../../source/manual/monit.rst:88
+msgid ""
+"In this example, we want to monitor a VPN tunnel and ping a remote "
+"system. If the ping does not respond anymore, IPsec should be restarted."
+msgstr ""
+
+#: ../../source/manual/monit.rst:91 ../../source/manual/monit.rst:131
+msgid ""
+"First, make sure you have followed the steps under “Global setup”. Then, "
+"navigate to the “Service Tests Settings” tab. Here, you need to add one "
+"test:"
+msgstr ""
+
+#: ../../source/manual/monit.rst:97 ../../source/manual/monit.rst:119
+msgid "IPSEC_RESTART"
+msgstr ""
+
+#: ../../source/manual/monit.rst:99
+msgid "failed ping4 count 5 address <local IP>"
+msgstr ""
+
+#: ../../source/manual/monit.rst:109
+msgid "IPSEC_MONITOR"
+msgstr ""
+
+#: ../../source/manual/monit.rst:111
+msgid "Remote Host"
+msgstr ""
+
+#: ../../source/manual/monit.rst:113
+msgid "Address"
+msgstr ""
+
+#: ../../source/manual/monit.rst:113
+msgid "<remote IP>"
+msgstr ""
+
+#: ../../source/manual/monit.rst:115
+msgid "/usr/local/sbin/configctl ipsec start"
+msgstr ""
+
+#: ../../source/manual/monit.rst:117
+msgid "/usr/local/sbin/configctl ipsec stop"
+msgstr ""
+
+#: ../../source/manual/monit.rst:126
+msgid "Example 3"
+msgstr ""
+
+#: ../../source/manual/monit.rst:128
+msgid ""
+"In this example, we want to monitor Suricata EVE Log for alerts and send "
+"an e-mail. This is really simple, be sure to keep false positives low to "
+"no get spammed by alerts."
+msgstr ""
+
+#: ../../source/manual/monit.rst:137 ../../source/manual/monit.rst:155
+msgid "SURICATA_EVE"
+msgstr ""
+
+#: ../../source/manual/monit.rst:139
+msgid "content =  \"blocked\""
+msgstr ""
+
+#: ../../source/manual/monit.rst:141
+msgid "Alert"
+msgstr ""
+
+#: ../../source/manual/monit.rst:149
+msgid "SURICATA_ALERT"
+msgstr ""
+
+#: ../../source/manual/monit.rst:151
+msgid "File"
+msgstr ""
+
+#: ../../source/manual/monit.rst:153 ../../source/manual/monit.rst:279
+msgid "Path"
+msgstr ""
+
+#: ../../source/manual/monit.rst:153
+msgid "/var/log/suricata/eve.json"
+msgstr ""
+
+#: ../../source/manual/monit.rst:158
+msgid ""
+"Save and apply. From now on you will receive with the alert message for "
+"every block action."
+msgstr ""
+
+#: ../../source/manual/monit.rst:163
+msgid "Settings overview"
+msgstr ""
+
+#: ../../source/manual/monit.rst:165
+msgid ""
+"Navigate to :menuselection:`Services --> Monit --> Settings`. You will "
+"see four tabs, which we will describe in more detail below"
+msgstr ""
+
+#: ../../source/manual/monit.rst:169
+msgid "General Settings"
+msgstr ""
+
+#: ../../source/manual/monit.rst:171
+msgid "Click 'advanced mode' to see all the settings."
+msgstr ""
+
+#: ../../source/manual/monit.rst:174 ../../source/manual/monit.rst:238
+#: ../../source/manual/monit.rst:252 ../../source/manual/monit.rst:271
+#: ../../source/manual/monit.rst:289 ../../source/manual/monit.rst:297
+#: ../../source/manual/monit.rst:311
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/monit.rst:176
+msgid "Enable Monit"
+msgstr ""
+
+#: ../../source/manual/monit.rst:176
+msgid "Turns Monit on or off."
+msgstr ""
+
+#: ../../source/manual/monit.rst:178
+msgid "Polling interval"
+msgstr ""
+
+#: ../../source/manual/monit.rst:178
+msgid "How often Monit checks the status of the components it monitors."
+msgstr ""
+
+#: ../../source/manual/monit.rst:180
+msgid "Start delay"
+msgstr ""
+
+#: ../../source/manual/monit.rst:180
+msgid "How long Monit waits before checking components when it starts."
+msgstr ""
+
+#: ../../source/manual/monit.rst:182
+msgid "Mail Server"
+msgstr ""
+
+#: ../../source/manual/monit.rst:182
+msgid ""
+"A list of mail servers to send notifications to (also see below this "
+"table)."
+msgstr ""
+
+#: ../../source/manual/monit.rst:184
+msgid "Mail Server Port"
+msgstr ""
+
+#: ../../source/manual/monit.rst:184
+msgid "The mail server port to use. 25 and 465 are common examples."
+msgstr ""
+
+#: ../../source/manual/monit.rst:186
+msgid "Username"
+msgstr ""
+
+#: ../../source/manual/monit.rst:186
+msgid ""
+"The username used to log into your SMTP server, if needed. Often, but not"
+" always, the same as your e-mail address."
+msgstr ""
+
+#: ../../source/manual/monit.rst:188
+msgid "Password"
+msgstr ""
+
+#: ../../source/manual/monit.rst:188
+msgid "The password used to log into your SMTP server, if needed."
+msgstr ""
+
+#: ../../source/manual/monit.rst:190
+msgid "Secure Connection"
+msgstr ""
+
+#: ../../source/manual/monit.rst:190
+msgid "Use TLS when connecting to the mail server."
+msgstr ""
+
+#: ../../source/manual/monit.rst:192
+msgid "SSL Version"
+msgstr ""
+
+#: ../../source/manual/monit.rst:192
+msgid "The TLS version to use. AUTO will try to negotiate a working version."
+msgstr ""
+
+#: ../../source/manual/monit.rst:194
+msgid "Verify SSL Certificates"
+msgstr ""
+
+#: ../../source/manual/monit.rst:194
+msgid ""
+"Checks the TLS certificate for validity. If you use a self-signed "
+"certificate, turn this option off."
+msgstr ""
+
+#: ../../source/manual/monit.rst:196
+msgid "Log File"
+msgstr ""
+
+#: ../../source/manual/monit.rst:196
+msgid ""
+"The log file of the Monit process. This can be the keyword ``syslog`` or "
+"a path to a file."
+msgstr ""
+
+#: ../../source/manual/monit.rst:198
+msgid "State File"
+msgstr ""
+
+#: ../../source/manual/monit.rst:198
+msgid "The state file of the Monit process."
+msgstr ""
+
+#: ../../source/manual/monit.rst:200
+msgid "Eventqueue Path"
+msgstr ""
+
+#: ../../source/manual/monit.rst:200
+msgid "The path to the eventqueue directory."
+msgstr ""
+
+#: ../../source/manual/monit.rst:202
+msgid "Eventqueue Slots"
+msgstr ""
+
+#: ../../source/manual/monit.rst:202
+msgid "The number of eventqueue slots."
+msgstr ""
+
+#: ../../source/manual/monit.rst:204
+msgid "Enable HTTPD"
+msgstr ""
+
+#: ../../source/manual/monit.rst:204
+msgid "Turns on the Monit web interface. (Required to see options below.)"
+msgstr ""
+
+#: ../../source/manual/monit.rst:206
+msgid "Monit HTTPD Port"
+msgstr ""
+
+#: ../../source/manual/monit.rst:206
+msgid "The listen port of the Monit web interface service."
+msgstr ""
+
+#: ../../source/manual/monit.rst:208
+msgid "Monit HTTPD Access List"
+msgstr ""
+
+#: ../../source/manual/monit.rst:208
+msgid ""
+"The username:password or host/network etc. for accessing the Monit web "
+"interface service."
+msgstr ""
+
+#: ../../source/manual/monit.rst:210
+msgid "M/Monit URL"
+msgstr ""
+
+#: ../../source/manual/monit.rst:210
+msgid "The M/Monit URL, e.g. https://user:pass@192.168.1.10:8443/collector"
+msgstr ""
+
+#: ../../source/manual/monit.rst:212
+msgid "M/Monit Timeout"
+msgstr ""
+
+#: ../../source/manual/monit.rst:212
+msgid "When doing requests to M/Monit, time out after this amount of seconds."
+msgstr ""
+
+#: ../../source/manual/monit.rst:214
+msgid "M/Monit Register Credentials"
+msgstr ""
+
+#: ../../source/manual/monit.rst:214
+msgid ""
+"Automatically register in M/Monit by sending Monit credentials (see Monit"
+" Access List above)."
+msgstr ""
+
+#: ../../source/manual/monit.rst:217
+msgid ""
+"In the “Mail Server” settings, you can specify multiple servers. Monit "
+"will try the mail servers in order, starting with the first, advancing to"
+" the second if the first server does not work, etc. If no server works "
+"Monit will not attempt to send the e-mail again."
+msgstr ""
+
+#: ../../source/manual/monit.rst:221
+msgid ""
+"**Two things to keep in mind**: the authentication settings are shared "
+"between all the servers, and the 'From:' address is set in the “Alert "
+"Settings”."
+msgstr ""
+
+#: ../../source/manual/monit.rst:224
+msgid ""
+"Authentication options for the Monit web interface are described in "
+"https://mmonit.com/monit/documentation/monit.html#Authentication."
+msgstr ""
+
+#: ../../source/manual/monit.rst:227
+msgid ""
+"M/Monit is a commercial service to collect data from several Monit "
+"instances. To use it from OPNsense, fill in the appropriate fields and "
+"add corresponding firewall rules as well."
+msgstr ""
+
+#: ../../source/manual/monit.rst:232
+msgid "Alert Settings"
+msgstr ""
+
+#: ../../source/manual/monit.rst:234
+msgid ""
+"This lists the e-mail addresses to report to. Click the Edit icon of a "
+"pre-existing entry or the Add icon (a plus sign in the lower right "
+"corner) to see the options listed below."
+msgstr ""
+
+#: ../../source/manual/monit.rst:240
+msgid "Enable alert"
+msgstr ""
+
+#: ../../source/manual/monit.rst:240
+msgid "Turns this alert on or off."
+msgstr ""
+
+#: ../../source/manual/monit.rst:242
+msgid "Recipient"
+msgstr ""
+
+#: ../../source/manual/monit.rst:242
+msgid "The e-mail address to send this e-mail to."
+msgstr ""
+
+#: ../../source/manual/monit.rst:244
+msgid "Not on"
+msgstr ""
+
+#: ../../source/manual/monit.rst:244
+msgid ""
+"When off, notifications will be sent for events specified below. When on,"
+" notifications will be sent for events *not* specified below."
+msgstr ""
+
+#: ../../source/manual/monit.rst:246
+msgid "Events"
+msgstr ""
+
+#: ../../source/manual/monit.rst:246
+msgid ""
+"Events that trigger this notification (or that don't, if \"Not on\" is "
+"selected)."
+msgstr ""
+
+#: ../../source/manual/monit.rst:248
+msgid "Mail format"
+msgstr ""
+
+#: ../../source/manual/monit.rst:248
+msgid ""
+"Can be used to control the mail formatting and from address. See below "
+"this table."
+msgstr ""
+
+#: ../../source/manual/monit.rst:250
+msgid "Reminder"
+msgstr ""
+
+#: ../../source/manual/monit.rst:250
+msgid "Send a reminder if the problem still persists after this amount of checks."
+msgstr ""
+
+#: ../../source/manual/monit.rst:252
+msgid ""
+"A description for this rule, in order to easily find it in the Alert "
+"Settings list."
+msgstr ""
+
+#: ../../source/manual/monit.rst:255
+msgid ""
+"“Mail format” is a newline-separated list of properties to control the "
+"mail formatting. It is also needed to correctly set the From address. For"
+" example::"
+msgstr ""
+
+#: ../../source/manual/monit.rst:265
+msgid "Service Settings"
+msgstr ""
+
+#: ../../source/manual/monit.rst:267
+msgid ""
+"This lists the services that are set. There are some services precreated,"
+" but you add as many as you like. Click the Edit icon of a pre-existing "
+"entry or the Add icon (a plus sign in the lower right corner) to see the "
+"options listed below."
+msgstr ""
+
+#: ../../source/manual/monit.rst:273
+msgid "Enable service checks"
+msgstr ""
+
+#: ../../source/manual/monit.rst:273
+msgid "Turns this service on or off."
+msgstr ""
+
+#: ../../source/manual/monit.rst:275
+msgid ""
+"A name for this service, consisting of only letters, digits and "
+"underscore. More descriptive names can be set in the Description field."
+msgstr ""
+
+#: ../../source/manual/monit.rst:277
+msgid "The kind of object to check. 'Custom' allows you to use custom scripts."
+msgstr ""
+
+#: ../../source/manual/monit.rst:279
+msgid "The path to the directory, file, or script, where applicable."
+msgstr ""
+
+#: ../../source/manual/monit.rst:281
+msgid "Program Timeout"
+msgstr ""
+
+#: ../../source/manual/monit.rst:281
+msgid "How often to run this check."
+msgstr ""
+
+#: ../../source/manual/monit.rst:283
+msgid "The start script of the service, if applicable."
+msgstr ""
+
+#: ../../source/manual/monit.rst:285
+msgid "The stop script of the service, if applicable."
+msgstr ""
+
+#: ../../source/manual/monit.rst:287
+msgid ""
+"The condition to test on to determine if an alert needs to get sent. "
+"These conditions are created on the Service Test Settings tab."
+msgstr ""
+
+#: ../../source/manual/monit.rst:289
+msgid ""
+"A description for this service, in order to easily find it in the Service"
+" Settings list."
+msgstr ""
+
+#: ../../source/manual/monit.rst:294
+msgid "Service Test Settings"
+msgstr ""
+
+#: ../../source/manual/monit.rst:299
+msgid "The name of the test."
+msgstr ""
+
+#: ../../source/manual/monit.rst:301
+msgid ""
+"A condition that adheres to the Monit syntax, see `the Monit "
+"documentation <https://mmonit.com/monit/documentation/monit.html#SERVICE-"
+"TESTS>`_"
+msgstr ""
+
+#: ../../source/manual/monit.rst:303
+msgid "What to do when the condition gets hit."
+msgstr ""
+
+#: ../../source/manual/monit.rst:306
+msgid ""
+"There are some precreated service tests. Most of these are typically used"
+" for one scenario, like the 'Memory usage > 75%' test. Some, however, are"
+" more generic and can be used to test output of your own scripts. These "
+"include:"
+msgstr ""
+
+#: ../../source/manual/monit.rst:311
+msgid "Service Test"
+msgstr ""
+
+#: ../../source/manual/monit.rst:313
+msgid "NonZeroStatus"
+msgstr ""
+
+#: ../../source/manual/monit.rst:313
+msgid ""
+"The returned status code is not 0. (Scripts typically exit with 0 if "
+"there were no problems, and with non-zero if there were.)"
+msgstr ""
+
+#: ../../source/manual/monit.rst:315
+msgid "ChangedStatus"
+msgstr ""
+
+#: ../../source/manual/monit.rst:315
+msgid "The returned status code has changed since the last it the script was run."
+msgstr ""
+
+#: ../../source/manual/monit.rst:320
+msgid "Status"
+msgstr ""
+
+#: ../../source/manual/monit.rst:322
+msgid ""
+"The Monit status panel can be accessed via :menuselection:`Services --> "
+"Monit --> Status`. For every active service, it will show the status, "
+"along with extra information if the service provides it."
+msgstr ""
+

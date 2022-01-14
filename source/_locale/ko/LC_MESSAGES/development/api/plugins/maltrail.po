@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/api/plugins/maltrail.rst:2
+msgid "Maltrail"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:4
+msgid "Service (GeneralController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "Method"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "Module"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "Controller"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "Command"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "``GET``"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "maltrail"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "general"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "get"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "set"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "``<<uses>>``"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid ""
+"*model* `General.xml "
+"<https://github.com/opnsense/plugins/blob/master/security/maltrail/src/opnsense/mvc/app/models/OPNsense/Maltrail/General.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:13
+msgid "Service (SensorController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "sensor"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid ""
+"*model* `Sensor.xml "
+"<https://github.com/opnsense/plugins/blob/master/security/maltrail/src/opnsense/mvc/app/models/OPNsense/Maltrail/Sensor.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:22
+msgid "Service (ServerController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "server"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid ""
+"*model* `Server.xml "
+"<https://github.com/opnsense/plugins/blob/master/security/maltrail/src/opnsense/mvc/app/models/OPNsense/Maltrail/Server.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:31
+msgid "Service (ServerserviceController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "serverservice"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "reconfigure"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "restart"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "start"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "status"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "stop"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:43
+msgid "Service (ServiceController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/maltrail.rst:1
+msgid "service"
+msgstr ""
+

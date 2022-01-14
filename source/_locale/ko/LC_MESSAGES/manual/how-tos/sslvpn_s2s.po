@@ -1,0 +1,438 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:3
+msgid "Setup SSL VPN site to site tunnel"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:5
+msgid ""
+"Site to site VPNs connect two locations with static public IP addresses "
+"and allow traffic to be routed between the two networks. This is most "
+"commonly used to connect an organization's branch offices back to its "
+"main office, so branch users can access network resources in the main "
+"office."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:12
+msgid "Before you start"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:13
+msgid ""
+"Before starting with the configuration of an OpenVPN SSL tunnel you need "
+"to have a working OPNsense installation with a unique LAN IP subnet for "
+"each side of your connection (your local network needs to be different "
+"than that of the remote network)."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:20
+msgid ""
+"For the sample we will use a private IP for our WAN connection. This "
+"requires us to disable the default block rule on WAN to allow private "
+"traffic. To do so, go to :menuselection:`Interfaces --> [WAN]` and "
+"uncheck \"Block private networks\". *(Don't forget to save and apply)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:31
+msgid "Sample Setup"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:32
+msgid ""
+"For the sample configuration we use two OPNsense boxes to simulate a site"
+" to site tunnel, with the following configuration:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:65
+msgid "Site A - Server"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:67
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:114
+msgid "**Hostname**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:67
+msgid "fw1"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:68
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:115
+msgid "**WAN IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:68
+msgid "172.10.1.1/16"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:69
+msgid "**LAN IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:69
+msgid "192.168.1.1/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:70
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:117
+msgid "**LAN DHCP Range**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:70
+msgid "192.168.1.100-192.168.1.200"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:71
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:118
+msgid "**Tunnel Network**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:71
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:118
+msgid "10.10.0.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:111
+msgid "Site B - Client"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:114
+msgid "fw2"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:115
+msgid "172.10.2.1/16"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:116
+msgid "**LAN Net**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:116
+msgid "192.168.2.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:117
+msgid "192.168.2.100-192.168.2.200"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:130
+msgid "Full Network Diagram Including SSL VPN Tunnel"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:179
+msgid "Step 1 - Add SSL Server"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:180
+msgid ""
+"Adding a new SSL VPN server is relatively simple. We'll start by adding a"
+" server that uses a shared key. This setup offers a good protection and "
+"it is easy to setup."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:184
+msgid ""
+"Go to :menuselection:`VPN --> OpenVPN --> Servers` and click on click "
+"**Add** in the top right corner of the form."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:187
+msgid ""
+"For our example will use the following settings (leave everything else on"
+" its default):"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:191
+msgid ""
+"The setting **Hardware Crypto** is not used for new systems equipped with"
+" **AESNI**, when the aesni module is loaded it will be used "
+"automatically."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:195
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:287
+msgid "**Server Mode**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:195
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:287
+msgid "*Peer to Peer (Shared Key)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:196
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:288
+msgid "**Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:196
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:288
+msgid "*UDP*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:197
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:289
+msgid "**Device Mode**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:197
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:289
+msgid "*tun*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:198
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:290
+msgid "**Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:198
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:290
+msgid "*WAN*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:199
+msgid "**Local port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:199
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:292
+msgid "*1194*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:200
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:293
+msgid "**Description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:200
+msgid "*SSL VPN Server*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:201
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:294
+msgid "**Shared Key**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:201
+msgid "*Leave on enabled (checked) to create a new key*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:202
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:297
+msgid "**DH Parameters Length**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:202
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:297
+msgid "*4096*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:203
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:298
+msgid "**Encryption algorithm**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:203
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:298
+msgid "*AES-256-CBC (256-bit)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:204
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:299
+msgid "**Auth Digest Algorithm**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:204
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:299
+msgid "*SHA512 (512-bit)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:205
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:300
+msgid "**Hardware Crypto**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:205
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:300
+msgid "*No Hardware Crypto Acceleration*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:206
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:301
+msgid "**IPv4 Tunnel Network**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:206
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:301
+msgid "*10.10.0.0/24*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:207
+msgid "**IPv4 Local Network/s**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:207
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:302
+msgid "*192.168.1.0/24*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:208
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:302
+msgid "**IPv4 Remote Network/s**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:208
+msgid "*192.168.2.0/24*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:209
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:303
+msgid "**Compression**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:209
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:303
+msgid "*Enabled with Adaptive Compression*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:212
+msgid "Click **Save** to add the new server."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:221
+msgid "Step 2 - Copy Shared Key"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:222
+msgid ""
+"To copy the newly created shared key, click on the pencil icon next to "
+"the newly created SSL VPN server."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:225
+msgid "You will see the shared key, copy this and keep it safe!"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:227
+msgid "Sample key:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:257
+msgid "Step 3 - Server Firewall Rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:258
+msgid ""
+"To allow SSL VPN client connections, we should allow access to the "
+"OpenVPN server port on the WAN interface. When using multiple servers we "
+"need to open up each port."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:261
+msgid "For our configuration we only use one server accessible on UDP port 1194."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:266
+msgid ""
+"Next we also need to allow traffic from the VPN client network "
+"(192.168.2.0/24). For our example we will allow client to access anything"
+" on our local network(s), however you may decide just to allow traffic to"
+" one or more IPs."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:273
+msgid "**You are done configuring Site A.**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:279
+msgid "Step 4 - Site B Client"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:280
+msgid ""
+"Now we will have to setup the client. Login to the second firewall, go to"
+" :menuselection:`VPN --> OpenVPN --> Clients` and click on **add client**"
+" in the upper right corner of the form."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:284
+msgid "Now enter the following into the form (and leave everything else default):"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:291
+msgid "**Server host or address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:291
+msgid "*172.10.1.1*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:292
+msgid "**Server port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:293
+msgid "*SSL VPN Client*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:294
+msgid "*Uncheck to paste the shared key*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:295
+msgid "..."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:295
+msgid "*Paste your shared key*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:296
+msgid "**Server Certificate**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:296
+msgid "*SSLVPN Server Certificate (CA: SSL VPN CA)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:306
+msgid "Now click on **Save**  to apply your settings."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:308
+msgid ""
+"The Connection Status can be viewed under :menuselection:`VPN --> OpenVPN"
+" --> Connection Status`"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:315
+msgid "Step 5 - Client Firewall Rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:316
+msgid ""
+"To allow traffic from the remote network just add a rule under "
+":menuselection:`Firewall --> Rules` OpenVPN tab."
+msgstr ""
+
+#: ../../source/manual/how-tos/sslvpn_s2s.rst:323
+msgid "**Done**"
+msgstr ""
+

@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/nginx_streams.rst:3
+msgid "nginx: TCP And UDP Streams"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:6
+msgid "Background Information"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:8
+msgid ""
+"Beside HTTP, nginx is also able to handle TCP- and UDP-traffic as well "
+"and it can also inspect the so called Client Hello of TLS_ using the "
+"preread_ module, to route based on SNI_ (Server Name Indication) which is"
+" an extension in TLS."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:17
+msgid "OPNsense specific Information"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:19
+msgid "OPNsense offers two modes of operation:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:21
+msgid "Pass through and route based on SNI"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:22
+msgid "Read and forward the data which can also terminate TLS"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:25
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:28
+msgid ""
+"For Upstreams, please visit the :doc:`nginx` page. This expects that the "
+"upstreams are correctly set up."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:32
+msgid "SNI Upstream Maps"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:34
+msgid ""
+"SNI Upstream Maps are a powerful feature if you have multiple servers "
+"behind your reverse proxy and every server maintains their own "
+"certificate and you do not want to or cannot use your own certificate. In"
+" such cases, you can use it to forward the traffic based on the Server "
+"Name Indication extension in the TLS protocol (given that TLS is used)."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:41
+msgid ""
+"This will not work anymore with ESNI which may be published with TLS 1.3."
+" If it causes trouble, do not enable encrypted SNI and stay with plain "
+"SNI. Also keep in mind that when SNI Upstream Maps are used, the "
+"connection will not be decrypted on OPNsense, so you cannot load balance "
+"a TLS connection to unencrypted servers."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:50
+msgid "Short description"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:50
+msgid "short description to show in dropdowns"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:51
+msgid "Hostname Upstream Map"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:51
+msgid ""
+"Enter a hostname and choose the upstream to forward the connection to for"
+" each combination"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:55
+msgid "Upstream Servers"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:57
+msgid ""
+"The upstream servers are the TCP and UDP load balancing feature of nginx."
+" You may use it to proxy DNS, some proprietary protocols etc."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:61
+msgid ""
+"This will not work with protocols which need some special handling like "
+"FTP or SIP"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:66
+msgid ""
+"The listen port is the port used to expose the service to the clients. "
+"You should use the standard_ port defined by IANA to maintain best "
+"compatibility with most clients."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:70
+msgid ""
+"In case you are proxying UDP datagrams, you must enable the \"UDP Port\" "
+"checkbox."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:72
+msgid ""
+"Select a certificate if you want to terminate the TLS connection. If you "
+"route directly with upstream property, the upstream TLS settings are "
+"used, to choose if the backend connection should be TLS encrypted "
+"(again)."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:76
+msgid ""
+"If you want to use an SNI Upstream Map, switch the entry in \"Route "
+"With\" and choose a mapping in the coresponding entry."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:82
+msgid ""
+"In the advanced settings, you can also force TLS based authentication for"
+" upstream backends (not supported in SNI Upstream Mapping)."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:86
+msgid "Test"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:88
+msgid "You can test your setup using the following command:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:95
+msgid "HOSTNAME"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:95
+msgid "The hostname you want to connect (example.com)"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:96
+msgid "PORT"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:96
+msgid "The port you run the proxy on"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:97
+msgid "IP"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_streams.rst:97
+msgid "IP of your OPNsense device (to override DNS)"
+msgstr ""
+

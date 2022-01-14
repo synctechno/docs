@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/nginx_waf.rst:3
+msgid "nginx: Web Application Firewall"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:7
+msgid ""
+"This page is for advanced users only. A misconfiguration here may block "
+"requests to your API endpoints or website."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:9
+msgid ""
+"A web application firewall is no replacement for properly implemented "
+"security in front- and backend."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:12
+msgid "Background Information"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:14
+msgid ""
+"The OPNsense WAF uses NAXSI_, which is a loadable module for the nginx_ "
+"web server. NAXSI has two rule types:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:20
+msgid ""
+"Main Rules: This rules are globally valid. Usual use case: Blocking code "
+"fragments that may be used to gain access to the server without "
+"permission (for example SQL_-/XPATH_-injection for data access) or to "
+"gain control over a foreign client (for example XSS_)."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:21
+msgid ""
+"Basic Rules: This rules are usually used in the locations to whitelist "
+"main rules by id inside a location or for additional rules."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:29
+msgid "A good place to start are the OWASP_ Cheat Sheets."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:34
+msgid ""
+"In addition to the self defined rules, NAXSI contains libinjection which "
+"is available directly in the location configuration. The NAXSI project "
+"itself has a high quality documentation for the module online_. A good "
+"ruleset_ to start can be found at GitHub on the project page. It cannot "
+"be provided by the plugin because of license issues (GPL cannot be used "
+"in BSD 2 Clause code), but you may enter it manually by yourself."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:44
+msgid "OPNsense specific Information"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:46
+msgid ""
+"OPNsense blocks User Agents used by Bots automatically - this cannot be "
+"configured"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:47
+msgid "The error pages are stored under /usr/local/etc/nginx/views"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:50
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:53
+msgid "WAF Rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:57
+msgid ""
+"WAF rules are used to trigger an action if a condition evaluates to true "
+"or false (negated). The usual use case is increasing a score which can be"
+" checked afterwards, but a rule can for example also block instantly (the"
+" plugin only supports a score). WAF rules are grouped to a WAF policy, "
+"which then can evaluate the aggregated score."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:61
+msgid ""
+"The description will be shown in the GUI and the Message will appear in "
+"the log. Negate will switch the condition form \"if\" to \"unless\". The "
+"ID must be unique. You should use a scheme like 1000 to 2000 are SQL "
+"injection or similar because that improves log evaluation if needed (for "
+"example you could create pie charts because you can group by the id "
+"range)."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:63
+msgid ""
+"The next section describes the rule type and the match. You can scan the "
+"match value like `truncate` (an SQL keyword to delete the content of the "
+"table) in different places in the HTTP request. Mostly all of them can be"
+" checked or as an alternative, you can use a name so it will only match a"
+" specific header for example. Please note that not all of them are "
+"compatible with each other so please consult the NAXSI docs."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:67
+msgid "WAF Policy"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:71
+msgid ""
+"The name is used in the location select box, rules are a collection of "
+"the previously created rules."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:76
+msgid ""
+"Reuse of main rules will not work, clone them if needed. The reason is "
+"that they would conflict in id + score variable"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:80
+#: ../../source/manual/how-tos/nginx_waf.rst:90
+msgid "Name"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:80
+msgid "a good name like \"block sql injection\""
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:81
+#: ../../source/manual/how-tos/nginx_waf.rst:91
+msgid "Rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:81
+msgid "select the rules to group"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:82
+#: ../../source/manual/how-tos/nginx_waf.rst:92
+msgid "Value"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:82
+msgid "a compare value"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:83
+#: ../../source/manual/how-tos/nginx_waf.rst:93
+msgid "Operator"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:83
+msgid "choose a compare Operator to compare score operator value"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:84
+#: ../../source/manual/how-tos/nginx_waf.rst:94
+msgid "Action"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:84
+msgid "usually block"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:87
+msgid "As an (incomplete) example:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:90
+msgid "block SQLi"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:91
+msgid "contains select, contains from, contains union, contains delete"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:92
+msgid "16"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:93
+msgid "bigger or equal"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:94
+msgid "block"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:98
+msgid "Location"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:100
+msgid "In the last step, the rules must be applied to the location."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:104
+msgid ""
+"To enable the WAF in a location you have to check the \"Enable Security "
+"Rules\" checkbox. At the beginning, it would make sense, if the "
+"\"Learning Mode\" is enabled (nothing is blocked but logged, so you can "
+"add whitelists until you don't get any false positives anymore)."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:107
+msgid ""
+"The next two boxes are the score for libinjection. Both will add a score "
+"of 8 if they trigger. So values up to 8 will block."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:110
+msgid ""
+"In the next dropdown, you can select your custom policies, which will be "
+"applied now."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:114
+msgid "Testing"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:116
+msgid ""
+"If you trigger the WAF by creating a request looking evil to the WAF, you"
+" should get a message in the server error log as well as an OPNsense "
+"branded error page (Request Denied For Security Reasons)."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:120
+msgid "You may use curl to trigger it (if you block the following SQL keywords):"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_waf.rst:128
+msgid ""
+"You can use \"NAXSI\" as a filter in the filter box of the log viewer "
+"when viewing the error log."
+msgstr ""
+

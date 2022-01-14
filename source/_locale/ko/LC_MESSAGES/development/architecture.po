@@ -1,0 +1,236 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/architecture.rst:3
+msgid "Architecture"
+msgstr ""
+
+#: ../../source/development/architecture.rst:5
+msgid ""
+"The main focus of the OPNsense project is to provide a secure and "
+"manageable platform for all your security applications. This means high "
+"quality software that is easily maintainable and bug free. We think that "
+"having a framework with a clear separation of concerns is essential to "
+"achieving these goals."
+msgstr ""
+
+#: ../../source/development/architecture.rst:11
+msgid ""
+"OPNsense is a fork of pfSense ®. The existing code base of pfSense ® does"
+" not always apply a clear separation of concerns. This means we need a "
+"transition of the old (legacy) code base to a new one with a clear "
+"separation. We have chosen a gradual transition to avoid a big bang and "
+"keep the product feature rich while increasing code quality. This enables"
+" simple addition of new features with less bugs and shorter time to "
+"market."
+msgstr ""
+
+#: ../../source/development/architecture.rst:19
+msgid "This article describes how this will be achieved."
+msgstr ""
+
+#: ../../source/development/architecture.rst:23
+msgid "High-level architecture"
+msgstr ""
+
+#: ../../source/development/architecture.rst:25
+msgid "|OPNsense Components.png|"
+msgstr ""
+
+#: ../../source/development/architecture.rst:128
+msgid "OPNsense Components.png"
+msgstr ""
+
+#: ../../source/development/architecture.rst:27
+msgid ""
+"As the above model shows there are two main areas in our stack, the "
+"frontend implemented with PHP/Phalcon and the backend using a custom "
+"service built in Python."
+msgstr ""
+
+#: ../../source/development/architecture.rst:31
+msgid ""
+"The frontend handles user interaction and communicates with the backend "
+"service. Applying configuration changes, monitoring and controlling "
+"services offered by OPNsense is done by the backend service."
+msgstr ""
+
+#: ../../source/development/architecture.rst:35
+msgid ""
+"By using a fully configurable backend service, we avoid hardcoding of "
+"services and ease the implementation of new features."
+msgstr ""
+
+#: ../../source/development/architecture.rst:38
+msgid ""
+"The frontend stack delivers a model driven approach to handle "
+"configuration data, including automatic validation."
+msgstr ""
+
+#: ../../source/development/architecture.rst:41
+msgid ""
+"Manipulation of the core configuration file is handled at the frontend "
+"model; the backend service is merely a consumer of the information "
+"provided."
+msgstr ""
+
+#: ../../source/development/architecture.rst:47
+msgid "Backend Architecture"
+msgstr ""
+
+#: ../../source/development/architecture.rst:49
+msgid "|OPNsense backend.png|"
+msgstr ""
+
+#: ../../source/development/architecture.rst:131
+msgid "OPNsense backend.png"
+msgstr ""
+
+#: ../../source/development/architecture.rst:51
+msgid ""
+"Configd, is responsible for the core system interaction like starting and"
+" stopping of daemons and generating configuration files for used services"
+" and applications."
+msgstr ""
+
+#: ../../source/development/architecture.rst:55
+msgid ""
+"The daemon listens on a unix domain socket and is capable of executing "
+"actions defined in it’s own configuration directory "
+"(“/usr/local/opnsense/service/conf/actions\\_\\*.conf”)."
+msgstr ""
+
+#: ../../source/development/architecture.rst:59
+msgid "Currently there are two types of services implemented in the daemon:"
+msgstr ""
+
+#: ../../source/development/architecture.rst:61
+msgid "script : execute external (rc) scripts"
+msgstr ""
+
+#: ../../source/development/architecture.rst:62
+msgid ""
+"inline : perform inline actions which are part of configd, currently only"
+" template generation."
+msgstr ""
+
+#: ../../source/development/architecture.rst:68
+msgid ""
+"Template generation is handled by Jinja2 (http://jinja.pocoo.org/), more "
+"information on how to create application templates can be found at "
+":doc:`/development/backend/templates`."
+msgstr ""
+
+#: ../../source/development/architecture.rst:72
+msgid "Frontend Architecture"
+msgstr ""
+
+#: ../../source/development/architecture.rst:74
+msgid "|OPNsense frontend.png|"
+msgstr ""
+
+#: ../../source/development/architecture.rst:134
+msgid "OPNsense frontend.png"
+msgstr ""
+
+#: ../../source/development/architecture.rst:77
+msgid "Routing"
+msgstr ""
+
+#: ../../source/development/architecture.rst:79
+msgid ""
+"The OPNsense framework uses components from Phalcon where possible; the "
+"first layer initializes Phalcon’s routing, which handles requests and "
+"delivers them to the controller based on its url. User content is "
+"generated using Volt templates, which are picked by the controller. "
+"Because Phalcon’s default Models function with (relational) databases and"
+" we are using XML data, our model implementation is custom. But wherever "
+"possible we use components from Phalcon (for example, validation is "
+"handled using Phalcon’s classes). For a detailed description on the "
+"routing principles used in OPNsense, visit Frontend "
+":doc:`/development/frontend/routing`."
+msgstr ""
+
+#: ../../source/development/architecture.rst:91
+msgid "Controllers and views"
+msgstr ""
+
+#: ../../source/development/architecture.rst:93
+msgid ""
+"Not all parts of the framework are already implemented, but by deriving "
+"all controllers from the base in the OPNsense project it’s easy to extend"
+" and adapt to future needs. Documentation on how to implement "
+"controllers, with the use of views, can be found at "
+":doc:`/development/frontend/controller`."
+msgstr ""
+
+#: ../../source/development/architecture.rst:99
+msgid "Models"
+msgstr ""
+
+#: ../../source/development/architecture.rst:101
+msgid ""
+"All models are defined by a combination of a class and an XML containing "
+"a (nested) definition. More information on defining models can be found "
+"at the frontend model page :doc:`/development/frontend/models`."
+msgstr ""
+
+#: ../../source/development/architecture.rst:106
+msgid "Communication"
+msgstr ""
+
+#: ../../source/development/architecture.rst:108
+msgid "Communication to the backend service is handled via a unix domain socket."
+msgstr ""
+
+#: ../../source/development/architecture.rst:112
+msgid "Core system"
+msgstr ""
+
+#: ../../source/development/architecture.rst:114
+msgid ""
+"The core of OPNsense is powered by an almost standard HardenedBSD ® "
+"system extended with packages using the pkg system. GIT is used for "
+"version control and the repositories are split into 4 parts:"
+msgstr ""
+
+#: ../../source/development/architecture.rst:118
+msgid "src : the base (HardenedBSD ®) system"
+msgstr ""
+
+#: ../../source/development/architecture.rst:119
+msgid "ports : the ports collection containing third party software"
+msgstr ""
+
+#: ../../source/development/architecture.rst:120
+msgid "core : the OPNsense gui and system configuration parts"
+msgstr ""
+
+#: ../../source/development/architecture.rst:121
+msgid "tools : easy tools to build OPNsense"
+msgstr ""
+
+#: ../../source/development/architecture.rst
+msgid "For detailed information about the development workflow see:"
+msgstr ""
+
+#: ../../source/development/architecture.rst
+msgid ":doc:`OPNsense development workflow </development/workflow>`"
+msgstr ""
+

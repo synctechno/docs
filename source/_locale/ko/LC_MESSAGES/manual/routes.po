@@ -1,0 +1,339 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/routes.rst:3
+msgid "Routes"
+msgstr ""
+
+#: ../../source/manual/routes.rst:5
+msgid ""
+"Routing is one of the core features of your firewall, which is "
+"responsible for forwarding packets over the network based on (predefined)"
+" paths."
+msgstr ""
+
+#: ../../source/manual/routes.rst:8
+msgid ""
+"Within the routing section of your firewall you can keep track of "
+"configured routes and define static routes yourself to teach your "
+"firewall which path it should take when forwarding packets to a specific "
+"network."
+msgstr ""
+
+#: ../../source/manual/routes.rst:62
+msgid ""
+"When a client sends a packet to the firewall for a network not directly "
+"attached to it, the firewall would normally check its routing table to "
+"determine to which gateway (see :doc:`/manual/gateways`) it should be "
+"send."
+msgstr ""
+
+#: ../../source/manual/routes.rst:67
+msgid ""
+"Use traceroute (:menuselection:`Interfaces --> Diagnostics --> Trace "
+"Route`) to verify which path traffic would follow to reach its "
+"destination."
+msgstr ""
+
+#: ../../source/manual/routes.rst:72
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/manual/routes.rst:74
+msgid ""
+"This is where you can setup static routes, looking at the diagram in the "
+"previous chapter, here you would define how :code:`[1]` would access "
+":code:`[2]` using router :code:`[3]`."
+msgstr ""
+
+#: ../../source/manual/routes.rst:77
+msgid ""
+"The number of settings are obviously limited, we need to know the gateway"
+" and the target network."
+msgstr ""
+
+#: ../../source/manual/routes.rst:82
+msgid "Disabled"
+msgstr ""
+
+#: ../../source/manual/routes.rst:82
+msgid "(temporary) disable this item"
+msgstr ""
+
+#: ../../source/manual/routes.rst:83
+msgid "Network Address"
+msgstr ""
+
+#: ../../source/manual/routes.rst:83
+msgid "Destination network to reach"
+msgstr ""
+
+#: ../../source/manual/routes.rst:84 ../../source/manual/routes.rst:106
+msgid "Gateway"
+msgstr ""
+
+#: ../../source/manual/routes.rst:84
+msgid "The gateway to use."
+msgstr ""
+
+#: ../../source/manual/routes.rst:85 ../../source/manual/routes.rst:128
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/routes.rst:85
+msgid "Optional description for this item"
+msgstr ""
+
+#: ../../source/manual/routes.rst:90
+msgid ""
+"Some services are known to update the routing table themselves, in which "
+"case you shouldn't add static routes manually (OpenVPN manages its own "
+"routes for example)."
+msgstr ""
+
+#: ../../source/manual/routes.rst:96
+msgid "Status"
+msgstr ""
+
+#: ../../source/manual/routes.rst:99
+msgid "The status page shows the current active content of the routing table."
+msgstr ""
+
+#: ../../source/manual/routes.rst:104
+msgid "Proto"
+msgstr ""
+
+#: ../../source/manual/routes.rst:104
+msgid "Protocol (IPv4 or IPv6)"
+msgstr ""
+
+#: ../../source/manual/routes.rst:105
+msgid "Destination"
+msgstr ""
+
+#: ../../source/manual/routes.rst:105
+msgid "Destination network"
+msgstr ""
+
+#: ../../source/manual/routes.rst:106
+msgid "Where to send the packet for this destination network"
+msgstr ""
+
+#: ../../source/manual/routes.rst:107 ../../source/manual/routes.rst:122
+msgid "Flags"
+msgstr ""
+
+#: ../../source/manual/routes.rst:107
+msgid ""
+"Routes have associated flags which influence operation of the protocols "
+"when sending to destinations matched by the routes. See the **Flags** "
+"table below for details."
+msgstr ""
+
+#: ../../source/manual/routes.rst:110
+msgid "Use"
+msgstr ""
+
+#: ../../source/manual/routes.rst:110
+msgid "Counts the number of packets sent via this route"
+msgstr ""
+
+#: ../../source/manual/routes.rst:111
+msgid "MTU"
+msgstr ""
+
+#: ../../source/manual/routes.rst:111
+msgid "The MTU set for this route"
+msgstr ""
+
+#: ../../source/manual/routes.rst:112
+msgid "Netif"
+msgstr ""
+
+#: ../../source/manual/routes.rst:112
+msgid "Interface to use for this route"
+msgstr ""
+
+#: ../../source/manual/routes.rst:113
+msgid "Netif (name)"
+msgstr ""
+
+#: ../../source/manual/routes.rst:113
+msgid "Name of the interface if found"
+msgstr ""
+
+#: ../../source/manual/routes.rst:114
+msgid "Expire"
+msgstr ""
+
+#: ../../source/manual/routes.rst:114
+msgid ""
+"The time at which this route should expire, or zero if it should  never "
+"expire. It is the responsibility of individual protocol suites to ensure "
+"that routes are actually deleted once they expire."
+msgstr ""
+
+#: ../../source/manual/routes.rst:125
+msgid "The following flags are supported by the kernel."
+msgstr ""
+
+#: ../../source/manual/routes.rst:128
+msgid "Letter / Flag"
+msgstr ""
+
+#: ../../source/manual/routes.rst:130
+msgid "1 [RTF_PROTO1]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:130 ../../source/manual/routes.rst:131
+#: ../../source/manual/routes.rst:132
+msgid "Protocol specific routing flag"
+msgstr ""
+
+#: ../../source/manual/routes.rst:131
+msgid "2 [RTF_PROTO2]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:132
+msgid "3 [RTF_PROTO3]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:133
+msgid "B [RTF_BLACKHOLE]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:133
+msgid "Just discard pkts (during updates)"
+msgstr ""
+
+#: ../../source/manual/routes.rst:134
+msgid "b [RTF_BROADCAST]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:134
+msgid "The route represents a broadcast address"
+msgstr ""
+
+#: ../../source/manual/routes.rst:135
+msgid "C [RTF_CLONING]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:135
+msgid "Generate new routes on use"
+msgstr ""
+
+#: ../../source/manual/routes.rst:136
+msgid "c [RTF_PRCLONING]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:136
+msgid "Protocol-specified generate new routes on use"
+msgstr ""
+
+#: ../../source/manual/routes.rst:137
+msgid "D [RTF_DYNAMIC]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:137
+msgid "Created dynamically (by redirect)"
+msgstr ""
+
+#: ../../source/manual/routes.rst:138
+msgid "d [RTF_DONE]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:138
+msgid "Message confirmed"
+msgstr ""
+
+#: ../../source/manual/routes.rst:139
+msgid "G [RTF_GATEWAY]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:139
+msgid "Destination is a gateway"
+msgstr ""
+
+#: ../../source/manual/routes.rst:140
+msgid "H [RTF_HOST]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:140
+msgid "Host entry (net otherwise)"
+msgstr ""
+
+#: ../../source/manual/routes.rst:141
+msgid "L [RTF_LLINFO]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:141
+msgid "Valid protocol to link address translation"
+msgstr ""
+
+#: ../../source/manual/routes.rst:142
+msgid "M [RTF_MODIFIED]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:142
+msgid "Modified dynamically (by redirect)"
+msgstr ""
+
+#: ../../source/manual/routes.rst:143
+msgid "R [RTF_REJECT]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:143
+msgid "Host or net unreachable"
+msgstr ""
+
+#: ../../source/manual/routes.rst:144
+msgid "S [RTF_STATIC]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:144
+msgid "Manually added"
+msgstr ""
+
+#: ../../source/manual/routes.rst:145
+msgid "U [RTF_UP]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:145
+msgid "Route usable"
+msgstr ""
+
+#: ../../source/manual/routes.rst:146
+msgid "X [RTF_XRESOLVE]"
+msgstr ""
+
+#: ../../source/manual/routes.rst:146
+msgid "External daemon resolves name"
+msgstr ""
+
+#: ../../source/manual/routes.rst:151
+msgid "Logs"
+msgstr ""
+
+#: ../../source/manual/routes.rst:153
+msgid ""
+"Route related logging, like :code:`radvd` and :code:`rtsold` for IPv6 "
+"write messages to this logging section which can be used for debugging "
+"purposes."
+msgstr ""
+

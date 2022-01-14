@@ -1,0 +1,357 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/contribute.rst:3
+msgid "Contribute"
+msgstr ""
+
+#: ../../source/contribute.rst:4
+msgid ""
+"OPNsense is an open source community project that depends on your "
+"contributions for its continuing development & success."
+msgstr ""
+
+#: ../../source/contribute.rst:7
+msgid ""
+"There are plenty of opportunities to contribute and help OPNsense reach "
+"its goal of becoming the most widely used open source security & firewall"
+" platform. Financial contributions are always welcome and will allow us "
+"to develop parts of the system that may otherwise stay untouched."
+msgstr ""
+
+#: ../../source/contribute.rst:12
+msgid "The OPNsense core team wants to thank everyone who contributed already."
+msgstr ""
+
+#: ../../source/contribute.rst:18
+msgid "Financially"
+msgstr ""
+
+#: ../../source/contribute.rst:19
+msgid ""
+"\"*An open source project can only thrive by the community around it.*\" "
+"We are grateful of all the kind words and support the users of OPNsense "
+"are giving us."
+msgstr ""
+
+#: ../../source/contribute.rst:23
+msgid ""
+"Frequently users ask us how they can contribute to the project. To make "
+"the software better we need your involvement in testing and providing "
+"feedback and if you can spare a few bucks that would be great."
+msgstr ""
+
+#: ../../source/contribute.rst:30
+msgid "Donations"
+msgstr ""
+
+#: ../../source/contribute.rst:31
+msgid ""
+"To enable us to continue development and keep on improving the project "
+"you can contribute by donating to the project, this a simple non "
+"recurring - no strings attached - way of supporting the project. Any "
+"amount will be gratefully accepted!"
+msgstr ""
+
+#: ../../source/contribute.rst:56
+msgid "Partner program"
+msgstr ""
+
+#: ../../source/contribute.rst:57
+msgid ""
+"The OPNsense project offers a partner program where businesses receive "
+"project benefits while supporting the project financially."
+msgstr ""
+
+#: ../../source/contribute.rst:60
+msgid "Main benefits include:"
+msgstr ""
+
+#: ../../source/contribute.rst:62
+msgid "Listing on our `OPNsense partner page <https://opnsense.org/partners/>`__"
+msgstr ""
+
+#: ../../source/contribute.rst:63
+msgid "Access to the core team"
+msgstr ""
+
+#: ../../source/contribute.rst:65
+msgid ""
+"To get enlisted as partner of the OPNsense project means a minimum annual"
+" investment of € 2500.Partners that made an exceptional contribution to "
+"the project are assigned the Platinum Partner status."
+msgstr ""
+
+#: ../../source/contribute.rst:72
+msgid "Support Contract"
+msgstr ""
+
+#: ../../source/contribute.rst:73
+msgid ""
+"with a support contract we support you and you support us as OPNsense is "
+"fully supported by Deciso."
+msgstr ""
+
+#: ../../source/contribute.rst:76
+msgid ""
+"For support options see `OPNsense Commercial Support "
+"<https://opnsense.org/support-overview/commercial-support/>`__"
+msgstr ""
+
+#: ../../source/contribute.rst:82
+msgid "Development"
+msgstr ""
+
+#: ../../source/contribute.rst:83
+msgid "Contributing to the ongoing development of OPNsense can be done by:"
+msgstr ""
+
+#: ../../source/contribute.rst:85
+msgid "Testing a development version and"
+msgstr ""
+
+#: ../../source/contribute.rst:86
+msgid "Report issues and/or"
+msgstr ""
+
+#: ../../source/contribute.rst:87
+msgid "Help fixing issues as well as by"
+msgstr ""
+
+#: ../../source/contribute.rst:88
+msgid "Contributing new functionality"
+msgstr ""
+
+#: ../../source/contribute.rst:89
+msgid "Share your code with the project by manner of a pull request."
+msgstr ""
+
+#: ../../source/contribute.rst:93
+msgid ""
+"Before you send in your pull request, please read our "
+":doc:`development/guidelines` and see the community support levels in the"
+" :doc:`support`. It is important for plugin developers to maintain their "
+"plugin and interact with users for QA."
+msgstr ""
+
+#: ../../source/contribute.rst:99
+msgid "Testing"
+msgstr ""
+
+#: ../../source/contribute.rst:100
+msgid ""
+"Contribute by testing the latest development version to make the next "
+"release even better than the last. If you like to test a development "
+"version then the easiest way is to login to the console and type:"
+msgstr ""
+
+#: ../../source/contribute.rst:109
+msgid "And to revert back to the production version:"
+msgstr ""
+
+#: ../../source/contribute.rst:116
+msgid ""
+"That is all there is to it to test the latest development release. "
+"Development releases are usually built at the same day the latest "
+"production release comes available."
+msgstr ""
+
+#: ../../source/contribute.rst:123
+msgid "Reporting an issue"
+msgstr ""
+
+#: ../../source/contribute.rst:124
+msgid ""
+"Issues can be easily reported on github, please consider carefully if the"
+" issue could be a configuration or user error before reporting it. If you"
+" are unsure, report your issue on the `forum "
+"<https://forum.opnsense.org>`__ or on `IRC "
+"<https://web.libera.chat/#opnsense>`__."
+msgstr ""
+
+#: ../../source/contribute.rst:131
+msgid "Fixing issues"
+msgstr ""
+
+#: ../../source/contribute.rst:132
+msgid ""
+"If you are a programmer or just know how to fix a certain issue then you "
+"can help by either sharing your ideas on or send in a pull request on "
+"github."
+msgstr ""
+
+#: ../../source/contribute.rst:138
+msgid "Designing new features"
+msgstr ""
+
+#: ../../source/contribute.rst:139
+msgid ""
+"If you like to help designing new features then start with reading the "
+":doc:`Development manual </develop>` and checkout our `roadmap "
+"<https://opnsense.org/about/road-map/>`__ as well as our `issue tracker "
+"<https://github.com/opnsense/core/issues>`__. Before starting it is "
+"always a good to share your idea first with a core developer, to do so "
+"you can use either:"
+msgstr ""
+
+#: ../../source/contribute.rst:144
+msgid ""
+"`github <https://github.com/opnsense/core/>`__ and  `create a issue "
+"<https://github.com/opnsense/core/issues/new>`__ and mention you "
+"volunteer for taking on the development task (we will correctly label it "
+"as enhancement or feature)"
+msgstr ""
+
+#: ../../source/contribute.rst:146
+msgid ""
+"find one of us on IRC/Libera Chat (#opnsense) and see if we are available"
+" to discuss your idea."
+msgstr ""
+
+#: ../../source/contribute.rst:153
+msgid "Translations"
+msgstr ""
+
+#: ../../source/contribute.rst:154
+msgid ""
+"OPNsense has an active `translation project "
+"<https://translate.opnsense.org/projects/>`__, currently supporting:"
+msgstr ""
+
+#: ../../source/contribute.rst:157
+msgid "Czech"
+msgstr ""
+
+#: ../../source/contribute.rst:158
+msgid "English"
+msgstr ""
+
+#: ../../source/contribute.rst:159
+msgid "French"
+msgstr ""
+
+#: ../../source/contribute.rst:160
+msgid "German"
+msgstr ""
+
+#: ../../source/contribute.rst:161
+msgid "Japanese"
+msgstr ""
+
+#: ../../source/contribute.rst:162
+msgid "Portuguese"
+msgstr ""
+
+#: ../../source/contribute.rst:163
+msgid "Russian"
+msgstr ""
+
+#: ../../source/contribute.rst:164
+msgid "Simplified Chinese"
+msgstr ""
+
+#: ../../source/contribute.rst:166
+msgid ""
+"Working on translations is time consuming, but if you feel up to it and "
+"would like to help adding another language, then please contact us via "
+"email (contact @ opnsense.org)."
+msgstr ""
+
+#: ../../source/contribute.rst:173
+msgid "Documentation & wiki articles"
+msgstr ""
+
+#: ../../source/contribute.rst:174
+msgid ""
+"The easiest way to help with documentation is to write how-to type "
+"articles. As the wiki & documentation project itself is written in "
+"**reStructuredText** you can offer your content in this format "
+"(preferably as pull request), but other formats are also possible, such "
+"as:"
+msgstr ""
+
+#: ../../source/contribute.rst:179
+msgid "markup with ./images/directory including the used images(in any)"
+msgstr ""
+
+#: ../../source/contribute.rst:180
+msgid "word document with embedded images (if any)"
+msgstr ""
+
+#: ../../source/contribute.rst:182
+msgid ""
+"To include you documentation send it to contact @ opnsense.org. Make sure"
+" that:"
+msgstr ""
+
+#: ../../source/contribute.rst:184
+msgid ""
+"Your content does not include copyrighted material if you do not own the "
+"copyright yourself"
+msgstr ""
+
+#: ../../source/contribute.rst:185
+msgid ""
+"State that we may use the content under our Documentation Copyright as "
+"listed in the :doc:`legal` section."
+msgstr ""
+
+#: ../../source/contribute.rst:191
+msgid "Forum & IRC"
+msgstr ""
+
+#: ../../source/contribute.rst:192
+msgid ""
+"If you are an experienced network engineer, know a lot about firewall "
+"technology or if you are excited about OPNsense, then you can contribute "
+"to the project by helping others on the `forum "
+"<https://forum.opnsense.org>`__ or on `IRC "
+"<https://web.libera.chat/#opnsense>`__."
+msgstr ""
+
+#: ../../source/contribute.rst:200
+msgid "Social media"
+msgstr ""
+
+#: ../../source/contribute.rst:201
+msgid ""
+"Contribute to the success of the project by letting others know how "
+"OPNsense helped solving your network or security challenges. Let others "
+"know about OPNsense and/or follow us & retweet our messages on `Twitter "
+"<https://twitter.com/opnsense>`__."
+msgstr ""
+
+#: ../../source/contribute.rst:205
+msgid ""
+"Anything you can do to spread the word about OPNsense will help to reach "
+"our goal to become the most widely used open source security & firewall "
+"platform."
+msgstr ""
+
+#: ../../source/contribute.rst:213
+msgid "Closing Words"
+msgstr ""
+
+#: ../../source/contribute.rst:214
+msgid ""
+"If you have suggestions on how others can contribute to OPNsense and it "
+"is not yet listed on this page, then let us know. You can reach us at "
+"contact @ opnsense.org."
+msgstr ""
+

@@ -1,0 +1,306 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/gateways.rst:3
+msgid "Gateways"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:23
+msgid ""
+"Gateways define the possible routes that can be used to access other "
+"networks, such as the internet. All different paths that are available to"
+" your firewall can be managed from this page, which can be found at "
+":menuselection:`System->Gateways->Single`."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:26
+msgid ""
+"You can either define these gateways yourself, or they can be provided "
+"automatically from dynamical configured interfaces (e.g. dhcp), in which "
+"case they won't have a predefined address."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:29
+msgid ""
+"When a gateway is generated automatically, you still have the ability to "
+"change its settings. Automatically generated gateways usually have names "
+"like :code:`WAN_DHCP`."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:32
+msgid ""
+"In cases where you need to forward specific networks to a specific "
+"target, you can use static routes, which can be configured in "
+":menuselection:`System->Routes->Configuration` and depend on the entries "
+"shown in the gateway page."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:35
+msgid ""
+"A specific kind of route is the :code:`default` route, this is where all "
+"traffic is being send when no other static route is configured. There can"
+" only be one default at a time per ip protocol (ipv4, ipv6) in the system"
+" routing table."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:40
+msgid "Default gateways"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:42
+msgid ""
+"Since there can only be one active default gateway, we need a method to "
+"figure out which one to use. For both ip protocols (ipv4, ipv6), this is "
+"determined equally."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:45
+msgid ""
+"Gateways have priorities, ranging from :code:`1` [very important] to "
+":code:`255` [least important], automatically generated gateways will "
+"receive a low priority by default (which you can change manually)."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:48
+msgid ""
+"Next there is a setting called :code:`upstream`, which marks the gateway "
+"as favourable for default gateway selection, there can be more than one "
+"upstream configured at the same time."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:51
+msgid ""
+"When choosing a default, the algorithm will always sort :code:`upstream` "
+"gateways higher (more attractive) and will use the priority next. If none"
+" of the gateways is explicitly chosen as upstream, the first non upstream"
+" is chosen."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:54
+msgid ""
+"In cases where gateway monitoring is configured, choosing a gateway also "
+"involves testing its current status and act accordingly when the "
+"monitored address is not reachable."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:57
+msgid ""
+"By default the system only chooses a (new) default gateway on startup or "
+"when an interface is connected or disconnected. In many cases you might "
+"want the default gateway also changed when the current gateway is not "
+"reachable anymore (via configured monitoring), in which case you can "
+"enable \"Gateway switching\" in "
+":menuselection:`System->Settings->General`"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:63
+msgid ""
+"In case you have multiple (dynamic) gateways, which should fall over in a"
+" specific order on failure, just set a **priority** and **upstream** "
+"flag. (e.g. favour fiber optics above 4g) Your choices should be "
+"reflected accordingly in the gateway grid (most important first)."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:69
+msgid "Overview page"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:71
+msgid ""
+"The overview page (:menuselection:`System->Gateways->Single`) shows all "
+"currently known gateways and their statuses in order of importance (most "
+"important on top). When a gateway is considered \"default\" it will show "
+"**(active)** behind the name."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:76
+msgid ""
+"The **(active)** status shown in the list reflects the current calculated"
+" default, which might differ from the machine routing if gateway "
+"switching is not enabled. You can always check the current active default"
+" in :menuselection:`System->Routes->Status`"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:81
+msgid ""
+"When debugging dynamic gateway issues, always check if your expected "
+"gateway is actually in the list. The system will only consider items "
+"shown here."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:86
+msgid "Settings"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:88
+msgid ""
+"Below you will find the most important settings that are available for a "
+"gateway item."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:91
+msgid "Disabled"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:91
+msgid "(temporary) disable this item"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:92
+msgid "Name"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:92
+msgid "Unique name for this gateway"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:93
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:93
+msgid "Optional description for this item"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:94
+msgid "Interface"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:94
+msgid "The interface this gateway is connected to"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:95
+msgid "Address Family"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:95
+msgid "IP family (v4 or v6)"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:96
+msgid "IP address"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:96
+msgid "Address of our gateway, empty/**dynamic** when dynamically generated."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:97
+msgid "Upstream Gateway"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:97
+msgid "Upstream gateway, consider this gateway as default gateway candidate"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:98
+msgid "Far Gateway"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:98
+msgid "Checkbox to allow the gateway to exist outside of the interface subnet."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:99
+msgid "Disable Gateway Monitoring"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:99
+msgid "Disable monitoring (consider **online**)"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:100
+msgid "Monitor IP"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:100
+msgid ""
+"Alternative address to monitor, always make sure the address is actually "
+"reachable and using this interface (via a static gateway)"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:102
+msgid "Mark Gateway as Down"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:102
+msgid ""
+"Consider this gateway as down, so it can't be considered as default "
+"gateway"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:103
+msgid "Priority"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:103
+msgid "Prioritizes this gateway, a lower value means more important."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:109
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:112
+msgid "Missing dynamic gateway"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:114
+msgid ""
+"Most dynamic interface types write their current gateway into a file "
+"named :code:`/tmp/[interface]_router` or "
+":code:`/tmp/[interface]_routerv6`. When the expected gateway is not "
+"listed in the page, there might be an issue with the interface type (for "
+"example the remote server isn't providing one at the moment)."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:119
+msgid ""
+"Some VPN types support sending traffic to the interface without knowing "
+"an intermediate gateway, to enable this check \"Dynamic gateway policy\" "
+"in the interface settings."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:123
+msgid "Gateway marked offline"
+msgstr ""
+
+#: ../../source/manual/gateways.rst:125
+msgid ""
+"When a gateway is marked offline, always check if the monitor address is "
+"reachable via the correct interface first. You can use "
+":menuselection:`Interfaces->Diagnostics->Ping` to test connectivity. In "
+"case the monitor address is not in the same subnet as the interface, also"
+" check if there's a static route "
+"(:menuselection:`System->Routes->Status`) available which sends the "
+"requested traffic to the correct upstream gateway."
+msgstr ""
+
+#: ../../source/manual/gateways.rst:130
+msgid ""
+"There should always be a :code:`dpinger` process active, which you can "
+"check on the services page "
+"(:menuselection:`System->Diagnostics->Services`), finally if all seems to"
+" be running you can deep dive into the packets leaving the interface, if "
+"dpinger is active, there should be ICMP packets heading to your monitor "
+"address, which you can inspect using "
+":menuselection:`Interfaces->Diagnostics->Packet Capture`."
+msgstr ""
+

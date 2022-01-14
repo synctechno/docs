@@ -1,0 +1,343 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:3
+msgid "Setup Web Filtering"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:4
+msgid ""
+"Category based web filtering in OPNsense is done by utilizing the built-"
+"in proxy and one of the freely available or commercial blacklists."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:7
+msgid ""
+"For this this How-to we will utilize the `UT1 \"web categorization list\""
+" <https://dsi.ut-capitole.fr/blacklists/index_en.php>`__ from the "
+"Université Toulouse managed by Fabrice Prigent. This list is supplied for"
+" free under the `Creative Commons license "
+"<http://creativecommons.org/licenses/by-sa/4.0/>`__."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:11
+msgid "Other popular lists that are expected to work well with OPNsense are:"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:13
+msgid "Shallalist.de <http://www.shallalist.de/>"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:14
+msgid "Free for personal usage and partly for commercial usage"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:15
+msgid "URLBlacklist.com <http://urlblacklist.com/>"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:16
+#: ../../source/manual/how-tos/proxywebfilter.rst:18
+msgid "Commercial paid service"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:18
+msgid "Squidblacklist.org <http://www.squidblacklist.org/>"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:20
+msgid "For this tutorial we will assume:"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:22
+msgid "Proxy has its default settings / is not configured"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:23
+msgid ""
+"We only want web filtering and nothing else (no caching, no "
+"authentication)"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:26
+msgid "For other general/basic setup item of the proxy see :doc:`cachingproxy`"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:30
+msgid "Step 1 - Disable Authentication"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:31
+msgid "To start go to :menuselection:`Services --> Web Proxy --> Administration`."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:33
+msgid ""
+"Click on the arrow next to the **Forward Proxy** tab to show the drop "
+"down menu. Now select **Authentication Settings** and click on **Clear "
+"All** to disable user authentication. And click **Apply** to save the "
+"change."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:39
+msgid "Step 2 - Configure Blacklist"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:40
+msgid ""
+"Click on the tab **Remote Access Control Lists**. Now click on the **+** "
+"in the lower right corner of the from to add a new list."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:43
+msgid "A screen will popup, enter the following details:"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:46
+msgid "**Enabled**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:46
+msgid "Checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:46
+msgid "*Enable/Disable*"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:47
+msgid "**Filename**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:47
+msgid "UT1"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:47
+msgid "*Choose a unique filename*"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:48
+msgid "**URL**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:48
+msgid "(copy/paste the URL)"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:48
+msgid "*The URL of the blacklist*"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:49
+msgid "**categories**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:49
+msgid "(Leave blank)"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:49
+msgid "*If left blank the full list will be fetched*"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:50
+#: ../../source/manual/how-tos/proxywebfilter.rst:114
+#: ../../source/manual/how-tos/proxywebfilter.rst:128
+msgid "**Description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:50
+msgid "UT1 web filter"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:50
+msgid "*Your description*"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:54
+msgid "The URL of the full compressed UT1 category based list is:"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:54
+msgid ""
+"ftp://ftp.ut-"
+"capitole.fr/pub/reseau/cache/squidguard_contrib/blacklists.tar.gz"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:57
+msgid ""
+"If you want to add self-hosted lists, be sure to not use the file "
+"extensions .doc, .pdf or .txt."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:62
+msgid "Press **Save Changes**."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:66
+msgid "Step 3 - Download the Categories"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:67
+msgid ""
+"Now press Download ACLs, please note that this will take a while (can be "
+"several minutes) as the full list (>19 MB) will be converted to squid "
+"ACLs."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:72
+msgid "Step 4 - Setup Categories"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:73
+msgid ""
+"Now we can select the categories we want to use by clicking on the pencil"
+" icon next to the description of the list. This will open the edit window"
+" again, but now you will see all available categories extracted from the "
+"list."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:80
+msgid ""
+"For our example we will filter ads and adult content. The easiest way to "
+"do so is clear the list and select the following from the drop down list:"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:86
+msgid ""
+"Now **Save changes** and press **Download ACLs** again to download and "
+"reconstruct the list with only the selected categories. This will take "
+"roughly the same amount of time as the first fetch as the adult alone "
+"section is ~15 MB."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:92
+msgid "Step 5 - Enable Proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:93
+msgid ""
+"To enable the proxy just go to :menuselection:`Services --> Proxy Server "
+"--> Administration` and check **Enable proxy** en click on **Apply**. The"
+" proxy will bind to LAN and port 3128."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:96
+msgid ""
+"It may take a while for the proxy to start and the play icon on the top "
+"right corner of the screen will turn red. Refresh the page to see if the "
+"proxy is done loading (play icon will turn green)."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:102
+msgid "Step 6 - Disable Proxy Bypass"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:103
+msgid ""
+"To make sure no-one can bypass the proxy you need to add a firewall rule."
+" Go to :menuselection:`Firewall --> Rules` and add the following to the "
+"top of the list rule on the LAN interface (if LAN is where your clients "
+"and proxy are on)."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:108
+#: ../../source/manual/how-tos/proxywebfilter.rst:122
+msgid "**Action**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:108
+#: ../../source/manual/how-tos/proxywebfilter.rst:122
+msgid "Block"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:109
+#: ../../source/manual/how-tos/proxywebfilter.rst:123
+msgid "**Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:109
+#: ../../source/manual/how-tos/proxywebfilter.rst:123
+msgid "LAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:110
+#: ../../source/manual/how-tos/proxywebfilter.rst:124
+msgid "**Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:110
+#: ../../source/manual/how-tos/proxywebfilter.rst:124
+msgid "TCP/UDP"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:111
+#: ../../source/manual/how-tos/proxywebfilter.rst:125
+msgid "**Source**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:111
+#: ../../source/manual/how-tos/proxywebfilter.rst:125
+msgid "LAN net"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:112
+#: ../../source/manual/how-tos/proxywebfilter.rst:126
+msgid "**Destination Port Range**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:112
+msgid "HTTP"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:113
+#: ../../source/manual/how-tos/proxywebfilter.rst:127
+msgid "**Category**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:113
+#: ../../source/manual/how-tos/proxywebfilter.rst:127
+msgid "Block Proxy Bypass"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:114
+msgid "Block HTTP bypass"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:117
+msgid "**Save**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:119
+msgid "And one more rule to block HTTPS access:"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:126
+msgid "HTTPS"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:128
+msgid "Block HTTPS bypass"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxywebfilter.rst:131
+msgid "**Save** & **Apply changes**"
+msgstr ""
+

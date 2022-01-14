@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/legal.rst:3
+msgid "Legal notices"
+msgstr ""
+
+#: ../../source/legal.rst:9
+msgid ""
+"The OPNsense project wants to be a project that is friendly for users, "
+"developers and partners. In this world with trademarks and copyright it "
+"is best to “keep things as simple as possible, but not simpler”. Below we"
+" pointed out the Licensing and Trademark rules we use."
+msgstr ""
+
+#: ../../source/legal.rst:16
+msgid "OPNsense License & Copyright"
+msgstr ""
+
+#: ../../source/legal.rst:22
+msgid ""
+"OPNsense is licensed under an `Open Source Initiative approved license "
+"<http://opensource.org/licenses>`__."
+msgstr ""
+
+#: ../../source/legal.rst:24
+msgid ""
+"We like the BSD license, a simple two clause license that gives freedom "
+"to the audience we want to serve.  It basically gives you the right to do"
+" whatever you want to do with the code, even fork it and take it from "
+"there."
+msgstr ""
+
+#: ../../source/legal.rst:28
+msgid "OPNsense is available under the BSD 2-Clause “Simplified” license:"
+msgstr ""
+
+#: ../../source/legal.rst:30
+msgid ""
+"`OPNsense® <http://opnsense.org>`__ is Copyright © 2014 – 2019 by Deciso "
+"B.V. All rights reserved. Redistribution and use in source and binary "
+"forms, with or without modification, are permitted provided that the "
+"following conditions are met:"
+msgstr ""
+
+#: ../../source/legal.rst:37 ../../source/legal.rst:84
+msgid ""
+"1. Redistributions of source code must retain the above copyright notice,"
+" this list of conditions and the following disclaimer."
+msgstr ""
+
+#: ../../source/legal.rst:40 ../../source/legal.rst:87
+msgid ""
+"2. Redistributions in binary form must reproduce the above copyright "
+"notice, this list of conditions and the following disclaimer in the "
+"documentation and/or other materials provided with the distribution."
+msgstr ""
+
+#: ../../source/legal.rst:44
+msgid ""
+"THIS SOFTWARE IS PROVIDED “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, "
+"INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY "
+"AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL "
+"THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, "
+"EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, "
+"PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR "
+"PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF "
+"LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING "
+"NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS "
+"SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+msgstr ""
+
+#: ../../source/legal.rst:55
+msgid ""
+"OPNsense is based on `HardenedBSD <https://hardenedbsd.org/>`__ Copyright"
+" © The HardenedBSD Project. All rights reserved."
+msgstr ""
+
+#: ../../source/legal.rst:58
+msgid ""
+"OPNsense is a fork of `pfSense® <https://www.pfsense.org>`__ (Copyright ©"
+" 2004-2014 Electric Sheep Fencing, LLC. All rights reserved.) a fork from"
+" `m0n0wall <http://m0n0.ch/wall/>`__ (Copyright © 2002-2013 Manuel "
+"Kasper)."
+msgstr ""
+
+#: ../../source/legal.rst:65
+msgid "Packages and ports"
+msgstr ""
+
+#: ../../source/legal.rst:66
+msgid ""
+"OPNsense includes various freely available software packages and ports. "
+"The current ports are listed in a file named `ports.conf` found in a "
+"directory with a version number  `here "
+"<https://github.com/opnsense/tools/tree/master/config>`__."
+msgstr ""
+
+#: ../../source/legal.rst:69
+msgid ""
+"The authors of OPNsense would like to thank all contributors for their "
+"efforts."
+msgstr ""
+
+#: ../../source/legal.rst:75
+msgid "Documentation Copyright"
+msgstr ""
+
+#: ../../source/legal.rst:76
+msgid "The documentation is provided under a 2-clause BSD license:"
+msgstr ""
+
+#: ../../source/legal.rst:78
+msgid "Deciso B.V. All rights reserved."
+msgstr ""
+
+#: ../../source/legal.rst:80
+msgid ""
+"Redistribution and use in source and binary forms, with or without "
+"modification, are permitted provided that the following conditions are "
+"met:"
+msgstr ""
+
+#: ../../source/legal.rst:91
+msgid ""
+"THIS DOCUMENTATION IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "
+"\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT "
+"LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A "
+"PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPNSENSE "
+"DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, "
+"SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED "
+"TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR "
+"PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF "
+"LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING "
+"NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS "
+"DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+msgstr ""
+
+#: ../../source/legal.rst:104
+msgid "Pictures Copyright"
+msgstr ""
+
+#: ../../source/legal.rst:105
+msgid "Some pictures are licensed under the Creative Commons Zero (CC0) license:"
+msgstr ""
+
+#: ../../source/legal.rst:107
+msgid "https://creativecommons.org/publicdomain/zero/1.0/"
+msgstr ""
+
+#: ../../source/legal.rst:111
+msgid "Logos Copyright"
+msgstr ""
+
+#: ../../source/legal.rst:112
+msgid ""
+"Logos may be subject to additional copyrights, property rights, "
+"trademarks etc. and may require the consent of a third party or the "
+"license of these rights. Deciso B.V. does not represent or make any "
+"warranties that it owns or licenses any of the mentioned, nor does it "
+"grant them."
+msgstr ""
+
+#: ../../source/legal.rst:119
+msgid "Trademark policy"
+msgstr ""
+
+#: ../../source/legal.rst:121
+msgid ""
+"OPNsense is a trademark. If you wish to use the name or logo in any way, "
+"you must comply with this policy."
+msgstr ""
+
+#: ../../source/legal.rst:124
+msgid ""
+"The name and logo may be used to promote OPNsense based products or "
+"services."
+msgstr ""
+
+#: ../../source/legal.rst:126
+msgid ""
+"The name and logo may be used to promote or serve OPNsense or related "
+"projects and their communities."
+msgstr ""
+
+#: ../../source/legal.rst:128
+msgid ""
+"When using the logo on online media like websites, social media and apps "
+"the logo should link to https://opnsense.org"
+msgstr ""
+
+#: ../../source/legal.rst:130
+msgid ""
+"You must request our permission to use derivatives of the name and/or "
+"logo at **project** @ **opnsense.org** prior to any use of the derivative"
+" name and/or logo, and we may grant or withhold permission to use the "
+"derivative name and/or logo in our sole discretion."
+msgstr ""
+
+#: ../../source/legal.rst:134
+msgid ""
+"You may not state or otherwise lead people to believe, that you represent"
+" the OPNsense project in any way other than as an individual or corporate"
+" contributor to the project."
+msgstr ""
+
+#: ../../source/legal.rst:138
+msgid ""
+"The official OPNsense logo is available for download: :download:`OPNsense"
+" logo<images/OPNsense_Logo.ai>`."
+msgstr ""
+
+#: ../../source/legal.rst:141
+msgid ""
+"If you have any questions about this policy, its interpretation, or want "
+"to ask for permission please email **project** @ **opnsense.org**."
+msgstr ""
+

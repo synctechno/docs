@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/api/plugins/siproxd.rst:2
+msgid "Siproxd"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:4
+msgid "Resources (DomainController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "Method"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "Module"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "Controller"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "Command"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "``POST``"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "siproxd"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "domain"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "addDomain"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "delDomain"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "$uuid"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "``GET``"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "get"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "getDomain"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "$uuid=null"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "searchDomain"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "set"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "setDomain"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "toggleDomain"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "``<<uses>>``"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid ""
+"*model* `Domain.xml "
+"<https://github.com/opnsense/plugins/blob/master/net/siproxd/src/opnsense/mvc/app/models/OPNsense/Siproxd/Domain.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:21
+msgid "Resources (GeneralController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "general"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:28
+msgid "Service (ServiceController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "service"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "reconfigure"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "restart"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "showregistrations"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "start"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "status"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "stop"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:39
+msgid "Resources (UserController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "user"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "addUser"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "delUser"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "getUser"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "searchUser"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "setUser"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid "toggleUser"
+msgstr ""
+
+#: ../../source/development/api/plugins/siproxd.rst:1
+msgid ""
+"*model* `User.xml "
+"<https://github.com/opnsense/plugins/blob/master/net/siproxd/src/opnsense/mvc/app/models/OPNsense/Siproxd/User.xml>`__"
+msgstr ""
+

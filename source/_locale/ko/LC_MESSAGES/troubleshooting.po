@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/troubleshooting.rst:3
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../source/troubleshooting.rst:8
+msgid ""
+"Sometimes, even with all the hard work done to prepare your setup, issues"
+" occur. Generally it's always good to check your logs "
+"(:menuselection:`System --> Log Files` or the ones found in the module "
+"your trying to setup), but sometimes more help is needed."
+msgstr ""
+
+#: ../../source/troubleshooting.rst:14
+msgid "General issue workflow"
+msgstr ""
+
+#: ../../source/troubleshooting.rst:16
+msgid ""
+"Before reporting issues, please make sure yours still exists on the "
+"latest version. We generally advice to check the existing `issues "
+"<https://github.com/opnsense/core/issues>`__ and our `forum "
+"<https://forum.opnsense.org/>`__ before reporting new ones."
+msgstr ""
+
+#: ../../source/troubleshooting.rst:20
+msgid ""
+"In case your issue was introduced after a (minor) upgrade, you can use "
+"`opnsense-revert <https://docs.opnsense.org/manual/opnsense_tools.html"
+"#opnsense-revert>`__ to downgrade specific packages installed on the "
+"system."
+msgstr ""
+
+#: ../../source/troubleshooting.rst:23
+msgid ""
+"Using the firmware section (:menuselection:`System --> Firmware --> "
+"Status`) you can perform a health check on the system, on the bottom of "
+"the status overview is a button named **Run an audit** which can be "
+"expanded to offer the **Health** selection."
+msgstr ""
+
+#: ../../source/troubleshooting.rst:26
+msgid "When clicked this outputs something like the following:"
+msgstr ""
+
+#: ../../source/troubleshooting.rst:48
+msgid ""
+"When mismatches are reported, you can reinstall affected packages in the "
+"**Packages** section of the firmware screen. In the case above you would "
+"reinstall opnsense, since the :code:`auth.inc` looks tainted."
+msgstr ""
+
+#: ../../source/troubleshooting.rst:53
+msgid ""
+"We advise to include the output of the health check if it seems to report"
+" issues when creating bug reports on GitHub."
+msgstr ""
+
+#: ../../source/troubleshooting.rst:58
+msgid ""
+"Always try to be precise in issue reports, either if their about a "
+"possible bug or a feature request, it helps if intentions are absolutely "
+"clear. Our GitHub repositories use templates which should guide you "
+"through, we kindly ask you to use them (tickets not using our templates "
+"are treated as low priority)."
+msgstr ""
+
+#: ../../source/troubleshooting.rst:64
+msgid "Topics"
+msgstr ""
+
+#: ../../source/troubleshooting.rst:66
+msgid ""
+"Some of the common mistakes we have seen over the years, combined with "
+"pointers where to look for solutions can be found in the list below."
+msgstr ""
+

@@ -1,0 +1,772 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/ipsec-road.rst:3
+msgid "Setup IPsec Road-Warrior"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:4
+msgid ""
+"Road Warriors are remote users who need secure access to the companies "
+"infrastructure. IPsec Mobile Clients offer a solution that is easy to "
+"setup with macOS (native) and is know to work with iOS as well as many "
+"Android devices."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:8
+msgid ""
+"For more flexibility use SSL VPNs, OPNsense utilizes OpenVPN for this "
+"purpose."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:10
+msgid ""
+"With this example we'll show you how to configure the Mobile Client Setup"
+" in OPNsense and give you configuration examples for:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:13
+msgid "macOS"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:14
+msgid "iOS"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:15
+msgid "Android"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:19
+msgid ""
+"For the sample we will use a private IP for our WAN connection. This "
+"requires us to disable the default block rule on wan to allow private "
+"traffic. To do so, go to the :menuselection:`Interfaces --> [WAN]` and "
+"uncheck \"Block private networks\". *(Dont forget to save and apply)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:30
+msgid "Sample Setup"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:31
+msgid "For the sample configuration we configure OPNsense"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:33
+msgid "**Company Network with Remote Client**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:66
+msgid "Company Network"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:68
+msgid "**Hostname**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:68
+msgid "fw1"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:69
+msgid "**WAN IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:69
+#: ../../source/manual/how-tos/ipsec-road.rst:313
+#: ../../source/manual/how-tos/ipsec-road.rst:330
+msgid "172.18.0.164"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:70
+msgid "**LAN IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:70
+msgid "192.168.1.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:71
+msgid "**LAN DHCP Range**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:71
+msgid "192.168.1.100-192.168.1.200"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:72
+msgid "**IPsec Clients**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:72
+msgid "10.10.0.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:78
+msgid "Firewall Rules Mobile Users"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:79
+msgid "To allow IPsec Tunnel Connections, the following should be allowed on WAN."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:81
+msgid "Protocol ESP"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:82
+msgid "UDP Traffic on Port 500 (ISAKMP)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:83
+msgid "UDP Traffic on Port 4500 (NAT-T)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:88
+msgid ""
+"To allow traffic passing to your LAN subnet you need to add a rule to the"
+" IPsec interface."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:96
+msgid "Step 1 - Mobile Clients"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:97
+msgid ""
+"First we will need to setup the mobile clients network and authentication"
+" methods. Go to :menuselection:`VPN --> IPsec --> Mobile Clients`"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:100
+msgid "For our example will use the following settings:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:103
+msgid "IKE Extensions"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:105
+msgid "**Enable**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:105
+msgid "checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:105
+msgid "*check to enable mobile clients*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:106
+msgid "**User Authentication**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:106
+msgid "Local Database"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:106
+msgid "*For the example we use the Local Database*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:107
+msgid "**Group Authentication**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:107
+msgid "none"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:107
+msgid "*Leave on none*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:108
+msgid "**Virtual Address Pool**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:108
+msgid "10.0.0.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:108
+msgid "*Enter the IP range for the remote clients*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:111
+msgid ""
+"You can select other options, but we will leave them all unchecked for "
+"this example."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:114
+msgid ""
+"**Save** your settings and select **Create Phase1** when it appears. Then"
+" enter the Mobile Client Phase 1 setting."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:119
+msgid "Step 2 - Phase 1 Mobile Clients"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:122
+msgid "Phase 1 General information"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:124
+msgid "**Connection method**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:124
+msgid "default"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:124
+msgid "*default is 'Start on traffic'*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:125
+msgid "**Key Exchange version**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:125
+msgid "V1"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:125
+msgid "*only V1 is supported for mobile clients*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:126
+msgid "**Internet Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:126
+msgid "IPv4"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:127
+msgid "**Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:127
+msgid "WAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:127
+msgid "*choose the interface connected to the internet*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:128
+#: ../../source/manual/how-tos/ipsec-road.rst:191
+#: ../../source/manual/how-tos/ipsec-road.rst:312
+msgid "**Description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:128
+msgid "MobileIPsec"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:128
+msgid "*freely chosen description*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:132
+msgid "Phase 1 proposal (Authentication)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:134
+msgid "**Authentication method**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:134
+msgid "Mutual PSK +Xauth"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:134
+msgid "*Using a Pre-shared Key and Login*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:135
+msgid "**Negotiation mode**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:135
+msgid "Agressive"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:135
+msgid "*Select Aggressive*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:136
+msgid "**My identifier**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:136
+msgid "My IP address"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:136
+msgid "*Simple identification for fixed ip*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:137
+msgid "**Pre-Shared Key**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:137
+#: ../../source/manual/how-tos/ipsec-road.rst:316
+#: ../../source/manual/how-tos/ipsec-road.rst:331
+msgid "At4aDMOAOub2NwT6gMHA"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:137
+msgid "*Random key*. **CREATE YOUR OWN!**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:142
+msgid "Phase 1 proposal (Algorithms)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:144
+msgid "**Encryption algorithm**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:144
+msgid "AES"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:144
+msgid "*For our sample we will Use AES/256 bits*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:145
+msgid "**Hash algoritm**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:145
+#: ../../source/manual/how-tos/ipsec-road.rst:205
+msgid "SHA1"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:145
+msgid "*SHA1 for compatibility, you can try a stronger hash*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:146
+msgid "**DH key group**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:146
+msgid "1024 bit"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:146
+msgid "*1024 bit for compatibility, you can try stronger group*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:147
+#: ../../source/manual/how-tos/ipsec-road.rst:207
+msgid "**Lifetime**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:147
+msgid "28800 sec"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:147
+msgid "*lifetime before renegotiation*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:152
+msgid "Advanced Options"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:154
+msgid "**Disable Rekey**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:154
+#: ../../source/manual/how-tos/ipsec-road.rst:155
+#: ../../source/manual/how-tos/ipsec-road.rst:157
+msgid "Unchecked"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:154
+msgid "*Renegotiate when connection is about to expire*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:155
+msgid "**Disable Reauth**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:155
+msgid "*For IKEv2 only re-authenticate peer on rekeying*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:156
+msgid "**NAT Traversal**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:156
+msgid "Enabled"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:156
+msgid "*Enable for IKEv1*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:157
+msgid "**Dead Peer Detection**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:161
+#: ../../source/manual/how-tos/ipsec-road.rst:210
+msgid "Save your setting by pressing:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:166
+msgid "Now you should see the following screen:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:174
+msgid "Step 3 - Phase 2 Mobile Clients"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:175
+msgid "Press the button that says '+ Show 0 Phase-2 entries'"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:180
+msgid "You will see an empty list:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:185
+msgid "Now press the *+* at the right of this list to add a Phase 2 entry."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:188
+msgid "General information"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:190
+msgid "**Mode**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:190
+msgid "Tunnel IPv4"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:190
+msgid "*Select Tunnel mode*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:191
+msgid "MobileIPsecP2"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:191
+#: ../../source/manual/how-tos/ipsec-road.rst:312
+msgid "*Freely chosen description*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:195
+msgid "Local Network"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:197
+msgid "**Local Network**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:197
+msgid "LAN subnet"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:197
+msgid "*Route the local LAN subnet*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:201
+msgid "Phase 2 proposal (SA/Key Exchange)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:203
+msgid "**Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:203
+msgid "ESP"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:203
+msgid "*Choose ESP for encryption*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:204
+msgid "**Encryption algorithms**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:204
+msgid "AES / 256"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:204
+msgid "*For the sample we use AES 256*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:205
+msgid "**Hash algorithms**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:205
+msgid "*You may also try stronger SHA512*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:206
+msgid "**PFS Key group**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:206
+msgid "off"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:206
+msgid "*Enable a group fro stronger security*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:207
+msgid "3600 sec"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:216
+msgid "Enable IPsec, Select:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:221
+msgid "Save:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:226
+msgid "And Apply changes:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:240
+msgid ""
+"If you already had IPsec enabled and added Road Warrior setup, it's "
+"important to restart the whole service via services widget in the upper "
+"right corner of IPSec pages or via :menuselection:`System --> Diagnostics"
+" --> Services --> Strongswan` since applying configuration only reloads "
+"it, but a restart also loads the required modules of strongswan."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:247
+msgid "Step 4 - Add IPsec Users"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:248
+msgid ""
+"For this example we will create a new user who may access the mobile "
+"IPsec vpn."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:250
+msgid ""
+"Go to :menuselection:`System --> Access --> Users` and press the **+** "
+"sign in the lower right corner to add a new user."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:253
+msgid "Enter the following into the form:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:256
+msgid "**User Name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:256
+#: ../../source/manual/how-tos/ipsec-road.rst:314
+msgid "expert"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:257
+#: ../../source/manual/how-tos/ipsec-road.rst:315
+msgid "**Password**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:257
+#: ../../source/manual/how-tos/ipsec-road.rst:315
+msgid "&test!9T"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:260
+msgid "**Save** to apply."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:266
+msgid "Step 5 - Configure Client"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:267
+msgid ""
+"To illustrate the client setup we will look at the configuration under "
+"macOS, including some screenshots. The configurations for Android and iOS"
+" will be settings only."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:271
+msgid ""
+"Configuration samples listed here where created using latest macOS, iOS "
+"and Android devices on time of publication in February 2016."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:276
+msgid "Configure macOS Client"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:278
+msgid ""
+"Start with opening your network settings (:menuselection:`System "
+"Preferences --> Network)` and Add a new network by pressing the + in the "
+"lower left corner."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:281
+msgid ""
+"Now select **VPN** and **Cisco IPSec**, give your connection a name and "
+"press **Create**."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:286
+msgid "Now enter the details for our connection:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:291
+msgid ""
+"Next press **Authentication Settings** to add the group name and pre-"
+"shared key."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:296
+msgid "Press **OK** to save these settings and then **Apply** to apply them."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:298
+msgid "Now test the connection by selecting it from the list and hit **Connect**."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:303
+msgid "**Done**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:307
+msgid "Configure iOS Client"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:308
+msgid ""
+"To add a VPN connection on an iOS device go to :menuselection:`Settings "
+"--> General --> VPN`. Select **Add VPN Configuration** chose **IPsec** "
+"and use the Following Settings:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:312
+#: ../../source/manual/how-tos/ipsec-road.rst:328
+msgid "IPsec OPNsense"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:313
+msgid "**Server**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:313
+#: ../../source/manual/how-tos/ipsec-road.rst:330
+msgid "*Our server address*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:314
+msgid "**Account**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:314
+msgid "*Username of the remote account*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:315
+msgid "*Leave blank to be prompted every time*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:316
+#: ../../source/manual/how-tos/ipsec-road.rst:331
+msgid "**Preshared IPsec-key**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:316
+#: ../../source/manual/how-tos/ipsec-road.rst:331
+msgid "*Our PSK*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:321
+msgid "Configure Android Client"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:322
+msgid ""
+"To add a VPN connection on an Android device go to "
+":menuselection:`Settings --> Connections --> more networks`, select "
+"**VPN**. Press the **+** in the top right corner to add a new VPN "
+"connection."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:325
+msgid "Use the Following Settings:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:328
+msgid "**Name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:328
+msgid "*Freely chosen name*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:329
+msgid "**Type**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:329
+msgid "IPSec Xauth PSK"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:329
+msgid "*As configured in OPNsense*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:330
+msgid "**Server address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-road.rst:334
+msgid ""
+"**Save** and try connecting. To connect enter Username and Password for "
+"the user *expert* we created in this example."
+msgstr ""
+

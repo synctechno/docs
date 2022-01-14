@@ -1,0 +1,1047 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:3
+msgid "WireGuard Selective Routing to External VPN Endpoint"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:7
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:9
+msgid ""
+"This how-to is designed to assist with setting up WireGuard on OPNsense "
+"to use selective routing to an external VPN endpoint - most commonly to "
+"an external VPN provider."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:11
+msgid ""
+"These circumstances may apply where only certain local hosts are intended"
+" to use the VPN tunnel. Or it could apply where multiple connections to "
+"the VPN provider are desired, with each connection intended to be used by"
+" different specific local hosts."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:13
+msgid ""
+"This how-to focuses on the configuration of OPNsense. You will also have "
+"to configure the peer at your VPN provider - consult your VPN provider’s "
+"documentation as to how to do that."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:15
+msgid ""
+"Your OPNsense local public key will need to be registered with your VPN "
+"provider, and you will need to get your VPN provider’s endpoint public "
+"key and the VPN tunnel IP provided for your local peer by your VPN "
+"provider. In some cases, you will not be able to get the endpoint public "
+"key and VPN tunnel IP until you register your local public key. In that "
+"case, create the OPNsense local configuration first, using a dummy tunnel"
+" IP and no peer selected, so that the public key is generated, and then "
+"update the configuration later once the other information is known."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:17
+msgid ""
+"For an example of configuring the peer at a VPN provider (Mullvad), see "
+"Step 1 of the how-to :doc:`wireguard-client-mullvad`."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:19
+msgid ""
+"This how-to primarily focuses on IPv4 configuration. It can be readily "
+"adapted for IPv6 as well. See :ref:`configuring-ipv6` below."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:23
+msgid "Step 1 - Configure the endpoint"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:25
+msgid "Go to :menuselection:`VPN --> WireGuard --> Endpoints`"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:26
+msgid "Click **+** to add a new Endpoint"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:27
+msgid ""
+"Configure the Endpoint as follows (if an option is not mentioned below, "
+"leave it as the default):"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:30
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:51
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:138
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:160
+msgid "**Enabled**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:30
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:51
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:59
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:87
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:116
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:138
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:160
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:174
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:181
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:208
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:213
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:259
+msgid "*Checked*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:31
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:52
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:111
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:139
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:161
+msgid "**Name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:31
+msgid "*Call it whatever you want (eg* :code:`VPNProviderName_Location` *)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:32
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:53
+msgid "**Public Key**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:32
+msgid "*Insert the public key from your VPN provider*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:33
+msgid "**Allowed IPs**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:33
+msgid "*0.0.0.0/0*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:34
+msgid "**Endpoint Address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:34
+msgid ""
+"*Insert the public IP address (desirably) or domain name of your VPN "
+"provider, as provided by it*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:35
+msgid "**Endpoint Port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:35
+msgid "*Insert the port of your VPN provider, as provided by it*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:36
+msgid "**Keepalive**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:36
+msgid "*25*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:39
+msgid "**Save** the Endpoint configuration, and then click **Save** again"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:43
+msgid "Step 2 - Configure the local peer"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:45
+msgid "Go to :menuselection:`VPN --> WireGuard --> Local`"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:46
+msgid "Click **+** to add a new Local configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:47
+msgid "Turn on “advanced mode\""
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:48
+msgid ""
+"Configure the Local configuration as follows (if an option is not "
+"mentioned below, leave it as the default):"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:52
+msgid "*Call it whatever you want (eg* :code:`VPNProviderName` *)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:53
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:54
+msgid ""
+"*This will initially be blank; it will be populated once the "
+"configuration is saved*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:54
+msgid "**Private Key**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:55
+msgid "**Listen Port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:55
+msgid "*51820 or a higher numbered unique port*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:56
+msgid "**DNS Server**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:56
+msgid ""
+"*Leave this blank, otherwise WireGuard will overwrite OPNsense's DNS "
+"configuration*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:57
+msgid "**Tunnel Address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:57
+msgid ""
+"*Insert the local VPN tunnel IP provided by your VPN provider, in CIDR "
+"format, eg 10.24.24.10/32*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:58
+msgid "**Peers**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:58
+msgid "*In the dropdown, select the Endpoint you configured above*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:59
+msgid "**Disable Routes**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:60
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:185
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:212
+msgid "**Gateway**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:60
+msgid ""
+"*Specify an IP that is 1 number below your VPN tunnel IP, eg 10.24.24.9 -"
+" see note below*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:65
+msgid ""
+"The IP you choose for the Gateway is essentially arbitrary; pretty much "
+"any unique IP will do. The suggestion here is for convenience and to "
+"avoid conflicts"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:67
+msgid "**Save** the local peer configuration, and then click **Save** again"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:71
+msgid "Step 3 - Turn on WireGuard"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:73
+msgid ""
+"Turn on WireGuard under :menuselection:`VPN --> WireGuard --> General` if"
+" it is not already on"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:77
+msgid "Step 4 - Assign an interface to WireGuard and enable it"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:79
+msgid "Go to :menuselection:`Interfaces --> Assignments`"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:80
+msgid ""
+"In the dropdown next to “New interface:”, select the WireGuard device "
+"(:code:`wg0` if this is your first one)"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:81
+msgid "Add a description (eg :code:`WAN_VPNProviderName`)"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:82
+msgid "Click **+** to add it, then click **Save**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:83
+msgid "Then select your new interface under the Interfaces menu"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:84
+msgid ""
+"Configure it as follows (if an option is not mentioned below, leave it as"
+" the default):"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:87
+msgid "**Enable**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:88
+msgid "**Lock**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:88
+msgid "*Checked if you wish to*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:89
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:112
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:142
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:164
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:184
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:211
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:238
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:269
+msgid "**Description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:89
+msgid "*Same as under Assignments, if this box is not already populated*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:90
+msgid "**IPv4 Configuration Type**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:90
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:91
+msgid "*None*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:91
+msgid "**IPv6 Configuration Type**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:94
+msgid "**Save** the interface configuration and then click **Apply changes**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:98
+msgid "Step 5 - Restart WireGuard"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:100
+msgid ""
+"Now restart WireGuard - you can do this from the Dashboard (if you have "
+"the services widget) or by turning it off and on under "
+":menuselection:`VPN --> WireGuard --> General`"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:104
+msgid "Step 6 - Create a gateway"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:106
+msgid "Go to :menuselection:`System --> Gateways --> Single`"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:107
+msgid "Click **Add**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:108
+msgid ""
+"Configure the gateway as follows (if an option is not mentioned below, "
+"leave it as the default):"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:111
+msgid "*Call it whatever you want, easiest to name it the same as the interface*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:112
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:142
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:184
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:211
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:238
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:269
+msgid "*Add one if you wish to*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:113
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:175
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:202
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:228
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:260
+msgid "**Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:113
+msgid "*Select your newly created interface in the dropdown*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:114
+msgid "**Address Family**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:114
+msgid "*Select IPv4 in the dropdown*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:115
+msgid "**IP address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:115
+msgid ""
+"*Insert the gateway IP that you configured under the WireGuard local peer"
+" configuration*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:116
+msgid "**Far Gateway**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:117
+msgid "**Disable Gateway Monitoring**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:117
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:179
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:201
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:206
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:231
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:234
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:264
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:266
+msgid "*Unchecked*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:118
+msgid "**Monitor IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:118
+msgid ""
+"*Insert the endpoint VPN tunnel IP (NOT the public IP) of your VPN "
+"provider - see note below*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:123
+msgid ""
+"Specifying the endpoint VPN tunnel IP is preferable. As an alternative, "
+"you could include an external IP such as 1.1.1.1 or 8.8.8.8, but be aware"
+" that this IP will *only* be accessible through the VPN tunnel (OPNsense "
+"creates a static route for it), and therefore will not accessible from "
+"local hosts that are not using the tunnel"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:125
+msgid ""
+"Some VPN providers will include the VPN tunnel IP of the endpoint in the "
+"configuration data they provide. For others (such as Mullvad), you can "
+"get the IP by running a traceroute from a host that is using the tunnel -"
+" the first hop after OPNsense is the VPN provider's tunnel IP"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:127
+msgid "**Save** the gateway configuration and then click **Apply changes**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:131
+msgid ""
+"Step 7 - Create an Alias for the relevant local hosts that will access "
+"the tunnel"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:133
+msgid "Go to :menuselection:`Firewall --> Aliases`"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:134
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:156
+msgid "Click **+** to add a new Alias"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:135
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:157
+msgid ""
+"Configure the Alias as follows (if an option is not mentioned below, "
+"leave it as the default):"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:139
+msgid "*Call it whatever your want, eg* :code:`WG_VPN_Hosts`"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:140
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:162
+msgid "**Type**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:140
+msgid ""
+"*Select either Host(s) or Network(s) in the dropdown, depending on "
+"whether you want specific host IPs to use the tunnel, or an entire local "
+"network (such as a VLAN)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:141
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:163
+msgid "**Content**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:141
+msgid "*Enter the host IPs, or the network in CIDR format*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:145
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:167
+msgid "**Save** the Alias, and then click **Apply**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:149
+msgid "Step 8 - Create a firewall rule"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:151
+msgid ""
+"This will involve two steps - first creating a second Alias for all local"
+" (private) networks, and then creating the firewall rule itself. The "
+"ultimate effect of these two steps is that only traffic from the relevant"
+" hosts that is destined for **non-local** destinations will be sent down "
+"the tunnel. This will ensure that the relevant hosts can still access "
+"local resources"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:153
+msgid ""
+"It should be noted, however, that if the hosts that will use the tunnel "
+"are configured to use local DNS servers (such as OPNsense itself or "
+"another local DNS server), then this configuration will likely result in "
+"DNS leaks - that is, DNS requests for the hosts will continue to be "
+"processed through the normal WAN gateway, rather than through the tunnel."
+" See :ref:`dns-leaks` for a discussion of potential solutions to this"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:155
+msgid "First go to :menuselection:`Firewall --> Aliases`"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:161
+msgid "*RFC1918_Networks*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:162
+msgid "*Select Network(s) in the dropdown*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:163
+msgid "*192.168.0.0/16 10.0.0.0/8 172.16.0.0/12*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:164
+msgid "*All local (RFC1918) networks*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:168
+msgid ""
+"Then go to :menuselection:`Firewall --> Rules --> [Name of interface for "
+"network in which hosts/network resides, eg LAN for LAN hosts]`"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:169
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:196
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:224
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:254
+msgid "Click **Add** to add a new rule"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:170
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:225
+msgid ""
+"Configure the rule as follows (if an option is not mentioned below, leave"
+" it as the default):"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:173
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:200
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:258
+msgid "**Action**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:173
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:200
+msgid "*Pass*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:174
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:201
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:259
+msgid "**Quick**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:175
+msgid "*Whatever interface you are configuring the rule on*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:176
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:203
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:261
+msgid "**Direction**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:176
+msgid "*in*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:177
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:204
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:229
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:262
+msgid "**TCP/IP Version**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:177
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:204
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:229
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:262
+msgid "*IPv4*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:178
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:205
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:230
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:263
+msgid "**Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:178
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:183
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:205
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:210
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:230
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:233
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:235
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:236
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:263
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:265
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:267
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:268
+msgid "*any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:179
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:206
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:264
+msgid "**Source / Invert**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:180
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:207
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:265
+msgid "**Source**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:180
+msgid ""
+"*Select the relevant hosts Alias you created above in the dropdown (eg* "
+":code:`WG_VPN_Hosts` *)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:181
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:208
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:266
+msgid "**Destination / Invert**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:182
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:209
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:267
+msgid "**Destination**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:182
+msgid ""
+"*Select the* :code:`RFC1918_Networks` *Alias you created above in the "
+"dropdown*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:183
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:210
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:268
+msgid "**Destination port range**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:185
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:212
+msgid "*Select the gateway you created above (eg* :code:`WAN_VPNProviderName` *)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:188
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:216
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:273
+msgid "**Save** the rule, and then click **Apply Changes**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:189
+msgid ""
+"Then make sure that the new rule is **above** any other rule on the "
+"interface that would otherwise interfere with its operation. For example,"
+" you want your new rule to be above the “Default allow LAN to any rule”"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:193
+msgid "Step 9 - Configure routing"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:195
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:253
+msgid "Then go to :menuselection:`Firewall --> Rules --> Floating`"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:197
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:255
+msgid ""
+"Configure the rule as follows (if an option is not mentioned below, leave"
+" it as the default). You need to click the **Show/Hide** button next to "
+"\"Advanced Options\" to reveal the last setting:"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:202
+msgid "*Do not select any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:203
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:261
+msgid "*out*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:207
+msgid ""
+"*Select the interface address for your WireGuard VPN (eg* "
+":code:`WAN_VPNProviderName address` *)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:209
+msgid ""
+"*Select the interface network for your WireGuard VPN (eg* "
+":code:`WAN_VPNProviderName net` *)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:213
+msgid "**allow options**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:220
+msgid "Step 10 - Create an outbound NAT rule"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:222
+msgid "Go to :menuselection:`Firewall --> NAT --> Outbound`"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:223
+msgid ""
+"Select \"Hybrid outbound NAT rule generation” if it is not already "
+"selected, and click **Save** and then **Apply changes**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:228
+msgid ""
+"*Select the interface for your WireGuard VPN (eg* "
+":code:`WAN_VPNProviderName` *)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:231
+msgid "**Source invert**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:232
+msgid "**Source address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:232
+msgid ""
+"*Select the Alias for the hosts/networks that are intended to use the "
+"tunnel (eg* :code:`WG_VPN_Hosts` *)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:233
+msgid "**Source port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:234
+msgid "**Destination invert**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:235
+msgid "**Destination address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:236
+msgid "**Destination port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:237
+msgid "**Translation / target**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:237
+msgid "*Interface address*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:241
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:252
+msgid "**Save** the rule, and then click **Apply changes**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:245
+msgid "Step 10 - Add a kill switch (optional)"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:247
+msgid ""
+"If the VPN tunnel gateway goes offline, then traffic intended for the VPN"
+" may go out the normal WAN gateway. There are a couple of ways to avoid "
+"this, one of which is outlined here:"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:249
+msgid "First, go back to the firewall rule you created under Step 7"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:250
+msgid "Click on the **Show/Hide** button next to \"Advanced Options\""
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:251
+msgid "Then, in the **Set local tag** field, add :code:`NO_WAN_EGRESS`"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:258
+msgid "*Block*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:260
+msgid "*WAN*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:270
+msgid "**Match local tag**"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:270
+msgid "*NO_WAN_EGRESS*"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:279
+msgid "Configuring IPv6"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:281
+msgid ""
+"Some VPN providers (such as Mullvad) allow you to send both IPv4 and IPv6"
+" traffic down the tunnel. This will be evident if you receive both an "
+"IPv4 and IPv6 tunnel IP in the configuration data provided by the VPN "
+"provider. The IPv6 tunnel IP is likely to be a ULA, ie within "
+":code:`fc00::/7`."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:283
+msgid ""
+"To configure the tunnel to use IPv6, you essentially need to replicate "
+"the steps above for IPv4. That is, you need to:"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:285
+msgid ""
+"add the IPv6 tunnel IP to Tunnel Address on the WireGuard Local "
+"configuration (see further below)"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:286
+msgid ""
+"add :code:`::/0` to the Allowed IPs on the WireGuard Endpoint "
+"configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:287
+msgid "create an IPv6 gateway (see further below)"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:288
+msgid ""
+"add to the hosts alias the IPv6 addresses of the hosts/networks that are "
+"to use the tunnel"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:289
+msgid ""
+"if necessary, create a separate local IPs alias for IPv6, so they can be "
+"excluded from the IPv6 firewall rule destination"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:290
+msgid "create an IPv6 firewall rule (specifying the IPv6 gateway in the rule)"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:291
+msgid ""
+"configure an IPv6 floating rule for routing (specifying the IPv6 gateway "
+"in the rule)"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:292
+msgid "create an IPv6 outbound NAT rule"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:293
+msgid ""
+"(optionally) add the kill switch tag to the IPv6 firewall rule and change"
+" the associated Floating rule to IPv4+IPv6"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:295
+msgid "Note, however, that there are a couple of differences:"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:297
+msgid ""
+"First, the WireGuard Local configuration will only accept one entry in "
+"the Gateway field. Just leave the IPv4 gateway address there."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:299
+msgid ""
+"Second, there is no concept of a Far Gateway for IPv6. So to successfully"
+" set up a gateway for IPv6, you need to do two things:"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:301
+msgid ""
+"When adding the IPv6 address to Tunnel Address in the WireGuard Local "
+"configuration, specify a /127 mask, rather than a /128"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:302
+msgid ""
+"Then, when creating an IPv6 Gateway for the tunnel, specify the IP "
+"address to be another IPv6 address that is within the /127 subnet of the "
+"Tunnel Address"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:308
+msgid "Dealing with DNS leaks"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:310
+msgid ""
+"As noted in Step 8, if your network is configured to use a local DNS "
+"server - for example, unbound on OPNsense or on another local host - this"
+" how-to is likely to result in DNS requests from the hosts using the "
+"tunnel to be routed through the normal WAN gateway, rather than through "
+"the tunnel. This will result in the WAN IP being exposed."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:312
+msgid ""
+"If you wish to avoid that, there are several possible solutions. "
+"Obviously what solution works best will depend on your network "
+"configuration and desired outcomes."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:314
+msgid "The solutions include:"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:316
+msgid ""
+"Force the local DNS server to use the tunnel as well. For a local DNS "
+"server that is not OPNsense, include the local IPs of that server in the "
+"Alias created in Step 7 for the relevant VPN hosts. For OPNsense itself, "
+"configure the DNS server to use the tunnel gateway. Implementing this "
+"solution will mean that all DNS traffic for your network will go through "
+"the tunnel, not just the DNS traffic for the hosts that are in the Alias "
+"(and, indeed, for a local DNS server that is not OPNsense, all traffic "
+"from that server, not just DNS traffic, will be forced through the "
+"tunnel). This may not be desirable for your circumstances"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:318
+msgid ""
+"If possible, intercept DNS traffic coming from the relevant hosts using "
+"the tunnel, and forward that traffic (by using a port forward rule in "
+"OPNsense) to a DNS server supplied by your VPN provider (see note below),"
+" or to a public DNS server. Note that this will break local DNS "
+"resolution. Note also that this will not always be possible to do - if "
+"the local DNS server that is configured generally for your network is not"
+" OPNsense itself and is on the same subnet as the hosts using the tunnel,"
+" then DNS requests will not be routed through OPNsense and so a port "
+"forward on OPNsense will not work"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:320
+msgid ""
+"Assuming you have configured DHCP static mappings in OPNsense for the "
+"hosts using the tunnel, specify in that configuration either the DNS "
+"servers supplied by your VPN provider (see note below), or public DNS "
+"servers. This will override the network-wide DNS settings for those hosts"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:322
+msgid ""
+"Configure public DNS servers for your whole local network, rather than "
+"local DNS servers"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:324
+msgid ""
+"Manually override the DNS settings on the relevant hosts themselves "
+"(assuming that is possible) so that the DNS servers provided by DHCP are "
+"ignored, and either the DNS servers supplied by your VPN provider (see "
+"note below), or public DNS servers, are used instead"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-selective-routing.rst:328
+msgid ""
+"If the DNS servers supplied by your VPN provider are local IPs (ie, "
+"within the scope of the :code:`RFC1918_Networks` Alias created in Step "
+"8), then you will need to create an additional firewall rule in OPNsense "
+"to ensure that requests to those servers use the tunnel gateway rather "
+"than the normal WAN gateway. This rule would be similar to that created "
+"in Step 8, except that the destination would be your VPN provider's DNS "
+"server IPs and the destination invert box would be unchecked. This rule "
+"would also need to be placed *above* the rule created in Step 8"
+msgstr ""
+

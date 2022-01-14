@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:3
+msgid "nginx: Basic Authentication & Authorization"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:7
+msgid ""
+"Passwords in password files cannot be stored securely. Your passwords are"
+" stored in plain text in the configuration and as md5 in the nginx "
+"password files. Secure password hashes like bcrypt_, scrypt_ or Argon_ 2 "
+"are currently not supported by nginx."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:12
+msgid ""
+"Please also note that basic authentication transfers the credentials in "
+"plain text to the server. It is recommended that you only use it via "
+"HTTPS because otherwise every attacker with a network sniffer such as "
+"Wireshark_ (and mabe some additional man in the middle tools like "
+"ettercap_ or fake_router6_) will be able to intercept your connection to "
+"the server and read your password."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:27
+msgid "Background Information"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:29
+msgid ""
+"Basic authentication encodes the username and the password in Base64 in a"
+" HTTP header. Because it is really simple to implement, almost every HTTP"
+" client supports it. For this reason, people use it to protect REST "
+"interfaces and so on. Also authentication for the OPNsense API supports "
+"this kind of authentication."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:35
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:38
+msgid "Create Users"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:40
+msgid "Navigate to the \"Credential\" tab."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:44
+msgid "Enter a username and a password and press ok"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:47
+msgid "Create An User List"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:49
+msgid "Navigate to the tab \"User List\"."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:53
+msgid ""
+"Select all users, that should have access to a specific resource and give"
+" this group a name."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:57
+msgid "Assign it to a Location"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:59
+msgid "In the last step, the user list must be added to the location."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:63
+msgid ""
+"As soon as you restart the server, you will need to log in to access the "
+"contents of this directory. To do so, you can enter any string in the "
+"basic authentication field, which will be sent as an realm. The user list"
+" is the list previously created."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:69
+msgid "Reload the server."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:72
+msgid "Testing"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:74
+msgid ""
+"You can use curl to check if it works. In a browser like Firefox, a "
+"dialog asking for credentials should open."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:81
+msgid "Advanced Authentication"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_basic_auth.rst:83
+msgid ""
+"The entry advanced authentication is used to call an external "
+"authentication provider. In the case of OPNsense, this is currently a "
+"special script, which authenticates agains the local database. If you "
+"want to use it, do not enter a realm nor select a user list. Please note "
+"that this feature may change in the future."
+msgstr ""
+

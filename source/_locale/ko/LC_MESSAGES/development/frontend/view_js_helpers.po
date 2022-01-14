@@ -1,0 +1,467 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/frontend/view_js_helpers.rst:3
+msgid "View construction (and tools)"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:5
+msgid ""
+"Although most of our code base is being processed server side, some "
+"things just require interaction on the clients machine for a fluent user "
+"experience."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:8
+msgid ""
+"In this chapter we will try to explain some of the components we use when"
+" designing pages and how pages are usually constructed."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:12
+msgid "Layout"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:14
+msgid ""
+"To ease reading of volt templates, we recommend using a fixed layout when"
+" creating templates. The base of our rendered page always contains the "
+"standard `layout "
+"<https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/views/layouts/default.volt>`__"
+" which is hooked via our standard frontend controller."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:18
+msgid ""
+"Below you will find the sections and their order, which we will describe "
+"briefly."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:34
+msgid "The copyright block, 2 clause BSD with the authors on top"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:35
+msgid "Javascript code which belongs to this page"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:36
+msgid ""
+"HTML code, usually starts with some :code:`<div>` containers and uses "
+"standard Bootstrap 3 layouting"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:37
+msgid ""
+"When forms are used, these are placed last, these will be generated to "
+"the client as standard html code"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:42
+msgid "ajaxCall"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:44
+msgid ""
+":code:`ajaxCall(url, sendData, callback)` is a wrapper around jQuery's "
+":code:`$.ajax` call preset to a :code:`POST` type request and wrapping "
+"the sendData into a json object. The :code:`callback` function will be "
+"called with the data and status received from the endpoint."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:50
+#: ../../source/development/frontend/view_js_helpers.rst:66
+msgid "example usage"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:61
+msgid "ajaxGet"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:63
+msgid ""
+":code:`ajaxGet(url,sendData,callback)` is also a wrapper around jQuery's "
+":code:`$.ajax` call, but for a :code:`GET` type request."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:77
+msgid "mapDataToFormUI"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:79
+msgid ""
+"The :code:`mapDataToFormUI(data_get_map, server_params)` can be used to "
+"map data retrieved from a controller to a form in the browser."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:82
+msgid ""
+"This function accepts two parameters, data_get_map contains a mapping "
+"between form id's and server endpoints, server_params is optional and can"
+" be used to set option in the :code:`GET` type request."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:85
+msgid ""
+"When the endpoint is successfully called it should return a json type "
+"structure containing the path to the item, as an example using "
+":code:`data_get_map = {'myform': '/api/path/to/formdata'};`:"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:111
+msgid ""
+"Which maps to the fields in this simplified structure (usually rendered "
+"via our volt templates):"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:122
+msgid ""
+"The function returns a :code:`$.Deferred()` which will be resolved when "
+"all endpoints are called."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:126
+msgid "saveFormToEndpoint"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:128
+msgid ""
+":code:`saveFormToEndpoint(url, formid, callback_ok, disable_dialog, "
+"callback_fail)` is the opposite of :code:`mapDataToFormUI()` and "
+"retrieves the data from the form and sends it to the configured (url) "
+"endpoint as json structure."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:131
+msgid ""
+"The response data looks similar to the example data in mapDataToFormUI, "
+"but more condensed since selections will be returned as single "
+"(separated) values, such as :code:`lan,wan` if both options where set."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:137
+msgid "updateServiceControlUI"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:139
+msgid ""
+"The code:`updateServiceControlUI(serviceName)` function hooks the service"
+" control on top of the standard template, where you can find the "
+"[re]start, stop and status of the service."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:142
+msgid "It assumes the following endpoints exists for the module:"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:144
+msgid "/api/{{serviceName}}/service/status"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:145
+msgid ""
+"returns the status of the service (running, stopped) in a field named "
+"\"status\""
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:146
+msgid "/api/{{serviceName}}/service/start"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:147
+msgid "start the service"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:148
+msgid "/api/{{serviceName}}/service/restart"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:149
+msgid "restart the service"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:152
+msgid "/api/{{serviceName}}/service/stop"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:151
+msgid "stop the service"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:156
+msgid "Dialog wrappers"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:158
+msgid ""
+"We are using `BootstrapDialog "
+"<https://nakupanda.github.io/bootstrap3-dialog/>`__ to display standard "
+"dialogs, to limit the boilerplates needed to show these dialog we added "
+"the following wrapper funcitons:"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:163
+msgid "stdDialogInform(title, message, close, callback, type, cssClass)"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:165
+msgid ""
+"Informational dialog with a single close button, using the following "
+"parameters:"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:167
+#: ../../source/development/frontend/view_js_helpers.rst:180
+msgid "title: :code:`string` dialog title"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:168
+#: ../../source/development/frontend/view_js_helpers.rst:181
+msgid "message: :code:`string` dialog message"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:169
+msgid "close:  :code:`string` close button text"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:170
+#: ../../source/development/frontend/view_js_helpers.rst:184
+msgid "callback: :code:`function()` to be called after close"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:171
+#: ../../source/development/frontend/view_js_helpers.rst:185
+msgid ""
+"type: :code:`string` dialog type. one of : danger, default, info, "
+"primary, success, warning"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:172
+msgid "cssClass: :code:`string`  css class to use"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:176
+msgid "stdDialogConfirm(title, message, accept, decline, callback, type)"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:178
+msgid "Ok/Cancel dialog type using the following parameters:"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:182
+msgid "accept:  :code:`string` accept button text"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:183
+msgid "decline:  :code:`string` decline button text"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:190
+msgid "stdDialogRemoveItem(message, callback)"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:192
+msgid ""
+"Simple remove item (warning) dialog, using a message and optionally a "
+"callback."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:196
+msgid "$.SimpleActionButton"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:198
+msgid ""
+"Using the jQuery extension :code:`SimpleActionButton` one can register "
+"simple ajax calls on components click events, which will call the "
+"selected endpoint and show a progress animation (spinner) to the user."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:201
+msgid ""
+"The following parameters can be supplied as data attributes on the target"
+" object:"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:203
+msgid "endpoint : endpoint to call (e.g. :code:`/api/my/action`)"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:204
+msgid "label : button label text"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:205
+msgid ""
+"service-widget : the service widget to refresh after execution, see "
+":code:`updateServiceControlUI()`"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:206
+msgid "error-title : error dialog title"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:208
+msgid ""
+"The method itself can be feed with callbacks to call before "
+"(:code:`onPreAction()`) and after (:code:`onAction()`) execution."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:210
+msgid "An example of a button could look like this:"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:222
+msgid "To utilize the callbacks, one could use:"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:240
+msgid "$.UIBootgrid"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:242
+msgid ""
+"The UIBootgrid jQuery extension is a wrappper around a slightly modified "
+"`jquery-bootgrid <http://www.jquery-bootgrid.com/>`__ component, the "
+"pattern we implement with our wrapper is inspired by `this <http://www"
+".jquery-bootgrid.com/Examples#command-buttons>`__ example."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:246
+msgid ""
+"Defining the html table is best explained in the jquery-bootgrid "
+"examples, our wrapper eases the implementation of the javascript code."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:248
+msgid ""
+"The minimal implementation contains a reference to the search endpoint "
+"which should return a json resultset containing :code:`rows` and "
+"pagination data (:code:`current`, :code:`rowCount`, :code:`total`)."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:265
+msgid ""
+"The other optional endpoints are either used to populate a form, as "
+"defined in the :code:`data-editDialog` property on the table or can be "
+"used to feed actions, such as **set** (set new values, return validation "
+"errors), **add** a new record, **del**  an existing record or **toggle** "
+"if the record should be enabled or disabled.  :code:`info` endpoints are "
+"not used very often (and can safely be omitted), these are mainly "
+"intended as simple trigger to display an info dialog."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:270
+msgid ""
+"A full example of a basic grid is available in our  "
+":doc:`../examples/using_grids` example"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:272
+msgid ""
+"In some cases the developer wants to signal the user about the fact that "
+"changes need to be applied in order to be active, for this scenario one "
+"can use the :code:`data-editAlert` property of the table, which offers "
+"the ability to show an alert after changes. Below example would be shown "
+"when the table tag contains :code:`data-"
+"editAlert=\"exampleChangeMessage\"`"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:284
+msgid ""
+"You can access the general settings of the jquery-bootgrid plugin using "
+"the :code:`options` property, which can be convenient when you would like"
+" to change requests or responses as being exchanged with the server. The "
+"available options are described `here <http://www.jquery-"
+"bootgrid.com/Documentation#table>`__"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:289
+msgid "OPNsense settings"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:291
+msgid ""
+"We added a couple of settings to the list, which help to extend our "
+"plugin a bit more easily. Below we will explain which settings (within "
+"the options tag) are added by us:"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:293
+msgid "useRequestHandlerOnGet"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:295
+msgid ""
+"Boolean value which enables the use of the request handler when a "
+":code:`get` request is executed ot fetch data for the dialog. This can be"
+" used to add parameters to the request."
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:297
+msgid "onBeforeRenderDialog"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:299
+msgid ""
+"function handler which will be called before an edit dialog is being "
+"displayed, can be used to change the otherwise static dialogs. Should "
+"return a $.Deferred() object. (e.g. :code:`return (new "
+"$.Deferred()).resolve();`)"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:303
+msgid "Formatters"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:305
+msgid ""
+"Formatters can be used in the grid heading to choose the presentation of "
+"an attribute, we include a couple of standard formatters which are:"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:307
+msgid "commands (commands list, edit,copy and delete)"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:308
+msgid "commandsWithInfo (same as commands, but with an info button as well)"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:309
+msgid "rowtoggle (show enabled status and act as toggle button)"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:310
+msgid "boolean (show boolean value)"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:315
+msgid "Visible columns"
+msgstr ""
+
+#: ../../source/development/frontend/view_js_helpers.rst:317
+msgid ""
+"jquery-bootgrid offers the ability to add columns which are not visible "
+"by default using the :code:`data-visible` tag. When using our wrapper, "
+"these can be used to set defaults as well, but the users last selection "
+"is also recorded in its local browser storage as well as the number of "
+"results shown in the grid when opening the same page again."
+msgstr ""
+

@@ -1,0 +1,2482 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/releases/BE_19.7.rst:3
+msgid "19.7  \"Jazzy Jaguar\" Series"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:7 ../../source/releases/BE_19.7.rst:548
+#: ../../source/releases/BE_19.7.rst:684
+msgid ""
+"For four and a half years now, OPNsense is driving innovation through "
+"modularising and hardening the open source firewall, with simple and "
+"reliable firmware upgrades, multi-language support, HardenedBSD security,"
+" fast adoption of upstream software updates as well as clear and stable "
+"2-Clause BSD licensing."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:13 ../../source/releases/BE_19.7.rst:554
+msgid ""
+"19.7, nicknamed \"Jazzy Jaguar\", embodies an iteration of what should be"
+" considered enjoyable user experience for firewalls in general: improved "
+"statistics and visibility of rules, reliable and consistent live logging "
+"and alias utility improvements.  Apart from the usual upgrades of third "
+"party software to up-to-date releases, OPNsense now also offers built-in "
+"remote system logging through Syslog-ng, route-based IPsec, updated "
+"translations with Spanish as a brand new and already fully translated "
+"language and newer Netmap code with VirtIO, VLAN child and vmxnet "
+"support."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:22 ../../source/releases/BE_19.7.rst:563
+msgid ""
+"Last but not least we would like to thank m.a.x. it for their sponsorship"
+" of the default gateway priority switching feature and their continued "
+"work of writing and maintaining plenty of community plugins.  This time "
+"around, Maltrail, Netdata and WireGuard VPN have been freshly added to "
+"the mix."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:27 ../../source/releases/BE_19.7.rst:568
+#: ../../source/releases/BE_19.7.rst:693
+msgid ""
+"Download links, an installation guide `[1] "
+"<https://docs.opnsense.org/manual/install.html>`__  and the checksums for"
+" the images can be found below as well."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:30 ../../source/releases/BE_19.7.rst:571
+#: ../../source/releases/BE_19.7.rst:696
+msgid "Europe: https://opnsense.c0urier.net/releases/19.7/"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:31 ../../source/releases/BE_19.7.rst:572
+#: ../../source/releases/BE_19.7.rst:697
+msgid "US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/19.7/"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:32 ../../source/releases/BE_19.7.rst:573
+#: ../../source/releases/BE_19.7.rst:698
+msgid ""
+"US West Coast: "
+"https://mirror.sfo12.us.leaseweb.net/opnsense/releases/19.7/"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:33 ../../source/releases/BE_19.7.rst:574
+#: ../../source/releases/BE_19.7.rst:699
+msgid "South America: http://mirror.upb.edu.co/opnsense/releases/19.7/"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:34 ../../source/releases/BE_19.7.rst:575
+#: ../../source/releases/BE_19.7.rst:700
+msgid "South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/19.7/"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:35 ../../source/releases/BE_19.7.rst:576
+#: ../../source/releases/BE_19.7.rst:701
+msgid "Full mirror list: https://opnsense.org/download/"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:40
+msgid "19.7.10 (January 27, 2020)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:43
+msgid ""
+"As Thursday nears the last preparations for 20.1 are underway.  As a "
+"quick relief here is the End-Of-Life release of the 19.7 series with a "
+"tiny number of updates."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:47
+msgid ""
+"Remember that when 20.1 is available it will take up to a day before we "
+"release the hotfix with the major upgrade path enabled.  Please be "
+"patient as we simply want to ensure that upgrades will not be bumpy "
+"affair.  :)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:51 ../../source/releases/BE_19.7.rst:87
+#: ../../source/releases/BE_19.7.rst:136 ../../source/releases/BE_19.7.rst:188
+#: ../../source/releases/BE_19.7.rst:246 ../../source/releases/BE_19.7.rst:285
+#: ../../source/releases/BE_19.7.rst:348 ../../source/releases/BE_19.7.rst:459
+#: ../../source/releases/BE_19.7.rst:504
+msgid "Here are the full patch notes:"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:53
+msgid "firewall: fix a typo in CARP validation"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:54
+msgid "firmware: revoke 19.1 fingerprint"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:55
+msgid "ipsec: add configurable dpdaction (contributed by Marcel Menzel)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:56
+msgid "mvc: BaseListField ignoring empty selected field"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:57
+msgid ""
+"plugins: os-haproxy 2.20 `[1] "
+"<https://github.com/opnsense/plugins/pull/1646>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:58
+msgid ""
+"plugins: os-mail-backup 1.1 `[2] "
+"<https://github.com/opnsense/plugins/pull/1671>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:59
+msgid "plugins: os-nrpe 1.0 (contributed by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:60
+msgid "plugins: os-theme-rebellion 1.8.3 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:61
+msgid ""
+"plugins: os-vnstat 1.2 `[3] "
+"<https://github.com/opnsense/plugins/blob/master/net/vnstat/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:62
+msgid ""
+"plugins: zabbix4-proxy 1.2 `[4] "
+"<https://github.com/opnsense/plugins/blob/master/net-mgmt/zabbix4-proxy"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:63
+msgid "ports: ca_root_nss 3.49.1"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:64
+msgid "ports: curl 7.68.0 `[5] <https://curl.haxx.se/changes.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:65
+msgid ""
+"ports: isc-dhcp 4.4.2 `[6] "
+"<https://downloads.isc.org/isc/dhcp/4.4.2/dhcp-4.4.2-RELNOTES>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:66
+msgid ""
+"ports: urllib3 1.27.7 `[7] "
+"<https://github.com/urllib3/urllib3/blob/master/CHANGES.rst#1257-2019-11-11>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:68
+msgid "A hotfix release was issued as 19.7.10_1:"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:70
+msgid "firmware: enable upgrade path to 20.1"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:76
+msgid "19.7.9 (January 09, 2020)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:79
+msgid ""
+"As 20.1 nears we will be making adjustments to the scope of the release "
+"with an announcement following shortly."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:82
+msgid ""
+"For now, this update brings you a GeoIP database configuration page for "
+"aliases which is now required due to upstream database policy changes and"
+" a number of prominent third-party software updates we are happy to see "
+"included."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:89
+msgid "system: use 825 days as the default maximum certificate lifetime"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:90
+msgid ""
+"system: hide leaking hostname on SSH password auth (contributed by "
+"sooslaca)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:91
+msgid "system: remove unused \"lifetime\" parameter from user manager page"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:92
+msgid ""
+"firewall: new GeoIP settings page to allow continued use of upstream "
+"database `[1] <https://docs.opnsense.org/manual/how-"
+"tos/maxmind_geo_ip.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:93
+msgid "firewall: log when alias could not resolve a hostname"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:94
+msgid "firewall: translate pfInfo page tabs (contributed by Smart-Soft)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:95
+msgid ""
+"firmware: add mirror MARWAN (Moroccan Academic & Research Wide Area "
+"Network)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:96
+msgid ""
+"dhcp: replace killbyname() usage which should not have killed both "
+"services"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:97
+msgid "dhcp: auto-replace windows DUID dashes (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:98
+msgid "mvc: PSR12 code style updates"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:99
+msgid ""
+"plugins: os-acme-client 1.29 `[2] "
+"<https://github.com/opnsense/plugins/pull/1638>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:100
+msgid ""
+"plugins: os-bind 1.12 `[3] "
+"<https://github.com/opnsense/plugins/blob/master/dns/bind/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:101
+msgid ""
+"plugins: os-dyndns must use dyndns_failover_interface() to translate "
+"gateway group"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:102
+msgid ""
+"plugins: os-frr 1.14 `[4] "
+"<https://github.com/opnsense/plugins/blob/master/net/frr/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:103
+msgid ""
+"plugins: os-maltrail 1.3 `[5] "
+"<https://github.com/opnsense/plugins/blob/master/security/maltrail/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:104
+msgid ""
+"plugins: os-nginx 1.17 `[6] "
+"<https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:105
+msgid ""
+"plugins: os-nut fixes validation and snmp-ups selection (contributed by "
+"Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:106
+msgid "plugins: os-theme-cicada 1.24 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:107
+msgid ""
+"plugins: os-zabbix4-proxy 1.1 `[7] "
+"<https://github.com/opnsense/plugins/blob/master/net-mgmt/zabbix4-proxy"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:108
+msgid "ports: openssh 8.1p1 `[8] <https://www.openssh.com/txt/release-8.1>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:109
+msgid ""
+"ports: openssl 1.0.2u `[9] "
+"<https://www.openssl.org/news/openssl-1.0.2-notes.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:110
+msgid "ports: php 7.2.26 `[10] <https://www.php.net/ChangeLog-7.php#7.2.26>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:111
+msgid ""
+"ports: phpseclib 2.0.23 `[11] "
+"<https://github.com/phpseclib/phpseclib/releases/tag/2.0.23>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:112
+msgid ""
+"ports: python 3.7.6 `[12] "
+"<https://docs.python.org/release/3.7.6/whatsnew/changelog.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:113
+msgid "ports: strongswan 5.8.2 `[13] <https://wiki.strongswan.org/versions/75>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:114
+msgid "ports: sudo 1.8.30 `[14] <https://www.sudo.ws/stable.html#1.8.30>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:115
+msgid ""
+"ports: unbound 1.9.6 `[15] "
+"<https://nlnetlabs.nl/projects/unbound/download/>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:117
+msgid "A hotfix release was issued as 19.7.9_1:"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:119
+msgid "firewall: automatic business addition GeoIP feed"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:125
+msgid "19.7.8 (December 18, 2019)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:128
+msgid ""
+"A number of updates including security and reliability fixes inside.  Of "
+"note is the new elliptic curve certificate creation support and better "
+"firmware health check and recovery methods."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:132
+msgid ""
+"We are almost at the point of a 20.1-BETA release with an isolated images"
+" for early bird testing as a special present at this time of year.  Stay "
+"tuned.  :)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:138
+msgid ""
+"system: \"Mark Gateway as Down\" also means exclude from default gateway "
+"selection"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:139
+msgid "system: fix PHP warning on gateways list due to wrong variable scope"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:140
+msgid ""
+"system: support elliptic curve TLS certificate creation (contributed by "
+"johnaheadley)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:141
+msgid "system: remove unused current directory PHP include"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:142
+msgid "system: fix XSS in backup page and static menu pages"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:143
+msgid "firewall: use referential integrity check for model data"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:144
+msgid "reporting: improve NetFlow error handling (contributed by Frank Brendel)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:145
+msgid ""
+"dhcp: always add dhcp6.domain-search and dhcp6.name-servers (contributed "
+"by maurice-w)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:146
+msgid ""
+"dhcp: fix range check for advanced router advertisement options "
+"(contributed by maurice-w)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:147
+msgid ""
+"dhcp: improve help texts for router advertisement modes (contributed by "
+"maurice-w)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:148
+msgid ""
+"dhcp: replace defunct IPv6 domain name option with domain search list "
+"option (contributed by maurice-w)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:149
+msgid "dhcp: fix storing advanced IPv6 options"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:150
+msgid "firmware: add \"copy to clipboard\" button in update text box"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:151
+msgid "firmware: use opnsense-revert in GUI reinstall package case"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:152
+msgid ""
+"firmware: when storing installed plugin names remove their development "
+"counterparts"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:153
+msgid ""
+"firmware: improved health check scope to include direct core package "
+"dependencies"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:154
+msgid "openvpn: fix Firefox \"nowrap\" issue in client export page"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:155
+msgid ""
+"backend: improve error handling while configd is either not active or not"
+" functional"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:156
+msgid "mvc: route to default page when controller or action not found"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:157
+msgid "mvc: field type refactor and unit tests"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:158
+msgid "mvc: added opt-in referential integrity check for models"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:159
+msgid "mvc: countless PSR12 style updates"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:160
+msgid ""
+"mvc: add \"NetMaskAllowed\" option to validate on single addresses in "
+"NetworkField"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:161
+msgid ""
+"plugins: os-bind 1.11 `[1] "
+"<https://github.com/opnsense/plugins/blob/master/dns/bind/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:162
+msgid ""
+"plugins: os-dyndns 1.18 adds Linode support (contributed by eAndrew "
+"Gunnerson)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:163
+msgid ""
+"plugins: os-freeradius 1.9.5 `[2] "
+"<https://github.com/opnsense/plugins/blob/master/net/freeradius/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:164
+msgid ""
+"plugins: os-frr 1.13 `[3] "
+"<https://github.com/opnsense/plugins/blob/master/net/frr/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:165
+msgid "plugins: os-ftp-proxy style updates only"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:166
+msgid ""
+"plugins: os-postfix 1.13 `[4] "
+"<https://github.com/opnsense/plugins/blob/master/mail/postfix/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:167
+msgid ""
+"plugins: os-rspamd 1.9 `[5] "
+"<https://github.com/opnsense/plugins/blob/master/mail/rspamd/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:168
+msgid "plugins: os-theme-cicada 1.23 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:169
+msgid "plugins: os-theme-tukan 1.22 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:170
+msgid "ports: ca_root_nss 3.48"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:171
+msgid "ports: krb5 1.17.1 `[6] <https://web.mit.edu/kerberos/krb5-1.17/>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:172
+msgid "ports: php 7.2.25 `[7] <https://www.php.net/ChangeLog-7.php#7.2.25>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:173
+msgid ""
+"ports: suricata 4.1.6 `[8] <https://suricata-"
+"ids.org/2019/12/13/suricata-4-1-6-released/>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:174
+msgid ""
+"ports: unbound 1.9.5 `[9] "
+"<https://nlnetlabs.nl/projects/unbound/download/>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:180
+msgid "19.7.7 (November 21, 2019)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:183
+msgid ""
+"Lots of small improvements.  Of note are Eve JSON payload syslog export "
+"now works for 4 kb payload blobs.  The outdated Google API PHP client was"
+" replaced.  LibreSSL is now at version 3.0.2.  Plus another Intel SA "
+"advisory via FreeBSD."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:190
+msgid "system: generate self-signed server certificate for web GUI by default"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:191
+msgid "system: let net.local.dgram.maxdgram default to 8192 bytes"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:192
+msgid "system: spawn Dpinger process in background to avoid hangs"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:193
+msgid "system: switch backup to Google API PHP client v2"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:194
+msgid "system: add interface groups to HA sync"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:195
+msgid "interfaces: remove the \"Directly send SOLICIT\" option"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:196
+msgid "firewall: fix issue with label parsing when \"tag\" keyword was involved"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:197
+msgid "firewall: skip empty lines in rule statistics parsing"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:198
+msgid "firmware: add /etc/remote to whitelist, NTP GPS uses it"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:199
+msgid "reporting: empty NetFlow egress default passes validation"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:200
+msgid "reporting: show dialog when RRD is disabled"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:201
+msgid "dhcp: fix for domain-search option in DHCPv6 (contributed by maurice-w)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:202
+msgid "dnsmasq: fix storing settings when no settings exist yet"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:203
+msgid ""
+"intrusion detection: lower payload-buffer-size to prevent syslog size "
+"limit"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:204
+msgid ""
+"intrusion detection: fix issue with escaped file name during rules "
+"download"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:205
+msgid "unbound: exit wrapper when process not running"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:206
+msgid "web proxy: added check on SNI field checkbox (contributed by Northguy)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:207
+msgid "mvc: fix forceReload()"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:208
+msgid ""
+"plugins: os-acme-client 1.28 `[1] "
+"<https://github.com/opnsense/plugins/pull/1565>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:209
+msgid ""
+"plugins: os-bind 1.10 `[2] "
+"<https://github.com/opnsense/plugins/blob/master/dns/bind/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:210
+msgid ""
+"plugins: os-nginx 1.16 `[3] "
+"<https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:211
+msgid ""
+"plugins: os-nut 1.6 `[4] "
+"<https://github.com/opnsense/plugins/blob/master/sysutils/nut/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:212
+msgid ""
+"plugins: os-postfix 1.12 `[5] "
+"<https://github.com/opnsense/plugins/blob/master/mail/postfix/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:213
+msgid ""
+"src: fix machine check exception on page size change `[6] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:25.mcepsc.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:214
+msgid "src: bump libc syslog line size to 8k"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:215
+msgid ""
+"src: import tzdata 2019c `[7] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"EN-19:18.tzdata.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:216
+msgid "ports: curl 7.67.0 `[8] <https://curl.haxx.se/changes.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:217
+msgid ""
+"ports: libressl 3.0.2 `[9] "
+"<https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.0.2-relnotes.txt>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:218
+msgid ""
+"ports: openvpn 2.4.8 `[10] "
+"<https://github.com/OpenVPN/openvpn/blob/release/2.4/Changes.rst#version-248>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:219
+msgid "ports: perl 5.30.1 `[11] <https://perldoc.perl.org/5.30.1/perldelta>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:220
+msgid ""
+"ports: phalcon 3.4.5 `[12] "
+"<https://github.com/phalcon/cphalcon/releases/tag/v3.4.5>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:221
+msgid "ports: sqlite 3.30.1 `[13] <https://sqlite.org/releaselog/3_30_1.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:222
+msgid ""
+"ports: squid 4.9 `[14] <https://github.com/squid-"
+"cache/squid/blob/master/ChangeLog>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:223
+msgid ""
+"ports: syslog-ng 3.24.1 `[15] <https://github.com/syslog-ng/syslog-"
+"ng/releases/tag/syslog-ng-3.24.1>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:229
+msgid "19.7.6 (November 01, 2019)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:232
+msgid ""
+"As we are experiencing the Suricata community first hand in Amsterdam we "
+"though to release this version a bit earlier than planned.  Included is "
+"the latest Suricata 5.0.0 release in the development version.  That means"
+" later this November we will releasing version 5 to the production "
+"version as we finish up tweaking the integration and maybe pick up 5.0.1 "
+"as it becomes available."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:239
+msgid ""
+"LDAP TLS connectivity is now integrated into the system trust store, "
+"which ensures that all required root and intermediate certificates will "
+"be seen by the connection setup when they have been added to the "
+"authorities section.  The same is true for trusting self-signed "
+"certificates.  On top of this, IPsec now supports public key "
+"authentication as contributed by Pascal Mathis."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:248
+msgid "system: hook LDAP TLS support into system-wide trust file"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:249
+msgid "system: fix dpinger custom parameters not being honoured"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:250
+msgid "system: fix PHP core loop fail in tunables overview"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:251
+msgid "system: only allow P12 export if password confirmation matches"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:252
+msgid "interfaces: change PCAP download to binary file stream"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:253
+msgid ""
+"firewall: store reference to outbound NAT address instead of literal "
+"address"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:254
+msgid "firewall: add log message for scheduled firewall reload"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:255
+msgid "firmware: tie pkg dependency to core"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:256
+msgid ""
+"ipsec: allow EC keys for certificate-based secrets (contributed by Martin"
+" Strigl)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:257
+msgid ""
+"ipsec: add support for public key authentication (contributed by Pascal "
+"Mathis)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:258
+msgid ""
+"openvpn: server wizard existing CA use and server cert check (contributed"
+" by johnaheadley)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:259
+msgid "backend: add run mode to pluginctl using JSON-based output"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:260
+msgid "ui: fix tokenizer reorder on multiple saves, second try"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:261
+msgid ""
+"plugins: os-acme-client 1.27 `[1] "
+"<https://github.com/opnsense/plugins/pull/1536>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:262
+msgid ""
+"plugins: os-bind 1.9 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/20.1/dns/bind/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:263
+msgid ""
+"plugins: os-nginx 1.15 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/20.1/www/nginx/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:264
+msgid ""
+"plugins: os-relayd 2.4 fixes protocol option migration (contributed by "
+"Frank Brendel)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:265
+msgid "plugins: os-theme-cicada 1.22 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:266
+msgid "ports: ca_root_nss 3.47"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:267
+msgid "ports: php 7.2.24 `[4] <https://www.php.net/ChangeLog-7.php#7.2.24>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:268
+msgid ""
+"ports: python 3.7.5 `[5] "
+"<https://docs.python.org/release/3.7.5/whatsnew/changelog.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:269
+msgid "ports: sudo 1.8.29 `[6] <https://www.sudo.ws/legacy.html#1.8.29>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:275
+msgid "19.7.5 (October 11, 2019)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:278
+msgid ""
+"Lots of plugin and ports updates this time with a few minor improvements "
+"in all core areas."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:281
+msgid ""
+"Behind the scenes we are starting to migrate the base system to version "
+"12.1 which is supposed to hit the next 20.1 release.  Stay tuned for more"
+" infos in the next month or so."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:287
+msgid "system: show all swap partitions in system information widget"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:288
+msgid "system: flatten services_get() in preparation for removal"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:289
+msgid "system: pin Syslog-ng version to specific package name"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:290
+msgid "system: fix LDAP/StartTLS with user import page"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:291
+msgid "system: fix a PHP warning on authentication server page"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:292
+msgid "system: replace most subprocess.call use"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:293
+msgid "interfaces: fix devd handling of carp devices (contributed by stumbaumr)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:294
+msgid "firewall: improve firewall rules inline toggles"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:295
+msgid "firewall: only allow TCP flags on TCP protocol"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:296
+msgid "firewall: simplify help text for direction setting"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:297
+msgid "firewall: make protocol log summary case insensitive"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:298
+msgid "reporting: ignore malformed flow records"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:299
+msgid "captive portal: fix type mismatch for timeout read"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:300
+msgid ""
+"dhcp: add note for static lease limitation with lease registration "
+"(contributed by Northguy)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:301
+msgid "ipsec: add margintime and rekeyfuzz options"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:302
+msgid "ipsec: clear $dpdline correctly if not set"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:303
+msgid "ui: fix tokenizer reorder on multiple saves"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:304
+msgid ""
+"plugins: os-acme-client 1.26 `[1] "
+"<https://github.com/opnsense/plugins/pull/1499>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:305
+msgid ""
+"plugins: os-bind will reload bind on record change (contributed by "
+"blablup)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:306
+msgid "plugins: os-etpro-telemetry minor subprocess.call replacement"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:307
+msgid ""
+"plugins: os-freeradius 1.9.4 `[2] "
+"<https://github.com/opnsense/plugins/blob/master/net/freeradius/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:308
+msgid ""
+"plugins: os-frr 1.12 `[3] "
+"<https://github.com/opnsense/plugins/blob/master/net/frr/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:309
+msgid ""
+"plugins: os-haproxy 2.19 `[4] "
+"<https://github.com/opnsense/plugins/pull/1498>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:310
+msgid ""
+"plugins: os-mailtrail 1.2 `[5] "
+"<https://github.com/opnsense/plugins/blob/master/security/maltrail/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:311
+msgid ""
+"plugins: os-postfix 1.11 `[6] "
+"<https://github.com/opnsense/plugins/blob/master/mail/postfix/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:312
+msgid ""
+"plugins: os-rspamd 1.8 `[7] "
+"<https://github.com/opnsense/plugins/blob/master/mail/rspamd/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:313
+msgid ""
+"plugins: os-sunnyvalley LibreSSL support (contributed by Sunny Valley "
+"Networks)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:314
+msgid ""
+"plugins: os-telegraf 1.7.6 `[8] "
+"<https://github.com/opnsense/plugins/blob/master/net-mgmt/telegraf/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:315
+msgid "plugins: os-theme-cicada 1.21 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:316
+msgid "plugins: os-theme-tukan 1.21 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:317
+msgid "plugins: os-tinc minor subprocess.call replacement"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:318
+msgid ""
+"plugins: os-tor 1.8 adds dormant mode disable option (contributed by "
+"Fabian Franz)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:319
+msgid "plugins: os-virtualbox 1.0 (contributed by andrewhotlab)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:320
+msgid ""
+"ports: expat 2.2.8 `[10] "
+"<https://github.com/libexpat/libexpat/blob/R_2_2_8/expat/Changes>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:321
+msgid "ports: ca_root_nss 3.46.1"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:322
+msgid "ports: curl 7.66.0 `[9] <https://curl.haxx.se/changes.html#7_66_0>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:323
+msgid ""
+"ports: openssl 1.0.2t `[11] "
+"<https://www.openssl.org/news/secadv/20190910.txt>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:324
+msgid "ports: php 7.2.23 `[12] <https://www.php.net/ChangeLog-7.php#7.2.23>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:325
+msgid ""
+"ports: pkg 1.12.0 `[13] <https://github.com/freebsd/freebsd-"
+"ports/commit/95ac8ad2>`__  `[14] <https://github.com/freebsd/freebsd-"
+"ports/commit/5a06e26ff>`__  `[15] <https://github.com/freebsd/freebsd-"
+"ports/commit/77d4a311e>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:326
+msgid "ports: strongswan 5.8.1 `[16] <https://wiki.strongswan.org/versions/74>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:327
+msgid ""
+"ports: suricata 4.1.5 `[17] <https://suricata-"
+"ids.org/2019/09/24/suricata-4-1-5-released/>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:328
+msgid ""
+"ports: syslog-ng 3.23.1 `[18] <https://github.com/syslog-ng/syslog-"
+"ng/releases/tag/syslog-ng-3.23.1>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:329
+msgid ""
+"ports: unbound 1.9.4 `[19] "
+"<https://nlnetlabs.nl/projects/unbound/download/>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:331
+msgid "A hotfix release was issued as 19.7.5_5:"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:333
+msgid "ui: revert fix for tokenizer reorder on multiple saves for now"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:334
+msgid "system: replace services_get() with plugins_services()"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:335
+msgid "system: verbose print on \"pluginctl -s\" actions"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:341
+msgid "19.7.4 (September 11, 2019)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:344
+msgid ""
+"A wee bit of updates for you... nothing overly exciting.  On the other "
+"hand, we have updated the roadmap page to include 20.1 if you want to "
+"take a closer look `[1] <https://opnsense.org/about/road-map/>`__ .  More"
+" exciting for sure.  :)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:350
+msgid "system: fix legacy remote logging with custom port"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:351
+msgid "system: regenerate CA bundle when modifying trusted authorities"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:352
+msgid "system: fix translation order of tunables description"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:353
+msgid "system: fix CARP maintenance mode bootup"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:354
+msgid "firewall: missing daily refresh on GeoIP type"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:355
+msgid "firewall: fix fetch of GeoIP alias if its name is same as its country"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:356
+msgid "reporting: auto-load required kernel modules for NetFlow"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:357
+msgid ""
+"reporting: allow setting NetFlow active/inactive timeout (contributed by "
+"Frank Brendel)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:358
+msgid "captive portal: optimise ipfw rule parsing"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:359
+msgid ""
+"firmware: Homelab.no has been superseded by TerraHost mirror (contributed"
+" by Thomas Jensen)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:360
+msgid "unbound: support file-based custom includes"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:361
+msgid "unbound: set absolute path to root.hints (contributed by h-town)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:362
+msgid ""
+"plugins: os-bind 1.8 `[2] "
+"<https://github.com/opnsense/plugins/blob/master/dns/bind/pkg-descr>`__  "
+"(contributed by ErikJStaab)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:363
+msgid ""
+"plugins: os-dnscrypt-proxy 1.6 `[3] "
+"<https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/pkg-"
+"descr>`__  (contributed by ErikJStaab)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:364
+msgid ""
+"plugins: os-etpro-telemetry 1.4 `[4] "
+"<https://docs.opnsense.org/manual/etpro_telemetry.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:365
+msgid "plugins: os-theme-cicada 1.20 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:366
+msgid "plugins: os-theme-tukan 1.20 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:367
+msgid "ports: ca_root_nss 3.46"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:368
+msgid ""
+"ports: ldns 1.7.1 `[5] "
+"<https://raw.githubusercontent.com/NLnetLabs/ldns/release-1.7.1/Changelog>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:369
+msgid "ports: pcre2 10.33 `[6] <https://www.pcre.org/changelog.txt>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:370
+msgid "ports: php 7.2.22 `[7] <https://www.php.net/ChangeLog-7.php#7.2.22>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:371
+msgid ""
+"ports: phpseclib 2.0.21 `[8] "
+"<https://github.com/phpseclib/phpseclib/releases/tag/2.0.21>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:372
+msgid ""
+"ports: unbound 1.9.3 `[9] "
+"<https://nlnetlabs.nl/projects/unbound/download/#unbound-1-9-3>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:374
+msgid "A hotfix release was issued as 19.7.4_1:"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:376
+msgid "captive portal: fix merge conflict in optimisation"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:382
+msgid "19.7.3 (August 28, 2019)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:385
+msgid ""
+"Please enjoy this release with improved CARP utility and a number of "
+"smaller fixes and updates for the operating system and third party tools."
+" You can now also toggle logging directly from the rule overview to make "
+"debugging easier."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:390
+msgid "Here is the full list of changes:"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:392
+msgid "system: try all backups for automatic revert when config.xml is damaged"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:393
+msgid "system: do a system reset if all config.xml files are damaged"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:394
+msgid ""
+"system: only show tunables reboot hint when applying tunables "
+"(contributed by Northguy)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:395
+msgid "system: use FQDN in system log remote messages"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:396
+msgid "system: add defunct gateways to GUI in disabled state"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:397
+msgid "interfaces: only allow VLAN parents that will work as VLAN parents"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:398
+msgid "interfaces: optionally promote/demote CARP on service status"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:399
+msgid "interfaces: CARP status page report with demotion level to avoid ambiguity"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:400
+msgid ""
+"firewall: revert problematic 19.7.2 change \"unhide automatic interface-"
+"based output rules\""
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:401
+msgid ""
+"firewall: restore automatic outbound NAT pre-19.7 behaviour which "
+"excludes gateways not configured and not dynamic"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:402
+msgid ""
+"firewall: add logging toggle to rules overview (contributed by "
+"johnaheadley)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:403
+msgid "firewall: DHCPv6 relay would generate rules even if not enabled"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:404
+msgid ""
+"firmware: only do single-repository fingerprint verify defaulting to our "
+"OPNsense repository"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:405
+msgid "firmware: fix base and kernel package listing"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:406
+msgid "intrusion detection: show change message after toggle or save"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:407
+msgid "intrusion detection: rule download fix"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:408
+msgid "monit: add parent devices to interface list (contributed by Frank Brendel)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:409
+msgid "monit: fix standard configuration migration (contributed by Frank Brendel)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:410
+msgid "reporting: skip illegal NetFlow records in flow parser"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:411
+msgid ""
+"opendns: migrate update hook from DynDNS plugin to core to make it fully "
+"automatic"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:412
+msgid "backend: fix exception message string handling in Python 3"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:413
+msgid "backend: add help to pluginctl utility"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:414
+msgid "backend: configctl event handler support"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:415
+msgid "mvc: log API key when authentication failed"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:416
+msgid "ui: more consistent HTML (contributed by gisforgirard)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:417
+msgid "ui: sidebar bug fix (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:418
+msgid "ui: fix initFormAdvancedUI() on initial load"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:419
+msgid ""
+"plugins: os-acme-client 1.25 `[1] "
+"<https://github.com/opnsense/plugins/pull/1452>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:420
+msgid ""
+"plugins: os-bind 1.7 `[2] "
+"<https://github.com/opnsense/plugins/blob/master/dns/bind/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:421
+msgid "plugins: os-dyndns 1.17 removes OpenDNS and fixes DyNS"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:422
+msgid ""
+"plugins: os-haproxy 2.18 `[3] "
+"<https://github.com/opnsense/plugins/pull/1453>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:423
+msgid ""
+"plugins: os-maltrail 1.1 `[4] "
+"<https://github.com/opnsense/plugins/blob/master/security/maltrail/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:424
+msgid "plugins: os-nginx log rotation fix (contributed by Fabian Franz)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:425
+msgid ""
+"plugins: os-postfix 1.10 `[5] "
+"<https://github.com/opnsense/plugins/blob/master/mail/postfix/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:426
+msgid ""
+"plugins: os-smart 2.1 fixes widget status and adds NVMe disk support "
+"(contributed by nhirokinet and ATL)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:427
+msgid "plugins: os-theme-cicada 1.19 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:428
+msgid "plugins: os-theme-tukan 1.19 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:429
+msgid ""
+"plugins: os-wireguard 1.1 `[6] "
+"<https://github.com/opnsense/plugins/blob/master/net/wireguard/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:430
+msgid ""
+"src: fix incorrect exception handling in libunwind `[7] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"EN-19:15.libunwind.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:431
+msgid ""
+"src: fix multiple vulnerabilities in bzip2 `[8] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:18.bzip2.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:432
+msgid ""
+"src: fix ICMPv6 / MLDv2 out-of-bounds memory access `[9] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:19.mldv2.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:433
+msgid ""
+"src: fix insufficient message length validation in bsnmp library `[10] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:20.bsnmp.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:434
+msgid ""
+"src: fix insufficient validation of guest-supplied data (e1000 device) "
+"`[11] <https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:21.bhyve.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:435
+msgid ""
+"src: fix IPv6 remote denial of service `[12] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:22.mbuf.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:436
+msgid ""
+"src: fix kernel memory disclosure from /dev/midistat `[13] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:23.midi.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:437
+msgid ""
+"src: fix reference count overflow in mqueuefs 32-bit compat `[14] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:24.mqueuefs.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:438
+msgid ""
+"ports: hostapd 2.9 `[15] "
+"<https://w1.fi/cgit/hostap/plain/hostapd/ChangeLog>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:439
+msgid ""
+"ports: nghttp2 1.39.2 `[16] "
+"<https://github.com/nghttp2/nghttp2/releases/tag/v1.39.2>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:440
+msgid ""
+"ports: openldap 2.4.48 `[17] "
+"<https://www.openldap.org/software/release/changes.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:441
+msgid "ports: perl 5.30.0 `[18] <https://perldoc.perl.org/5.30.0/perldelta>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:442
+msgid "ports: php 7.2.21 `[19] <https://www.php.net/ChangeLog-7.php#7.2.21>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:443
+msgid ""
+"ports: py-openssl 19.0.0 `[20] "
+"<https://www.pyopenssl.org/en/stable/changelog.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:444
+msgid ""
+"ports: syslog-ng 3.22.1 `[21] <https://github.com/balabit/syslog-"
+"ng/releases/tag/syslog-ng-3.22.1>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:445
+msgid ""
+"ports: wpa_supplicant 2.9 `[22] "
+"<https://w1.fi/cgit/hostap/plain/wpa_supplicant/ChangeLog>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:451
+msgid "19.7.2 (August 05, 2019)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:454
+msgid ""
+"This update ships the latest FreeBSD security advisories along with "
+"several smaller improvements and fixes.  Sunny Valley Networks is the "
+"first vendor to introduce additional software to the plugin framework in "
+"the form of the Sensei plugin."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:461
+msgid "system: missing \"<PRI>\" in legacy output via Syslog-ng"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:462
+msgid "system: fix writing gateway information for DNS servers"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:463
+msgid ""
+"system: allow gateway to work in DHCPv6 WAN when no router solicitation "
+"is available"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:464
+msgid "firewall: unhide automatic interface-based output rules"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:465
+msgid "firewall: unhide automatic non-interface-based floating rules"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:466
+msgid "firewall: lift length restriction in NAT rule description"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:467
+msgid "firewall: avoid newlines in rule descriptions"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:468
+msgid "firewall: only show usable addresses in NAT outbound rules"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:469
+msgid "interfaces: fix extended CARP output when parsing interface information"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:470
+msgid "interfaces: add more outputs to overview page to increase usefulness"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:471
+msgid "interfaces: use shared DHCP lease reader for ARP list"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:472
+msgid "captive portal: fix binary read issue in Python 3"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:473
+msgid "dhcp: fix DHCPv4 relay interface selection (contributed by jayantsahtoe)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:474
+msgid ""
+"firmware: handle file signature verify correctly with multiple "
+"fingerprint repositories"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:475
+msgid "firmware: Aivian mirror is no longer active"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:476
+msgid "firmware: Cloudfence mirror in Brazil added"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:477
+msgid "plugins: os-bind 1.6 (contributed by crazy-max)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:478
+msgid "plugins: os-dnscrypt-proxy 1.5 (contributed by crazy-max)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:479
+msgid ""
+"plugins: os-grid_example 1.0 `[1] "
+"<https://docs.opnsense.org/development/examples/using_grids.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:480
+msgid ""
+"plugins: os-helloworld Python 3 compatibility `[2] "
+"<https://docs.opnsense.org/development/examples/helloworld.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:481
+msgid "plugins: os-nut 1.5 adds Riello driver (contributed by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:482
+msgid ""
+"plugins: os-sunnyvalley 1.0 `[3] "
+"<https://docs.opnsense.org/third_party_plugins.html>`__  `[4] "
+"<https://www.sunnyvalley.io/sensei>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:483
+msgid ""
+"src: fix panic from Intel CPU vulnerability mitigation `[5] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-EN-19:13.mds.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:484
+msgid ""
+"src: fix multiple telnet client vulnerabilities `[6] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:12.telnet.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:485
+msgid ""
+"src: fix pts write-after-free `[7] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-SA-19:13.pts.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:486
+msgid ""
+"src: fix kernel memory disclosure in freebsd32_ioctl `[8] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:14.freebsd32.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:487
+msgid ""
+"src: fix reference count overflow in mqueuefs `[9] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:15.mqueuefs.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:488
+msgid ""
+"src: fix byhve out-of-bounds read in XHCI device `[10] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:16.bhyve.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:489
+msgid ""
+"src: fix file descriptor reference count leak `[11] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-SA-19:17.fd.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:490
+msgid ""
+"ports: libevent 2.1.11 `[12] "
+"<https://raw.githubusercontent.com/libevent/libevent/release-2.1.11-stable/ChangeLog>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:496
+msgid "19.7.1 (July 25, 2019)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:499
+msgid ""
+"We do not wish to keep you from enjoying your summer time, but this is a "
+"recommended security update enriched with reliability fixes for the new "
+"19.7 series.  Of special note are performance improvements as well as a "
+"fix for a longstanding NAT before IPsec limitation."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:506
+msgid "system: do not create automatic copies of existing gateways"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:507
+msgid "system: do not translate empty tunables descriptions"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:508
+msgid "system: remove unwanted form action tags"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:509
+msgid "system: do not include Syslog-ng in rc.freebsd handler"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:510
+msgid "system: fix manual system log stop/start/restart"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:511
+msgid ""
+"system: scoped IPv6 \"%\" could confuse mwexecf(), use plain mwexec() "
+"instead"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:512
+msgid ""
+"system: allow curl-based downloads to use both trusted and local "
+"authorities"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:513
+msgid "system: fix group privilege print and correctly redirect after edit"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:514
+msgid "system: use cached address list in referrer check"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:515
+msgid "system: fix Syslog-ng search stats"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:516
+msgid "firewall: HTML-escape dynamic entries to display aliases"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:517
+msgid "firewall: display correct IP version in automatic rules"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:518
+msgid "firewall: fix a warning while reading empty outbound rules configuration"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:519
+msgid "firewall: skip illegal log lines in live log"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:520
+msgid ""
+"interfaces: performance improvements for configurations with hundreds of "
+"interfaces"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:521
+msgid ""
+"reporting: performance improvements for Python 3 NetFlow aggregator "
+"rewrite"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:522
+msgid "dhcp: move advanced router advertisement options to correct config section"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:523
+msgid ""
+"ipsec: replace global array access with function to ensure side-effect "
+"free boot"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:524
+msgid "ipsec: change DPD action on start to \"dpdaction = restart\""
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:525
+msgid "ipsec: remove already default \"dpdaction = none\" if not set"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:526
+msgid "ipsec: use interface IP address in local ID when doing NAT before IPsec"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:527
+msgid ""
+"web proxy: fix database reset for Squid 4 by replacing use of ssl_crtd "
+"with security_file_certgen"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:528
+msgid ""
+"plugins: os-acme-client 1.24 `[1] "
+"<https://github.com/opnsense/plugins/pull/1399>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:529
+msgid ""
+"plugins: os-bind 1.6 `[2] "
+"<https://github.com/opnsense/plugins/blob/master/dns/bind/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:530
+msgid ""
+"plugins: os-dnscrypt-proxy 1.5 `[3] "
+"<https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:531
+msgid ""
+"plugins: os-frr now restricts characters BGP prefix-list and route-maps "
+"`[4] <https://github.com/opnsense/plugins/blob/master/net/frr/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:532
+msgid ""
+"plugins: os-google-cloud-sdk 1.0 `[5] "
+"<https://github.com/opnsense/plugins/pull/1392>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:533
+msgid "ports: curl 7.65.3 `[6] <https://curl.haxx.se/changes.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:534
+msgid "ports: monit 5.26.0 `[7] <https://mmonit.com/monit/changes/>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:535
+msgid "ports: openssh 8.0p1 `[8] <https://www.openssh.com/txt/release-8.0>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:536
+msgid "ports: php 7.2.20 `[9] <https://www.php.net/ChangeLog-7.php#7.2.20>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:537
+msgid ""
+"ports: python 3.7.4 `[10] "
+"<https://docs.python.org/release/3.7.4/whatsnew/changelog.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:538
+msgid "ports: sqlite 3.29.0 `[11] <https://sqlite.org/releaselog/3_29_0.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:539
+msgid ""
+"ports: squid 4.8 `[12] <http://lists.squid-cache.org/pipermail/squid-"
+"announce/2019-July/000100.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:545
+msgid "19.7 (July 17, 2019)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:578
+msgid "These are the most prominent changes since version 19.1:"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:580
+msgid "List automatic firewall rules"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:581
+msgid "Statistics for all firewall rules"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:582
+msgid "Alias JSON import / export"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:583
+msgid "Optional statistics for aliases"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:584
+msgid "Firewall rule locator for live log and automatic rules"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:585
+msgid "Rewritten gateway handling and switching"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:586
+msgid "Remote logging via Syslog-ng"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:587
+msgid "LDAP group sync support"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:588
+msgid "Support certificate signing requests"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:589
+msgid "Route-based IPsec support (VTI)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:590
+msgid "XMLRPC sync support for alias, VHID, widgets"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:591
+msgid "Unbound host overrides alias support"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:592
+msgid "Web proxy and IPsec authentication using PAM"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:593
+msgid "Parent web proxy support"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:594
+msgid "Web proxy login privilege via group"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:595
+msgid "Improved reliability and utility of opnsense-patch"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:596
+msgid "Dpinger and DHCP servers ported to plugin framework"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:597
+msgid ""
+"Language updates for Chinese, Czech, Japanese, German, French, Russian "
+"and Portuguese"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:598
+msgid "Spanish as a new language"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:599
+msgid "Netdata, WireGuard, Maltrail and Mail-Backup (PGP) plugin"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:600
+msgid "Netmap update for VirtIO, VLAN child and vmxnet support"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:601
+msgid "Bootstrap 3.4, LibreSSL 2.9, Unbound 1.9, PHP 7.2, Python 3.7, Squid 4"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:603
+msgid "And here are the full changes against version 19.7-RC1:"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:605
+msgid "system: lower automatic gateway priority for tunnel interfaces"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:606
+msgid "system: only show enabled interfaces on gateway edit"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:607
+msgid "system: speed up console banner interface print"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:608
+msgid "interfaces: typo in default WAN selection for packet capture"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:609
+msgid "interfaces: support multiple interfaces for packet capture"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:610
+msgid "interfaces: fix ambiguity in get_parent_interface()"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:611
+msgid "firewall: restart filterlog with every filter reload"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:612
+msgid "firmware: add update syshook"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:613
+msgid "ipsec: phase2 IP type selector using the wrong class"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:614
+msgid "reporting: fix Insight bug not processing top port and address statistics"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:615
+msgid "ui: window_highlight_table_option() fix for Safari"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:616
+msgid "wizard: improve logo contrast in welcome message"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:617
+msgid ""
+"plugins: os-frr redistribute configuration fix (contributed by Cedric "
+"Vanet)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:618
+msgid ""
+"plugins: os-intrusion-detection-content-et-pro 1.0.1 now uses "
+"suricata-4.0 rulesets"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:619
+msgid ""
+"plugins: os-haproxy 2.17 `[2] "
+"<https://github.com/opnsense/plugins/pull/1347>`__  `[3] "
+"<https://github.com/opnsense/plugins/pull/1408>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:620
+msgid "plugins: os-mail-backup 1.0 (contributed by Joao Vilaca)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:621
+msgid "plugins: os-maltrail 1.0 (contributed by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:622
+msgid "plugins os-smart 2.0 MVC conversion (contributed by Smart-Soft)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:623
+msgid "plugins: os-tinc chroot setup with resolv.conf"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:624
+msgid "plugins: os-wireguard 1.0 (contributed by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:625
+msgid "plugins: os-wol 2.2 fixes byte conversion"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:626
+msgid "src: bump netmap ring size, still too small in FreeBSD"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:627
+msgid "src: add FCC6_FCCA regulatory domain to ath_hal(4)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:628
+msgid "src: restore IPV6_NEXTHOP option support"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:629
+msgid ""
+"src: fix privilege escalation in cd(4) driver `[4] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:11.cd_ioctl.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:630
+msgid ""
+"src: fix kernel stack disclosure in UFS/FFS `[5] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-SA-19:10.ufs.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:631
+msgid ""
+"src: fix iconv buffer overflow `[6] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:09.iconv.asc>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:632
+msgid "src: import tzdata 2019b"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:633
+msgid "ports: ca_root_nss 3.45"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:634
+msgid ""
+"ports: filterlog 0.3 will not print to console and lowercase IPv6 "
+"protocol output"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:635
+msgid "ports: postfix update is now non-interactive to prevent stalls"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:636
+msgid ""
+"ports: rrdtool 1.7.2 `[7] "
+"<https://github.com/oetiker/rrdtool-1.x/releases/tag/v1.7.2>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:638 ../../source/releases/BE_19.7.rst:769
+msgid "Known issues and limitations:"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:640 ../../source/releases/BE_19.7.rst:774
+msgid ""
+"Web proxy squid update from version 3 to 4 breaks the cache database.  To"
+" repair go to \"Services: Web Proxy: Administration\" tab \"Support\" and"
+" click \"Reset\"."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:641
+msgid ""
+"Web proxy login privilege is no longer available.  Access may be "
+"restricted by a group selector instead."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:642 ../../source/releases/BE_19.7.rst:775
+msgid ""
+"Nano images require a reinstall using the latest image to avoid inode "
+"shortage which makes the system appear to run out of space during recent "
+"19.1.x updates."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:643 ../../source/releases/BE_19.7.rst:772
+msgid ""
+"OpenVPN no longer supports listening on gateway groups.  Use localhost "
+"paired with port forwards instead."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:645 ../../source/releases/BE_19.7.rst:777
+msgid "The public key for the 19.7 series is:"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:681
+msgid "19.7.r1 (July 09, 2019)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:690
+msgid ""
+"We thank all of you for helping test, shape and contribute to the "
+"project! We know it would not be the same without you."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:703
+msgid "Here are the full changes against version 19.1.10:"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:705
+msgid "system: new remote syslog setup via Syslog-ng"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:706
+msgid "system: gateway handling rewrite"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:707
+msgid ""
+"system: default gateway switching priority control (sponsored by m.a.x. "
+"it `[2] <https://www.max-it.de/>`__ )"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:708
+msgid "system: dpinger ported to plugin framework"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:709
+msgid "system: bring back PHP warning log level"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:710
+msgid "system: use authentication factory for user import"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:711
+msgid "interfaces: VLAN, bridge, LAGG, GRE, GIF setup refactor"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:712
+msgid "interfaces: improve load sequence to allow DHCPv6 on bridges"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:713
+msgid ""
+"interfaces: GIF, GRE, IPsec and OpenVPN will no longer accept IP "
+"configuration"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:714
+msgid "interfaces: speed up get_real_interface() by assuming interfaces exist"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:715
+msgid ""
+"interfaces: sort interface groups and require rules apply if necessary "
+"(contributed by Robin Schneider)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:716
+msgid "interfaces: background PPPoE connect and disconnect"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:717
+msgid ""
+"interfaces: only IP-address allowed in PPP gateway (contributed by Smart-"
+"Soft)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:718
+msgid "interfaces: simplified linking VIPs to interfaces"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:719
+msgid "interfaces: removed interface_has_gateway()"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:720
+msgid "interfaces: removed interface_has_gatewayv6()"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:721
+msgid "interfaces: removed get_failover_interface()"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:722
+msgid "interfaces: removed rc.kill_states"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:723
+msgid "firewall: ability to view automatic rules"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:724
+msgid "firewall: rule origin locator in live log and automatic rules listing"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:725
+msgid "firewall: show statistics for all active rules including automatic ones"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:726
+msgid "firewall: optional statistics for alias tables"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:727
+msgid "firewall: fix translation of shaper mask \"none\" value"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:728
+msgid "firewall: add ipv6-icmp type selection"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:729
+msgid "firewall: rule listing layout update"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:730
+msgid "reporting: new NetFlow reader in Python 3"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:731
+msgid ""
+"reporting: validate that NetFlow WAN interfaces are also added to "
+"listening interfaces"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:732
+msgid "dhcp: ported to plugin framework"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:733
+msgid "dhcp: added failover split to DHCPv4 (contributed by Wolfgang Pedot)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:734
+msgid "dhcp: fix ddnsdomainprimary setting validation"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:735
+msgid "dhcp: added advanced options for router advertisements"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:736
+msgid "dhcp: removed remove rasend/ranosend checkbox"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:737
+msgid "dhcp: simplify DHCPv4 interface lookup on lease page"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:738
+msgid "dhcp: use AdvDefaultLifetime 0 when default route shall not be advertised"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:739
+msgid "firmware: support reading package repository and origin"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:740
+msgid "firmware: warn on third party package installation"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:741
+msgid "firmware: synchronise update checks to avoid \"not responding\" errors"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:742
+msgid "firmware: fix empty update list on release type change"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:743
+msgid "images: nano image now supports future-proof number of inodes"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:744
+msgid "installer: support password reset in opnsense-importer"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:745
+msgid "intrusion detection: allow rule action bulk changes"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:746
+msgid "intrusion detection: minor usability improvements"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:747
+msgid "intrusion detection: support eve system log output"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:748
+msgid "openvpn: removed gateway group listening support"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:749
+msgid "openvpn: no longer restart servers on CARP events"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:750
+msgid "openvpn: reduced complexity in service handling"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:751
+msgid ""
+"web proxy: replace proxy login privilege \"user-proxy-auth\" with group "
+"selector"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:752
+msgid "backend: ported remaining scripts to Python 3"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:753
+msgid "backend: add helpers.glob() to enable template traversal"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:754
+msgid "backend: new \"monitor\" hook for rc.syshook"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:755
+msgid "mvc: do not add \"none\" in AuthGroupField if multiple select"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:756
+msgid "mvc: allow sorting JsonKeyValueStoreField by value"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:757
+msgid "ui: remember previous selected columns and row count on several MVC pages"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:758
+msgid "ui: apply alert reminders for several MVC pages"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:759
+msgid "ui: add failed callback to saveFormToEndpoint()"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:760
+msgid "ui: core theme color update"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:761
+msgid "ui: fix file size suffix (contributed by Fabian Franz)"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:762
+msgid "ui: add useRequestHandlerOnGet option"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:763
+msgid ""
+"ui: bootstrap 3.4.1 `[3] "
+"<https://blog.getbootstrap.com/2019/02/13/bootstrap-4-3-1-and-3-4-1/>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:764
+msgid "src: netmap VirtIO, VLAN child and vmxnet support"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:765
+msgid "src: fix races in tun(4)/tap(4) drivers"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:766
+msgid ""
+"ports: squid 4.7 `[4] <http://squid.mirror.colo-"
+"serv.net/archive/4/squid-4.0.7-RELEASENOTES.html>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:767
+msgid ""
+"ports: syslog-ng 3.21.1 `[5] <https://github.com/balabit/syslog-"
+"ng/releases/tag/syslog-ng-3.21.1>`__"
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:771
+msgid ""
+"Filterlog spamming console due to new Syslog-ng integration.  Temporary "
+"workaround is stopping filterlog via \"pkill filterlog\"."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:773
+msgid ""
+"The web proxy login privilege is no longer available.  Access may be "
+"restricted by a group selector instead."
+msgstr ""
+
+#: ../../source/releases/BE_19.7.rst:796
+msgid "Please let us know about your experience!"
+msgstr ""
+

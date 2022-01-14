@@ -1,0 +1,240 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:3
+msgid "nginx: Header Hardening"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:7
+msgid ""
+"Except for some specific configuration directives, this is **NOT** "
+"specific to the nginx plugin. Please note that you can also debug your "
+"frontend code this way."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:13
+msgid "Background Information"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:15
+msgid ""
+"HTTP headers can control what a web application is allowed to do and what"
+" it is not. This can be used to harden the web application against some "
+"**client side risks**."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:20
+msgid "Testing Web Applications Using A Local Proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:23
+msgid "Configuration of Firefox"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:25
+msgid "For this tests, you should install and configure FoxyProxy_."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:29
+msgid "After it is installed, click on the proxy settings and add a new one:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:33
+msgid ""
+"As a proxy, enter localhost (or 127.0.0.1 in case localhost does not "
+"work) and the port 8080. Save the settings."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:38
+msgid "Downloading A Proxy Software For Testing"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:40
+msgid "Well known Test tools are:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:42
+msgid "OWASP ZAP (https://github.com/zaproxy/zaproxy)"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:43
+msgid "Burp (https://portswigger.net/burp)"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:44
+msgid "mitmproxy (https://mitmproxy.org/)"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:47
+msgid ""
+"When it is downloaded, you usually have to unpack it into a fitting "
+"directory.`` When it is unpacked, you need to run it. In case of ZAP, "
+"doubleclick the ``zap.sh`` or ``zap.bat`` depending on your operating "
+"system."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:51
+msgid ""
+"Next regenerate and export the certificate under :menuselection:`Tools "
+"--> Options --> Dynamic SSL certificates` and import it into the Firefox "
+"key store (:menuselection:`Preferences --> Data Protection & Security -->"
+" Show Certificates`) with full trust."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:57
+msgid "Start Testing"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:59
+msgid ""
+"Click on the FoxyProxy icon and select the localhost proxy defined first."
+" Next just use the application as usual. If you click the red button, can"
+" stop the request in ZAP and it allows you to edit it:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:65
+msgid ""
+"When you are done, just click one of the play buttons to disable halting "
+"or wait for the next request / response to edit that as well. For example"
+" the response could look like this one:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:71
+msgid ""
+"You can see a lot of important information here like the used protocol "
+"(HTTP/1.1), the status code 200 (which means it was successful) and a lot"
+" of headers. Some of those headers impact security and ZAP will try to "
+"make a recommendation, which may not be always correct but it may help "
+"you to find some (forgotten) issues:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:79
+msgid ""
+"The colors of the flags show how high the risk is rated so the redder it "
+"is, the more impact it has on security. The left view contains a list of "
+"the findings, the right view contains a detailed description of them. "
+"Based on this information, you have to decide your further actions."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:86
+msgid "Testing Web Applications Using Developer Tools"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:89
+msgid ""
+"When you right click on the web site, you can inspect the element but the"
+" opening tools also have a tab for networking."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:94
+msgid ""
+"The network tab works like the main view of the proxy. You can see which "
+"headers are sent and which ones are received. The advantage here is that "
+"you get some errors on the console tab (for example if the CSP has an "
+"error). The disadvantage of the console is, that is is not so easy to "
+"intercept and modify data."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:102
+msgid "Inject Missing Headers Via The nginx Plugin"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:104
+msgid ""
+"Security headers in the nginx plugin can be injected by creating a new "
+"security header configuration:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:109
+msgid ""
+"If you set a setting here, it will override what the webserver sets. You "
+"can inject this security setting into a location or HTTP server."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:112
+msgid ""
+"You can read about the headers in the `Mozilla Wiki "
+"<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers>`_ or in the "
+"RFCs."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:116
+msgid "Not all headers are supported by all browsers."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:118
+msgid "In short, the headers are:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:121
+msgid "Referrer"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:121
+msgid "Control what a page sees when you link on it"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:122
+msgid "XSS Protection"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:122
+msgid "Enable or disable the detection for (reflected) XSS"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:123
+msgid "Don't Sniff Content Type"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:123
+msgid "Disable content type detection when the original is incorrect"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:124
+msgid "Strict Transport Security"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:124
+msgid "TLS only and enforce valid certificate"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:125
+msgid "HPKP"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:125
+msgid "Pin the public key, not widely used and dangerous [1]_ if misconfigured"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:126
+msgid "Content Security Policy"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:126
+msgid "Controls resources and JS functions"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_header_hardening.rst:129
+msgid ""
+"If you switch the certificate without announcing its public key first via"
+" this header in a rollover time span, you will lock this clients out "
+"because they expect being targetted by a MITM attack and refuse the "
+"connection and it is hard to reset this pin in the browser."
+msgstr ""
+

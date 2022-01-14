@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/frontend/models_customfields.rst:3
+msgid "Custom (app specific) field types"
+msgstr ""
+
+#: ../../source/development/frontend/models_customfields.rst:5
+msgid ""
+"Applications can add their own custom field types, which should be "
+"derived from :code:`BaseField` or one of its descendants. A very simple "
+"single item custom field type could look like this:"
+msgstr ""
+
+#: ../../source/development/frontend/models_customfields.rst:9
+msgid "Build the field type"
+msgstr ""
+
+#: ../../source/development/frontend/models_customfields.rst:33
+msgid ""
+"This example extends the standard validations with a list of reserved "
+"words, in which case it would yield :code:`can not use a reserved word` "
+"if one of the reserved words are provided."
+msgstr ""
+
+#: ../../source/development/frontend/models_customfields.rst:38
+msgid ""
+"This file should be placed in the subdirectory :code:`FieldTypes` of the "
+"model itself."
+msgstr ""
+
+#: ../../source/development/frontend/models_customfields.rst:42
+msgid "Use :code:`BaseListField` as simple template for list type items."
+msgstr ""
+
+#: ../../source/development/frontend/models_customfields.rst:46
+msgid "Use in model"
+msgstr ""
+
+#: ../../source/development/frontend/models_customfields.rst:48
+msgid ""
+"The validation can be used as any standard type, when prefixed with "
+":code:`.\\ ` the model knows it concerns a local field."
+msgstr ""
+
+#: ../../source/development/frontend/models_customfields.rst:70
+msgid ""
+"Inspect the `basic field "
+"<https://github.com/opnsense/core/tree/master/src/opnsense/mvc/app/models/OPNsense/Base/FieldTypes>`__"
+" types for inspiration, a concrete example of a custom field type can be "
+"found in the `firewall "
+"<https://github.com/opnsense/core/tree/master/src/opnsense/mvc/app/models/OPNsense/Firewall>`__"
+" section"
+msgstr ""
+

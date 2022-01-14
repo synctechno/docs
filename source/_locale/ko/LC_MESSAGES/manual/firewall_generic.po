@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/firewall_generic.rst:3
+msgid "Generic info"
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:5
+msgid ""
+"This chapter explains some of the concepts that are being used in "
+"different modules of our firewall system and therefore don't belong to a "
+"specific section of this topic."
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:11
+msgid "Address types"
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:13
+msgid ""
+"When choosing source and or destination addresses, the user can choose "
+"several options depending on the context. To explain what the different "
+"options mean when being presented, we will sum them up below:"
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:19
+msgid "Alias"
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:19
+msgid ""
+"Flexible type of network or address definition for easy reuse, expained "
+"in :doc:`aliases </manual/aliases>`"
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:21
+msgid "Single host or network"
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:21
+msgid ""
+"Standard host or network in `CIDR notation <https://en.wikipedia.org/wiki"
+"/Classless_Inter-Domain_Routing>`__"
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:22
+msgid "any"
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:22
+msgid "All IPv4 and/or IPv6 addresses (in the world)"
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:23
+msgid "This Firewall"
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:23
+msgid "All IPv4 and/or IPv6 addresses assigned to this firewall"
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:24
+msgid "[Interface] Network"
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:24
+msgid ""
+"All networks assigned to the physical interface, this will include "
+"networks of virtual addresses assigned as well ([Interface] is explained "
+"in the :doc:`interfaces </manual/interfaces>` topic). Normally used to "
+"allow traffic from or to clients connected to a specific interface."
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:27
+msgid "[Interface] Address"
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:27
+msgid ""
+"All addresses configured on an interface, this includes all virtual "
+"(alias) addresses as well."
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:28
+msgid "Virtual IPs"
+msgstr ""
+
+#: ../../source/manual/firewall_generic.rst:28
+msgid ""
+"Explicit selection for addresses defined in :doc:`Virtual IPs "
+"</manual/firewall_vip>`"
+msgstr ""
+

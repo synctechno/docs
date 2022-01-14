@@ -1,0 +1,2171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/releases/CE_21.7.rst:3
+msgid "21.7  \"Noble Nightingale\" Series"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:7 ../../source/releases/CE_21.7.rst:414
+#: ../../source/releases/CE_21.7.rst:602 ../../source/releases/CE_21.7.rst:660
+msgid ""
+"For more than 6 and a half years, OPNsense is driving innovation through "
+"modularising and hardening the open source firewall, with simple and "
+"reliable firmware upgrades, multi-language support, fast adoption of "
+"upstream software updates as well as clear and stable 2-Clause BSD "
+"licensing."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:12 ../../source/releases/CE_21.7.rst:419
+msgid ""
+"21.7, nicknamed \"Noble Nightingale\", is one of the largest iterations "
+"of code changes in our recent history.  It will also be the last release "
+"on HardenedBSD 12.1.  We are planning to start the work on FreeBSD 13 as "
+"soon as next week for the 22.1 series."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:17 ../../source/releases/CE_21.7.rst:424
+msgid ""
+"The installer was replaced to offer native ZFS installations and prevent "
+"glitches in virtual machines using UEFI.  Firmware updates were partially"
+" redesigned and the UI layout consolidated between static and MVC pages. "
+"The live log now contains the actual rule ID to avoid mismatches after "
+"adjusting your ruleset and the firewall aliases now also support wildcard"
+" netmasks.  For a complete list of changes see below."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:24 ../../source/releases/CE_21.7.rst:431
+#: ../../source/releases/CE_21.7.rst:668
+msgid ""
+"Download links, an installation guide `[1] "
+"<https://docs.opnsense.org/manual/install.html>`__  and the checksums for"
+" the images can be found below as well."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:27 ../../source/releases/CE_21.7.rst:434
+#: ../../source/releases/CE_21.7.rst:671
+msgid "Europe: https://opnsense.c0urier.net/releases/21.7/"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:28 ../../source/releases/CE_21.7.rst:435
+#: ../../source/releases/CE_21.7.rst:672
+msgid "US East Coast: https://mirror.wdc1.us.leaseweb.net/opnsense/releases/21.7/"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:29 ../../source/releases/CE_21.7.rst:436
+#: ../../source/releases/CE_21.7.rst:673
+msgid ""
+"US West Coast: "
+"https://mirror.sfo12.us.leaseweb.net/opnsense/releases/21.7/"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:30 ../../source/releases/CE_21.7.rst:437
+#: ../../source/releases/CE_21.7.rst:674
+msgid "South America: https://mirror.venturasystems.tech/opnsense/releases/21.7/"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:31 ../../source/releases/CE_21.7.rst:438
+#: ../../source/releases/CE_21.7.rst:675
+msgid "Australia: http://mirror.as24220.net/opnsense/releases/21.7/"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:32 ../../source/releases/CE_21.7.rst:439
+#: ../../source/releases/CE_21.7.rst:676
+msgid "Full mirror list: https://opnsense.org/download/"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:37
+msgid "21.7.5 (November 11, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:40
+msgid ""
+"FreeBSD security advisories and an issue with Intel-based ixgbe driver "
+"with \"ifconfig -v\" stalls keep this release rolling.  Also note that "
+"OpenSSH was updated to version 8.8 which deprecates ssh-rsa usage which "
+"is mainly an issue for client access from the OPNsense system to the "
+"outside and can be amended as per the suggestions in the respective "
+"release notes."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:47
+msgid ""
+"And as promised the development version includes the upgrade path to the "
+"22.1-BETA1 release.  This will be an online-beta with a few iterations "
+"over the FreeBSD 13 stable branch and eventually move to FreeBSD 13.1 "
+"release as that becomes available."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:52
+msgid "Highlights for 22.1 already include:"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:54
+msgid ""
+"Suricata Netmap v14 support for multi-gigabit speed in IPS mode with RSS "
+"enabled"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:55
+msgid "Separate VLAN MAC spoofing and permanent promiscuous mode setting"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:56
+msgid "Tunable analytics provide automatic descriptions and type"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:57
+msgid "IPsec tunnel overview ported to MVC with pagination"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:58
+msgid "Proofpoint Emerging Threats rules for Suricata 5.0"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:59
+msgid "Removed opportunistic interface address read functions"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:60
+msgid "Console-based LAGG configuration support"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:61
+msgid "Removed state killing on gateway failure feature"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:62
+msgid "Improved firmware update capabilities"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:63
+msgid "No-bind service awareness for virtual IPs"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:64
+msgid "FreeBSD 13 stable branch"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:65
+msgid "RFC 5424 and severity support in logs"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:66
+msgid "Clog support has been removed"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:67
+msgid "And more..."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:69
+msgid ""
+"Please note that the beta version will always be available for upgrade "
+"when switching to the development version.  At this point no stable "
+"packages are provided and this includes plugins.  These will become "
+"available as the release candidate is released in early January 2022."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:74
+msgid ""
+"All feedback is welcome but keep in mind that there are still a number of"
+" moving parts ahead.  Upgrade responsibly."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:77
+msgid "Here are the full patch notes for version 21.7.5:"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:79
+msgid "system: remove support for obsolete \"local\" syslog socket plugin request"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:80
+msgid "system: prevent setup wizard error in WAN-only configuration"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:81
+msgid "system: properly extract keyid string (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:82
+msgid ""
+"system: show all threads and correct WCPU in activity (contributed by "
+"kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:83
+msgid "system: fix display and sorting in activity (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:84
+msgid "interfaces: remove obsolete link_interface_to_vlans() function"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:85
+msgid "interfaces: inline legacy_interface_rename() function"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:86
+msgid "interfaces: verbose output on test port (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:87
+msgid ""
+"firewall: add live view templates page to respective ACL (contributed by "
+"kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:88
+msgid "firewall: replace pfInfo with statistics page"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:89
+msgid "firewall: add rules to statistics page (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:90
+msgid "firewall: remove defunct \"block carp from self\" CARP rule"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:91
+msgid "dhcp: automatically set AdvRASrcAddress for link-local CARP address"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:92
+msgid "dhcp: exclude link-local subnet router advertisements"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:93
+msgid "firmware: remove unavailable Hostcentral mirror"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:94
+msgid ""
+"firmware: opnsense-update: replace -A before -M and handle single "
+"directory -M independently"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:95
+msgid ""
+"firmware: opnsense-verify: disable verification for repositories without "
+"signatures"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:96
+msgid ""
+"firmware: opnsense-verify: let -l option properly discard duplicate "
+"repositories"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:97
+msgid "firmware: opnsense-version: support -x effective ABI probing"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:98
+msgid "ipsec: add sha256_96 flag (contributed by Patrick M. Hausen)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:99
+msgid "monit: add polltime to service settings (contributed by Frank Brendel)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:100
+msgid "ui: prevent event propagation to avoid click() events being forwarded"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:101
+msgid ""
+"plugins: os-bind 1.19 `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/dns/bind/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:102
+msgid ""
+"plugins: os-dnscrypt-proxy 1.10 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/dns/dnscrypt-proxy"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:103
+msgid ""
+"plugins: os-dyndns 1.26 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/dns/dyndns/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:104
+msgid ""
+"plugins: os-freeradius 1.9.17 `[4] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/freeradius/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:105
+msgid ""
+"plugins: os-frr 1.23 `[5] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/frr/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:106
+msgid ""
+"plugins: os-haproxy 3.7 `[6] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/haproxy/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:107
+msgid ""
+"plugins: os-nut 1.8.1 `[7] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/sysutils/nut/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:108
+msgid ""
+"plugins: os-openconnect 1.4.1 `[8] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/security/openconnect"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:109
+msgid ""
+"plugins: os-relayd 2.6 `[9] "
+"<https://github.com/opnsense/plugins/pull/2391>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:110
+msgid ""
+"plugins: os-telegraf 1.12.2 `[10] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/telegraf"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:111
+msgid ""
+"plugins: os-vnstat 1.3 `[11] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/vnstat/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:112
+msgid ""
+"plugins: os-wireguard 1.8 `[12] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/wireguard/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:113
+msgid "src: axgbe: correctly enable RSS driver support by default"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:114
+msgid "src: ixgbe: prevent subsequent I2C bus read timeouts"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:115
+msgid ""
+"src: fix kernel panic in vmci driver initialization `[13] <FREEBSD"
+":FreeBSD-EN-21:28.vmci>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:116
+msgid ""
+"src: timezone database information update `[14] <FREEBSD:FreeBSD-"
+"EN-21:29.tzdata>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:117
+msgid ""
+"ports: lighttpd 1.4.61 `[15] "
+"<https://www.lighttpd.net/2021/10/28/1.4.61/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:118
+msgid ""
+"ports: nss 3.72 `[16] <https://developer.mozilla.org/en-"
+"US/docs/Mozilla/Projects/NSS/NSS_3.72_release_notes>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:119
+msgid "ports: openssh 8.8p1 `[17] <https://www.openssh.com/txt/release-8.8>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:120
+msgid "ports: pcre2 10.39 `[18] <https://www.pcre.org/changelog.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:121
+msgid "ports: php 7.4.25 `[19] <https://www.php.net/ChangeLog-7.php#7.4.25>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:122
+msgid ""
+"ports: phpseclib 2.0.34 `[20] "
+"<https://github.com/phpseclib/phpseclib/releases/tag/2.0.34>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:127
+msgid "21.7.4 (October 27, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:130
+msgid ""
+"This update features three new major things: optional receive side "
+"scaling (RSS) support in the kernel, asynchronous DNS resolving for "
+"aliases and configuration support for advanced LAGG settings."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:134
+msgid ""
+"RSS is disabled by default but may be switched on by adding a tunable "
+"\"net.inet.rss.enabled\" with value \"1\" and rebooting the system.  "
+"While RSS can improve performance for certain hardware it should be used "
+"with care at this point and is not generally recommended yet!  The "
+"Suricata version bundled with the development release offers the upcoming"
+" API bindings to take advantage of the RSS-based multithreading.  Also "
+"please note that PPPoE cannot take advantage of RSS."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:142
+msgid ""
+"On the side we are almost ready for our 22.1-BETA preview with rolling "
+"releases for the development release type which is something new to look "
+"forward to also."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:146 ../../source/releases/CE_21.7.rst:223
+#: ../../source/releases/CE_21.7.rst:294 ../../source/releases/CE_21.7.rst:368
+#: ../../source/releases/CE_21.7.rst:441 ../../source/releases/CE_21.7.rst:610
+msgid "Here are the full patch notes:"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:148
+msgid ""
+"system: prevent expired or intermediate CA certificates from being added "
+"to trust store by default"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:149
+msgid ""
+"system: prevent XSS in LDAP attribute return in authentication tester "
+"(reported by Orange CERT-CC)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:150
+msgid "system: add product title to auth pages"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:151
+msgid "system: fix log search ignoring first character"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:152
+msgid "system: add xc0 entry video console entry if node exists"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:153
+msgid "system: add automatic outbound NAT logging option"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:154
+msgid ""
+"interfaces: let guess_interface_from_ip() find the best match on "
+"overlapping subnets (contributed by Jason Crowley)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:155
+msgid "interfaces: improve configurability with LAGG devices"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:156
+msgid "firewall: fix non-sticky rule association in port forward"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:157
+msgid ""
+"firewall: switch failover peer address acquire away from deprecated "
+"function"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:158
+msgid "firewall: specify overload table on maximum new connections"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:159
+msgid "firewall: add loaded item count and last update to aliases page"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:160
+msgid ""
+"firewall: refactor getInterfaceGateway() to eliminate edge cases with "
+"IPsec route-to behaviour"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:161
+msgid ""
+"firewall: allow alias to skip entry on EmptyLabel (contributed by James "
+"Golovich)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:162
+msgid ""
+"firewall: improve resolve performance by implementing asynchronous DNS "
+"lookups"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:163
+msgid "dhcp: show static leases without IP address assignments in the lease pages"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:164
+msgid "firmware: do not remove obsolete base files on major upgrades"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:165
+msgid "firmware: support ABI hints in the file \"firmware-upgrade\""
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:166
+msgid ""
+"firmware: opnsense-code utility now supports \"-u\" mode for automatic "
+"upgrade after fetch"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:167
+msgid ""
+"firmware: opnsense-code utility fix for \"-d\" option (contributed by "
+"Patrick M. Hausen)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:168
+msgid ""
+"firmware: opnsense-update utility is now able to bootstrap its own "
+"configuration in \"-d\" mode"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:169
+msgid ""
+"firmware: opnsense-update utility now supports \"-ct package-name\" check"
+" for type change"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:170
+msgid "firmware: opnsense-update utility no longer assumes \"-bkp\" by default"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:171
+msgid ""
+"firmware: opnsense-update utility adds separate clean option for obsolete"
+" base files"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:172
+msgid "firmware: opnsense-update utility assorted cleanups"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:173
+msgid "ipsec: add charon.max_ikev1_exchanges parameter"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:174
+msgid "ipsec: add closeaction parameter (contributed by Patrick M. Hausen)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:175
+msgid "ipsec: rewrite netmask calculation for VTI tunnel setup"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:176
+msgid "monit: add link event to alert settings (contributed by Frank Brendel)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:177
+msgid "openvpn: remove obsolete remnants of tun-ipv6"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:178
+msgid "unbound: add Abuse.ch ThreatFox list"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:179
+msgid "unbound: make so-reuseport conditional upon RSS status"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:180
+msgid "backend: static parameters ignored when no dynamic ones exist"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:181
+msgid "mvc: replace __toString() calls with string casts"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:182
+msgid ""
+"plugins: os-acme-client 3.4 `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-"
+"client/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:183
+msgid "plugins: os-c-icap log file fix (contributed by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:184
+msgid ""
+"plugins: os-dyndns 1.25 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/dns/dyndns/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:185
+msgid ""
+"plugins: os-haproxy 3.6 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/haproxy/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:186
+msgid ""
+"plugins: os-lldpd will now identify itself as Network Connectivity Device"
+" (contributed by Xeroxxx)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:187
+msgid ""
+"plugins: os-puppet-agent 1.0 `[4] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/sysutils/puppet-"
+"agent/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:188
+msgid ""
+"plugins: os-qemu-guest-agent 1.1 `[5] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/emulators/qemu-"
+"guest-agent/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:189
+msgid "plugins: os-theme-rebellion 1.8.8 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:190
+msgid "src: include RSS kernel support defaulting to off"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:191
+msgid "src: axgbe: properly multiplex on reading module signals"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:192
+msgid "src: libnetmap: reset errno in nmreq_register_decode()"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:193
+msgid "src: pf: remove side effect from nat logging patch"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:194
+msgid "src: dummynet: fix mbuf tag allocation failure handling"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:195
+msgid "src: aesni: avoid a potential out-of-bounds load in aes_encrypt_icm()"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:196
+msgid "ports: curl 7.79.1 `[6] <https://curl.se/changes.html#7_79_1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:197
+msgid ""
+"ports: dnspython 2.1.0 `[7] "
+"<https://dnspython.readthedocs.io/en/stable/whatsnew.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:198
+msgid ""
+"ports: jinja 3.0.1 `[8] "
+"<https://jinja.palletsprojects.com/en/3.0.x/changes/#version-3-0-1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:199
+msgid ""
+"ports: libressl 3.3.5 `[9] "
+"<https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.3.5-relnotes.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:200
+msgid ""
+"ports: lighttpd 1.4.60 `[10] "
+"<https://www.lighttpd.net/2021/10/3/1.4.60/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:201
+msgid ""
+"ports: nss 3.71 `[11] <https://developer.mozilla.org/en-"
+"US/docs/Mozilla/Projects/NSS/NSS_3.71_release_notes>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:202
+msgid ""
+"ports: openvpn 2.5.4 `[12] "
+"<https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn25#Changesin2.5.4>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:203
+msgid "ports: php 7.4.24 `[13] <https://www.php.net/ChangeLog-7.php#7.4.24>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:204
+msgid ""
+"ports: strongswan 5.9.4 `[14] "
+"<https://github.com/strongswan/strongswan/releases/tag/5.9.4>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:205
+msgid "ports: sudo 1.9.8p2 `[15] <https://www.sudo.ws/stable.html#1.9.8p2>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:211
+msgid "21.7.3 (September 22, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:214
+msgid ""
+"This release finally brings in Suricata version 6 as well as OpenVPN tls-"
+"crypt support, automatic user creation on LDAP-based logins and more."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:217
+msgid ""
+"As a general note the Realtek vendor driver currently bundled with the "
+"base system will be moved to a plugin-based kernel module in version 22.1"
+" and the original re(4) driver inside FreeBSD 13 will be restored.  To "
+"ease migration and because the version maintained in FreeBSD ports "
+"actually offers additional fixes we have inlcuded the new plugin into "
+"this build."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:225
+msgid "system: allow automatic user creation on LDAP-based logins"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:226
+msgid ""
+"interfaces: add and use unified function is_interface_assigned() to "
+"prevent deleting assigned interfaces"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:227
+msgid "interfaces: sync firewall groups after internal create/destroy operations"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:228
+msgid "interfaces: add netstat tree search and improve page layout"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:229
+msgid ""
+"interfaces: replace opportunistic diagnostics IP address lookups with "
+"more robust variants"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:230
+msgid "firewall: clarify match/set priority in rules"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:231
+msgid "firewall: improve alias description/preview"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:232
+msgid "firewall: aliases maximum entries progress bar"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:233
+msgid "dhcp: add shared dhcpd_leases() reader and use it in both lease pages"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:234
+msgid ""
+"openvpn: use is_interface_assigned() to prevent deletion of assigned "
+"instances"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:235
+msgid "openvpn: CARP status read cleanups (contributed by vnxme)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:236
+msgid "openvpn: tls-crypt support (contributed by vnxme)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:237
+msgid "openvpn: do not create empty router file"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:238
+msgid ""
+"router advertisements: remove AdvRDNSSLifetime / AdvDNSSLLifetime bounds "
+"(contributed by Maurice Walker)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:239
+msgid ""
+"unbound: register DHCP leases with their matching IP range configured "
+"DHCP domain"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:240
+msgid ""
+"plugins: os-acme-client 3.1 `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-"
+"client/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:241
+msgid ""
+"plugins: os-chrony 1.4 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/chrony/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:242
+msgid ""
+"plugins: os-collectd 1.4 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/collectd"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:243
+msgid ""
+"plugins: os-fetchmail 1.1 `[4] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/mail/fetchmail/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:244
+msgid ""
+"plugins: os-freeradius 1.9.16 `[5] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/freeradius/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:245
+msgid "plugins: os-realtek-re 1.0 adds Realtek vendor NIC driver module"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:246
+msgid ""
+"plugins: os-telegraf 1.12.1 `[6] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/telegraf"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:247
+msgid ""
+"ports: dnsmasq 2.86 `[7] "
+"<https://www.thekelleys.org.uk/dnsmasq/CHANGELOG>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:248
+msgid "ports: filterlog 0.5 removes unused IPv6 options support"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:249
+msgid ""
+"ports: nss 3.70 `[8] <https://developer.mozilla.org/en-"
+"US/docs/Mozilla/Projects/NSS/NSS_3.70_release_notes>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:250
+msgid "ports: pcre 8.45 `[9] <https://www.pcre.org/original/changelog.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:251
+msgid ""
+"ports: python 3.8.12 `[10] "
+"<https://docs.python.org/release/3.8.12/whatsnew/changelog.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:252
+msgid "ports: sudo 1.9.8p1 `[11] <https://www.sudo.ws/stable.html#1.9.8p1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:253
+msgid ""
+"ports: suricata 6.0.3 `[12] <https://suricata.io/2021/06/30/new-"
+"suricata-6-0-3-and-5-0-7-releases/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:254
+msgid ""
+"ports: syslog-ng 3.34.1 `[13] <https://github.com/syslog-ng/syslog-"
+"ng/releases/tag/syslog-ng-3.34.1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:256
+msgid "A hotfix release was issued as 21.7.3_1:"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:258
+msgid "openvpn: properly save new tls-crypt configuation"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:260
+msgid "A hotfix release was issued as 21.7.3_3:"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:262
+msgid ""
+"openvpn: fix validation for /30 subnet in peer to peer mode (contributed "
+"by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:263
+msgid "backend: catch broken pipe on event handler (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:264
+msgid ""
+"plugins: os-acme-client 3.2 `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-"
+"client/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:270
+msgid "21.7.2 (September 07, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:273
+msgid "Today the following CVEs are being addressed:"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:275
+msgid "CVE-2021-3711, CVE-2021-3712, CVE-2021-23840, CVE-2021-23841"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:277
+msgid ""
+"Please note that the Let's Encrypt client plugin is now called ACME "
+"client since acme.sh version 3 does support multiple providers."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:280
+msgid ""
+"Apart from the usual batch of fixes the work on RSS (receive side "
+"scaling) is progressing and groundwork has already made it to the kernel "
+"along with the libnetmap library for allowing better scaling in netmap "
+"mode along with it.  At this point, however, RSS is not yet enabled and "
+"there is no impact on existing setups.  That will likely change with one "
+"of the next stable versions in this series."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:287
+msgid ""
+"On the other hand, the work for FreeBSD 13 migration in 22.1 is ongoing "
+"as well to be able to test this rather sooner than later. In this "
+"iteration we will take the time to look at shared forwarding edge cases "
+"and have already upstreamed a number of patches that have been "
+"accumulated over the last couple of years to keep our code base light and"
+" tidy."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:296
+msgid "system: default RSS widget feed to forum announcements"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:297
+msgid "system: add missing ACL for Syslog targets page"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:298
+msgid "system: fix unescaped source field used for password in backup plugins"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:299
+msgid "system: reload FreeBSD services when reloading all services from console"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:300
+msgid "interfaces: use -M option in rtsold invoke in preparation for 22.1"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:301
+msgid "interfaces: correct indent in dhclient configuration"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:302
+msgid ""
+"firewall: allow to specify port ranges for outgoing NAT (contributed by "
+"Nikolay Denev)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:303
+msgid ""
+"firewall: fix long comment preventing IPFW reload (contributed by Robin "
+"Schneider)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:304
+msgid "firewall: fix compare interfaces (contributed by Smart-Soft)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:305
+msgid "firmware: opnsense-patch can now patch installer and updater files"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:306
+msgid "firmware: opnsense-update -c option now honours the -f option"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:307
+msgid "firmware: opnsense-update improvements for mirror manipulation options"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:308
+msgid "firmware: undo masking vulnerability URLs in FreeBSD due to UUID use"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:309
+msgid "firmware: also check plugins sync for up to date core package"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:310
+msgid "firmware: fix visibility issue on console when syncing plugins"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:311
+msgid ""
+"firmware: replace php version_compare() call with pkg-version shell "
+"command"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:312
+msgid "firmware: correctly announce major upgrade reboot in status return"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:313
+msgid ""
+"firmware: do not fetch GeoIP database from business mirrors without a "
+"subscription"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:314
+msgid "firmware: backend now supports reinstall like opnsense-bootstrap -q"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:315
+msgid ""
+"intrusion detection: skip ruleset empty metadata (contributed by "
+"kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:316
+msgid "ipsec: fix a regression in rightsubnets for non-mobile phase 2"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:317
+msgid "ipsec: fix a regression in VTI handling"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:318
+msgid "ipsec: identity quoting for ASN1DN and FQDN types with \"#\" characters"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:319
+msgid "ipsec: add auto type for identities"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:320
+msgid "openvpn: fix client-config-dir regression"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:321
+msgid "openvpn: check IPv4 tunnel prefix (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:322
+msgid "openvpn: simplify CIDR validation and remove trim() usage"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:323
+msgid "web proxy: adding additional memory cache options (contributed by Xeroxxx)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:324
+msgid ""
+"plugins: os-acme-client 3.0 `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-"
+"client/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:325
+msgid ""
+"plugins: os-haproxy 3.5 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/haproxy/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:326
+msgid "src: runtime RSS code preparations and assorted related upstream patches"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:327
+msgid "src: axgbe: remove unneccesary packet length check"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:328
+msgid "src: iflib: fix partial length accounting error in netmap mode"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:329
+msgid "src: lib: add libnetmap and related patches"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:330
+msgid "src: dhclient: skip_to_semi() consumes semicolon already"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:331
+msgid "src: rtsold: slightly change address read"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:332
+msgid ""
+"src: fix missing error handling in bhyve(8) device models `[3] <FREEBSD"
+":FreeBSD-SA-21:13.bhyve>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:333
+msgid ""
+"src: fix remote code execution in ggatec(8) `[4] <FREEBSD:FreeBSD-"
+"SA-21:14.ggatec>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:334
+msgid ""
+"src: fix libfetch out of bounds read `[5] <FREEBSD:FreeBSD-"
+"SA-21:15.libfetch>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:335
+msgid ""
+"src: fix multiple OpenSSL vulnerabilities `[6] <FREEBSD:FreeBSD-"
+"SA-21:16.openssl>`__  `[7] <FREEBSD:FreeBSD-SA-21:17.openssl>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:336
+msgid "ports: ifinfo 13.0"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:337
+msgid ""
+"ports: libressl 3.3.4 `[8] "
+"<https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.3.4-relnotes.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:338
+msgid ""
+"ports: nss 3.69 `[9] <https://developer.mozilla.org/en-"
+"US/docs/Mozilla/Projects/NSS/NSS_3.69_release_notes>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:339
+msgid "ports: monit 5.29.0 `[10] <https://mmonit.com/monit/changes/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:340
+msgid "ports: mpd5 adds L2TP interoperability fix from upstream"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:341
+msgid ""
+"ports: openssl 1.1.1l `[11] "
+"<https://www.openssl.org/news/openssl-1.1.1-notes.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:342
+msgid "ports: php 7.4.23 `[12] <https://www.php.net/ChangeLog-7.php#7.4.23>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:343
+msgid ""
+"ports: strongswan 5.9.3 `[13] "
+"<https://github.com/strongswan/strongswan/releases/tag/5.9.3>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:344
+msgid "ports: sudo 1.9.7p2 `[14] <https://www.sudo.ws/stable.html#1.9.7p2>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:345
+msgid ""
+"ports: unbound 1.13.2 `[15] "
+"<https://nlnetlabs.nl/projects/unbound/download/#unbound-1-13-2>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:347
+msgid "A hotfix release was issued as 21.7.2_1:"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:349
+msgid "firewall: remove reordering patch due to unintended behavioural changes"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:355
+msgid "21.7.1 (August 04, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:358
+msgid ""
+"After some initial trouble with particular Intel network card instability"
+" and two installer shortcomings this brings the first round of stable "
+"updates, general improvements and even new features."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:362
+msgid ""
+"The OpenVPN integration required a few more changes for the 2.5 series "
+"and Unbound would stall when the new cache restore feature was caching an"
+" empty response."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:366
+msgid "Images have been reissued based on this version as well."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:370
+msgid "system: relax server certificate check for web GUI validation"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:371
+msgid "system: use ifinfo counters instead of pfctl in interface widget"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:372
+msgid "interfaces: packet capture quick select for all interfaces"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:373
+msgid ""
+"firewall: make sure net.pf.request_maxcount and table-entries are always "
+"aligned"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:374
+msgid "firewall: only set state options on rules when state is being tracked"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:375
+msgid "firmware: fix opnsense-code pull when ABI configuration is no longer there"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:376
+msgid "firmware: fix upgrade with multiple repositories enabled"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:377
+msgid "firmware: sync plugins in console update"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:378
+msgid "firmware: revoke 21.1 fingerprint"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:379
+msgid "installer: fix possible hang when scanning for disks"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:380
+msgid "installer: fix multiple disk selection"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:381
+msgid "openvpn: fix genkey format on 2.5"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:382
+msgid "openvpn: improve the cipher parsing"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:383
+msgid "openvpn: untie server-ipv6 from server directive"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:384
+msgid ""
+"openvpn: return empty list when /api/openvpn/export/accounts/ is called "
+"without parameters"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:385
+msgid "unbound: reject invalid cache data"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:386
+msgid ""
+"unbound: automatically add \"do-not-query-localhost: no\" on DoT when "
+"needed"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:387
+msgid "unbound: support insecure-domain directive"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:388
+msgid ""
+"mvc: bring back bind_textdomain_codeset() to fix possible faulty page "
+"rendering"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:389
+msgid "ui: fix regression in subnet selector"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:390
+msgid ""
+"plugins: os-bind 1.18 `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/dns/bind/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:391
+msgid ""
+"plugins: os-dnscrypt-proxy 1.9 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/dns/dnscrypt-proxy"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:392
+msgid ""
+"plugins: os-postfix 1.20 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/mail/postfix/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:393
+msgid ""
+"plugins: os-telegraf 1.12.0 `[4] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/telegraf"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:394
+msgid "src: revert upstream commit \"e1000: Rework em_msi_link interrupt filter\""
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:395
+msgid "ports: switched to FreeBSD ports tree"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:396
+msgid "ports: filterlog print \"0\" instead of \"(null)\" label"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:397
+msgid "ports: krb5 1.19.2 `[5] <https://web.mit.edu/kerberos/krb5-1.19/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:398
+msgid "ports: php 7.4.22 `[6] <https://www.php.net/ChangeLog-7.php#7.4.22>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:411
+msgid "21.7 (July 28, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:443 ../../source/releases/CE_21.7.rst:680
+msgid "system: Norwegian translation (contributed by Stein-Aksel Basma)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:444 ../../source/releases/CE_21.7.rst:681
+msgid ""
+"system: correctly enforce \"Disable writing log files to the local disk\""
+" when circular logs are not used"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:445 ../../source/releases/CE_21.7.rst:682
+msgid "system: allow to edit gateway entries with non-conforming names"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:446 ../../source/releases/CE_21.7.rst:683
+msgid "system: add HA sync entry for live log templates"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:447 ../../source/releases/CE_21.7.rst:684
+msgid "system: lock config writes during HA merges"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:448 ../../source/releases/CE_21.7.rst:685
+msgid "system: raised PHP memory limit to 1G"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:449 ../../source/releases/CE_21.7.rst:686
+msgid "system: raised encryption standard for encrypted config.xml export"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:450 ../../source/releases/CE_21.7.rst:687
+msgid "system: removed NextCloud backup from core functionality"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:451 ../../source/releases/CE_21.7.rst:688
+msgid ""
+"system: allow more characters in the certificate/authority organization "
+"fields (contributed by Jan De Luyck)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:452 ../../source/releases/CE_21.7.rst:689
+msgid "system: default gateway failure state killing is now disabled by default"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:453 ../../source/releases/CE_21.7.rst:690
+msgid "system: circular logs are now disabled by default"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:454 ../../source/releases/CE_21.7.rst:691
+msgid "system: removed unused traffic API dashboard feed"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:455 ../../source/releases/CE_21.7.rst:612
+msgid "system: prevent use of client certificates in web GUI"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:456 ../../source/releases/CE_21.7.rst:613
+msgid "system: hide far gateway option for IPv6"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:457 ../../source/releases/CE_21.7.rst:614
+msgid "system: isvalidpid() is not required for a single killbypid()"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:458 ../../source/releases/CE_21.7.rst:615
+msgid "system: fix PHP 7.4 deprecated warning in IPv6 library"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:459 ../../source/releases/CE_21.7.rst:616
+msgid "system: do not split XMLRPC password into multiple pieces"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:460 ../../source/releases/CE_21.7.rst:617
+msgid ""
+"system: enable group sync for LDAP servers that do not return memberOf "
+"(contributed by rdd2)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:461
+msgid "system: prevent excessive config writes on LDAP import"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:462
+msgid "system: allow cron-based restarts of all \"restart\" action providers"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:463 ../../source/releases/CE_21.7.rst:692
+msgid ""
+"interfaces: improve GRE/GIF configuration handling and dynamic reload "
+"behaviour"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:464 ../../source/releases/CE_21.7.rst:693
+msgid "interfaces: remove duplicated handling of PPP IPv6 interface detection"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:465 ../../source/releases/CE_21.7.rst:694
+msgid "interfaces: refactored address removal into interfaces_addresses_flush()"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:466 ../../source/releases/CE_21.7.rst:695
+msgid ""
+"interfaces: flush IPv6 addresses on the correct IPv6 interface when it "
+"differs from the IPv4 interface"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:467 ../../source/releases/CE_21.7.rst:696
+msgid "interfaces: do not check for existing CARP interfaces midstream"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:468 ../../source/releases/CE_21.7.rst:697
+msgid "interfaces: remove non-tunnel restriction from address collection"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:469 ../../source/releases/CE_21.7.rst:698
+msgid "interfaces: set tunnel flag for IPv4 tunnel plus cleanups"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:470 ../../source/releases/CE_21.7.rst:699
+msgid "interfaces: allow interface-based overrides of hardware checksum settings"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:471 ../../source/releases/CE_21.7.rst:700
+msgid ""
+"interfaces: refactor DNS lookup and add PTR to output (contributed by "
+"Maurice Walker)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:472 ../../source/releases/CE_21.7.rst:618
+msgid "interfaces: deprecate SLAAC addresses on linkdown"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:473 ../../source/releases/CE_21.7.rst:701
+msgid ""
+"firewall: set label for obsolete rule in live log (contributed by "
+"kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:474 ../../source/releases/CE_21.7.rst:702
+msgid "firewall: MVC rewrite of the states diagnostics pages under \"States\""
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:475
+msgid "firewall: MVC rewrite of the pfTop diagnostics pages under \"Sessions\""
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:476 ../../source/releases/CE_21.7.rst:703
+msgid "firewall: renamed \"pfTables\" diagnostics to \"Aliases\""
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:477 ../../source/releases/CE_21.7.rst:704
+msgid "firewall: add quick link to states counter from firewall rule inspection"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:478 ../../source/releases/CE_21.7.rst:705
+msgid "firewall: add manual reply-to configuration to rules"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:479 ../../source/releases/CE_21.7.rst:706
+msgid "firewall: delete related rules when an interface group is removed"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:480 ../../source/releases/CE_21.7.rst:707
+msgid "firewall: rename source/destination networks when group name changes"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:481 ../../source/releases/CE_21.7.rst:619
+msgid "firewall: possibility to filter nat/rdr action in live log"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:482 ../../source/releases/CE_21.7.rst:620
+msgid "firewall: use permanent promiscuous mode for pflog0"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:483
+msgid "firewall: add live log support for new filterlog format"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:484 ../../source/releases/CE_21.7.rst:708
+msgid ""
+"dhcp: remove ::/0 route from router advertisements (contributed by "
+"Maurice Walker)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:485 ../../source/releases/CE_21.7.rst:709
+msgid "dhcp: always deprecate prefixes in automatic router advertisements"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:486 ../../source/releases/CE_21.7.rst:710
+msgid "dhcp: fix table header sorting in lease pages (contributed by vnxme)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:487 ../../source/releases/CE_21.7.rst:711
+msgid ""
+"dhcp: lock access to settings pages when interface is not suitable for "
+"running a DHCP server"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:488 ../../source/releases/CE_21.7.rst:621
+msgid ""
+"dhcp: assorted improvements surrounding dhcpd_staticmap() for real world "
+"operation"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:489 ../../source/releases/CE_21.7.rst:712
+msgid "firmware: introduced connectivity check"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:490 ../../source/releases/CE_21.7.rst:713
+msgid "firmware: confirm plugin removal dialog"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:491 ../../source/releases/CE_21.7.rst:622
+msgid "firmware: static template for firmware upgrade message"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:492
+msgid "firmware: add version/date header into check script as well"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:493
+msgid "firmware: mask subscription in GUI output"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:494
+msgid "firmware: add \"-q\" option for in-place opnsense-bootstrap run"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:495
+msgid "firmware: fix grep call on FreeBSD 13 (contributed by Mariusz Zaborski)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:496
+msgid "firmware: correct return code on type change in opnsense-update"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:497 ../../source/releases/CE_21.7.rst:623
+msgid "installer: assorted wording improvements"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:498 ../../source/releases/CE_21.7.rst:714
+msgid "intrusion detection: fix alert reads from eve.json"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:499 ../../source/releases/CE_21.7.rst:715
+msgid ""
+"ipsec: adhere to system defaults for route-to and reply-to when creating "
+"automatic VPN rules"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:500 ../../source/releases/CE_21.7.rst:716
+msgid "ipsec: switched to explicit type selection for identities"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:501 ../../source/releases/CE_21.7.rst:717
+msgid "network time: added NTPD client mode"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:502 ../../source/releases/CE_21.7.rst:718
+msgid "openvpn: offer the ability to export a user without a certificate"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:503 ../../source/releases/CE_21.7.rst:719
+msgid "openvpn: increase consistency between export types"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:504
+msgid "openvpn: fix invalid rules generated by wizard (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:505 ../../source/releases/CE_21.7.rst:720
+msgid ""
+"unbound: fix domain overrides for private address reverse lookup zones "
+"(contributed by Maurice Walker)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:506 ../../source/releases/CE_21.7.rst:625
+msgid "unbound: add \"unbound check\" backend action"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:507 ../../source/releases/CE_21.7.rst:626
+msgid "unbound: allow to retain cache on service reload"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:508 ../../source/releases/CE_21.7.rst:627
+msgid "unbound: fix /var MFS dilemma for DNSBL after boot"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:509 ../../source/releases/CE_21.7.rst:628
+msgid "unbound: remove deprecated custom options setting"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:510
+msgid "unbound: switch model to integrate full DNS over TLS support"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:511
+msgid "unbound: add qname-minimisation-strict option"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:512
+msgid "unbound: renamed \"blacklist\" to \"blocklist\" for clarity"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:513 ../../source/releases/CE_21.7.rst:721
+msgid ""
+"console: throw error when opnsense-importer encounters an encrypted "
+"config.xml"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:514
+msgid "mvc: allow to unset attribute via setAttributeValue()"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:515
+msgid "mvc: catch all errors including syntax and class not found errors"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:516 ../../source/releases/CE_21.7.rst:722
+msgid "mvc: reduce differentials in config.xml when saving models"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:517 ../../source/releases/CE_21.7.rst:629
+msgid "rc: opnsense-beep melody database directory"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:518 ../../source/releases/CE_21.7.rst:624
+msgid "shell: fix IPv4 /31 assignment"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:519 ../../source/releases/CE_21.7.rst:728
+msgid ""
+"ui: improved JS hook_ipv4v6() to jump to /64 on IPv6 and back to /32 on "
+"IPv4"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:520 ../../source/releases/CE_21.7.rst:726
+msgid "ui: inject default tooltips into bootgrid formatters"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:521 ../../source/releases/CE_21.7.rst:724
+msgid "ui: prevent translation line breaks from breaking JS"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:522 ../../source/releases/CE_21.7.rst:727
+msgid "ui: removed $main_buttons magic handler"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:523 ../../source/releases/CE_21.7.rst:725
+msgid "ui: switch firewall category icon for clarity"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:524 ../../source/releases/CE_21.7.rst:723
+msgid ""
+"ui: work on unification of add buttons by minifying them and adding "
+"primary color markup"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:525
+msgid ""
+"plugins: os-acme-client 2.6 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-"
+"client/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:526 ../../source/releases/CE_21.7.rst:729
+msgid "plugins: os-etpro-telemetry 1.5 exclude stale data from telemetry upload"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:527 ../../source/releases/CE_21.7.rst:730
+msgid "plugins: os-fetchmail 1.0 (contributed by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:528
+msgid ""
+"plugins: os-freeradius 1.9.15 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/freeradius/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:529
+msgid ""
+"plugins: os-frr 1.22 `[4] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/frr/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:530
+msgid ""
+"plugins: os-haproxy 3.4 `[5] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/haproxy/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:531
+msgid ""
+"plugins: os-maltrail 1.8 `[6] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/security/maltrail"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:532
+msgid ""
+"plugins: os-net-snmp 1.5 `[7] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/net-snmp"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:533 ../../source/releases/CE_21.7.rst:633
+msgid "plugins: os-nextcloud-backup 1.0"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:534
+msgid ""
+"plugins: os-nut 1.8 `[8] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/sysutils/nut/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:535
+msgid ""
+"plugins: os-postfix 1.9 `[9] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/mail/postfix/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:536 ../../source/releases/CE_21.7.rst:635
+msgid "plugins: os-radsecproxy 1.0 (contributed by Tobias Boehnert)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:537
+msgid ""
+"plugins: os-telegraf 1.11.0 `[10] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/telegraf"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:538
+msgid "plugins: os-tftp 1.0 (contributed by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:539
+msgid ""
+"plugins: os-zabbix-agent 1.9 `[11] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/zabbix-"
+"agent/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:540 ../../source/releases/CE_21.7.rst:739
+msgid "src: dhclient support for VLAN 0 decapsulation"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:541 ../../source/releases/CE_21.7.rst:740
+msgid "src: FreeBSD updates for the pf(4) and iflib(4) subsystems"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:542 ../../source/releases/CE_21.7.rst:741
+msgid "src: FreeBSD updates for Intel e1000, ixgbe and ixl drivers"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:543 ../../source/releases/CE_21.7.rst:742
+msgid "src: compatibility shim for upcoming rtsold \"-M\" command line option"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:544 ../../source/releases/CE_21.7.rst:638
+msgid "src: separately log NAT and firewall rules in pf(4)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:545
+msgid ""
+"src: libcasper: fix descriptors numbers `[12] "
+"<FREEBSD:EN-21:19.libcasper>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:546
+msgid ""
+"src: linux: prevent integer overflow in futex_requeue `[13] "
+"<FREEBSD:EN-21:22.linux_futex>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:547
+msgid ""
+"src: axgbe: make sure driver works on V1000 platform and remove "
+"unnecessary reset"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:548 ../../source/releases/CE_21.7.rst:743
+msgid "ports: drop hardening options to ease migration to FreeBSD ports tree"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:549 ../../source/releases/CE_21.7.rst:641
+msgid "ports: clog 1.0.2 fixes garbage header write on init"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:550
+msgid "ports: curl 7.78.0 `[14] <https://curl.se/changes.html#7_78_0>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:551
+msgid ""
+"ports: filterlog adds CARP IPv6 support and moves label to previously "
+"reserved spot"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:552
+msgid "ports: libxml 2.9.12 `[15] <http://www.xmlsoft.org/news.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:553 ../../source/releases/CE_21.7.rst:745
+msgid "ports: nettle 3.7.3"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:554
+msgid ""
+"ports: nss 3.68 `[16] <https://developer.mozilla.org/en-"
+"US/docs/Mozilla/Projects/NSS/NSS_3.68_release_notes>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:555
+msgid ""
+"ports: openvpn 2.5.3 `[17] "
+"<https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn25#Changesin2.5.3>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:556
+msgid "ports: php 7.4.21 `[18] <https://www.php.net/ChangeLog-7.php#7.4.21>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:557
+msgid ""
+"ports: phpseclib 2.0.32 `[19] "
+"<https://github.com/phpseclib/phpseclib/releases/tag/2.0.32>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:558
+msgid ""
+"ports: python 3.8.10 `[20] "
+"<https://docs.python.org/release/3.8.10/whatsnew/changelog.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:559
+msgid "ports: sudo 1.9.7p1 `[21] <https://www.sudo.ws/stable.html#1.9.7p1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:560
+msgid ""
+"ports: suricata 5.0.7 `[22] "
+"<https://redmine.openinfosecfoundation.org/versions/166>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:561
+msgid ""
+"ports: syslog-ng 3.33.2 `[23] <https://github.com/syslog-ng/syslog-"
+"ng/releases/tag/syslog-ng-3.33.2>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:563 ../../source/releases/CE_21.7.rst:645
+#: ../../source/releases/CE_21.7.rst:753
+msgid "Known issues and limitations:"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:565 ../../source/releases/CE_21.7.rst:647
+msgid ""
+"NextCloud backup feature moved from core to plugins.  Please reinstall if"
+" needed."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:566
+msgid ""
+"IPsec identities are now set using their explicit type.  See StrongSwan "
+"documentation `[24] "
+"<https://wiki.strongswan.org/projects/strongswan/wiki/IdentityParsing>`__"
+"  for the old automatic defaults."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:567 ../../source/releases/CE_21.7.rst:649
+msgid ""
+"Unbound custom options setting has been discontinued.  Local override "
+"directory /usr/local/etc/unbound.opnsense.d exists."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:569 ../../source/releases/CE_21.7.rst:760
+msgid "The public key for the 21.7 series is:"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:599
+msgid "21.7.r2 (July 14, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:607 ../../source/releases/CE_21.7.rst:665
+msgid ""
+"We thank all of you for helping test, shape and contribute to the "
+"project! We know it would not be the same without you.  <3"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:630
+msgid ""
+"plugins: os-acme-client 2.6 `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-"
+"client/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:631
+msgid ""
+"plugins: os-freeradius 1.9.15 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/freeradius/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:632
+msgid ""
+"plugins: os-haproxy 3.4 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/haproxy/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:634
+msgid "plugins: os-nginx Phalcon 4 fixes"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:636
+msgid "plugins: os-tor Phalcon 4 fix"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:637
+msgid ""
+"plugins: os-zabbix-agent 1.9 `[4] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/zabbix-"
+"agent/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:639
+msgid ""
+"src: libcasper: fix descriptors numbers `[5] "
+"<FREEBSD:EN-21:19.libcasper>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:640
+msgid ""
+"src: linux: prevent integer overflow in futex_requeue `[6] "
+"<FREEBSD:EN-21:22.linux_futex>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:642
+msgid "ports: php 7.4.21 `[7] <https://www.php.net/ChangeLog-7.php#7.4.21>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:643
+msgid ""
+"ports: suricata 5.0.7 `[8] "
+"<https://redmine.openinfosecfoundation.org/versions/166>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:648
+msgid ""
+"IPsec identities are now set using their explicit type.  See StrongSwan "
+"documentation `[9] "
+"<https://wiki.strongswan.org/projects/strongswan/wiki/IdentityParsing>`__"
+"  for the old automatic defaults."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:651 ../../source/releases/CE_21.7.rst:779
+msgid "Please let us know about your experience!"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:657
+msgid "21.7.r1 (July 07, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:678
+msgid "Here are the full patch notes against 21.1.7:"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:731
+msgid ""
+"plugins: os-freeradius 1.9.14 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net/freeradius/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:732
+msgid ""
+"plugins: os-maltrail 1.8 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/security/maltrail"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:733
+msgid ""
+"plugins: os-nut 1.8 `[4] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/sysutils/nut/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:734
+msgid ""
+"plugins: os-telegraf 1.11.0 `[5] "
+"<https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/telegraf"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:735
+msgid "plugins: os-zabbix5-proxy is now a plugin variant"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:736
+msgid "plugins: os-postfix 1.9"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:737
+msgid "plugins: os-net-snmp 1.5"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:738
+msgid "plugins: os-frr 1.22"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:744
+msgid "ports: libxml 2.9.12 `[6] <http://www.xmlsoft.org/news.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:746
+msgid ""
+"ports: nss 3.67 `[7] <https://developer.mozilla.org/en-"
+"US/docs/Mozilla/Projects/NSS/NSS_3.67_release_notes>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:747
+msgid ""
+"ports: openvpn 2.5.3 `[8] "
+"<https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn25#Changesin2.5.3>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:748
+msgid "ports: php 7.4.20 `[9] <https://www.php.net/ChangeLog-7.php#7.4.20>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:749
+msgid ""
+"ports: phpseclib 2.0.32 `[10] "
+"<https://github.com/phpseclib/phpseclib/releases/tag/2.0.32>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:750
+msgid ""
+"ports: python 3.8.10 `[11] "
+"<https://docs.python.org/release/3.8.10/whatsnew/changelog.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:751
+msgid "ports: sudo 1.9.7p1 `[12] <https://www.sudo.ws/stable.html#1.9.7p1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:755
+msgid ""
+"NextCloud backup plugin removed from core, but not yet available as "
+"stable plugin via GUI.  Install manually from console as follows: pkg "
+"install os-nextcloud-backup-devel"
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:756
+msgid ""
+"IPsec identities are now set using their explicit type.  See StrongSwan "
+"documentation `[13] "
+"<https://wiki.strongswan.org/projects/strongswan/wiki/IdentityParsing>`__"
+"  for the old automatic defaults."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:757
+msgid "CLOG creating garbage logs when used.  Fix scheduled for 21.7-RC2."
+msgstr ""
+
+#: ../../source/releases/CE_21.7.rst:758
+msgid "Unbound advanced configuration not yet replaced."
+msgstr ""
+

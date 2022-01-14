@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:3
+msgid "Zenarmor (Sensei): Hardware Requirements"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:5
+msgid ""
+"Due to the nature of deep packet analysis and detailed drill-down "
+"reporting functionality, Zenarmor requires more hardware resources than a"
+" standard L3-L4 firewall."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:8
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:36
+msgid "**.. Note:: :**"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:10
+msgid ""
+"With the Sensei 1.5 release, you can offload your reporting database to "
+"an external system. This allows you to be able to run Zenarmor on systems"
+" with a constrained amount of RAM."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:13
+msgid ""
+"It is recommended that you check if your Ethernet adapter functions well "
+"with netmap."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:17
+msgid "CPU & Memory"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:19
+msgid ""
+"Because the analytics module relies on Elasticsearch to process large "
+"amounts of data, the amount of the memory available in the system is "
+"crucial for the overall performance of Zenarmor."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:21
+msgid "**.. Tip:: :**"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:23
+msgid ""
+"If the number of active devices are more than 250 and the sustained WAN "
+"bandwidth is higher than 100 Mbps, we do not recommend deploying Zenarmor"
+" as a virtual guest since resources in virtual environments are generally"
+" shared between guest systems."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:25
+msgid ""
+"Below is the recommended minimum hardware requirements for Zenarmor based"
+" on the number of devices and the amount of sustained bandwidth:"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:28
+msgid "**# Active Devices**"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:28
+msgid "**Maximum WAN Bandwidth**"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:28
+msgid "**Minimum Memory**"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:28
+msgid "**Minimum CPU**"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:29
+msgid "0-25"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:29
+msgid "50 Mbps"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:29
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:30
+msgid "4 GB"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:29
+msgid "A Dual-Core CPU (x86_64 compatible, single core PassMark score of 200)"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:30
+msgid "25-50"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:30
+msgid "150 Mbps - 10 Kpps"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:30
+msgid "Intel Dual-Core i5 2.0 GHz (2 Cores, 4 Threads) or equivalent"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:31
+msgid "50-100"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:31
+msgid "200 Mbps - 20 Kpps"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:31
+msgid "8 GB"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:31
+msgid "Intel Dual-Core i5 2.2 GHz (2 Cores, 4 Threads) or equivalent"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:32
+msgid "100-250"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:32
+msgid "300 Mbps - 40 Kpps"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:32
+msgid "16 GB"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:32
+msgid "Intel Dual-Core i5 3.2 GHz (2 Cores, 4 Threads) or equivalent"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:33
+msgid "250-1000"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:33
+msgid "500 Mbps - 100 Kpps"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:33
+msgid "32 GB"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:33
+msgid "Intel Quad-Core i7 3.4 GHz (4 Cores, 8 Threads) or equivalent"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:38
+msgid ""
+"Zenarmor requires at least 2 GB of memory. The installer will not "
+"continue if you have less than 2 GB of RAM. We recommend 4 GB memory to "
+"have an improved experience."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:42
+msgid "Ethernet Adapter"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:44
+msgid ""
+"Zenarmor uses a FreeBSD subsystem called `netmap(4) "
+"<https://www.freebsd.org/cgi/man.cgi?query=netmap&sektion=4>`_ to access "
+"raw Ethernet frames. With FreeBSD 11 (OPNsense version <= 20.1) this "
+"software can be very particular in terms of proper driver compatibility."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:46
+msgid ""
+"Intel based adapters, particularly em(4) and igb(4), are observed to "
+"perform well in terms of stability and performance."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:48
+msgid ""
+"Sunny Valley Networks is sponsoring developments on this project so you "
+"can expect netmap(4) will better support a wide range of Ethernet "
+"drivers."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:52
+msgid "Disk Space"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:54
+msgid ""
+"Zenarmor uses `Elasticsearch "
+"<https://en.wikipedia.org/wiki/Elasticsearch>`_ or `MongoDB "
+"<https://www.mongodb.com/>`_ as its backend to store large data sets. "
+"Please allow at least 5 MB of disk space per hour per megabit/second "
+"throughput."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:56
+msgid ""
+"If you're running a 100 Mbps link \\(about 100 users\\) which is quite "
+"active during the daytime and idle rest of the day, you may calculate the"
+" space needed as follows:"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_hardwarerequirements.rst:64
+msgid ""
+"As of `version 0.7.0 <https://www.sunnyvalley.io/blog/what-s-cooking-"
+"for-0-7>`_, Zenarmor expires old report data to free up disk space for "
+"the most recent data based on the configured number of days of history to"
+" keep."
+msgstr ""
+

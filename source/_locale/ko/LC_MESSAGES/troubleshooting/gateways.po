@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/troubleshooting/gateways.rst:3
+msgid "Gateways and monitoring"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:5
+msgid ""
+"The address you are trying to monitor should be reachable using the "
+"interface the gateway is attached to, either directly or using a static "
+"route (check :menuselection:`System --> Routes --> Status`)."
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:10
+msgid "dpinger:.. sendto error: XXX"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:12
+msgid ""
+"Usually found in :menuselection:`System --> Log Files --> General`, every"
+" code has a meaning, usually explained in `errno.h "
+"<https://github.com/opnsense/src/blob/master/sys/sys/errno.h>`__ "
+"(:code:`man errno`)"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:15
+msgid "Some common ones are explained below:"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:18
+msgid "XX"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:18
+msgid "Name"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:18
+msgid "Description"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:20
+msgid "55"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:20
+msgid "ENOBUFS"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:20
+msgid ""
+"No buffer space available. An operation on a socket or pipe was not "
+"performed because the system lacked sufficient buffer space or because a "
+"queue was full. **Check connectivity from the machine itself using** "
+":code:`ping`, most common mistakes are misconfigured routes, interface "
+"issues (disconnected) and policy based routing issues forcing traffic to "
+"the wrong target (using :code:`reply-to`)"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:26
+msgid "64"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:26
+msgid "EHOSTDOWN"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:26
+msgid ""
+"Host is down. A socket operation failed because the destination host was "
+"down. **Expecting an (layer 2) ARP response but none was returned, often "
+"misconfigured subnets or hosts are actually not accessible over L2**"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:29
+msgid "65"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:29
+msgid "EHOSTUNREACH"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:29
+msgid ""
+"No route to host. A socket operation was attempted to an unreachable host"
+" **The routing table is a good place to look** (:menuselection:`System "
+"--> Routes --> Status`)"
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:36
+msgid "arpresolve: can't allocate llinfo for.."
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:38
+msgid ""
+"This message usually means that the configured gateway lies outside the "
+"configured subnets for this firewall (for IPv4)."
+msgstr ""
+
+#: ../../source/troubleshooting/gateways.rst:42
+msgid ""
+"Double check the subnets of your interface and virtual IP's, you can also"
+" use :menuselection:`Interfaces --> Overview` for a quick list of all "
+"configured addresses."
+msgstr ""
+

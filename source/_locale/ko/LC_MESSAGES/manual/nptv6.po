@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/nptv6.rst:3
+msgid "NPTv6"
+msgstr ""
+
+#: ../../source/manual/nptv6.rst:5
+msgid ""
+"Network Prefix Translation, shortened to NPTv6, is used to translate IPv6"
+" addresses. A common usage for this is to translate global (\"WAN\") IPs "
+"to local ones. In this regard, it is similar to NAT, although NPTv6 can "
+"only be used to map addresses one-to-one, unlike NAT which typically "
+"translates one external IP to several internal ones."
+msgstr ""
+
+#: ../../source/manual/nptv6.rst:9
+msgid ""
+"NPTv6 routes are listed at :menuselection:`Firewall --> NAT --> NPTv6`. "
+"New rules can be added by clicking **Add** in the upper right corner. A "
+"quick overview of the fields:"
+msgstr ""
+
+#: ../../source/manual/nptv6.rst:13
+msgid "Disabled"
+msgstr ""
+
+#: ../../source/manual/nptv6.rst:13
+msgid "Disables this rule without having to remove it."
+msgstr ""
+
+#: ../../source/manual/nptv6.rst:14
+msgid "Interface"
+msgstr ""
+
+#: ../../source/manual/nptv6.rst:14
+msgid ""
+"Which interface this rule should apply to. Most of the time, this will be"
+" a WAN interface."
+msgstr ""
+
+#: ../../source/manual/nptv6.rst:15
+msgid "Internal IPv6 Prefix"
+msgstr ""
+
+#: ../../source/manual/nptv6.rst:15
+msgid ""
+"The internal IPv6 prefix used in the LAN(s). This will replace the prefix"
+" of the destination address in inbound packets. The prefix size specified"
+" here will also be applied to the external prefix."
+msgstr ""
+
+#: ../../source/manual/nptv6.rst:16
+msgid "External IPv6 Prefix"
+msgstr ""
+
+#: ../../source/manual/nptv6.rst:16
+msgid ""
+"The external IPv6 prefix. This will replace the prefix of the source "
+"address in outbound packets."
+msgstr ""
+
+#: ../../source/manual/nptv6.rst:17
+msgid "Category"
+msgstr ""
+
+#: ../../source/manual/nptv6.rst:17
+msgid ""
+"The category this rule belongs to, can be used as a filter in the "
+"overview."
+msgstr ""
+
+#: ../../source/manual/nptv6.rst:18
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/nptv6.rst:18
+msgid ""
+"A description to easily indentify the purpose of this rule in the "
+"overview."
+msgstr ""
+

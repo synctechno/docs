@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/ipsec-s2s-binat.rst:3
+msgid "IPSec BINAT (NAT before IPSec)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-binat.rst:43
+msgid ""
+"Assume company A has local LAN 10.0.1.0/24 and company B has local LAN "
+"10.0.2.0/24. Also we assume that on both sides the other networks are "
+"already in use, e.g. in company A the network 10.0.2.0/24 is used for "
+"Voice and in company B network 10.0.1.0/24 is used for Guest Wi-Fi."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-binat.rst:46
+msgid ""
+"We have to define new networks for the Phase 2 with unused ones and "
+"create NAT entries to reach the final systems."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-binat.rst:48
+msgid ""
+"To make it easier we create a Phase2 with company A using 192.168.1.0/24 "
+"as *Local Network* and 192.168.2.0/24 as *Remote Network* and with "
+"company B using 192.168.2.0/24 as *Local network* and 192.168.1.0/24 as "
+"*Remote Network*. Now we need to add on each side the local LAN in the "
+"field \"Manual SPD entries\". So for company A we set 10.0.1.0/24 in the "
+"field and for B 10.0.2.0/24. This allows the NAT process to speak with "
+"the Security Policy Database."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-binat.rst:52
+msgid ""
+"Finally we have to create NAT entries since a client in LAN A (10.0.1.10)"
+" tries to reach 192.168.2.10, but this address has to be rewritten to "
+"10.0.2.10 on Firewall B."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-binat.rst:54
+msgid "Create the rule like in the screenshot and vice versa on Firewall A:"
+msgstr ""
+

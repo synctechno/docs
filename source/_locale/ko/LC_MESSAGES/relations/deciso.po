@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/relations/deciso.rst:3
+msgid "Deciso B.V."
+msgstr ""
+
+#: ../../source/relations/deciso.rst:11
+msgid "About"
+msgstr ""
+
+#: ../../source/relations/deciso.rst:12
+msgid ""
+"`Deciso <https://www.deciso.com>`__ is a globally operating manufacturer "
+"of network equipment and a highly innovative company that develops "
+"network appliances and middleware software."
+msgstr ""
+
+#: ../../source/relations/deciso.rst:16
+msgid ""
+"Our field of expertise ranges from open source firewall & utm technology "
+"to telecommunications and business intelligence. The company was founded "
+"in 2000 with a strong focus on open source technology."
+msgstr ""
+
+#: ../../source/relations/deciso.rst:20
+msgid "**Free, Libre Open Source Software**"
+msgstr ""
+
+#: ../../source/relations/deciso.rst:22
+msgid ""
+"Open source software  makes development easier, faster, it makes you less"
+" depended on the supplier and results in lower cost of ownership. As a "
+"true believer Deciso use open source software all around from our back-"
+"end systems to the turn-key appliances that you can acquire from our "
+"resellers. Deciso is an active sponsor of the Open Source Initiative "
+"(OSI) and founder of the open source OPNsense firewall software."
+msgstr ""
+
+#: ../../source/relations/deciso.rst:33
+msgid "Relations with OPNsense"
+msgstr ""
+
+#: ../../source/relations/deciso.rst:34
+msgid ""
+"Deciso founded OPNsense and offers the project a stable environment. The "
+"company has a long history in providing networking solutions using open "
+"source software and has supported many OSS projects in the past."
+msgstr ""
+
+#: ../../source/relations/deciso.rst:38
+msgid ""
+"Our extensive knowledge of software development provides the OPNsense "
+"community with a modern and professional approach and results in "
+"maintainable software."
+msgstr ""
+
+#: ../../source/relations/deciso.rst:41
+msgid ""
+"In its effort to create the most widely used open source security "
+"platform, Deciso has been joined by multiple partners who share the same "
+"views on open and transparent software."
+msgstr ""
+

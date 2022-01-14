@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/reporting_traffic.rst:3
+msgid "Reporting Traffic"
+msgstr ""
+
+#: ../../source/manual/reporting_traffic.rst:5
+msgid ""
+"Under :menuselection:`Reporting --> Traffic` you will find a traffic "
+"monitor which show the current amount of data flowing through your "
+"firewall, measured in bps (bits per second)."
+msgstr ""
+
+#: ../../source/manual/reporting_traffic.rst:10
+msgid "Graph"
+msgstr ""
+
+#: ../../source/manual/reporting_traffic.rst:16
+msgid ""
+"The top area of the screen shows an overview of all network adapters for "
+"both in- and outgoing traffic."
+msgstr ""
+
+#: ../../source/manual/reporting_traffic.rst:18
+msgid ""
+"The graph below shows the top consumers over the same timespan, when you "
+"point to a dot it will show you the measured bandwith for the selected "
+"host (the color matches the interface)."
+msgstr ""
+
+#: ../../source/manual/reporting_traffic.rst:23
+msgid "Top talkers"
+msgstr ""
+
+#: ../../source/manual/reporting_traffic.rst:25
+msgid ""
+"Although the graphical overview also shows the most active clients on the"
+" network, sometimes it is more convenient to see the list of addresses "
+"and their current activity in a grid type overview. This is where the "
+"\"Top talkers\" tab comes into play, the information is quite comparable "
+"to what a command line tool as :code:`iftop` would display."
+msgstr ""
+
+#: ../../source/manual/reporting_traffic.rst:30
+msgid ""
+"When opening this tab you will be presented with the most active "
+"addresses, including the amount of traffic passed when measured and the "
+"last time traffic was seen from or to that address."
+msgstr ""
+
+#: ../../source/manual/reporting_traffic.rst:33
+msgid ""
+"Every time the graph is updated, the grid will also be populated with new"
+" information."
+msgstr ""
+

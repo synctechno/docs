@@ -1,0 +1,468 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:3
+msgid "Reserve dedicated bandwidth"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:5
+msgid ""
+"**Reserve dedicated bandwidth for a realtime traffic such as (hosted) "
+"Voice Over IP (VOIP) server.**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:7
+msgid ""
+"In this scenario we will create a pipe dedicated for traffic going to and"
+" coming from our realtime application. For the sample we presume a SIP "
+"trunk or hosted Voice Over IP (VOIP) server."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:11
+msgid ""
+"For this example we presume a requirement of 4 uncompressed voice "
+"channels of 64 kbps, resulting in a total bandwidth of 256 kbps. The "
+"internet connection in this example has 10 Mbps Download and 1 Mbps "
+"Upload."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:49
+msgid "To start go to :menuselection:`Firewall --> Shaper --> Pipes`."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:52
+msgid "Step 1 - Create Upload and Download Pipes"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:53
+msgid ""
+"On the **Pipes** tab click the **+** button in the lower right corner. An"
+" empty **Edit Pipe** screen will popup."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:56
+msgid "Create Pipe For Upload (To our VOIP Server)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:59
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:69
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:79
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:89
+msgid "**enabled**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:59
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:69
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:79
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:89
+msgid "Checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:59
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:69
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:79
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:89
+msgid "*Check to enable the pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:60
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:70
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:80
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:90
+msgid "**bandwidth**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:60
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:80
+msgid "256"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:60
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:70
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:80
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:90
+msgid "*Numeric value of the desired bandwidth*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:61
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:71
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:81
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:91
+msgid "**bandwidth Metric**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:61
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:71
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:81
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:91
+msgid "Kbit/s"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:61
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:71
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:81
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:91
+msgid "*Metric to use with the numeric value*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:62
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:72
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:82
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:92
+msgid "**mask**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:62
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:72
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:82
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:92
+msgid "(Empty)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:62
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:72
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:82
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:92
+msgid "*Used for auto queueing, empty for our sample*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:63
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:73
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:83
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:93
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:112
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:127
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:141
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:156
+msgid "**description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:63
+msgid "PipeUp-256kbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:63
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:73
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:83
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:93
+msgid "*Free field, enter something descriptive*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:66
+msgid "Create Pipe For Upload (Other Traffic = 1024 kbps - 256 kbps = 768 kbps)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:70
+msgid "768"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:73
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:140
+msgid "PipeUp-768kbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:76
+msgid "Create Pipe For Download (From our VOIP Server)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:83
+msgid "PipeDown-256kbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:86
+msgid ""
+"Create Pipe For Download (Other Traffic = 10240 kbps - 256 kbps = 9984 "
+"kbps )"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:90
+msgid "9984"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:93
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:155
+msgid "PipeDown-9984kbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:97
+msgid "Step 2 - Create Rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:98
+msgid ""
+"On the **Rules** tab click the **+** button in the lower right corner. An"
+" empty **Edit rule** screen will popup."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:101
+msgid "Create a rule for traffic directed towards the VOIP Server (Upload)."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:104
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:119
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:133
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:148
+msgid "**sequence**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:104
+msgid "11"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:104
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:119
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:133
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:148
+msgid "*Auto generated number, overwrite only when needed*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:105
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:120
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:134
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:149
+msgid "**interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:105
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:120
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:134
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:149
+msgid "WAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:105
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:120
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:134
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:149
+msgid "*Select the interface connected to the internet*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:106
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:121
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:135
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:150
+msgid "**proto**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:106
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:121
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:135
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:150
+msgid "ip"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:106
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:121
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:135
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:150
+msgid "*Select the protocol, IP in our example*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:107
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:122
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:136
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:151
+msgid "**source**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:107
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:108
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:110
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:123
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:124
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:125
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:137
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:138
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:139
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:151
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:152
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:154
+msgid "any"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:107
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:151
+msgid "*The source IP to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:108
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:123
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:137
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:152
+msgid "**src-port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:108
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:123
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:137
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:152
+msgid "*The source port to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:109
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:124
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:138
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:153
+msgid "**destination**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:109
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:122
+msgid "172.10.2.1"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:109
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:122
+msgid "*The IP address of our VOIP server*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:110
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:125
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:139
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:154
+msgid "**dst-port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:110
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:139
+msgid "*Use any of the destination port if static*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:111
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:126
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:140
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:155
+msgid "**target**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:111
+msgid "PipeUP-256kbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:111
+msgid "*Select the Upload 256 kbps Pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:112
+msgid "ShapeVOIPUpload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:112
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:127
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:141
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:156
+msgid "*Enter a descriptive name*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:116
+msgid "Create a rule for traffic coming from the VOIP Server (Download)."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:119
+msgid "21"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:124
+msgid "*The destination IP to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:125
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:154
+msgid "*The destination port to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:126
+msgid "PipeDown256kbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:126
+msgid "*Select the Download 256 kbps Pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:127
+msgid "ShapeVOIPDown"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:130
+msgid "Create a rule for all other internet upload traffic"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:133
+msgid "31"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:136
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:153
+msgid "192.168.1.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:136
+msgid "*The source IPs to shape, our LAN network*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:138
+msgid "*the destination address, leave in any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:140
+msgid "*Select the Upload 768 kbps Pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:141
+msgid "ShapeUpload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:145
+msgid "Create a rule for all other internet download traffic"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:148
+msgid "41"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:153
+msgid "*The destination IPs to shape, our LAN network*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:155
+msgid "*Select the Download 256Kbps Pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:156
+msgid "ShapeDown"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:161
+msgid ""
+"Be aware of the sequence! It is important to make sure the right traffic "
+"is passed to the right pipe."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:165
+msgid "Now press |apply| to activate the traffic shaping rules."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:172
+msgid "apply"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_dedicated_bw.rst:167
+msgid "*Screenshot Rules*"
+msgstr ""
+

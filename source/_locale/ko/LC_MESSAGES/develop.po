@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/develop.rst:3
+msgid "Development Manual"
+msgstr ""
+
+#: ../../source/develop.rst:7
+msgid ""
+"The OPNsense® project invites developers to start developing with "
+"OPNsense: \"For your own purpose or even better to join us in creating "
+"the best HardenedBSD based open source firewall available!\" The "
+"development workflow & build process have been redesigned to make it more"
+" straightforward and easy for developers to build OPNsense."
+msgstr ""
+
+#: ../../source/develop.rst:13
+msgid ""
+"Being able to get the sources and build it yourself is one of the key "
+"factors of open source software. One reason that for starting the "
+"OPNsense project is that the team believes sources and build tools should"
+" be freely available and as easy to use as possible."
+msgstr ""
+
+#: ../../source/develop.rst:35
+msgid "Sources"
+msgstr ""
+
+#: ../../source/develop.rst:36
+msgid ""
+"Just looking for the sources? See: `OPNsense repository "
+"<https://github.com/opnsense>`__"
+msgstr ""
+

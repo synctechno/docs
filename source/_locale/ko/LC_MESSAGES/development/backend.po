@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/backend.rst:3
+msgid "Backend"
+msgstr ""
+
+#: ../../source/development/backend.rst:5
+msgid ""
+"The OPNsense backend consists of several components (see Architecture for"
+" a full stack description)."
+msgstr ""
+
+#: ../../source/development/backend.rst:7
+msgid ""
+"Our core backend service (configd) is implemented using `Python "
+"<https://en.wikipedia.org/wiki/Python>`__. and provides two main "
+"features:"
+msgstr ""
+
+#: ../../source/development/backend.rst:9
+msgid "Service interaction (using configd actions)"
+msgstr ""
+
+#: ../../source/development/backend.rst:10
+msgid "Generation of configuration data (using templates)"
+msgstr ""
+
+#: ../../source/development/backend.rst:12
+msgid ""
+"Because some of the codebase still integrates with our legacy codebase, "
+"we provide additional plugin options for the following components:"
+msgstr ""
+
+#: ../../source/development/backend.rst:14
+msgid "Services (the services status)"
+msgstr ""
+
+#: ../../source/development/backend.rst:15
+msgid "Syslog (define syslog targets)"
+msgstr ""
+
+#: ../../source/development/backend.rst:16
+msgid "Interface (register interfaces, firewall use etc.)"
+msgstr ""
+
+#: ../../source/development/backend.rst:17
+msgid ""
+"Service configuration (legacy service configuration, new style uses "
+"configd templates)"
+msgstr ""
+
+#: ../../source/development/backend.rst:20
+msgid ""
+"Services which need to be executed at system startup can use rc(8) or our"
+" syshook system."
+msgstr ""
+

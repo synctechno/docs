@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/ipsec-rw-linux.rst:3
+msgid "IPsec: Setup Linux Remote Access"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-linux.rst:5
+msgid "Index"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-linux.rst:7
+msgid ""
+"Here you can see the configuration options for all compatible VPN types. "
+"We assume that you are familiar with adding a new VPN connection."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-linux.rst:10
+msgid ""
+"The tests were done with Ubuntu 18.04 and network-manager-stronswan "
+"installed, Ubuntu only supports OpenVPN and PPTP with the default "
+"install."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-linux.rst:13
+msgid "It can be installed using the following command on the command line:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-linux.rst:21
+msgid "Step 1 - Download Certificate"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-linux.rst:23
+msgid ""
+"Download the Root CA from the OPNsense Firewall since it is needed for "
+"all EAP types with IKEv2."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-linux.rst:27
+msgid "Step 2 - Add VPN Connection"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-linux.rst:29
+msgid ""
+"Open the network manager and add a new VPN connction. Choose "
+"**IPSec/IKEv2**, enter a **Name** and set the **Address** to the FQDN "
+"matching the one of the certificate at your Firewall."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-rw-linux.rst:34
+msgid "IKEv2 + EAP-MSCHAPv2 or EAP-RADIUS"
+msgstr ""
+

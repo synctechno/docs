@@ -1,0 +1,634 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:3
+msgid "Limit maximum internet bandwidth users can consume"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:5
+msgid ""
+"For this example we will divide the internet Download traffic between the"
+" connected users in such manner that each user will receive up to a "
+"maximum of 1 Mbps."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:35
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:141
+msgid "To start go to :menuselection:`Firewall --> Shaper --> Pipes`."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:38
+msgid "Step 1 - Create download and upload pipes"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:40
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:145
+msgid ""
+"On the **Pipes** tab click the **+** button in the lower right corner. An"
+" empty **Edit Pipe** screen will popup."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:43
+msgid "Create Pipe For Download"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:46
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:56
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:152
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:168
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:179
+msgid "**enabled**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:46
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:56
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:152
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:168
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:179
+msgid "Checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:46
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:56
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:152
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:168
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:179
+msgid "*Check to enable the pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:47
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:57
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:153
+msgid "**bandwidth**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:47
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:57
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:137
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:181
+msgid "1"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:47
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:57
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:153
+msgid "*Numeric value of the desired bandwidth*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:48
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:58
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:154
+msgid "**bandwidth Metric**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:48
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:58
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:154
+msgid "Mbit/s"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:48
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:58
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:154
+msgid "*Metric to use with the numeric value*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:49
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:59
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:155
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:171
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:182
+msgid "**mask**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:49
+msgid "destination"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:49
+msgid "*Dynamic pipe per downloading client*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:50
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:60
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:85
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:99
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:156
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:172
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:183
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:203
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:218
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:233
+msgid "**description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:50
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:84
+msgid "PipeDown-1Mbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:50
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:60
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:156
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:172
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:183
+msgid "*Free field, enter something descriptive*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:53
+msgid "Create Pipe For Upload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:59
+msgid "source"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:59
+msgid "*Dynamic pipe per uploading client*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:60
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:98
+msgid "PipeUp-1Mbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:65
+msgid ""
+"Always create separate pipes for download and upload limiting to avoid "
+"undefined behaviour when mixing bidirectional traffic in a single pipe."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:69
+msgid "Step 2 - Create rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:71
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:188
+msgid ""
+"On the **Rules** tab click the **+** button in the lower right corner. An"
+" empty **Edit rule** screen will popup."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:74
+msgid "Create a rule for traffic coming from the internet (download)."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:77
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:91
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:195
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:210
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:225
+msgid "**sequence**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:77
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:210
+msgid "21"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:77
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:91
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:195
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:210
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:225
+msgid "*Auto generated number, overwrite only when needed*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:78
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:92
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:196
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:211
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:226
+msgid "**interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:78
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:92
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:196
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:211
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:226
+msgid "WAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:78
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:92
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:196
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:211
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:226
+msgid "*Select the interface connected to the internet*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:79
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:93
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:197
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:212
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:227
+msgid "**proto**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:79
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:93
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:197
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:212
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:227
+msgid "ip"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:79
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:93
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:197
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:212
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:227
+msgid "*Select the protocol, IP in our example*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:80
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:94
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:198
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:213
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:228
+msgid "**source**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:80
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:81
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:83
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:95
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:96
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:97
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:198
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:200
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:201
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:213
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:215
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:216
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:228
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:230
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:231
+msgid "any"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:80
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:198
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:213
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:228
+msgid "*The source address, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:81
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:95
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:199
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:214
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:229
+msgid "**src-port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:81
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:95
+msgid "*The source port to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:82
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:96
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:200
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:215
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:230
+msgid "**destination**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:82
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:94
+msgid "192.168.1.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:82
+msgid "*The destination IP to shape, select LAN network*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:83
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:97
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:201
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:216
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:231
+msgid "**dst-port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:83
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:97
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:201
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:216
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:231
+msgid "*The destination port to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:84
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:98
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:202
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:217
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:232
+msgid "**target**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:84
+msgid "*Select the 1 Mbps download pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:85
+msgid "ShapeDownload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:85
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:99
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:203
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:218
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:233
+msgid "*Enter a descriptive name*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:88
+msgid "Create a rule for traffic going to the internet (upload)."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:91
+msgid "22"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:94
+msgid "*The source IP to shape, select LAN network*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:96
+msgid "*The destination address, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:98
+msgid "*Select the 1 Mbps upload pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:99
+msgid "ShapeUpload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:104
+msgid ""
+"If you want to limit traffic for a specific IP addresses then just enter "
+"the IP addresses in the destination field instead of the full LAN network"
+" range."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:108
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:238
+msgid "Now press |apply| to activate the traffic shaping rules."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:245
+msgid "apply"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:110
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:240
+msgid "*Screenshot Rules*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:117
+msgid "Prioritize using Queues"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:118
+msgid ""
+"By utilizing queues we can influence the bandwidth within a pipe and give"
+" certain applications more bandwidth than others based on a weighted "
+"algorithm."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:121
+msgid ""
+"The idea is simple: Let presume we have a pipe of 10 Mbps and 2 "
+"applications for instance smtp (email) and http(s). The http(s) traffic "
+"will get a weight of 1 and the smtp traffic a weight of 9, then when all "
+"capacity of our pipe is in use the email traffic will get 9x more "
+"bandwidth than our http(s) traffic, resulting in 1 Mbps for http(s) and 9"
+" Mbps for smtp."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:128
+msgid ""
+"For our example we only look at download traffic, but the exact same can "
+"be done for the upload traffic."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:132
+msgid "Application"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:132
+msgid "Weight"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:132
+msgid "Minimum Bandwidth"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:134
+msgid "SMTP (port 25)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:134
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:170
+msgid "9"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:134
+msgid "9 Mbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:136
+msgid "HTTP (80)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:137
+msgid "1 Mbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:138
+msgid "HTTPS (443)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:144
+msgid "Step 1 - Create Download Pipe"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:149
+msgid "Create Pipe For Download (10 Mbps)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:153
+msgid "10"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:155
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:171
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:182
+msgid "(empty)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:155
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:171
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:182
+msgid "*Leave empty*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:156
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:169
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:180
+msgid "PipeDown-10Mbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:161
+msgid "Step 2 - Create Queues"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:162
+msgid ""
+"On the **Queues** tab click the **+** button in the lower right corner. "
+"An empty **Edit queue** screen will popup."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:165
+msgid "Create Queue for SMTP"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:169
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:180
+msgid "**pipe**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:169
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:180
+msgid "*Select our Pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:170
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:181
+msgid "**weight**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:170
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:181
+msgid "*Weight to use with the numeric value*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:172
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:202
+msgid "Queue-SMTP"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:176
+msgid "Create Queue for HTTP"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:183
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:217
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:232
+msgid "Queue-HTTP"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:187
+msgid "Step 3 - Create Rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:192
+msgid "Create a rule for smtp download traffic (email)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:195
+msgid "11"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:199
+msgid "smtp"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:199
+msgid "*The source port to shape, smtp or 25*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:200
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:215
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:230
+msgid "*The destination IP to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:202
+msgid "*Select the SMTP queue*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:203
+msgid "ShapeSMTPDownload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:207
+msgid "Create a rule for HTTP download traffic"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:214
+msgid "http"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:214
+msgid "*The source port to shape, http or 80*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:217
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:232
+msgid "*Select the HTTP queue*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:218
+msgid "ShapeHTTPDownload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:222
+msgid ""
+"Adding an extra rule for HTTPS traffic is simple as we can use the same "
+"HTTP queue if we like:"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:225
+msgid "31"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:229
+msgid "https"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:229
+msgid "*The source port to shape, https or 443*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:233
+msgid "ShapeHTTPSDownload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_limit_per_user.rst:236
+msgid ""
+"This way HTTP and HTTPS traffic will be treated the same (total max of 1 "
+"Mbps)."
+msgstr ""
+

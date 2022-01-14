@@ -1,0 +1,448 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/firewall_settings.rst:3
+msgid "(Advanced) Settings"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:5
+msgid ""
+"In some circumstances people might want to change how our system handles "
+"traffic by default, in which case the advanced settings section is a good"
+" place to look."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:11
+msgid "IPv6 Options"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:14
+msgid "Allow IPv6"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:16
+msgid ""
+"By default selected, when deselected a firewall rule will be generated "
+"blocking all IPv6 traffic on this machine. The floating firewall section "
+"will display this rule when \"Automatically generated rules\" is "
+"expanded."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:21
+msgid "Network Address Translation"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:25
+msgid ""
+"Although the options below might look interesting to ease setup, we do "
+"not advise to use them. Since automatic rules always contain assumptions "
+"about the situation they try to solve, it's not guaranteed they will fit "
+"your use-case at all times. They merely exist for historical reasons, if "
+"possible better add manual rules nat rules to make sure the intend is "
+"very explicit when one inspects your setup."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:31
+msgid "Reflection for port forwards"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:33
+msgid ""
+"Disabled by default, when enabled the system will generate rules to "
+"reflect port forwards on non external interfaces automatically "
+"(interfaces without a gateway set). If for example you create a "
+"portforward on your :code:`wan` interface to a webserver which is hosted "
+"internally, a similar rule will be generated on the :code:`lan` "
+"interface."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:40
+msgid ""
+"This marker only adds a redirect for the same target the source address "
+"is not influenced. (:code:`rdr`)"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:44
+msgid "Reflection for 1:1"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:46
+msgid ""
+"Disabled by default, when enabled the system will generate redirect "
+"(:code:`rdr`) rules for 1to1 nat rules similar to the portforward option."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:51
+msgid "Automatic outbound NAT for Reflection"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:53
+msgid ""
+"Since both reflection rules only redirect traffic on other nets, quite "
+"often they are used in conjunction with this option. When enabled, source"
+" addresses are translated so returning traffic is always pushed through "
+"the firewall for these automatic rules."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:58
+msgid ""
+"The disadvantage of reflecting traffic back in using one of the firewalls"
+" internal addresses is that the receiving side looses visibility of the "
+"actual client."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:63
+msgid "Bogon Networks"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:66
+msgid "Update Frequency"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:68
+msgid ""
+"Configure the frequency of updating the lists of IP addresses that are "
+"reserved (but not RFC 1918) or not yet assigned by IANA."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:73
+msgid "Gateway Monitoring"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:76
+msgid "Kill states"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:78
+msgid ""
+"When unchecked (enabled) all states will be reset when a gateway is "
+"removed (see monitoring in the :doc:`gateways <gateways>` section)"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:81
+msgid "Skip rules"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:83
+msgid ""
+"By default, when a rule has a specific gateway set, and this gateway is "
+"down, rule is created and traffic is sent to default gateway. This option"
+" overrides that behavior and the rule is not created when gateway is down"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:89
+msgid "Multi-WAN"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:92
+msgid "Sticky connections"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:94
+msgid ""
+"When using a gateway group the firewall will use the same gateway for the"
+" same source address, by default as long as there's a state active, "
+"optionally this can be configured with a different timeout."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:98
+msgid "Shared forwarding"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:100
+msgid ""
+"Using policy routing in the packet filter rules causes packets to skip "
+"processing for the traffic shaper and captive portal tasks. Using this "
+"option enables the sharing of such forwarding decisions between all "
+"components to accomodate complex setups."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:105
+msgid "Disable force gateway"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:107
+msgid ""
+"By default OPNsense enforces a gateway on \"Wan\" type interfaces (those "
+"with a gateway attached to it), although the default usually is the "
+"desired behaviour, it does influence the routing decisions made by the "
+"system (local traffic bound to an address will use the associated "
+"gateway)."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:112
+msgid ""
+"This rule is responsible for the :code:`let out anything from firewall "
+"host itself (force gw)` rule visible in the floating section, it forces a"
+" route to (:code:`route-to`) on all non local traffic for the \"Wan\" "
+"type interface."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:117
+msgid "Schedules"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:120
+msgid "Schedule States"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:122
+msgid ""
+"By default schedules clear the states of existing connections when the "
+"expiration time has come. This option overrides that behavior by not "
+"clearing states for existing connections."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:126
+msgid "Miscellaneous"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:129
+msgid "Firewall Optimization"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:131
+msgid ""
+"Firewall state table optimization to use, influences the number of active"
+" states in the system, only to be changed in specfic implementation "
+"scenarios."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:133
+msgid ""
+"[normal] (default)As the name says, it is the normal optimization "
+"algorithm"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:134
+msgid ""
+"[high-latency] Used for high latency links, such as satellite links. "
+"Expires idle connections later than default"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:135
+msgid ""
+"[aggressive] Expires idle connections quicker. More efficient use of CPU "
+"and memory but can drop legitimate idle connections"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:136
+msgid ""
+"[conservative] Tries to avoid dropping any legitimate idle connections at"
+" the expense of increased memory usage and CPU utilization."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:140
+msgid "Firewall Rules Optimization"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:142
+msgid "Influence how the firewall optimizes the generated ruleset."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:144
+msgid "[none] Disable the ruleset optimizer."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:145
+msgid ""
+"[basic] (default) Basic ruleset optimization does four things to improve "
+"the performance of ruleset evaluations: remove duplicate rules; remove "
+"rules that are a subset of another rule; combine multiple rules into a "
+"table when advantageous; re-order the rules to improve evaluation "
+"performance"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:146
+msgid ""
+"[profile] Uses the currently loaded ruleset as a feedback profile to "
+"tailor the ordering of quick rules to actual network traffic."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:149
+msgid "Bind states to interface"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:151
+msgid ""
+"Set behaviour for keeping states, by default states are floating, but "
+"when this option is set they should match the interface. The default "
+"option (unchecked) matches states regardless of the interface, which is "
+"in most setups the best choice."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:156
+msgid "Disable Firewall"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:158
+msgid "Disable all firewall (including NAT) features of this machine."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:162
+msgid "Firewall Adaptive Timeouts"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:164
+msgid ""
+"Timeouts for states can be scaled adaptively as the number of state table"
+" entries grows."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:166
+msgid ""
+"[start] When the number of state entries exceeds this value, adaptive "
+"scaling begins. All timeout values are scaled linearly with factor "
+"(adaptive.end - number of states) / (adaptive.end - adaptive.start)."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:167
+msgid ""
+"[end] When reaching this number of state entries, all timeout values "
+"become zero, effectively purging all state entries immediately. This "
+"value is used to define the scale factor, it should not actually be "
+"reached (set a lower state limit, see below)."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:170
+msgid "Firewall Maximum States"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:172
+msgid ""
+"Maximum number of connections to hold in the firewall state table, "
+"usually the default is fine, when serving a lot of connections you may "
+"consider increasing the default size which is mentioned in the help text."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:177
+msgid "Firewall Maximum Fragments"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:179
+msgid ""
+"Sets the maximum number of entries in the memory pool used for fragment "
+"reassembly."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:182
+msgid "Firewall Maximum Table Entries"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:183
+msgid ""
+"Maximum number of table entries for systems such as aliases, sshlockout, "
+"bogons, etc, combined. When using a lot of large aliases, you may "
+"consider increasing the default. The configured default is mentioned in "
+"the help text."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:188
+msgid "Static route filtering"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:190
+msgid ""
+"This option only applies if you have defined one or more static routes. "
+"If it is enabled, traffic that enters and leaves through the same "
+"interface will not be checked by the firewall. This may be desirable in "
+"some situations where multiple subnets are connected to the same "
+"interface."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:196
+msgid ""
+"Although these rules will be visible in the \"automatic\" rule section of"
+" each interface, we generally advice to add the rules actually recquired "
+"on a per net basis manually."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:201
+msgid "Disable reply-to"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:203
+msgid ""
+"With Multi-WAN you generally want to ensure traffic leaves the same "
+"interface it arrives on, hence :code:`reply-to` is added automatically by"
+" default. When using bridging, you must disable this behavior if the WAN "
+"gateway IP is different from the gateway IP of the hosts behind the "
+"bridged interface."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:208
+msgid ""
+"Although our default is to enable this rule for historic reasons, there "
+"are side-affects when adding :code:`reply-to` to every \"wan\" type rule."
+" When allowing traffic originating from the same network as the interface"
+" is attached to, it will still reply the packet to the configured "
+"gateway."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:212
+msgid ""
+"To prevent this behvior, you can either disable :code:`reply-to` here and"
+" configure the desired behaviour on a per-rule basis or add a rule for "
+"local traffic above the one for outbound traffic disabling :code:`reply-"
+"to` (in rule advanced)."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:216
+msgid "Disable anti-lockout"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:218
+msgid ""
+"When this is unchecked, access to the web GUI or SSH on the LAN interface"
+" is always permitted, regardless of the user-defined firewall rule set. "
+"Check this box to disable the automatically added rule, so access is "
+"controlled only by the user-defined firewall rules. Ensure you have a "
+"firewall rule in place that allows you in, or you will lock yourself out."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:222
+msgid "Aliases Resolve Interval"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:224
+msgid ""
+"Interval, in seconds, that will be used to resolve hostnames configured "
+"on aliases."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:228
+msgid "Check certificate of aliases URLs"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:230
+msgid ""
+"Make sure the certificate is valid for all HTTPS addresses on aliases. If"
+" it's not valid or is revoked, do not download it."
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:233
+msgid "Dynamic state reset"
+msgstr ""
+
+#: ../../source/manual/firewall_settings.rst:235
+msgid ""
+"This option flushes the entire state table on IPv4 address changes in "
+"dynamic setups to e.g. allow VoIP servers to re-register."
+msgstr ""
+

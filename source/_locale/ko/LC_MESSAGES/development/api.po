@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/api.rst:3
+msgid "API Reference"
+msgstr ""
+
+#: ../../source/development/api.rst:6
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/development/api.rst:8
+msgid "The OPNsense API calls are structured in the form:"
+msgstr "OPNsense API 호출 구조:"
+
+#: ../../source/development/api.rst:14
+msgid "There are two HTTP verbs used in the OPNsense API:"
+msgstr "OPNsense API에서 사용되는 HTTP method는 두 가지가 있다:"
+
+#: ../../source/development/api.rst:16
+msgid "``GET``  Retrieves data from OPNsense"
+msgstr "``GET``  OPNsense로부터 데이터를 조회한다"
+
+#: ../../source/development/api.rst:17
+msgid "``POST``  Creates new data, updates existing data or executes an action"
+msgstr "``POST``  새로운 데이터를 생성, 기존의 데이터를 업데이트 또는 동작을 실행"
+
+#: ../../source/development/api.rst:19
+msgid ""
+"The body of the HTTP POST request and response is an 'application/json' "
+"object."
+msgstr ""
+
+#: ../../source/development/api.rst:21
+msgid ""
+"The $key and $secret parameters are used to pass the API credentials "
+"using curl. You need to set these parameters with your own API "
+"credentials before using them in the examples:"
+msgstr ""
+
+#: ../../source/development/api.rst:30
+msgid ""
+"When using Postman to test an API call, use the 'basic auth' "
+"authorization type. The $key and $secret parameters go into "
+"Username/Password respectively."
+msgstr ""
+
+#: ../../source/development/api.rst:33
+msgid "Core API"
+msgstr ""
+
+#: ../../source/development/api.rst:43
+msgid "Plugins API"
+msgstr ""
+

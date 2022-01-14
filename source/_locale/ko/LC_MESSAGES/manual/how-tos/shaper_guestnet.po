@@ -1,0 +1,345 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:3
+msgid "Multi Interface shaping for a GuestNet"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:5
+msgid ""
+"One of the options with OPNsense's traffic shaper is its ability to add "
+"shaping rules based upon two interfaces. This option allows you to shape "
+"traffic differently based on the direction the traffic is moving between "
+"interfaces."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:9
+msgid ""
+"For this example we will use this functionality to share a symmetric 10 "
+"Mbps internet connection between a primary LAN network and a Guest "
+"Network."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:12
+msgid ""
+"The LAN network will not be limited, traffic from users on our Guest "
+"Network will be limited to a total of 2 Mbps Download and 1 Mbps Upload."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:55
+msgid "Step 1 - Create Upload and Download Pipes"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:57
+msgid ""
+"On the **Pipes** tab click the **+** button in the lower right corner. An"
+" empty **Edit Pipe** screen will popup."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:60
+msgid "Create Pipe For Upload (GuestNet - em2)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:63
+#: ../../source/manual/how-tos/shaper_guestnet.rst:74
+msgid "**enabled**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:63
+#: ../../source/manual/how-tos/shaper_guestnet.rst:74
+msgid "Checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:63
+#: ../../source/manual/how-tos/shaper_guestnet.rst:74
+msgid "*Check to enable the pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:64
+#: ../../source/manual/how-tos/shaper_guestnet.rst:75
+msgid "**bandwidth**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:64
+msgid "1"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:64
+#: ../../source/manual/how-tos/shaper_guestnet.rst:75
+msgid "*Numeric value of the desired bandwidth*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:65
+#: ../../source/manual/how-tos/shaper_guestnet.rst:76
+msgid "**bandwidth Metric**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:65
+#: ../../source/manual/how-tos/shaper_guestnet.rst:76
+msgid "Mbit/s"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:65
+#: ../../source/manual/how-tos/shaper_guestnet.rst:76
+msgid "*Metric to use with the numeric value*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:66
+#: ../../source/manual/how-tos/shaper_guestnet.rst:77
+msgid "**mask**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:66
+#: ../../source/manual/how-tos/shaper_guestnet.rst:77
+msgid "(Empty)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:66
+#: ../../source/manual/how-tos/shaper_guestnet.rst:77
+msgid "*Leave empty*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:67
+#: ../../source/manual/how-tos/shaper_guestnet.rst:78
+#: ../../source/manual/how-tos/shaper_guestnet.rst:104
+#: ../../source/manual/how-tos/shaper_guestnet.rst:120
+msgid "**description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:67
+#: ../../source/manual/how-tos/shaper_guestnet.rst:119
+msgid "PipeUp-1Mbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:67
+#: ../../source/manual/how-tos/shaper_guestnet.rst:78
+msgid "*Free field, enter something descriptive*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:71
+msgid "Create Pipe For Download (GuestNet - em2)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:75
+msgid "2"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:78
+#: ../../source/manual/how-tos/shaper_guestnet.rst:103
+msgid "PipeDown-2Mbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:82
+msgid "Step 2 - Create Rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:84
+msgid ""
+"On the **Rules** tab click the **+** button in the lower right corner. An"
+" empty **Edit rule** screen will popup."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:89
+msgid "Important - Before you continue!"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:88
+msgid ""
+"First change the mode to advanced, see the toggle in the left top corner "
+"of the popup dialog. One click should shift it from red (disabled) to "
+"green (enabled)."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:91
+msgid "Create a rule for the download traffic"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:94
+#: ../../source/manual/how-tos/shaper_guestnet.rst:110
+msgid "**sequence**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:94
+msgid "11"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:94
+#: ../../source/manual/how-tos/shaper_guestnet.rst:110
+msgid "*Auto generated number, overwrite only when needed*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:95
+#: ../../source/manual/how-tos/shaper_guestnet.rst:111
+msgid "**interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:95
+#: ../../source/manual/how-tos/shaper_guestnet.rst:112
+msgid "WAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:95
+#: ../../source/manual/how-tos/shaper_guestnet.rst:112
+msgid "*Select the interface connected to the internet*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:96
+#: ../../source/manual/how-tos/shaper_guestnet.rst:112
+msgid "**interface2**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:96
+#: ../../source/manual/how-tos/shaper_guestnet.rst:111
+msgid "GuestNet"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:96
+#: ../../source/manual/how-tos/shaper_guestnet.rst:111
+msgid "*Select the interface that matches your GuestNet*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:97
+#: ../../source/manual/how-tos/shaper_guestnet.rst:113
+msgid "**proto**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:97
+#: ../../source/manual/how-tos/shaper_guestnet.rst:113
+msgid "ip"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:97
+#: ../../source/manual/how-tos/shaper_guestnet.rst:113
+msgid "*Select the protocol, IP in our example*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:98
+#: ../../source/manual/how-tos/shaper_guestnet.rst:114
+msgid "**source**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:98
+#: ../../source/manual/how-tos/shaper_guestnet.rst:99
+#: ../../source/manual/how-tos/shaper_guestnet.rst:100
+#: ../../source/manual/how-tos/shaper_guestnet.rst:101
+#: ../../source/manual/how-tos/shaper_guestnet.rst:114
+#: ../../source/manual/how-tos/shaper_guestnet.rst:115
+#: ../../source/manual/how-tos/shaper_guestnet.rst:116
+#: ../../source/manual/how-tos/shaper_guestnet.rst:117
+msgid "any"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:98
+#: ../../source/manual/how-tos/shaper_guestnet.rst:114
+msgid "*The source address, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:99
+#: ../../source/manual/how-tos/shaper_guestnet.rst:115
+msgid "**src-port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:99
+#: ../../source/manual/how-tos/shaper_guestnet.rst:115
+msgid "*The source port to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:100
+#: ../../source/manual/how-tos/shaper_guestnet.rst:116
+msgid "**destination**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:100
+#: ../../source/manual/how-tos/shaper_guestnet.rst:116
+msgid "*The destination IP to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:101
+#: ../../source/manual/how-tos/shaper_guestnet.rst:117
+msgid "**dst-port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:101
+#: ../../source/manual/how-tos/shaper_guestnet.rst:117
+msgid "*The destination port to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:102
+#: ../../source/manual/how-tos/shaper_guestnet.rst:118
+msgid "**direction**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:102
+msgid "in"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:102
+msgid "*Match incoming packages (download)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:103
+#: ../../source/manual/how-tos/shaper_guestnet.rst:119
+msgid "**target**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:103
+msgid "*Select the Download pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:104
+msgid "GuestNetDownload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:104
+#: ../../source/manual/how-tos/shaper_guestnet.rst:120
+msgid "*Enter a descriptive name*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:107
+msgid "Create a rule for the upload traffic"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:110
+msgid "21"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:118
+msgid "out"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:118
+msgid "*Match outgoing packages (upload)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:119
+msgid "*Select the Upload pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:120
+msgid "GuestNetUpload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:123
+msgid "Now press |apply| to activate the traffic shaping rules."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_guestnet.rst:125
+msgid "apply"
+msgstr ""
+

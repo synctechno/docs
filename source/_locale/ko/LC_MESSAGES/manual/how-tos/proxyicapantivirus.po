@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:3
+msgid "Setup Anti Virus Protection"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:4
+msgid ""
+"OPNsense can offer HTTP and HTTPS protection by utilizing its highly "
+"flexible proxy and the industry standard ICAP. An external engine from "
+"one of the known vendors is used to offer maximum protection against "
+"malware, such as ransomware, trojans and viruses. This protection can be "
+"further enhanced by the built-in Intrusion Prevention System and Category"
+" Based Web filtering."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:10
+msgid ""
+"This How To will utilize Symantec's Protection Engine, but any other "
+"vendor that support ICAP will work just as well."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:14
+msgid ""
+"The Anti Virus Engine can protect you against malicious websites and "
+"infected file downloads, it does not protect the local clients. Therefore"
+" it is always a good idea to install a client based solution as well to "
+"protect against other forms of infection such as through emails or usb "
+"stick."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:23
+msgid "Step 1 - Setup the Proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:24
+msgid ""
+"Start with setting up the proxy with its basic configuration, see "
+":doc:`cachingproxy`."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:27
+msgid "Step 2 - Setup Transparent Mode"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:28
+msgid "To setup the transparent mode, see: :doc:`proxytransparent`."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:31
+msgid "Step 3 - Configure the Engine"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:32
+msgid ""
+"For this example we have used Symantecs Protection Engine. The "
+"installation is straight forward, please refer to Symantecs documentation"
+" for full installation and configuration instructions."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:36
+msgid ""
+"We installed the Engine for Web Proxy purpose and enabled ICAP with its "
+"default settings."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:42
+msgid "Step 4 - Connect the Engine"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:43
+msgid ""
+"Now connect the server that the engine is installed on to OPNsense trough"
+" either a switch or a direct cable connection. Preferable use a separate "
+"network for this traffic to make sure the unencrypted ICAP traffic can't "
+"be tapped."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:48
+msgid ""
+"ICAP traffic is not encrypted, meaning you have to make sure the traffic "
+"is not visible to anyone else. When using transparent HTTPS mode it is "
+"best to configure a separate interface for ICAP traffic and connect the "
+"Server (Engine) directly with a crosslink cable. Alternatively one may "
+"use a VLAN for this purpose."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:54
+msgid "Step 5 - Configure ICAP"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:55
+msgid ""
+"To configure ICAP go to :menuselection:`Services --> Proxy --> "
+"Administration` and select **ICAP Settings** for the **Forward Proxy** "
+"tab."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:58
+msgid ""
+"Select enable ICAP and filling the Request and Response URLs. For "
+"Symantecs Protection Engine they look like this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:62
+msgid "**Request Modify URL**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:62
+msgid "icap://192.168.2.1:1344/avscanreq"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:63
+msgid "**Response Modify URL**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:63
+msgid "icap://191.168.2.1:1344/avscan"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:66
+msgid "Now click on **Apply**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:69
+msgid "Step 6 - Test using EICAR"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:70
+msgid ""
+"To test if the engine is operational and functional go to "
+"http://www.eicar.org/?page_id=3950 on this page you will find several "
+"files you can test."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:73
+msgid ""
+"First test the HTTP protocol version. If that works, test the HTTPS "
+"version if you have also configured the transparent SSL proxy mode."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:77
+msgid "**IMPORTANT NOTE** : YOU DOWNLOAD THESE FILES AT YOUR OWN RISK!"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:81
+msgid ""
+"If everything went well you should see something similar to this in you "
+"browser:"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirus.rst:89
+msgid "**DONE**"
+msgstr ""
+

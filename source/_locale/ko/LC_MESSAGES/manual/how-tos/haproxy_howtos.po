@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:2
+msgid "HAProxy How-Tos"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:5
+msgid "Redirect Root directory"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:7
+msgid "Create a condition:"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:12
+#: ../../source/manual/how-tos/haproxy_howtos.rst:22
+#: ../../source/manual/how-tos/haproxy_howtos.rst:51
+#: ../../source/manual/how-tos/haproxy_howtos.rst:61
+msgid "name"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:12
+#: ../../source/manual/how-tos/haproxy_howtos.rst:24
+msgid "root"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:13
+#: ../../source/manual/how-tos/haproxy_howtos.rst:52
+msgid "Condition type"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:13
+#: ../../source/manual/how-tos/haproxy_howtos.rst:14
+msgid "Path matches"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:14
+msgid "/"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:17
+msgid "Create a Rule:"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:22
+msgid "forward_to_dir"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:23
+#: ../../source/manual/how-tos/haproxy_howtos.rst:62
+msgid "Test type"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:23
+msgid "IF"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:24
+msgid "conditions"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:25
+msgid "Logical ops"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:25
+#: ../../source/manual/how-tos/haproxy_howtos.rst:64
+msgid "none"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:26
+#: ../../source/manual/how-tos/haproxy_howtos.rst:65
+msgid "Execute function"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:26
+msgid "http-request redirect"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:27
+msgid "HTTP Redirect parameter"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:27
+msgid "code 301 location http://www.example.net/directory/"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:30
+msgid ""
+"Please note that 301 is for a permanent redirect. If you want to do it "
+"teporary, you will have to use another status code."
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:35
+msgid ""
+"Under Public Services edit your frontend and add \"forward_to_dir\" to "
+"Select Rules."
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:41
+msgid "Add Basic Authentication to a Service"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:43
+msgid ""
+"I have a Webapplication which have to be exposed to the outside and "
+"doesn't allow authentication. So HAProxy with basic auth would be just "
+"fine to get a mininum of security."
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:46
+msgid "Go to \"Rules & Conditions\" - \"Conditions\" and Add a new one:"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:51
+msgid "choose a name"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:52
+msgid "Custom"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:53
+msgid "option pass-through"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:53
+msgid "http_auth(admins)"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:56
+msgid "Add a rule:"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:61
+msgid "a name for your rule"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:62
+msgid "UNLESS"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:63
+msgid "condition"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:63
+msgid "select the previously created one"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:64
+msgid "Logical operator"
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:65
+msgid "http-request auth\""
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:68
+msgid "Go to your frontend and add the ACL to it."
+msgstr ""
+
+#: ../../source/manual/how-tos/haproxy_howtos.rst:73
+msgid ""
+"Go to :menuselection:`Settings --> Global Parameters`, enable the "
+"advanced mode (top left), and add your users to configuration via the "
+"\"Custom options\""
+msgstr ""
+

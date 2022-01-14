@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/backend/carp.rst:3
+msgid "CARP status"
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:7
+msgid "General"
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:9
+msgid ""
+"The CARP (Common Address Redundancy Protocol) protocol is quite a "
+"powerful feature of the firewall, which allows multiple machines to share"
+" IPv4 / IPv6 addresses among each other."
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:12
+msgid ""
+"To determine if a host should be master, it listens on the network for "
+"carp broadcast packets and determines if its priority is higher than the "
+"others on the network (the highest advertising frequency wins)."
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:15
+msgid ""
+"A higher advskew (Advertising Frequency Skew) will lower its "
+"advertisements and renders the node less attractive of being a master."
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:18
+msgid ""
+"Combined with the :code:`advskew` value, the system also uses the current"
+" demotion value (:code:`sysctl net.inet.carp.demotion`) which will be "
+"added to its preset :code:`advskew` in the gui. This value informs the "
+"user about the health of the node. When its value is :code:`0`, all is "
+"ok, when some cable is unplugged it will for example add a value to the "
+"\"demotion counter\"."
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:22
+msgid "The following demotion events are available by default in the kernel."
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:24
+msgid "Interface down (net.inet.carp.ifdown_demotion_factor)"
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:25
+msgid "Error sending announcements (net.inet.carp.senderr_demotion_factor)"
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:26
+msgid "Busy processing pfsync updates (net.pfsync.carp_demotion_factor)"
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:31
+msgid "Custom service hooks"
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:33
+msgid ""
+"In some cases the status of the node should be influenced by the services"
+" on the machine, for example when a dynamic routing system isn't "
+"initialized yet, it might be better to wait before propagating as being a"
+" better alternative in the cluster."
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:37
+msgid ""
+"This mechanism should be comparable to what is available for pfsync ( "
+"when states are being synced, we propagate with a higher :code:`advskew` "
+"using the value in :code:`net.pfsync.carp_demotion_factor`)"
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:41
+msgid ""
+"The idea of the service status hook is to register service check scripts "
+"into a single directory and validate status as a whole (if any of the "
+"test scripts fail, we add a demotion factor for \"services\")."
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:46
+msgid ""
+"Some inspiration for this hook came from how OpenBSD handles demotion in "
+"ospfd (https://man.openbsd.org/ospfd.conf.5 --> demote)"
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:48
+msgid ""
+"To create new tests, just add executable scripts in the following "
+"directory, which exits :code:`0` if all is good and something other than "
+"0 on issues (e.g. :code:`exit 1`)."
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:59
+msgid ""
+"Make sure test scripts are as lightweight as possible, so it wouldn't "
+"mind of they run more often than strictly needed."
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:65
+msgid ""
+"We use a high demotion value (:math:`2^{20}`) when one of the services "
+"fails its test, so we don't need to remember our current state (reading "
+":code:`sysctl net.inet.carp.demotion` would be enough) and can use a "
+"bitwise :code:`and` to check if it's set."
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:69
+msgid ""
+"A simple test which always reports service as being down, can be as "
+"simple as the following:"
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:71
+msgid "/usr/local/etc/rc.carp_service_status.d/test_service"
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:81
+msgid "Trigger event"
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:83
+msgid ""
+"To ask the system to evaluate status again, we should call the "
+":code:`carp_service_status` script, using configd so we don't need to be "
+"root to trigger a test."
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:92
+msgid ""
+"Services using this facility should emit this event themself after normal"
+" operation has proceeded."
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:96
+msgid "Logging"
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:98
+msgid ""
+"Carp status changes are usually logged to syslog (:menuselection:`System "
+"--> Log Files --> General`), so does our carp service status check."
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:101
+msgid ""
+"When the test service example is installed, we would expect a log line "
+"which looks like the following after triggering an event:"
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:107
+msgid ""
+"This informs the user about the amount of demotion and which services are"
+" responsible for it."
+msgstr ""
+
+#: ../../source/development/backend/carp.rst:109
+msgid ""
+"When service status is recovered again, it will send something like the "
+"following to syslog."
+msgstr ""
+

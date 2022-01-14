@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/troubleshooting/boot.rst:3
+msgid "Boot"
+msgstr ""
+
+#: ../../source/troubleshooting/boot.rst:7
+msgid "hangs at \"booting...\""
+msgstr ""
+
+#: ../../source/troubleshooting/boot.rst:9
+msgid ""
+"On some serial connected devices the console settings are different, in "
+"which case you would not be able to start the installer."
+msgstr ""
+
+#: ../../source/troubleshooting/boot.rst:12
+msgid ""
+"If you can reach the loader prompt, you could try to change some kernel "
+"parameters before booting."
+msgstr ""
+
+#: ../../source/troubleshooting/boot.rst:27
+msgid ""
+"To enter the loader prompt press :code:`3` when the OPNsense boot menu is"
+" visible"
+msgstr ""
+
+#: ../../source/troubleshooting/boot.rst:30
+msgid ""
+"After installation, you could persist these settings in "
+":menuselection:`System --> Settings --> Tunables`"
+msgstr ""
+

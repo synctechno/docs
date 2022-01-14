@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/lan_bridge.rst:2
+msgid "**How to set up a LAN Bridge**"
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:4
+msgid "**Original Author:** Martin Wasley"
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:7
+msgid "**Introduction**"
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:8
+msgid ""
+"LAN Bridges should really only be used where the LAN secondary, tertiary "
+"and other interfaces are not heavily used, if that is the case then it is"
+" recommended that an external switch be used instead. That being said, if"
+" the CPU is fast enough then it will easily cope with the extra load "
+"placed upon it by the bridge."
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:13
+msgid ""
+"When creating a LAN bridge it is essential that you have physical access "
+"to the device, you will need to swap the LAN  connection at a certain "
+"point."
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:17
+msgid "**Step One**"
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:18
+msgid ""
+"Configure OPNsense as normal, with a single LAN interface, make sure that"
+" it works correctly. It's a good idea to add the extra NIC interfaces ( "
+"OPTx ) during installation."
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:22
+msgid "**Step Two**"
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:23
+msgid ""
+"Create the bridge itself. Select :menuselection:`Interfaces --> Other "
+"Types --> Bridge` and ADD a new bridge. Select from the member interfaces"
+" the unused interfaces you wish to add to the bridge, OPT2,OPT3 etc."
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:29
+msgid "Now Save the new bridge."
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:32
+msgid ""
+"It is imperative that the member interfaces have nothing set within them "
+"for IPv4 or IPv6, each member interface should be enabled and they should"
+" look like this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:39
+msgid "**Step Three**"
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:40
+msgid ""
+"Select :menuselection:`Interfaces --> Assignments` and for the LAN "
+"interface, select the bridge previously created and Save."
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:46
+msgid ""
+"At this point you will need to swap your LAN cable from the existing LAN "
+"connection to one of the NICs that were added to the bridge interface, "
+"once connected then you must wait, it can take some time for the "
+"interface to come back up, but keep refreshing the web interface until it"
+" does."
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:51
+msgid "**Step Four**"
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:52
+msgid ""
+"The Original LAN interface is now unassigned and will need to be re-"
+"assigned. Go to :menuselection:`Interfaces --> Assignments` and in the "
+"New Interface box you will see the NIC itself ( igb*, em* ), select it "
+"and hit the '+' button to add an assignment, then click Save."
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:60
+msgid "**Step Five**"
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:61
+msgid ""
+"Select :menuselection:`Interfaces --> Other Types --> Bridge` and add the"
+" interface created in Step Four to the bridge and Save, remember to check"
+" the new interface and ensure it is enabled as in Step Two."
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:68
+msgid "**Step Six**"
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:69
+msgid ""
+"We now need to make two changes to the System Tunables to ensure that "
+"filtering is carried out on the bridge itself, and not on the member "
+"interfaces. Go to :menuselection:`System --> Settings --> Tunables` and "
+"select using the pen button net.link.bridge.pfil_member and set the value"
+" to 0 (add a new record if this entry doesn't exist on your "
+"installation)."
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:77
+msgid "Select the tunable net.link.bridge.pfil_bridge and set the value to 1"
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:83
+msgid "**Final**"
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:84
+msgid ""
+"Once complete, the :menuselection:`Interface --> Assignments` page should"
+" look similar to this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/lan_bridge.rst:90
+msgid ""
+"Now reboot, when the system restores you should have a fully functional "
+"bridge interface."
+msgstr ""
+

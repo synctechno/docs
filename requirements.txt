@@ -3,6 +3,7 @@ nwdiag>=2.0.0
 seqdiag>=2.0.0
 actdiag>=2.0.0
 sphinx
+sphinx-intl
 sphinx-sitemap
 sphinx_rtd_theme==0.5.2
 sphinxcontrib-blockdiag

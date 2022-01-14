@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/certificates.rst:3
+msgid "Trust"
+msgstr ""
+
+#: ../../source/manual/certificates.rst:5
+msgid ""
+"In OPNsense, certificates are used for ensuring trust between peers. To "
+"make using them easier, OPNsense allows creating certificates from the "
+"front-end. In addition to that, it also allows creating certificates for "
+"other purposes, avoiding the need to use the ``openssl`` command line "
+"tool. Certificates in OPNsense can be managed from :menuselection:`System"
+" --> Trust --> Certificates`."
+msgstr ""
+
+#: ../../source/manual/certificates.rst:10
+msgid ""
+"Examples of OPNsense components that use certificates: * OpenVPN * IPsec "
+"* Captive Portal * Web Proxy"
+msgstr ""
+
+#: ../../source/manual/certificates.rst:18
+msgid "Certificate types"
+msgstr ""
+
+#: ../../source/manual/certificates.rst:20
+msgid "The following types of certificate can be generated in OPNsense:"
+msgstr ""
+
+#: ../../source/manual/certificates.rst:22
+msgid "Client"
+msgstr ""
+
+#: ../../source/manual/certificates.rst:23
+msgid "Server"
+msgstr ""
+
+#: ../../source/manual/certificates.rst:24
+msgid "Combined Client/Server"
+msgstr ""
+
+#: ../../source/manual/certificates.rst:25
+msgid "Certificate Authority"
+msgstr ""
+
+#: ../../source/manual/certificates.rst:27
+msgid ""
+"In addition to this, OPNsense can generate a Certificate Signing Request "
+"(CSR). This can be used if you want to create a certficate signed by an "
+"external CA."
+msgstr ""
+
+#: ../../source/manual/certificates.rst:32
+msgid ""
+"Make sure that you select the correct certificate type, as many clients "
+"will refuse connection (or at least show errors) if an incorrect "
+"certificate type is used. For example, you can use either a server "
+"certificate or a combined client/server certificate to secure the "
+"connection to the web interface, but not a CA or client certificate."
+msgstr ""
+
+#: ../../source/manual/certificates.rst:39
+msgid "Usage examples"
+msgstr ""
+
+#: ../../source/manual/certificates.rst:40
+msgid ""
+"In :doc:`/manual/how-tos/self-signed-chain` you will find examples of how"
+" to setup certificate chains yourself."
+msgstr ""
+

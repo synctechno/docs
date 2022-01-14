@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/diagnostics_system.rst:3
+msgid "Diagnostics"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:7
+msgid "Activity"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:9
+msgid ""
+"The activity module shows current active processes and their details, you"
+" can search within the list of activities, fetch general information "
+"(like load averages, number of processes, etc.) using the info button in "
+"the footer of the grid."
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:15
+msgid "PID"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:15
+msgid "The process id of this process"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:16
+msgid "USERNAME"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:16
+msgid "Username executed this process"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:17
+msgid "PRI"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:17
+msgid "Current priority of the process"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:18
+msgid "NICE"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:18
+msgid ""
+"NICE is the `nice <https://en.wikipedia.org/wiki/Nice_(Unix)>`__ amount "
+"(in the range -20 to 20)"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:19
+msgid "SIZE"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:19
+msgid "Total size of the process (text, data, and stack)"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:20
+msgid "RES"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:20
+msgid "Current amount of resident memory, RAM currently in use by the process"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:21
+msgid "C"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:21
+msgid ""
+"is the processor number on which the process is executing   (visible only"
+" on SMP systems)"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:22
+msgid "TIME"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:22
+msgid "The number of system and    user cpu seconds that the process has used"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:23
+msgid "WCPU"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:23
+msgid "Weighted cpu percentage"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:24
+msgid "COMMAND"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:24
+msgid "Command string"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:30
+msgid "Services"
+msgstr ""
+
+#: ../../source/manual/diagnostics_system.rst:32
+msgid ""
+"The services page shows the configured services and status, you can "
+"stop/start/restart all of them here."
+msgstr ""
+

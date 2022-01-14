@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/support.rst:3
+msgid "Support Options"
+msgstr ""
+
+#: ../../source/support.rst:6
+msgid "Commercial"
+msgstr ""
+
+#: ../../source/support.rst:10
+msgid ""
+"Extended professional support services are available for an annual fee. "
+"For the commercial support options see `the OPNsense website "
+"<https://opnsense.org/support-overview/commercial-support/>`__"
+msgstr ""
+
+#: ../../source/support.rst:14
+msgid "Community"
+msgstr ""
+
+#: ../../source/support.rst:15
+msgid ""
+"If you need help with OPNsense you can always try the community options "
+"first. When resorting to community support it is important to understand "
+"that anyone helping you is doing so for free and at their own time. Even "
+"tough your issue or question might not be answered fully it would be nice"
+" to thank the people who helped you."
+msgstr ""
+
+#: ../../source/support.rst:21
+msgid "To receive community support, the following options are available:"
+msgstr ""
+
+#: ../../source/support.rst:23
+msgid "Start searching this documentation & wiki"
+msgstr ""
+
+#: ../../source/support.rst:24
+msgid "The `OPNsense forum <https://forum.opnsense.org>`__"
+msgstr ""
+
+#: ../../source/support.rst:25
+msgid "Ask online users on `IRC Libera Chat <https://libera.chat/>`__ #opnsense"
+msgstr ""
+
+#: ../../source/support.rst:29
+msgid "Community Support Levels"
+msgstr ""
+
+#: ../../source/support.rst:32
+msgid "Tier 1 – Core (Critical)"
+msgstr ""
+
+#: ../../source/support.rst:33
+msgid "Core team develops and supports"
+msgstr ""
+
+#: ../../source/support.rst:34
+msgid "Compiler errors or functional failures block git merges and releases"
+msgstr ""
+
+#: ../../source/support.rst:35
+msgid "Functionality is part of the standard installation"
+msgstr ""
+
+#: ../../source/support.rst:38
+msgid "Tier 2 – Plugins (Non-Critical)"
+msgstr ""
+
+#: ../../source/support.rst:39
+msgid ""
+"Core team develops and supports, sometimes with help from community "
+"members"
+msgstr ""
+
+#: ../../source/support.rst:40
+msgid "Compiler errors or functional failures block git merges"
+msgstr ""
+
+#: ../../source/support.rst:41
+msgid ""
+"Functionality problems such as 'known issues' or might still going into "
+"releases"
+msgstr ""
+
+#: ../../source/support.rst:42
+msgid ""
+"Features require user to install the plugin / functionality not installed"
+" by default"
+msgstr ""
+
+#: ../../source/support.rst:45
+msgid "Tier 3 – Plugins (Community)"
+msgstr ""
+
+#: ../../source/support.rst:46
+msgid ""
+"Tier 3 is community supported, this means the OPNsense core development "
+"team won't support it to avoid overloading the team"
+msgstr ""
+
+#: ../../source/support.rst:47
+msgid ""
+"When accepting a Tier 3 feature into the code base, it will come with a "
+"number of limits and conditions:"
+msgstr ""
+
+#: ../../source/support.rst:49
+msgid "Submitter must commit to maintaining it:"
+msgstr ""
+
+#: ../../source/support.rst:51
+msgid ""
+"Make sure code compiles and correctly functions after OPNsense and/or "
+"external (e.g. library) changes"
+msgstr ""
+
+#: ../../source/support.rst:52
+msgid ""
+"Support users when they encounter problems (forum / git issue tracker – "
+"all related issues will be assigned to the maintainer)"
+msgstr ""
+
+#: ../../source/support.rst:54
+msgid ""
+"The code is offered as plugin and will not be part of the default "
+"OPNsense installation. The OPNsense core team will not be responsible for"
+" QA"
+msgstr ""
+
+#: ../../source/support.rst:55
+msgid ""
+"If the feature get lots of traction, and/or if the team just considers it"
+" very useful, it may get 'promoted' to being officially supported (Tier "
+"2)"
+msgstr ""
+
+#: ../../source/support.rst:56
+msgid ""
+"The feature will be removed if the submitter stops maintaining it and no-"
+"one steps up to take over"
+msgstr ""
+

@@ -1,0 +1,449 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:3
+msgid "Prioritize Applications (Weighted) using Queues"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:5
+msgid ""
+"By utilizing queues we can influence the bandwidth within a pipe and give"
+" certain applications more bandwidth than others based on a weighted "
+"algorithm."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:8
+msgid ""
+"The idea is simple: Let presume we have a pipe of 10 Mbps and 2 "
+"applications for instance smtp (email) and http(s). The http(s) traffic "
+"will get a weight of 1 and the smtp traffic a weight of 9, then when all "
+"capacity of our pipe is in use the email traffic will get 9x more "
+"bandwidth than our http(s) traffic, resulting in 1 Mbps for http(s) and 9"
+" Mbps for smtp."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:15
+msgid ""
+"For our example we only look at download traffic, but the exact same can "
+"be done for the upload traffic."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:19
+msgid "Application"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:19
+msgid "Weight"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:19
+msgid "Minimum Bandwidth"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:21
+msgid "SMTP (port 25)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:21
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:57
+msgid "9"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:21
+msgid "9 Mbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:23
+msgid "HTTP (80)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:24
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:68
+msgid "1"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:24
+msgid "1 Mbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:25
+msgid "HTTPS (443)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:28
+msgid "To start go to :menuselection:`Firewall --> Shaper --> Pipes`."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:31
+msgid "Step 1 - Create Download Pipe"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:32
+msgid ""
+"On the **Pipes** tab click the **+** button in the lower right corner. An"
+" empty **Edit Pipe** screen will popup."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:36
+msgid "Create Pipe For Download (10 Mbps)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:39
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:55
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:66
+msgid "**enabled**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:39
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:55
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:66
+msgid "Checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:39
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:55
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:66
+msgid "*Check to enable the pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:40
+msgid "**bandwidth**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:40
+msgid "10"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:40
+msgid "*Numeric value of the desired bandwidth*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:41
+msgid "**bandwidth Metric**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:41
+msgid "Mbit/s"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:41
+msgid "*Metric to use with the numeric value*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:42
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:58
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:69
+msgid "**mask**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:42
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:58
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:69
+msgid "(empty)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:42
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:58
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:69
+msgid "*Leave empty*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:43
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:59
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:70
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:90
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:105
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:120
+msgid "**description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:43
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:56
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:67
+msgid "PipeDown-10Mbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:43
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:59
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:70
+msgid "*Free field, enter something descriptive*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:48
+msgid "Step 2 - Create Queues"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:49
+msgid ""
+"On the **Queues** tab click the **+** button in the lower right corner. "
+"An empty **Edit queue** screen will popup."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:52
+msgid "Create Queue for SMTP"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:56
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:67
+msgid "**pipe**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:56
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:67
+msgid "*Select our Pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:57
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:68
+msgid "**weight**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:57
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:68
+msgid "*Weight to use with the numeric value*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:59
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:89
+msgid "Queue-SMTP"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:63
+msgid "Create Queue for HTTP"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:70
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:104
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:119
+msgid "Queue-HTTP"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:74
+msgid "Step 3 - Create Rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:75
+msgid ""
+"On the **Rules** tab click the **+** button in the lower right corner. An"
+" empty **Edit rule** screen will popup."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:79
+msgid "Create a rule for smtp download traffic (email)"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:82
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:97
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:112
+msgid "**sequence**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:82
+msgid "11"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:82
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:97
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:112
+msgid "*Auto generated number, overwrite only when needed*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:83
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:98
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:113
+msgid "**interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:83
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:98
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:113
+msgid "WAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:83
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:98
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:113
+msgid "*Select the interface connected to the internet*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:84
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:99
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:114
+msgid "**proto**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:84
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:99
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:114
+msgid "ip"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:84
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:99
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:114
+msgid "*Select the protocol, IP in our example*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:85
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:100
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:115
+msgid "**source**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:85
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:87
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:88
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:100
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:102
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:103
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:115
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:117
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:118
+msgid "any"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:85
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:100
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:115
+msgid "*The source address, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:86
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:101
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:116
+msgid "**src-port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:86
+msgid "smtp"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:86
+msgid "*The source port to shape, smtp or 25*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:87
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:102
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:117
+msgid "**destination**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:87
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:102
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:117
+msgid "*The destination IP to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:88
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:103
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:118
+msgid "**dst-port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:88
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:103
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:118
+msgid "*The destination port to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:89
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:104
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:119
+msgid "**target**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:89
+msgid "*Select the SMTP queue*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:90
+msgid "ShapeSMTPDownload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:90
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:105
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:120
+msgid "*Enter a descriptive name*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:94
+msgid "Create a rule for HTTP download traffic"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:97
+msgid "21"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:101
+msgid "http"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:101
+msgid "*The source port to shape, http or 80*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:104
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:119
+msgid "*Select the HTTP queue*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:105
+msgid "ShapeHTTPDownload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:109
+msgid ""
+"Adding an extra rule for HTTPS traffic is simple as we can use the same "
+"HTTP queue if we like:"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:112
+msgid "31"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:116
+msgid "https"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:116
+msgid "*The source port to shape, https or 443*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:120
+msgid "ShapeHTTPSDownload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:123
+msgid ""
+"This way HTTP and HTTPS traffic will be treated the same (total max of 1 "
+"Mbps)."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:125
+msgid "Now press |apply| to activate the traffic shaping rules."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:132
+msgid "apply"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_prioritize_using_queues.rst:127
+msgid "*Screenshot Rules*"
+msgstr ""
+

@@ -1,0 +1,261 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/dynamic_dns.rst:7
+msgid "Dynamic DNS"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:9
+msgid ""
+"Normally, a hostname is tied to a fixed IP address. This works well if "
+"the server the hostname is used for has a static IP address. However, a "
+"static IP address is not always an option. In order to tie a hostname to "
+"a dynamic IP address, a Dynamic DNS service can be used."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:15
+msgid "Setting up a dynamic IP address"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:17
+msgid ""
+"In the web interface, go to :menuselection:`Services --> Dynamic DNS`. In"
+" the upper right corner, click **Add**."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:19
+msgid "A form will now appear with the following fields:"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:22
+#: ../../source/manual/dynamic_dns.rst:39
+msgid "Field"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:22
+#: ../../source/manual/dynamic_dns.rst:39
+msgid "Explanation"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:24
+msgid "Enable"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:24
+msgid "Enable this rule (allows turning entries off without removing them)."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:25
+msgid "Service type"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:25
+msgid ""
+"The provider of your Dynamic DNS Service. If you use one not in the list,"
+" select “Custom” or “Custom (v6)”."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:26
+msgid "Interface to monitor"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:26
+msgid "This will usually be WAN."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:27
+msgid "Hostname"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:27
+msgid "Enter the complete host/domain name. For example: *myhost.dyndns.org*"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:28
+msgid "MX"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:28
+msgid ""
+"Set this option only if you need a special MX record. Not all services "
+"support this. Note: with a dynamic DNS service you can only use a "
+"hostname, not an IP address."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:29
+msgid "Wildcards"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:29
+msgid "Enable Wildcard"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:30
+msgid "Verbose logging"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:30
+msgid "Enable verbose logging"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:31
+msgid "Username"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:31
+msgid ""
+"Username is required for all types except Namecheap, FreeDNS and Custom "
+"Entries."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:32
+msgid "Password"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:33
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:33
+msgid "A description to easily identify this rule in the overview."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:36
+msgid ""
+"If you select “Custom” or “Custom (v6)” under “Service type”, more fields"
+" will appear:"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:41
+msgid "Interface to send update from"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:41
+msgid "Most likely to be the same as “Interface to monitor”."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:42
+msgid "CURL options"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:42
+msgid ""
+"Options passed to the ``curl`` command. These include `Verify SSL peer  "
+"<https://curl.haxx.se/libcurl/c/CURLOPT_SSL_VERIFYPEER.html>`_ and `Force"
+" IPv4 resolving "
+"<https://curl.haxx.se/libcurl/c/CURLOPT_IPRESOLVE.html>`_."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:43
+msgid "Update URL"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:43
+msgid ""
+"An URL to let the Dynamic DNS provider know your IP address has changed. "
+"See the “full help” for information on how to use it."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:44
+msgid "Result Match"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:44
+msgid ""
+"Can be used to verify the reply from the server, in order to distinguish "
+"confirmations from errors. See the “full help” for information on how to "
+"use it."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:49
+msgid "Provider-specific info"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:52
+msgid "Provider"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:52
+msgid "Specifics"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:54
+msgid "Custom / Custom (v6)"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:54
+msgid ""
+"Username and Password fields represent HTTP Basic Authentication username"
+" and passwords."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:56
+msgid "Duck DNS"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:56
+msgid "Username field: Enter your Token. |br| Password field: Leave empty."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:59
+msgid "FreeDNS (freedns.afraid.org)"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:59
+msgid "Password field: Enter your “Authentication Token”."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:61
+msgid "he.net"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:61
+msgid ""
+"Username field: Leave empty. |br| Password field: Enter your \"Generated "
+"a DDNS key.\""
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:64
+msgid "he.net tunnelbroker"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:64
+msgid "Hostname field: Enter your “Tunnel ID”."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:66
+msgid "Route 53"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:66
+msgid ""
+"Username field: Enter your “Access Key ID”. |br| Password field: Enter "
+"your “Secret Access Key”."
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:69
+msgid "CloudFlare"
+msgstr ""
+
+#: ../../source/manual/dynamic_dns.rst:69
+msgid ""
+"Username field: Enter your email address. |br| Password field: Enter your"
+" \"Global API Key\"."
+msgstr ""
+

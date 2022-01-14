@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/troubleshooting/hardening.rst:3
+msgid "System hardening vs performance"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:5
+msgid ""
+"OPNsense tends to choose more strict hardening options by default, so "
+"when comparing performance between upstream standard FreeBSD it's good to"
+" know which settings differ and can have an impact on your measurements. "
+"This document aims to describe (some of) the differences, so when you "
+"value performance over security it is more obvious which toggles might be"
+" worthwhile to change."
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:10
+msgid ""
+"Keep in mind that most of the settings will need a reboot and can be "
+"altered using system tunables in :menuselection:`System --> Settings --> "
+"Tunables`."
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:14
+msgid "IPv4 random ID's [net.inet.ip.random_id]"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:15
+msgid ""
+"control IP(v4) IDs generation behaviour. This closes a minor information "
+"leak which allows remote observers to determine the rate of packet "
+"generation   on the machine by watching the counter.  At       the same "
+"time, on high-speed links,     it can decrease the ID reuse cycle "
+"greatly. IPv6 flow IDs and fragment      IDs are always random. (source "
+":code:`man -S 4 inet`)"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:20
+msgid "Our default is 1 (enabled)."
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:23
+msgid "Spectre and Meltdown"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:25
+msgid ""
+"To mitigate some of the speculative execution vulnerabilities, there are "
+"a couple of settings available in FreeBSD. More information about the "
+"various vulnerabilities and associated patches can be found `here "
+"<https://wiki.freebsd.org/SpeculativeExecutionVulnerabilities>`__"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:28
+msgid ""
+"Meltdown mitigation using Page Table Isolation (PTI), although also "
+"enabled in FreeBSD it's worth to mention which setting is responsible for"
+" enabling this feature. To disable PTI set :code:`vm.pmap.pti` to 0. Not "
+"all cpu's are vulnerable for Meltdown, in which case PTI can be disabled "
+"safely."
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:31
+msgid ""
+"Spectre variant 2, the system offers IBRS-based mitigation on Intel CPUs."
+" The IBRS mitigation main disadvantage is the significant performance "
+"penalty. In OPNsense IBRS is enabled (for Intel) by default by disabling "
+"(0) :code:`hw.ibrs_disable`, upstream FreeBSD standard is disabled (1)."
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:36
+msgid "User/group separation (security.bsd)"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:38
+msgid ""
+"Freebsd offers a couple of toggles to tighten security for ordinary "
+"users, these likely don't impact performance a lot, but these are the "
+"ones including descriptions that differ on our end (source :code:`sysctl "
+"-d security.bsd`)."
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:42
+msgid "Setting"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:42
+msgid "Description"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:44
+msgid "security.bsd.hardlink_check_gid [0->1]"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:44
+msgid ""
+"Unprivileged processes cannot create hard links to files owned by other "
+"groups"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:45
+msgid "security.bsd.hardlink_check_uid [0->1]"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:45
+msgid ""
+"Unprivileged processes cannot create hard links to files owned by other "
+"users"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:46
+msgid "security.bsd.unprivileged_proc_debug [1->0]"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:46
+msgid "Unprivileged processes may use process debugging facilities"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:47
+msgid "security.bsd.see_other_gids [1->0]"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:47
+msgid "Unprivileged processes may see subjects/objects with different real gid"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:48
+msgid "security.bsd.see_other_uids [1->0]"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:48
+msgid "Unprivileged processes may see subjects/objects with different real uid"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:49
+msgid "security.bsd.unprivileged_read_msgbuf [1->0]"
+msgstr ""
+
+#: ../../source/troubleshooting/hardening.rst:49
+msgid "Unprivileged processes may read the kernel message buffer"
+msgstr ""
+

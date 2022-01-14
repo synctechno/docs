@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/backend/autorun.rst:3
+msgid "Bootup / autorun options"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:7
+msgid "syshook"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:9
+msgid ""
+"OPNsense offers an easy method to plug in custom scripts during boot "
+"stages and assorted system events."
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:11
+msgid "Syshook scripts should be installed in:"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:17
+msgid ""
+"They can contain any executable file (e.g. shell scripts) in the "
+"following subdirectories:"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:19
+msgid "backup"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:20
+msgid "scripts used for periodic backup and restore"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:21
+msgid "carp"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:22
+msgid "scripts used for CARP MASTER / BACKUP events"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:24
+msgid "config"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:24
+msgid ""
+"scripts used when a configuration change took place (:code:`config.xml` "
+"changed)."
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:27
+msgid ""
+"This event is intended to be atomic for every changed revision, it's "
+"triggered using configd :code:`system event config_changed` and is "
+"loosely coupled via a :code:`syslog-ng` handler within the standard "
+":code:`Config->save()` method. The syshook event contains a pointer to "
+"the backup file in question (e.g. "
+":code:`/conf/backup/config-1601651332.5394.xml`), so the consumer "
+"(script) knows which revision to process."
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:33
+msgid ""
+"Try to keep custom config handlers as small and efficient as possible "
+"since the number of triggered events can grow rapidly."
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:35
+msgid "early"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:36
+msgid "start script before system network startup"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:37
+msgid "monitor"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:38
+msgid "scripts handling gateway monitoring events"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:39
+msgid "start"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:40
+msgid "start script after system network startup"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:41
+msgid "stop"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:42
+msgid "stop script before normal system shutdown"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:44
+msgid "update"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:44
+msgid "update script after core package update"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:46
+msgid ""
+"File names can use a number prefix \"XX-\" to retain a particular order."
+"  \"20-\" is typically used for core scripts, while \"50-\" is used for "
+"plugins."
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:48
+msgid ""
+"Example (vmware guestd start, filename "
+"/usr/local/etc/rc.syshook.d/early/50-vmware)"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:61
+msgid "Do not forget to set executable permissions on your syshook files."
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:65
+msgid "rc(8)"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:67
+msgid ""
+"Part of the bootup process of OPNsense is probing the available rc(8) "
+"configuration files in */etc/rc.conf.d/*, when a daemon is enabled, the "
+"system will call the regular rc(8) start command."
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:69
+msgid ""
+"In case the daemon needs some extra preparation, an additional \"bootup\""
+" script can be provided, which will be run before executing normal "
+"\"start\"."
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:71
+msgid ""
+"Example (from a configured squid proxy server using "
+"*/etc/rc.conf.d/squid*):"
+msgstr ""
+
+#: ../../source/development/backend/autorun.rst:79
+msgid ""
+"The configd template system can be used to generate the necessary "
+"configuration file(s)."
+msgstr ""
+

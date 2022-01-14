@@ -1,0 +1,410 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/cachingproxy.rst:3
+msgid "Setup Caching Proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:10
+msgid "Enable / Disable"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:11
+msgid ""
+"The proxy is delivered with sane default settings for easy setup. To "
+"enable the proxy just go to :menuselection:`Services --> Web Proxy --> "
+"Administration` and check **Enable proxy** then click on **Apply**. The "
+"default will enable the proxy with User Authentication based on the local"
+" user database and runs on port 3128 of the lan interface."
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:19
+msgid "Change Proxy Interfaces"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:20
+msgid ""
+"If you want to change the interfaces (subnets) the proxy will bind to "
+"then click on the tab **Forward Proxy**. Now add/remove the interfaces in"
+" the **Proxy interfaces** field."
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:26
+msgid "Change Proxy Listening Port"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:27
+msgid ""
+"By default the proxy will listen at port 3128, you can change this by "
+"clicking on the tab **Forward Proxy** and fill in the port in the **Proxy"
+" port** field. Don't forget to **Apply** your changes."
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:33
+msgid "Enable Cache"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:34
+msgid ""
+"To enable caching click on the arrow next to the **General Proxy "
+"Settings** to see the dropdown menu and click on **Local Cache "
+"Settings**."
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:39
+msgid "Check the **Enable local cache** and click **Apply**."
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:43
+msgid ""
+"As the cache is not created by default you will need to stop and start "
+"the service under :menuselection:`System --> Diagnostics --> Services`, "
+"this will ensure correct creation of the cache."
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:47
+msgid "Advanced"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:48
+msgid ""
+"Under the advanced settings (see mode switch on left top of the form) you"
+" can change the cache size, directory structure and max object size to "
+"keep in cache. Again defaults are fine for normal browsing and creates a "
+"100 MB cache with max 4 MB object size."
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:56
+msgid "Change Authentication Method"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:57
+msgid ""
+"Click on the arrow next to the **Forward Proxy** tab to show the drop "
+"down menu. Now select **Authentication Settings** and select the desired "
+"Authenticator(s) in the field **Authentication method**. Click on **Clear"
+" All** if you do not want to use any authentication."
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:62
+msgid ""
+"Depending on the Authentication Servers you have setup under "
+":menuselection:`System --> Access --> Servers` You can select one or more"
+" of the following:"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:65
+msgid "No Authentication (leave field blank)"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:66
+msgid "Local User Database"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:67
+msgid "LDAP"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:68
+msgid "Radius"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:72
+msgid "FTP Proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:73
+msgid ""
+"To enable the FTP Proxy click on the arrow next to the **Forward Proxy** "
+"tab to show the drop down menu. Now select **FTP Proxy Settings** and "
+"select one or more interfaces in the **FTP proxy interfaces** field and "
+"**Apply**."
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:78
+msgid ""
+"The FTP proxy will only function if the Proxy Server itself is enabled. "
+"And the proxy only works for non encrypted ftp traffic."
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:83
+msgid "Access Control List"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:84
+msgid ""
+"You can setup ACLs by clicking on the arrow next to **Forward Proxy**  "
+"and select **Access Control List**. Here you can:"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:87
+msgid "Setup Allowed Subnets (By default the proxy interfaces will be allowed)"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:88
+msgid ""
+"Add Unrestricted IP addresses (Unrestricted means just that, no "
+"authentication and no blacklisting for those IPs)"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:89
+msgid ""
+"Add Banned hosts IP address (A ban will stop this client from being able "
+"to use the proxy)"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:90
+msgid ""
+"Whitelist (Click on the (i) to see examples, whitelist prevail above "
+"blacklists)"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:91
+msgid ""
+"Blacklist (If not allowed by a whitelist, this will block traffic based "
+"upon a regular expression)"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:94
+msgid ""
+"Don't forget to press Enter or a comma after filling in a tag field as "
+"otherwise the value will not be applied. It should look similar to:"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:101
+msgid "Remote Black List / Ad Blocking"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:102
+msgid ""
+"Use simple flat files to block ads. For this sample we will use the ad "
+"list found here:"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:105
+msgid "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:107
+msgid "This list is a simple flat list that looks like this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:120
+msgid ""
+"Go to :menuselection:`Services --> Web Proxy --> Administration` and "
+"click on the tab **Remote Access Control Lists**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:123
+msgid ""
+"Now click on the **+** at the bottom right corner of the form to add a "
+"new list."
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:125
+msgid "Fill in:"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:128
+msgid "**Enabled**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:128
+msgid "Checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:128
+msgid "*Enable/Disable*"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:129
+msgid "**Filename**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:129
+msgid "yoyoads"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:129
+msgid "*Choose a unique filename*"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:130
+msgid "**URL**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:130
+msgid "(copy/paste the URL)"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:130
+msgid "*The URL of the blacklist*"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:131
+msgid "**categories**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:131
+msgid "(Leave blank)"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:131
+msgid "*Used for Category based web filtering*"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:132
+#: ../../source/manual/how-tos/cachingproxy.rst:158
+#: ../../source/manual/how-tos/cachingproxy.rst:172
+msgid "**Description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:132
+msgid "Yoyo Ads Blacklist"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:132
+msgid "*Your description*"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:135
+msgid "Looks like (screenshots of version 16.1.4):"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:140
+msgid "**Save changes**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:142
+msgid ""
+"Now click on **Download ACLSs & Apply** to enable the blacklist/ad "
+"blocker."
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:146
+msgid "Firewall Rule No Proxy Bypass"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:147
+msgid ""
+"To make sure no-one can bypass the proxy you need to add a firewall rule."
+" Go to :menuselection:`Firewall --> Rules` and add the following to the "
+"top of the list rule on the LAN interface (if LAN is where your clients "
+"and proxy are on)."
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:152
+#: ../../source/manual/how-tos/cachingproxy.rst:166
+msgid "**Action**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:152
+#: ../../source/manual/how-tos/cachingproxy.rst:166
+msgid "Block"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:153
+#: ../../source/manual/how-tos/cachingproxy.rst:167
+msgid "**Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:153
+#: ../../source/manual/how-tos/cachingproxy.rst:167
+msgid "LAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:154
+#: ../../source/manual/how-tos/cachingproxy.rst:168
+msgid "**Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:154
+#: ../../source/manual/how-tos/cachingproxy.rst:168
+msgid "TCP/UDP"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:155
+#: ../../source/manual/how-tos/cachingproxy.rst:169
+msgid "**Source**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:155
+#: ../../source/manual/how-tos/cachingproxy.rst:169
+msgid "LAN net"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:156
+#: ../../source/manual/how-tos/cachingproxy.rst:170
+msgid "**Destination Port Range**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:156
+msgid "HTTP"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:157
+#: ../../source/manual/how-tos/cachingproxy.rst:171
+msgid "**Category**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:157
+#: ../../source/manual/how-tos/cachingproxy.rst:171
+msgid "Block Proxy Bypass"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:158
+msgid "Block HTTP bypass"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:161
+msgid "**Save**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:163
+msgid "And one more rule to block HTTPS access:"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:170
+msgid "HTTPS"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:172
+msgid "Block HTTPS bypass"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:175
+msgid "**Save** & **Apply changes**"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:182
+msgid "Configure Browser/Firefox"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:183
+msgid ""
+"To configure you browser for use with the proxy, just go to your network "
+"settings and configure a proxy like this in firefox:"
+msgstr ""
+
+#: ../../source/manual/how-tos/cachingproxy.rst:190
+msgid ""
+"For a set-for-step guide on full category based web filtering see "
+":doc:`proxywebfilter`."
+msgstr ""
+

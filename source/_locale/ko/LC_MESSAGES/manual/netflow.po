@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/netflow.rst:3
+msgid "Netflow Export & Analyses"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:8
+msgid ""
+"Netflow is a monitoring feature, invented by Cisco, it is implemented in "
+"the HardenedBSD kernel with ng_netflow (Netgraph). Since Netgraph is a "
+"kernel implementation it is very fast with little overhead compared to "
+"softflowd or pfflowd."
+msgstr ""
+
+#: ../../source/manual/netflow.rst:12
+msgid ""
+"While many monitoring solutions such as Nagios, Cacti and vnstat only "
+"capture traffic statistics, Netflow captures complete packet flows "
+"including source, destination IP and port number."
+msgstr ""
+
+#: ../../source/manual/netflow.rst:16
+msgid ""
+"OPNsense offers full support for exporting Netflow data to external "
+"collectors as well as a comprehensive Analyzer for on-the-box analysis "
+"and live monitoring."
+msgstr ""
+
+#: ../../source/manual/netflow.rst:19
+msgid ""
+"OPNsense is the only open source solution with a built-in Netflow "
+"analyzer integrated into its Graphical User Interface. It can be accessed"
+" via :menuselection:`Reporting --> Netflow`."
+msgstr ""
+
+#: ../../source/manual/netflow.rst:24
+msgid "Supported Versions"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:25
+msgid ""
+"OPNsense support both Netflow version 5 (IPv4) and version 9 (IPv4 & "
+"IPv6)."
+msgstr ""
+
+#: ../../source/manual/netflow.rst:30
+msgid "Netflow Basics"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:31
+msgid ""
+"For analyzing the flow data it is important to understand the difference "
+"between ingress and egress traffic."
+msgstr ""
+
+#: ../../source/manual/netflow.rst:35
+msgid "Ingress"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:36
+msgid "Traffic to or coming from the firewall."
+msgstr ""
+
+#: ../../source/manual/netflow.rst:39
+msgid "Egress"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:40
+msgid "Traffic passing trough the firewall."
+msgstr ""
+
+#: ../../source/manual/netflow.rst:43
+msgid "Ingress + Egress = Double flow count"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:44
+msgid ""
+"When enabling both ingress and egress, traffic gets counted double due to"
+" Network Address Translation as all packets going to the WAN coming from "
+"the LAN pass the Network translation of the firewall therefor also "
+"creating an ingress flow."
+msgstr ""
+
+#: ../../source/manual/netflow.rst:48
+msgid ""
+"If you are not interested in ingress traffic then OPNsense offers the "
+"option to filter this traffic. When utilizing a proxy on the same device "
+"its important to capture the ingress flows as well, otherwise all proxy "
+"traffic won't be visible. Downside is of course that all traffic not "
+"passing the proxy will we counted twice due to the mentioned NAT effect."
+msgstr ""
+
+#: ../../source/manual/netflow.rst:56
+msgid "Netflow Exporter"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:57
+msgid ""
+"OPNsense Netflow Exporter supports multiple interfaces, filtering of "
+"ingress flows and multiple destinations including local capture for "
+"analysis by Insight (OPNsense Netflow Analyzer)."
+msgstr ""
+
+#: ../../source/manual/netflow.rst:66
+msgid "Netflow Analyzer - Insight"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:67
+msgid "OPNsense offers a full Netflow Analyzer with the following features:"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:69
+msgid "Captures 5 detail levels"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:71
+msgid "Last 2 hours, 30 second average"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:72
+msgid "Last 8 hours, 5 minute average"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:73
+msgid "Last week, 1 hour average"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:74
+msgid "Last month, 24 hour average"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:75
+msgid "Last year, 24 hour average"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:77
+msgid "Graphical representation of flows (stacked, stream and expanded)"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:78
+msgid "Top usage per interface, both ips and ports."
+msgstr ""
+
+#: ../../source/manual/netflow.rst:79
+msgid "Full in/out traffic in packets and bytes"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:80
+msgid "Detailed view with date selection and port/ip filter (up to 2 months)"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:81
+msgid "Data export to csv for offline analysis"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:83
+msgid "Selectable Detail Level"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:84
+msgid "Selectable Resolution"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:85
+msgid "Selectable Dat range"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:91
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:95
+msgid "Setup Netflow Exporter"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:96
+msgid "See :doc:`/manual/how-tos/netflow_exporter`"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:99
+msgid "Setup Insight"
+msgstr ""
+
+#: ../../source/manual/netflow.rst:100
+msgid "See :doc:`/manual/how-tos/insight`"
+msgstr ""
+

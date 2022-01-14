@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:3
+msgid "Configure IPv6 for generic DSL dialup"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:7
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:9
+msgid ""
+"This short article shows how to setup IPv6 on a standard DSL connection "
+"and how to handover the delegated prefix from your provider in your local"
+" LAN."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:12
+msgid "It's compatible and tested for but not limited to:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:14
+msgid "Deutsche Telekom"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:18
+msgid "Step 1 - General Settings"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:20
+msgid ""
+"Go to :menuselection:`System --> Settings --> General` and check that "
+"**Prefer IPv4 over IPv6** is not ticked. This value is default so just "
+"check if it has been touched."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:23
+msgid ""
+"Also enable **Allow DNS server list to be overridden by DHCP/PPP on WAN**"
+" at the bottom, so you get the correct DNS servers if you just use IPv4 "
+"ones."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:28
+msgid "Step 2 - Allow IPv6"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:30
+msgid ""
+"Next go to :menuselection:`Firewall --> Settings --> Advanced` and verfiy"
+" that **Allow IPv6** is enabled."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:34
+msgid "Step 3 - Interface Configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:36
+msgid ""
+"In :menuselection:`Interfaces --> [WAN]` and set **IPv6 Configuration "
+"Type** to DHCPv6 and in section **DHCPv6 client configuration** at the "
+"bottom tick:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:39
+msgid "Request only an IPv6 prefix"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:40
+msgid "Send IPv6 prefix hint"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:41
+msgid "Use IPv4 connectivity"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:43
+msgid ""
+"Set the prefix size to the one your provider delegates, mostly /56 or 64,"
+" sometimes /48."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:45
+msgid ""
+"Then change to :menuselection:`Interfaces --> [LAN]` and set **IPv6 "
+"Configuration Type** to **Track Interface**. At the bottom in section "
+"**Track IPv6 Interface** choose **IPv6 Interface** as WAN and for **IPv6 "
+"Prefix ID** a value of 0 is perfectly fine."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipv6_dsl.rst:49
+msgid ""
+"Hit Apply and disable/enable the NICs of your internal systems. Depending"
+" on the system and vendor, also a reboot could be required."
+msgstr ""
+

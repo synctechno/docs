@@ -1,0 +1,2487 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/releases/CE_16.7.rst:3
+msgid "16.7  \"Dancing Dolphin\" Series"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:7 ../../source/releases/CE_16.7.rst:724
+msgid ""
+"It is time for the next major iteration in open-source security!  After 6"
+" months and 20 minor releases we hereby declare the general availability "
+"of OPNsense 16.7, nicknamed \"Dancing Dolphin\".  The highlights of this "
+"major release include:"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:12 ../../source/releases/CE_16.7.rst:729
+msgid "Suricata 3.1.1 with Intel Hyperscan support"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:13 ../../source/releases/CE_16.7.rst:730
+msgid "NetFlow-based reporting and export"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:14 ../../source/releases/CE_16.7.rst:731
+msgid "Traffic shaping using CoDel / FQ-CoDel"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:15 ../../source/releases/CE_16.7.rst:732
+msgid "Two-factor authentication based on RFC 6238 (TOTP)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:16 ../../source/releases/CE_16.7.rst:733
+msgid "HTTPS and ICAP support in the proxy server"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:17 ../../source/releases/CE_16.7.rst:734
+msgid "FreeBSD 10.3 with full integration of HardenedBSD ASLR"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:18 ../../source/releases/CE_16.7.rst:735
+msgid "UEFI boot and installation modes"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:19 ../../source/releases/CE_16.7.rst:736
+msgid ""
+"Substantial updates to our language packs: Japanese, Russian, German, "
+"French, Chinese"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:22 ../../source/releases/CE_16.7.rst:739
+msgid ""
+"We thank all contributors, testers and users for their relentless support"
+" and invaluable feedback.  The release candidate phase has been the most "
+"fun we have had so far.  :)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:26 ../../source/releases/CE_16.7.rst:743
+msgid ""
+"Attention: An incompatibility in Chrome may prevent the firmware update "
+"from running.  Try a different browser to upgrade to 16.7 where a "
+"workaround has been added to avoid the problem in the future."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:30 ../../source/releases/CE_16.7.rst:747
+msgid ""
+"All images can be found on the mirrors below with checksums attached to "
+"the end of this announcement:"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:33 ../../source/releases/CE_16.7.rst:750
+#: ../../source/releases/CE_16.7.rst:823 ../../source/releases/CE_16.7.rst:900
+msgid "https://opnsense.org/download/"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:38
+msgid "16.7.14 (January 25, 2017)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:41
+msgid ""
+"We are back for one last update of the 16.7 series with a small number of"
+" fixes and security-related package updates.  Do not forget that 17.1 is "
+"scheduled for next week: the update instructions will be delivered via "
+"the usual firmware update path."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:46
+msgid "Until then, here are the full patch notes:"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:48
+msgid "traffic shaper: order rules numerically by sequence number"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:49
+msgid "firmware: added opnsense-revert tool for release-based package revert"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:50
+msgid "captive portal: fix downloading files in Chrome"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:51
+msgid "insight: fix downloading files in Chrome"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:52
+msgid "mvc: consistently set locale (contributed by Alexander Shursha)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:53
+msgid "mvc: do not deliver content twice on API calls"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:54
+msgid ""
+"python: downgraded to 2.7.12 in order to fix segmentation faults within "
+"insight reporting"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:55
+msgid ""
+"libressl: avoid possible side-channel leak of ECDSA private keys when "
+"signing `[1] "
+"<https://ftp.openbsd.org/pub/OpenBSD/patches/6.0/common/016_libcrypto.patch.sig>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:56
+msgid ""
+"ports: bind 9.10.4-P5 `[2] "
+"<https://deepthought.isc.org/article/AA-01447/0/BIND-9.10.4-P5-Release-"
+"Notes.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:57
+msgid "ports: perl 5.24.1 `[3] <https://perldoc.perl.org/5.24.1/perldelta>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:58
+msgid "ports: sqlite 3.16.2 `[4] <https://sqlite.org/releaselog/3_16_2.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:59
+msgid "ports: openssh 7.4p1 `[5] <https://www.openssh.com/txt/release-7.4>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:60
+msgid "ports: sudo 1.8.19p2 `[6] <https://www.sudo.ws/stable.html#1.8.19p2>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:61
+msgid ""
+"ports: lighttpd 1.4.45 `[7] "
+"<https://www.lighttpd.net/2017/1/14/1.4.45/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:62
+msgid "ports: php 5.6.30 `[8] <https://php.net/ChangeLog-5.php#5.6.30>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:67
+msgid "16.7.13 (January 06, 2017)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:70
+msgid ""
+"This update ships with the latest version of Squid, an enhanced version "
+"of the HAProxy plugin and other assorted reliability improvements."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:74
+msgid ""
+"As 17.1 inevitably approaches, we have set the release date to January "
+"31.  If all goes well, the upcoming 16.7.14 will be the EOL release for "
+"the 16.7 series."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:78 ../../source/releases/CE_16.7.rst:118
+#: ../../source/releases/CE_16.7.rst:216 ../../source/releases/CE_16.7.rst:265
+#: ../../source/releases/CE_16.7.rst:323 ../../source/releases/CE_16.7.rst:389
+#: ../../source/releases/CE_16.7.rst:437 ../../source/releases/CE_16.7.rst:485
+#: ../../source/releases/CE_16.7.rst:585 ../../source/releases/CE_16.7.rst:638
+#: ../../source/releases/CE_16.7.rst:692
+msgid "Here are the full patch notes:"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:80
+msgid "system: extended sudo option to allow an additional no-password mode"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:82
+msgid ""
+"firmware: the package manager will now always delete modified package "
+"files"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:84
+msgid "firmware: allow major upgrades into other flavours from the command line"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:86
+msgid "firmware: do not overwrite /etc/rc.shutdown on base updates"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:87
+msgid ""
+"firewall: add a note that ports only apply to TCP and/or UDP (contributed"
+" by Andrew Berry)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:89
+msgid "dns resolver: correctly handle empty DHCP lease sections"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:90
+msgid ""
+"dhcp: use regular expressions to optimize static lease reading "
+"(contributed by Senol Korkmaz)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:92
+msgid "web proxy: fix subnet computation"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:93
+msgid "netflow: fix missing check for egress_only"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:94
+msgid ""
+"plugins: HAProxy 1.10 with HA sync, custom TCP checks, bugfixes "
+"(contributed by Frank Wall)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:96
+msgid "ports: curl 7.52.1 `[1] <https://curl.haxx.se/changes.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:97
+msgid "ports: ca_root_nss 3.28"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:98
+msgid ""
+"ports: squid 3.5.23 `[2] "
+"<http://ftp.meisei-u.ac.jp/mirror/squid/squid-3.5-ChangeLog.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:99
+msgid ""
+"ports: python 2.7.13 `[3] <https://hg.python.org/cpython/raw-"
+"file/v2.7.13/Misc/NEWS>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:100
+msgid "ports: perl 5.24.1-RC5 `[4] <https://perldoc.perl.org/5.24.1/perldelta>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:101
+msgid ""
+"ports: lighttpd 1.4.44 `[5] "
+"<https://www.lighttpd.net/2016/12/24/1.4.44/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:102
+msgid ""
+"ports: phalcon 3.0.3 `[6] "
+"<https://github.com/phalcon/cphalcon/releases/tag/v3.0.3>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:103
+msgid "ports: heimdal 7.1.0 `[7] <https://www.h5l.org/releases.html?show=7.1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:109
+msgid "16.7.12 (December 29, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:112
+msgid ""
+"This is a minor reliability update.  We were investigating a possible "
+"OpenVPN regression and have therefore reverted an upstream patch.  The "
+"results are currently inconclusive and we will be holding off on the "
+"newly released version 2.4 for OPNsense 17.1 for further testing.  If "
+"something was off in your setup please let us know."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:120
+msgid "system: improve cancel button behaviour"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:121
+msgid "system: change coupled /tmp+/var MFS to /var MFS"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:122
+msgid "system: load AESNI in the default configuration"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:123
+msgid "firmware: list all licenses of packages"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:124
+msgid "firewall: improve cancel button behaviour"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:125
+msgid "traffic shaper: do not error on apply when no configuration is set"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:126
+msgid "interfaces: do not allow VLAN delete when in use"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:127
+msgid "interfaces: improve cancel button behaviour"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:128
+msgid "interfaces: only parse lease sections for ARP entries"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:129
+msgid "interfaces: fix QinQ setup"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:130
+msgid "services: improve cancel button behaviour"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:131
+msgid "ipsec: add clone phase 2 option to ease duplication"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:132
+msgid "openvpn: force rewrite of Viscosity client export files"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:133
+msgid "dns resolver: remove unused EDNS support"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:134
+msgid "dns forwarder: allow to run on non-standard port when resolver is running"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:135
+msgid "lang: updates for Czech, German and Italian"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:136
+msgid "plugins: os-haproxy 1.8 (contributed by Frank Wall)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:137
+msgid "plugins: compatibility fix for os-pptp, os-pppoe and os-l2tp"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:138
+msgid ""
+"ports: openvpn `[1] <https://github.com/opnsense/core/issues/1314>`__  "
+"(reverted topology subnet fix)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:139
+msgid "ports: pkg (license viewer upstream fix)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:140
+msgid "ports: sudo 1.8.19p1 `[2] <https://www.sudo.ws/legacy.html#1.8.18p1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:141
+msgid "ports: php 5.6.29 `[3] <https://www.php.net/ChangeLog-5.php#5.6.29>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:147
+msgid "16.7.11 (December 14, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:150
+msgid ""
+"The builds for 17.1-BETA are rolling as we write this and we are mighty "
+"proud of having come so far!  Almost two years ago we started with a "
+"simple vision and have been staying true to our goal of providing stable "
+"licensing, swift updates and modern features.  But that story is not for "
+"today.  :)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:156
+msgid ""
+"In the meantime, this 16.7.11 update receives newer versions of OpenVPN "
+"and Suricata, improved password hashing and two DNS forwarder fixes. "
+"Furthermore, the firmware feature received an extensive user experience "
+"boost, including, but not limited to, being able to read pending release "
+"notes."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:162
+msgid "Here is the full list of changes:"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:164
+msgid ""
+"system: improved password hashing `[1] "
+"<https://www.osnet.eu/en/content/tutoriels/passwords-opnsense>`__  "
+"(contributed by OSNet)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:165
+msgid "system: make sure vital kernel modules are always loaded"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:166
+msgid "system: added mute console support and improved tty reconfiguration"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:167
+msgid ""
+"system: revived \"normal\" power state config option for powerd "
+"(contributed by Tikimotel)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:169
+msgid "system: removed description support for ACL entries"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:170
+msgid "system: brought back LDAP scope and authentication containers support"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:171
+msgid "system: separate class for ui/api routing"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:172
+msgid "firmware: pull update sets from ABI-specific directory"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:173
+msgid "firmware: multiple tweaks in opnsense-update workflow"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:174
+msgid "firmware: no longer track UUID in a crash report submission"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:175
+msgid "firmware: pkg-audit to view current FreeBSD vulnerability report"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:176
+msgid "firmware: changelog viewer with all older and newer releases"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:177
+msgid ""
+"firmware: more intelligent plugin handling, e.g. detecting orphaned "
+"plugins"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:178
+msgid "firmware: simplified update presentation and workflow"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:179
+msgid "firmware: license viewer for installed packages"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:180
+msgid "firewall: added alias selection to missing NAT elements"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:181
+msgid "openvpn: add reneg-sec option to client exports"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:182
+msgid "dnsmasq: fix 16.7.10 regression in host file handling"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:183
+msgid "web proxy: make backend config plugin-friendly"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:184
+msgid ""
+"plugins: fix a potential error in MPD5 plugins (contributed by Evgeny "
+"Bevz)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:185
+msgid ""
+"src: fix possible login(1) argument injection in telnetd(8) `[2] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-16:36.telnetd.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:186
+msgid ""
+"src: fix link_ntoa(3) buffer overflow in libc `[3] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-16:37.libc.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:187
+msgid ""
+"src: fix possible escape from bhyve(8) virtual machine `[4] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-16:38.bhyve.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:188
+msgid "src: fix extended descriptor regression with netmap(4) on em(4)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:189
+msgid "src: fix use-after-free bugs in pfsync(4)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:190
+msgid "src: tzdata updated to version 2016j"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:191
+msgid ""
+"ports: openvpn 2.3.14 `[5] "
+"<https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn23>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:192
+msgid ""
+"ports: phalcon 3.0.2 `[6] "
+"<https://github.com/phalcon/cphalcon/releases/tag/v3.0.2>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:193
+msgid ""
+"ports: suricata 3.2 `[7] <https://suricata-"
+"ids.org/2016/12/01/suricata-3-2-available/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:195
+msgid "List of hotfixes contained:"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:197
+msgid "system: properly load crypto and thermal modules"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:203
+msgid "16.7.10 (December 01, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:206
+msgid ""
+"Another week, another update.  We are addressing two regressions caught "
+"by our users and update the ports to their latest versions including NTP,"
+" Squid, and strongSwan.  As always, thank you for your support!"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:210
+msgid ""
+"This update also enables console upgrades for the development version "
+"into the upcoming 17.1-BETA, which will be published right after we "
+"finish the WiFi configuration and the last known trouble with PHP 7.0 in "
+"the GUI pages.  Please make sure you understand the implications of "
+"upgrading to BETA.  Release notes will be published along with it as soon"
+" as it is out."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:218
+msgid "system: revamped message of the day on console login"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:219
+msgid "system: validate passed arguments instead of $_POST or $_REQUEST"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:220
+msgid "system: merged VPN servers into get_possible_listen_ips()"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:221
+msgid ""
+"system: repair French translation for user manager (contributed by "
+"Valentin Deville)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:223
+msgid "dashboard: do not arbitrarily split descriptions in services"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:224
+msgid "firewall: added maximum fragments setting"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:225
+msgid "dhcp: interface column for leases"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:226
+msgid "ipsec: properly configure syslog output"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:227
+msgid "dns forwarder: use plugin framework"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:228
+msgid "dns forwarder: improve DHCP registration option"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:229
+msgid "dns resolver: use plugin framework"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:230
+msgid "dns resolver: improve DHCP registration option"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:231
+msgid "universal plug and play: fix regression in rules anchor"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:232
+msgid "radvd: mark interface used in case of interface tracking"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:233
+msgid "radvd: do not inject local DNS server when there is no IP"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:234
+msgid "radvd: match service running metric with how it works"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:235
+msgid "captive portal: validate input of voucher validity and quantity"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:236
+msgid ""
+"captive portal: add error message on failed validation (contributed by "
+"Fabian Franz)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:238
+msgid "netflow: added service control"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:239
+msgid "ntp: use plugin framework"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:240
+msgid "intrusion detection: rotate eve-log every 500 MB"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:241
+msgid "web proxy: add FTP support back to remote ACL fetch"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:242
+msgid "web proxy: performance improvements on ACL parse"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:243
+msgid "web proxy: allow option to disable HTTPS verification"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:244
+msgid "web proxy: enable remote ACL by default when creating it"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:245
+msgid "plugins: allow Tinc to sync via XMLRPC"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:246
+msgid "lang: updates for Czech, French and German"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:247
+msgid ""
+"ports: pkg 1.9.3 upstream fetch patch `[1] "
+"<https://github.com/opnsense/ports/commit/3249295dd>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:248
+msgid "ports: sqlite 3.15.1 `[2] <https://sqlite.org/releaselog/3_15_1.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:249
+msgid "ports: strongswan 5.5.1 `[3] <https://wiki.strongswan.org/versions/63>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:250
+msgid ""
+"ports: ntp 4.2.8p9 `[4] <https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4"
+"/ChangeLog-stable>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:251
+msgid ""
+"ports: squid 3.5.22 `[5] "
+"<http://ftp.meisei-u.ac.jp/mirror/squid/squid-3.5-ChangeLog.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:252
+msgid "ports: flock 2.29"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:253
+msgid "ports: syslogd 11.0"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:259
+msgid "16.7.9 (November 22, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:262
+msgid ""
+"This week's update is a pure maintenance release in preparation for the "
+"upcoming 17.1-BETA.  A reboot is not necessary."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:267
+msgid "system: prevent spurious error with LDAP authentication"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:268
+msgid "system: call-site support for plugins_configure()"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:269
+msgid "dashboard: firmware update check is now a direct link"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:270
+msgid "insight: use ISO date in details selection"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:271
+msgid "firewall: add a generic service reload button"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:272
+msgid "firewall: move deprecated disablevpnrules option to IPsec settings"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:273
+msgid "router advertisements: removed unused subnet settings"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:274
+msgid "router advertisements: improved CARP usability"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:275
+msgid "dhcp: static IPv6 entry domain support"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:276
+msgid "dns resolver: fixed private address range (contributed by Tikimotel)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:277
+msgid "dns resolver: improved CARP usability with interface-automatic option"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:278
+msgid "dns resolver: straightened out reload behaviour"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:279
+msgid "dns forwarder: straightened out reload behaviour"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:280
+msgid "web proxy: renamed from \"proxy server\" to avoid confusion"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:281
+msgid "snmp: prepared move to plugins"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:282
+msgid "igmp proxy: prepared move to plugins"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:283
+msgid "load balancer: prepared move to plugins"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:284
+msgid "upnp: straightened out reload behaviour"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:285
+msgid ""
+"plugins: HAproxy \"default certificate\" parameter and advanced options "
+"(contributed by Frank Wall)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:287
+msgid "plugins: fix a warning in L2TP, PPTP and PPPoE server configure"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:288
+msgid "mvc: allow menu to recognise \"#\" in URLs by ignoring it"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:289
+msgid "mvc: fix a spurious API error on unused view render"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:290
+msgid "mvc: added copy item command for GUI usage"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:291
+msgid "mvc: fix sorting on array field"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:294
+msgid "Stay safe, Your OPNsense team"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:299
+msgid "16.7.8 (November 16, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:302
+msgid ""
+"Today we present to you the latest stable iteration of the 16.7 series "
+"focusing on improved reliability and security in all areas and major "
+"feature upgrades."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:306
+msgid ""
+"Big news this week are the inclusion of two new fully-featured plugins "
+"for Tinc VPN and FTP proxying, the latter being kindly sponsored by EURO-"
+"LOG AG `[1] <http://www.eurolog.com/>`__ .  Together with the community "
+"we are continuing the trend towards a comprehensive plugins environment "
+"based on top of our distinctive MVC GUI framework, with more plugins "
+"already in direct development."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:313
+msgid ""
+"Speaking of such, the MVC framework received fine-grained versioning and "
+"constraint support as well as a completely revamped API error handling "
+"and plugin-compatible authentication handling."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:317
+msgid ""
+"Last but not least, enclosed within are third-party software updates, "
+"most importantly the latest versions of LibreSSL, Bind, Sudo, OpenVPN, "
+"Suricata, PHP and Curl."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:321
+msgid "A reboot is not strictly necessary, but recommended."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:325
+msgid "system: trigger xmlrpc sync before service action"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:326
+msgid "system: header redirection security through url_safe()"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:327
+msgid "system: \"work in progress\" indicator for service controls"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:328
+msgid "system: always restart apinger to fix configuration apply"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:329
+msgid "system: use Etc/UTC when timezone was removed from tzdata"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:330
+msgid ""
+"system: fix infinite console menu loop on tty close (contributed by "
+"Stephane Lesimple)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:332
+msgid "system: SSH launcher rework"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:333
+msgid "firmware: only do console update reboot when update went ok"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:334
+msgid "firmware: improved usefulness of several GUI status messages"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:335
+msgid "firmware: allow inline use of opnsense-update -t"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:336
+msgid "firmware: allow to resolve ABI using opnsense-verify -a"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:337
+msgid "interfaces: set txcsum6 and rxcsum6 like their IPv4 counterparts"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:338
+msgid "firewall: traffic shaper address lists and inversion support"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:339
+msgid "firewall: revamped bogons download and verification"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:340
+msgid "firewall: properly set NAT reflection helper for IPv6"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:341
+msgid "firewall: allow pluggable rules anchors"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:342
+msgid "captive portal: increase the database timeout to 30 seconds"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:343
+msgid "captive portal: allow custom values for voucher validity and quantity"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:344
+msgid "captive portal: fix spurious error on successful login"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:345
+msgid "dynamic dns: fix race in page, reminiscent of previous widget correction"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:346
+msgid "dynamic dns: log r53 errors to system log file"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:347
+msgid "intrusion detection: fix ET open ruleset content"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:348
+msgid "openvpn: missing p2p shared key settings for local subnets"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:349
+msgid "universal plug and play: prepare for move into plugins"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:350
+msgid "mvc: implemented model constraints and migrations"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:351
+msgid ""
+"mvc: improved error reporting of API failures (contributed by Per von "
+"Zweigbergk)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:353
+msgid "mvc: add spinner for row toggle (contributed by Frank Brendel)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:354
+msgid "mvc: pluggable authentication framework"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:355
+msgid "mvc: added update-only field type"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:356
+msgid "plugins: first release of FTP Proxy (contributed by Frank Brendel)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:357
+msgid "plugins: first release of Tinc VPN"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:358
+msgid ""
+"ports: pkg 1.9.3 `[2] <https://github.com/freebsd/freebsd-"
+"ports/commit/4d1a48fbd7>`__  `[3] <https://github.com/freebsd/freebsd-"
+"ports/commit/b8c8b82a0>`__  `[4] <https://github.com/freebsd/freebsd-"
+"ports/commit/5a3fa5bbce>`__  `[5] <https://github.com/freebsd/freebsd-"
+"ports/commit/d2104b2c85>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:359
+msgid ""
+"ports: bind 9.10.4P4 `[6] "
+"<https://kb.isc.org/article/AA-01435/81/BIND-9.10.4-P4-Release-"
+"Notes.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:360
+msgid "ports: curl 7.51.0 `[7] <https://curl.haxx.se/changes.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:361
+msgid ""
+"ports: libressl 2.4.4 `[8] "
+"<https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-2.4.4-relnotes.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:362
+msgid ""
+"ports: lighttd 1.4.43 `[9] "
+"<https://www.lighttpd.net/2016/10/31/1.4.43/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:363
+msgid ""
+"ports: openvpn 2.3.13 `[10] "
+"<https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn23#OpenVPN2.3.13>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:364
+msgid ""
+"ports: pecl-radius 1.4.0b1 `[11] <https://pecl.php.net/package-"
+"changelog.php?package=radius&release=1.4.0b1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:365
+msgid "ports: php 5.6.28 `[12] <https://php.net/ChangeLog-5.php#5.6.28>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:366
+msgid "ports: sudo 1.8.18p1 `[13] <https://www.sudo.ws/stable.html#1.8.18p1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:367
+msgid ""
+"ports: suricata 3.1.3 `[14] <https://suricata-"
+"ids.org/2016/11/01/suricata-3-1-3-released/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:373
+msgid "16.7.7 (October 27, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:376
+msgid ""
+"This update brings several reliability and security improvements as "
+"usual.  Our LibreSSL fans will notice the version 2.3 has finally been "
+"replaced with 2.4 and we switched to position independent executables in "
+"our base system to make good use of HardenedBSD ASLR."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:381
+msgid ""
+"Another hot topic is the addition of a Czech translation into the "
+"release.  Many thanks to pavelb for making that happen!"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:384
+msgid ""
+"Overall progress towards OPNsense 17.1 is steady: native PAM support is "
+"through the testing phase and major FreeBSD upgrade support is already "
+"enclosed within this very update.  Our next step is the release of beta "
+"images some time during November."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:391
+msgid "captive portal: add expire voucher option"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:392
+msgid "intrusion detection: added support for compressed rule files"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:393
+msgid "web proxy: basic auth support for remote ACLs"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:394
+msgid ""
+"web proxy: fix ICAP config write for MIME-types (contributed by Fabian "
+"Franz)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:396
+msgid "ipsec: fix spacing and type for shared secrets on Windows 7+"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:397
+msgid "ipsec: restart must only restart, not completely reconfigure"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:398
+msgid "ipsec: correctly set 28673 option to \"yes\""
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:399
+msgid "openvpn: reintroduce zip usage instead of 7z"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:400
+msgid "interfaces: fix performance issues on status page"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:401
+msgid "interfaces: fix ARP and NDP to show all entries"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:402
+msgid "rc: revamp the handling of /boot/loader.conf to be fully pluggable"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:403
+msgid "firmware: opnsense-update can now perform major FreeBSD updates"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:404
+msgid "plugins: multiple fixes for HAProxy plugin (contributed by Frank Wall)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:405
+msgid "plugins: new PT research rule set intrusion detection plugin"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:406
+#, python-format
+msgid "lang: new language Czech at 54% completed (contributed by pavelb)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:407
+msgid "lang: updates for German and French"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:408
+msgid ""
+"ports: libressl 2.4.3 `[1] "
+"<https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-2.4.3-relnotes.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:409
+msgid ""
+"ports: isc-dhcp 4.3.5 `[2] "
+"<https://kb.isc.org/article/AA-01430/82/DHCP-4.3.5-Release-Notes.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:410
+msgid "ports: php 5.6.27 `[3] <https://php.net/ChangeLog-5.php#5.6.27>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:411
+msgid ""
+"ports: lighttpd 1.4.42 `[4] "
+"<https://www.lighttpd.net/2016/10/16/1.4.42/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:412
+msgid "src: base system now uses position independent executables"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:413
+msgid ""
+"src: tzdata updated to version 2016h `[5] <http://mm.icann.org/pipermail"
+"/tz-announce/2016-October/000042.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:414
+msgid "src: revised dummynet patches for NAT, also includes IPv6 support"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:415
+msgid ""
+"src: Fix bspatch heap overflow vulnerability `[6] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-16:29.bspatch.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:416
+msgid ""
+"src: Fix multiple libarchive vulnerabilities `[7] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-16:31.libarchive.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:417
+msgid ""
+"src: Fix virtual memory subsystem bugs `[8] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-EN-16:17.vm.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:418
+msgid ""
+"src: Fix incorrect argument validation in sysarch(2) `[9] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-16:15.sysarch.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:424
+msgid "16.7.6 (October 11, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:427
+msgid ""
+"This update is preparation for the upcoming major release firmware "
+"upgrades, because FreeBSD 11.0 just came out (yay!).  The intended target"
+" for this version is OPNsense 17.1, so it feels only natural to add the "
+"bits and bolts for it as early as possible.  Seamless upgrades from any "
+"major release to the next is our mission.  :)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:433
+msgid ""
+"A few security-related ports got updated to their latest versions and we "
+"have fixed the PSK-related IPsec regression that sneaked into 16.7.5."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:439
+msgid "system: add language selection to initial wizard"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:440
+msgid "system: allow disabling the root user"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:441
+msgid ""
+"firmware: new mirror in Serbia (contributed by FourDots `[1] "
+"<https://fourdots.com/>`__ )"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:442
+msgid "firmware: assorted changes for upcoming major upgrade"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:443
+msgid "interfaces: wait for DHCP6 client to properly exit"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:444
+msgid "firewall: allow route-to to loopback gateways"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:445
+msgid "openvpn: fix download of config file for iOS"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:446
+msgid "ipsec: fix mobile / PSK regression of 16.7.5"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:447
+msgid "intrusion detection: added syslog support"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:448
+msgid "dns: improve forwarder interface listening generation"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:449
+msgid "rc: silence backup warnings about stripped leading slashes"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:450
+msgid ""
+"ports: bind 9.10.4-P3 `[2] <http://ftp.isc.org/isc/bind9/9.10.4-P3"
+"/RELEASE-NOTES-bind-9.10.4-P3.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:451
+msgid ""
+"ports: ca_root_nss 3.27.1 `[3] <https://developer.mozilla.org/en-"
+"US/docs/Mozilla/Projects/NSS/NSS_3.27.1_release_notes>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:452
+msgid ""
+"ports: libressl 2.3.8 `[4] "
+"<https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-2.3.8-relnotes.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:453
+msgid ""
+"ports: unbound 1.5.10 `[5] "
+"<https://nlnetlabs.nl/projects/unbound/download/#unbound-1-5-10>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:459
+msgid "16.7.5 (September 28, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:462
+msgid ""
+"Now that we got the chance to ship not one, but two OpenSSL bumps at the "
+"same time we barely missed the LibreSSL updates.  That is life. But we "
+"still have a few great things to offer this week."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:466
+msgid ""
+"First and foremost, users noted that the captive portal did not work with"
+" the transparent proxy.  This lead to internal investigation into the "
+"operating system kernel itself, where a number of issues with using "
+"several packet filters in a row can lead to shortcuts in packet paths "
+"through the networking stack."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:472
+msgid ""
+"This circled back to a simple fix for the captive portal: you can now "
+"edit each zone to enable the proxy for HTTP (port 3128) or HTTPS (port "
+"3129) for captive portal use without requiring the firewall redirect. You"
+" only have to make sure you actually have your captive portal interface "
+"set up as an interface in the proxy."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:478
+msgid ""
+"We will continue to look into the remaining kernel issues and give "
+"updates and calls for testing when we reach new milestones."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:481
+msgid ""
+"In other news, both OpenVPN and IPsec received several improvements for "
+"interoperability and the occasional bug with the missing firewall rules "
+"tab for their respective interfaces."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:487
+msgid ""
+"captive portal: handle transparent proxy from within the zone "
+"configuration"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:488
+msgid "openvpn: adapt to cipher output changes in OpenVPN 2.3.12"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:489
+msgid "openvpn: improve plugin probing for virtual interface"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:490
+msgid "openvpn: added missing IPv6 tunnel network to overrides"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:491
+msgid "ipsec: human-readable format of authentication method in overview"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:492
+msgid "ipsec: refine behaviour of enable/apply on main page"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:493
+msgid "ipsec: deduplicate leftsubnet/rightsubnet for meshed IKEv2"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:494
+msgid "ipsec: more elegant interface and service plugging"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:495
+msgid "ipsec: added unmeshed \"tunnel isolation\" mode for IKEv2"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:496
+msgid "ipsec: cleanup pass over backend code"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:497
+msgid "ipsec: allow Camellia for IKEv2"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:498
+msgid "ipsec: allow %any in phase 1"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:499
+msgid "ipsec: allow EAP-MSCHAPV2"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:500
+msgid "system: load if_bridge on boot to correctly set its sysctl values"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:501
+msgid "system: do not explicitly call plugins_interfaces() anymore"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:502
+msgid "services: DNS resolver translation fixes (contributed by Fabian Franz)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:503
+msgid "services: fix a race in the DynDNS widget display"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:504
+msgid ""
+"ports: curl 7.50.3 `[1] "
+"<https://curl.haxx.se/mail/lib-2016-09/0040.html>`__ , sudo 1.8.18 `[2] "
+"<https://www.sudo.ws/stable.html#1.8.18>`__ , php 5.6.26 `[3] "
+"<https://php.net/ChangeLog-5.php#5.6.26>`__ , openssl 1.0.2j `[4] "
+"<https://www.openssl.org/news/secadv/20160922.txt>`__  `[5] "
+"<https://www.openssl.org/news/secadv/20160926.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:505
+msgid ""
+"src: Multiple OpenSSL vulnerabilities `[5] "
+"<https://www.openssl.org/news/secadv/20160926.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:506
+msgid ""
+"src: updated tzdata to 2016f `[6] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-16:26.openssl.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:512
+msgid "16.7.4 (September 22, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:515
+msgid ""
+"We are deliberately skipping waiting for OpenSSL to announce their new "
+"version today as the roundtrip time for incorporating patches and updates"
+" into FreeBSD and maybe also LibreSSL will likely delay an update to next"
+" week.  We will simply do a 16.7.5 next week as well and let 16.7.4 stand"
+" on its own feet."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:521
+msgid ""
+"The prominent theme of this update is CARP.  We have identified a number "
+"of issues with the way it was being set up and reverted the process back "
+"to what BSD standards recommend.  We have a shiny new test lab to preview"
+" and scrutinise these changes in a larger environment.  The tests were "
+"promising.  Let us know what you think!"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:527
+msgid ""
+"Another thing is the introduction of the Intel Gigabit driver plugin "
+"based on the stock driver code version 7.6.2 as multiple reports popped "
+"up regarding driver reliability.  If you are having trouble with CARP or "
+"intrusion detection IPS mode with your em(4) driver, try installing the "
+"new plugin and reboot to activate."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:533
+msgid "The full list of changes is a follows:"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:535
+msgid "system: SSH-enabled installer and associated changes"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:536
+msgid "system: deprecate DSA keys as per OpenSSH recommendation"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:537
+msgid "system: reworked config import / export for consistency"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:538
+msgid "system: reboot after config import is now selectable"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:539
+msgid "system: fix improper escape of HTML entities in log file filter"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:540
+msgid ""
+"system: handle legal boolean return result from searchUsers() "
+"(contributed by Evgeny Bevz)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:542
+msgid "system: add dynamic DNS update to cron"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:543
+msgid "system: fix race in php.ini setup"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:544
+msgid "system: always keep repository configurations on core package deinstall"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:545
+msgid "system: properly trigger filter reload on HA peer"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:546
+msgid "system: add ordering to rc.syshook scripting facility"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:547
+msgid "system: add missing parameter for LDAPS authentication server"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:548
+msgid ""
+"firewall: change CARP to operate using BSD standards to fix several edge "
+"cases and reported issues"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:550
+msgid "firewall: fix validation of redirection in NAT"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:551
+msgid "firewall: redirect target IP selection can now use aliases"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:552
+msgid "firewall: simplify empty rules message in interface rules tabs"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:553
+msgid "interfaces: do not attempt to fix the MAC address of a broken NIC"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:554
+msgid "interfaces: adapt validation of PPP to not require idle timeout to be set"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:555
+msgid "interfaces: add missing help toggle to settings page"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:556
+msgid "services: DHCP lease pages show MAC manufacturers without Nmap install"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:557
+msgid "services: improve cleanup of multiple captive portal zones"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:558
+msgid "services: fix writing empty DNS resolver ACL"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:559
+msgid "reporting: automatic database repair added"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:560
+msgid ""
+"lang: translation improvements (contributed by Simon Brunet, Antonio "
+"Prado and Fabian Franz)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:562
+msgid "lang: updates for French, German, Italian and Spanish"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:563
+msgid ""
+"plugins: add stock Intel e1000 driver version 7.6.2 a \"os-intel-em\" "
+"(requires a reboot)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:565
+msgid "plugins: lower early start priorities of VMware and Xen plugins"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:566
+msgid ""
+"ports: haproxy 1.6.9 `[1] "
+"<http://www.haproxy.org/download/1.6/src/CHANGELOG>`__ , hyperscan 4.3.1 "
+"`[2] <https://github.com/01org/hyperscan/blob/master/CHANGELOG.md>`__ , "
+"suricata 3.1.2 `[3] <https://suricata-"
+"ids.org/2016/09/07/suricata-3-1-2-released/>`__ , phalcon 3.0.1 `[4] "
+"<https://github.com/phalcon/cphalcon/releases>`__ , samplicator 1.3.8rc1"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:573
+msgid "16.7.3 (August 31, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:576
+msgid ""
+"We bring to your attention this update with a batch of enhancements and "
+"the occasional bugfix intertwined.  It is interesting to note that the "
+"enhancements vs. bugfix ratio is as high as 5:1.  :)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:580
+msgid ""
+"Brand new is the general availability of the Italian translation thanks "
+"to the work of Antonio Prado.  The work is still ongoing and all help is "
+"highly appreciated.  Also, the web font has been updated to enhance "
+"display of Cyrillic letters.  We just love fostering the translations!"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:587
+msgid "system: allow selection of secondary console"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:588
+msgid "system: added EFI as a console option"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:589
+msgid "system: fixed status display of tiered gateway groups"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:590
+msgid "system: allow to configure sudo(8) usage for administrators"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:591
+msgid ""
+"system: package manager can no longer uninstall the GUI package (marked "
+"as \"vital\")"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:592
+msgid "system: also beep on factory reset"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:593
+msgid "system: added opnsense-code command line utility"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:594
+msgid "interfaces: do not store packet captures in /root"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:595
+msgid "interfaces: sort interface listings by name only"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:596
+msgid ""
+"interfaces: do not prevent configuring an IP used by the PPTP and L2TP "
+"plugins"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:597
+msgid "firewall: add normalisation options for source port and direction"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:598
+msgid "firewall: improved parsing of alias input"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:599
+msgid "firewall: fixed nesting of aliases with underscores in their names"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:600
+msgid "openvpn: fix script mismatch on export page"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:601
+msgid ""
+"openvpn: added reneg-sec option to server to allow persistent TOTP "
+"sessions"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:602
+msgid "openvpn: added option to prevent usage of username-as-common-name"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:603
+msgid "services: fix WOL widget link"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:604
+msgid "services: aligned backend calls of DNS and DHCP"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:605
+msgid "services: fix writing of DNS resolver host entries"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:606
+msgid "services: simplify configuring of DNS resolver listening addresses"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:607
+msgid ""
+"services: allow proxy to match against SSL URLs only (contributed by "
+"Fabio Mello)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:608
+msgid "lang: updated Source Sans Pro font to improve the Cyrillic experience"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:609
+msgid "lang: Italian is now a release language (contributed by Antonio Prado)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:610
+msgid "lang: minor updates for Russian (contributed by Smart-Soft)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:611
+msgid "lang: minor updates for German and French"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:612
+msgid ""
+"ports: haproxy 1.6.8 `[1] "
+"<http://www.haproxy.org/download/1.6/src/CHANGELOG>`__ , php 5.6.25 `[2] "
+"<https://php.net/ChangeLog-5.php#5.6.25>`__ , sqlite 3.14.1 `[3] "
+"<https://sqlite.org/releaselog/3_14_1.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:613
+msgid ""
+"ports: openvpn 2.3.12 `[4] "
+"<https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn23#OpenVPN2.3.12>`__"
+" , libxml 2.9.4 `[5] <http://xmlsoft.org/news.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:619
+msgid "16.7.2 (August 18, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:622
+msgid ""
+"The release schedule is being stretched bit by bit to see how long we can"
+" go without an update.  Well, we did not want wait any longer to share "
+"with you the following bits... so here they are.  ;)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:626
+msgid ""
+"FreeBSD incorporated several reliability fixes for Hyper-V and we had to "
+"back out an ICMP stable commit that was not fully working for trace route"
+" output over the network.  There are several important ports updates, "
+"namely Lighttpd, Strongswan and OpenSSH all brought to their latest "
+"versions."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:632
+msgid ""
+"On our side, multi-point VPN plugins have been corrected to properly "
+"group to their respective firewall rule interface.  For anyone waiting to"
+" migrate their VPNs from 16.1.20 to 16.7, now is the time to do so! Also,"
+" the stale OpenVPN windows binaries have been removed.  Note that we "
+"gracefully support configuration file export in several formats."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:640
+msgid ""
+"src: revert fix ICMP translation in pf `[1] "
+"<https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=201519>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:641
+msgid ""
+"src: better handle unknown options received from a DHCP server `[2] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"EN-16:10.dhclient.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:642
+msgid ""
+"src: void using spin locks for channel message locks `[3] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"EN-16:11.vmbus.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:643
+msgid ""
+"src: enable INQUIRY result check only on Windows 10 host systems `[4] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"EN-16:12.hv_storvsc.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:644
+msgid ""
+"src: register time counter early enough for TSC freq calibration `[5] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"EN-16:13.vmbus.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:645
+msgid ""
+"src: disable incorrect callout in hv_storvsc(4) `[6] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"EN-16:14.hv_storvsc.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:646
+msgid ""
+"src: better handle the GPADL setup failure in Hyper-V `[7] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"EN-16:15.vmbus.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:647
+msgid ""
+"src: fix SCSI INQUIRY checks and error handling `[8] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"EN-16:16.hv_storvsc.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:648
+msgid ""
+"ports: lighttpd 1.4.41 `[9] <https://www.lighttpd.net/download/>`__ , "
+"strongswan 5.5.0 `[10] "
+"<https://wiki.strongswan.org/projects/strongswan/wiki/Changelog55>`__ , "
+"curl 7.50.1 `[11] <https://curl.haxx.se/changes.html#7_50_1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:649
+msgid ""
+"ports: ca_root_nss 3.26, openssh 7.3p1 `[12] "
+"<http://www.openssh.com/txt/release-7.3>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:650
+msgid "ports: enabled LDAP SASL bindings"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:651
+msgid ""
+"system: remove source maps to prevent further Chrome breakage during API "
+"calls"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:653
+msgid "system: switch to individual registration of PHP extensions"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:654
+msgid "system: added UO field to CSR"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:655
+msgid ""
+"interfaces: properly remove PPPoE server from list of firewall interfaces"
+" when deactivated"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:657
+msgid "interfaces: extended logging for 4G modems"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:658
+msgid "interfaces: correct download of large packet captures"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:659
+msgid "interfaces: add lacp_fast_timeout flag support for LAGG"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:660
+msgid "interfaces: fix clearing the DHCP config file when override file is gone"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:662
+msgid ""
+"interfaces: improve dmesg probe on interface listing (contributed by Per "
+"von Zweigbergk)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:664
+msgid "firewall: double-check file availability after alias URL download"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:665
+msgid "services: corrected DNS forwarder settings save in mobile layout"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:666
+msgid "dashboard: fix gateway widget status text update"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:667
+msgid "plugins: corrected firewall interface usage for multi-point VPNs"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:668
+msgid "vpn: removed the stale OpenVPN windows installer binaries"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:669
+msgid "vpn: default to IPsec main mode"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:670
+msgid ""
+"lang: assorted translation fixes (contributed by Fabian Franz and Antonio"
+" Prado)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:672
+msgid "lang: translation updates for Chinese, French, German and Japanese"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:678
+msgid "16.7.1 (August 02, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:681
+msgid ""
+"Thanks again for the warm welcome of the 16.7 series!  The feedback has "
+"been overwhelming, quite positively so.  It was partly addressed in to be"
+" released code, shall be weaved into the upcoming roadmap or will be "
+"further discussed in our forums.  Every wee bit counts on our way to "
+"17.1.  :)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:687
+msgid ""
+"This release addresses a pressing issue with the Intel e1000 driver in "
+"conjunction with IPS mode.  For now, a piece of code that went into "
+"FreeBSD 10.3 has been reverted to bring back stability, but we are "
+"working with the author on a more permanent solution."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:694
+msgid "system: default config now disables hardware offloading features"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:695
+msgid "system: prevent carp demotion on sender and pfsync failures"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:696
+msgid "firewall: removed obsolete reflection timeout value"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:697
+msgid "firewall: added logging option for outbound NAT"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:698
+msgid "firewall: fix interface address IPv6 outbound NAT"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:699
+msgid "firewall: fix one-to-one copy feature"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:700
+msgid "firewall: execute custom scrub rules before auto-generated rules"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:701
+msgid "firmware: fixed race on base / kernel fetch"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:702
+msgid "firmware: revoke the obsoleted 16.1 update fingerprint"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:703
+msgid "interfaces: allow default route on multi-WAN PPPoE"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:704
+msgid "interfaces: allow to set txpower for WiFi adapters"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:705
+msgid "interfaces: allow backwards-compatible interface enable"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:706
+msgid "vpn: fix faulty IPSec authenticator selection in phase 1"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:707
+msgid "mvc: add missing CRL type in certificates cache"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:708
+msgid "mvc: set robots meta to nofollow, noindex"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:709
+msgid "mvc: always show logout button in menu"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:710
+msgid ""
+"src: fix bspatch heap overflow vulnerability `[1] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-16:25.bspatch.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:711
+msgid "src: fix ICMP translation in pf"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:712
+msgid ""
+"src: revert extended descriptor format for em(4) `[2] "
+"<https://github.com/opnsense/src/commit/b0f7ff3>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:713
+msgid "src: lower spurious log notice to debug in rtsold"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:714
+msgid "plugins: os-haproxy 1.4 (contributed by Frank Wall)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:715
+msgid ""
+"ports: libressl 2.3.7 `[3] "
+"<http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-2.3.7-relnotes.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:721
+msgid "16.7 (July 28, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:752
+msgid ""
+"Please stay in touch, tell us what you think about OPNsense and how we "
+"can improve it further!  You can find us in any of these popular "
+"locations:"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:755
+msgid "Twitter: https://twitter.com/opnsense"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:756
+msgid "Forum: https://forum.opnsense.org/"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:757
+msgid "GitHub: https://github.com/opnsense"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:759
+msgid "Lastly, here are the full changes since 16.7-RC2:"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:761
+msgid "installer: fix UI glitch with overlong disk name selections"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:762
+msgid "installer: warn on low RAM as install phase can fail"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:763
+msgid ""
+"ports: suricata 3.1.1 `[1] <https://suricata-"
+"ids.org/2016/07/13/suricata-3-1-1-released/>`__ , php 5.6.24 `[2] "
+"<https://php.net/ChangeLog-5.php#5.6.24>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:764
+msgid "system: Etc/UTC is now the default time zone"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:765
+msgid "system: prevent user from deleting itself"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:766
+msgid "interfaces: register groups in the system immediately"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:767
+msgid ""
+"firmware: add subscription option for private repositories `[3] "
+"<https://forum.opnsense.org/index.php?topic=3408.0>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:768
+msgid ""
+"firmware: work around API POST problem on Chrome by deleting css source "
+"map pointer"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:769
+msgid "firewall: allow cron to set arbitrary syslog times for alias updates"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:770
+msgid "proxy: add syslog target for access_log"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:771
+msgid "reporting: can now individually flush health reports"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:772
+msgid "reporting: can now flush insight and NetFlow data"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:773
+msgid "reporting: translate interface names on health page"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:774
+msgid ""
+"reporting: shut down insight service on backup to prevent database "
+"corruption"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:775
+#, python-format
+msgid "lang: Russian is now 97% completed (contributed by Smart-Soft)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:776
+msgid "lang: minor updates in all other languages"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:804
+msgid "16.7.r2 (July 14, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:807
+msgid ""
+"16.7-RC2 is here and brings major additions to amd64 architectures: Intel"
+" Hyperscan library to speed up Suricata rule matching and UEFI boot "
+"support! It also brings language packs to their correct 16.7 state, with "
+"Japanese already having been completed by the amazing Chie Taguchi."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:812
+msgid ""
+"The mirrors have been expanded to allow trackers of -stable or -devel "
+"packages to upgrade to the release candidate.  Users of LibreSSL wanting "
+"to upgrade can now switch to OpenSSL instead of seeing upgrade errors "
+"until LibreSSL becomes available again and their systems move back to "
+"LibreSSL automatically."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:818
+msgid ""
+"Otherwise, only minor issues have been reported and fixed.  This likely "
+"means there will not be another release candidate."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:821
+msgid ""
+"New images are available from all known mirrors, checksums are found "
+"below:"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:825
+msgid "Here is the list of all changes since 16.7-RC1:"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:827
+msgid "vga: UEFI boot support on amd64"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:828
+msgid "cdrom: UEFI boot support on amd64"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:829
+msgid "nano: firmware is now always fetched to persistent storage"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:830
+msgid ""
+"ports: python 2.7.12 `[1] <https://hg.python.org/cpython/raw-"
+"file/v2.7.12/Misc/NEWS>`__ , squid 3.5.20 `[2] "
+"<http://ftp.meisei-u.ac.jp/mirror/squid/squid-3.5-ChangeLog.txt>`__ , pkg"
+" 1.8.7 `[3] <https://github.com/freebsd/freebsd-"
+"ports/commit/06593f2394>`__ , hyperscan 4.2.0 `[4] "
+"<https://01.org/hyperscan>`__"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:832
+msgid "installer: allow installation on /dev/raid devices"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:833
+msgid "installer: added a welcome message"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:834
+msgid "installer: added GPT/UEFI mode on amd64"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:835
+msgid "lang: only allow to select stable languages"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:836
+msgid ""
+"lang: first update for 16.7 with full Japanese translation (contributed "
+"by Chie Taguchi)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:838
+msgid "lang: numerous cleanups in translations (contributed by Fabian Franz)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:839
+msgid "interfaces: correctly restart all running DNS services on interface reload"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:841
+msgid "interfaces: properly configure OpenVPN interfaces on bootup"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:842
+msgid "interfaces: fix iteration over empty interface array"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:843
+msgid ""
+"interfaces: do not show dhcpd6 service when prefix delegation is not "
+"enabled"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:845
+msgid "openvpn: repaired status page to show service status"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:846
+msgid "openvpn: refactored scripting in export page"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:847
+msgid "firmware: enable trim even for GPT/UFS labeled root file systems"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:848
+msgid "firmware: removed / disabled defunct mirrors"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:849
+msgid "firmware: removed deprecated status.php page"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:850
+msgid "intrusion detection: allow to select pattern matcher, e.g. Intel Hyperscan"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:851
+msgid "wizard: fix misalignment on page titles and contents"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:852
+msgid "firewall: fix missing dependency in alias download script"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:853
+msgid "firewall: correctly skip \"//\" type comments in remote alias files"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:854
+msgid "firewall: validate IP or alias in NPT source / destination"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:855
+msgid "proxy: do not escape output twice in page"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:856
+msgid "proxy: move ACL parts to separate file and allow pre and post hooks"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:884
+msgid "16.7.r1 (July 04, 2016)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:887
+msgid ""
+"It has been 5 months since 16.1 came out.  Since then, over 1500 commits "
+"and 18 stable releases have continuously improved and enhanced the "
+"project.  Since then, thousands of new users have joined.  And, since "
+"then, our new documentation has been extended and tweaked with numerous "
+"guides, explanations and answers to your questions."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:893
+msgid ""
+"The cumulation of these efforts is this announcement of the first release"
+" candidate for 16.7.  Images are being provided to encourage to try these"
+" in a fresh setting, but the config import in the installer and the GUI "
+"work as usual so that migration is simple.  Checksums for the images can "
+"be found below.  VGA images have been omitted to permit work on the UEFI "
+"variant in the meantime."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:902
+msgid ""
+"The RC cycle will end in a month with the actual 16.7 release so that "
+"early birds will not have to reinstall afterwards.  Remember: feedback is"
+" key in this phase, feel free to contact us in any way you like and let "
+"us make 16.7 grand together."
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:907
+msgid "Here is our list of major features that were worked on since 16.1:"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:909
+msgid "SSL fingerprinting / blacklisting in the IDS/IPS"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:910
+msgid "Firewall rules category tags for easy filtering"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:911
+msgid "CPU temperature graph in system health"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:912
+msgid "Custom mirror support for firmware upgrades"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:913
+msgid "OpenVPN client-specific overrides can now be bound to selected servers"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:914
+msgid "Added RFC 4638 support (MTU > 1492 in PPPoE)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:915
+msgid "NTP can now be disabled if required"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:916
+msgid "New category-based remote ACL support in proxy server"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:917
+msgid "ICAP configuration aded to proxy server"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:918
+msgid "Pluggable service infrastructure"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:919
+msgid "Pluggable syslog infrastructure"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:920
+msgid "Finished a full sweep of visible GUI pages for improved look and feel"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:921
+msgid "HTTPS proxy support"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:922
+#, python-format
+msgid "Russian translations 100% completed"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:923
+msgid "NetFlow export to multiple remote destinations"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:924
+msgid "NetFlow local reporting frontend"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:925
+msgid "PPTP, L2TP and PPPoE Servers ported to MPD5"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:926
+msgid "HAProxy plugin"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:927
+msgid "Traffic shaping with CoDel / FQ-CoDel"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:928
+msgid "Firewall alias geolocation support"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:929
+msgid "Cron GUI and API"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:930
+#, python-format
+msgid "Japanese translations 100% completed"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:931
+msgid "Dashboard revamp with multi-column support, drag and drop and mini API"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:932
+msgid "RFC 6238 (TOTP) support for two-factor authentication"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:933
+msgid "HardenedBSD ASLR implementation"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:934
+msgid "High availability page for remote service status and start/stop/restart"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:935
+msgid "API commands for remote reboot and power off"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:936
+msgid "Firmware page resume support and cron-based \"nightly\" updates"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:937
+msgid "opnsense-patch, the tremendously nifty patching tool"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:938
+msgid "Traffic graphs frontend has been replaced by a modern alternative"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:939
+msgid ""
+"PPTP, L2TP and PPPoE Servers are now individual plugins no longer found "
+"in the default installation"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:941
+msgid "Pluggable interface infrastructure"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:942
+msgid "New firewall GUI page for custom scrubbing rules (normalisation)"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:943
+msgid "Removal of proxy-based NAT reflection"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:944
+msgid "No more custom PHP modules"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:945
+msgid "FreeBSD 10.3"
+msgstr ""
+
+#: ../../source/releases/CE_16.7.rst:946
+msgid "Suricata 3.1"
+msgstr ""
+

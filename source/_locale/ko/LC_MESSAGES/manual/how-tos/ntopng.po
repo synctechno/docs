@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/ntopng.rst:3
+msgid "ntopng"
+msgstr ""
+
+#: ../../source/manual/how-tos/ntopng.rst:7
+msgid "Installation"
+msgstr ""
+
+#: ../../source/manual/how-tos/ntopng.rst:9
+msgid ""
+"First of all, you have to install the ntopng plugin (os-ntopng) from the "
+"plugins view reachable via :menuselection:`System --> Firmware --> "
+"Plugins`."
+msgstr ""
+
+#: ../../source/manual/how-tos/ntopng.rst:12
+msgid ""
+"After a page reload you will get a new menu entry under **Services** for "
+"ntopng. If you don't have Redis plugin installed, you'll receive a "
+"warning in ntopng main menu. Please go back to :menuselection:`System -->"
+" Firmware --> Plugins`, install os-redis, change to "
+":menuselection:`Services --> Redis` and just enable the service. That's "
+"enough to run ntopng."
+msgstr ""
+
+#: ../../source/manual/how-tos/ntopng.rst:19
+msgid "General Settings"
+msgstr ""
+
+#: ../../source/manual/how-tos/ntopng.rst
+msgid "Enable ntopng"
+msgstr ""
+
+#: ../../source/manual/how-tos/ntopng.rst:22
+msgid "Enable and start ntopng."
+msgstr ""
+
+#: ../../source/manual/how-tos/ntopng.rst
+msgid "Interfaces"
+msgstr ""
+
+#: ../../source/manual/how-tos/ntopng.rst:24
+msgid ""
+"Here you set the interfaces ntopng should listen on. If you don't select "
+"any interface it listens to the first in the system, e.g. em0, but you "
+"can change the interfaces within ntopng's UI on demand; while setting an "
+"explicit interface you wont get any other interface presented in its own "
+"UI."
+msgstr ""
+
+#: ../../source/manual/how-tos/ntopng.rst
+msgid "HTTP Port"
+msgstr ""
+
+#: ../../source/manual/how-tos/ntopng.rst:29
+msgid ""
+"The port ntopng's UI should listen on. When you leave it on the default "
+"just open a browser and go to your Firewall IP with port 3000 and HTTP. "
+"If you want to secure the connection feel free to setup HAProxy or Nginx "
+"as a reverse proxy (SSL offloading)."
+msgstr ""
+
+#: ../../source/manual/how-tos/ntopng.rst
+msgid "DNS Mode"
+msgstr ""
+
+#: ../../source/manual/how-tos/ntopng.rst:33
+msgid "Here you can choose if ntopng should try to resolve IPs to host names."
+msgstr ""
+

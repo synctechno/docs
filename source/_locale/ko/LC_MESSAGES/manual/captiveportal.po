@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/captiveportal.rst:3
+msgid "Captive portal & GuestNET"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:4
+msgid ""
+"A **Captive Portal** allows you to force authentication, or redirection "
+"to a click through page for network access. This is commonly used on "
+"hotspot networks, but is also widely used in corporate networks for an "
+"additional layer of security on wireless or Internet access."
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:13
+msgid "Typical Applications"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:14
+msgid "Guest Network"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:15
+msgid "Hotel & Camping Wi-Fi Access"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:16
+msgid "Bring Your Own Device (BYOD)"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:20
+msgid "Template Management"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:21
+msgid ""
+"OPNsense’s unique template manager makes setting up your own login page "
+"an easy task. At the same time it offers additional functionalities, such"
+" as:"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:24
+msgid "URL redirection"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:25
+msgid "Option for your own Pop-up"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:26
+msgid "Custom Splash page"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:32
+msgid "Zone Management"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:33
+msgid ""
+"Different zones can be setup on each interface or multiple interfaces can"
+" share one zone setup. Each Zone can use a different Captive Portal "
+"Template or share it with another zone."
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:39
+msgid "Authentication"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:40
+msgid ""
+"Secure authentication via HTTPS or splash-only portal with URL "
+"redirection to a given page Different sources can be used to authenticate"
+" a user in a zone:"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:43
+msgid "LDAP [Microsoft Active Directory]"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:44
+msgid "Radius"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:45
+msgid "Local user manager"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:46
+msgid "Vouchers / Tickets"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:47
+msgid "No authentication (Splash Screen Only)"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:48
+msgid "Multiple (a combination of above)"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:52
+msgid "Voucher Manager"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:53
+msgid ""
+"OPNsense's Captive Portal has an easy voucher creation system that "
+"exports the vouchers to a csv file for use with your favorite "
+"application. The export allows you to print vouchers by merging them with"
+" your Microsoft Word or LibreOffice template and create a good looking "
+"handout with your logo and company style."
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:60
+msgid "Timeouts & Welcome Back"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:61
+msgid ""
+"Connection can be terminated after the user has been idle for a certain "
+"amount of time (idle timeout) and/or force a disconnect when a number of "
+"minutes have passed even if the user is still active (hard timeout). In "
+"case a user reconnects within the idle timeout and/or hard timeout no "
+"login is required and the user can resume its active session."
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:69
+msgid "Bandwidth Management"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:70
+msgid "The Built-in traffic shaper can be utilized to:"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:72
+msgid "Share bandwidth evenly"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:73
+msgid "Give priority to protocols port numbers and/or IP addresses"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:75
+msgid "See also: :doc:`/manual/shaping`"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:79
+msgid "Portal bypass"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:80
+msgid "MAC and IP addresses can be white listed to bypass the portal."
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:85
+msgid "Real Time Reporting"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:86
+msgid "Basic Real Time Reporting is Integrated"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:88
+msgid "Live top IP bandwidth usage (Traffic Graph)"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:89
+msgid "Active Sessions"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:90
+msgid "Time left on Vouchers"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:94
+msgid "Category based Web Filtering"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:95
+msgid ""
+"By combining the Captive Portal with the caching proxy it is possible to "
+"utilize category web filtering and block certain content for the users "
+"and by enabling the cache reduce bandwidth and improve response times. "
+"See also: :doc:`/manual/proxy`"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:101
+msgid "Platform Integration"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:102
+msgid ""
+"Through the integrated REST API the captive portal application can be "
+"integrated with other services. See: :doc:`/development/how-tos/api`"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:107
+msgid "Configure the Portal"
+msgstr ""
+
+#: ../../source/manual/captiveportal.rst:108
+msgid ""
+"To setup a hotspot controller for business or hotel usage see: :doc:`how-"
+"tos/guestnet`"
+msgstr ""
+

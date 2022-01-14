@@ -1,0 +1,455 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/proxytransparent.rst:3
+msgid "Setup Transparent Proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:4
+msgid ""
+"OPNsense offers a powerful proxy that can be used in combination with "
+"category based web filtering and any ICAP capable anti virus/malware "
+"engine. The proxy can be configured to run in transparent mode, this mean"
+" the clients browser does not have to be configured for the web proxy, "
+"but all traffic is diverted to the proxy automatically by utilizing "
+"Network Address Translation."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:10
+msgid ""
+"In this How To, we will explain the basic HTTP as well as HTTPS (SSL "
+"bump) transparent proxy modes."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:14
+msgid ""
+"The Transparent SSL/HTTPS proxy mode uses a technique also called man-in-"
+"the-middle, only configure and use this if you know what you are doing. "
+"When configured incorrectly you may end up in lessening your security "
+"defenses significantly instead of enhancing them. Using a transparent "
+"HTTPS proxy can be a dangerous practice and may not be allowed by the "
+"services you use, for instance e-banking."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:21
+msgid "Step 1 - Basic Proxy Setup"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:22
+msgid ""
+"To setup the transparent mode(s) a functional basic proxy setup is "
+"required. For basic configuration please refer to :doc:`cachingproxy`."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:26
+msgid "Step 2 - Transparent HTTP"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:27
+msgid "Go to :menuselection:`Services --> Web Proxy --> Administration`"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:29
+msgid "Then select **General Forward Settings** under the **Forward Proxy Tab**."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:31
+msgid "Select **Enable Transparent HTTP proxy** And Click **Apply**."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:35
+msgid "Step 3 - NAT/Firewall Rule"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:36
+msgid ""
+"A simple way to add the NAT/Firewall Rule is to click the **(i)** icon on"
+" the left of the **Enable Transparent HTTP proxy** option and click on "
+"**add a new firewall rule**."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:42
+#: ../../source/manual/how-tos/proxytransparent.rst:126
+msgid "**For reference, these are the default settings:**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:45
+#: ../../source/manual/how-tos/proxytransparent.rst:129
+msgid "**Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:45
+#: ../../source/manual/how-tos/proxytransparent.rst:129
+msgid "LAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:46
+#: ../../source/manual/how-tos/proxytransparent.rst:130
+msgid "**TCP/IP VERSION**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:46
+#: ../../source/manual/how-tos/proxytransparent.rst:130
+msgid "IPv4"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:47
+#: ../../source/manual/how-tos/proxytransparent.rst:131
+msgid "**Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:47
+#: ../../source/manual/how-tos/proxytransparent.rst:131
+msgid "TCP"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:48
+#: ../../source/manual/how-tos/proxytransparent.rst:132
+msgid "**Source**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:48
+#: ../../source/manual/how-tos/proxytransparent.rst:132
+msgid "LAN net"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:49
+#: ../../source/manual/how-tos/proxytransparent.rst:133
+msgid "**Source port range**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:49
+#: ../../source/manual/how-tos/proxytransparent.rst:133
+msgid "any - any"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:50
+#: ../../source/manual/how-tos/proxytransparent.rst:134
+msgid "**Destination**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:50
+#: ../../source/manual/how-tos/proxytransparent.rst:134
+msgid "any"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:51
+#: ../../source/manual/how-tos/proxytransparent.rst:135
+msgid "**Destination port range**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:51
+msgid "HTTP - HTTP"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:52
+#: ../../source/manual/how-tos/proxytransparent.rst:136
+msgid "**Redirect target IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:52
+#: ../../source/manual/how-tos/proxytransparent.rst:136
+msgid "127.0.0.1"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:53
+#: ../../source/manual/how-tos/proxytransparent.rst:137
+msgid "**Redirect target port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:53
+msgid "other/3128"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:54
+#: ../../source/manual/how-tos/proxytransparent.rst:138
+msgid "**Description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:54
+#: ../../source/manual/how-tos/proxytransparent.rst:138
+msgid "redirect traffic to proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:55
+#: ../../source/manual/how-tos/proxytransparent.rst:139
+msgid "**NAT reflection**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:55
+#: ../../source/manual/how-tos/proxytransparent.rst:139
+msgid "Enable"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:56
+#: ../../source/manual/how-tos/proxytransparent.rst:140
+msgid "**Filter rule association**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:56
+#: ../../source/manual/how-tos/proxytransparent.rst:140
+msgid "Add associated filter rule"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:59
+#: ../../source/manual/how-tos/proxytransparent.rst:143
+msgid "The defaults should be alright, just press **Save** and **Apply Changes**."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:62
+msgid "Step 4 - CA for Transparent SSL"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:63
+msgid ""
+"Before we can setup transparent SSL/HTTPS proxy we need to create a "
+"Certificate Authority. Go to :menuselection:`System --> Trust --> "
+"Authorities` or use the search box to get there fast."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:70
+msgid ""
+"Click on **add or import ca** in the upper right corner of the screen to "
+"create a new CA."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:73
+msgid "For our example we use the following data:"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:76
+msgid "**Descriptive name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:76
+msgid "OPNsense-SSL"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:77
+msgid "**Method**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:77
+msgid "Create an internal Certificate Authority"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:78
+msgid "**Key length (bits)**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:78
+msgid "2048"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:79
+msgid "**Digest Algorithm**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:79
+msgid "SHA256"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:80
+msgid "**Lifetime (days)**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:80
+msgid "356"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:81
+msgid "**Country Code**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:81
+msgid "NL (Netherlands)"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:82
+msgid "**State or Province**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:82
+msgid "Zuid Holland"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:83
+msgid "**City**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:83
+msgid "Middelharnis"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:84
+msgid "**Organization**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:84
+msgid "OPNsense"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:85
+msgid "**Email Address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:85
+msgid "spam@opnsense.org"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:86
+msgid "**Common Name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:86
+msgid "opnsense-ssl-ca"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:89
+msgid "**Save**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:92
+msgid "Step 5 - Transparent SSL"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:93
+msgid ""
+"Go to :menuselection:`Services --> Web Proxy --> Administration` Then "
+"select **General Forward Settings** under the **Forward Proxy Tab**."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:96
+msgid ""
+"Select **Enable SSL mode** and set **CA to use** to the CA you have just "
+"created. Then Click **Apply**."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:100
+msgid "Step 6 - Configure No SSL Bump"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:101
+msgid ""
+"This step is very important and requires careful consideration! To make "
+"sure that known sites are not bumped and keep their original security "
+"layer intact, one needs to add those including all subdomain to the **SSL"
+" no bump sites** field."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:106
+msgid ""
+"To enter a new item type in the field and hit enter to accept. start with"
+" a . (dot) to add all subdomains as well. Example: To add all of "
+"paypal.com , type .paypal.com and hit enter."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:111
+msgid ""
+"Make sure that all banking sites and sites that you provide personal or "
+"login information for are added to this field. If you are not sure what "
+"to add, please reconsider using transparent SSL as its clearly not "
+"intended for you!"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:119
+msgid "Step 7 - SSL NAT/Firewall Rule"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:120
+msgid ""
+"A simple way to add the NAT/Firewall Rule is to click on the **(i)** icon"
+" on the left of the **Enable SSL mode** option and click on **add a new "
+"firewall rule**."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:135
+msgid "HTTPS - HTTPS"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:137
+msgid "other/3129"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:146
+msgid "Step 8 - Configure OS/Browser"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:147
+msgid ""
+"Since the CA is not trusted by your browser, you will get a message about"
+" this for each page you visit. To solve this you can import the Key into "
+"your OS and set as trusted. To export the Key go to "
+":menuselection:`System --> Trust --> Authorities` and click on the icon "
+"to export the CA certificate. Of course one may choose to accept the "
+"certificate for each page manually, but for some pages that may not work "
+"well unless not bumped."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:156
+msgid ""
+"Import and change trust settings on your favorite OS. For example, on "
+"macOS it looks like this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:163
+msgid ""
+"Again be very careful with this as your system will accept any page "
+"signed with this CA certificate. As long as no-one gains access to the "
+"private key that is no problem, but if any one can get a get a hold of it"
+" then all traffic can be decrypted except those in the *do not bump* "
+"list. You have been warned!"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:169
+msgid ""
+"On Android devices, you may get notified about the device being unable to"
+" access the internet. This happens because the certificates are pinned to"
+" protect the connection against man in the middle attacks otherwise "
+"trusted certificates. If you want to make the connection work again, you "
+"have to whitelist the following Google domains in your \"No Bump Hosts\" "
+"settings."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:175
+msgid ""
+"Your local Google domain (for example: google.at for Austria, google.de "
+"for Germany, …)"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:176
+msgid ".google.com"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:177
+msgid ".googleapis.com"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:178
+msgid ".gstatic.com"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:179
+msgid ".1e100.net"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxytransparent.rst:181
+msgid "**DONE**"
+msgstr ""
+

@@ -1,0 +1,295 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/dnsmasq.rst:3
+msgid "Dnsmasq DNS"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:5
+msgid ""
+"Dnsmasq is a lightweight, easy to configure, DNS forwarder, which can be "
+"used to answer to dns queries from your network."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:8
+msgid ""
+"Similar functionality is also provided by \"Unbound DNS\", our standard "
+"enabled forward/resolver service."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:10
+msgid ""
+"In some cases people prefer to use dnsmasq or combine it with our default"
+" enabled resolver (Unbound)."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:14
+msgid ""
+"Since OPNsense 17.7 Unbound has been our standard DNS service, the main "
+"reason for Dnsmasq being shipped in our product is for compatibility. "
+"Although there are some use-cases that require Dnsmasq specifically, most"
+" users better opt for Unbound."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:21
+msgid "General settings"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:23
+msgid ""
+"Most settings are pretty straightforward here when the service is "
+"enabled, it should just start forwarding dns requests when received from "
+"the network."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:29
+msgid "Enable"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:29
+msgid "Enable our DNS Forwarder"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:30
+msgid "Listen Port"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:30
+msgid ""
+"The port used for responding to DNS queries, when empty the standard (53)"
+" will be used."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:32
+msgid "Network Interfaces"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:32
+msgid ""
+"The interfaces to listen on, when using dynamic interfaces it's not "
+"recommended to bind to addresses from these interfaces. [All] is the "
+"standard, in which case you can limit access using the firewall."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:35
+msgid "Bind Mode / strict binding"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:35
+msgid ""
+"When network interfaces are provided, only bind to the interfaces "
+"containing the IP addresses selected above, rather than binding to all "
+"interfaces and discarding queries to other addresses. This option does "
+"not work with IPv6. If set, Dnsmasq will not bind to IPv6 addresses."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:40
+msgid "DNSSEC"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:40
+msgid "Validate DNS replies and cache DNSSEC data."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:41
+msgid "DHCP Registration"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:41
+msgid ""
+"Register dhcp leases in Dnsmasq, so that their hostnames can be resolved."
+" (IPv4 only)"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:43
+msgid "DHCP Domain Override"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:43
+msgid ""
+"When set use the domain name specified here instead of the system domain "
+"for registering addresses."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:45
+msgid "Static DHCP"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:45
+msgid "Register static dhcp addresses as well."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:46
+msgid "Query DNS servers sequentially"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:46
+msgid ""
+"If this option is set, Dnsmasq will query the DNS servers sequentially in"
+" the order specified (System: General Setup: DNS Servers), rather than "
+"all at once in parallel."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:49
+msgid "Require domain"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:49
+msgid ""
+"If this option is set, Dnsmasq will not forward A or AAAA queries for "
+"plain names, without dots or domain parts, to upstream name servers. If "
+"the name is not known from /etc/hosts or DHCP then a \"not found\" answer"
+" is returned."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:53
+msgid "Do not forward private reverse lookups"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:53
+msgid ""
+"If this option is set, Dnsmasq will not forward reverse DNS lookups (PTR)"
+" for private addresses (RFC 1918) to upstream name servers. Any entries "
+"in the Domain Overrides section forwarding private \"n.n.n.in-addr.arpa\""
+" names to a specific server are still forwarded. If the IP to name is not"
+" known from /etc/hosts, DHCP or a specific domain override then a \"not "
+"found\" answer is immediately returned."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:59
+msgid "Log Queries"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:59
+msgid "Send the results of dns queries to the log."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:67
+msgid "Host overrides"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:69
+msgid ""
+"Here you define static hostnames, which allow you to reply a specific "
+"address when being asked, per entry the following options are available."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:75
+msgid "Host"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:75
+msgid "The hostname to register"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:76 ../../source/manual/dnsmasq.rst:92
+msgid "Domain"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:76 ../../source/manual/dnsmasq.rst:92
+msgid "The domain name to use"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:77 ../../source/manual/dnsmasq.rst:93
+msgid "IP address"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:77
+msgid ""
+"IP address of the host, can be an IPv4 (A record) or an IPv6 address "
+"(AAAA record)"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:78 ../../source/manual/dnsmasq.rst:97
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:78
+msgid "Descriptive text for this host"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:79
+msgid "Aliases"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:79
+msgid "Register alternative host + domain names for the same IP address"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:85
+msgid "Domain Overrides"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:87
+msgid ""
+"If a specific domain should be answered by a different DNS server, you "
+"can configure it here."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:93
+msgid "IP address of the authoritative DNS server for this domain"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:94
+msgid "Port"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:94
+msgid "Port number of the target dns server, leave blank for default (53)"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:95
+msgid "Source IP"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:95
+msgid ""
+"Source IP address for queries to the DNS server for the override domain. "
+"Leave blank unless your DNS server is accessed through a VPN tunnel."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:97
+msgid "Descriptive text for this entry"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:103
+msgid "Advanced settings"
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:105
+msgid ""
+"To configure options that are not available in the gui one can add custom"
+" configuration files on the firewall itself. Files can be added in "
+":code:`/usr/local/etc/dnsmasq.conf.d/`, these should use as extension "
+".conf (e.g. custom-options.conf). When more files are placed inside the "
+"directory, all will be included in alphabetical order."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:110
+msgid ""
+"It is the sole responsibility of the administrator which places a file in"
+" the extension directory to ensure that the configuration is valid."
+msgstr ""
+
+#: ../../source/manual/dnsmasq.rst:114
+msgid ""
+"This method replaces the ``Custom options`` settings in the Dnsmasq "
+"configuration, which was removed in version 21.1."
+msgstr ""
+

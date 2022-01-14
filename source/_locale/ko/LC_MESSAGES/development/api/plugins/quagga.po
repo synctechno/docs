@@ -1,0 +1,437 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/api/plugins/quagga.rst:2
+msgid "Quagga"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:4
+msgid "Resources (BfdController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "Method"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "Module"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "Controller"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "Command"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "``POST``"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "quagga"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "bfd"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "addNeighbor"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "delNeighbor"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "$uuid"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "``GET``"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "get"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "getNeighbor"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "$uuid=null"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "``*``"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "searchNeighbor"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "set"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "setNeighbor"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "toggleNeighbor"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "``<<uses>>``"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid ""
+"*model* `BFD.xml "
+"<https://github.com/opnsense/plugins/blob/master/net/frr/src/opnsense/mvc/app/models/OPNsense/Quagga/BFD.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:19
+msgid "Resources (BgpController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "bgp"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "addAspath"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "addCommunitylist"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "addPrefixlist"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "addRoutemap"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "delAspath"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "delCommunitylist"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "delPrefixlist"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "delRoutemap"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "getAspath"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "getCommunitylist"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "getPrefixlist"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "getRoutemap"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "searchAspath"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "searchCommunitylist"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "searchPrefixlist"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "searchRoutemap"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "setAspath"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "setCommunitylist"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "setPrefixlist"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "setRoutemap"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "toggleAspath"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "togglePrefixlist"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "toggleRoutemap"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid ""
+"*model* `BGP.xml "
+"<https://github.com/opnsense/plugins/blob/master/net/frr/src/opnsense/mvc/app/models/OPNsense/Quagga/BGP.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:57
+msgid "Resources (DiagnosticsController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "diagnostics"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "bgpneighbors"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "$format=\"json\""
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "bgproute"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "bgproute4"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "bgproute6"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "bgpsummary"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "generalroute"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "generalroute4"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "generalroute6"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "generalrunningconfig"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "ospfdatabase"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "ospfinterface"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "ospfneighbor"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "ospfoverview"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "ospfroute"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "ospfv3database"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "ospfv3interface"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "ospfv3neighbor"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "ospfv3overview"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "ospfv3route"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:81
+msgid "Resources (GeneralController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "general"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:88
+msgid "Resources (Ospf6settingsController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "ospf6settings"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "addInterface"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "delInterface"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "getInterface"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "searchInterface"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "setInterface"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "toggleInterface"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid ""
+"*model* `OSPF6.xml "
+"<https://github.com/opnsense/plugins/blob/master/net/frr/src/opnsense/mvc/app/models/OPNsense/Quagga/OSPF6.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:103
+msgid "Resources (OspfsettingsController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "ospfsettings"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "addNetwork"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "delNetwork"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "getNetwork"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "searchNetwork"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "setNetwork"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "toggleNetwork"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid ""
+"*model* `OSPF.xml "
+"<https://github.com/opnsense/plugins/blob/master/net/frr/src/opnsense/mvc/app/models/OPNsense/Quagga/OSPF.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:136
+msgid "Service (RipController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "rip"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid ""
+"*model* `RIP.xml "
+"<https://github.com/opnsense/plugins/blob/master/net/frr/src/opnsense/mvc/app/models/OPNsense/Quagga/RIP.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:145
+msgid "Service (ServiceController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "service"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "reconfigure"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "restart"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "start"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "status"
+msgstr ""
+
+#: ../../source/development/api/plugins/quagga.rst:1
+msgid "stop"
+msgstr ""
+

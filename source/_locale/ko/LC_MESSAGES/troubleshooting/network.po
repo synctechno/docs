@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/troubleshooting/network.rst:3
+msgid "Network"
+msgstr ""
+
+#: ../../source/troubleshooting/network.rst:8
+msgid "netmap (IPS, Sensei, ...)"
+msgstr ""
+
+#: ../../source/troubleshooting/network.rst:10
+msgid ""
+"Netmap is a technology which enables fast packet processing while "
+"minimizing overhead, there are however some pittfals which may turn your "
+"network interface unreachable."
+msgstr ""
+
+#: ../../source/troubleshooting/network.rst:13
+msgid ""
+"Before using this technology, always make sure you have access via "
+"another interface (or console) to your firewall in case connectivity is "
+"dropped."
+msgstr ""
+
+#: ../../source/troubleshooting/network.rst:16
+msgid ""
+"In order for netmap to function properly it is imperative that all sorts "
+"of driver / hardware  acceleration is disabled "
+"(:menuselection:`Interfaces -> Settings`), this include :code:`VLAN "
+"Hardware Filtering` as well (which wasn't disabled pre 20.7)."
+msgstr ""
+
+#: ../../source/troubleshooting/network.rst:19
+msgid ""
+"Some drivers have may have additional tunables, which enable hardware "
+"acceleration, make sure to disable them as well (.e.g intel ixl has "
+":code:`hw.ixl.enable_head_writeback`, which we disable by default)"
+msgstr ""
+
+#: ../../source/troubleshooting/network.rst:22
+msgid ""
+"Below you will find a list of tunables which are know to be (partial) "
+"incompatible with netmap."
+msgstr ""
+
+#: ../../source/troubleshooting/network.rst:25
+msgid "Tunable"
+msgstr ""
+
+#: ../../source/troubleshooting/network.rst:25
+msgid "Description"
+msgstr ""
+
+#: ../../source/troubleshooting/network.rst:27
+msgid "hw.ixl.enable_head_writeback"
+msgstr ""
+
+#: ../../source/troubleshooting/network.rst:27
+msgid ""
+"Intel :code:`ixl(4)` tunable for increased tx performance, OPNsense "
+"standard value is disabled."
+msgstr ""
+

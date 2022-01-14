@@ -1,0 +1,296 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/two_factor.rst:3
+msgid "Configure 2FA TOTP & Google Authenticator"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:4
+msgid ""
+"This how-to will show you how to setup a One-time Password 2 Factor "
+"Authentication using OPNsense and Google's Authenticator. All services of"
+" OPNsense can be used with this 2FA solution."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:13
+msgid ""
+"To use the same feature with any time based one-time password token just "
+"enter the seed into the field in step 3 instead of creating a new seed. "
+"The seed needs to be in base32 format."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:19
+msgid "Step 1 - Add New Authentication Server"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:20
+msgid ""
+"To add a TOTP server go to :menuselection:`System --> Access --> Servers`"
+" and press **Add server** in the top right corner. Then fill in the form "
+"as follows:"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:24
+msgid "**Descriptive name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:24
+msgid "TOTP Server"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:24
+msgid "*Choose a server name*"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:25
+msgid "**Type**"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:25
+msgid "Local+Timebased One Time Password"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:25
+msgid "*Select the TOTP server Type*"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:26
+msgid "**Token length**"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:26
+msgid "6"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:26
+msgid "*6 for Google Authenticator*"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:27
+msgid "**Time window**"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:27
+#: ../../source/manual/how-tos/two_factor.rst:28
+msgid "*Leave Empty for Google Authenticator*"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:28
+msgid "**Grace period**"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:33
+msgid "Step 2 - Install Google Authenticator"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:34
+msgid ""
+"Go to the App Store of your platform and search for Google Authenticator."
+" Install using the normal procedure for your device."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:39
+msgid "Step 3 - Add or modify user"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:40
+msgid ""
+"For this example we will create a new user, go to :menuselection:`System "
+"--> Access --> Users` and click on the plus sign in the lower right "
+"corner."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:43
+msgid ""
+"Enter a **Username** and **Password** and fill in the other fields just "
+"as you would do for any other user. Then select the **Generate new "
+"(160bit) secret** under **OTP seed**."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:46
+msgid "When done press **Save**."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:50
+msgid "Step 4 - Activate Authenticator for this OTP seed"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:51
+msgid ""
+"To activate your new OTP seed on the Google Authenticator, first reopen "
+"the user you just created by clicking on the pencil icon."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:57
+msgid "Now it will show a QR code:"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:64
+msgid ""
+"Be very careful with the seed or QR code as this is the only thing you "
+"need to calculate the token. **KEEP YOUR SEED/QR CODE SAFE !**"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:68
+msgid ""
+"Now open your Google Authenticator compatible application and select the "
+"option to start the configuration and then scan the QR code or "
+"alternatively enter the seed directly."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:72
+msgid "In case of SailOTP the configuration works like this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:77
+msgid ""
+"Pull down to open the application menu and choose the entry to add a new "
+"Token."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:82
+msgid ""
+"In the next step, you have to scan the previously created QR code by "
+"clicking on the screen."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:88
+msgid ""
+"When the QR code is scanned, a new view will open where you can see the "
+"details of the result. This view can be used to check if the generated "
+"key and OTP settings of the scan results do match your settings. Confirm "
+"if everything is ok by clicking \"Add\"."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:93
+msgid ""
+"After this step, you will be back on the home screen of the app and will "
+"get a Token for 30 Seconds."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:96
+msgid ""
+"Please note that there are many apps to generate the token. Some well "
+"known are:"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:99
+msgid "Name"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:99
+msgid "Platform"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:99
+msgid "URL"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:101
+msgid "FreeOTP"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:101
+#: ../../source/manual/how-tos/two_factor.rst:102
+msgid "Android, iOS"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:101
+msgid "https://freeotp.github.io/"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:102
+msgid "Google Authenticator"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:102
+msgid "https://www.google.com/landing/2step/"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:107
+msgid "Step 5 - Test the token"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:108
+msgid ""
+"For testing the user authentication, OPNsense offers a simple tester. Go "
+"to :menuselection:`System --> Access --> Tester`"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:111
+msgid ""
+"Select the Authentication server you have configured, and enter the user "
+"name. Then enter the ***token** + **password**, remember the order is "
+"token and then password **in the same field**."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:116
+msgid ""
+"Password field should be used to enter both token and your password, "
+"like: **Password:** 123456PASSWORD when the default configuration is "
+"used. The OTP authentication server can also be configured to have it in "
+"the reverse order like PASSWORD123456."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:122
+msgid ""
+"Hit the test button and if all goes well you should see *successfully "
+"authenticated*."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:129
+msgid "Step 6 - Enable authentication server"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:130
+msgid ""
+"Per default the system validates user credentials against the \"Local "
+"Database\". In :menuselection:`System --> Settings --> Administration`, "
+"section **Authentication** you should change this to your newly added "
+"authentication server to make sure no local user can gain access without "
+"2FA."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:135
+msgid "**Note: Make sure you've tested your token!**"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:143
+msgid "Step 7 - Using the token"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:144
+msgid ""
+"To use the token in any application/service that you have configured, "
+"just open the Google Authenticator and add the created token/key "
+"**before** your regular password."
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:148
+msgid ""
+"Remember, you need to enter the token **before** or **after** you "
+"password (depending on your configuration)! And the password field should"
+" be used to enter both token and your password, like: **Password:** "
+"123456PASSWORD"
+msgstr ""
+
+#: ../../source/manual/how-tos/two_factor.rst:153
+msgid "The code will change every 30 seconds. Sample code:"
+msgstr ""
+

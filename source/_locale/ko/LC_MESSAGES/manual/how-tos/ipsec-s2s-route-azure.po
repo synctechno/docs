@@ -1,0 +1,770 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:3
+msgid "Microsoft Azure Route-based VPN"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:5
+msgid "Microsoft Azure offers three VPN types:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:7
+msgid "policy-based (restricted to a single S2S connection)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:8
+msgid "route-based"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:9
+msgid ""
+"route-based with BGP (not available in the virtual network gateway SKU "
+"\"Basic\")"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:11
+msgid "This how-to covers setting up a route-based S2S VPN."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:15
+msgid "Before you start"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:16
+msgid ""
+"Before starting with the configuration of an IPsec tunnel you need to "
+"have a working OPNsense installation and an Azure virtual network setup "
+"with a unique LAN IP subnets for each side of your connection (your local"
+" networks need to be different from your remote networks)."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:21
+msgid ""
+"For setting up a Microsoft Azure virtual network and virtual network "
+"gateway refer to the Microsoft Azure documentation:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:24
+msgid ""
+"https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-"
+"site-to-site-resource-manager-portal"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:28
+msgid "Sample Setup"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:29
+msgid ""
+"This sample configuration uses an OPNsense box and the basic Azure "
+"virtual network gateway, with the following configuration:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:33
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:35
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:284
+msgid "OPNsense"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:35
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:48
+msgid "**Hostname**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:36
+msgid "**WAN IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:36
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:230
+msgid "1.2.3.4"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:37
+msgid "**LAN Network**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:37
+msgid "192.168.1.1/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:45
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:48
+msgid "Azure"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:49
+msgid "**Virtual Network Gateway Public IP**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:49
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:87
+msgid "4.3.2.1"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:50
+msgid "**Virtual Network Address Space**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:50
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:302
+msgid "192.168.2.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:59
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:261
+msgid "Firewall Rules OPNsense"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:60
+msgid ""
+"To allow IPsec tunnel connections, the following should be allowed on WAN"
+" for on sites (under :menuselection:`Firewall --> Rules --> WAN`):"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:63
+msgid "Protocol ESP"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:64
+msgid "UDP Traffic on port 500 (ISAKMP)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:65
+msgid "UDP Traffic on port 4500 (NAT-T)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:72
+msgid "You can further limit the traffic by the source IP of the remote host."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:76
+msgid "Step 1 - Phase 1 OPNsense"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:77
+msgid ""
+"(Under :menuselection:`VPN --> IPsec --> Tunnel Settings` Press **+**) We"
+" will use the following settings:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:81
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:150
+msgid "General information"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:83
+msgid "**Connection method**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:83
+msgid "Respond only"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:84
+msgid "**Key Exchange version**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:84
+msgid "V2"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:85
+msgid "**Internet Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:85
+msgid "IPv4"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:86
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:287
+msgid "**Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:86
+msgid "WAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:86
+msgid "*Choose the interface connected to the internet*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:87
+msgid "**Remote gateway**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:87
+msgid "*The public IP address of your Azure virtual network*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:88
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:153
+msgid "**Description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:88
+msgid "IPsec Azure"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:88
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:153
+msgid "*Freely chosen description*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:93
+msgid "Phase 1 proposal (Authentication)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:95
+msgid "**Authentication method**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:95
+msgid "Mutual PSK"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:95
+msgid "*Using a Pre-shared Key*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:96
+msgid "**My identifier**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:96
+msgid "My IP address"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:96
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:97
+msgid "*Simple identification for fixed IP*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:97
+msgid "**Peer identifier**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:97
+msgid "Peer IP address"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:98
+msgid "**Pre-Shared Key**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:98
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:252
+msgid "At4aDMOAOub2NwT6gMHA"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:98
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:252
+msgid "*Random key*. **CREATE YOUR OWN!**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:102
+msgid "Phase 1 proposal (Algorithms)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:104
+msgid "**Encryption algorithm**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:104
+msgid "AES 256"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:104
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:167
+msgid "*refer to Azure docs for details*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:105
+msgid "**Hash algoritm**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:105
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:168
+msgid "SHA256"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:106
+msgid "**DH key group**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:106
+msgid "2 (1024 bit)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:107
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:170
+msgid "**Lifetime**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:107
+msgid "28800 sec"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:107
+msgid "*Lifetime before renegotiation*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:112
+msgid ""
+"Possible parameters are listed here: https://docs.microsoft.com/en-"
+"us/azure/vpn-gateway/vpn-gateway-about-vpn-devices"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:117
+msgid "Advanced Options"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:119
+msgid "**Install Policy**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:119
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:120
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:121
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:123
+msgid "Unchecked"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:119
+msgid "*This has to be unchecked since we want plain routing*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:120
+msgid "**Disable Rekey**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:120
+msgid "*Renegotiate when connection is about to expire*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:121
+msgid "**Disable Reauth**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:121
+msgid "*For IKEv2 only re-authenticate peer on rekeying*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:122
+msgid "**NAT Traversal**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:122
+msgid "Disable"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:122
+msgid "*For IKEv2 NAT traversal is always enabled*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:123
+msgid "**Dead Peer Detection**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:127
+msgid "Save your setting by pressing:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:134
+msgid "Step 2 - Phase 2 OPNsense"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:135
+msgid "Press the button that says '+ Show 0 Phase-2 entries'"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:139
+msgid "You will see an empty list:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:144
+msgid ""
+"Now press the **+** at the right of this list to add a Phase 2 entry. As "
+"we do not define a local and remote network, we just use tunnel "
+"addresses, you might already know from OpenVPN. In this example we use "
+"``10.111.1.1`` and ``10.111.1.2``. These will be the gateway addresses "
+"used for routing"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:152
+msgid "**Mode**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:152
+msgid "Route-based"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:152
+msgid "*Select Route-based*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:153
+msgid "Azure VNET"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:157
+msgid "Tunnel Network"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:159
+msgid "**Local Address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:159
+msgid "Local Tunnel IP"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:159
+msgid "*Set IP 10.111.1.1*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:160
+msgid "**Remote Address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:160
+msgid "Remote Tunnel IP"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:160
+msgid "*Set IP 10.111.1.2*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:164
+msgid "Phase 2 proposal (SA/Key Exchange)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:166
+msgid "**Protocol**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:166
+msgid "ESP"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:166
+msgid "*Choose ESP for encryption*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:167
+msgid "**Encryption algorithms**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:167
+msgid "AES / 256"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:168
+msgid "**Hash algortihms**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:169
+msgid "**PFS Key group**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:169
+msgid "off"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:169
+msgid "*Not supported*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:170
+msgid "27000 sec"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:173
+msgid "Save your settings by pressing:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:179
+msgid "Enable IPsec for OPNsense, select:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:183
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:211
+msgid "Save:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:187
+msgid "And apply changes:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:199
+msgid "Step 3 - Set MSS Clamping"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:200
+msgid ""
+"(Under :menuselection:`Interfaces --> IPsec Azure`) We will use the "
+"following settings:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:204
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:227
+msgid "Setup"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:206
+msgid "**MSS**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:206
+msgid "1350"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:206
+msgid "*Required*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:209
+msgid "Leave the other settings as per default."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:215
+msgid ""
+"**You are almost done configuring OPNsense (only some firewall settings "
+"remain, which will be addressed later).** **We will now proceed setting "
+"up Azure.**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:222
+msgid "Step 4 - Azure: Setup local network gateway"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:223
+msgid ""
+"(Under `All resources` press **+ Add**, then search and **Create** `Local"
+" network gateway`) We will use the following settings:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:229
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:248
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:286
+msgid "**Name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:229
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:251
+msgid "lng.opnsense"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:229
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:248
+msgid "*Freely chosen name*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:230
+msgid "**IP address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:230
+msgid "*The public IP address of your remote OPNsense*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:231
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:232
+msgid "**Address space**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:231
+msgid "192.168.1.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:231
+msgid "*LAN Network*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:232
+msgid "10.111.1.1/32"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:232
+msgid "*Local Tunnel IP*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:235
+msgid "Press the button that says 'Create':"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:241
+msgid "Step 5 - Azure: Setup VPN connection"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:242
+msgid ""
+"(Under `All resources --> Virtual network gateway --> Connections` Press "
+"**+ Add**) We will use the following settings:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:246
+msgid "General setup"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:248
+msgid "vpn.opnsense"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:249
+msgid "**Connection type**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:249
+msgid "Site-to-site (IPsec)"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:250
+msgid "**Virtual network gateway**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:250
+msgid "vpn.gw"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:250
+msgid "*Select virtual network gateway*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:251
+msgid "**Local network gateway**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:251
+msgid "*Select local network gateway*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:252
+msgid "**Shared Key (PSK)**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:255
+msgid "Press the button that says 'OK':"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:263
+msgid ""
+"To allow traffic passing to your LAN subnet you need to add a rule to the"
+" IPsec interface (under :menuselection:`Firewall --> Rules --> IPsec`)."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:271
+msgid "IPsec Tunnel Ready"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:273
+msgid ""
+"The tunnel should now be up and routing the both networks. Go to "
+":menuselection:`VPN --> IPsec --> Status Overview` to see current status."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:278
+msgid "Step 6 - Define Gateways"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:280
+msgid ""
+"Now that you have the VPN up and running you have to set up a gateway. Go"
+" to :menuselection:`System --> Gateways --> Single` and add a new "
+"gateway."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:286
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:303
+msgid "VPNGW"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:286
+msgid "*Set a name for your gateway*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:287
+msgid "IPSEC1000"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:287
+msgid "*Choose the IPsec interface*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:288
+msgid "**IP Address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:288
+msgid "10.111.1.2"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:288
+msgid "*Set the peer IP address*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:289
+msgid "**Far Gateway**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:289
+msgid "Checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:289
+msgid "*This has to be checked as it is a point-to-point connection*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:294
+msgid "Step 7 - Add Static Routes"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:296
+msgid ""
+"When the gateway is set up you can add a route for the Azure virtual "
+"network pointing to the new gateway. Go to :menuselection:`System --> "
+"Routes --> Configuration`."
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:300
+msgid "Route OPNsense"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:302
+msgid "**Network Address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:302
+msgid "*Azure virtual network*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:303
+msgid "**Gateway**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:303
+msgid "*Select the VPN gateway*"
+msgstr ""
+
+#: ../../source/manual/how-tos/ipsec-s2s-route-azure.rst:306
+msgid "Now you are all set!"
+msgstr ""
+

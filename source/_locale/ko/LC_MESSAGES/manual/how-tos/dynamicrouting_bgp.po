@@ -1,0 +1,368 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:3
+msgid "Dynamic Routing: BGP"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:6
+msgid ""
+"Since OPNsense version 20.7 the frr package was updated to version 7, "
+"which requires an eBGP outbound policy by default. The requirement was "
+"disabled but it is strongly advised to use a prefix-list and filter your "
+"networks to your outbound neighbors."
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:13
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:15
+msgid "The following tables describe the most used configurations."
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:18
+msgid "General:"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:21
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:37
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:60
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:75
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:92
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:108
+msgid "Setting"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:21
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:37
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:40
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:60
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:63
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:75
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:79
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:92
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:96
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:108
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:111
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:23
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:39
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:62
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:77
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:94
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:110
+msgid "Enable"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:23
+msgid "Enables the BGP daemon"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:24
+msgid "BGP AS Number"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:24
+msgid "The internal AS number"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:25
+msgid "Router ID"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:25
+msgid "Router ID this system is uses for communication with other peers"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:26
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:83
+msgid "Network"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:26
+msgid ""
+"A list of local networks to announce. With frr version 6 this setting and"
+" an additional Null-Route was enough to announce the networks Now it is "
+"advised to add a prefix-list and link it in neighbor config"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:29
+msgid "Route Redistribution"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:29
+msgid ""
+"Allows to redistribute additional routes (static, kernel, OSPF etc.) into"
+" the BGP process. Usually this is only used with OSPF but also available "
+"here"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:34
+msgid "Neighbors:"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:39
+msgid "Enables the neighbor config"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:40
+msgid "Give a description for documentation when many neighbors are used"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:41
+msgid "Peer IP"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:41
+msgid "The IP address of the neighbor"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:42
+msgid "Remote AS"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:42
+msgid ""
+"Remote AS where this neighbor belongs to. For iBGP this has to be the "
+"same number as in General tab"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:44
+msgid "Update-Source Interface"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:44
+msgid "Interface name nearest to the peer, usually WAN for eBGP and LAN for iBGP"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:46
+msgid "Next-Hop-Self"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:46
+msgid "Enable this option if this is an iBGP neighbor"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:47
+msgid "Multi-Hop"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:47
+msgid ""
+"When the neighbor is not directly connected enable this option BGP "
+"packets usually have a TTL of 1 and would get lost otherwise"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:49
+msgid "Send Defaultroute"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:49
+msgid "Enable this option to send the neighbor itself as default gateway"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:50
+msgid "Prefix-List"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:50
+msgid ""
+"Match against linked prefix-list and direction of in and out To advertise"
+" a network to neighbor it would be direction out To filter out specific "
+"networks advertised by peer it would be in"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:53
+msgid "Route-Map"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:53
+msgid ""
+"Same as prefix-list but used with route-maps. Route-maps are more "
+"powerful compared to prefix-list but also more complex"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:57
+msgid "AS Path Lists:"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:62
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:77
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:94
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:110
+msgid "Enables the list entry"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:63
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:79
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:96
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:111
+msgid "Give a description for documentation when many entries are used"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:64
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:95
+msgid "Number"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:64
+msgid ""
+"The ACL rule number (10-99); keep in mind that there are no sequence "
+"numbers with AS-Path lists. When you want to add a new line between you "
+"have to completely remove the ACL"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:67
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:82
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:99
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:113
+msgid "Action"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:67
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:82
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:99
+msgid "Permit or Deny for this list. This can also be done via route-map"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:68
+msgid "AS"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:68
+msgid ""
+"A regular expression to match for AS Paths like *.$*. This is typically "
+"used for path prepending"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:72
+msgid "Prefix Lists:"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:78
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:112
+msgid "Name"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:78
+msgid "Prefix Lists are named lists so they are not grouped by a number"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:80
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:97
+msgid "Sequence Number"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:80
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:97
+msgid ""
+"Multiple rules can belong to a named list. With the squence number the "
+"ordering is done (top to bottom)"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:83
+msgid ""
+"The network pattern to match. It is also possible to add \"ge\" or \"le\""
+" additions after the network statement. Usually this is used to announce "
+"the local network or maybe to decline specific routes from a neighbor"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:89
+msgid "Community Lists:"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:95
+msgid "Prefix Lists are numbered lists so they are not grouped by a name"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:100
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:118
+msgid "Community"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:100
+msgid ""
+"The BGP communities attribute is widely used for implementing policy "
+"routing. Network operators can manipulate BGP communities attribute based"
+" on network policy"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:105
+msgid "Route Maps:"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:112
+msgid "Route Maps are named lists so they are not grouped by a number"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:113
+msgid "Permit or Deny for this list"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:114
+msgid "ID"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:114
+msgid ""
+"Multiple rules can belong to a route-map. With the ID the ordering is "
+"done (top to bottom)"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:116
+msgid "AS Path"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:116
+msgid "A linked AS Path to match against"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:117
+msgid "Prefix List"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:117
+msgid "A linked Prefix List to match against"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:118
+msgid "A linked Community List to match against"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:119
+msgid "Set"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:119
+msgid ""
+"Via the set statement the specified matches can be manipulated. There are"
+" many options to set communities, change the local preference for gateway"
+" selection or use metrics for MED (Multi Exit Descriminator)"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_bgp.rst:125
+msgid ""
+"Here you can find a couple of examples: "
+"http://docs.frrouting.org/en/latest/bgp.html#miscellaneous-configuration-"
+"examples"
+msgstr ""
+

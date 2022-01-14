@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/opnsense_tools.rst:3
+msgid "OPNsense Tools"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:5
+msgid ""
+"The OPNsense project offers a number of tools to instantly patch the "
+"system, revert a package to a previous (older version) state or revert "
+"the whole kernel."
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:10
+msgid "opnsense-update"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:11
+msgid ""
+"The opnsense-update utility offers combined kernel and base system "
+"upgrades using remotely fetched binary sets, as well as package upgrades "
+"via pkg. For a complete list of options look at the manpage on the "
+"system."
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:16
+msgid "Example:"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:17
+msgid ""
+"A minor update also updated the kernel and you experience some driver "
+"issues with your NIC. Open your browser and go to"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:20
+msgid "https://pkg.opnsense.org/FreeBSD:11:amd64/18.1/sets/"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:22
+msgid ""
+"Here you can see all the kernels for version 18.1. Be aware to change the"
+" version if you are on a newer version. As an example you updated from "
+"18.1.4 to 18.1.5 you have now installed kernel-18.1.5. To revert back to "
+"the last stable you can see kernel-18.1 so the syntax would be:"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:27
+msgid "# opnsense-update -kr 18.1"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:29
+#: ../../source/manual/opnsense_tools.rst:39
+msgid "# opnsense-shell reboot"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:32
+msgid "Where -k only touches the kernel and -r takes the version number."
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:35
+msgid "To switch back to the current kernel just use"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:37
+msgid "# opnsense-update -k"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:42
+msgid ""
+"Before reverting a kernel please consult the forums or open an issue via "
+"Github. You should only revert kernels on test   machines or when "
+"qualified team members advise you to do so!"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:48
+msgid "opnsense-revert"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:49
+msgid ""
+"The opnsense-revert utility offers to securely install previous versions "
+"of packages found in an OPNsense release as long as the selected mirror "
+"caches said release. For a complete list of options look at the manpage "
+"on the system."
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:54
+#: ../../source/manual/opnsense_tools.rst:88
+msgid "Example 1:"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:55
+msgid ""
+"The latest update of OPNsense to version 18.1.5 did a minor jump for the "
+"IPSec package \"strongswan\". From this moment your VPNs are unstable and"
+" only a restart helps."
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:58
+msgid ""
+"To check if the update of the package is the reason you can easily revert"
+" the package to its previous state while running the latest OPNsense "
+"version itself."
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:61
+msgid "# opnsense-revert -r 18.1.4 strongswan"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:63
+msgid ""
+"With this command you can, for example, run OPNsense 18.1.5 while using "
+"the 18.1.4 version of strongswan. If you want to go back to the current "
+"release version just do"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:66
+msgid "# opnsense-revert strongswan"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:69
+#: ../../source/manual/opnsense_tools.rst:99
+msgid "Example 2:"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:70
+msgid ""
+"The previous revert of strongswan was not the solution you expected so "
+"you try to completely revert to the previous OPNsense version:"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:73
+msgid "# opnsense-revert -r 18.1.4 opnsense"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:75
+msgid ""
+"Be aware to also check if there were kernel updates like above to also "
+"downgrade the kernel if needed!"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:80
+msgid "opnsense-patch"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:81
+msgid ""
+"The opnsense-patch utility treats all arguments as upstream git "
+"repository commit hashes, downloads them and finally applies them in "
+"order. Patches can also be reversed by reapplying them, but multiple "
+"patches must be given in reverse order to succeed. For a complete list of"
+" options look at the manpage on the system."
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:89
+msgid ""
+"In the Traffic Shaper a newly introduced typo prevents the system from "
+"setting the correct ipfw ruleset. You were asked by the developer to test"
+" a fresh patch 63cfe0a at URL "
+"https://github.com/opnsense/core/commit/63cfe0a96c83eee0e8aea0caa841f4fc7b92a8d0"
+" At the end of the page there's the short version 63cfe0a so the command "
+"would be:"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:93
+msgid "# opnsense-patch 63cfe0a"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:95
+msgid ""
+"If it doesn't fix your issue or makes it even worse, you can just reapply"
+" the command to revert it."
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:100
+msgid ""
+"You need a special feature for a plugin and ask in Github for it. A "
+"developer adds it and ask you to install the patch 699f1f2 for testing. "
+"The full link to it would be "
+"https://github.com/opnsense/plugins/commit/699f1f28a33ce0122fa0e2f5e6e1f48eb3c4f074"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:104
+msgid "# opnsense-patch -c plugins 699f1f2"
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:106
+msgid ""
+"The -c changes the default core to plugin repo and adds the patch to the "
+"system."
+msgstr ""
+
+#: ../../source/manual/opnsense_tools.rst:108
+msgid ""
+"It is also possible to add patches from different users, just add -a "
+"githubusername before -c"
+msgstr ""
+

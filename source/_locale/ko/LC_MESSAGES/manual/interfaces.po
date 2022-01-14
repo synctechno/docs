@@ -1,0 +1,654 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/interfaces.rst:3
+msgid "Interface configuration"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:5
+msgid ""
+"All traffic in OPNsense travels via interfaces. By default, WAN and LAN "
+"are assigned, but many more are possible, like GUESTNET (:doc:`captive "
+"portal </manual/captiveportal>`) and PFSYNC (:doc:`high availability "
+"</manual/hacarp>`)."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:9
+msgid ""
+"For legacy compatibility WAN interfaces set to type DHCP or interfaces "
+"with an *Upstream Gateway* send reply packets to the corresponding "
+"gateway directly, also when the sender is on the same interface. This "
+"will break connectivity in some rare scenarios and can be disabled via "
+"**Firewall->Settings->Advanced->Disable reply-to**."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:16
+msgid "Assignments"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:18
+msgid ""
+"Most interfaces have to be assigned to a physical port. By default, LAN "
+"is assigned to port 0 and WAN is assigned to port 1. Assignments can be "
+"changed by going to :menuselection:`Interfaces --> Assignments`. This "
+"lists existing interfaces, with the interface name on the left and the "
+"physical port selected in the dropdown. New ones can be created here as "
+"well, using a non-occupied physical port."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:23
+msgid ""
+"When creating a new interfaces or changing an existing one (which can be "
+"done by clicking its name in the overview), the following options are "
+"available:"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:27 ../../source/manual/interfaces.rst:58
+#: ../../source/manual/interfaces.rst:98
+msgid "Option"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:27 ../../source/manual/interfaces.rst:58
+#: ../../source/manual/interfaces.rst:98
+msgid "Explanation"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:29 ../../source/manual/interfaces.rst:32
+msgid "**General configuration**"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:30
+msgid "Enable interface"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:30
+msgid "Disable the interface without needing to remove its assignment altogether."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:31
+msgid "Prevent interface removal"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:31
+msgid ""
+"Avoids accidentally removing an interface (has to be turned off and saved"
+" before an interface can be removed)."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:33
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:33
+msgid "A short description for clarification, if the name does not suffice."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:34
+msgid "Block private networks"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:34
+msgid ""
+"Block traffic claiming to come from private addresses. On WAN interfaces,"
+" this kind of traffic should not happen legitimately."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:35
+msgid "Block bogon networks"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:35
+msgid ""
+"Block traffic claiming to come from invalid or reserved addresses "
+"(Martian packets). Note that this also includes multicast traffic using "
+"OSPF and RTMP."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:36
+msgid "IPv4 Configuration type"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:36
+msgid "How to obtain the IPv4 address for this connection."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:37
+msgid "IPv6 Configuration type"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:37
+msgid "How to obtain the IPv6 address for this connection."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:38
+msgid "MAC Address"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:38
+msgid ""
+"Can be used to spoof the MAC address. Can usually be left blank (in which"
+" case it will use the actual MAC address of the hardware)."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:39
+msgid "MTU"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:39
+msgid ""
+"`Maximum Transfer Unit "
+"<https://en.wikipedia.org/wiki/Maximum_transmission_unit>`_."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:40
+msgid "MSS"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:40
+msgid ""
+"`Maximum Segment Size "
+"<https://en.wikipedia.org/wiki/Maximum_segment_size>`_."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:41
+msgid "Speed and duplex"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:41
+msgid ""
+"It is recommended to leave this on the default, unless you know what you "
+"are doing and the setting you pick matches the one on the physical port."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:42
+msgid "Dynamic gateway policy"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:42
+msgid ""
+"If the destination is directly reachable via an interface requiring no "
+"intermediary system to act as a gateway, you can select this option which"
+" allows dynamic gateways to be created without direct target addresses. "
+"Some tunnel types support this."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:49
+msgid ""
+"When configuring VPN clients without static tunnel addresses, you can use"
+" the \"Dynamic gateway policy\" option to automatically generate gateways"
+" to the device (without address)."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:52
+msgid ""
+"In addition to these settings, the following blocks will be enabled "
+"depending on what is configured under “IPv4 Configuration type” and “IPv6"
+" Configuration type”."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:55
+msgid "For IPv4:"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:60
+msgid "**Static IPv4 configuration**"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:61
+msgid "IPv4 address"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:62
+msgid "IPv4 Upstream Gateway"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:62
+msgid ""
+"When an Upstream Gateway is set, packets entering the interface will also"
+" sent out on the same interface when replied. In addition outbound nat "
+"will be set up automatically when mode is set to *Automatic* or *Hybrid*."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:63
+msgid "**DHCP client configuration**"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:64 ../../source/manual/interfaces.rst:105
+msgid "Configuration Mode"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:65
+msgid "Alias IPv4 address"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:65
+msgid "Used as a fixed alias IPv4 address by the DHCP client."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:66
+msgid "Reject Leases From"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:66
+msgid "Can be used to ignore DHCP leases from ISP-issued modems, for example."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:67
+msgid "Hostname"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:67
+msgid ""
+"This value is sent as the DHCP client identifier and hostname when "
+"requesting a DHCP lease. Some ISPs may require this (for client "
+"identification)."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:68
+msgid "Override MTU"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:68
+msgid ""
+"An ISP may incorrectly set an MTU value which can cause intermittent "
+"network disruption. By default this value will be ignored. Unsetting this"
+" option will allow to apply the MTU supplied by the ISP instead."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:69
+msgid "**PPP configuration**"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:70
+msgid "Service Provider"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:70
+msgid ""
+"By selecting a country, provider and plan here, OPNsense can fill in the "
+"other fields for you. If your provider or plan not in the list, you have "
+"to set them manually."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:71 ../../source/manual/interfaces.rst:78
+#: ../../source/manual/interfaces.rst:86
+msgid "Username"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:72 ../../source/manual/interfaces.rst:79
+#: ../../source/manual/interfaces.rst:87
+msgid "Password"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:73
+msgid "Phone number"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:74
+msgid "Access Point Name (APN)"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:75
+msgid "Modem port"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:76
+msgid "Advanced PPP"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:76 ../../source/manual/interfaces.rst:84
+#: ../../source/manual/interfaces.rst:92
+msgid "Will take you to the Point-to-Point device settings."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:77
+msgid "**PPPoE configuration**"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:80
+msgid "Service name"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:80
+msgid "Leave blank unless specified by provider."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:81
+msgid "Host-Uniq"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:81
+msgid "See above."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:82 ../../source/manual/interfaces.rst:90
+msgid "Dial-on-demand"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:82 ../../source/manual/interfaces.rst:90
+msgid "Only connect when traffic is sent over the interface"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:83 ../../source/manual/interfaces.rst:91
+msgid "Idle timeout (seconds)"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:84
+msgid "Advanced and MLPPP"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:85
+msgid "**PPTP/L2TP configuration**"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:88
+msgid "Local IP address"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:89
+msgid "Remote IP address"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:92
+msgid "Advanced"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:95
+msgid "For IPv6:"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:100
+msgid "**Static IPv6 configuration**"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:101
+msgid "IPv6 address"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:102
+msgid "IPv6 Upstream Gateway"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:103
+#: ../../source/manual/interfaces.rst:112
+#: ../../source/manual/interfaces.rst:120
+msgid "Use IPv4 connectivity"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:103
+#: ../../source/manual/interfaces.rst:112
+#: ../../source/manual/interfaces.rst:120
+msgid "Set the IPv6 address on the IPv4 PPP connectivity link."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:104
+msgid "**DHCPv6 client configuration**"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:105
+msgid ""
+"Setting this to “Advanced” will make the settings below “Use VLAN "
+"priority” visible."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:106
+msgid "Request only an IPv6 prefix"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:106
+msgid "Only request an IPv6 prefix; do not request an IPv6 address."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:107
+msgid "Prefix delegation size"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:107
+msgid ""
+"The delegated prefix length provided by the DHCPv6 server. Normally "
+"specified by the ISP."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:108
+msgid "Send IPv6 prefix hint"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:108
+msgid ""
+"Send an IPv6 prefix hint to indicate the desired prefix size for "
+"delegation"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:109
+msgid "Directly send SOLICIT"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:109
+msgid ""
+"In case the ISP requires a SOLICIT message for authentication, select "
+"this option to prevent indefinite waiting for a router advertisement."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:110
+msgid "Prevent release"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:110
+msgid ""
+"Do not send a release message on client exit to prevent the release of an"
+" allocated address or prefix on the server."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:111
+msgid "Enable debug"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:111
+msgid "Enable debug mode for DHCPv6 client"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:113
+msgid "Use VLAN priority"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:113
+msgid ""
+"Certain ISPs may require that DHCPv6 requests are sent with a specific "
+"VLAN priority."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:114
+msgid "Interface Statement"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:114
+msgid "Click the “i” to see what the four subfields do."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:115
+msgid "Identity Association"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:116
+msgid "Prefix Interface"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:117
+msgid "Authentication"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:118
+msgid "Keyinfo"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:119
+msgid "**SLAAC configuration**"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:121
+msgid "**6RD Rapid Deployment**"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:122
+msgid "6RD prefix"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:122
+msgid "The 6RD IPv6 prefix assigned by your ISP. e.g. '2001:db8::/32'"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:123
+msgid "6RD Border Relay"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:123
+msgid "The 6RD IPv4 gateway address assigned by your ISP"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:124
+msgid "6RD IPv4 Prefix length"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:124
+msgid ""
+"The 6RD IPv4 prefix length. Normally specified by the ISP. A value of 0 "
+"means we embed the entire IPv4 address in the 6RD prefix."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:125
+msgid "6RD IPv4 Prefix address"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:125
+msgid "The 6RD IPv4 prefix address. Optionally overrides the automatic detection."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:126
+msgid "**Track IPv6 interface**"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:127
+msgid "IPv6 Interface"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:127
+msgid "This selects the dynamic IPv6 WAN interface to track for configuration."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:128
+msgid "IPv6 Prefix ID"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:128
+msgid ""
+"The delegated IPv6 prefix ID. This determines the configurable /64 "
+"network ID based on the dynamic IPv6 connection."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:129
+msgid "Manual Configuration"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:129
+msgid ""
+"If this option is set, you will be able to manually set the DHCPv6 and "
+"Router Advertisements service for this interface. Use with care."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:135
+msgid "Mobile Networking"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:140
+msgid ""
+"OPNsense supports 3G and 4G (LTE) cellular modems as failsafe or primary "
+"WAN interface. Both USB and (mini)PCIe cards are supported."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:146
+msgid "Supported Devices"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:147
+msgid ""
+"While all devices supported by HardenedBSD will likely function under "
+"OPNsense their configuration depends on a AT command string that can "
+"differ from device to device. To make thing easier some of these strings "
+"are part of a easy selectable profile."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:151
+msgid "Tested devices by the OPNsense team include:"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:153
+msgid ""
+"**Huaweu M909S-120** (device cuaUx.0) (Requires separate SIM card "
+"holder/adapter) [Tested: OPNsense 21.1]"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:154
+msgid "**Huawei ME909u-521** (device cuaUx.0)"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:155
+msgid "**Huawei E220** (device cuaUx.0)"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:156
+msgid "**Sierra Wireless MC7304** (device cuaUx.2) [as of OPNsense 16.7]"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:160
+msgid ""
+"If you have tested a cellular modem that is not on this list, but does "
+"work then please report it to the project so we can list it and inform "
+"others."
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:166
+msgid "Configure Cellular modems"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:167
+msgid ""
+"Setting up and configuring a cellular modem is easy, see: :doc:`/manual"
+"/how-tos/cellular`"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:171
+msgid "3G - 4G Cellular Failover"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:172
+msgid "To setup Cellular Failover, just follow these two how-tos:"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:174
+msgid ":doc:`/manual/how-tos/cellular`"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:175
+msgid ":doc:`/manual/how-tos/multiwan`"
+msgstr ""
+
+#: ../../source/manual/interfaces.rst:177
+msgid "Treat the cellular connection the same as a normal WAN connection."
+msgstr ""
+

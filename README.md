@@ -54,10 +54,18 @@ executed using:
 ./collect_api_endpoints.py --repo plugins /path/to/plugins/repository
 ```
 
+#### Generate po files
+```
+sphinx-intl update -p build/locale/ -l ko
+```
+
 #### Generate HTML documents
 
 ```
 make html
+make SPHINXOPTS="-D language='ko'" html
 ```
 
 (```make clean``` to flush)
+
+

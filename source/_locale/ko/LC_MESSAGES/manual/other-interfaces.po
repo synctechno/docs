@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/other-interfaces.rst:3
+msgid "Other Types"
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:5
+msgid ""
+"Besides wired, wireless and VPN interfaces, there are also some other, "
+"virtual interfaces, as well as some miscellaneous interface-related. "
+"These options can be found under :menuselection:`Interfaces --> Other "
+"types`. This document briefly explains these options."
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:11
+msgid "Bridge"
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:13
+msgid ""
+"Bridging allows to create a connection between separate networks, allow "
+"traffic on network A destined for network B (where both networks are "
+"connected to your OPNsense device) to reach it via this bridge. Note that"
+" this does not include DHCP services—this needs to set using :ref:`DHCP "
+"relaying <dhcp-relaying>`."
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:19
+msgid "GIF"
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:21
+msgid ""
+"GIF (``gif(4)``, Generic Tunnel Interface) can be used to tunnel IPv6 via"
+" IPv4 connections. A common use for this are the IPv6 tunnel of Hurricane"
+" Electric (he.net)."
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:26
+msgid "GRE"
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:28
+msgid ""
+"GRE (``gre(4)``, Generic Routing Encapsulation) is used to create a "
+"virtual point-to-point connection, through which encapsulated packages "
+"can be sent. This can be used to utilise protocols between devices over a"
+" connection that does not normally support these protocols."
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:34
+msgid "LAGG"
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:36
+msgid ""
+"LAGG (``lagg(4)``) allows for link aggregation, bonding and fault "
+"tolerance. This works best if your network switches support. Only "
+"unassigned interfaces can be added to LAGG. More information about LAGG "
+"can be found in `the FreeBSD manual <https://www.freebsd.org/doc/handbook"
+"/network-aggregation.html>`_."
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:42
+msgid "Loopback"
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:44
+msgid ""
+"Loopbacks are logical virtual interfaces which emulate real interfaces "
+"and can be used for different setup scenario's, which require always-on "
+"interfaces. Below you will find some scenario's for which these types of "
+"interfaces are used."
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:47
+msgid ""
+"Administrative access to services on your machine, which can bind to an "
+"address configured on top of the loopback."
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:48
+msgid ""
+"Using loopback addresses as router IDs for OSPF or BGP, which helps to "
+"identify your nodes and eases administration"
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:52
+msgid "VLAN"
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:54
+msgid ""
+"VLANs (Virtual LANs) can be used to segment a single physical network "
+"into multiple virtual networks. This can be done for QoS purposes, among "
+"other things. For this reason, most ISP-issued IPTV devices utilise "
+"VLANs."
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:60
+msgid "VXLAN"
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:62
+msgid ""
+"Virtual eXtensible Local Area Networks (VXLANs) are used to overlay "
+"virtualized layer 2 networks over layer 3 networks as described by "
+"`rfc7348 <https://tools.ietf.org/html/rfc7348>`__."
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:65
+msgid ""
+"Tunnels can be setup in point to point (parameter :code:`Remote address`)"
+" or multicast (parameters :code:`Multicast group` and :code:`Device`). "
+"The `Source address` must be an existing (statically assigned) address "
+"assigned at this firewall, which will be used as source in the "
+"encapsulating IPv4/IPv6 header."
+msgstr ""
+
+#: ../../source/manual/other-interfaces.rst:71
+msgid ""
+"Since the vxlan interface encapsulates the Ethernet frame with an IP, "
+"UDP, and vxlan header, the resulting frame may be larger than the MTU of "
+"the physical network.  The vxlan specification recommends the physical "
+"network MTU be configured to use jumbo frames to accommodate the "
+"encapsulated frame size. Alternatively, the MTU size on the vxlan "
+"interface might be reduced to allow the encapsulated frame to fit in the "
+"current MTU of the physical network."
+msgstr ""
+

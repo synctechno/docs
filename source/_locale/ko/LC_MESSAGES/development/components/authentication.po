@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/components/authentication.rst:3
+msgid "Authentication"
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:11
+msgid "Concepts"
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:13
+msgid ""
+"Authentication in OPNsense consists of three basic concepts, which are "
+"available throughout the entire system:"
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:15
+msgid "Authenticators"
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:17
+msgid ""
+"These implement the method to use, for example Radius, Ldap, local "
+"authentication, etc"
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:19
+msgid "Connections"
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:21
+msgid ""
+"A connection uses an authenticator and defines the properties needed, for"
+" example our Radius server available at our domain using specfic "
+"settings."
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:23
+#: ../../source/development/components/authentication.rst:46
+msgid "Services"
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:25
+msgid ""
+"Some services require or support authentication, such as the "
+"webinterface, OpenVPN, etc. These may allow one or more connectors."
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:29
+msgid "Authenticators & Connections"
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:32
+msgid ""
+"Services within OPNsense can use different authentication methods, for "
+"which connections can be configured in :menuselection:`System --> Access "
+"--> Servers` (e.g. the method can be **radius** which is offered through "
+"a server at a location). All of these methods use the same api defined in"
+" :code:`\\OPNSense\\Auth\\IAuthConnector`, which comes with some simple "
+"to use handles."
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:36
+msgid ""
+"If a class in :code:`\\OPNSense\\Auth` implements :code:`IAuthConnector` "
+"it is considered a viable authentication option for the authenticator "
+"factory named :code:`AuthenticationFactory`."
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:39
+msgid ""
+"The factory provides a layer of abstraction around the different "
+"authentication concepts, for example a server defined in "
+":menuselection:`System --> Access --> Servers` can be requested using a "
+"simple :code:`(new AuthenticationFactory())->get('name');` This connects "
+"the authenticator to the configured servers and the response object is "
+"ready to handle authentication requests."
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:48
+msgid ""
+"We strive to use :code:`PAM` to define our services, in which case we "
+"adopt to existing standards. OPNsense comes with a PAM module, which "
+"connects our service definitions with the services defined using PAM."
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:51
+msgid ""
+"A simple example of a service named **opnsense-login** is defined as "
+"follows in a file with the name :code:`/usr/local/etc/pam.d/opnsense-"
+"login`"
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:58
+msgid ""
+"To test authentication, you can use opnsense-login for any configured "
+"service. The following example tries to authenticate user *root* for "
+"service *opnsense-login* (the default when no options are specified)."
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:65
+msgid ""
+"See :code:`man opnsense-login` for a list of available command line "
+"options."
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:69
+msgid ""
+"**opnsense-login** inherits from the standard system authentication used "
+"for console and web GUI login unless otherwise specified."
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:71
+msgid ""
+"Internally PAM calls :code:`/usr/local/libexec/opnsense-pam` which acts "
+"as a stepping stone into the authentication sequence served by "
+":code:`/usr/local/libexec/opnsense-auth`. Since :code:`opnsense-auth` is "
+"written in php and needs elevated privileges for this task, the stepping "
+"stone makes sure it has them granted before executing using the *setuid* "
+"bit."
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:88
+msgid ""
+"The authentication script :code:`opnsense_auth` utilizes our factory "
+"class to perform the actual authentication using the connections defined "
+"in the service."
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:91
+msgid ""
+"For this purpose we expose a *services* namespace in "
+":code:`\\OPNSense\\Auth\\Services` where the required options can be read"
+" from the OPNsense configuration."
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:94
+msgid ""
+"For every service defined in PAM, the factory method :code:`getService()`"
+" expects a class implementing :code:`OPNsense\\Auth\\IService`. Using the"
+" :code:`aliases()` static method service classes can support multiple PAM"
+" services at once if needed (e.g. System can also be used for ssh)."
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:101
+msgid ""
+"Not every service uses PAM already, in that case it is defined as a "
+"script handling the authentication."
+msgstr ""
+
+#: ../../source/development/components/authentication.rst:103
+msgid ""
+"The interface :code:`IService` is quite easy to read and should be self "
+"explanatory."
+msgstr ""
+

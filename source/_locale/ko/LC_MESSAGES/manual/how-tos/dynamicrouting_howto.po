@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:3
+msgid "Dynamic Routing: How To"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:6
+msgid ""
+"To keep this tutorial short, a configuration is only added a single time."
+" For example, the configuration of Site A and Site B are identical beside"
+" one octet in the IP addresses. Also both routers have the same "
+"configuration except the Network address of the uplink and the client "
+"network."
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:14
+msgid "Situation"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:18
+msgid ""
+"We have two sites (Site A and Site B) which are connected via a layer 2 "
+"VPN. Each site has two additional routers, which are connected to the "
+"edge router and with each oder. On those routers, the clients are "
+"attached."
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:25
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:27
+msgid ""
+"In this setup, OSPF is used. All routers belong to the area 0.0.0.0 and "
+"no prefix lists are used."
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:31
+msgid "Core Router of Site A"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:33
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:58
+msgid "General Settings:"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:36
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:61
+msgid "Setting"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:36
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:61
+msgid "Value"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:38
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:63
+msgid "Enable"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:38
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:39
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:63
+msgid "Checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:39
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:64
+msgid "Advertise Default Gateway"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:40
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:65
+msgid "Passive Interfaces"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:40
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:41
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:66
+msgid "Empty"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:41
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:66
+msgid "Route Redistribution"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:44
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:69
+msgid "Networks:"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:47
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:72
+msgid "Network"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:47
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:72
+msgid "Network Mask"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:49
+msgid "192.168.0.0"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:49
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:50
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:51
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:75
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:76
+msgid "30"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:50
+msgid "192.168.1.0"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:51
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:75
+msgid "192.168.1.4"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:56
+msgid "Left Floor Router of Site A"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:64
+msgid "Unchecked"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:65
+msgid "Interface name of 10.1.1.0"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:74
+msgid "10.1.1.0"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:74
+msgid "24"
+msgstr ""
+
+#: ../../source/manual/how-tos/dynamicrouting_howto.rst:76
+msgid "192.168.1.8"
+msgstr ""
+

@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/firmware.rst:3
+msgid "Firmware"
+msgstr ""
+
+#: ../../source/manual/firmware.rst:5
+msgid ""
+"In the firmware section you can keep your OPNsense up to date and have "
+"the ability to install additional software."
+msgstr ""
+
+#: ../../source/manual/firmware.rst:10
+msgid "Updates"
+msgstr ""
+
+#: ../../source/manual/firmware.rst:13
+msgid ""
+"How to install updates and information about our versioning can be found "
+"in the Installation and setup section, which can be found in the  "
+":doc:`/manual/updates` document"
+msgstr ""
+
+#: ../../source/manual/firmware.rst:19
+msgid "Plugins"
+msgstr ""
+
+#: ../../source/manual/firmware.rst:21
+msgid ""
+"Plugins are additional software packages that are available for OPNsense,"
+" usually they come with their own frontend components to setup the "
+"software underneath. Here you can find community support plugins, such as"
+"  **bind**, **c-icap**, **freeradius** and others. Usually there is also "
+"a **-devel** version available, which contains features still under "
+"development (master branch on GitHub versus release)."
+msgstr ""
+
+#: ../../source/manual/firmware.rst:43
+msgid "Packages"
+msgstr ""
+
+#: ../../source/manual/firmware.rst:45
+msgid ""
+"The packages tab contains the installed ports packages, here you can "
+"check licenses, force reinstalls or lock versions."
+msgstr ""
+
+#: ../../source/manual/firmware.rst:50
+msgid "Changelog"
+msgstr ""
+
+#: ../../source/manual/firmware.rst:52
+msgid ""
+"If you would like to read about the changes in (past) releases, you can "
+"do so in the **Changelog** tab."
+msgstr ""
+
+#: ../../source/manual/firmware.rst:57
+msgid "Settings"
+msgstr ""
+
+#: ../../source/manual/firmware.rst:59
+msgid ""
+"The settings menu contains all available mirrors and options which you "
+"can choose for your installation. Usually the default options are good "
+"enough here, but if you want to choose a mirror more close to home you "
+"can do so here."
+msgstr ""
+
+#: ../../source/manual/firmware.rst:62
+msgid ""
+"OPNsense supports two flavours for its TLS crypto stack, OpenSSL and "
+"LibreSSL. Our standard is `OpenSSL <https://www.openssl.org/>`__, but "
+"some more security minded people favor OpenBSD's `LibreSSL "
+"<https://www.libressl.org/>`__"
+msgstr ""
+
+#: ../../source/manual/firmware.rst:67
+msgid ""
+"Since OpenSSL is more widely used, some software packages are not "
+"compatible with LibreSSL."
+msgstr ""
+
+#: ../../source/manual/firmware.rst:72
+msgid ""
+"The settings menu also provides the option to test development versions, "
+"which can be practical when testing features that are planned for "
+"release. Just change the release type to **Development**."
+msgstr ""
+

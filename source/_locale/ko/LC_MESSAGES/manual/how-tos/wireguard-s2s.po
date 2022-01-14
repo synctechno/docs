@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:5
+msgid "WireGuard Site-to-Site Setup"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:9
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:11
+msgid ""
+"WireGuard is a simple and fast modern VPN protocol. It aims to be faster "
+"and less complex than IPSec. It intends to be considerably more "
+"performant than OpenVPN. Initially released for the Linux kernel, it is "
+"now cross-platform and widely deployable."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:17
+msgid "Step 1 - Installation"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:19
+msgid ""
+"Install the plugin as usual, refresh and page and the you will find the "
+"client via :menuselection:`VPN --> WireGuard`."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:24
+msgid "Step 2 - Setup WireGuard"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:26
+msgid ""
+"Go to tab **Local** and create a new instance. Give it a **Name** and set"
+" a desired **Listen Port**. If you have more than one service instance be"
+" aware that you can use the **Listen Port** only once. For **Tunnel "
+"Address** choose a new virtual network to run communication over it, just"
+" like with OpenVPN or GRE (e.g. 192.168.0.1/24). **Peers** can not be "
+"chosen yet since we have not created them yet. After hitting **Save "
+"changes** you can reopen the newly created instance, write down your new "
+"public key and give it to the other side."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:34
+msgid ""
+"When this VPN is set up on OPNsense only do the same on the second "
+"machine and exchange the public keys. Now go to tab **Endpoints** and add"
+" the remote site, give it a **Name**, insert the **Public Key** and the "
+"**Allowed IPs** e.g. *192.168.0.2/32, 10.10.10.0/24*. This will set the "
+"remote tunnel IP address (/32 is important when using multiple endpoints)"
+" and route 10.10.10.0/24 via the tunnel. **Endpoint Address** is the "
+"public IP of the remote site and you can also set optionally the "
+"**Endpoint Port**, now hit **Save changes**."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:41
+msgid ""
+"Go back to tab **Local**, open the instance and choose the newly created "
+"endpoint in **Peers**."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:43
+msgid "Now we can **Enable** the VPN in tab **General** and go on with the setup."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:47
+msgid "Step 3 - Setup Firewall"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:49
+msgid ""
+"On :menuselection:`Firewall --> Rules` add a new rule on your WAN "
+"interface allowing the port you set in your instance (Protocol UDP). You "
+"also have a new interface **Wireguard** in rules, where you can set "
+"granular rules on connections inside your tunnel."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:53
+msgid "Your tunnel is now up and running."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:57
+msgid "Step 4 - Routing networks"
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:59
+msgid ""
+"If you want to route your internal networks via this VPN just add the "
+"network in the field **Allowed IPs** in **Endpoints** tab (e.g. "
+"10.0.1.0/24)."
+msgstr ""
+
+#: ../../source/manual/how-tos/wireguard-s2s.rst:62
+msgid "That's it!"
+msgstr ""
+

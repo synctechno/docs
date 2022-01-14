@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/how-tos/kernel_debugging.rst:3
+msgid "Remote debugging the kernel"
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:5
+msgid ""
+"FreeBSD/HardenedBSD supports remote debugging using a serial interface. "
+"Since most virtual solutions support serial interfaces it can be quite "
+"convenient to deploy a kernel and start a debug session on another "
+"machine."
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:9
+msgid ""
+"The setup assumes two (virtual) machines with a serial (rs232) connection"
+" in between."
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:24
+msgid "Configure and build a kernel"
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:26
+msgid ""
+"Use our toolchain described in detail `here "
+"<https://github.com/opnsense/tools>`__ and add the following options to "
+"your :code:`SMP` file in :code:`/usr/tools/config/[VERSION]/SMP`"
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:37
+msgid "Next clean and build a kernel"
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:46
+msgid "Install the kernel on test vm"
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:49
+msgid ""
+"With the build finished, we should have a kernel package on the build "
+"machine available at the following location:"
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:51
+msgid ":code:`/usr/local/opnsense/build/[Version]/[Architecture]/sets/kernel*.txz`"
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:54
+msgid ""
+"Copy this package to the test vm and install it using our :code"
+":`opnsense-update` command:"
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:61
+msgid ""
+"Where [version] is the version part of the kernel package, such as "
+":code:`19.1.2`"
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:66
+msgid "Configure the test vm"
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:68
+msgid ""
+"To be able to connect to the test machine using :code:`kgdb`, you need to"
+" make sure some settings are set."
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:71
+msgid ""
+"Edit :code:`/boot/device.hints` and change or add "
+":code:`hint.uart.0.flags` to the following:"
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:78
+msgid ""
+"Also /boot/loader.conf.local should have a baud-rate configured for the "
+"serial device:"
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:88
+msgid "Test your setup"
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:90
+msgid ""
+"Login to the test machine and force a debug session in gdb, using the "
+"following commands:"
+msgstr ""
+
+#: ../../source/development/how-tos/kernel_debugging.rst:101
+msgid ""
+"Then go to the build machine, make sure gdb is installed (:code:`pkg "
+"install gdb`) and go to the directory where the debug symbols are and "
+"start a session, ask a backtrace :code:`bt` and continue normal operation"
+" :code:`c`:"
+msgstr ""
+

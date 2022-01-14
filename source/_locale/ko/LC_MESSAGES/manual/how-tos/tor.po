@@ -1,0 +1,616 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/tor.rst:3
+msgid "Tor Configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:6
+msgid ""
+"Saving changes in modal dialogs does not apply the settings. To apply "
+"them, you have to click the \"Reload Service\" button."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:11
+msgid "Installation"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:13
+msgid "First of all, install the tor plugin (os-tor) from the plugins view."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:18
+msgid ""
+"After a page reload you will get a new menu entry under services for Tor."
+" Open the menu and choose \"Configuration\" to configure the plugin."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:23
+msgid "General Settings"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:25
+msgid ""
+"This section controls how Tor behaves in general as well as forward "
+"proxying."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:28
+msgid "Global Settings"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:33
+msgid "Tor Service Settings"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Enable"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:36
+msgid ""
+"Controls if the service should be running. If it is enabled, it will also"
+" be enabled at boot time."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Control Port"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:39
+msgid ""
+"The control port is used for control communication with the Tor daemon. "
+"This Port requires a password, which will not be disclosed to the GUI but"
+" can be queried via the API. This setting is available for you to handle "
+"Port conflicts, so you can change this port."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Create a logfile, Send log messges to syslog"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:44
+msgid ""
+"Enable this checkbox if you want some logging. Please note that a "
+"detailed log may lead to privacy issues."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Logfile, Syslog level"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:47
+msgid ""
+"If the corresponding checkbox is enabled, this will be the minimum "
+"severity for sending or writing log messges."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Fascist Mode"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:50
+msgid ""
+"If internet access is filtered, you can try this option. Please note that"
+" this is not compatible with other features like \"Hidden Services\"."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Fascist Firewall Ports"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:53
+msgid ""
+"These are the unfiltered ports of the firewall. The defaults of 80 and "
+"443 are choosen, because they are commonly open."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:57
+msgid "Forward Proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:60
+msgid ""
+"The SOCKS proxy is only useable from localhost (127.0.0.1 and ::1) unless"
+" an ACL is added in the \"SOCKS Proxy ACL\" section."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Listen Interfaces"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:64
+msgid ""
+"Add one or multiple interfaces, on which Tor should listen additionally "
+"to the loopback interface. This is required if you want to use Tor from "
+"other computers than the appliance itself. Tor will bind on the "
+"statically configured IP address from your interface configuration. If "
+"the interface has no static IP configured, it will be ignored."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "SOCKS Port Number"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:70
+msgid "The port which should be used for the SOCKS server."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:73
+msgid "Transparent Forward Proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Transparent Port"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:76
+msgid ""
+"This port is the target for your NAT rule. Please create a rule for this "
+"port in the \"Port Forward\" section of the firewall."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Transparent DNS Port"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:79
+msgid ""
+"If you are using Tor transparently, you can resolve .onion addresses to "
+"IPs of the given pool for example. This also allows to keep DNS secret."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Transparent IP Pool"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:82
+msgid ""
+"This is used to provide an IP pool to Tor, which can be used for host "
+"mapping. This needs to be a /16 network at minimum."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Map Host To IP Pool"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:85
+msgid ""
+"This option will assign IP addresses to resolved .onion domains by the "
+"Tor DNS service. Checking this box is recommend but a transparent IP pool"
+" is required"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:90
+msgid "SOCKS ACL"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:93
+msgid ""
+"If untrusted devices have access to the SOCKS proxy, private information "
+"may be leaked. Please be careful with the networks you allow here."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:99
+msgid ""
+"In this example, you can see that all Hosts of the 192.168.0.0/16 network"
+" have access to the Tor Proxy. By default, connections are forbidden."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:103
+msgid ""
+"Creating a new entry is quite easy. Just click the `+` and fill out the "
+"form:"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:109
+msgid ""
+"The entry will be added to the configuration file. If this checkbox is "
+"unckecked, the entry is ignored."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Protocol"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:112
+msgid ""
+"Select the protocol in use for this ACL. You can choose between IPv4 and "
+"IPv6. By default, IPv6 is selected."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Network"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:116
+msgid ""
+"In this field, you have to add the network, on which this ACL should be "
+"applied in CIDR notation."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Action"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:119
+msgid "Select if the traffic should be accepted or rejected."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:123
+msgid "Hidden Services"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:125
+msgid ""
+"A hidden service is an open TCP port, which is hosted in the Tor network "
+"and therefore the origin of the service is hard to trace. For example, "
+"you can host a website in Tor by running a webserver in your network and "
+"forwarding a hidden service port to this webserver."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:131
+msgid ""
+"This does not work with every protocol as there are protocols which open "
+"arbitrary ports. An example for that is FTP. You may work around this "
+"issue by limiting the usable ports of such services (for example 10 "
+"ports) and forward those to the server."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:136
+msgid ""
+"If you want to host a hidden service, you need to open the hidden service"
+" tab and click the `+` button."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:141
+msgid "The following dialog will open and you can enter a name."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:145
+msgid ""
+"You are allowed to add any alphanumeric name here. For example, you can "
+"call your service sampleservice."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:148
+msgid ""
+"Click \"Save changes\" and your service is saved to the configuration "
+"file but not saved to the Tor configuration file."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:151
+msgid "Switch to the \"Hidden Service Routing\" tab:"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:155
+msgid ""
+"For any port you want to forward, you have to click `+` and fill out the "
+"form:"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Hidden Service"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:160
+msgid ""
+"The service on which the port forward applies. The entries in this list "
+"are the services created in the previous step."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Port"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:163
+msgid "The virtual Port in the Tor network."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Target Host"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:165
+msgid "The host, on which the real service is running."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Target Port"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:167
+msgid ""
+"The real port of the service. Please note that this does not need to "
+"match the `Port` field but some services may act strange on mismatch."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:171
+msgid ""
+"The sample in the screenshot would forward traffic from the virtual host "
+"in the Tor network it gets on port 80 to 127.0.0.1:8080"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:175
+msgid ""
+"When using local connections like `127.0.0.1` or `::1`, your application "
+"may think this connection is trusted (localhost is not from the "
+"internet). Be careful when forwarding traffic to localhost."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:180
+msgid ""
+"In addition to regular onion services, the services can be protected even"
+" more by requireing the client to know a secret cookie."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:183
+msgid ""
+"This setting needs to be configured on both ends. On the server hosting "
+"the onion service, you need to configure it on the configuration tab for "
+"the onion service."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:187
+msgid ""
+"For example, if you want to have a stealth service (undetectable without "
+"knowing the key), you can configure it like the following:"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Authorization Type"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:193
+msgid ""
+"Can be `Stealth` or `Basic`. Basic means that multiple clients can use "
+"the entry point and it is still visible but unauthorized hosts can not "
+"connect."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Authorized Clients"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:196
+msgid ""
+"You can choose some names for your clients. Each client gets a "
+"authorization cookie assigned so they can connect to it. If you set this "
+"value, this onion service will not be available to the public anymore."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:200
+msgid ""
+"Now as this service will need to be configured to the client side as "
+"well, you will need to add the secret to the configuration page. To "
+"configure a authorization cookie for a service, you can open the `Onion "
+"Service Authentication` tab and fill out the form like on the screenshot:"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:207
+msgid ""
+"You need to configure the hostname and the authorization cookie you will "
+"get."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Host Name"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:210
+msgid "Enter the .onion address of the onion service."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Authentication Cookie"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:212
+msgid ""
+"This is the authentication code you will get from the maintainer of the "
+"onion service. Enter it into this field."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:215
+msgid ""
+"When you are done, save the settings and reload the service. After that, "
+"you should be able to reach the service."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:221
+msgid "Relays"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:223
+msgid ""
+"A Tor relay is a host which forwards traffic for other Tor nodes. A relay"
+" that allows traffic to pass outside of the Tor network is called an "
+"\"Exit Node\". If the relay is configured only for you (not for public "
+"access), it is called a bridge. Bridges are used to circumvent filtering "
+"of public entry nodes based on IP/Port basis as the existence of bridges "
+"is usually unknown."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:231
+msgid "Relays And Bridges"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:236
+msgid ""
+"To be a relay, your host must have a public available port. With "
+"relaying, you will increase the anonymity of Tor and it is less risky "
+"than an exit node."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:241
+msgid ""
+"Enable this checkbox if you want to relay traffic (forward foreign "
+"traffic)."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Host"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:244
+msgid ""
+"This is the host to bind the relay port to. This can be the public IP "
+"address. This setting is optional and may be omitted."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:247
+msgid ""
+"This is the public port used. Do not forget to add a firewall rule to "
+"pass traffic to this port. Otherwise it will not work."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Address"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:250
+msgid "You can enter the FQDN or the WAN IP of this Firewall."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Nickname"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:252
+msgid ""
+"A nickname can be used to identify your network but it must only consist "
+"of alphanumeric characters."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Bandwith Rate"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:255
+msgid ""
+"You can limit the bandwith Tor will use. By default, Tor will use the "
+"maximum amount of bandwith available. The value must be at least 72 "
+"kilobits per second."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Bandwith Burst"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:259
+msgid "See Bandwith Rate."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Directory Port"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:261
+msgid ""
+"If you have a lot of bandwith, you can also configure a directory port. "
+"You should not enable this port if your bandwith is small."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Reject Private IPs"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:264
+msgid ""
+"**IMPORTANT** DO NOT DISABLE UNLESS YOU KNOW WHAT YOU ARE DOING. This "
+"option blocks access to RFC1918 addresses regardless of the configured "
+"policy. If you disable this option, somebody can invade your network."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Bridge"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:269
+msgid "Enable this setting, if you want to be a bridge."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Publish Server Descriptor"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:271
+msgid ""
+"If this is disabled, Tor will not publish descriptors. If you don't want "
+"to be in a directory (for example for testing reasons), uncheck this "
+"option."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:276
+msgid "Exit Nodes"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:279
+msgid ""
+"Providing an exit node can lead to legal issues. It may be a good idea to"
+" consult a lawyer before setting up one as you might be made responsible "
+"for traffic, which originates from a malicious Tor user."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:283
+msgid ""
+"If you have relaying enabled, you can also become an exit node. To allow "
+"outgoing connections, you have to open to the \"Exit Node ACL\" tab."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:288
+msgid "Click on `+` to add a new ACL."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:293
+msgid ""
+"If it is checked, the ACL will be used by Tor, otherwise the line is "
+"ignored."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:296
+msgid ""
+"Select the protocol, on which this ACL applies. You can select IPv4 and "
+"IPv6 here. IPv6 is the default."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:299
+msgid ""
+"You can enter a target network in CIDR notation or an IP address here. If"
+" no IP is given, any IP will match."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst
+msgid "Start Port, End Port"
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:302
+msgid ""
+"This match is the target port of a connection. You can provide only a "
+"start port if you want to match a single port. If you provide both, a "
+"port range will be used."
+msgstr ""
+
+#: ../../source/manual/how-tos/tor.rst:306
+msgid ""
+"If you select \"Reject\", no exit node traffic will be sent to this host "
+"and it will not be forwarded. If you choose \"Accept\", your host may be "
+"choosen as an exit node in a circuit."
+msgstr ""
+

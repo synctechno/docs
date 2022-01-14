@@ -1,0 +1,193 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:3
+msgid "nginx: TLS Fingerprints"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:7
+msgid ""
+"This manual page is for advanced users only as the feature is not "
+"designed to be used by beginners. Maybe the curves are not provided by "
+"the TLS implementation and you get an empty string. If this is the case, "
+"it is normal but you should expect trouble if you use them as a later "
+"version of the software may implement them and then all your connections "
+"will be flagged as intercepted."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:14
+msgid "Requirements"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:16
+msgid ""
+"To use this feature, you must have an HTTPS server running which writes "
+"some logs."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:17
+msgid "Different browsers from different operating systems as clients"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:21
+msgid "Analysis Page"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:24
+msgid "The analysis page is grouped into some sections:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:29
+msgid "Color"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:29
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:31
+msgid "Orange"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:31
+msgid "User-Agent string (HTTP-Header) - technical description of the client"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:32
+msgid "Red"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:32
+msgid "Total count of hits in the log of the UA with this ciphers and curves"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:33
+msgid "Blue"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:33
+msgid ""
+"Supported Ciphers and Curves in order of the Client hello - our "
+"fingerprint"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:34
+msgid "Green"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:34
+msgid ""
+"If you click this button, you can take the fingerprint over to the "
+"configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:35
+msgid "Gray"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:35
+msgid "Pie chart of the fingerprints count and the User-Agent (visualized)"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:39
+msgid ""
+"The pie chart is important to know if a fingerprint is intercepted "
+"because many intercepting software changes the client hello. Let's take a"
+" look at this one:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:45
+msgid ""
+"There is one small one, which we probably can ignore, so lets look at the"
+" other two fingerprints: One contains ciphers, hashes etc., browsers "
+"should not support anymore (for example NULL, MD5, ...) so this is "
+"probably intercepted (it actually is OWASP ZAP_ 2.7.0) in this "
+"screenshot, which is intercepting a connection from Firefox 63. In this "
+"case there is onle one big segment left, which is very likely the real "
+"browser fingerprint (or another proxy)."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:54
+msgid ""
+"In the following example, take a look at the pie chart (especially the "
+"segment with the cursor on it):"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:59
+msgid ""
+"The segment has a huge share of the requests with this User-Agent. In "
+"such a case it can be either always the same client requesting a resource"
+" and probably only few users are using it or, which is more likely if it "
+"is a browser, it that it is probably the right fingerprint."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:66
+msgid ""
+"Some proxies are mirroring the client hello, so they won't be detected. "
+"Also be careful because for example if you have a big customer generating"
+" a lot of traffic, a big segment of the pie chart (even the biggest one),"
+" may be intercepted."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:71
+msgid ""
+"For security reasons you should also take the absolute count into account"
+" when you are working on a real world sample and that software may be "
+"compiled width different which may also replace the crypto library which "
+"also means that it will have a different fingerprint."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:79
+msgid ""
+"If you click on the store button, a dialog will open and you can create a"
+" new entry in your configuration, which will be visible on the "
+"configuration page."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:82
+msgid ""
+"For example, our fingerprint could be imported into the configuration "
+"like shown in the following screenshot:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:89
+msgid "Configuration Page"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:91
+msgid ""
+"Now in the configuration page under :menuselection:`HTTP --> TLS "
+"Fingerprints` there will be an entry for the created fingerprint, so it "
+"can be edited:"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:97
+msgid "Trusted Fingerprints"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx_tls_fingerprints.rst:99
+msgid ""
+"A trusted fingerprint is a fingerprint, which will be used to detect man "
+"in the middle attacks by comparing the client hello of the fingerprint "
+"with the data sent by the client. If there are additional ciphers or "
+"curves, you will get this information via an HTTP header into your "
+"application. Please note that you can have only one fingerprint per User-"
+"Agent."
+msgstr ""
+

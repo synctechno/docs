@@ -1,0 +1,2769 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/releases/CE_21.1.rst:3
+msgid "21.1  \"Marvelous Meerkat\" Series"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:7 ../../source/releases/CE_21.1.rst:622
+#: ../../source/releases/CE_21.1.rst:772
+msgid ""
+"For more than 6 years, OPNsense is driving innovation through "
+"modularising and hardening the open source firewall, with simple and "
+"reliable firmware upgrades, multi-language support, HardenedBSD security,"
+" fast adoption of upstream software updates as well as clear and stable "
+"2-Clause BSD licensing."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:12 ../../source/releases/CE_21.1.rst:627
+msgid ""
+"21.1, nicknamed \"Marvelous Meerkat\", is the relentless continuation of "
+"open source dedication.  The last 6 years were not always easy, but we "
+"are happy to be where we are now and have the community to thank for it."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:16 ../../source/releases/CE_21.1.rst:631
+msgid ""
+"New and improved are the firewall rules and NAT categories, the traffic "
+"graphs supporting IPv6 along with a visual refresh, intrusion detection "
+"rule management by policies, an alias for MAC addresses and NAT over "
+"IPsec with all phase 2 you could ever want.  Last but not least, the "
+"serial image now supports UEFI as well."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:22 ../../source/releases/CE_21.1.rst:637
+msgid ""
+"For those wondering, the WireGuard plugin has been available since 2019 "
+"and receives continuous improvements by its maintainer and various users "
+"alike. And that is unlikey to change in the future.  ;)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:26 ../../source/releases/CE_21.1.rst:641
+msgid ""
+"As we continue to deprecate custom configuration inputs for a number of "
+"reasons, Dnsmasq has been switched to a pluggable file-based approach "
+"`[1] <https://docs.opnsense.org/manual/dnsmasq.html>`__ with Unbound to "
+"follow in the upcoming 21.7 series."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:30 ../../source/releases/CE_21.1.rst:645
+msgid ""
+"Download links, an installation guide `[2] "
+"<https://docs.opnsense.org/manual/install.html>`__  and the checksums for"
+" the images can be found below as well."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:33 ../../source/releases/CE_21.1.rst:648
+#: ../../source/releases/CE_21.1.rst:783
+msgid "Europe: https://opnsense.c0urier.net/releases/21.1/"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:34 ../../source/releases/CE_21.1.rst:649
+#: ../../source/releases/CE_21.1.rst:784
+msgid "US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/21.1/"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:35 ../../source/releases/CE_21.1.rst:650
+#: ../../source/releases/CE_21.1.rst:785
+msgid ""
+"US West Coast: "
+"https://mirror.sfo12.us.leaseweb.net/opnsense/releases/21.1/"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:36 ../../source/releases/CE_21.1.rst:651
+#: ../../source/releases/CE_21.1.rst:786
+msgid "South America: https://mirror.venturasystems.tech/opnsense/releases/21.1/"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:37 ../../source/releases/CE_21.1.rst:652
+#: ../../source/releases/CE_21.1.rst:787
+msgid "Australia: http://mirror.as24220.net/opnsense/releases/21.1/"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:38 ../../source/releases/CE_21.1.rst:653
+#: ../../source/releases/CE_21.1.rst:788
+msgid "Full mirror list: https://opnsense.org/download/"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:43
+msgid "21.1.9 (July 27, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:46
+msgid ""
+"This is the end of life release for the 21.1 series with 21.7 being "
+"released tomorrow.  The upgrade path will be added later on said release "
+"day as soon as we have confirmed that everything is fine."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:50
+msgid "See you on the other side.  ;)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:52 ../../source/releases/CE_21.1.rst:100
+#: ../../source/releases/CE_21.1.rst:152 ../../source/releases/CE_21.1.rst:223
+#: ../../source/releases/CE_21.1.rst:298 ../../source/releases/CE_21.1.rst:389
+#: ../../source/releases/CE_21.1.rst:455 ../../source/releases/CE_21.1.rst:522
+#: ../../source/releases/CE_21.1.rst:577
+msgid "Here are the full patch notes:"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:54
+msgid "system: prevent excessive config writes on LDAP import"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:55
+msgid "system: do not split XMLRPC password into multiple pieces"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:56
+msgid "system: fix IPv4 /31 assignment address assignment in shell"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:57
+msgid "interfaces: clear PPPoE SLAAC addresses on linkdown"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:58
+msgid "firewall: add live log support for new filterlog format"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:59
+msgid "dhcp: fix processing domain search list on static IPv6"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:60
+msgid "openvpn: fix invalid rules generated by wizard (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:61
+msgid ""
+"openvpn: validate tunnel prefix to avoid OpenVPN 2.5 start errors "
+"(contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:62
+msgid "mvc: catch all errors including syntax and class not found errors"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:63
+msgid ""
+"plugins: os-acme-client 2.6 `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/security/acme-"
+"client/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:64
+msgid ""
+"plugins: os-freeradius 1.9.15 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/freeradius/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:65
+msgid ""
+"plugins: os-haproxy 3.4 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/haproxy/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:66
+msgid ""
+"plugins: os-zabbix-agent 1.9 `[4] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net-mgmt/zabbix-"
+"agent/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:67
+msgid "ports: curl 7.78.0 `[5] <https://curl.se/changes.html#7_78_0>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:68
+msgid ""
+"ports: filterlog adds CARP IPv6 support and moves label to previously "
+"reserved spot"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:69
+msgid ""
+"ports: nss 3.68 `[6] <https://developer.mozilla.org/en-"
+"US/docs/Mozilla/Projects/NSS/NSS_3.68_release_notes>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:70
+msgid "ports: php 7.4.21 `[7] <https://www.php.net/ChangeLog-7.php#7.4.21>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:71
+msgid ""
+"ports: python 3.7.11 `[8] "
+"<https://docs.python.org/release/3.7.11/whatsnew/changelog.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:72
+msgid ""
+"ports: syslog-ng 3.33.2 `[9] <https://github.com/syslog-ng/syslog-"
+"ng/releases/tag/syslog-ng-3.33.2>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:74
+msgid "A hotfix release was issued as 21.1.9_1:"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:76
+msgid "firmware: enable upgrade path to 21.7"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:77
+msgid "firmware: add \"-q\" option for in-place opnsense-bootstrap run"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:78
+msgid "firmware: fix grep call on FreeBSD 13 (contributed by Mariusz Zaborski)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:79
+msgid "firmware: correct return code on type change in opnsense-update"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:80
+msgid "firmware: fix opnsense-code pull when ABI configuration is no longer there"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:81
+msgid "firmware: fix upgrade with multiple repositories enabled"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:87
+msgid "21.1.8 (July 07, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:90
+msgid ""
+"The code moves to PHP 7.4 as previously announced.  Shipped alongside are"
+" a few updates and fixes that still make sense for the 21.1 series."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:93
+msgid ""
+"We are happy to note our community contributions regarding the Norwegian "
+"translation and Fetchmail plugin."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:96
+msgid ""
+"Later today, 21.7-RC1 is going to be released as well and you can make "
+"the upgrade from the development release type where the bulk of current "
+"improvements is being included."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:102
+msgid "system: Norwegian translation (contributed by Stein-Aksel Basma)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:103
+msgid ""
+"system: correctly enforce \"Disable writing log files to the local disk\""
+" when circular logs are not used"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:104
+msgid "system: allow to edit gateway entries with non-conforming names"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:105
+msgid "system: add HA sync entry for live log templates"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:106
+msgid "system: lock config writes during HA merges"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:107
+msgid "interfaces: do not check for existing CARP interfaces midstream"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:108
+msgid "interfaces: refactor IP address removal on configure"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:109
+msgid "interfaces: remove non-tunnel restriction from address collection"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:110
+msgid "interfaces: set tunnel flag for IPv4 tunnel plus cleanups"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:111
+msgid "firewall: possibility to filter nat/rdr action in live log"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:112
+msgid ""
+"firewall: set label for obsolete rule in live log (contributed by "
+"kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:113
+msgid "intrusion detection: fix alert reads from eve.json"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:114
+msgid "ui: prevent translation line breaks from breaking JS"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:115
+msgid "ui: switch firewall category icon for clarity"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:116
+msgid "plugins: os-etpro-telemetry 1.5 exclude stale data from telemetry upload"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:117
+msgid "plugins: os-fetchmail 1.0 (contributed by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:118
+msgid ""
+"plugins: os-freeradius 1.9.14 `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/freeradius/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:119
+msgid ""
+"plugins: os-maltrail 1.8 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/security/maltrail"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:120
+msgid "plugins: os-nginx Phalcon 4 fixes"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:121
+msgid ""
+"plugins: os-nut 1.8 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/sysutils/nut/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:122
+msgid ""
+"plugins: os-telegraf 1.11.0 `[4] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net-mgmt/telegraf"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:123
+msgid "plugins: os-tor Phalcon 4 fix"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:124
+msgid "plugins: os-zabbix5-proxy is now a plugin variant"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:125
+msgid ""
+"src: libcasper: fix descriptors numbers `[5] "
+"<FREEBSD:EN-21:19.libcasper>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:126
+msgid ""
+"src: linux: prevent integer overflow in futex_requeue `[6] "
+"<FREEBSD:EN-21:22.linux_futex>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:127
+msgid "ports: clog 1.0.2 fixes garbage header write on init"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:128
+msgid "ports: libxml 2.9.12 `[7] <http://www.xmlsoft.org/news.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:129
+msgid "ports: nettle 3.7.3"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:130
+msgid ""
+"ports: nss 3.67 `[8] <https://developer.mozilla.org/en-"
+"US/docs/Mozilla/Projects/NSS/NSS_3.67_release_notes>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:131
+msgid ""
+"ports: openvpn 2.5.3 `[9] "
+"<https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn25#Changesin2.5.3>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:132
+msgid "ports: php 7.4.20 `[10] <https://www.php.net/ChangeLog-7.php#7.4.20>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:133
+msgid ""
+"ports: phpseclib 2.0.32 `[11] "
+"<https://github.com/phpseclib/phpseclib/releases/tag/2.0.32>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:134
+msgid "ports: sudo 1.9.7p1 `[12] <https://www.sudo.ws/stable.html#1.9.7p1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:135
+msgid ""
+"ports: suricata 5.0.7 `[13] "
+"<https://redmine.openinfosecfoundation.org/versions/166>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:137
+msgid "A hotfix release was issued as 21.1.8_1:"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:139
+msgid "system: fix PHP 7.4 deprecated warning in IPv6 library"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:145
+msgid "21.1.7 (June 16, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:148
+msgid ""
+"Today we move to Phalcon version 4 along with new FreeBSD security "
+"advisories and fixes for firewall live log as well as new features such "
+"as shell timeout and TLS remote syslog."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:154
+msgid "system: add shell inactivity timeout feature for csh/tcsh"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:155
+msgid "system: add Syslog-ng TLS transport options"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:156
+msgid "system: remove unrelated service restarts from filter_configure_xmlrpc()"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:157
+msgid ""
+"system: rotate interface statistics widget (contributed by "
+"FingerlessGloves)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:158
+msgid "system: delete previous route when changed"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:159
+msgid ""
+"system: make web GUI restart action usable in cron jobs (contributed by "
+"Frank Wall)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:160
+msgid "interfaces: interface_configure() checks for enabled already"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:161
+msgid ""
+"interfaces: system match for primary address only works with compressed "
+"IPv6"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:162
+msgid ""
+"interfaces: disable legacy CSRF output buffering when downloading a "
+"packet capture"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:163
+msgid "interfaces: execute OpenVPN device creation earlier during boot"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:164
+msgid ""
+"firewall: change live log address/port group matcher to correctly flip "
+"logic"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:165
+msgid ""
+"firewall: explicit default for filter rule association in NAT port "
+"forwards"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:166
+msgid "firewall: prevent controls overlap in live log (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:167
+msgid ""
+"firewall: let live log use the newly provided rule log label instead of "
+"guessing it"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:168
+msgid "firewall: calculate wildcard netmasks in aliases"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:169
+msgid "captive portal: fix GUI drop session issue"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:170
+msgid "dhcp: support ignore-client-uids in DHCPv4 (contributed by Kacper Why)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:171
+msgid "firmware: push automatic flags to firmware frontend"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:172
+msgid "firmware: show update pending hint in system widget"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:173
+msgid "firmware: allow manual development override on business subscription"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:174
+msgid "intrusion detection: add YAML tag to custom.yaml.sample"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:175
+msgid "openvpn: return \"result\" instead of \"status\" in export"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:176
+msgid "unbound: honour space as \"domainsearchlist\" separator"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:177
+msgid "lang: updated available translations"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:178
+msgid "mvc: migrated framework to Phalcon 4"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:179
+msgid ""
+"mvc: return UUID in ApiMutableModelControllerBase::validateAndSave() if "
+"applicable"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:180
+msgid "rc: unconditionally configure routing on rc.syshook start facility"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:181
+msgid "ui: change service restart icons to fa-repeat"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:182
+msgid ""
+"plugins: added variants support to share plugin code over different "
+"third-party software versions"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:183
+msgid "plugins: added NO_ABI marker to themes"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:184
+msgid "plugins: remove the use of $main_buttons in relevant code"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:185
+msgid "plugins: compatibility fixes with Phalcon 4"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:186
+msgid ""
+"plugins: os-nginx 1.23 `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/www/nginx/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:187
+msgid ""
+"plugins: os-wireguard 1.7 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/wireguard/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:188
+msgid "plugins: os-zabbix4-proxy is now a plugin variant"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:189
+msgid "src: SMAP bypass `[3] <FREEBSD:FreeBSD-SA-21:11.smap>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:190
+msgid ""
+"src: missing message validation in libradius `[4] <FREEBSD:FreeBSD-"
+"SA-21:12.libradius>`__  `[5] <FREEBSD:FreeBSD-EN-21:17.libradius>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:191
+msgid "src: pms data corruption `[6] <FREEBSD:FreeBSD-EN-21:14.pms>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:192
+msgid "ports: curl 7.77.0 `[7] <https://curl.se/changes.html#7_77_0>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:193
+msgid ""
+"ports: isc-dhcp 4.4.2-P1 `[8] "
+"<https://downloads.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1-RELNOTES>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:194
+msgid ""
+"ports: nss 3.66 `[9] <https://developer.mozilla.org/en-"
+"US/docs/Mozilla/Projects/NSS/NSS_3.66_release_notes>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:195
+msgid ""
+"ports: openldap 2.4.59 `[10] "
+"<https://www.openldap.org/software/release/changes.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:196
+msgid "ports: pcre2 10.37 `[11] <https://www.pcre.org/changelog.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:197
+msgid ""
+"ports: phalcon 4.1.2 `[12] "
+"<https://github.com/phalcon/cphalcon/releases/tag/v4.1.2>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:198
+msgid "ports: py-certifi 2021.5.30"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:199
+msgid "ports: py-yaml 5.4.1"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:200
+msgid ""
+"ports: squid 4.15 `[13] <http://www.squid-"
+"cache.org/Versions/v4/squid-4.15-RELEASENOTES.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:202
+msgid "A hotfix release was issued as 21.1.7_1:"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:204
+msgid "mvc: rename 3 API actions to fix their compatibility with Phalcon 4"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:205
+msgid ""
+"plugins: os-freeradius 1.9.13 `[14] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/freeradius/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:211
+msgid "21.1.6 (May 27, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:214
+msgid ""
+"With a bit of delay we bring to you the usual mix of security and "
+"reliability updates.  It is of note that the OpenVPN advisory tracked as "
+"CVE-2020-15078 does not affect the provided version 2.4.11, but the "
+"security audit will falsely flag it as vulnerable because the source of "
+"the audit is FreeBSD where OpenVPN was migrated to 2.5 series already."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:220
+msgid ""
+"Plans for upcoming 21.1.x versions include a swift Phalcon 4 migration as"
+" well as Python 3.8 and PHP 7.4 updates."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:225
+msgid "system: add audit log target and move related syslog messages there"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:226
+msgid "system: set HSTS max-age to 1 year (contributed by Maurice Walker)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:227
+msgid "system: fix restore copy in console recovery"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:228
+msgid "interfaces: revise approach to clear states when WAN address changes"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:229
+msgid ""
+"interfaces: add policy-based routing support for \"dynamic\" interface "
+"gateways"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:230
+msgid "interfaces: return scoped link-local in get_configured_ip_addresses()"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:231
+msgid "firewall: NPTv6 configuration clean-up (contributed by Maurice Walker)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:232
+msgid ""
+"firewall: remove redundant NPTv6 binat rule (contributed by Maurice "
+"Walker)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:233
+msgid ""
+"firewall: live log widget multiple interfaces and inspect feature "
+"(contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:234
+msgid "firewall: add live log filter templates feature (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:235
+msgid "dhcp: compress expanded IPv6 lease addresses for clean match with system"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:236
+msgid "dhcp: on the GUI pages avoid the use of dhcpd_dhcp_configure()"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:237
+msgid "dnsmasq: use dhcpd_staticmap() for lease registration"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:238
+msgid "firmware: opnsense-patch now also invalidates the menu cache"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:239
+msgid "ipsec: add \"keyingtries\" phase 1 configuration option"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:240
+msgid "ipsec: automatic outbound NAT rules missed mobile clients"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:241
+msgid "ipsec: fix typo in autogenerated rules for virtual IP use"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:242
+msgid "openvpn: fix wizard regression after certificate changes in 21.1.5"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:243
+msgid "openvpn: remove now defunct OpenSSL engine support"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:244
+msgid "unbound: cleanse blacklist domain input"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:245
+msgid "unbound: match whole entry in blacklists (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:246
+msgid "unbound: use dhcpd_staticmap() for lease registration"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:247
+msgid "ui: upgrade chart.js to 2.9.4"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:248
+msgid "ui: update chartjs-plugin-streaming to 1.9.0"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:249
+msgid "ui: order interfaces in groups"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:250
+msgid "ui: sidebar menu fix for long listings (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:251
+msgid ""
+"plugins: os-acme-client 2.5 `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/security/acme-"
+"client/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:252
+msgid ""
+"plugins: os-chrony 1.3 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/chrony/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:253
+msgid ""
+"plugins: os-dyndns 1.24 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/dns/dyndns/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:254
+msgid ""
+"plugins: os-freeradius 1.9.12 `[4] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/freeradius/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:255
+msgid ""
+"plugins: os-haproxy 3.3 `[5] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/haproxy/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:256
+msgid ""
+"plugins: os-intrusion-detection-content-et-open 1.0.1 adds emerging-"
+"inappropriate ruleset"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:257
+msgid "plugins: os-nginx expected MIME type fix (contributed by Kimotu Bates)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:258
+msgid "plugins: os-qemu-guest-agent 1.0 (contributed by Frank Wall)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:259
+msgid ""
+"plugins: os-relayd 2.5 `[6] "
+"<https://github.com/opnsense/plugins/issues/2232>`__  (sponsored by "
+"Modirum)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:260
+msgid ""
+"plugins: os-telegraf 1.10.1 `[7] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net-mgmt/telegraf"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:261
+msgid ""
+"plugins: os-zabbix4-proxy 1.3 `[8] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net-"
+"mgmt/zabbix4-proxy/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:262
+msgid ""
+"plugins: os-zabbix5-proxy 1.5 `[9] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net-"
+"mgmt/zabbix5-proxy/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:263
+msgid "src: axgbe: check for IFCAP_VLAN_HWTAGGING when reading descriptor"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:264
+msgid "src: axgbe: add 1000BASE-BX SFP support"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:265
+msgid ""
+"src: race condition in aesni(4) encrypt-then-auth operations `[10] "
+"<FREEBSD:FreeBSD-EN-21:11.aesni>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:266
+msgid "ports: curl 7.76.1 `[11] <https://curl.se/changes.html#7_76_1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:267
+msgid "ports: expat 2.4.1"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:268
+msgid "ports: filterlog 0.4 adds label support to output if applicable"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:269
+msgid ""
+"ports: libressl 3.3.3 `[12] "
+"<https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.3.3-relnotes.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:270
+msgid "ports: libxml2 fix for CVE-2021-3541"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:271
+msgid ""
+"ports: nss 3.65 `[13] <https://developer.mozilla.org/en-"
+"US/docs/Mozilla/Projects/NSS/NSS_3.65_release_notes>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:272
+msgid "ports: openssh 8.6p1 `[14] <https://www.openssh.com/txt/release-8.6>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:273
+msgid ""
+"ports: openvpn 2.4.11 `[15] "
+"<https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn24#OpenVPN2.4.11>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:274
+msgid "ports: php 7.3.28 `[16] <https://www.php.net/ChangeLog-7.php#7.3.28>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:275
+msgid "ports: sqlite 3.35.5 `[17] <https://sqlite.org/releaselog/3_35_5.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:276
+msgid "ports: sudo 1.9.7 `[18] <https://www.sudo.ws/stable.html#1.9.7>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:277
+msgid ""
+"ports: syslog-ng 3.32.1 `[19] <https://github.com/syslog-ng/syslog-"
+"ng/releases/tag/syslog-ng-3.32.1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:283
+msgid "21.1.5 (April 21, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:286
+msgid ""
+"This is mainly a security and reliablility update.  There are several "
+"FreeBSD security advisories and updates for third party tools such as "
+"curl."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:289
+msgid ""
+"The historic bsdinstaller has been replaced by a scriptable alternative "
+"based on the readily available bsdinstall bundled with the base system. "
+"And, yes, this brings ZFS installer support into the upcoming 21.7 "
+"release."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:293
+msgid ""
+"On the development side the migration to Phalcon 4 framework is now "
+"underway and brings improved UI/API responsiveness.  One of the remaining"
+" road map goals is the migration to PHP 7.4 which can be carried out "
+"after said framework update is complete and released."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:300
+msgid "system: return authentication errors for RADIUS also"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:301
+msgid "system: better logic for serial console options -h and -D"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:302
+msgid "system: reorder loader.conf settings to let tunables override all"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:303
+msgid ""
+"system: lighttpd include directory for configuration (contributed by "
+"Greelan)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:304
+msgid "system: remove /dev/crypto GUI support"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:305
+msgid "system: add route address family return on dynamic gateway"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:306
+msgid ""
+"system: allow CPU temperature display in Fahrenheit in widget "
+"(contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:307
+msgid "system: performance enhancement for local_sync_accounts()"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:308
+msgid "system: move extensions out of a certificate DN (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:309
+msgid "interfaces: treat deprecated addresses as non-primary"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:310
+msgid "interfaces: improve guess_interface_from_ip() (contributed by vnxme)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:311
+msgid "firewall: resolve IP addresses in kernel for force gateway rule"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:312
+msgid ""
+"firewall: use tables in the shaper to avoid breaking ipfw with too many "
+"addresses"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:313
+msgid ""
+"firewall: clarify help text for firewall rules traffic direction "
+"(contributed by Greelan)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:314
+msgid ""
+"firewall: sticky filter-rule-association setting for none/pass on copied "
+"items"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:315
+msgid "firewall: copy and paste for alias content (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:316
+msgid "firewall: improve loopack visibility"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:317
+msgid "reporting: format 24 hour timestamps in traffic graphs and widget"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:318
+msgid "dhcp: add dhcpd_staticmap() and fix DHCPv6 leases page with it"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:319
+msgid "dhcp: add \"none\" option to gateway setting of static mappings"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:320
+msgid "firmware: fix bug with subscription read from mirror URL"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:321
+msgid "firmware: separate update error for \"forbidden\""
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:322
+msgid "firmware: update error if upstream core package is missing yet installed"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:323
+msgid "installer: migrate to scripted solution using bsdinstall"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:324
+msgid ""
+"ipsec: validation to prevent saving of route-based tunnels with \"install"
+" policy\" set"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:325
+msgid ""
+"unbound: prefer domain list over host file format (contributed by Gareth "
+"Owen)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:326
+msgid "rc: attempt to create /tmp if it does not exist"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:327
+msgid "rc: add opensolaris module load for ZFS"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:328
+msgid "rc: reverse list on stop action"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:329
+msgid "ui: prevent autocomplete in the quick navigation"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:330
+msgid ""
+"plugins: os-bind 1.17 `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/dns/bind/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:331
+msgid ""
+"plugins: os-chrony 1.2 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/chrony/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:332
+msgid "plugins: os-debug 1.4 changes debugging profile to new version"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:333
+msgid ""
+"plugins: os-freeradius 1.9.11 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/freeradius/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:334
+msgid ""
+"plugins: os-haproxy 3.2 `[4] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/haproxy/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:335
+msgid "plugins: os-intrusion-detection-content-et-open 1.0"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:336
+msgid ""
+"plugins: os-maltrail 1.7 `[5] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/security/maltrail"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:337
+msgid ""
+"plugins: os-netdata 1.1 `[6] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net-mgmt/netdata"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:338
+msgid ""
+"plugins: os-nginx 1.22 `[7] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/www/nginx/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:339
+msgid "plugins: os-smart 2.2 JSON conversion (contributed by Arnav Singh)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:340
+msgid ""
+"plugins: os-telegraf 1.10.0 `[8] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net-mgmt/telegraf"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:341
+msgid "plugins: os-theme-rebellion 1.8.7 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:342
+msgid ""
+"plugins: os-wireguard 1.6 `[9] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/wireguard/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:343
+msgid ""
+"plugins: os-zabbix5-proxy 1.4 `[10] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net-"
+"mgmt/zabbix5-proxy/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:344
+msgid ""
+"src: axgbe: enable receive all mode to bypass the MAC filter to avoid "
+"dropping CARP MAC addresses"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:345
+msgid ""
+"src: accept_filter: fix filter parameter handling `[11] <FREEBSD:FreeBSD-"
+"SA-21:09.accept_filter>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:346
+msgid ""
+"src: vm_fault: shoot down multiply mapped COW source page mappings `[12] "
+"<FREEBSD:FreeBSD-SA-21:08.vm>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:347
+msgid ""
+"src: mount: disallow mounting over a jail root `[13] <FREEBSD:FreeBSD-"
+"SA-21:10.jail_mount>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:348
+msgid "src: em: add support for Intel I219 V10 device"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:349
+msgid "src: em: fix a null de-reference in em_free_pci_resources"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:350
+msgid "src: bsdinstall: switch to OPNsense branding"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:351
+msgid "ports: curl 7.76.0 `[14] <https://curl.se/changes.html#7_76_0>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:352
+msgid ""
+"ports: dnsmasq 2.85 `[15] "
+"<https://www.thekelleys.org.uk/dnsmasq/CHANGELOG>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:353
+msgid "ports: expat 2.3.0"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:354
+msgid ""
+"ports: hyperscan 5.4.0 `[16] "
+"<https://github.com/intel/hyperscan/releases/tag/v5.4.0>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:355
+msgid "ports: monit 5.28.0 `[17] <https://mmonit.com/monit/changes/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:356
+msgid "ports: nettle 3.7.2"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:357
+msgid ""
+"ports: phpseclib 2.0.31 `[18] "
+"<https://github.com/phpseclib/phpseclib/releases/tag/2.0.31>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:358
+msgid "ports: pkg 1.16.3"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:363
+msgid "21.1.4 (March 30, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:366
+msgid ""
+"The third party crypto libraries need patching so here we go!  The number"
+" of user contributions and interaction regarding stability fixes and "
+"improvements from the OPNsense side seems to be picking up as well and "
+"that is great to see."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:370
+msgid ""
+"The development version includes an update of Suricata to version 6.0.2 "
+"in case any of you want to try it out.  Also, improvements in the DHCP "
+"static mapping can now deal with IPv6 prefix merge for such deployments "
+"using Unbound and Dnsmasq host registration."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:375
+msgid ""
+"In the past 3 months we have also been working on a business edition "
+"relaunch and now feel obligated to quickly present the results of these "
+"efforts:"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:378
+msgid ""
+"The upcoming release of the business edition will be versioned as 21.4 in"
+" order to decouple it from the community release cycle.  To that end--and"
+" to stay true to open source--we have published the release engineering "
+"core branch for said business release `[1] "
+"<https://github.com/opnsense/core/commits/stable/21.4>`__ ."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:383
+msgid ""
+"You will see more distinction between \"community\" and \"business\" in "
+"communication, but the basic approach of a more conservative release "
+"cycle in volume and timing for the business edition remains the same. On "
+"top of this, the business edition also offers additional plugins, e.g. "
+"for central management tasks."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:391
+msgid ""
+"system: add assorted missing configuration sections for high availability"
+" sync"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:392
+msgid ""
+"system: restart web GUI with delay from services to prevent session "
+"disconnect"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:393
+msgid ""
+"system: improve error reporting in LDAP authentication (contributed by "
+"kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:394
+msgid ""
+"system: changed USB serial option to use \"on\" instead of problematic "
+"\"onifconsole\""
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:395
+msgid "system: ignore garbled data in log lines"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:396
+msgid "system: fix single core activity display"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:397
+msgid "interfaces: immediately enable SLAAC during IPv6 initiation"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:398
+msgid "interfaces: fix a typo in the GIF setup code"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:399
+msgid "firewall: allow to select rules with no category set"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:400
+msgid "firewall: sort pfTable results before slice (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:401
+msgid "firewall: make categories work with numbers only (contributed kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:402
+msgid "reporting: skip damaged NetFlow records"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:403
+msgid "dhcp: correct help text for IPv6 ranges (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:404
+msgid "dhcp: remove obsolete subnet validation for static entries"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:405
+msgid ""
+"firmware: refine missing/invalid signature message during health check "
+"(contributed by Erik Inge Bolso)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:406
+msgid "firmware: zap changelog remove description (contributed by Jacek Tomasiak)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:407
+msgid "firmware: make status API endpoint synchronous when using POST"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:408
+msgid ""
+"openvpn: remove checks for NTP servers 3 and 4 (contributed by Christian "
+"Brueffer)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:409
+msgid "unbound: Fix PTR records for DHCP endpoints (contributed by Gareth Owen)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:410
+msgid "ui: use HTTPS everywhere (contributed by Robin Schneider)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:411
+msgid ""
+"ui: bootgrid translation compatibility with Internet Explorer 11 "
+"(contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:412
+msgid "plugins: add service annotations to supported plugins"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:413
+msgid ""
+"plugins: os-freeradius 1.9.10 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/freeradius/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:414
+msgid ""
+"plugins: os-haproxy 3.1 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/haproxy/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:415
+msgid ""
+"plugins: os-stunnel 1.0.3 adds client mode (contributed by Nicola "
+"Bonavita)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:416
+msgid ""
+"plugins: os-telegraf 1.9.0 `[4] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net-mgmt/telegraf"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:417
+msgid "plugins: os-theme-cicada 1.28 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:418
+msgid "plugins: os-theme-tukan 1.25 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:419
+msgid "plugins: os-theme-vicuna 1.4 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:420
+msgid ""
+"plugins: os-wireguard 1.5 `[5] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/wireguard/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:421
+msgid "plugins: os-wol 2.4 fixes dashboard widget (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:422
+msgid ""
+"src: fix multiple OpenSSL vulnerabilities `[6] <FREEBSD:FreeBSD-"
+"SA-21:07.openssl>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:423
+msgid ""
+"ports: ca_root_nss / nss 3.63 `[7] <https://developer.mozilla.org/en-"
+"US/docs/Mozilla/Projects/NSS/NSS_3.63_release_notes>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:424
+msgid ""
+"ports: libressl 3.2.5 `[8] "
+"<https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.2.5-relnotes.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:425
+msgid ""
+"ports: openldap 2.4.58 `[9] "
+"<https://www.openldap.org/software/release/changes.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:426
+msgid ""
+"ports: openssh fix for double free in ssh-agent `[10] "
+"<https://ftp.openbsd.org/pub/OpenBSD/patches/6.8/common/015_sshagent.patch.sig>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:427
+msgid ""
+"ports: openssl 1.1.1k `[11] "
+"<https://www.openssl.org/news/openssl-1.1.1-notes.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:428
+msgid "ports: sudo 1.9.6p1 `[12] <https://www.sudo.ws/stable.html#1.9.6p1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:429
+msgid ""
+"ports: suricata 5.0.6 `[13] <https://suricata-"
+"ids.org/2021/03/02/suricata-6-0-2-and-5-0-6-released/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:430
+msgid ""
+"ports: syslog-ng 3.31.2 `[14] <https://github.com/syslog-ng/syslog-"
+"ng/releases/tag/syslog-ng-3.31.2>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:431
+msgid ""
+"ports: wpa_supplicant p2p vulnerability `[15] "
+"<https://w1.fi/security/2021-1/wpa_supplicant-p2p-provision-discovery-"
+"processing-vulnerability.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:436
+msgid "21.1.3 (March 10, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:439
+msgid ""
+"Today we move ahead with the firmware UI and API rework as we are happy "
+"with the new user experience.  You will also notice the new plugin "
+"conflict dialog which will report that plugins have been installed "
+"previously but not registered in the configuration.  This can be easily "
+"amended by reseting the local conflicts, which essentially accepts the "
+"current plugin configuration as the new default.  This necessary change "
+"introduces API incompatibilities with existing external tools."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:447
+msgid ""
+"The HAProxy plugin was updated to version 3.0.  This release marks the "
+"switch to the HAProxy 2.2 release series, which may result in "
+"incompatible changes for some users.  Many new features were also added, "
+"including the possibility to update SSL certificates in runtime.  These "
+"features should be considered experimental.  We encourage everyone to "
+"install this version in a test environment before using it in production."
+"  As usual, please have a look at the plugin changes `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/haproxy/pkg-"
+"descr>`__  and report bugs on GitHub."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:457
+msgid ""
+"system: prevent duplicate dashboard traffic pollers mangling with the "
+"graphs"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:458
+msgid "system: added cron job \"HA update and reconfigure backup\""
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:459
+msgid "system: unify HA sync sections and remove legacy blocks"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:460
+msgid "system: adapt lighttpd ssl.privkey approach"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:461
+msgid ""
+"system: correctly remove routing entries directly connected to an "
+"interface"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:462
+msgid ""
+"interfaces: correct dhcp6c configuration issue on PPPoE link down "
+"(contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:463
+msgid "interfaces: better primary IPv6 address detection in diagnostic tools"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:464
+msgid "interfaces: handle disabled interfaces in overview"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:465
+msgid "interfaces: drop early return in PPPoE link down"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:466
+msgid "interfaces: remove unused global definitions"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:467
+msgid "firewall: typo in outbound alias use (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:468
+msgid "firewall: rules icon color after toggle fix (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:469
+msgid "reporting: prevent crash when NetFlow attributes are missing"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:470
+msgid "reporting: aggregate iftop results for traffic graphs"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:471
+msgid ""
+"firmware: opnsense-bootstrap shellcheck audit (contributed by Michael "
+"Adams)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:472
+msgid "firmware: revamp the UI and API"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:473
+msgid "firmware: revoke old business key"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:474
+msgid ""
+"intrusion detection: add new Abuse.ch feed ThreatFox to detect indicators"
+" of compromise"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:475
+msgid ""
+"intrusion detection: make manual rule status boolean for policies "
+"(contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:476
+msgid "ipsec: calculate netmask for provided tunnel addresses when using VTI"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:477
+msgid "ipsec: do not pin reqid in case of mobile connections"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:478
+msgid "openvpn: extend compression options (contributed by vnxme)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:479
+msgid ""
+"unbound: handle DHCP client expiring and returning (contributed by Gareth"
+" Owen)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:480
+msgid ""
+"ui: refactor bootgrid usage in ARP, NDP, captive portal session, system "
+"activity and routes"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:481
+msgid "ui: align layouts of select_multiple and dropdown types"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:482
+msgid ""
+"plugins: os-haproxy 3.0 `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/haproxy/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:483
+msgid ""
+"plugins: os-nginx 1.21 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/www/nginx/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:484
+msgid ""
+"plugins: os-node_exporter 1.1 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/sysutils/node_exporter"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:485
+msgid ""
+"src: jail: Handle a possible race between jail_remove(2) and fork(2) `[4]"
+" <FREEBSD:FreeBSD-SA-21:04.jail_remove>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:486
+msgid ""
+"src: jail: Change both root and working directories in jail_attach(2) "
+"`[5] <FREEBSD:FreeBSD-SA-21:05.jail_chdir>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:487
+msgid ""
+"src: x86: free microcode memory later `[6] <FREEBSD:FreeBSD-"
+"EN-21:06.microcode>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:488
+msgid ""
+"src: xen-blkback: fix leak of grant maps on ring setup failure `[7] "
+"<FREEBSD:FreeBSD-SA-21:06.xen>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:489
+msgid "src: rtsold: auto-probe point to point interfaces"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:490
+msgid "src: growfs: update check-hash when doing large filesystem expansions"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:491
+msgid "src: axgbe: change default parameters to prevent manual tunable settings"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:492
+msgid "src: arp: avoid segfaulting due to out-of-bounds memory access"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:493
+msgid ""
+"ports: cpdup 1.22 `[8] "
+"<https://github.com/DragonFlyBSD/cpdup/releases/tag/v1.22>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:494
+msgid "ports: krb5 1.19.1 `[9] <https://web.mit.edu/kerberos/krb5-1.19/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:495
+msgid ""
+"ports: nss 3.62 `[10] <https://developer.mozilla.org/en-"
+"US/docs/Mozilla/Projects/NSS/NSS_3.62_release_notes>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:496
+msgid "ports: pkg now provides fallback for version mismatch on pkg-add"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:497
+msgid ""
+"ports: python 3.7.10 `[11] "
+"<https://docs.python.org/release/3.7.10/whatsnew/changelog.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:498
+msgid ""
+"ports: syslog-ng 3.31.1 `[12] <https://github.com/syslog-ng/syslog-"
+"ng/releases/tag/syslog-ng-3.31.1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:500
+msgid "A hotfix release was issued as 21.1.3_3:"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:502
+msgid ""
+"system: fix dashboard traffic widget load behaviour (contributed by "
+"kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:503
+msgid "system: fix dashboard widget title regression"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:504
+msgid "firmware: fix compatibility regression with IE 11"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:510
+msgid "21.1.2 (February 23, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:513
+msgid ""
+"Please do enjoy this round of timely crypto library updates and other "
+"reliability fixes."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:516
+msgid ""
+"Work has so far been focused on the firmware update process to ensure its"
+" safety around edge cases and recovery methods for the worst case. To "
+"that end 21.1.3 will likely receive the full revamp including API and GUI"
+" changes for a swift transition after thorough testing of the changes now"
+" available in the development package of this release."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:524
+msgid "system: do not trim string fields in upstream XMLRPC library"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:525
+msgid "system: fix export API keys reload issue on Safari"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:526
+msgid "system: retain index after tunables sorting in 21.1.1"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:527
+msgid "system: fix firewall log widget update on small fixed number of entries"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:528
+msgid "system: replace traffic graphs in widget using chart.js"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:529
+msgid ""
+"system: make StartTLS work when retrieving LDAP authentication containers"
+" (contributed by Christian Brueffer)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:530
+msgid "system: fix IPv6 route deletion on status page"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:531
+msgid "interfaces: work around slow manufacturer lookups in py-netaddr 0.8.0"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:532
+msgid "firewall: fix off-by-one error in alias utility listing"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:533
+msgid ""
+"firewall: fix live log matching with 'or' and empty filter (contributed "
+"by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:534
+msgid "reporting: prevent NetFlow crash when interface number is missing"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:535
+msgid ""
+"firmware: opnsense-update -t option executes after -p making it possible "
+"to run them at once"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:536
+msgid ""
+"firmware: opnsense-update -t option now also uses recovery code "
+"introduced recently for -p"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:537
+msgid ""
+"firmware: opnsense-update -vR no longer emits \"unknown\" if no version "
+"was found"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:538
+msgid "firmware: opnsense-verify -l option lists enabled package repositories"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:539
+msgid "firmware: add crypto package to health check"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:540
+msgid "firmware: fix two JS tracker bugs"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:541
+msgid "firmware: assorted non-breaking changes for upcoming firmware revamp"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:542
+msgid "intrusion detection: prevent flowbits:noalert from being dropped"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:543
+msgid "intrusion detection: fix policies not matching categories"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:544
+msgid "ipsec: phase2 local/remote network check does not apply on VTI interfaces"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:545
+msgid "web proxy: fix ownership issue on template directory"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:546
+msgid "rc: opnsense-beep utility wrapper including manual page"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:547
+msgid ""
+"plugins: increase revision number for all plugins to force installation "
+"of metadata added in 21.1.1"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:548
+msgid ""
+"plugins: os-acme-client 2.4 `[1] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/security/acme-"
+"client/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:549
+msgid ""
+"plugins: os-postfix 1.18 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/mail/postfix/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:550
+msgid ""
+"plugins: os-rspamd 1.11 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/mail/rspamd/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:551
+msgid "plugins: os-theme-cicada 1.27 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:552
+msgid "plugins: os-theme-tukan 1.24 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:553
+msgid "plugins: os-theme-vicuna 1.3 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:554
+msgid "ports: curl 7.75.0 `[4] <https://curl.se/changes.html#7_75_0>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:555
+msgid ""
+"ports: libressl 3.2.4 `[5] "
+"<https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.2.4-relnotes.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:556
+msgid ""
+"ports: openssl 1.1.1j `[6] "
+"<https://www.openssl.org/news/openssl-1.1.1-notes.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:557
+msgid "ports: php 7.3.27 `[7] <https://www.php.net/ChangeLog-7.php#7.3.27>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:558
+msgid ""
+"ports: squid 4.14 `[8] <http://www.squid-"
+"cache.org/Versions/v4/squid-4.14-RELEASENOTES.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:559
+msgid ""
+"ports: unbound 1.13.1 `[9] "
+"<https://nlnetlabs.nl/projects/unbound/download/#unbound-1-13-1>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:565
+msgid "21.1.1 (February 09, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:568
+msgid ""
+"The 21.1 series debut looks pretty good so far.  Thanks again for your "
+"input and comments!"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:571
+msgid ""
+"We will be spending a lot of time this year improving and adapting the "
+"code base.  As a first glimpse, the changes of this stable update are a "
+"mix of security and reliability updates coupled with preparations for the"
+" update framework revamp we have planned for 21.7.  The roadmap is still "
+"not final, but will likely contain long-yearned-for features.  Stay "
+"tuned."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:579
+msgid "firewall: change order of shaper delay parameter to prevent parser errors"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:580
+msgid "firewall: fix multiple PHP warnings regarding category additions"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:581
+msgid "firewall: fix icon toggle for block and reject (contributed by ElJeffe)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:582
+msgid "interfaces: unhide primary IPv6 in overview page"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:583
+msgid "interfaces: fix IPv6 misalignment in get_interfaces_info()"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:584
+msgid ""
+"reporting: fix sidebar menu collapse for NetFlow link (contributed by "
+"Maurice Walker)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:585
+msgid ""
+"captive portal: validate that static IP address exists when writing the "
+"configuration"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:586
+msgid "firmware: add product status backend for upcoming firmware page redesign"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:587
+msgid "firmware: opnsense-code will now check out the default release branch"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:588
+msgid "firmware: opnsense-update adds \"-R\" option for major release selection"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:589
+msgid "firmware: opnsense-update will now update repositories if out of sync"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:590
+msgid "firmware: opnsense-update will attempt to recover from fatal pkg behaviour"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:591
+msgid "firmware: opnsense-update now correctly redirects stderr on major upgrades"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:592
+msgid ""
+"firmware: opnsense-update now retains vital flag on faulty release type "
+"transition"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:593
+msgid ""
+"intrusion detection: clean up rule based additions to prevent collisions "
+"with the new policies"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:594
+msgid "monit: minor bugfixes and UI changes (contributed by Manuel Faux)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:595
+msgid "unbound: update documentation URL (contributed by xorbital)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:596
+msgid ""
+"ui: format packet count with toLocaleString() in interface statistics "
+"widget (contributed by bleetsheep)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:597
+msgid "ui: add compatibility for JS replaceAll() function"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:598
+msgid "rc: support reading JSON metadata from plugin version files"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:599
+msgid "plugins: provide JSON metadata in plugin version files"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:600
+msgid ""
+"plugins: os-dyndns GratisDNS apex domain fix (contributed by Fredrik "
+"Rambris)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:601
+msgid "plugins: os-nginx upstream TLS verification fix (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:602
+msgid "plugins: os-theme-cicada 1.26 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:603
+msgid "plugins: os-theme-vicuna 1.2 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:604
+msgid ""
+"src: panic when destroying VNET and epair simultaneously `[1] <FREEBSD"
+":FreeBSD-EN-21:03.vnet>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:605
+msgid ""
+"src: uninitialized file system kernel stack leaks `[2] <FREEBSD:FreeBSD-"
+"SA-21:01.fsdisclosure>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:606
+msgid ""
+"src: Xen guest-triggered out of memory `[3] <FREEBSD:FreeBSD-"
+"SA-21:02.xenoom>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:607
+msgid ""
+"src: update timezone database information `[4] <FREEBSD:FreeBSD-"
+"EN-21:01.tzdata>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:608
+msgid ""
+"ports: dnsmasq 2.84 `[5] "
+"<https://www.thekelleys.org.uk/dnsmasq/CHANGELOG>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:609
+msgid "ports: lighttpd 1.4.59 `[6] <http://www.lighttpd.net/2021/2/2/1.4.59/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:610
+msgid "ports: krb5 1.19 `[7] <https://web.mit.edu/kerberos/krb5-1.19/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:611
+msgid "ports: monit 5.27.2 `[8] <https://mmonit.com/monit/changes/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:612
+msgid "ports: perl 5.32.1 `[9] <https://perldoc.perl.org/5.32.1/perldelta>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:613
+msgid "ports: sqlite 3.34.1 `[10] <https://sqlite.org/releaselog/3_34_1.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:619
+msgid "21.1 (January 28, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:655
+msgid "Here are the full patch notes against 20.7.8:"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:657 ../../source/releases/CE_21.1.rst:792
+msgid "system: use authentication factory for web GUI login"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:658 ../../source/releases/CE_21.1.rst:793
+msgid "system: allow case-insensitive matching for LDAP user authentication"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:659 ../../source/releases/CE_21.1.rst:794
+msgid "system: removed unused gateway API dashboard feed"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:660 ../../source/releases/CE_21.1.rst:795
+msgid ""
+"system: removed spurious comma from certificate subject print and unified"
+" underlying code"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:661 ../../source/releases/CE_21.1.rst:796
+msgid "system: harden web GUI defaults to TLS 1.2 minimum and strong ciphers"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:662 ../../source/releases/CE_21.1.rst:797
+msgid "system: generate a better self-signed certificate for web GUI default"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:663 ../../source/releases/CE_21.1.rst:798
+msgid ""
+"system: allow self-signed renew for web GUI default (using \"configctl "
+"webgui restart renew\")"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:664 ../../source/releases/CE_21.1.rst:799
+msgid ""
+"system: allow subdirectories in NextCloud backup (contributed by Lorenzo "
+"Milesi)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:665
+msgid "system: first backup is same as current so ignore it on GUI and console"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:666 ../../source/releases/CE_21.1.rst:800
+msgid ""
+"system: optionally allow TOTP users to regenerate a token from the "
+"password page"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:667
+msgid "system: set hw.uart.console appropriately"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:668
+msgid "system: reconfigure routes on bootup"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:669 ../../source/releases/CE_21.1.rst:802
+msgid "system: relax gateway name validation"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:670
+msgid "system: ignore disabled gateways in dpinger services"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:671
+msgid "system: choose a better bind candidate for IPv4 in dpinger"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:672 ../../source/releases/CE_21.1.rst:805
+msgid ""
+"interfaces: defer IPv6 disable in interface code to ensure PPP interfaces"
+" do exist"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:673 ../../source/releases/CE_21.1.rst:806
+msgid ""
+"interfaces: no longer assume configuration-less interfaces can reach "
+"static setup code"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:674
+msgid "interfaces: fix PPP links not linking to its advanced configuration page"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:675
+msgid "interfaces: read deprecated flag, allow family spec in (-)alias calls"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:676
+msgid "interfaces: fix address removal in IPv6 CARP case"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:677
+msgid "interfaces: pick proper route for 6RD and 6to4 tunnels"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:678
+msgid ""
+"interfaces: support 6RD with single /64 prefix (contributed by Marcel "
+"Hofer)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:679
+msgid ""
+"firewall: support category filters for firewall and NAT rules `[3] "
+"<https://github.com/opnsense/core/issues/4587>`__  (sponsored by Modirum)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:680 ../../source/releases/CE_21.1.rst:808
+msgid "firewall: add live log \"host\", \"port\" and \"not\" filters"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:681 ../../source/releases/CE_21.1.rst:810
+msgid "firewall: create an appropriate max-mss scrub rule for IPv6"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:682 ../../source/releases/CE_21.1.rst:811
+msgid "firewall: fix anti-spoof option for separate bridge interfaces"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:683
+msgid ""
+"firewall: display zeros and sort columns in pfTables (contributed by "
+"kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:684 ../../source/releases/CE_21.1.rst:812
+msgid "firewall: relax schedule name validation"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:685
+msgid "reporting: prevent calling top talkers when no interfaces are selected"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:686
+msgid "reporting: cleanup deselected interface rows in top talkers"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:687 ../../source/releases/CE_21.1.rst:821
+msgid "dhcp: hostname validation now includes domain"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:688
+msgid ""
+"dhcp: use same logic as menu figuring out if DHCPv6 page is reachable "
+"from leases"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:689 ../../source/releases/CE_21.1.rst:822
+msgid ""
+"dhcp: correct DHCPv6 custom options unsigned integer field (contributed "
+"by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:690
+msgid ""
+"dhcp: added toggle for disabling RDNSS in router advertisements "
+"(contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:691 ../../source/releases/CE_21.1.rst:823
+msgid ""
+"dhcp: removed the need for a static IPv4 being outside of the pool "
+"(contributed by Gauss23)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:692 ../../source/releases/CE_21.1.rst:824
+msgid "dhcp: add min-secs option for each subnet (contributed by vnxme)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:693 ../../source/releases/CE_21.1.rst:826
+msgid "dnsmasq: remove advanced configuration in favour of plugin directory"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:694 ../../source/releases/CE_21.1.rst:827
+msgid "dnsmasq: use domain override for static hosts"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:695
+msgid "firmware: disable autoscroll if client position differs"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:696
+msgid ""
+"firmware: remove spurious \\*.pkgsave files and offload post install bits"
+" to rc.syshook"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:697 ../../source/releases/CE_21.1.rst:832
+msgid ""
+"firmware: repair display of removed packages during release type "
+"transition"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:698
+msgid "firmware: add ability to run audits from the console"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:699
+msgid "firmware: show repository in package and plugin overviews"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:700 ../../source/releases/CE_21.1.rst:835
+msgid ""
+"intrusion detection: replace file-based policy changes with detailed "
+"filters"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:701
+msgid ""
+"ipsec: NAT with multiple phase 2 `[4] "
+"<https://github.com/opnsense/core/issues/4460>`__  (sponsored by m.a.x. "
+"it)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:702 ../../source/releases/CE_21.1.rst:837
+msgid "ipsec: prevent VTI interface to hit spurious 32768 limit"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:703 ../../source/releases/CE_21.1.rst:838
+msgid "ipsec: allow mixed IPv4/IPv6 for VTI"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:704 ../../source/releases/CE_21.1.rst:841
+msgid "openvpn: added toggle for block-outside-dns (contributed by Julio Camargo)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:705 ../../source/releases/CE_21.1.rst:842
+msgid ""
+"openvpn: hide \"openvpn_add_dhcpopts\" fields when not parsed via the "
+"backend"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:706
+msgid "unbound: allow /0 in ACL network"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:707 ../../source/releases/CE_21.1.rst:844
+msgid "unbound: default to SO_REUSEPORT"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:708 ../../source/releases/CE_21.1.rst:845
+msgid "web proxy: add GSuite and YouTube filtering (contributed by Julio Camargo)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:709
+msgid "mvc: do not discard valid application/json content type headers"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:710 ../../source/releases/CE_21.1.rst:847
+msgid "mvc: make sure isArraySequential() is only true on array input"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:711 ../../source/releases/CE_21.1.rst:848
+msgid "mvc: speed up processing time when over 2000 users are selected in a group"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:712
+msgid "mvc: add locking in JsonKeyValueStoreField type"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:713
+msgid "mvc: change LOG_LOCAL4 to LOG_LOCAL2 in base model"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:714 ../../source/releases/CE_21.1.rst:850
+msgid "images: use UFS2 as the default for nano, serial and vga"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:715 ../../source/releases/CE_21.1.rst:851
+msgid "images: support UEFI boot in serial image"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:716 ../../source/releases/CE_21.1.rst:852
+msgid "ui: add tooltips for service control widget"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:717 ../../source/releases/CE_21.1.rst:853
+msgid "ui: move sidebar stage from session to local storage"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:718
+msgid "ui: upgrade Tokenize2 to v1.3.3"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:719
+msgid ""
+"plugins: os-acme-client 2.3 `[5] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/security/acme-"
+"client/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:720
+msgid ""
+"plugins: os-bind 1.16 `[6] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/dns/bind/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:721
+msgid ""
+"plugins: os-frr 1.21 `[7] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/frr/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:722
+msgid ""
+"plugins: os-maltrail 1.6 `[8] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/security/maltrail"
+"/pkg-descr>`__  (contributed by jkellerer)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:723
+msgid ""
+"plugins: os-smart adds cron jobs for useful actions (contributed by Jacek"
+" Tomasiak)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:724
+msgid "plugins: os-telegraf 1.8.3 adds ping6 ability (contributed by DasSkelett)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:725 ../../source/releases/CE_21.1.rst:857
+msgid "src: fix AES-CCM requests with an AAD size smaller than a single block"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:726 ../../source/releases/CE_21.1.rst:858
+msgid "src: introduce HARDEN_KLD to ensure DTrace functionality"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:727 ../../source/releases/CE_21.1.rst:860
+msgid "src: refine pf_route\\* behaviour in PF_DUPTO case for shared forwarding"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:728 ../../source/releases/CE_21.1.rst:861
+msgid "src: assorted upstream fixes for ipfw, iflib, multicast processing and pf"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:729
+msgid ""
+"src: netmap tun(4) support adds pseudo addresses to ethernet header "
+"emulation (contributed by Sunny Valley Networks)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:730
+msgid "src: add a manual page for axp(4) / AMD 10G Ethernet driver"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:731
+msgid "src: fix traffic graph not showing bandwidth when IPS is enabled"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:732
+msgid ""
+"ports: dnsmasq 2.83 `[9] "
+"<https://www.thekelleys.org.uk/dnsmasq/CHANGELOG>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:733
+msgid ""
+"ports: igmpproxy 0.3 `[10] "
+"<https://github.com/pali/igmpproxy/releases/tag/0.3>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:734
+msgid ""
+"ports: nss 3.61 `[11] <https://developer.mozilla.org/en-"
+"US/docs/Mozilla/Projects/NSS/NSS_3.61_release_notes>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:735
+msgid ""
+"ports: openldap 2.4.57 `[12] "
+"<https://www.openldap.org/software/release/changes.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:736
+msgid "ports: py-netaddr 0.8.0 `[13] <https://pypi.org/project/netaddr/0.8.0/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:737
+msgid "ports: sudo 1.9.5p2 `[14] <https://www.sudo.ws/stable.html#1.9.5p2>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:739 ../../source/releases/CE_21.1.rst:872
+msgid "The public key for the 21.1 series is:"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:769
+msgid "21.1.r1 (January 13, 2021)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:777
+msgid ""
+"We thank all of you for helping test, shape and contribute to the "
+"project! We know it would not be the same without you.  <3"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:780
+msgid ""
+"Download links, an installation guide `[1] "
+"<https://docs.opnsense.org/manual/install.html>`__  and the checksums for"
+" the images can be found below as well."
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:790
+msgid "Here are the full patch notes against 20.7.7_1:"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:801
+msgid "system: set default certificate lifetime to 397 days"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:803
+msgid ""
+"system: display destination port number in firewall log widget "
+"(contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:804
+msgid ""
+"system: allow to recover from bad TLS certificate and/or bad settings in "
+"console interface assign"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:807
+msgid "interfaces: fix PPP links not linking to linked advanced configuration"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:809
+msgid "firewall: add manual refresh button to live log"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:813
+msgid "firewall: fix typo in ICMPv6 validation"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:814
+msgid "firewall: add type 128 to outgoing IPv6 RFC4890 requirements"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:815
+msgid "firewall: fix minor regression in maintaining target alias file"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:816
+msgid "firewall: category selector missing caption"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:817
+msgid "firewall: fix all state value in pfTop (contributed by Lucas Held)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:818
+msgid "firewall: remove duplicated destination field in live log"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:819
+msgid ""
+"firewall: add read-only actions to aliases permission (contributed by "
+"Manuel Faux)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:820
+msgid "reporting: add top talkers to revamped traffic graphs page"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:825
+msgid "dhcp: fix sorting of IPv6 static mappings (contributed by vnxme)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:828
+msgid ""
+"firmware: opnsense-code now updates the current directory if nothing was "
+"specified"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:829
+msgid "firmware: opnsense-code now uses flexible make.conf target from tools.git"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:830
+msgid "firmware: opnsense-update now supports snapshot access via -z option"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:831
+msgid "firmware: opnsense-update now fixes missing dependencies on the fly"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:833
+msgid "firmware: fix some issues with missing repository on server"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:834
+msgid "firmware: add version output and date to audit logs"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:836
+msgid "ipsec: NAT with multiple phase 2 (sponsored by m.a.x. it)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:839
+msgid "ipsec: display remote host in status overview (contributed by garlic17)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:840
+msgid "openssh: honour MAX_LISTEN_SOCKS to prevent startup failure"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:843
+msgid "openvpn: set default certificate lifetime to 397 days in wizard"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:846
+msgid "web proxy: lock ACL download to prevent duplicate execution"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:849
+msgid "mvc: allow underscore in filter string (contributed by kulikov-a)"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:854
+msgid ""
+"plugins: os-bind 1.15 `[2] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/dns/bind/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:855
+msgid ""
+"plugins: os-frr 1.21 `[3] "
+"<https://github.com/opnsense/plugins/blob/stable/21.1/net/frr/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:856
+msgid ""
+"src: fix OpenSSL NULL pointer de-reference `[4] <FREEBSD:FreeBSD-"
+"SA-20:33.openssl>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:859
+msgid "src: fix partial scrub of multicast packages"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:862
+msgid ""
+"ports: libressl 3.2.3 `[5] "
+"<https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.2.2-relnotes.txt>`__"
+"  `[6] "
+"<https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.2.3-relnotes.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:863
+msgid "ports: nss 3.60.1"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:864
+msgid "ports: pkg fix for shell keyword by opening root file descriptor"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:865
+msgid "ports: radvd 2.19 `[7] <https://radvd.litech.org/CHANGES.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:866
+msgid "ports: sudo 1.9.4p2 `[8] <https://www.sudo.ws/stable.html#1.9.4p2>`__"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:868
+msgid "Known issues and limitations:"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:870
+msgid "Installer currently advertises 20.7"
+msgstr ""
+
+#: ../../source/releases/CE_21.1.rst:891
+msgid "Please let us know about your experience!"
+msgstr ""
+

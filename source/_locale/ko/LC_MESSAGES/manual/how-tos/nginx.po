@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/nginx.rst:3
+msgid "nginx: Basic Load Balancing"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx.rst:6
+msgid "1) Create Upstream Servers"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx.rst:12
+msgid ""
+"Create a server with a description and IP of the server. The priority is "
+"not important if you have a single server. It is used as a weight for "
+"round robin. Servers with a higher weight will receive more traffic."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx.rst:16
+msgid "2) Create An Upstream"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx.rst:20
+msgid ""
+"Group upstream servers to an upstream. An upstream is a group of servers "
+"to load balance between. Give it a useful name and choose the previously "
+"created server."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx.rst:25
+msgid ""
+"Upstream verification is enabled by default (**TLS: Verify Certificate** "
+"checkbox). Server names in the upstream certificate are compared with the"
+" name in the **TLS: Servername override** field. For successful "
+"verification, it is necessary that OPNsense trusts the certificate of the"
+" certification authority that issued the upstreams certificate. You can "
+"further restrict the list of trusted CA's in the **TLS: Trusted "
+"Certificate** field."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx.rst:28
+msgid "3) Create A Location"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx.rst:32
+msgid ""
+"Locations are are used to map URLs to upstreams, directories, settings "
+"and so on. In our case we want to proxy the request to the previously "
+"created upstream. If we want to match everything, we use \"/\" without a "
+"special matcher. Now save the location."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx.rst:38
+msgid "4) Create A HTTP Server"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx.rst:42
+msgid ""
+"In the last step, we have to create a port. This happens in a \"http\" "
+"block, which contains some basic configuration and the location blocks."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx.rst:45
+msgid ""
+"Enter the domain name into the \"Server Name\" field and select the "
+"previously created location. If you want to use support TLS, you have to "
+"add a certificate."
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx.rst:49
+msgid "5) Restart nginx"
+msgstr ""
+
+#: ../../source/manual/how-tos/nginx.rst:53
+msgid ""
+"Click the reload button and you are done. You may need to open some ports"
+" in the firewall if you have not done that yet. Since you are directly on"
+" the firewall, There is no need to use NAT similar workaround."
+msgstr ""
+

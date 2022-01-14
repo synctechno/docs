@@ -1,0 +1,999 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/examples/helloworld.rst:3
+msgid "Hello world module & plugin"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:16
+msgid "Goal"
+msgstr ""
+
+msgid "Goal for this sample"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:23
+msgid ""
+"The goal of the \"Hello world\" module we're creating in the example is "
+"to control a program on our system named \"testConnection.py\", which is "
+"part of the example package available on GitHub. It will try to send an "
+"email using plain smtp and will respond with a json text message about "
+"the result of that attempt."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:29
+msgid ""
+"Our application will need some settings to operate correctly, like an ip "
+"address and an email address and we need to be able to run that "
+"application. Because this application returns some valuable data for our "
+"users, we need to be able to fetch the response data back."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:34
+msgid "|overview|"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:991
+msgid "overview"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:40
+msgid "Guidelines"
+msgstr ""
+
+msgid "Guidelines and coding style"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:45
+msgid ""
+"For all OPNsense modules and applications there are some basic style and "
+"coding guides which you should use."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:49
+msgid "Naming"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:52
+msgid ""
+"When creating modules for OPNsense, always name your components like "
+"this: VendorName/ModuleName"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:55
+msgid "In our sample case this will be: OPNsense/HelloWorld"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:58
+msgid "PHP code"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:60
+msgid ""
+"Please use PSR-2 style (http://www.php-fig.org/psr/psr-2/) for all new "
+"code."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:65
+msgid "Architecture"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:67
+msgid ""
+"Always make sure there's a clear separation of concerns, back-end calls "
+"(like shell scripts) should be implemented using the configd system, all "
+"communication to the client should be handled from an API endpoint. (the "
+"example provides more insights on how this works)."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:72
+msgid ""
+"Back-end programs should not access the config.xml directly, if data is "
+"needed let the template system handle the desired output (most "
+"applications, daemons and tools deliver their own desired configuration "
+"format). There's generally no good reason to avoid the standards that are"
+" already there."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:78
+msgid ""
+"If you follow this basic rules, you're automatically building a command "
+"structure for the system administrators and provide a connector to third "
+"party tools to the API of your component (as of version 16.1)."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:84
+msgid "Skeleton"
+msgstr ""
+
+msgid "Setup a skeleton for the frontend / middleware"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:89
+msgid ""
+"First step for our project is to build a skeleton which holds the "
+"structure for our frontend/middleware."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:93
+msgid "Model"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:95
+msgid ""
+"For our sample application we want to setup some configuration data, "
+"which for all new style projects should live in it’s own model."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:98
+msgid ""
+"First we start by creating two files inside the "
+"models/OPNsense/HelloWorld directory."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:101
+msgid ""
+"The first one is the boilerplate for the model class, which should "
+"contain model specific methods and (by deriving it from BaseModel) "
+"automatically understands the second file."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:105
+msgid "/usr/local/opnsense/mvc/app/models/OPNsense/HelloWorld/HelloWorld.php"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:118
+msgid ""
+"Not all modules contain additional code in the PHP class, sometimes all "
+"the standard behaviour is already sufficient for your "
+"modules/application."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:122
+msgid ""
+"Which is the model XML template, our skeleton starts with something like "
+"this:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:125
+msgid "/usr/local/opnsense/mvc/app/models/OPNsense/HelloWorld/HelloWorld.xml"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:138
+msgid ""
+"The content of the mount tag is very important, this is the location "
+"within the config.xml file where this model is responsible. Other models "
+"cannot write data into the same area. You should name this location with "
+"your vendor and module name to make sure others could easily identify it."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:144
+msgid ""
+"Use the description tag to identify your model, the last tag in place is "
+"the items tag, where the actual definition will live. We leave it empty "
+"for now as we proceed with the next step of creating our skeleton."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:149
+msgid "View"
+msgstr ""
+
+msgid "Page template (View)"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:154
+msgid ""
+"We should add a (Volt) template to use for the index page of our module; "
+"we will use the same naming convention here."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:157
+msgid ""
+"Create a template named index.volt inside the views/OPNsense/HelloWorld "
+"directory containing the following data:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:161
+#: ../../source/development/examples/helloworld.rst:797
+msgid "/usr/local/opnsense/mvc/app/views/OPNsense/HelloWorld/index.volt"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:168
+msgid "Controller"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:170
+msgid ""
+"Next step is to add controllers, which will be automatically picked up by"
+" the system routing. A controller connects the user interaction to logic "
+"and presentation."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:174
+msgid ""
+"Every OPNsense module should separate presentation from logic, that’s why"
+" there should always be multiple controllers per module."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:177
+msgid ""
+"Our first controller handles the template rendering to the user and "
+"connects the user view we just created. We start by creating a PHP file "
+"in controllers/OPNsense/HelloWorld/ with the following name "
+"IndexController.php and contents:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:182
+msgid "/usr/local/opnsense/mvc/app/controllers/OPNsense/HelloWorld/IndexController.php"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:197
+msgid ""
+"At this point you should be able to test if your work so far was "
+"successful, by going to the following location (after being logged in to "
+"the firewall as root user):"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:205
+msgid ""
+"Which should serve you the “Hello World!” text you’ve added in the "
+"template."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:208
+msgid "|Serving the first \"hello world\" page|"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:993
+msgid "Serving the first \"hello world\" page"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:210
+msgid ""
+"Next two controllers we are going to create are to be used for the api to"
+" the system, they should take care of service actions and the "
+"retrieval/changing of configuration data."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:214
+msgid ""
+"They should live in a subdirectory of the controller called Api and "
+"extend the corresponding class."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:217
+msgid ""
+"For our modules we create two API controllers, one for controlling "
+"settings and one for performing service actions. (Named "
+"SettingsController.php and ServiceController.php) Both should look like "
+"this (replace Settings with Service for the other one):"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:222
+#: ../../source/development/examples/helloworld.rst:410
+#: ../../source/development/examples/helloworld.rst:443
+msgid "/usr/local/opnsense/mvc/app/controllers/OPNsense/HelloWorld/Api/SettingsController.php"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:236
+msgid "First Input Form"
+msgstr ""
+
+msgid "Building your first input form"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:241
+msgid ""
+"The first step in building forms is to determine what information we "
+"should collect."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:244
+msgid ""
+"Our simple application will send an email using data in our configuration"
+" xml. For this very module we want to collect the following:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:249
+msgid "Property"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:249
+msgid "Default"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:249
+msgid "Description"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:251
+msgid "General.Enabled"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:251
+msgid "Enabled (1)"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:251
+msgid "Should this module be enabled (Boolean)"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:253
+msgid "General.SMTPHost"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:253
+#: ../../source/development/examples/helloworld.rst:257
+#: ../../source/development/examples/helloworld.rst:259
+msgid "<empty>"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:253
+msgid "IP address for the remote smtp host"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:255
+msgid "General.FromEmail"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:255
+msgid "sample@example.com"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:255
+msgid "Email address of the sender"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:257
+msgid "General.ToEmail"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:257
+msgid "Email address to send our test email to"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:259
+msgid "General.Description"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:259
+msgid "Description, used as subject of the email."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:263
+msgid "Adding Fields"
+msgstr ""
+
+msgid "Adding fields to your model"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:268
+msgid ""
+"When building the skeleton, we have created an empty model (XML), which "
+"we are going to fill with some attributes now. The items section of the "
+"model XML should contain the structure you want to use for your "
+"application, you can create trees to hold data in here. All leaves should"
+" contain a field type to identify and validate it’s content. The list of "
+"attributes for our application can be translated to this:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:303
+msgid ""
+"All available field types can be found in the "
+"models/OPNsense/Base/FieldTypes directory. If specific field types "
+"support additional parameters, for example for validation, they should be"
+" registered in the model as well (just like the default tag in Enabled)."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:310
+msgid "Presentation XML"
+msgstr ""
+
+msgid "Create a presentation XML to feed your template"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:315
+msgid ""
+"Because creating forms is one of the key assets of the system, we have "
+"build some easy to use wrappers to guide you through the process. First "
+"we create an XML file for the presentation, which defines fields to use "
+"and adds some information for your template to render. Create a file in "
+"your controller directory using the sub directory forms and name it "
+"general.xml. Next copy in the following content:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:322
+msgid "/usr/local/opnsense/mvc/app/controllers/OPNsense/HelloWorld/forms/general.xml"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:357
+msgid ""
+"All items should contain at least an id (where to map data from/to), a "
+"type (how to display) and a label, which identifies it to the user. "
+"Optional you may add additional fields like help or mark features as "
+"being only for advanced users. (The Volt template defines which "
+"attributes are usable.)"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:363
+msgid ""
+"Now we need to tell the controller to use this information and pass it to"
+" your template, so change the IndexController.php and add this line:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:370
+msgid ""
+"And we are ready to update the (Volt) template with this information. "
+"Let’s remove the \"<h1>Hello World!</h1>\" line and replace it with "
+"something like this:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:378
+msgid ""
+"This tells the template system to add a form using the contents of "
+"generalForm and name it frm\\_GeneralSettings in the HTML page. Based on "
+"a standard template part which is already part of the standard system, "
+"named base\\_form.volt."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:383
+msgid "When opening the page again it will render like this:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:385
+msgid "|Template with fields without content|"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:996
+msgid "Template with fields without content"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:388
+msgid "Create API calls"
+msgstr ""
+
+msgid "Create API calls to retrieve and store data"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:393
+msgid ""
+"The framework provides some helpful utilities to get and set data from "
+"and to the configuration XML by using your defined model. First step in "
+"binding your model to the system is to add a method to the "
+"SettingsController to fetch the data from our configuration (or provide "
+"the defaults if there is no content)."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:399
+msgid ""
+"We start by adding the model to our SettingsController, by adding this in"
+" the “use” section:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:406
+msgid ""
+"Which includes our model into the controller. Next we create an action to"
+" get data from our system, and put it into a json object for the client "
+"(browser) to parse, by using the wrappers already in our model."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:427
+msgid ""
+"You will probably notice the return value of the action, it's a standard "
+"array which uses \"helloworld\" for all attributes from getNodes() which "
+"will automatically be converted by the framework to a json object for the"
+" client. The getNodes method itself returns a tree a values, as defined "
+"by your model."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:433
+msgid ""
+"You can test the result (while logged in as root), by going to this "
+"address:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:440
+msgid ""
+"For saving the data back, we need a similar kind of call, let’s name it "
+"“set” and add this to the same php file:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:478
+msgid ""
+"And include the Config class from our base system by adding this to the "
+"“use” section:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:487
+msgid "[Create API calls] Simplify a recurring pattern"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:489
+msgid ""
+"As one can imagine, retrieving and setting data is a pattern that is used"
+" quite often and for which we would like to minimize the amount of work "
+"needed to incorporate."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:492
+msgid ""
+"The API example can be simplified by using one of our base classes "
+"(:code:`ApiMutableModelControllerBase`), which would lead to the same "
+"result. For comparison we have added a different endpoint in "
+":code:`SimplifiedSettingsController.php`"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:504
+msgid ""
+"The \"magic\" is hidden underneath, but equals the example previously "
+"given. :code:`$internalModelName` declares the root of the returned array"
+" structure, :code:`$internalModelClass` tells the controller which model "
+"it should use."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:507
+msgid ""
+"We recommend using (:code:`ApiMutableModelControllerBase`) in most cases,"
+" but to better understand the components and their responsibilities we "
+"choose to explain the separate steps."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:513
+msgid ""
+":code:`ApiMutableModelControllerBase` contains more shared functionality "
+"for grid like operations as well, most of our api controllers use this as"
+" a base."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:517
+msgid "Support jQuery API calls"
+msgstr ""
+
+msgid "Update the view to support the API calls using jQuery"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:522
+msgid ""
+"Now we need to link the events to the backend code to be able to load and"
+" save our form, by using the OPNsense libraries you can validate your "
+"data automatically."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:526
+msgid "Add this to the index.volt template from the HelloWorld module:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:552
+msgid ""
+"The first piece of javascript code handles the loading of data when "
+"opening the form, then a button is linked to the save event."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:555
+msgid "Let’s give it a try and save our data, without modifying it first."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:557
+msgid "|Form with validation errors|"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:999
+msgid "Form with validation errors"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:559
+msgid ""
+"Next correct the errors and save again, on successful save the data "
+"should be stored in the config.xml. If you want to change validation "
+"messages, just edit the model XML and add your message in the "
+"ValidationMessage tag. For example:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:571
+msgid ""
+"Changes the “email address invalid” into “please specify a valid email "
+"address”"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:576
+msgid ""
+"replace :code:`/api/helloworld/settings` with "
+":code:`/api/helloworld/simplifiedsettings` to use the simplified api "
+"controller as explained in  \"Simplify a recurring pattern\" earlier."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:580
+msgid "Add actions"
+msgstr ""
+
+msgid "Add some activity to the module"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:585
+msgid ""
+"Our basic module provides a way to read and modify configuration data "
+"using the web interface (and in time also other consumers using the api)."
+" Next step is to add some activity to our system, all backend "
+"applications should use their own configuration, which in real life we "
+"would keep as standard as possible."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:591
+msgid ""
+"For our example we will follow the same process as for any other service "
+"and start writing some configuration data for our sample application. "
+"Which means, creating a template and hooking it into our save action."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:595
+msgid ""
+"Our example will write a simple configuration file, stored in "
+"/usr/local/etc/helloworld/helloworld.conf"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:598
+msgid ""
+"The configd system is responsible for updating the contents of that file "
+"when requested, it does so by using a definition found in its template "
+"folder. This sample will use the following path to store the backend "
+"templates:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:607
+msgid ""
+"First we add a content definition, by creating a file named +TARGETS, "
+"which should hold the following information:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:614
+msgid ""
+"This basically tells the engine that there will be a file in the same "
+"folder named “helloworld.conf” which provides, together with config.xml, "
+"data for the file in /usr/local/etc/helloworld/helloworld.conf"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:618
+msgid ""
+"Next thing to do is create that helloworld.conf file in the templates "
+"directory. We will keep things very simple for this one and just copy in "
+"our data into an ini file structured configuration, when the module is "
+"enabled."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:633
+msgid ""
+"Now we need to be able to reload this module (or in real life, this would"
+" probably be a service) by adding a service action into our "
+"ServiceController. Edit "
+"controllers/OPNsense/HelloWorld/Api/ServiceController.php and add the "
+"backend module to the use section, like this:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:644
+msgid ""
+"By doing this we can use the backend communication in this class. Next "
+"add a new action to the class called “reloadAction” using this piece of "
+"code:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:648
+#: ../../source/development/examples/helloworld.rst:761
+msgid "/usr/local/opnsense/mvc/app/controllers/OPNsense/HelloWorld/Api/ServiceController.php"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:664
+msgid ""
+"This validates the type of action (it should always be POST to enable "
+"CSRF protection) and adds a backend action for reloading the template. "
+"When successful the action will return \"status\":\"ok\" as json object "
+"back to the client."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:669
+msgid ""
+"Now we are able to refresh the template content, but the user interface "
+"doesn’t know about it yet. To hook loading of the template into the save "
+"action, we will go back to the index.volt view and add the following "
+"jQuery / framework code between the braces of “saveFormToEndPoint”."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:680
+msgid "If you save the form now (when enabled), you should see a new file in"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:686
+msgid "Containing something like this:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:696
+msgid ""
+"What have we accomplished now, we can input data, validate it and save it"
+" to the corresponding format of the actual service or application, which "
+"uses this data. So if you have a third party application, which you want "
+"to integrate into the user interface. You should be able to generate what"
+" it needs now. (There’s more to learn, but these are the basics)."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:703
+msgid ""
+"But how do should we control that third part program now? That’s the next"
+" step."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:708
+msgid "Controlling the sample"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:710
+msgid ""
+"Instead of running all kinds of shell commands directly from the PHP "
+"code, which very often need root access (starting/stopping services, "
+"etc.), we should always communicate to our backend process which holds "
+"templates of possible things to run and protects your system from "
+"executing arbitrary commands."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:716
+msgid ""
+"Another advantage of this approach is that all commands defined here, can"
+" also be ran from the command line of the firewall providing easier "
+"serviceability. For example, the command to refresh the helloworld "
+"configuration can be run from the command line by running:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:725
+msgid ""
+"First thing to do when registering new actions to the system for a new "
+"application is to create a config template."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:732
+msgid "And add a command to the template like this:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:742
+msgid "Let’s test our new command by restarting configd from the command line:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:748
+msgid "And test our new command using:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:754
+msgid "Which should return some response in json format."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:756
+msgid ""
+"Next step is to use this command in our controller (middleware), just "
+"like we did with the template action. For consistency we call our action "
+"testAction and let it pass json data to our clients when using a POST "
+"type request."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:778
+msgid ""
+"And now we can make our user interface aware of the action, place a "
+"button and link an action in the index.volt. Using the following "
+"elements:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:783
+msgid "(in script section)"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:795
+msgid "(in HTML section)"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:806
+msgid ""
+"Now go back to the page and save some data using the save button, next "
+"press test to see some results."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:809
+msgid "|test the application action|"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:1002
+msgid "test the application action"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:813
+msgid "Multi language / Translations"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:815
+msgid ""
+"OPNsense is available in may different languages like english, german or "
+"japanese. This works because we are using the gettext library which is "
+"available to all GUI components. While the XML based user interfaces are "
+"supporting it automatically, there may still the need to call it manually"
+" (buttons, tabs etc.)."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:820
+msgid ""
+"If you have a static string, you should add it like this into a classic "
+"PHP page:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:826
+msgid "And this way into a volt template:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:832
+msgid ""
+"If your string is not only plaintext because it contains non-static "
+"words, HTML tags and other dynamic content, you need to use a format "
+"string. This way, you can use placeholders for such elements which should"
+" not land in the translation file."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:836
+msgid "For php it works this way:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:842
+msgid "And for volt templates it works this way:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:849
+msgid ""
+"You should NEVER split strings which should belong together like a "
+"sentence. This makes plugins hard to translate and will decrease the "
+"quality of OPNsense in other languages."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:855
+msgid "Plugin to the menu system"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:857
+msgid ""
+"Most modules and applications need a place in the menu system, you could "
+"easily arrange that by creating a Menu.xml definition for your module in "
+"the model directory under Menu/Menu.xml."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:861
+msgid ""
+"Now let’s register our “hello world” in the user section of our menu, by "
+"adding this content into the menu.xml:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:874
+msgid ""
+"When you refresh your page now, you should notice the menu system "
+"automatically picks up this new information."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:877
+msgid "|menu registration|"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:1005
+msgid "menu registration"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:881
+msgid "Plugin to access control (ACL)"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:883
+msgid ""
+"If we want to authorize users to access this module, we can add an ACL to"
+" this module. Without it, only admin users can access it. Create an XML "
+"file in the model directory name ACL/ACL.xml and place the following "
+"content in it:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:902
+msgid ""
+"This creates an ACL key named “page-user-helloworld” which authorizes "
+"access to both the ui and API urls of this application. You can now grant"
+" access to this module from the system user manager."
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:909
+msgid "Create an installable plugin"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:911
+msgid ""
+"All files are created in their original locations (on the OPNsense "
+"machine /usr/local/…), now we are ready to create a package from them. To"
+" fully use this process and create the actual package, it’s best to setup"
+" a full build environment (explained over here: "
+"https://github.com/opnsense/tools )"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:917
+msgid ""
+"When everything is in place, we will create a new plugin directory. For "
+"this example we will use the following:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:924
+msgid "Add a new Makefile, containing the information for our plugin:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:938
+msgid "Then create an src directory in here:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:944
+msgid ""
+"Next copy all files created and located in /usr/local/ into this new src "
+"directory, which results in the following file listing:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:964
+msgid ""
+"With everything in place, you could build the plugin package using the "
+"“make plugins” command in the /usr/tools directory. The result of this "
+"will be a standard pkg package, which you can install on any OPNsense "
+"system and will be usable right after installing. All plugins are "
+"prefixed with os-, our new package file will be called:"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:974
+msgid "(-1.0 comes from the version in the makefile)"
+msgstr ""
+
+msgid "Reference"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:979
+msgid ""
+"source of this example : "
+"https://github.com/opnsense/plugins/tree/master/devel/helloworld"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:981
+msgid "build instructions : https://github.com/opnsense/tools"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:982
+msgid "practical frontend development : https://github.com/opnsense/ui_devtools"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:983
+msgid ""
+"frontend template language reference (Volt) : "
+"https://docs.phalconphp.com/en/latest/reference/volt.html"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:985
+msgid ""
+"configuration template language reference (mostly the same as Volt) : "
+"http://jinja.pocoo.org/docs/dev/"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:987
+msgid "OPNsense architecture :doc:`Architecture <../architecture>`"
+msgstr ""
+
+#: ../../source/development/examples/helloworld.rst:988
+msgid ""
+"OPNsense creating models `Develop:Frontend/Creating\\_models "
+"</index.php/Develop:Frontend/Creating_models>`__"
+msgstr ""
+

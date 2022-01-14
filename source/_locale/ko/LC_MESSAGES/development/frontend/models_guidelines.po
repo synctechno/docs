@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/frontend/models_guidelines.rst:3
+msgid "Guidelines"
+msgstr ""
+
+msgid "Some (simple) guidelines developing models"
+msgstr ""
+
+#: ../../source/development/frontend/models_guidelines.rst:8
+msgid ""
+"One model should always be completely responsible for the its mount "
+"point, so if there's a model at mount point /A/B there can't be a model "
+"at /A/B/C"
+msgstr ""
+
+#: ../../source/development/frontend/models_guidelines.rst:11
+msgid ""
+"Try to keep models logical and understandable, it's better to build two "
+"models for you application if the content of two parts aren't related to "
+"each other. It's no issue to create models at deeper levels of the "
+"structure."
+msgstr ""
+
+#: ../../source/development/frontend/models_guidelines.rst:16
+msgid ""
+"When using more models in a application/module, you might want to "
+"consider the following naming convention: /Vendor/Module/Model"
+msgstr ""
+
+#: ../../source/development/frontend/models_guidelines.rst:19
+msgid ""
+"Try to avoid more disc i/o actions than necessary, only call save() if "
+"you actually want to save content, serializeToConfig just keeps the data "
+"in memory."
+msgstr ""
+

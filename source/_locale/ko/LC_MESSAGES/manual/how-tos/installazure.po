@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/installazure.rst:3
+msgid "OPNsense Azure Virtual Appliance"
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:5
+msgid ""
+"OPNsense is a fully featured security platform that secures your network "
+"with high-end features such as inline intrusion prevention, virtual "
+"private networking, two factor authentication, captive portal and "
+"filtering web proxy. The optional high availability setup ensures stable "
+"network performance with automatic failover and synchronised states, "
+"minimising disruption. Keep your network secure and the good packets "
+"flowing."
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:11
+msgid ""
+"The Virtual Appliance is available on the Microsoft Azure Marketplace "
+"(`here <https://azuremarketplace.microsoft.com/en-"
+"en/marketplace/apps/decisosalesbv.opnsense?tab=Overview>`__)."
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:16
+msgid ""
+"Our installation manual will guide you through a simple installation "
+"scenario using 1 network interface, for more advanced network setups you "
+"best checkout the Azure `documentation <https://docs.microsoft.com/en-"
+"en/azure/virtual-machines/linux/multiple-nics>`__."
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:21
+msgid "Setup : Basic settings"
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:23
+msgid ""
+"The Marketplace create button guides you to the initial virtual machine "
+"setup, choose your subscription and system preferences here and name your"
+" virtual machine."
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:29
+msgid ""
+"Next make sure you create an initial administrative user, since some "
+"names are reserved (like admin and root), you need to choose another one "
+"here. In our example we choose :code:`adm001` here."
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:34
+msgid ""
+"You can enable the root user after installation, the setup user can "
+"access the system using ssh or https after installation todo so."
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:43
+msgid "Setup : Disks"
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:45
+msgid ""
+"Next you can choose a disk type to use, **standard SSD** is fast enough "
+"for most workloads."
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:53
+msgid "Setup : Network"
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:55
+msgid ""
+"For our example, we kept our settings simple using a **private IP** which"
+" is accessible over port **443 (https)** after bootup. Most settings can "
+"be changed after deployment."
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:63
+msgid ""
+"Microsoft has quite some information available about different networking"
+" settings and options `here <https://docs.microsoft.com/en-en/azure"
+"/virtual-machines/windows/network-overview>`__"
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:69
+msgid "Create"
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:71
+msgid "Proceed to **Review + create** to finalize the deployment."
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:76
+msgid "Login to your instance"
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:78
+msgid ""
+"When the virtual machine is created and booted for the first time, you "
+"can login using the assigned user (:code:`adm001`), now you can enable "
+"the root user if you like in :menuselection:`System -> Access -> Users`"
+msgstr ""
+
+#: ../../source/manual/how-tos/installazure.rst:86
+msgid ""
+"Our Azure virtual appliance has ssh enabled by default, you can change "
+"these settings in :menuselection:`System -> Settings -> Administration`"
+msgstr ""
+

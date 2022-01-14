@@ -1,0 +1,194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:3
+msgid "IPS Block SSL certificates"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:5
+msgid ""
+"This tutorial explains how to setup the IPS system to block ssl "
+"certificates based on their SHA1 fingerprint."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:10
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:11
+msgid ""
+"Always upgrade to latest release first. See :doc:`/manual/install` and/or"
+" upgrade to latest release: :menuselection:`System --> Firmware --> Fetch"
+" updates`."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:18
+msgid ""
+"Minimum Advisable Memory is 2 Gigabyte and sufficient free disk space for"
+" logging (>10 GB advisable)."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:21
+msgid "Disable all Hardware Offloading Under **Interface-Settings**"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:29
+msgid ""
+"After applying you need to reboot OPNsense otherwise offloading may not "
+"completely be disabled and IPS mode will not function."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:32
+msgid "To start go to :menuselection:`Services --> Intrusion Detection`"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:34
+msgid "|ids_menu|"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:125
+msgid "ids_menu"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:38
+msgid "User defined"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:40
+msgid "Select the tab **User defined**."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:42
+msgid "|ids_tabs_user|"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:126
+msgid "ids_tabs_user"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:46
+msgid "Create a new Rule"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:48
+msgid "Select |add| to add a new rule."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:127
+msgid "add"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:51
+msgid "Get fingerprint of website"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:52
+msgid ""
+"It is relatively easy to find out the SSL fingerprint of a website. For "
+"demonstration we will block facebook and use Firefox to determine the "
+"fingerprint."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:55
+msgid ""
+"Open your browser and go to https://facebook.com when loaded click on the"
+" lock next to the address : |lock|."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:128
+msgid "lock"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:58
+msgid "Now you will see something similar to:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:63
+msgid ""
+"Click on the arrow ( **>** ) and then Select **More Information** Now "
+"open the certificate details and you will see something that looks like "
+"this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:69
+msgid ""
+"Copy the SHA1 certificate fingerprint "
+"(A0:4E:AF:B3:48:C2:6B:15:A8:C1:AA:87:A3:33:CA:A3:CD:EE:C9:C9)."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:72
+msgid "Paste this into the new rule:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:77
+msgid "Select the Action (Alert or Drop):"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:82
+msgid "Add a description:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:88
+msgid "And click **Save changes** |save|"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:124
+msgid "save"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:93
+msgid "Enable Intrusion Detection & Prevention"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:94
+msgid ""
+"To enable IDS/IPS just go to :menuselection:`Services --> Intrusion "
+"Detection` and select **enabled & IPS mode**. Make sure you have selected"
+" the right interface for the intrusion detection system too run on. For "
+"our example we will use the WAN interface, as that will most likely be "
+"you connection with the public Internet."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:103
+msgid "Apply configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:104
+msgid ""
+"First apply the configuration by pressing the **Apply** button at the "
+"bottom of the form."
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:111
+msgid "Clear Browser Cache and test"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:112
+msgid ""
+"Since your browser has cached the ssl certificate you will need to clear "
+"your cache first. After that you can test and will see the following in "
+"**Alerts**:"
+msgstr ""
+
+#: ../../source/manual/how-tos/ips-sslfingerprint.rst:120
+msgid ""
+"If the browser has cached the certificate no SSL certificate exchange "
+"will be done and the website will not be blocked."
+msgstr ""
+

@@ -1,0 +1,356 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/proxy.rst:3
+msgid "Caching Proxy"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:7
+msgid ""
+"OPNsense is equipped with a fully featured forward caching (transparent) "
+"proxy. A caching proxy reduces bandwidth and improves response times by "
+"caching and reusing frequently-requested web pages. The Access Control "
+"Lists can be utilized for user authentication and or as (category based) "
+"web filter."
+msgstr ""
+
+#: ../../source/manual/proxy.rst:12
+msgid "Features include:"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:14
+msgid "Multi Interface Support"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:15
+msgid "Transparent Mode (including SSL/HTTPS)"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:16
+msgid "ICAP Support for Anti Virus/Malware Engine"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:17
+msgid "HTTP Proxy"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:18
+msgid "FTP Proxy"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:19
+msgid "User Authentication"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:20
+msgid "Access Control Lists (valid for both http(s) and ftp)"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:21
+msgid "(Compressed) Blacklist"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:22
+msgid "Category Based Web Filtering"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:23
+msgid "Can be combined with traffic shaper"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:27
+msgid "Authenticators"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:28
+msgid ""
+"User authentication can be done using OPNsense standard and built-in "
+"authenticators. Currently these include:"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:31
+msgid "LDAP (incl. Microsoft Active Directory)"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:32
+msgid "Radius"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:33
+msgid "Local user manager"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:34
+msgid "No authentication"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:36
+msgid ""
+"These options can be found in the :menuselection:`Web Proxy -> "
+"Administration -> Forward Proxy -> Authentication Settings` section."
+msgstr ""
+
+#: ../../source/manual/proxy.rst:40
+msgid "Access Control"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:41
+msgid ""
+"OPNsense supports fine grained access control, which can be configured in"
+" :menuselection:`Web Proxy -> Administration -> Forward Proxy -> Access "
+"Control List` containing the following (Advanced) options:"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:44
+msgid "Subnets"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:45
+msgid "Ports"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:46
+msgid "MIME types"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:47
+msgid "Banned IP’s"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:48
+msgid "Whitelists"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:49
+msgid "Blacklists"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:50
+msgid "Browser/User Agents"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:55
+msgid "Traffic Management"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:56
+msgid ""
+"The proxy can be combined with the traffic shaper and take full advantage"
+" of its shaping features. Additionally it includes its own options:"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:59
+msgid "Maximum download size"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:60
+msgid "Maximum upload size"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:61
+msgid "Overall bandwidth throttling"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:62
+msgid "Per host bandwidth throttling"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:64
+msgid ""
+"These options can be found in the :menuselection:`Web Proxy -> "
+"Administration -> General Proxy Settings -> Traffic Management Settings` "
+"section."
+msgstr ""
+
+#: ../../source/manual/proxy.rst:69
+msgid "Category Based Web Filter"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:70
+msgid ""
+"No need for additional plugins, such as squidGuard - as OPNsense has "
+"built-in category based web filter support. Main features include:"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:73
+msgid "Fetch from a remote URL"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:74
+msgid "Supports flat file list and category based compressed lists"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:75
+msgid "Automatically convert category based blacklists to squid ACLs"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:76
+msgid "Keep up to date with the built-in scheduler"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:77
+msgid "Compatible with most popular blacklist"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:81
+msgid "Transparent Mode"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:82
+msgid ""
+"The transparent mode means all requests will be diverted to the proxy "
+"without any configuration on your client. Transparent mode works very "
+"well with unsecured http requests, however with secured (SSL) HTTPS "
+"connection the proxy will become a man-in-the-middle as the client will "
+"\"talk\" to the proxy and the proxy will encrypt the traffic with its "
+"master key that the client is required to trust."
+msgstr ""
+
+#: ../../source/manual/proxy.rst:89
+msgid ""
+"Using a transparent HTTPS proxy can be a dangerous practice and may not "
+"be allowed by the services you use, for instance e-banking."
+msgstr ""
+
+#: ../../source/manual/proxy.rst:95
+msgid "WPAD And PAC"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:96
+msgid ""
+"If a transparent proxy cannot be used, OPNsense still supports automatic "
+"proxy configuration via WPAD / PAC."
+msgstr ""
+
+#: ../../source/manual/proxy.rst:100
+msgid ""
+"WPAD via DNS requires the web interface to run on the default HTTP port "
+"(TCP/80) which is also a security risk (MITM attacks). In such cases you "
+"should proxy the connection or avoid configuring the applicance from an "
+"untrusted network."
+msgstr ""
+
+#: ../../source/manual/proxy.rst:107
+msgid "Custom error pages"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:109
+msgid ""
+"Error pages can be customized for your own needs. In order to do so, go "
+"to :menuselection:`Web Proxy -> Administration -> General Proxy Settings`"
+" and select \"Custom\" in \"User error pages\", after which an additional"
+" tab will be visible named \"Error Pages\"."
+msgstr ""
+
+#: ../../source/manual/proxy.rst:125
+msgid ""
+"There are some rules to take into account when creating custom themed "
+"error pages:"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:127
+msgid "extend the :code:`errorpage.css` file to theme your pages"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:128
+msgid ""
+"make sure error pages don't require anything else than css, images should"
+" be converted to base64 and provided inline. Not only is this faster to "
+"handle than separate image files it also prevents rendering issues in "
+"case images can't be accessed."
+msgstr ""
+
+#: ../../source/manual/proxy.rst:130
+msgid ""
+"only existing error pages will be processed, if filenames won't match, "
+"the files won't be written to disk. you can use the download button to "
+"inspect what's being deployed (it will return a combined set of custom "
+"and standard files)"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:132
+msgid ""
+"it's best not to include files that are not altered, this saves room in "
+"the configurartion and prevents defauls from being overwritten."
+msgstr ""
+
+#: ../../source/manual/proxy.rst:136
+msgid ""
+"If you only want to change the background image, it's usually enough to "
+"upload the css file in a directory and leave out all the html files."
+msgstr ""
+
+#: ../../source/manual/proxy.rst:140
+msgid ""
+"To convert images to inline base64 tags, there are quite some online "
+"tools available, which can easily be found using google. As an example, "
+"our logo can be found in the the css file looking like :code:`background:"
+" url('data:image/svg+xml;base64,PD9...) no-repeat left;`"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:145
+msgid "Configuration / How-tos"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:146
+msgid ""
+"More information on how to utilize OPNsense's proxy service can be found "
+"in:"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:149
+msgid "Proxy Basic Setup"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:150
+msgid ":doc:`how-tos/cachingproxy`"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:153
+msgid "Setup Web Filtering"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:154
+msgid ":doc:`how-tos/proxywebfilter`"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:157
+msgid "Setup Transparent Mode (including SSL)"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:158
+msgid ":doc:`how-tos/proxytransparent`"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:161
+msgid "Setup WPAD/PAC"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:162
+msgid ":doc:`how-tos/pac`"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:165
+msgid "Setup ICAP Anti Virus/Malware Engine"
+msgstr ""
+
+#: ../../source/manual/proxy.rst:166
+msgid ":doc:`how-tos/proxyicapantivirus`"
+msgstr ""
+

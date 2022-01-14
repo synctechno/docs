@@ -1,0 +1,468 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/user-ldap.rst:3
+msgid "Access / Servers / LDAP"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:5
+msgid ""
+"LDAP is the light weight directory access protocol used by Microsoft "
+"Active Directory, OpenLDAP and Novell eDirectory, to name a few."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:8
+msgid ""
+"OPNsense can use a LDAP server for authentication purposes and for "
+"authorization to access (parts) of the graphical user interface (web "
+"configurator). When using LDAP for the GUI the privileges have to be "
+"defined with the local user manager, to do so an import of the users from"
+" the LDAP source is required."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:13
+msgid ""
+"In this how-to we will show you how to configure both using Microsoft "
+"Active Directory Server. If you only need LDAP for services like VPN, "
+"then you can skip step 3-5."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:18
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:19
+msgid ""
+"A functional LDAP server (example is based on MS AD) is required. You "
+"OPNsense firewall need to be fully configured and able to access the LDAP"
+" server."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:23
+msgid "Step 1 - Add New LDAP server"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:24
+msgid ""
+"To add a new LDAP server as authentication source, go to "
+":menuselection:`System --> Access --> Servers` and click on **Add "
+"server** the top right corner, just above the form."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:27
+msgid "Enter the following information:"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:32
+msgid "**Descriptive name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:32
+msgid "ws2012"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:32
+msgid "*Enter a descriptive name*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:33
+msgid "**Type**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:33
+msgid "LDAP"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:33
+msgid "*Select LDAP*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:34
+msgid "**Hostname or IP address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:34
+msgid "10.10.10.1"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:34
+msgid "*Enter the IP address of you LDAP Server*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:35
+msgid "**Port value**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:35
+msgid "389"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:35
+msgid "*Enter the port number, 389 is default*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:36
+msgid "**Transport**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:36
+msgid "TCP - Standard"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:36
+msgid "*Select Standard or Encrypted*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:37
+msgid "**Protocol version**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:37
+msgid "3"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:37
+msgid "*Select protocol version*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:38
+msgid "**Bind credentials**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:39
+msgid "User DN:"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:39
+msgid "cn=testusr,CN=Users, DC=opnsense,DC=local"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:39
+msgid "*Enter your credentials*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:41
+msgid "Password:"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:41
+msgid "secret"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:41
+msgid "*alway use a strong password*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:43
+msgid "**Search scope**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:43
+msgid "Entire Subtree"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:43
+msgid "*Select Entire Subtree to retrieve all*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:44
+msgid "**Base DN:**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:44
+msgid "DC=opnsense,DC=local"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:44
+msgid "*Enter the Base DN*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:45
+msgid "**Authentication containers**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:45
+msgid "*Select*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:45
+msgid "*Click & Select the containers from the list*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:46
+msgid "**Extended Query**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:46
+msgid "&(objectClass=Person)"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:46
+msgid "*Extend query, p.e. limit results to Persons*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:47
+msgid "**Initial Template**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:47
+msgid "MicrosoftAD"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:47
+msgid "*Select you LDAP Server Type*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:48
+msgid "**User naming attribute**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:48
+msgid "samAccountName"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:48
+msgid "*Auto filled in based upon Initial Template*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:49
+msgid "**Read properties**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:49
+msgid "*Fetch account details after successful login*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:50
+msgid "**Synchronize groups**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:50
+msgid "*Enable to Synchronize groups, requires the option above*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:51
+msgid "**Limit groups**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:51
+msgid "*Select list of groups that maybe considered during sync**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:52
+msgid "**Automatic user creation**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:52
+msgid ""
+"*When groups are automatically synchronized, this offers the ability to "
+"automatically create the user when it doesn't exist."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:55
+msgid "**Match case insensitive**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:55
+msgid "*Allow mixed case input when gathering local user settings.*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:59
+msgid ""
+"When clicking on the **Select** button right next to Authentication "
+"containers, something similar to will show up:"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:68
+msgid ""
+"When using SSL/TLS, make sure the certificate authority of the remote "
+"server is configured in the :menuselection:`System -> Trust` section."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:72
+msgid ""
+"The **Extended Query** can be used to select users who are member of a "
+"specific group (only relevant for external services, when not using the "
+"local user database). One can use something like this: "
+"**&(memberOf=CN=myGroup,CN=Users,DC=opnsense,DC=local)** to select only "
+"members of  the group *\"myGroup\"*. To add a user to a specific group "
+"under Windows just edit the groups properties and select **Add...** to "
+"add the user under the tab **Members**."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:86
+msgid ""
+"In some cases local naming doesn't match server naming when it comes to "
+"users, the case insensitive option can be used in that case to ignore "
+"case on login. Microsoft Access Directory for example doesn't match case "
+"sensitive, in which case :code:`UsEr` equals :code:`user` (our system is "
+"case sensitive)"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:93
+msgid "Step 1.1 (optional) Synchronize groups."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:95
+msgid ""
+"When using the local database to import users, you can also synchronize "
+"configured ldap groups when the remote server supports this. To use this "
+"feature, enable :code:`Read properties` and :code:`Synchronize groups`."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:100
+msgid ""
+"This feature needs the remote ldap server to respond with "
+":code:`memberOf` when queried, how to enable this on various ldap "
+"providers lies outside the scope of this manual."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:105
+msgid ""
+"Groups will be extracted from the first :code:`CN=` section and will only"
+" be considered when already existing in OPNsense. Group memberships will "
+"be persisted in OPNsense (you can always check which rights the user had "
+"the last time he or she successfully logged in)."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:110
+msgid "Step 2 - Test"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:111
+msgid ""
+"To test if the server is configured correctly, go to "
+":menuselection:`System --> Access --> Tester` and select your LDAP server"
+" and enter a valid username + password. Click on **Test** and if "
+"everything is setup correctly it will show:"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:119
+msgid ""
+"When limited to just one group, the group name will not be shown in the "
+"listing."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:121
+msgid "If not (or your entered invalid credentials) it shows:"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:129
+msgid ""
+"When :code:`Read properties` is enabled, you should also see all "
+"properties returned by the server in the tester. This helps to identify "
+"if your server support group sync support (find :code:`memberOf` in the "
+"list)."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:133
+msgid "Step 3 - Enable the authentication server"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:134
+msgid ""
+"Go to :menuselection:`System --> Access --> Settings --> Administration` "
+"and under the **Authentication** section at the bottom, change the "
+"**Server** dropdown to your newly added LDAP server and save."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:139
+msgid "Step 4 - Import Users"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:140
+msgid ""
+"If you would like to give LDAP/Active Directory users access to the GUI, "
+"you need to import the users into the local user manager. Go to "
+":menuselection:`System --> Access --> Users` you will see a cloud import "
+"icon at the lower right corner of the form."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:148
+msgid "Click on the cloud import icon to start importing users."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:150
+msgid ""
+"A new form will be show with the individual users, select the ones you "
+"like to import."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:154
+msgid ""
+"The **Automatic user creation** option replaces manual imports in cases "
+"where account details can be retrieved from the remote ldap server. Users"
+" created with this option should be removed manually from the firewall "
+"when they are removed from (one of) the ldap server(s), which is the same"
+" as they would be maintained locally on manual imports."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:158
+msgid ""
+"As of version business edition  :code:`21.10`, the system will "
+"automatically query the ldap servers and remove unexisting users. (not "
+"available in the community version of OPNsense)"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:163
+msgid "Step 5 - Update LDAP user privileges"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:164
+msgid ""
+"Now if you go to :menuselection:`System --> Access --> Users` you will "
+"see all users including the newly imported LDAP users. You can create a "
+"specific group for these users to easily manage the privileges or use one"
+" of your earlier created groups."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:168
+msgid ""
+"When opening a LDAP user (edit) via the pecil icon right next to the "
+"name, you will notice the difference as the **User Distinguished name** "
+"will be shown from the LDAP server, just like this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:176
+msgid "See :doc:`user-local` for more information on User, Groups and privileges."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:179
+msgid "Step 6 - Update system access settings"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:180
+msgid ""
+"Now we have configures, verified and imported the users from our LDAP "
+"server, we need to change the default settings to allow LDAP users to "
+"login."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:183
+msgid ""
+"Go to :menuselection:`System --> Access --> Settings` and change the "
+"Authentication Server from **Local Database** to your newly created "
+"**LDAP** server. Leave the fallback on **Local Database** and click on "
+"**Save and Test**."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-ldap.rst:187
+msgid "The test result should look like this:"
+msgstr ""
+

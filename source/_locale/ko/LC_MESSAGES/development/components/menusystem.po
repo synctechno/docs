@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/components/menusystem.rst:3
+msgid "Menu System"
+msgstr ""
+
+#: ../../source/development/components/menusystem.rst:13
+msgid "Overview"
+msgstr ""
+
+#: ../../source/development/components/menusystem.rst:15
+msgid ""
+"One of the shared components of the OPNsense framework is the menu "
+"system, which is wrapped in a single class and part of the base model."
+msgstr ""
+
+#: ../../source/development/components/menusystem.rst:18
+msgid ""
+"The only responsibility of the menu system is to create a tree like "
+"structure to represent the menu and being able to keep track of the "
+"mapping between a location and the hierarchy of the menu system. To keep "
+"things clean and understandable, the menu system doesn't know anything "
+"about users or authorisation."
+msgstr ""
+
+#: ../../source/development/components/menusystem.rst:23
+msgid ""
+"Currently the main focus for the menu system is to support the legacy "
+"code, so we will be able to reimplement the menu in both legacy and new "
+"code."
+msgstr ""
+
+#: ../../source/development/components/menusystem.rst:26
+msgid ""
+"Our base UI controller (\\\\OPNsense\\\\Base\\\\ControllerBase) "
+"implements the menu system for further use."
+msgstr ""
+
+#: ../../source/development/components/menusystem.rst:29
+msgid "An example of how to create a menu, is given below:"
+msgstr ""
+
+#: ../../source/development/components/menusystem.rst:40
+msgid ""
+"The current version only implements a static menu defined by one XML file"
+" (models/OPNsense/Base/Menu/Menu.xml), but extending with additional XML "
+"files is already supported in the component for future use."
+msgstr ""
+
+#: ../../source/development/components/menusystem.rst:46
+msgid "Menu.xml"
+msgstr ""
+
+#: ../../source/development/components/menusystem.rst:48
+msgid "The menu xml is defined as follows:"
+msgstr ""
+
+#: ../../source/development/components/menusystem.rst:59
+msgid ""
+"The top level should be named \"menu\" to let the system know this is a "
+"menu structure, the next layers will be used for the structure of itself."
+" To map the attributes to the menu objects created there are setters in "
+"OPNsense\\\\Base\\\\Menu\\\\MenuItem, in this version the next attributes"
+" are supported:"
+msgstr ""
+
+#: ../../source/development/components/menusystem.rst:64
+msgid "order, sort order in our menu"
+msgstr ""
+
+#: ../../source/development/components/menusystem.rst:65
+msgid "VisibleName, name to use ( if not set the tagname / id will be used)"
+msgstr ""
+
+#: ../../source/development/components/menusystem.rst:66
+msgid "cssClass, style attributes for the frontend system."
+msgstr ""
+

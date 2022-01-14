@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/relations/hardenedbsd.rst:3
+msgid "HardenedBSD"
+msgstr ""
+
+#: ../../source/relations/hardenedbsd.rst:9
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/relations/hardenedbsd.rst:11
+msgid ""
+"HardenedBSD is a fork of FreeBSD, founded in 2014, that implements "
+"exploit mitigations and security hardening technologies. The primary goal"
+" of HardenedBSD is to perform a clean-room re-implementation of the "
+"grsecurity patchset for Linux to HardenedBSD."
+msgstr ""
+
+#: ../../source/relations/hardenedbsd.rst:18
+msgid "Why Fork FreeBSD?"
+msgstr ""
+
+#: ../../source/relations/hardenedbsd.rst:20
+msgid ""
+"Work on HardenedBSD began in 2013 when Oliver Pinter and Shawn Webb "
+"started working on an implementation of Address Space Layout "
+"Randomization (ASLR), based on PaX's publicly-available documentation, "
+"for FreeBSD. At that time, HardenedBSD was meant to be a staging area for"
+" experimental development on the ASLR patch. Over time, as the process of"
+" upstreaming ASLR to FreeBSD became more difficult, HardenedBSD naturally"
+" became a fork."
+msgstr ""
+
+#: ../../source/relations/hardenedbsd.rst:29
+msgid ""
+"HardenedBSD completed its ASLR implementation in 2015 with the strongest "
+"form of ASLR in any of the BSDs. Since then, HardenedBSD has moved on to "
+"implementing other exploit mitigations and hardening technologies. "
+"OPNsense, an open source firewall based on FreeBSD, incorporated "
+"HardenedBSD's ASLR implementation in 2016."
+msgstr ""
+
+#: ../../source/relations/hardenedbsd.rst:36
+msgid ""
+"HardenedBSD exists today as a fork of FreeBSD that closely follows "
+"FreeBSD's source code. HardenedBSD syncs with FreeBSD every six hours."
+msgstr ""
+
+#: ../../source/relations/hardenedbsd.rst:42
+msgid "HardenedBSD's Goals"
+msgstr ""
+
+#: ../../source/relations/hardenedbsd.rst:44
+msgid ""
+"HardenedBSD aims to provide the BSD community with a clean-room "
+"reimplementation of the publicly-documented portions of the grsecurity "
+"patchset for Linux."
+msgstr ""
+
+#: ../../source/relations/hardenedbsd.rst:51
+msgid "Who is HardenedBSD?"
+msgstr ""
+
+#: ../../source/relations/hardenedbsd.rst:53
+msgid ""
+"HardenedBSD's core team consists of Oliver Pinter and Shawn Webb. "
+"Contributions have been made by many individuals around the globe."
+msgstr ""
+
+#: ../../source/relations/hardenedbsd.rst:59
+msgid "Cooperation with OPNsense"
+msgstr ""
+
+#: ../../source/relations/hardenedbsd.rst:61
+msgid ""
+"In May 2015, HardenedBSD announced collaboration with OPNSense. A "
+"HardenedBSD-flavored version of OPNsense was published early on as a "
+"proof-of-concept work. As the proof-of-concept proved stable, robust, and"
+" scalable, OPNsense migrated to HardenedBSD with the support of "
+"HardenedBSD's core team."
+msgstr ""
+

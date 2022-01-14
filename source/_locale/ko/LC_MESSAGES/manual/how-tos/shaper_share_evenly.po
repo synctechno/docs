@@ -1,0 +1,381 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:3
+msgid "Share internet bandwidth amongst users evenly"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:5
+msgid ""
+"For this example we presume an internet connection of 10 Mbps Download "
+"and 1 Mbps Upload that we want to share evenly between all users."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:35
+msgid "To start go to :menuselection:`Firewall --> Shaper --> Pipes`."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:38
+msgid "Step 1 - Create Upload and Download Pipes"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:39
+msgid ""
+"On the **Pipes** tab click the **+** button in the lower right corner. An"
+" empty **Edit Pipe** screen will popup."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:42
+msgid "Create Pipe For Upload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:45
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:56
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:71
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:81
+msgid "**enabled**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:45
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:56
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:71
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:81
+msgid "Checked"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:45
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:56
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:71
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:81
+msgid "*Check to enable the pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:46
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:57
+msgid "**bandwidth**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:46
+msgid "1"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:46
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:57
+msgid "*Numeric value of the desired bandwidth*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:47
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:58
+msgid "**bandwidth Metric**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:47
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:58
+msgid "Mbit/s"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:47
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:58
+msgid "*Metric to use with the numeric value*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:48
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:59
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:74
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:84
+msgid "**mask**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:48
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:59
+msgid "empty"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:48
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:59
+msgid "*Select destination to share the bandwidth*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:49
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:60
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:75
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:85
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:105
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:120
+msgid "**description**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:49
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:72
+msgid "PipeUp-1Mbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:49
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:60
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:75
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:85
+msgid "*Free field, enter something descriptive*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:53
+msgid "Create Pipe For Download"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:57
+msgid "10"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:60
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:82
+msgid "PipeDown-10Mbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:64
+msgid "Step 2 - Create a Queues"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:65
+msgid ""
+"On the **Queues** tab click the **+** button in the lower right corner. "
+"An empty **Edit queue** screen will popup."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:68
+msgid "Create Queue for Upload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:72
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:82
+msgid "**pipe**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:72
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:82
+msgid "*Select our Pipe*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:73
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:83
+msgid "**weight**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:73
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:83
+msgid "100"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:73
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:83
+msgid "*Weight to use with the numeric value*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:74
+msgid "source"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:74
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:84
+msgid "*Every source creates a match*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:75
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:104
+msgid "QueueUp-1Mbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:78
+msgid "Create Queue for Download"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:84
+msgid "destination"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:85
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:119
+msgid "QueueDown-10Mbps"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:90
+msgid "Step 3 - Create Rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:91
+msgid ""
+"On the **Rules** tab click the **+** button in the lower right corner. An"
+" empty **Edit rule** screen will popup."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:94
+msgid "Create a rule for traffic directed towards the internet (Upload)."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:97
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:112
+msgid "**sequence**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:97
+msgid "11"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:97
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:112
+msgid "*Auto generated number, overwrite only when needed*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:98
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:113
+msgid "**interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:98
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:113
+msgid "WAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:98
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:113
+msgid "*Select the interface connected to the internet*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:99
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:114
+msgid "**proto**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:99
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:114
+msgid "ip"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:99
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:114
+msgid "*Select the protocol, IP in our example*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:100
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:115
+msgid "**source**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:100
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:117
+msgid "192.168.1.0/24"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:100
+msgid "*The source IP to shape, select the LAN network*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:101
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:116
+msgid "**src-port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:101
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:102
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:103
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:115
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:116
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:118
+msgid "any"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:101
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:116
+msgid "*The source port to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:102
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:117
+msgid "**destination**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:102
+msgid "*The destination to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:103
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:118
+msgid "**dst-port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:103
+msgid "*Use any of the destination port if static*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:104
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:119
+msgid "**target**"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:104
+msgid "*Select the Upload 1Mbps Queue*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:105
+msgid "ShapeUpload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:105
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:120
+msgid "*Enter a descriptive name*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:109
+msgid "Create a rule for traffic coming from the internet (Download)."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:112
+msgid "21"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:115
+msgid "*The source address, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:117
+msgid "*The destination IP to shape, select LAN network*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:118
+msgid "*The destination port to shape, leave on any*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:119
+msgid "*Select the Download 10 Mbps Queue*"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:120
+msgid "ShapeDownload"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:123
+msgid "Now press |apply| to activate the traffic shaping rules."
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:130
+msgid "apply"
+msgstr ""
+
+#: ../../source/manual/how-tos/shaper_share_evenly.rst:125
+msgid "*Screenshot Rules*"
+msgstr ""
+

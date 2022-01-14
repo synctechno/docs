@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:2
+msgid "Orange France FTTP IPv4 & IPv6"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:4
+msgid "**Original Author:** Kev Willers"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:7
+msgid "**Introduction**"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:8
+msgid ""
+"This guide is for Orange France FTTP using DHCP to connect (this method "
+"currently excludes the users of the PRO package)."
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:10
+msgid ""
+"The guide deals with just the internet connection. Setting up of TV or "
+"Phone is not covered here."
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:14
+msgid "**Getting ready to make the connection**"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:16
+msgid ""
+"Orange requires that the WAN is configured over VLAN 832. So the first "
+"step is to set up the VLAN on the intended WAN nic as shown below"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:21
+msgid "and the WAN interface assignment should hence look something like this"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:27
+msgid "**Configuring the WAN Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:29
+msgid ""
+"In order to establish the IPv4 and IPv6 connection Orange requires that "
+"the correct parameters are passed for the DHCP and DHCP6 requests "
+"respectively"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:32
+msgid "select options DHCP and DHCPv6 in general configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:37
+msgid "**On the DHCP request it is a requirement to pass the following:**"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:39
+msgid "dhcp-class-identifier \"sagem\""
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:40
+msgid "user-class \"+FSVDSL_livebox.Internet.softathome.Livebox3\""
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:41
+msgid ""
+"option-90 "
+"00:00:00:00:00:00:00:00:00:00:00:66:74:69:2f:65:77:74:FF:AB:XX:XX (hex "
+"conversion of the the userid supplied by Orange which looks like "
+"fti/xxxxxxx)"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:45
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:94
+msgid "The eleven leading hex 00 pairs to be prefixed to the converted userID"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:47
+msgid ""
+"These parameters should be passed as comma separated options in the 'Send"
+" Options' area of their WAN DHCP request"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:53
+msgid "It is necessary to specify the following 'Request Options'"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:55
+msgid "subnet-mask"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:56
+msgid "broadcast-address"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:57
+msgid "dhcp-lease-time"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:58
+msgid "dhcp-renewal-time"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:59
+msgid "dhcp-rebinding-time"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:60
+msgid "domain-search, routers"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:61
+msgid "domain-name-servers"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:62
+msgid "option-90"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:64
+msgid ""
+"These parameters should be passed as comma separated options in the "
+"'Request Options' area of their WAN DHCP request"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:66
+msgid "Now for the regional specific part."
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:68
+msgid ""
+"Some areas of France require that the DHCP and DHCP6 requests are made "
+"with a VLAN-PCP of 6. If you are in one of these regions then this can be"
+" done via the 'Option Modifiers'."
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:72
+msgid "The vlan-parent is the physical WAN interface - igb0, em0 etc."
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:77
+msgid "On the DHCP6 request we need to use raw options"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:79
+msgid ""
+"Firstly select 'Advanced' and your region needs a VLAN-PCP set it via "
+"'Use VLAN priority'"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:84
+msgid "then add the following options in the 'Send Options' field"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:86
+msgid "ia-pd 0"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:87
+msgid "raw-option 6 00:0b:00:11:00:17:00:18"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:88
+msgid ""
+"raw-option 15 "
+"00:2b:46:53:56:44:53:4c:5f:6c:69:76:65:62:6f:78:2e:49:6e:74:65:72:6e:65:74:2e:73:6f:66:74:61:74:68:6f:6d:65:2e:6c:69:76:65:62:6f:78:33"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:89
+msgid "raw-option 16 00:00:04:0e:00:05:73:61:67:65:6d"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:90
+msgid ""
+"raw-option 11 "
+"00:00:00:00:00:00:00:00:00:00:00:66:74:69:2f:65:77:74:FF:AB:XX:XX (hex "
+"conversion of the the userid supplied by Orange which looks like "
+"fti/xxxxxxx)"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:96
+msgid "Finally set the Identity Association and Prefix interface as shown"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:101
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:121
+msgid "Click ‘Save’ and then ‘Apply’."
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:105
+msgid "**LAN Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:108
+msgid ""
+"Select :menuselection:`Interfaces --> [LAN]` and set IPv4 to “Static "
+"IPv4” and IPv6 Configuration Type to “Track Interface”."
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:115
+msgid ""
+"Finally, set the Track IPv6 Interface to WAN and set the IPv4 address to "
+"your chosen address."
+msgstr ""
+
+#: ../../source/manual/how-tos/orange_fr_fttp.rst:123
+msgid "It is advisable at this point to reboot the system."
+msgstr ""
+

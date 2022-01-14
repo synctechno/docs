@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/user-radius.rst:3
+msgid "Access / Servers / Radius"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:5
+msgid ""
+"Configuring a Radius server for user authentication in services like vpn "
+"or captive portal is easy just go to :menuselection:`System --> Access "
+"--> Servers` and click on **Add server** in the top right corner."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:8
+msgid "Fill in the form:"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:11
+msgid "**Descriptive name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:11
+msgid "radius_test"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:11
+msgid "*Enter a descriptive name*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:12
+msgid "**Type**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:12
+msgid "Radius"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:12
+msgid "*Select Radius*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:13
+msgid "**Hostname or IP address**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:13
+msgid "10.10.10.1"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:13
+msgid "*Enter the IP of your Radius server*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:14
+msgid "**Shared Secret**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:14
+msgid "secret"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:14
+msgid "*Shared secret for your Radius server*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:15
+msgid "**Services offered**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:15
+msgid "Authentication"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:15
+msgid "*Select Authentication,for Captive portal + accounting*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:16
+msgid "**Authentication port value**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:16
+msgid "1812"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:16
+msgid "*Port number, 1812 is default; for accounting it's 1813*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:17
+msgid "**Authentication Timeout**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:17
+msgid "5"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:17
+msgid "*Timeout for Radius to respond on requests*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:20
+msgid ""
+"Use the tester under :menuselection:`System --> Access --> Tester` to "
+"test the Radius server."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-radius.rst:22
+msgid ""
+"If you want to use the FreeRADIUS plugin set up the server as 127.0.0.1 "
+"and don't forget to add a **Client** in the FreeRADIUS configuration."
+msgstr ""
+

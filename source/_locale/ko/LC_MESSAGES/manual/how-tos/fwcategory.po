@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/fwcategory.rst:3
+msgid "Organize PF Rules by Category"
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:4
+msgid ""
+"OPNsense firewall rules can be organized per category. These categories "
+"can be freely chosen or selected."
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:9
+msgid ""
+"This feature was added in version 16.1.1. Always keep your system up to "
+"date."
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:13
+msgid "Adding a category to a rule"
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:14
+msgid ""
+"To add a category to a rule, open or create a new rule and scroll to "
+"**Category**. Then just add you category, if this is the first rule with "
+"a category no selection options will be visible."
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:23
+msgid "Firewall Rules Filter by category"
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:24
+msgid ""
+"Only when there are rules with a defined category, the **Filter by "
+"category** becomes visible at the bottom of the table."
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:27
+msgid "If you click it is will look like this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:32
+msgid ""
+"If you have a large number of categories, then just start typing and in "
+"search box to make a quick selection."
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:37
+msgid "Before Selection"
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:38
+msgid ""
+"Take a look at this simple rule set before selecting our \"My IPs\" "
+"category."
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:45
+msgid "And after selection"
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:46
+msgid "Now when selecting our  test category it will look like this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:51
+msgid ""
+"That is all there is to it to organize your rules without messing "
+"anything up."
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:55
+msgid "Multi Select"
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:56
+msgid ""
+"In a later release of OPNsense 16.1 multi selection has been added. This "
+"features makes it possible to select rules from more than one category."
+msgstr ""
+
+#: ../../source/manual/how-tos/fwcategory.rst:59
+msgid "Example:"
+msgstr ""
+

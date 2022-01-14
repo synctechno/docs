@@ -1,0 +1,728 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/install.rst:3
+msgid "Initial Installation & Configuration"
+msgstr ""
+
+msgid "Software setup"
+msgstr ""
+
+#: ../../source/manual/install.rst:10
+msgid ""
+"Just looking on how to invoke the installer? When the live environment "
+"has been started just login with user **installer** and password "
+"**opnsense**."
+msgstr ""
+
+#: ../../source/manual/install.rst:15
+msgid "Architecture"
+msgstr ""
+
+#: ../../source/manual/install.rst:17
+msgid ""
+"The **software setup** and installation of OPNsense® is available for the"
+" `x86-64 <https://en.wikipedia.org/wiki/X86-64>`__ bit microprocessor "
+"architecture only."
+msgstr ""
+
+#: ../../source/manual/install.rst:23
+msgid "Embedded vs Full"
+msgstr ""
+
+#: ../../source/manual/install.rst:25
+msgid ""
+"Full installs can run on `SD memory cards "
+"<https://en.wikipedia.org/wiki/Secure_Digital>`__, `solid-state disks "
+"(SSD) <https://en.wikipedia.org/wiki/Solid-state_drive>`__ or `hard disk "
+"drives (HDD) <https://en.wikipedia.org/wiki/Hard_disk_drive>`__."
+msgstr ""
+
+#: ../../source/manual/install.rst:31
+msgid ""
+"Since version 15.1.10 (04 May 2015) the option to install an `embedded "
+"<https://en.wikipedia.org/wiki/Embedded_operating_system>`__ OPNsense "
+"image is also supported."
+msgstr ""
+
+#: ../../source/manual/install.rst:35
+msgid "The main differences between an embedded image and a full image are:"
+msgstr ""
+
+#: ../../source/manual/install.rst:38
+msgid "Embedded"
+msgstr ""
+
+#: ../../source/manual/install.rst:38
+msgid "Full"
+msgstr ""
+
+#: ../../source/manual/install.rst:40
+msgid "Writes to RAM disk"
+msgstr ""
+
+#: ../../source/manual/install.rst:40
+msgid "Writes to local disk"
+msgstr ""
+
+#: ../../source/manual/install.rst:42
+msgid "No log data retention after reboot"
+msgstr ""
+
+#: ../../source/manual/install.rst:42
+msgid "Log data retention after reboot"
+msgstr ""
+
+#: ../../source/manual/install.rst:45
+msgid "Not intended for local disk writes"
+msgstr ""
+
+#: ../../source/manual/install.rst:45
+msgid "Suitable for disk writes."
+msgstr ""
+
+#: ../../source/manual/install.rst:48
+msgid "Embedded only use, SWAP file is optional"
+msgstr ""
+
+#: ../../source/manual/install.rst:48
+msgid "Can enable RAM disk for embedded mode."
+msgstr ""
+
+#: ../../source/manual/install.rst:53
+msgid ""
+"Embedded images (nano) store logging and cache data in memory only, while"
+" full versions will keep the data stored on the local drive. A full "
+"version can mimic the behavior of an embedded version by enabling RAM "
+"disks, this is especially useful for SD memory card installations."
+msgstr ""
+
+#: ../../source/manual/install.rst:59
+msgid ""
+"See the chapter :doc:`Hardware Setup <hardware>` for further information "
+"on hardware requirements prior to an install."
+msgstr ""
+
+#: ../../source/manual/install.rst:64
+msgid "Download and verification"
+msgstr ""
+
+#: ../../source/manual/install.rst:66
+msgid ""
+"The OPNsense distribution can be `downloaded "
+"<https://opnsense.org/download>`__ from one of our `mirrors "
+"<https://opnsense.org/download>`__."
+msgstr ""
+
+#: ../../source/manual/install.rst:69
+msgid ""
+"The OpenSSL tool is used for file verification. 4 files are needed for "
+"verification:"
+msgstr ""
+
+#: ../../source/manual/install.rst:72
+msgid "The bzip compressed ISO file (<filename>.iso.bz2)"
+msgstr ""
+
+#: ../../source/manual/install.rst:73
+msgid "The SHA-256 checksum file (<filename>.sha256)"
+msgstr ""
+
+#: ../../source/manual/install.rst:74
+msgid "The signature file (<filename>.sig)"
+msgstr ""
+
+#: ../../source/manual/install.rst:75
+msgid "The openssl public key (<filename>.pub)"
+msgstr ""
+
+#: ../../source/manual/install.rst:77
+msgid ""
+"These files can be downloaded from one of the download mirrors. To "
+"download them:"
+msgstr ""
+
+#: ../../source/manual/install.rst:79
+msgid "Go to the OPNSense `download <https://opnsense.org/download>`__ page."
+msgstr ""
+
+#: ../../source/manual/install.rst:80
+msgid ""
+"After selecting a mirror, right click the download button and click "
+"\"open in new tab\"."
+msgstr ""
+
+#: ../../source/manual/install.rst:81
+msgid ""
+"A popup will appear asking if you want to download the image. Say \"no\" "
+"for now."
+msgstr ""
+
+#: ../../source/manual/install.rst:82
+msgid ""
+"Remove the file name after the last slash in the URL bar, and press "
+"enter. This will take you to the directory listing for that mirror."
+msgstr ""
+
+#: ../../source/manual/install.rst:84
+msgid "I.e. If you wanted to download from the US East Coast mirror:"
+msgstr ""
+
+#: ../../source/manual/install.rst:86
+msgid "Opening the link in a new tab would take you to this link:"
+msgstr ""
+
+#: ../../source/manual/install.rst:88
+msgid ""
+"``mirror.wdc1.us.leaseweb.net/opnsense/releases/18.7/OPNsense-18.7"
+"-OpenSSL-dvd-amd64.iso.bz2``"
+msgstr ""
+
+#: ../../source/manual/install.rst:90
+msgid "You should take off the file name at the end, like this:"
+msgstr ""
+
+#: ../../source/manual/install.rst:92
+msgid "``mirror.wdc1.us.leaseweb.net/opnsense/releases/18.7/``"
+msgstr ""
+
+#: ../../source/manual/install.rst:94
+msgid ""
+"The OpenSSL public key is required to verify against. This file is also "
+"on the mirror directory listing page, however you should not trust the "
+"copy there. Download it, open it up, and verify that the public key "
+"matches the one from other sources. If it does not, the mirror may have "
+"been hacked, or you may be the victim of a man-in-the-middle attack. Some"
+" other sources to get the public key from include:"
+msgstr ""
+
+#: ../../source/manual/install.rst:101
+msgid "https://pkg.opnsense.org/releases/mirror/README"
+msgstr ""
+
+#: ../../source/manual/install.rst:102
+msgid "https://forum.opnsense.org/index.php?board=11.0"
+msgstr ""
+
+#: ../../source/manual/install.rst:103
+msgid "https://opnsense.org/blog/"
+msgstr ""
+
+#: ../../source/manual/install.rst:104
+msgid "https://github.com/opnsense/changelog/tree/master/community"
+msgstr ""
+
+#: ../../source/manual/install.rst:105
+msgid ""
+"https://pkg.opnsense.org (/<HardenedBSD version & architecture>/<release "
+"version>/sets/changelog.txz) (lands signed and verified in the GUI of the"
+" running software)"
+msgstr ""
+
+#: ../../source/manual/install.rst:107
+msgid ""
+"Note that only release announcements with images (typically all major "
+"releases) contain the public key. I.e. 18.7 would have a copy of the "
+"public key in the release announcement, but 18.7.9 would not."
+msgstr ""
+
+#: ../../source/manual/install.rst:111
+msgid ""
+"Once you have downloaded all the required files and a copy of the public "
+"key, and verified that the public key matches the public key from the "
+"alternate sources listed above, you can be relatively certain that the "
+"key has not been tampered with. To verify the downloaded image, run the "
+"following commands (substituting the names in brackets for the files you "
+"downloaded):"
+msgstr ""
+
+#: ../../source/manual/install.rst:117
+msgid "``openssl base64 -d -in <filename>.sig -out /tmp/image.sig``"
+msgstr ""
+
+#: ../../source/manual/install.rst:119
+msgid ""
+"``openssl dgst -sha256 -verify <key>.pub -signature /tmp/image.sig "
+"<image>.img.bz2``"
+msgstr ""
+
+#: ../../source/manual/install.rst:121
+msgid ""
+"Make sure to change the \"img\" to \"iso\" in the second line if you "
+"downloaded a different installer type."
+msgstr ""
+
+#: ../../source/manual/install.rst:124
+msgid ""
+"If the output of the second command is \"Verified OK\", your image was "
+"verified successfully, and you can install it. If it has any other "
+"output, you may have made an error using the commands, or the image may "
+"have been compromised."
+msgstr ""
+
+#: ../../source/manual/install.rst:130
+msgid "Installation Media"
+msgstr ""
+
+#: ../../source/manual/install.rst:132
+msgid ""
+"Depending on you hardware and use case different installation media are "
+"provided:"
+msgstr ""
+
+#: ../../source/manual/install.rst:135
+msgid "Type"
+msgstr ""
+
+#: ../../source/manual/install.rst:135
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/install.rst:137
+msgid "dvd"
+msgstr ""
+
+#: ../../source/manual/install.rst:137
+msgid ""
+"ISO installer image with live system capabilities running in VGA-only "
+"mode with UEFI support"
+msgstr ""
+
+#: ../../source/manual/install.rst:140
+msgid "vga"
+msgstr ""
+
+#: ../../source/manual/install.rst:140
+msgid ""
+"USB installer image with live system capabilities running in VGA-only "
+"mode with UEFI support"
+msgstr ""
+
+#: ../../source/manual/install.rst:143
+msgid "serial"
+msgstr ""
+
+#: ../../source/manual/install.rst:143
+msgid ""
+"USB installer image with live system capabilities running in serial "
+"console (115200) mode only with UEFI support"
+msgstr ""
+
+#: ../../source/manual/install.rst:147
+msgid "nano"
+msgstr ""
+
+#: ../../source/manual/install.rst:147
+msgid ""
+"A preinstalled image for >=4 GB USB sticks, SD or CF cards for use with "
+"embedded devices running in serial console (115200) mode with secondary "
+"VGA support (no kernel messages though)"
+msgstr ""
+
+#: ../../source/manual/install.rst:155
+msgid ""
+"Flash memory cards will only tolerate a limited number of writes and re-"
+"writes. For embedded (nano) versions memory disks for /var and /tmp are "
+"applied by default to prolong CF (flash) card lifetimes."
+msgstr ""
+
+#: ../../source/manual/install.rst:159
+msgid ""
+"To enable for non embedded versions: Go to :menuselection:`System --> "
+"Settings --> Miscellaneous --> Disk / Memory Settings`, change the "
+"setting, then reboot. Consider to enable an external syslog server as "
+"well."
+msgstr ""
+
+#: ../../source/manual/install.rst:164
+msgid "Media Filename Composition"
+msgstr ""
+
+#: ../../source/manual/install.rst:213
+msgid ""
+"**Please** be aware that the latest installation media does not always "
+"correspond with the latest released version. OPNsense installation images"
+" are provided on a regular basis together with major versions in January "
+"and July. More information on our release schedule is available from our "
+"package repository, see `README "
+"<https://pkg.opnsense.org/releases/mirror/README>`__"
+msgstr ""
+
+#: ../../source/manual/install.rst:221
+msgid "OpenSSL and LibreSSL"
+msgstr ""
+
+#: ../../source/manual/install.rst:223
+msgid ""
+"OPNsense images are provided based upon `OpenSSL "
+"<https://www.openssl.org>`__. The `LibreSSL <http://www.libressl.org>`__ "
+"flavor can be selected from within the GUI (:menuselection:`System --> "
+"Firmware --> Settings`). In order to apply your choice an update must be "
+"performed after save, which can include a reboot of the system."
+msgstr ""
+
+#: ../../source/manual/install.rst:232
+msgid "Installation Method"
+msgstr ""
+
+#: ../../source/manual/install.rst:234
+msgid ""
+"Download the installation image from one of the mirrors listed on the "
+"`OPNsense <https://opnsense.org/download/>`__ website."
+msgstr ""
+
+#: ../../source/manual/install.rst:237
+msgid ""
+"The easiest method of installation is the USB-memstick installer. If your"
+" target platform has a serial interface choose the \"serial\" image. If "
+"you need to know more about using the serial interface, consult the "
+":doc:`serial access how-to<how-tos/serial_access>`."
+msgstr ""
+
+#: ../../source/manual/install.rst:242
+msgid ""
+"Write the image to a USB flash drive (>=1 GB) or an IDE hard disk, either"
+" with dd under FreeBSD, HardenedBSD or under Windows with physdiskwrite"
+msgstr ""
+
+#: ../../source/manual/install.rst:245
+msgid "Before writing an (iso) image you need to unpack it first (use bunzip2)."
+msgstr ""
+
+#: ../../source/manual/install.rst:247
+msgid "**FreeBSD, HardenedBSD** ::"
+msgstr ""
+
+#: ../../source/manual/install.rst:252
+msgid "Where X = the device number of your USB flash drive (check ``dmesg``)"
+msgstr ""
+
+#: ../../source/manual/install.rst:254
+msgid "**Linux** ::"
+msgstr ""
+
+#: ../../source/manual/install.rst:259
+msgid ""
+"where X = the IDE device name of your USB flash drive (check with hdparm "
+"-i /dev/sdX) (ignore the warning about trailing garbage - it's because of"
+" the digital signature)"
+msgstr ""
+
+#: ../../source/manual/install.rst:262
+msgid "**OpenBSD**"
+msgstr ""
+
+#: ../../source/manual/install.rst:268
+msgid ""
+"The device must be the ENTIRE device (in Windows/DOS language: the 'C' "
+"partition), and a raw I/O device (the 'r' in front of the device "
+"\"sd6\"), not a block mode device."
+msgstr ""
+
+#: ../../source/manual/install.rst:272
+msgid "**macOS**"
+msgstr ""
+
+#: ../../source/manual/install.rst:278
+msgid ""
+"where r = raw device, and where X = the disk device number of your CF "
+"card (check Disk Utility) (ignore the warning about trailing garbage - "
+"it's because of the digital signature)"
+msgstr ""
+
+#: ../../source/manual/install.rst:282
+msgid "**Windows**"
+msgstr ""
+
+#: ../../source/manual/install.rst:288
+msgid "(use v0.3 or later!)"
+msgstr ""
+
+msgid "Install Instructions"
+msgstr ""
+
+#: ../../source/manual/install.rst:293
+msgid ""
+"The boot process gives you the opportunity to run several optional "
+"configuration steps. It has been designed to always boot into a live "
+"environment in order to be able to access the GUI or even SSH directly. "
+"If a timeout was missed simply restart the boot procedure."
+msgstr ""
+
+#: ../../source/manual/install.rst:299
+msgid "OPNsense Importer"
+msgstr ""
+
+#: ../../source/manual/install.rst:300
+msgid ""
+"All images feature the new \"opnsense-importer\" utility, which is now "
+"invoked instead of the early installer. You can stop the automatic "
+"timeout by pressing any key. Afterwards you will have the opportunity to "
+"select a disk to import from. If the option times out or the importer is "
+"exited without a disk selection, the factory defaults will be used for "
+"the boot."
+msgstr ""
+
+#: ../../source/manual/install.rst:306
+msgid ""
+"The next prompt will be for manual interface selection. This step is "
+"well-established since OPNsense 15.7 ."
+msgstr ""
+
+#: ../../source/manual/install.rst:310
+msgid "Live environment"
+msgstr ""
+
+#: ../../source/manual/install.rst:311
+msgid ""
+"The system will then continue into a live environment. If the config "
+"importer was used previously on an existing installation, the system will"
+" boot up with a fully functional setup, but will not overwrite the "
+"previous installation. Use this feature for safely previewing upgrades."
+msgstr ""
+
+#: ../../source/manual/install.rst:316
+msgid ""
+"If you have used a DVD, VGA, Serial image you are by default able to log "
+"into the root shell using the user \"root\" with password \"opnsense\" to"
+" operate the live environment."
+msgstr ""
+
+#: ../../source/manual/install.rst:320
+msgid ""
+"The GUI will listen on https://192.168.1.1/ for user \"root\" with "
+"password \"opnsense\" by default unless a previous configuration was "
+"imported. Using SSH, the \"root\" and \"installer\" users are available "
+"as well on IP 192.168.1.1. Note that these install medias are read-only, "
+"which means your current live configuration will be lost after reboot."
+msgstr ""
+
+#: ../../source/manual/install.rst:327
+msgid "Nano image"
+msgstr ""
+
+#: ../../source/manual/install.rst:328
+msgid ""
+"If you have used a Nano image, your system is already up and running as "
+"it is designed as such. It is set to read-write attempting to minimise "
+"write cycles by mounting relevant partitions as memory file systems and "
+"reporting features disabled by default."
+msgstr ""
+
+#: ../../source/manual/install.rst:333
+msgid ""
+"Create a bootable USB flash drive with the downloaded and unpacked image "
+"file. Configure your system to boot from USB."
+msgstr ""
+
+#: ../../source/manual/install.rst:337
+msgid "Install to target system"
+msgstr ""
+
+#: ../../source/manual/install.rst:338
+msgid ""
+"If you have used a DVD, VGA, Serial image you are by default able to "
+"start the installer using the user \"installer\" with password "
+"\"opnsense\". On a previously imported configuration the password will be"
+" the same as root's password."
+msgstr ""
+
+#: ../../source/manual/install.rst:342
+msgid ""
+"Should the installer user not work for any reason, log in as user "
+"\"root\", select option 8 from the menu and type \"opnsense-installer\". "
+"The \"opnsense-importer\" can be run this way as well should you require "
+"to run the import again."
+msgstr ""
+
+#: ../../source/manual/install.rst:346
+msgid ""
+"The installer can always be run to clone an existing system, even for "
+"Nano images. This can be useful for creating live backups for later "
+"recovery."
+msgstr ""
+
+#: ../../source/manual/install.rst:349
+msgid "The installation process involves a few simple steps."
+msgstr ""
+
+#: ../../source/manual/install.rst:352
+msgid ""
+"To invoke the installer login with user **installer** and password "
+"**opnsense**"
+msgstr ""
+
+#: ../../source/manual/install.rst:356
+msgid ""
+"The installer can also be started from the network using ssh, default ip "
+"address is 192.168.1.1"
+msgstr ""
+
+#: ../../source/manual/install.rst:359
+msgid ""
+"Configure console - The default configuration should be fine for most "
+"occasions."
+msgstr ""
+
+#: ../../source/manual/install.rst:361
+msgid ""
+"Select task - The **Quick/Easy Install** option should be fine for most "
+"occasions. For installations on embedded systems or systems with minimal "
+"diskspace choose **Custom Installation** and do not create a swap slice. "
+"Continue with default settings."
+msgstr ""
+
+#: ../../source/manual/install.rst:365
+msgid ""
+"**Are you SURE?** - When proceeding OPNsense will be installed on the "
+"**first hard disk** in the system."
+msgstr ""
+
+#: ../../source/manual/install.rst:367
+msgid ""
+"Reboot - The system is now installed and needs to be rebooted to continue"
+" with configuration."
+msgstr ""
+
+#: ../../source/manual/install.rst:371
+msgid ""
+"You will lose all files on the installation disk. If another disk is to "
+"be used then choose a Custom installation instead of the Quick/Easy "
+"Install."
+msgstr ""
+
+#: ../../source/manual/install.rst:376
+msgid "Initial configuration"
+msgstr ""
+
+#: ../../source/manual/install.rst:377
+msgid ""
+"After installation the system will prompt you for the interface "
+"assignment, if you ignore this then default settings are applied. "
+"Installation ends with the login prompt."
+msgstr ""
+
+#: ../../source/manual/install.rst:381
+msgid "By default you have to log in to enter the console."
+msgstr ""
+
+#: ../../source/manual/install.rst:383
+msgid "**Welcome message** ::"
+msgstr ""
+
+#: ../../source/manual/install.rst:398
+msgid ""
+"A user can login to the console menu with his credentials. The default "
+"credentials after a fresh install are username \"root\" and password "
+"\"opnsense\"."
+msgstr ""
+
+#: ../../source/manual/install.rst:406
+msgid "VLANs and assigning interfaces"
+msgstr ""
+
+#: ../../source/manual/install.rst:403
+msgid ""
+"If choose to do manual interface assignment or when no config file can be"
+" found then you are asked to assign Interfaces and VLANs. VLANs are "
+"optional. If you do not need VLANs then choose **no**. You can always "
+"configure VLANs at a later time."
+msgstr ""
+
+#: ../../source/manual/install.rst:415
+msgid "LAN, WAN and optional interfaces"
+msgstr ""
+
+#: ../../source/manual/install.rst:409
+msgid ""
+"The first interface is the LAN interface. Type the appropriate interface "
+"name, for example \"em0\". The second interface is the WAN interface. "
+"Type the appropriate interface name, eg. \"em1\" . Possible additional "
+"interfaces can be assigned as OPT interfaces. If you assigned all your "
+"interfaces you can press [ENTER] and confirm the settings. OPNsense will "
+"configure your system and present the login prompt when finished."
+msgstr ""
+
+#: ../../source/manual/install.rst:423
+msgid "Minimum installation actions"
+msgstr ""
+
+#: ../../source/manual/install.rst:418
+msgid ""
+"In case of a minimum install setup (i.e. on CF cards), OPNsense can be "
+"run with all standard features, except for the ones that require disk "
+"writes, e.g. a caching proxy like Squid. Do not create a swap slice, but "
+"a RAM Disk instead. In the GUI enable :menuselection:`System --> Settings"
+" --> Miscellaneous --> RAM Disk Settings` and set the size to 100-128 MB "
+"or more, depending on your available RAM. Afterwards reboot."
+msgstr ""
+
+#: ../../source/manual/install.rst:425
+msgid "**Enable RAM disk manually**"
+msgstr ""
+
+#: ../../source/manual/install.rst:430
+msgid ""
+"Then via console, check your /etc/fstab and make sure your primary "
+"partition has **rw,noatime** instead of just **rw**."
+msgstr ""
+
+msgid "Console"
+msgstr ""
+
+#: ../../source/manual/install.rst:436
+msgid "The console menu shows 13 options."
+msgstr ""
+
+#: ../../source/manual/install.rst:448
+msgid "Table:  *The console menu*"
+msgstr ""
+
+msgid "opnsense-update"
+msgstr ""
+
+#: ../../source/manual/install.rst:453
+msgid ""
+"OPNsense features a command line interface (CLI) tool \"opnsense-"
+"update\". Via menu option **8) Shell**, the user can get to the shell and"
+" use opnsense-update."
+msgstr ""
+
+#: ../../source/manual/install.rst:457
+msgid "For help, type *man opnsense-update* and press [Enter]."
+msgstr ""
+
+msgid "Upgrade from console"
+msgstr ""
+
+#: ../../source/manual/install.rst:462
+msgid ""
+"The other method to upgrade the system is via console option **12) "
+"Upgrade from console**"
+msgstr ""
+
+msgid "GUI"
+msgstr ""
+
+#: ../../source/manual/install.rst:467
+msgid ""
+"An update can be done through the GUI via :menuselection:`System --> "
+"Firmware --> Updates`."
+msgstr ""
+

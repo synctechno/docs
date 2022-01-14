@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/frontend/routing.rst:3
+msgid "Routing"
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:7
+msgid "General"
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:9
+msgid ""
+"To retain backward compatibility with legacy code, we try to keep the old"
+" pages at their original location. For the new code, we define two root "
+"folders in the url:"
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:13
+msgid "/ui/ for the new user interface parts"
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:14
+msgid "/api/ used for webservices (REST)"
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:16
+msgid ""
+"This part of the routing is handled by lighthttpd using mod\\_alias and "
+"mod\\_rewrite."
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:20
+msgid "User interface Routing"
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:22
+msgid ""
+"If you look at the controller directory in OPNsense, you will notice "
+"there are different directory levels under the root controller directory "
+"in /usr/local/opnsense/mvc/app/controllers. To support different apps and"
+" vendors eventually, we already used a structure which is automatically "
+"used to setup the routing."
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:28
+msgid ""
+"At the first level we use the vendor of the app, in our case that will "
+"always be OPNsense."
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:31
+msgid ""
+"The next level is used to name the topic (or app), for example we use "
+"Sample for our example application."
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:34
+msgid ""
+"Finally you may place your standard Phalcon classes for controllers in "
+"that directory, so if you want to create a page helloworld, that should "
+"come with a controller helloworldController.php (and a indexAction to "
+"define the index action for that page)."
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:39
+msgid "The complete path of the helloworld page would eventually be:"
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:45
+msgid ""
+"When publishing the page, the vendor part of the controller is not used "
+"in the mapping, so in this example the helloworld index page will be at:"
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:52
+msgid ""
+"All the parts of the url are automatically converted to lower-case, so "
+"**S**\\ample will be mapped to **s**\\ample."
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:55
+msgid ""
+"This routing is setup via the index page of our new code base and uses "
+":code:`/usr/local/opnsense/mvc/app/config/services.php` to wire it all "
+"together."
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:59
+msgid "API routing"
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:61
+msgid ""
+"Routing for API functions is quite similar to routing UI components, just"
+" create a Api directory under the app path and place a controller class "
+"to handle the request. The only major difference is that it's handled by "
+"a separate PHP file (called api.php) instead of the index.php file used "
+"to configure the ui part, details of the routing can be found in "
+"/usr/local/opnsense/mvc/app/config/services\\_api.php ."
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:68
+msgid ""
+"If our sample app needs an API to echo something back via a controller "
+"called tools it could be put into a file called:"
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:75
+msgid "And called via the following url:"
+msgstr ""
+
+#: ../../source/development/frontend/routing.rst:81
+msgid "When the controller has a method called echoAction."
+msgstr ""
+

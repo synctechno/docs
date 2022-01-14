@@ -1,0 +1,275 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/api/plugins/tor.rst:2
+msgid "Tor"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:4
+msgid "Resources (ExitaclController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "Method"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "Module"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "Controller"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "Command"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "``POST``"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "tor"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "exitacl"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "addacl"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "delacl"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "$uuid"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "``GET``"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "get"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "getacl"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "$uuid=null"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "``*``"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "searchacl"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "set"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "setacl"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "toggleacl"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "``<<uses>>``"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid ""
+"*model* `ACLExitPolicy.xml "
+"<https://github.com/opnsense/plugins/blob/master/security/tor/src/opnsense/mvc/app/models/OPNsense/Tor/ACLExitPolicy.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:19
+msgid "Resources (GeneralController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "general"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "addhidservauth"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "delhidservauth"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "gethidservauth"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "searchhidservauth"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "sethidservauth"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "togglehidservauth"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid ""
+"*model* `General.xml "
+"<https://github.com/opnsense/plugins/blob/master/security/tor/src/opnsense/mvc/app/models/OPNsense/Tor/General.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:35
+msgid "Service (HiddenserviceController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "hiddenservice"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "addservice"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "delservice"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "getservice"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "searchservice"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "setservice"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "toggleservice"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid ""
+"*model* `HiddenService.xml "
+"<https://github.com/opnsense/plugins/blob/master/security/tor/src/opnsense/mvc/app/models/OPNsense/Tor/HiddenService.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:50
+msgid "Service (HiddenserviceaclController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "hiddenserviceacl"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid ""
+"*model* `HiddenServiceACL.xml "
+"<https://github.com/opnsense/plugins/blob/master/security/tor/src/opnsense/mvc/app/models/OPNsense/Tor/HiddenServiceACL.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:65
+msgid "Service (RelayController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "relay"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid ""
+"*model* `Relay.xml "
+"<https://github.com/opnsense/plugins/blob/master/security/tor/src/opnsense/mvc/app/models/OPNsense/Tor/Relay.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:74
+msgid "Service (ServiceController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "service"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "circuits"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "getHiddenServices"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "reconfigure"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "restart"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "start"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "status"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "stop"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "streams"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:87
+msgid "Resources (SocksaclController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid "socksacl"
+msgstr ""
+
+#: ../../source/development/api/plugins/tor.rst:1
+msgid ""
+"*model* `ACLSocksPolicy.xml "
+"<https://github.com/opnsense/plugins/blob/master/security/tor/src/opnsense/mvc/app/models/OPNsense/Tor/ACLSocksPolicy.xml>`__"
+msgstr ""
+

@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/logging_interfaces.rst:3
+msgid "Log Files"
+msgstr ""
+
+#: ../../source/manual/logging_interfaces.rst:5
+msgid ""
+"When troubleshooting problems with your firewall, it is very likely you "
+"have to check the logs available on your system. In the UI of OPNsense, "
+"the log files are generally grouped with the settings of the component "
+"they belong to. The log files can be found here:"
+msgstr ""
+
+#: ../../source/manual/logging_interfaces.rst:10
+msgid "**Wireless**"
+msgstr ""
+
+#: ../../source/manual/logging_interfaces.rst:10
+msgid ":menuselection:`Interfaces --> Wireless --> Log File`"
+msgstr ""
+
+#: ../../source/manual/logging_interfaces.rst:10
+msgid "*When using wireless features of OPNsense you find the logs here*"
+msgstr ""
+
+#: ../../source/manual/logging_interfaces.rst:11
+msgid "**Point-to-Point**"
+msgstr ""
+
+#: ../../source/manual/logging_interfaces.rst:11
+msgid ":menuselection:`Interfaces --> Point-to-Point --> Log File`"
+msgstr ""
+
+#: ../../source/manual/logging_interfaces.rst:11
+msgid "*PPP dialup logs like PPPoE are found here*"
+msgstr ""
+

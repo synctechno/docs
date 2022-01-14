@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/SkyUK.rst:2
+msgid "Setup for Sky UK ISP"
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:4
+msgid "**Original Author:** Martin Wasley"
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:7
+msgid "**Introduction**"
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:8
+msgid "This doc covers the setup of OPNsense on a Sky UK VDSL connection."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:10
+msgid ""
+"Sky uses a simple IPoE connection, all that is required is a suitable "
+"modem in bridge mode. If using a standard OpenReach modem then no setting"
+" is required in the modem itself."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:15
+msgid "**WAN Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:17
+msgid "Set both IPv4 and IPv6 configuration type to DHCP and DHCPv6 respectively."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:23
+msgid "**Option61 - dhcp-client-identifier**"
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:25
+msgid ""
+"We now need to send the Sky login credentials. When using VDSL we do not "
+"need to use specific credentials, as long as they are correctly formatted"
+" anything will do."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:29
+msgid "Under DHCP Client Configuration select the Advanced button."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:34
+msgid ""
+"There is an entry 'Send Options', enter the UserID & Password here in the"
+" format:"
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:37
+msgid "dhcp-client-identifier \"user_ID@skydsl|password\""
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:39
+msgid ""
+"It is said that it doesn't matter what is sent in the option61 string, "
+"which is what this is, as long as something is sent, I prefer to play it "
+"safe so stick with the format as shown. For example, the following will "
+"work quite happily."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:44
+msgid "dhcp-client-identifier \"12345678@skydsl|12345678\""
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:46
+msgid ""
+"The other part of the ID is called Option60, there are varying thoughts "
+"on whether this is needed anymore, it does no harm to include it so we'll"
+" do so."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:49
+msgid "dhcp-class-identifier \"7.16a4N_UNI|PCBAFAST2504Nv1.0\""
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:51
+msgid "So the full entry for the 'Lease Requirements' Send Options would be:"
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:53
+msgid ""
+"*dhcp-client-identifier \"12345678@skydsl|12345678\",dhcp-class-"
+"identifier \"7.16a4N_UNI|PCBAFAST2504Nv1.0\"*"
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:56
+msgid ""
+"The next step is to configure the parameters required for DHCPv6, these "
+"are located in the DHCPv6 client configuration section of the WAN "
+"interface shown below."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:63
+msgid ""
+"Sky provide a /56 IPv6 delegation, they do not provide a global IPv6 "
+"address on the WAN interface, this is link local only. Prefix delegation "
+"size should be set to 56."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:67
+msgid "Click 'Save' and 'Apply'"
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:69
+msgid ""
+"The only other requirement is found in the Interfaces:Settings menu under"
+" IPV6 DHCP. The ‘Prevent Release' option."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:75
+msgid ""
+"This is there as the Sky DHCPv6 servers use a 'sticky' address. If the "
+"OPNsense dhcp6 client sends a release signal to the server it's more than"
+" likely that the allocated prefix will change, thus this setting, along "
+"with the 'DHCP Unique Identifier' setting will attempt to mitigate this "
+"risk."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:80
+msgid "Once these settings have been entered, click on 'Save' then 'Apply'."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:83
+msgid "**DHCP Unique Identifier**"
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:85
+msgid ""
+"Although OPNsense stores the IPv6 DUID it is possible this can be lost, "
+"this again would probably result in a new prefix being given, therefore "
+"an option to enter and store a DUID is given in the Interface:Settings "
+"menu."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:92
+msgid ""
+"The Identifier can either be entered manually or if the user clicks on "
+"the 'i' icon, the existing DUID can be automatically entered into the "
+"field by clicking on the 'Insert the existing DUID here' legend."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:96
+msgid "Click ‘Save’."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:99
+msgid "**LAN Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:100
+msgid ""
+"The LAN interface Ipv4 address should have been setup during initial "
+"system installation, if they were not, then the LAN settings can be "
+"adjusted in the Interfaces:[LAN] menu."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:104
+msgid ""
+"It is my recommendation not to use the private subnet range 192.168.*.0, "
+"as this range is often used by hotels and other public networks for "
+"access, this can cause issues when using a VPN. My preferred address "
+"method is using the 10.*.*.0 subnet where the second and third quartet "
+"are birth dates or some other easily memorable number. i.e. 10.1.11.0 "
+"would be the first of November. This is more random and the chances of "
+"the same range on a public network is greatly reduced, however the "
+"address range is easily memorable."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:118
+msgid ""
+"Once the LAN IPv4 address is set then all that remains in the LAN "
+"interface is to set the interface to use the assigned IPv6 prefix."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:121
+msgid ""
+"Set the Track IPv6 Interface to WAN, unless there is a special "
+"requirement which this document does not cover, set the IPv6 Prefix ID to"
+" 0."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:128
+msgid "Click ‘Save’ and then ‘Apply’."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:130
+msgid ""
+"Setting up the IPv4 DHCP server is not covered in this document, but is "
+"required."
+msgstr ""
+
+#: ../../source/manual/how-tos/SkyUK.rst:133
+msgid "It is advisable at this point to reboot the system."
+msgstr ""
+

@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:2
+msgid "Dnscryptproxy"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:4
+msgid "Resources (CloakController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "Method"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "Module"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "Controller"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "Command"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "``POST``"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "dnscryptproxy"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "cloak"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "addCloak"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "delCloak"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "$uuid"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "``GET``"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "get"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "getCloak"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "$uuid=null"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "``*``"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "searchCloak"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "set"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "setCloak"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "toggleCloak"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "``<<uses>>``"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid ""
+"*model* `Cloak.xml <https://github.com/opnsense/plugins/blob/master/dns"
+"/dnscrypt-"
+"proxy/src/opnsense/mvc/app/models/OPNsense/Dnscryptproxy/Cloak.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:19
+msgid "Service (DnsblController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "dnsbl"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid ""
+"*model* `Dnsbl.xml <https://github.com/opnsense/plugins/blob/master/dns"
+"/dnscrypt-"
+"proxy/src/opnsense/mvc/app/models/OPNsense/Dnscryptproxy/Dnsbl.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:28
+msgid "Resources (ForwardController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "forward"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "addForward"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "delForward"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "getForward"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "searchForward"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "setForward"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "toggleForward"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid ""
+"*model* `Forward.xml <https://github.com/opnsense/plugins/blob/master/dns"
+"/dnscrypt-"
+"proxy/src/opnsense/mvc/app/models/OPNsense/Dnscryptproxy/Forward.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:43
+msgid "Service (GeneralController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "general"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid ""
+"*model* `General.xml <https://github.com/opnsense/plugins/blob/master/dns"
+"/dnscrypt-"
+"proxy/src/opnsense/mvc/app/models/OPNsense/Dnscryptproxy/General.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:52
+msgid "Resources (ServerController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "server"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "addServer"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "delServer"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "getServer"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "searchServer"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "setServer"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "toggleServer"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid ""
+"*model* `Server.xml <https://github.com/opnsense/plugins/blob/master/dns"
+"/dnscrypt-"
+"proxy/src/opnsense/mvc/app/models/OPNsense/Dnscryptproxy/Server.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:67
+msgid "Service (ServiceController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "service"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "reconfigure"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "restart"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "start"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "status"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "stop"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:80
+msgid "Resources (WhitelistController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "whitelist"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "addWhitelist"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "delWhitelist"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "getWhitelist"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "searchWhitelist"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "setWhitelist"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid "toggleWhitelist"
+msgstr ""
+
+#: ../../source/development/api/plugins/dnscryptproxy.rst:1
+msgid ""
+"*model* `Whitelist.xml "
+"<https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-"
+"proxy/src/opnsense/mvc/app/models/OPNsense/Dnscryptproxy/Whitelist.xml>`__"
+msgstr ""
+

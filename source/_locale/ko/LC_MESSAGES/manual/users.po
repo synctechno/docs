@@ -1,0 +1,193 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/users.rst:3
+msgid "Access / User Management"
+msgstr ""
+
+#: ../../source/manual/users.rst:8
+msgid ""
+"The user manager of OPNsense allows for controlling access to the "
+"different part (pages) of the configurator as well as controlling access "
+"to particular services on a per user bases."
+msgstr ""
+
+#: ../../source/manual/users.rst:13
+msgid "Authentication"
+msgstr ""
+
+#: ../../source/manual/users.rst:14
+msgid ""
+"OPNsense offers integration with external servers for services that "
+"require user authentication. These services include:"
+msgstr ""
+
+#: ../../source/manual/users.rst:17
+msgid "IPsec"
+msgstr ""
+
+#: ../../source/manual/users.rst:18
+msgid "OpenVPN"
+msgstr ""
+
+#: ../../source/manual/users.rst:19
+msgid "Captive Portal"
+msgstr ""
+
+#: ../../source/manual/users.rst:20
+msgid "Proxy"
+msgstr ""
+
+#: ../../source/manual/users.rst:22
+msgid ""
+"Integrated into OPNsense are the **Local User Database** and **Voucher "
+"Server**. The Voucher Server is intended to be used with the Captive "
+"portal."
+msgstr ""
+
+#: ../../source/manual/users.rst:25
+msgid "External service currently supported are:"
+msgstr ""
+
+#: ../../source/manual/users.rst:27
+msgid "LDAP (OpenLDAP, MS Active Directory, Novell eDirectory)"
+msgstr ""
+
+#: ../../source/manual/users.rst:28
+msgid "Radius"
+msgstr ""
+
+#: ../../source/manual/users.rst:31
+msgid "Authorization"
+msgstr ""
+
+#: ../../source/manual/users.rst:32
+msgid ""
+"Besides authenticating, user authorization to access parts of the "
+"configuration can also be setup with an external server, but in order to "
+"grant the appropriate privileges to the users they need to be imported in"
+" OPNsense's local user manager. This way one can validate a user against "
+"its externally stored password and have a fine grained control over the "
+"configuration pages that user may access."
+msgstr ""
+
+#: ../../source/manual/users.rst:40
+msgid "Users, Groups & Privileges"
+msgstr ""
+
+#: ../../source/manual/users.rst:41
+msgid ""
+"When using the local user manager, either stand alone or on combination "
+"with an external authentication server one can define groups to combine a"
+" set of privileges for a specific user group. A user should be an "
+"individual, a group needs to be specific in such a way that anyone of "
+"that group can be granted the same access rights, called privileges."
+msgstr ""
+
+#: ../../source/manual/users.rst:48
+msgid "Authentication services"
+msgstr ""
+
+#: ../../source/manual/users.rst:50
+msgid ""
+"Authentication services can be configured using the settings in "
+":menuselection:`System --> Access --> Servers`. This includes both local "
+"accounts and remote authentication."
+msgstr ""
+
+#: ../../source/manual/users.rst:53
+msgid ""
+"By default, OPNsense GUI login will use local accounts. This can be "
+"changed, however, by going to :menuselection:`System --> Settings --> "
+"Administration`, scrolling down to the \"Authentication\" group, and "
+"changing the 'Server' option."
+msgstr ""
+
+#: ../../source/manual/users.rst:58
+msgid "Local account configuration"
+msgstr ""
+
+#: ../../source/manual/users.rst:60
+msgid ""
+"Settings for handling login via local accounts can be set by going to "
+":menuselection:`System --> Access --> Servers`, then clicking the 'Edit' "
+"icon (a pencil) for 'Local Database'. Here, you can improve security of "
+"local user accounts by setting password length and complexity "
+"constraints."
+msgstr ""
+
+#: ../../source/manual/users.rst:64
+msgid "An overview of available settings:"
+msgstr ""
+
+#: ../../source/manual/users.rst:67
+msgid "**Policy**"
+msgstr ""
+
+#: ../../source/manual/users.rst:67
+msgid "Enable password policy constraints."
+msgstr ""
+
+#: ../../source/manual/users.rst:68
+msgid "**Duration**"
+msgstr ""
+
+#: ../../source/manual/users.rst:68
+msgid ""
+"[Policy] Password duration, optionally define how often the user should "
+"change his or her password."
+msgstr ""
+
+#: ../../source/manual/users.rst:69
+msgid "**Length**"
+msgstr ""
+
+#: ../../source/manual/users.rst:69
+msgid "[Policy] Minimum password length to require."
+msgstr ""
+
+#: ../../source/manual/users.rst:70
+msgid "**Complexity**"
+msgstr ""
+
+#: ../../source/manual/users.rst:70
+msgid "[Policy] Enforce password complexity checks."
+msgstr ""
+
+#: ../../source/manual/users.rst:76
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/manual/users.rst:91
+msgid ""
+"When using external authentication services (such as ldap), the firewall "
+"needs a route to the configured target machine in order to function "
+"properly. Specifically when the server is only reachable over a classic "
+"IPsec tunnel (non VTI), a static route might be needed to guide the "
+"packets into the right tunnel matching the policy. (for example when a "
+"policy for LAN exists, add a gateway pointing to our own address and a "
+"static routing pusing traffic to the other end)."
+msgstr ""
+
+#: ../../source/manual/users.rst:97
+msgid ""
+"A quick test if the routes are properly setup can always be performed "
+"using ping from the :code:`default` source address."
+msgstr ""
+

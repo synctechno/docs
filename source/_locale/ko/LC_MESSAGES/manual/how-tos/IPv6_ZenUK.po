@@ -1,0 +1,310 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:2
+msgid "IPv6 For Zen UK"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:4
+msgid "**Original Author:** Martin Wasley"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:7
+msgid "**Introduction**"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:8
+msgid "Zen provide two methods of setting up IPv6."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:10
+msgid ""
+"The first method is a simple DHCP method which should suffice most users,"
+" the second allows you to set up static IPv6 on both WAN and LAN. In "
+"either case the addresses and prefixes are constant and even under DHCP "
+"will not change. Currently Zen provide a /64 WAN address and a /48 prefix"
+" allocation. These will have been given to you by Zen when you request "
+"IPv6."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:18
+msgid "**Setting up IPv6 using DHCPv6**"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:22
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:114
+msgid "**WAN Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:24
+msgid ""
+"Zen use PPPoE in the initial V4 connection, so enter PPPoE as the V4 "
+"connection type and set the username and password for the PPPoE "
+"connection, for IPv6 using DHCP, select DHCPv6 in the IPv6 connection as "
+"shown below."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:32
+msgid ""
+"The next step is to configure the parameters required for DHCPv6, these "
+"are located in the DHCPv6 client configuration section of the WAN "
+"interface shown below."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:39
+msgid ""
+"As stated before, Zen provide a /48 prefix, so select the prefix size "
+"accordingly."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:42
+msgid ""
+"The only other requirement in this section is to select ‘Use IPv4 "
+"connectivity’, this is because the IPv6 traffic is routed over the PPPoE "
+"link."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:46
+msgid ""
+"In the example above, ‘Enable debug’ is selected, this adds extra dhcp6c "
+"logging information to the DHCP logs, this is optional."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:49
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:70
+msgid "Click ‘Save’ and then ‘Apply’."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:52
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:142
+msgid "**LAN Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:54
+msgid ""
+"All that is required now is to set the LAN interface to use assigned IPv6"
+" prefix."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:57
+msgid ""
+"Select :menuselection:`Interfaces --> [LAN]` and set the IPv6 "
+"Configuration Type to ‘Track Interface’"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:63
+msgid ""
+"Finally, set the Track IPv6 Interface to WAN, unless there is a special "
+"requirement which this document does not cover, set the IPv6 Prefix ID to"
+" 0."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:72
+msgid "It is advisable at this point to reboot the system."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:75
+msgid "**Setting up IPv6 using Static Assignment**"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:77
+msgid ""
+"Although slightly more complex, this option gives you greater control "
+"over LAN DHCP6 server, as this can be tailored to specific needs."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:80
+msgid ""
+"We can take advantage of the link-local that is automatically set up "
+"between our router and the Zen BNG, we do not need to know specific "
+"gateways at the Zen end, it all gets routed automagically, however we do "
+"need to set up all of our static assignments, and our DHCPv6/RADVD "
+"servers."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:88
+msgid "**Create Gateway**"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:89
+msgid ""
+"Firstly, we do need to set up a gateway, this is for monitoring more than"
+" anything else. Select :menuselection:`Gateways --> All` then click ‘Add "
+"Gateway’."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:92
+msgid "Now, we know that Zen give us a /64 on our WAN interface, for example."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:94
+msgid "2a02:8231:d256:318::/66"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:96
+msgid ""
+"Pick an address, we’ll use ‘1’, so our WAN address 2a02:8231:d256:318::1,"
+" it’s also going to be our gateway."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:99
+msgid ""
+"We will also add a target IP for our monitor, the target will be a global"
+" WAN address of something. You can use the Google v6 DNS server address "
+"if you wish. If no monitor is given the gateway address is used, which "
+"can check gateway health status but may or may not indicate access to the"
+" Internet."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:105
+msgid "Set up the gateway like this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:111
+msgid "Click Save."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:115
+msgid ""
+"Once we have our gateway in place we can then set up the WAN interface. "
+"Select :menuselection:`Interfaces --> [WAN]`."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:118
+msgid "Go to IPv6 Configuration Type and select Static IPv6."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:123
+msgid "Go to Static IPv6 Configuration and set the IPv6 Static address:"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:125
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:164
+msgid ""
+"**Tip Use the same address as found when setting the system up to use "
+"DHCPv6.**"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:131
+msgid "Select Use IPv4 connectivity, all IPv6 traffic goes via the PPPoE link."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:133
+msgid ""
+"Finally, select the IPv6 Upstream Gateway, this is the gateway you "
+"created earlier."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:139
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:167
+msgid "Click Save and Apply."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:144
+msgid ""
+"The LAN interface is very simple to set up, all we need to do is set the "
+"IPv6 Configuration Type to Static, and enter our static address."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:150
+msgid ""
+"Zen give us a /48 prefix to use on the LAN, so pick an address from that "
+"range. For example our prefix is:"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:153
+msgid "2a02:8242:55AB:\\:"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:155
+msgid "So"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:157
+msgid "2a02:8242:55AB:0:4:3:2:1 would suffice."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:162
+msgid "We want to use a /64 prefix on this interface."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:170
+msgid "**DHCPv6 Server**"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:172
+msgid ""
+"When using DHCPv6 on the WAN, our DHCPv6 LAN server is set automatically,"
+" however when using statics, we need to set it up. Go to "
+":menuselection:`Services --> DHCPv6[LAN]`."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:176
+msgid "Firstly, enable the server."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:181
+msgid ""
+"You will notice that the subnet already has a range, and the subnet mask "
+"is the /64 we set on the LAN. There is also a range we must use, the "
+"available range tells us what that can be."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:185
+msgid "Enter the lower – start range that the server will use"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:187
+msgid "2a02:8231:d256::eeee:0000:0000:0001"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:189
+msgid "Enter the upper – end range that the server will use."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:191
+msgid "2a02:8231:d256::eeee:ffff:ffff:ffff"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:196
+msgid ""
+"This should cover most LAN subnets, the range given here gives "
+"281,474.976.710,655 addresses."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:199
+msgid ""
+"We can also set up a prefix delegation range, this is used where we have "
+"sub routers or VLAN’s that need their own range. In the case of prefixes,"
+" we are only interested in the upper 64 bits, as in this example we will "
+"only be giving out 64 bit prefixes. We know we have been given a /48 "
+"prefix by Zen, so we enter our prefix range like this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:208
+msgid ""
+"Our prefix range is the upper 48 bits, plus some of the next 16 bits, but"
+" we must not cross into the range we have used for our LAN addresses. In "
+"the example above I have allowed for up to 254 /64 subnets."
+msgstr ""
+
+#: ../../source/manual/how-tos/IPv6_ZenUK.rst:212
+msgid "Once these details have been entered, click save."
+msgstr ""
+

@@ -1,0 +1,327 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/api/plugins/freeradius.rst:2
+msgid "Freeradius"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:4
+msgid "Resources (AvpairController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "Method"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "Module"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "Controller"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "Command"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "``POST``"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "freeradius"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "avpair"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "addAvpair"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "delAvpair"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "$uuid"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "``GET``"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "get"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "getAvpair"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "$uuid=null"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "``*``"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "searchAvpair"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "set"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "setAvpair"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "toggleAvpair"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "``<<uses>>``"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid ""
+"*model* `Avpair.xml "
+"<https://github.com/opnsense/plugins/blob/master/net/freeradius/src/opnsense/mvc/app/models/OPNsense/Freeradius/Avpair.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:19
+msgid "Resources (ClientController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "client"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "addClient"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "delClient"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "getClient"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "searchClient"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "setClient"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "toggleClient"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid ""
+"*model* `Client.xml "
+"<https://github.com/opnsense/plugins/blob/master/net/freeradius/src/opnsense/mvc/app/models/OPNsense/Freeradius/Client.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:36
+msgid "Resources (DhcpController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "dhcp"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "addDhcp"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "delDhcp"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "getDhcp"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "searchDhcp"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "setDhcp"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "toggleDhcp"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid ""
+"*model* `Dhcp.xml "
+"<https://github.com/opnsense/plugins/blob/master/net/freeradius/src/opnsense/mvc/app/models/OPNsense/Freeradius/Dhcp.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:51
+msgid "Resources (EapController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "eap"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:58
+msgid "Resources (GeneralController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "general"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:65
+msgid "Service (LdapController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "ldap"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid ""
+"*model* `Ldap.xml "
+"<https://github.com/opnsense/plugins/blob/master/net/freeradius/src/opnsense/mvc/app/models/OPNsense/Freeradius/Ldap.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:74
+msgid "Resources (LeaseController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "lease"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "addLease"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "delLease"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "getLease"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "searchLease"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "setLease"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "toggleLease"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid ""
+"*model* `Lease.xml "
+"<https://github.com/opnsense/plugins/blob/master/net/freeradius/src/opnsense/mvc/app/models/OPNsense/Freeradius/Lease.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:89
+msgid "Service (ServiceController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "service"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "reconfigure"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "restart"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "start"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "status"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "stop"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:99
+msgid "Resources (UserController.php)"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "user"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "addUser"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "delUser"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "getUser"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "searchUser"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "setUser"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid "toggleUser"
+msgstr ""
+
+#: ../../source/development/api/plugins/freeradius.rst:1
+msgid ""
+"*model* `User.xml "
+"<https://github.com/opnsense/plugins/blob/master/net/freeradius/src/opnsense/mvc/app/models/OPNsense/Freeradius/User.xml>`__"
+msgstr ""
+

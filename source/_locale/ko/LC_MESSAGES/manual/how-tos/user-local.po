@@ -1,0 +1,262 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/user-local.rst:3
+msgid "Users & Groups"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:8
+msgid ""
+"With the local user manager of OPNsense one can add users and groups and "
+"define the privileges for granting access to certain parts of the GUI "
+"(Web Configurator)."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:12
+msgid "Adding Users"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:13
+msgid ""
+"To add a new user go to :menuselection:`System --> Access --> Users` and "
+"click on the **+** sign at the bottom right corner of the form."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:17
+msgid "**Disabled**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:17
+msgid "Unchecked"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:17
+msgid "*Can be used to (temporarily) disable an account*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:18
+msgid "**Username**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:18
+msgid "John"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:18
+msgid "*A unique username*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:19
+msgid "**Password**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:19
+msgid "secret"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:19
+msgid "*A strong password*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:20
+msgid "**Full name**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:20
+msgid "John Doe"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:20
+msgid "*Optional, Full username*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:21
+msgid "**Login shell**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:21
+msgid "*The shell to use when logging in via the console.*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:22
+msgid "**Expiration date**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:22
+msgid "*Optional, if account should expire enter as mm/dd/yyy*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:23
+msgid "**Group Membership**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:23
+msgid "*Optional, select one or more groups*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:24
+msgid "**Certificate**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:24
+msgid "*Optional, check if a user certificate should be created*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:25
+msgid "**OTP seed**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:25
+msgid "*Optional, enter or generate a OTP seed (base32)*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:26
+msgid "**Authorized keys**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:26
+msgid "*Optional, paste ssh key for ssh console access*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:27
+msgid "**IPsec Pre-Shared Key**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:27
+msgid "*Optional, IPsec PSK*"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:31
+msgid "Creating Groups"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:32
+msgid ""
+"Go to :menuselection:`System --> Access --> Groups` and click on the "
+"**+** sign in the lower right corner of the form."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:35
+msgid "Enter a **Group name** and a **Description** and add users to the group."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:38
+msgid "Add privileges to a group"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:39
+msgid ""
+"After creating a group the privileges can be added by editing the group. "
+"Go to :menuselection:`System --> Access --> Groups` and click on the edit"
+" symbol (pencil) right next to the group you like to change."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:43
+msgid ""
+"To assign privileges, just click on the pencil icon on the right of "
+"**Assigned Privileges**. A form will be shown where each page can be "
+"either selected or deselected."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:46
+msgid ""
+"The search bottom at the top of this form can be used to quickly find the"
+" right page."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:52
+msgid ""
+"After making the right selection click on **Save** to store the new "
+"settings."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:57
+msgid "SSH and console login"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:59
+msgid ""
+"User accounts can be used for logging in to the web frontend, as well as "
+"for logging in to the console (via VGA, serial or SSH). The latter will "
+"only work if the user's shell is not set to ``/sbin/nologin`` and if "
+"group the user is part of is allowed SSH access."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:63
+msgid ""
+"In order to access OPNsense via SSH, SSH access will need to be "
+"configured via :menuselection:`System --> Settings --> Administration`. "
+"Under the \"Secure Shell\" heading, the following options are available:"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:67
+msgid "**Enable secure shell**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:67
+msgid "Global on/off switch."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:68
+msgid "**Login Group**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:68
+msgid "Which user groups can access OPNsense via SSH."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:69
+msgid "**Permit root user login**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:69
+msgid ""
+"Normally, only non-root accounts are allowed for security reasons. This "
+"option enables root login."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:71
+msgid "**Permit password login**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:71
+msgid ""
+"The recommended login method is using SSH keys as it's more secure, but "
+"this option will also enable password logins."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:73
+msgid "**SSH Port**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:73
+msgid "Defaults to 22, but can be changed to make port scanning less effective."
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:74
+msgid "**Listen interfaces**"
+msgstr ""
+
+#: ../../source/manual/how-tos/user-local.rst:74
+msgid ""
+"By default, SSH listens on all interfaces. You can limit this (to just "
+"the LAN, for example) for additional security at the cost of "
+"availability."
+msgstr ""
+

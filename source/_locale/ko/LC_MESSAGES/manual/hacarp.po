@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/hacarp.rst:3
+msgid "High Availability"
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:4
+msgid ""
+"OPNsense utilizes the Common Address Redundancy Protocol or CARP for "
+"hardware failover. Two or more firewalls can be configured as a failover "
+"group. If one interface fails  on the primary or the primary goes offline"
+" entirely, the secondary becomes active."
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:9
+msgid ""
+"Utilizing this powerful feature of OPNsense creates a fully redundant "
+"firewall with automatic and seamless fail-over. While switching to the "
+"backup network connections will stay active with minimal interruption for"
+" the users."
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:19
+msgid "Workflow"
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:21
+msgid ""
+"Although its not required to synchronize the configuration from the "
+"master machine to the backup, a lot of people would like to keep both "
+"systems (partially) the same."
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:24
+msgid ""
+"To prevent issues spreading over both machines at the same time, we "
+"choose to only update on command (see the status page)."
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:26
+msgid "Our workflow looks like this:"
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:41
+msgid ""
+"First commit all changes to the master, then update the backup while "
+"knowing the master is still properly configured."
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:45
+msgid ""
+"In case of an emergency, you should still be able to switch to the backup"
+" node when changes cause issues, since the backup machine is left in a "
+"known good state during the whole process."
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:51
+msgid "Automatic replication"
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:53
+msgid ""
+"Although we advise to make sure to keep the backup machine intact during "
+"maintenance, some people prefer to keep the backup in sync on periodic "
+"intervals. For this reason we added a cron action which you can schedule "
+"yourself in :menuselection:`System -> Settings -> Cron` on the primary "
+"node."
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:57
+msgid ""
+"To use this feature, add a new cron job containing the :code:`HA update "
+"and reconfigure backup` command and a proper schedule, once a day outside"
+" office hours is usually a safe option."
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:62
+msgid ""
+"To prevent a non functional primary machine updating the active master, "
+"the :code:`HA update and reconfigure backup` will only execute if all "
+"carp interfaces are in :code:`MASTER` mode."
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:68
+msgid "Settings"
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:72
+msgid "Automatic failover"
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:74
+msgid ""
+"Although not really a setting on the high availability setup page, it's a"
+" crucial part of high available setups. Using CARP type virtual "
+"addresses, the secondary firewall will take over without user "
+"intervention and minimal interruption when the primary becomes "
+"unavailable."
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:78
+msgid ""
+"Virtual IPs of the type CARP (:doc:`/manual/firewall_vip`) are required "
+"for this feature."
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:82
+msgid "Synchronized state tables"
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:84
+msgid ""
+"The firewall’s state table is replicated to all failover configured "
+"firewalls. This means the existing connections will be maintained in case"
+" of a failure, which is important to prevent network disruptions."
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:90
+msgid "Disable preempt"
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:92
+msgid ""
+"By default this option is deselected, which is the advised scenario for "
+"most common HA setups. The preempt option make sure that multiple carp "
+"interfaces will act as a group (all :code:`backup` or :code:`master`) at "
+"the same time, assuming no technical issues exist between both."
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:98
+msgid "Configuration synchronization"
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:100
+msgid ""
+"OPNsense includes configuration synchronization capabilities. "
+"Configuration changes made on the primary system are synchronized on "
+"demand to the secondary firewall."
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:106
+msgid "Configure HA CARP"
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:108
+msgid "For detailed setup guide see: :doc:`/manual/how-tos/carp`"
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:113
+msgid "Status"
+msgstr ""
+
+#: ../../source/manual/hacarp.rst:115
+msgid ""
+"The status page connects to the backup host configured earlier and show "
+"all services running on the backup server. With this page you can update "
+"the backup machine and restart services if needed."
+msgstr ""
+

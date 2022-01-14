@@ -1,0 +1,325 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/clamav.rst:3
+msgid "ClamAV"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:5
+msgid ""
+"The ClamAV plugin can be used with other plugins, like c-icap and rspamd,"
+" to scan for viruses."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:8
+msgid ""
+"Your machine needs at least 1.5 GB RAM. Otherwise the machine will run "
+"out of memory and crash because of out of memory kills. Using a machine "
+"with at least 2 GB RAM is recommended."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:13
+msgid ""
+"There are some techniques to avoid detection and scanning using AV "
+"software and not every malware is known by AV products. Signature based "
+"AV software can decrease the risk of getting hit by a known malware but "
+"it does never guarantee that your computers don't get infected. It is "
+"**important** to teach the users how to handle files from the internet "
+"and untrusted devices safely. Also plan a regular Backup of important "
+"files, make sure, that ACLs are used correctly and apply patches asap to "
+"keep the attack surface and damage as small as possible."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:23
+msgid ""
+"To make ClamAV working, you need to download signatures. Please note that"
+" those files need to be fetched after a reboot again if they are stored "
+"on a ram disk."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:29
+msgid "Installation"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:31
+msgid ""
+"First of all, you have to install the ClamAV plugin (os-clamav) from the "
+"plugins view."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:36
+msgid ""
+"After a page reload you will get a new menu entry under services for "
+"ClamAV. Select it and you will get to the following screen:"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:43
+msgid "Configuration Options"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Enable clamd service"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:46
+msgid "Selecting this checkbox enables clamd so you can use it to scan files."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Enable freshclam service"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:48
+msgid ""
+"Freshclam is a service to update your malware signatures. If you use "
+"ClamAV, it is recommended to update the signatures on a regular basis."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Enable TCP Port"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:51
+msgid ""
+"This checkbox needs to be checked, if you want to use clamd over the "
+"network or for local services, which use a TCP connection."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Maximum number of threads running"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:54
+msgid ""
+"Thread limit is used to avoid a denial of service of the daemon and your "
+"machine. Usually a number next or equal to the number of cores would be "
+"good."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Maximum number of queued items"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:57
+msgid ""
+"This is the maximum of files which can be in the queued for scanning. The"
+" reason is the same as for the threads."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Idle Timeout"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:60
+msgid ""
+"The connection will be dropped if it is inactive for this amount of time."
+" If the other socket endpoint is a machine, this value can be low but if "
+"you plan to use it for develpoment reasons, you may set it to a higher "
+"value."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Max directory recursion"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:64
+msgid ""
+"Limit the depth of the directory tree. In the worst case there is a loop "
+"which causes the scanner to run endlessly and this setting should prevent"
+" it."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Follow directory symlinks"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:68
+msgid ""
+"If this is checked, clamav will follow directory symlinks which may lead "
+"to a loop. If you want to check this, make sure the recursion limit is "
+"set to a useful value."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Follow regular file symlinks"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:71
+msgid ""
+"If this is checked, clamav will follow symlinks to regular files. This "
+"may expose information about the filesystem, the user should not have "
+"access to."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Disable cache"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:74
+msgid ""
+"If you check this, the results are not cached. This is only useful in "
+"develpoment environments as it slows down the response time."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Scan portable executable"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:77
+msgid ""
+"Check this box, if you want to scan PE files. If you are using PE-files "
+"(\\*.exe, \\*.dll etc.) files in your network, checking this box is "
+"recommended."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Scan executeable and linking format"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:81
+msgid ""
+"Check this box, if you want to scan ELF-files. ELF is for example used on"
+" Linux based operating systems and on \\*BSD."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Detect broken executables"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:84
+msgid ""
+"This setting will mark an executable as broken if it does not match the "
+"spec. A executable may be broken because of a download issue or "
+"manipulation. In any case, there should not be any legit case to pass a "
+"broken executable."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Scan OLE2"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:88
+msgid ""
+"If this is checked, OLE2 files (for example Microsoft Office files) will "
+"be analyzed. Such files should be analyzed as they may contain macros "
+"which have been used to download and install malware (usually "
+"ransomware)."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "OLE2 block macros"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:92
+msgid ""
+"Check this box, if documents containing macros should be blocked. If you "
+"don't use macros and you don't expect them from your business partners or"
+" friends, this setting is recommended."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Scan PDF files"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:95
+msgid ""
+"If this checkbox is checked, PDF files will be scanned. PDF files can "
+"carry other files or multimedia as well as javascript and fonts. Scanning"
+" PDF files is recommended."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Scan SWF"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:99
+msgid ""
+"If you check this box, Flash files will be scanned. Flash is used to "
+"provide video players or interactive content. Nowadays it should have "
+"been replaced by HTML5."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Scan XMLDOCS"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:103
+msgid "Scan XML Documents"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Scan HWP3"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:105
+msgid ""
+"HWP seems to be a korean document format. If you don't use them, it is "
+"better to block them in the proxy than scanning them. If you have them in"
+" use, you should scan them."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Decode mail files"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:109
+msgid ""
+"If you select this option, the sections of emails will be read and "
+"therefore it will be possible to scan email attachments. Mail attachments"
+" are important to scan as an attached file may contain malware. For "
+"example, some malware campaigns used a JScript file which has been packed"
+" in a ZIP file which was attached to an email."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Scan HTML"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:115
+msgid "Scans HTML files which may have dangerous embedded JavaScript."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Scan archives"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:117
+msgid ""
+"Scan files inside archives. This is very important as archives can "
+"contain malware. Please note that archive nesting is used to bypass "
+"scans, so scanners detect such archives as dangerous at a specific "
+"recursion level. Also keep in mind that zip bombs may be possible to DoS "
+"a scanner."
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst
+msgid "Block encrypted archive"
+msgstr ""
+
+#: ../../source/manual/how-tos/clamav.rst:123
+msgid ""
+"Encrypted archives are usually used to transfer files encrypted which "
+"don't support encryption on their own or the sender is not aware how to "
+"encrypt those files. A tool like 7z can derive a key from a password "
+"given by the creator of the file, which will be used to encrypt the "
+"compressed data. The ClamAV cannot scan this data as it is missing the "
+"key/password. Some malware authors used encrypted archives to avoid "
+"scanning and told the victim in the email text how to unpack it."
+msgstr ""
+

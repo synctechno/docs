@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:3
+msgid "Zenarmor (Sensei): Overview"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:6
+msgid "About"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:8
+msgid ""
+"Zenarmor is a plugin for the OPNsense firewall which provides state-of-"
+"the-art next generation features. If you are running a L4 firewall (all "
+"open source firewalls fall into this category) and looking for features "
+"like Application Control, Network Analytics and TLS Inspection, Zenarmor "
+"is the product you're looking for."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:16
+msgid "Features"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:18
+msgid ""
+"Zenarmor empowers your firewall with the following next generation "
+"features:"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:20
+msgid "Application Control"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:21
+msgid "Cloud Application Control \\(Web 2.0 Controls\\)"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:22
+msgid "Advanced Network Analytics"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:23
+msgid "All-ports full TLS Inspection \\(for every TCP port, not just HTTPS\\)"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:24
+msgid "Cloud Threat Intelligence"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:25
+msgid "Encrypted Threats Prevention"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:26
+msgid "Web Filtering & Security"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:27
+msgid "Active Directory Integration"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:31
+msgid "Getting Started"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:33
+msgid ":doc:`zenarmor_hardwarerequirements`"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:34
+msgid ":doc:`zenarmor_install`"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:35
+msgid ":doc:`zenarmor_cmd_install`"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:39
+msgid "User Manual"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:41
+msgid ""
+"You can get detailed *How to* documents from Zenarmor's Documentation "
+"Site located at https://help.sunnyvalley.io/"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:43
+msgid ""
+"`Dashboard <https://www.sunnyvalley.io/docs/opnsense/customizing-"
+"dashboard/dashboard>`_"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:44
+msgid ""
+"`Status <https://www.sunnyvalley.io/docs/opnsense/customizing-"
+"dashboard/status>`_"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:45
+msgid ""
+"`Reports <https://www.sunnyvalley.io/docs/opnsense/reporting-analytics"
+"/reports-overview>`_"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:46
+msgid ""
+"`Security <https://www.sunnyvalley.io/docs/opnsense/policies/security-"
+"rules>`_"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:47
+msgid ""
+"`Application Control <https://www.sunnyvalley.io/docs/opnsense/policies"
+"/application-control-rules>`_"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:48
+msgid ""
+"`Web Control <https://www.sunnyvalley.io/docs/opnsense/policies/web-"
+"control-rules>`_"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:49
+msgid ""
+"`Configuration "
+"<https://www.sunnyvalley.io/docs/opnsense/configuring/overview>`_"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:53
+msgid "Getting Support"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:55
+msgid "**Support for Free Edition**"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:57
+msgid ""
+"If you need help with Zenarmor, there is an active discussion on the "
+"OPNsense forum. Feel free to `click here "
+"<https://forum.opnsense.org/index.php?board=38.0>`_ to join the "
+"conversation."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:59
+msgid ""
+"You may also submit bug reports by visiting the *Report Bug* page in the "
+"Zenarmor web UI."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:61
+msgid ""
+"With its in-depth coverage, `Zenarmor Documentation "
+"<https://www.sunnyvalley.io/docs/opnsense>`_ is always available for "
+"reference."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:63
+msgid "`OPNsense Forum <https://forum.opnsense.org/index.php?board=38.0>`_"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:64
+msgid "`Users' Manual <https://www.sunnyvalley.io/docs/opnsense>`_"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:66
+msgid "**Premium Subscription Support**"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:68
+msgid ""
+"When you buy a Zenarmor Premium Subscription, you are entitled to "
+"Zenarmor Basic Support. Additional support plans are available on demand."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:70
+msgid "`Compare Support Plans <https://www.sunnyvalley.io/support-plans>`_"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:71
+msgid "`Access Support Center <https://help.sunnyvalley.io/hc/en-us>`_"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:73
+msgid "**Support Options for Channel Partners**"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:75
+msgid ""
+"Sunny Valley Networks provides Tier 3 Support Options for Zenarmor "
+"Channel Partners. To learn more about them, please contact **sensei-"
+"partnership -at- sunnyvalley.io** ."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:77
+msgid "**Connect via Social Media**"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:79
+msgid "**Twitter**: `@sunnyvalley <https://twitter.com/sunnyvalley>`_"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:80
+msgid ""
+"**Youtube**: `Sunny Valley Networks Hands-on videos "
+"<https://www.youtube.com/channel/UCBmMJAnuUW5qxAN23kLPuPA>`_"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor.rst:81
+msgid "**Sunny Valley Blog**: https://sunnyvalley.io/blog/"
+msgstr ""
+

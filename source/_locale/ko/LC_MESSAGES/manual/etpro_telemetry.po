@@ -1,0 +1,551 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/etpro_telemetry.rst:3
+msgid "ET Pro Telemetry edition"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:5
+msgid ""
+"Todays cybersecurity engineers need timely and accurate data about "
+"eminent threats and how they spread around the globe. With this data "
+"cybersecurity researchers and analysts can improve the detection of "
+"malicious network traffic. The times when we could rely on just firewall "
+"rules for our protection are long gone. Additional layers of security are"
+" desperately needed to guard against these attacks."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:10
+msgid ""
+"With growing risks the need to fortify our security is growing for both "
+"big enterprises as for SMEs alike, but often out of reach for the latter."
+" An important extra security addition is an Intrusion Detection and "
+"Prevention System (IDS/IPS)."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:14
+msgid ""
+"The IDS/IPS available in OPNsense is based on Suricata. This open source "
+"IDS/IPS engine has proven its value in OPNsense, especially in "
+"combination with the free Proofpoint ETOpen ruleset."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:17
+msgid ""
+"The need for valuable threat detection data and the increasing importance"
+" of additional network security has brought Proofpoint and OPNsense "
+"together. Our joined efforts resulted in the ET Pro Telemetry edition."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:21
+msgid ""
+"The ET Pro Telemetry edition embraces our vision that sharing knowledge "
+"leads to better products."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:23
+msgid ""
+"When you allow your OPNsense system to share anonymized information about"
+" detected threats - the alerts - you are able to use the ET Pro ruleset "
+"free of charge."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:28
+msgid ""
+"*The ET Pro ruleset is updated daily and covers more than 40 different "
+"categories of network behaviors, malware command and control, DoS "
+"attacks, botnets, informational events, exploits, vulnerabilities, SCADA "
+"network protocols, exploit kit activity, and more. If offers a great "
+"improvement over the ET open ruleset.*"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:34
+msgid "Registration"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:36
+msgid ""
+"When you register for this (free) service, you will share your basic "
+"(company) details with us, Deciso Sales B.V.. We will register your "
+"sensor(s) anonymized at Proofpoint."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:42
+msgid ""
+"When ET Pro Telemetry is activated, your OPNsense system sends data to "
+"Proofpoint. Proofpoint does not know who you are, they only know how many"
+" sensors an account owns. Your network statistics received by Proofpoint "
+"won’t be shared with us."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:46
+msgid "Sign up for ET Pro Telemetry edition `here <https://shop.opnsense.com/>`__"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:51
+msgid "Installation"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:53
+msgid ""
+"After registration, we can proceed to the installation steps, which are "
+"described below."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:57
+msgid ""
+"To use ET Pro Telemetry, you will need to have OPNsense 19.1 or higher "
+"installed. When using an older version, please upgrade to the latest "
+"first."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:63
+msgid "plugin"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:65
+msgid ""
+"First we need to install the required plugin, which is responsible for "
+"collecting the telemetry data and provides access to the ET Pro ruleset."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:68
+msgid "Go to :menuselection:`System --> Firmware --> Updates`"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:69
+msgid "press \"Check for updates\" in the upper right corner."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:70
+msgid "open the tab \"Plugins\" and search for `os-etpro-telemetry`"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:71
+msgid "when found, click on the [+] sign on the right to install the plugin"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:73
+msgid ""
+"A screen containing the installation status should appear now and the "
+"plugin is ready for use."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:77
+msgid "register token"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:79
+msgid "Next step is to register your token in OPNsense and enable rulesets."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:81
+#: ../../source/manual/etpro_telemetry.rst:96
+msgid "Go to :menuselection:`Services --> Intrusion Detection --> Administration`"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:82
+msgid ""
+"Click on the \"Download\" tab, which should show you a list of available "
+"rules."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:83
+msgid ""
+"Enable all categories you would like to monitor in the \"ET telemetry\" "
+"section, if in doubt enable all and monitor the alerts later (select on "
+"the right and use the enable selected button on top)"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:85
+msgid ""
+"At the bottom of the page there’s a block containing settings, paste the "
+"token code you received via email in **et_telemetry.token**"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:86
+msgid "Press **save** to persist your token code"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:87
+msgid "Press **Download & Update rules** to fetch the current ruleset"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:92
+msgid "Schedule updates"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:94
+msgid ""
+"To download the rulesets automatically on a daily bases, you can add a "
+"schedule for this task."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:97
+msgid "Click on the \"Schedule\" tab"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:98
+msgid ""
+"A popup for the update task appears, enable it using the checkbox on top,"
+" and click \"save changes\""
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:103
+msgid "Subscription status"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:105
+msgid ""
+"To validate your subscription, we recommend to add the widget to the "
+"dashboard."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:107
+msgid "Go to the dashboard :menuselection:`Lobby --> Dashboard`"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:108
+msgid ""
+"Click on \"Add widget\" in the top right corner, click \"Telemetry "
+"status\" in the list"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:109
+msgid "Close dialog and click \"Save settings\" on the right top of the dashboard"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:110
+msgid "Open :menuselection:`Lobby --> Dashboard` again to refresh the content"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:112
+msgid ""
+"When everything is setup properly and the plugin can reach Proofpoint, it"
+" will show something like:"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:117
+msgid ""
+"The status determines which ruleset your sensor will receive, **ACTIVE** "
+"or **DORMANT** your sensor will receive ET Pro ruleset, when **DISABLED**"
+" the license conditions are not met and the ET Open ruleset will be "
+"served."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:120
+msgid ""
+"All timestamps underneath the status provide you with information when "
+"data was send or received from Proofpoint."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:124
+msgid ""
+"If your sensor will start sending events and heartbeats, it should switch"
+" to active after a certain amount of time."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:127
+msgid ""
+"In case your sensor can't communicate to the outside world, the widget "
+"shows an error."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:134
+msgid ""
+"The system log (:menuselection:`System --> Log Files --> General`) might "
+"contain more information, search for *emergingthreats*"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:139
+msgid ""
+"Always check the token code first, a common mistake is adding leading or "
+"trailing spaces to the code, which will show an error in the log "
+"(http_code starting with a 4 usually)."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:144
+msgid "Information sent to Proofpoint ©"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:146
+msgid ""
+"When the intrusion detection system logs events, they will be (partially)"
+" sent to Proofpoint in return for using the ET Pro Telemetry edition."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:149
+msgid ""
+"This paragraph describes the attributes from the `eve.json "
+"<https://suricata.readthedocs.io/en/suricata-4.1.0/output/eve/eve-json-"
+"format.html>`__ log file that are collected to improve threat detection "
+"and the sensor health data to evaluate if the data is usable."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:153
+msgid "An example of an event is detailed below."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:177
+msgid ""
+"Network addresses are needed to identify hosts which pose a higher risk "
+"to your and other peoples network, but your internal addresses are kept "
+"secret."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:180
+msgid ""
+"For this reason we mask the addresses found in the log file and only send"
+" the last number(s) to identify the host. In the example above the "
+"*src_ip* is an internal IPv6 address, for IPv4 we only collect the last "
+"number (e.g. 0-255)."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:184
+msgid "Fields collected (unmodified):"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:189
+msgid "timestamp"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:189
+msgid "Timestamp of the event"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:190
+msgid "flow_id"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:190
+msgid "Internal identifier for this communication flow"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:191
+msgid "in_iface"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:191
+msgid "Interface where the event was captured"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:192
+msgid "event_type"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:192
+msgid "Type of event"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:193
+msgid "vlan"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:193
+msgid "Vlan tag"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:194
+msgid "src_port"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:194
+msgid "Source port number"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:195
+msgid "dest_port"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:195
+msgid "Destination port number"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:196
+msgid "proto"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:196
+msgid "Protocol"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:197
+msgid "alert"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:197
+msgid ""
+"Alert details, such as the signature_id, action taken and associated "
+"message."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:199
+msgid "tls"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:199
+msgid "TLS details, such as certificate subject and serial."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:200
+msgid "http"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:200
+msgid ""
+"HTTP detail information such as the host, but omitting sensitive details "
+"such as path and user-agent."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:202
+msgid "app_proto"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:202
+msgid "Application protocol (if known)"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:205
+msgid ""
+"*Threats change often, to keep statistics valuable, the list of fields is"
+" subject to change*"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:209
+msgid ""
+"The plugin comes with a small script to print eve output yourself, it's "
+"called **dump_data.py**, when used with the **-p** parameter, it will "
+"output the data as it will be sent to Proofpoint. All script code can be "
+"found in the following directory "
+"*/usr/local/opnsense/scripts/ids_telemetry/*"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:214
+msgid "Sensor health status collected and send as keep-alive:"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:220
+msgid "Unique Sensor ID"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:220
+msgid ""
+"Unique sensor identification, helps identifying messages from the same "
+"system, without knowing who is the operator."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:222
+msgid "OPNSense Version"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:222
+msgid ""
+"Current installed software version.  This will help both for "
+"troubleshooting purposes (if a bad update is pushed and Proofpoint "
+"notices that deployments running version X have an issue) as well for "
+"planning, to understand how new features and functionality would be "
+"adopted."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:226
+msgid "Suricata Version"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:226
+msgid "Suricata version installed."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:227
+msgid "Suricata status"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:227
+msgid ""
+"Reports if the sensor is active, when not active, no detection/telemetry "
+"can be provided."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:228
+msgid "System Time"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:228
+msgid ""
+"If the system time is not correct, it will impact the timestamps of "
+"messages, so knowing what time the system thinks it has will help "
+"reconcile the actual time."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:230
+msgid "Active Ruleset Version"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:230
+msgid ""
+"The active ruleset version should match what is published. If sensors do "
+"not have the active version then they either haven’t configured scheduled"
+" updates or there is another issue. This will help Proofpoint to identify"
+" if there are widespread issues with updates."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:234
+msgid "Number of rules enabled"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:234
+msgid ""
+"Helps to gain a better understanding about the number of rules people use"
+" on top of the ones provided by Proofpoint."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:236
+msgid "Number of ETPro Telemetry Rules enabled"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:236
+msgid ""
+"Because users can control what rules they enable, they may not want to "
+"enable all ETPro Telemetry rules, if this is the case it would help "
+"Proofpoint understand how the rules are being leveraged so they can "
+"better write / tune rules"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:240
+msgid "Mode (IDS or IPS)"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:240
+msgid ""
+"This is helpful to understand how the system is deployed and is useful to"
+" development purposes to determine what rules we should be focusing on "
+"based on how our customers are using them."
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:243
+msgid "Suricata Log Stats"
+msgstr ""
+
+#: ../../source/manual/etpro_telemetry.rst:243
+msgid ""
+"For QA purposes, some fields with general stats are collected from "
+"/var/log/suricata/stats.log (capture.kernel_packets, decoder.pkts, "
+"decoder.bytes, decoder.ipv4, decoder.ipv6, flow.tcp, flow.udp, "
+"detect.alert)"
+msgstr ""
+

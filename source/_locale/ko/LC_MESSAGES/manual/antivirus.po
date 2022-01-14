@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/antivirus.rst:3
+msgid "Anti Virus Engine"
+msgstr ""
+
+#: ../../source/manual/antivirus.rst:8
+msgid ""
+"**OPNsense** offers the industry standard ICAP to protect HTTP and HTTPS "
+"connections against ransomware, trojans, viruses and other malware ."
+msgstr ""
+
+#: ../../source/manual/antivirus.rst:11
+msgid ""
+"OPNsense offers a ClamAV plugin, which can be used with the C-ICAP plugin"
+" or relies on third party engines from well known vendors, such as "
+"Symantec's Protection Engine."
+msgstr ""
+
+#: ../../source/manual/antivirus.rst:15
+msgid "Setup ICAP Anti Virus Engine"
+msgstr ""
+
+#: ../../source/manual/antivirus.rst:17
+msgid ":doc:`how-tos/proxyicapantivirus`"
+msgstr ""
+
+#: ../../source/manual/antivirus.rst:18
+msgid ":doc:`how-tos/proxyicapantivirusinternal`"
+msgstr ""
+

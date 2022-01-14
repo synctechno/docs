@@ -1,0 +1,301 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/api/core/ids.rst:2
+msgid "Ids"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:4
+msgid "Service (ServiceController.php)"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "Method"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "Module"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "Controller"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "Command"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "``POST``"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "ids"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "service"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "dropAlertLog"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "``GET``"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "getAlertInfo"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "$alertId,$fileid=\"\""
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "getAlertLogs"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "queryAlerts"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "reconfigure"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "reloadRules"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "restart"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "start"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "status"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "stop"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "updateRules"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "$wait=null"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "``<<uses>>``"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid ""
+"*model* `IDS.xml "
+"<https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IDS/IDS.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:23
+msgid "Resources (SettingsController.php)"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "settings"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "addPolicy"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "addPolicyRule"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "addUserRule"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "checkPolicyRule"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "delPolicy"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "$uuid"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "delPolicyRule"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "delUserRule"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "get"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "getPolicy"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "$uuid=null"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "getPolicyRule"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "getRuleInfo"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "$sid=null"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "getRuleset"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "$id"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "getRulesetproperties"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "getUserRule"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "listRuleMetadata"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "listRulesets"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "searchInstalledRules"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "``*``"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "searchPolicy"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "searchPolicyRule"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "searchUserRule"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "set"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "setPolicy"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "setPolicyRule"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "setRule"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "$sid"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "setRuleset"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "$filename"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "setRulesetproperties"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "setUserRule"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "togglePolicy"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "$uuid,$enabled=null"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "togglePolicyRule"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "toggleRule"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "$sids,$enabled=null"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "toggleRuleset"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "$filenames,$enabled=null"
+msgstr ""
+
+#: ../../source/development/api/core/ids.rst:1
+msgid "toggleUserRule"
+msgstr ""
+

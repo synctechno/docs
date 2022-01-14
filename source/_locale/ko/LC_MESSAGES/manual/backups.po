@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/backups.rst:3
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/manual/backups.rst:5
+msgid "The configuration section contains some tools to keep track of your setup."
+msgstr ""
+
+#: ../../source/manual/backups.rst:9
+msgid "Backup"
+msgstr ""
+
+#: ../../source/manual/backups.rst:11
+msgid ""
+"You can backup and restore your machines configuration using the "
+":menuselection:`System --> Configuration --> Backups` section. When "
+"performing a local backup, you can choose to protect it with a password "
+"and decide whether or not you would like to store rrd statistics as well "
+"(in which case they will be stored in the same export xml file)."
+msgstr ""
+
+#: ../../source/manual/backups.rst:17
+msgid ""
+"Due to the sensitive nature of your configuration data, its advisable to "
+"protect backups with a strong password when storing them or distributing "
+"them to others."
+msgstr ""
+
+#: ../../source/manual/backups.rst:22
+msgid "RRD statistics are used in System Health"
+msgstr ""
+
+#: ../../source/manual/backups.rst:25
+msgid ""
+"Restoring backups can either be performed partially or for the complete "
+"configuration. Since configurations usually have various components that "
+"depend on each other, it's most safe to restore a complete configuration."
+msgstr ""
+
+#: ../../source/manual/backups.rst:30
+msgid ""
+"Partial restores can lead to unexpected behavior, use with care. Future "
+"versions might not support this feature due to consistency reasons. (not "
+"all components can be partially exported)"
+msgstr ""
+
+#: ../../source/manual/backups.rst:44
+msgid "Defaults"
+msgstr ""
+
+#: ../../source/manual/backups.rst:46
+msgid ""
+"With the defaults tool you can reset your firewall back to firmware "
+"defaults and shutdown when done."
+msgstr ""
+
+#: ../../source/manual/backups.rst:51
+msgid "History"
+msgstr ""
+
+#: ../../source/manual/backups.rst:53
+msgid ""
+"The history menu helps you track changes between modifications and offer "
+"the opportunity to download older versions of your settings."
+msgstr ""
+
+#: ../../source/manual/backups.rst:58
+msgid ""
+"You can specify the number of backups to keep in this menu, which can be "
+"quite practical when a higher level of auditability is required."
+msgstr ""
+

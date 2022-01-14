@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/multiwan.rst:3
+msgid "Gateway groups / Multi WAN"
+msgstr ""
+
+#: ../../source/manual/multiwan.rst:4
+msgid ""
+"Multi WAN scenarios are commonly used for failover or load balancing, but"
+" combinations are also possible with OPNsense."
+msgstr ""
+
+#: ../../source/manual/multiwan.rst:23
+msgid "WAN Failover"
+msgstr ""
+
+#: ../../source/manual/multiwan.rst:24
+msgid ""
+"WAN failover automatically switches between WAN connections in case of "
+"connectivity loss (or high latency) of your primary ISP. As long as the "
+"connection is not good all traffic will be routed of the next available "
+"ISP/WAN connection and when connectivity is fully restored so will the "
+"routing switch back to the primary ISP."
+msgstr ""
+
+#: ../../source/manual/multiwan.rst:32
+msgid "WAN Load Balancing"
+msgstr ""
+
+#: ../../source/manual/multiwan.rst:33
+msgid ""
+"Load balancing can be used to split the load between two (or more) ISPs. "
+"This enhances the total available bandwidth and/or lowers the load on "
+"each ISP."
+msgstr ""
+
+#: ../../source/manual/multiwan.rst:36
+msgid ""
+"The principle is simple: Each WAN connection (gateway) gets a portion of "
+"the traffic. The traffic can be divided equally or weighted."
+msgstr ""
+
+#: ../../source/manual/multiwan.rst:41
+msgid "Combining Balancing & Failover"
+msgstr ""
+
+#: ../../source/manual/multiwan.rst:42
+msgid ""
+"It is also possible to combine Load Balancing with Failover in such "
+"scenarios you will have 2 or more WAN connections for Balancing purposes "
+"and 1 or more for Failover. OPNsense offers 5 tiers (Failover groups) "
+"each tier can hold multiple ISPs/WAN gateways."
+msgstr ""
+
+#: ../../source/manual/multiwan.rst:49
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/manual/multiwan.rst:50
+msgid "For a how to configure read:"
+msgstr ""
+

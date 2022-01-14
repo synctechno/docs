@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/frontend/models_design.rst:3
+msgid "Designing the model"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:5
+msgid "Creating models for OPNsense is divided into two separate blocks:"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:7
+msgid ""
+"A PHP class describing the actions on our data (also acts as a wrapper to"
+" our data),"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:9
+msgid "The definition of the data and the rules it should apply to."
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:11
+msgid ""
+"Every model's class should be derived from OPNsense\\\\Base\\\\BaseModel,"
+" a very simple model without any (additional) logic is defined with:"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:26
+msgid ""
+"This class should be placed inside the model directory of our project, in"
+" this case the full path for our class file would be"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:29
+msgid "/usr/local/opnsense/mvc/app/models/**myVendorName/myModule/myModel.php**"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:31
+msgid ""
+"When you design a model, the next thing to do is to figure out what data "
+"is relevant for your application or module and think of the rules it "
+"should comply to (for example, if you need an email address you might "
+"want to validate the input). Designing the actual model is as simple as "
+"creating an xml file and putting in your structure, the name of our XML "
+"file should be the same as the base name of our model suffixed by .xml."
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:38
+msgid "Using the same model, we would create the following file:"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:40
+msgid "/usr/local/opnsense/mvc/app/models/**myVendorName/myModule/myModel.xml**"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:42
+msgid "And start describing our (information) model, like this:"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:68
+msgid "Now let's explain what's happing here one tag at a time."
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:70
+msgid ""
+"the <model> tag is used for identification of the file. (this is a model "
+"file)"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:72
+msgid ""
+"Next in line is the <mount> tag, this tells the system where this "
+"information lives in the configuration file, in this case "
+"ROOT\\_tag/myManufacturer/myModule"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:75
+msgid ""
+"If desired, there is some space reserved to explain the usage of the "
+"model, the <description> tag"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:77
+msgid ""
+"A version tag is added, which is used to support migrations. These are "
+"described in more details in the :doc:`migration <models_migrations>` "
+"topic"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:78
+msgid ""
+"Last item on the top of our list is the <items> tag, this is where the "
+"magic begins."
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:81
+msgid ""
+"The content of a items tag describes the full tree based structure which "
+"holds our data, in theory this could be as large as you want it to be, "
+"but keep in mind that the content for your model should be logical and "
+"understandable. Every node in the tree could have a type, which defines "
+"its behavior, nodes without a type are just containers."
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:87
+msgid "From top to bottom we find the following nodes in our tree:"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:89
+msgid "exampleNumber, defined as a TextField"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:91
+msgid ""
+"Mask, validation can be performed by a regex expression, this sets the "
+"expression"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:93
+msgid "Default, this field is default filled with a number: 5"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:94
+msgid "ValidationMessage, when validation fails, this message is returned"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:96
+msgid "contacts, this is a container"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:97
+msgid "entity, is defined as a recurring item, which holds the next items"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:98
+msgid "email, defined as an EmailField"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:100
+msgid "when validation fails, the **ValidationMessage** is returned"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:102
+msgid "name, defined as a TextField without any validations"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:103
+msgid ""
+"someText, not part of the entity tag and also defined as text without "
+"validation"
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:106
+msgid ""
+"The fieldtypes are easily extendable in the base system and all common "
+"ones live in their own namespace at *OPNsense\\\\Base\\\\FieldTypes* "
+"deriving from *BaseField*."
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:111
+msgid ""
+"When designing application specific fieldtypes, you can point to a field "
+"type within the application namespace using a full or partial path."
+msgstr ""
+
+#: ../../source/development/frontend/models_design.rst:114
+msgid ""
+"For example using *Vendor\\\\Component\\\\FieldTypes\\\\MyFieldType* to "
+"point to a specific non common field type or *.\\\\MyFieldType* when "
+"linked from the application model itself (which assumes a namespace "
+"FieldTypes exists)"
+msgstr ""
+

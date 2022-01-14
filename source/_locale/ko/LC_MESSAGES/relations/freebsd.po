@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/relations/freebsd.rst:3
+msgid "FreeBSD®"
+msgstr ""
+
+#: ../../source/relations/freebsd.rst:4
+msgid ""
+"FreeBSD is a registered trademark of The FreeBSD Foundation. The FreeBSD "
+"logo and The Power to Serve are trademarks of The FreeBSD Foundation."
+msgstr ""
+
+#: ../../source/relations/freebsd.rst:13
+msgid "About FreeBSD"
+msgstr ""
+
+#: ../../source/relations/freebsd.rst:15
+msgid ""
+"FreeBSD is an operating system for a variety of platforms which focuses "
+"on features, speed, and stability. It is derived from BSD, the version of"
+" UNIX® developed at the University of California, Berkeley. It is "
+"developed and maintained by a large community."
+msgstr ""
+
+#: ../../source/relations/freebsd.rst:25
+msgid "Relations with OPNsense"
+msgstr ""
+
+#: ../../source/relations/freebsd.rst:26
+msgid ""
+"OPNsense is built on top of HardenedBSD which is a fork of FreeBSD. The "
+"aim of the OPNsense team is to stay as close to the original HardenedBSD "
+"source as possible. OPNsense can be installed on a standard FreeBSD "
+"installation, this way a hosted system can be converted easily to run "
+"OPNsense. A bootstrap script is available to make the installation "
+"process a joyful experience."
+msgstr ""
+
+#: ../../source/relations/freebsd.rst:34
+msgid ""
+"To convert your FreeBSD hosted installation to OPNsense, see the OPNsense"
+" bootstrap script on `OPNsense's update tools @ github "
+"<https://github.com/opnsense/update/>`__"
+msgstr ""
+

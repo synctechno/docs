@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:3
+msgid "Setup Anti Virus Protection using OPNsense Plugins"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:4
+msgid ""
+"OPNsense can offer HTTP and HTTPS protection by utilizing its highly "
+"flexible proxy and the industry standard ICAP. An external engine from "
+"one of the known vendors is used to offer maximum protection against "
+"malware, such as ransomware, trojans and viruses. This protection can be "
+"further enhanced by the built-in Intrusion Prevention System and Category"
+" Based Web filtering."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:10
+msgid "This How To will use the Plugins C-ICAP and ClamAV."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:13
+msgid ""
+"The Anti Virus Engine can protect you against malicious websites and "
+"infected file downloads, it does not protect the local clients. Therefore"
+" it is always a good idea to install a client based solution as well to "
+"protect against other forms of infection such as through emails or usb "
+"stick if they are not analyzed as well."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:20
+msgid ""
+"Note that there is still another attack vector called social engineering."
+" Most attacks would fail without the help of an internal human whose "
+"trust is exploited. An active scanner is only a part of the security "
+"concept."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:25
+msgid "Step 1 - Setup the Proxy"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:26
+msgid ""
+"Start with setting up the proxy with its basic configuration, see "
+":doc:`cachingproxy`."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:29
+msgid "Step 2 - Setup Transparent Mode"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:30
+msgid "To setup the transparent mode, see: :doc:`proxytransparent`."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:33
+msgid "Step 3 - Install and Configure the ClamAV and the C-ICAP plugins"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:36
+msgid ""
+"The defaults from c-icap and ClamAV (vendor defaults) are used. Please "
+"keep in mind that changing may affect security or performance. If you "
+"don't know how a setting is affecting your network, you should keep it at"
+" the default."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:41
+msgid ":doc:`clamav`"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:42
+msgid ":doc:`c-icap`"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:46
+msgid "Step 4 - Configure ICAP"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:47
+msgid ""
+"To configure ICAP go to :menuselection:`Services --> Proxy --> "
+"Administration` and select **ICAP Settings** for the **Forward Proxy** "
+"tab."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:50
+msgid ""
+"Select enable ICAP and filling the Request and Response URLs. For the "
+"C-ICAP plugin, the default URLs will be:"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:54
+msgid "**Request Modify URL**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:54
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:55
+msgid "icap://[::1]:1344/avscan"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:55
+msgid "**Response Modify URL**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:58
+msgid "Now click on **Apply**"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:61
+msgid "Step 5 - Test using EICAR"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:62
+msgid ""
+"To test if the engine is operational and functional go to "
+"http://www.eicar.org/?page_id=3950 on this page you will find several "
+"files you can test."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:65
+msgid ""
+"First test the HTTP protocol version. If that works, test the HTTPS "
+"version if you have also configured the transparent SSL proxy mode."
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:69
+msgid "**IMPORTANT NOTE** : YOU DOWNLOAD THESE FILES AT YOUR OWN RISK!"
+msgstr ""
+
+#: ../../source/manual/how-tos/proxyicapantivirusinternal.rst:73
+msgid "**DONE**"
+msgstr ""
+

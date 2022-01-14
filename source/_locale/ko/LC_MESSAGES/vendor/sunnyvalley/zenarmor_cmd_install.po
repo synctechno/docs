@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:3
+msgid "Zenarmor (Sensei): Installing via Command Line"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:5
+msgid ""
+"Although the preferred method of installation is the web interface, "
+"Zenarmor may also be installed using the command line interface via SSH "
+"or direct system access. Once Zenarmor is installed, you will need to "
+"complete the initial configuration using the web interface."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:7
+msgid ""
+"To install Sensei in OPNsense with the command line interface, you must "
+"use an administrative account with shell access."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:11
+msgid "Command Line Installation"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:13
+msgid ""
+"The command line installation method was the primary means for installing"
+" Zenarmor before it was officially available on the “Plugins” page in the"
+" OPNsense web interface. This option is still available for users who "
+"have direct access to the OPNsense system yet prefer using command line "
+"tools or who may only have remote shell access via SSH to administrate "
+"their OPNsense installations. However, accessing the web interface is "
+"still necessary after installation to complete the initial configuration "
+"of Zenarmor."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:15
+msgid ""
+"You may install Zenarmor if you have local system access to OPNsense or "
+"remote access using SSH."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:19
+msgid "Local System Access"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:21
+msgid ""
+"When you have local access to OPNsense, you may simply log into OPNsense "
+"using the “root” user or another administrator account. You should see a "
+"list of OPNsense menu options."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:28
+msgid "SSH Access"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:30
+msgid ""
+"If you only have shell access to OPNsense, you may install Zenarmor "
+"remotely by logging into OPNsense using a SSH client with the following "
+"command where “root” is the administrator account and “your-firewall-ip” "
+"is the IP address or hostname of the OPNsense system. You should see a "
+"list of OPNsense menu options."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:41
+msgid "Download & Run Zenarmor Installer"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:43
+msgid ""
+"Once you are successfully logged into OPNsense either by local system "
+"access or SSH, enter option “8” to open the shell. Run the following "
+"command to download and execute the installation script."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:52
+msgid ""
+"The script will copy the installation files onto the filesystem and will "
+"add a top-level menu item within the OPNsense web interface. Depending on"
+" the speed of your hardware and Internet connection, the installation may"
+" take several minutes to complete."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:54
+msgid ""
+"Once the installation has been completed, you may disconnect from your "
+"terminal session."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_cmd_install.rst:56
+msgid ""
+"You will now need to complete the “Initial Configuration Wizard” for "
+"Zenarmor to be fully operational. See the :ref:`Initial Configuration "
+"Wizard <Sensei_Initial_Configuration_Wizard>` section for information."
+msgstr ""
+

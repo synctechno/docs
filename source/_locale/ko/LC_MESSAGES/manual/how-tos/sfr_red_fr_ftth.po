@@ -1,0 +1,453 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:2
+msgid "SFR/RED France FTTH IPv4 & IPv6 & Phone"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:4
+msgid "**Original Author:** Philippe Gaultier"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:7
+msgid "**Introduction / Getting ready to make the connection**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:9
+msgid "This guide is for SFR/RED France FTTH using DHCPv4  / DHCPv6 to connect."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:11
+msgid ""
+"The guide deals with internet connection and phone. Support for TV has "
+"not been tested."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:14
+msgid ""
+"Before starting this guide, you should have the MAC address of your "
+"SFR/RED Box. In the guide you should replace xx:xx:xx:xx:xx:xx with your "
+"SFR/RED Box MAC address."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:16
+msgid ""
+"SFR/RED requires that the WAN interface assignment should look similar to"
+" this:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:21
+msgid ""
+"WAN interface has MAC xx:xx:xx:xx:xx:xx which is the original WAN MAC of "
+"the BOX (spoofed),"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:22
+msgid ""
+"LAN interface has MAC 00:11:22:33:44:55 which is the original MAC of the "
+"firewall,"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:23
+msgid ""
+"DUID is 00:03:00:01:xx:xx:xx:xx:xx:xx it's derived from the original WAN "
+"MAC of the BOX (spoofed)."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:26
+msgid "**Configuring the WAN Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:28
+msgid "Select :menuselection:`Interfaces --> [WAN]`"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:30
+msgid ""
+"In order to establish the IPv4 and IPv6 connection, SFR/RED requires that"
+" the correct parameters are passed for the DHCPv4 and DHCPv6 requests "
+"respectively."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:33
+msgid "Select options:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:35
+msgid "IPv4 configuration: DHCPv4,"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:36
+msgid "IPv6 configuration: DHCPv6."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:41
+msgid "**On the DHCPv4 request it is a requirement to pass the following:**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:47
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:63
+msgid "It is necessary to specify the following ”Send Options”:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:49
+msgid "dhcp-class-identifier \"neufbox_NB6VAC-FXC\""
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:52
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:68
+msgid "It is necessary to specify the following ”Request Options”:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:54
+msgid ""
+"subnet-mask, broadcast-address, time-offset, routers, domain-name, "
+"domain-name-servers, host-name, ntp-servers, nis-domain, root-path, "
+"merit-dump"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:57
+msgid "**On the DHCPv6 request we need to use raw options**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:65
+msgid ""
+"ia-pd 1, raw-option 16 "
+"00:00:a0:0c:00:40:6e:65:75:66:62:6f:78:5f:4e:42:36:56:41:43:2d:46:58:43"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:70
+msgid "domain-name-servers, domain-name"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:73
+msgid "Set Identity Association options to:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:75
+msgid "Delegate prefix: checked,"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:76
+msgid "id-assoc pd ID: 1,"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:77
+msgid "Prefix: ::/0."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:79
+msgid "Set Prefix Interface option to:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:81
+msgid "Prefix Interface: 8."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:83
+msgid "Click ”Save” and then ”Apply”."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:87
+msgid "**Configuring the LAN Interface**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:90
+msgid "Interfaces / Parameters"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:92
+msgid "Select :menuselection:`Interfaces --> Parameters` and set your DUID."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:98
+msgid ""
+"The DUID is based on the SFR/RED Box MAC address : "
+"00:03:00:01:xx:xx:xx:xx:xx:xx."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:100
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:123
+msgid "Click ”Save” and then ”Apply”"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:103
+msgid "Interfaces / [LAN]"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:105
+msgid ""
+"Select :menuselection:`Interfaces --> [LAN]` and set IPv4 to “Static "
+"IPv4” and IPv6 Configuration Type to “Track Interface”."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:112
+msgid ""
+"And define the IPv6 Prefix ID to ”0” Finally, set the following "
+"parameters as shown:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:115
+msgid "the IPv4 address to the one wanted,"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:116
+msgid "the IPv6 interfacet to ”WAN”,"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:117
+msgid "the IPv6 Prefix ID to ”0”."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:128
+msgid ""
+"It is advisable at this point to reboot the system. This will allow you "
+"to retrieve an IPv4 address which will be used in next part."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:131
+msgid "**Configuring NGINX to provision the SFR/RED BOX**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:133
+msgid ""
+"In order to set up the phone, as the SIP parameters (user/password) are "
+"not public, we will add the SFR/RED box in our LAN. This will allow us to"
+" plug our regular phone in the SFR/RED box."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:137
+msgid ""
+"This how-to does not cover installation of NGINX nor the use of SSH / "
+"shell commands."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:139
+msgid ""
+"First SSH into your OPNSense firewall and create a folder "
+"**/srv/sfrredbox**. In this folder, we will add the scripts used to spoof"
+" the SFR/RED Box requests."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:141
+msgid "In this directory create a file **index.php**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:170
+msgid ""
+"Code cannot be copied / pasted as-is, you will have to adjust the "
+"parameters and make it consistent with your own settings."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:173
+msgid "Services / Nginx / Configuration"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:175
+msgid "Select :menuselection:`Services --> Nginx --> Configuration`"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:177
+msgid "Activate NGINX"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:183
+msgid "Services / Nginx / Configuration / HTTP(s)"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:185
+msgid "Select :menuselection:`Services --> Nginx --> Configuration --> HTTP(s)`"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:187
+msgid "Create a new config"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:193
+msgid "Important settings are:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:195
+msgid "Description,"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:196
+msgid "URL Pattern,"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:197
+msgid "File System Root,"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:198
+msgid "Pass Request To Local PHP Interpreter / Threat Upstream."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:201
+msgid "Services / Nginx / Configuration / HTTP(s) / URL Rewriting"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:203
+msgid ""
+"Select :menuselection:`Services --> Nginx --> Configuration --> HTTP(s) "
+"--> URL Rewriting`"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:205
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:215
+msgid "Add a new rewrite rule"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:211
+msgid "Services / Nginx / Configuration / HTTP(s) / HTTP Server"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:213
+msgid ""
+"Select :menuselection:`Services --> Nginx --> Configuration --> HTTP(s) "
+"--> HTTP Server`"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:221
+msgid "NGINX should be serving the page we have created."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:225
+msgid "**Configuring Siproxd to provision the SFR/RED BOX**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:227
+msgid "To allow phone to work, the easiest way is to set Siproxd on the firewall."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:230
+msgid "Services / Unbound DNS / General"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:232
+msgid "Select :menuselection:`Services --> Unbound DNS --> General`"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:234
+msgid "Add parameters to let SFR/RED Box discover the SIP proxy:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:240
+msgid ""
+"It appears OPNSense will drop support of functionnality of **advanced** "
+"parameters so I don't know if it will be possible in future releases to "
+"define the DNS stuff using:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:243
+msgid ""
+"local-data: \"_sip._udp.firewall.localdomain.intra. 180 IN SRV 10 60 5060"
+"  firewall.localdomain.intra.\""
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:246
+msgid "Services / Siproxd"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:248
+msgid "Select :menuselection:`Services --> Siproxd`"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:250
+msgid "Define basic parameters:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:256
+msgid "Services / Siproxd / Outbound Domains"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:258
+msgid "Select :menuselection:`Services --> Siproxd --> Outbound Domains`"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:260
+msgid "Create the configuration for outbound domain:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:266
+msgid ""
+"The IP address and the port of outbound domain was discovered using an "
+"**host** request on the proxy returned by SFR/RED while provisionning the"
+" box. You will have to check the <proxy></proxy> fields of **voip2.xml**."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:270
+msgid "host -t SRV _sip._udp.residential.p-cscf.sfr.net"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:273
+msgid ""
+"the host request result gives available SIP servers with the port to use "
+"(in my case 5062)."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:276
+msgid ""
+"_sip._udp.residential.p-cscf.sfr.net has SRV record 10 0 5062 "
+"mitry.p-cscf.sfr.net. _sip._udp.residential.p-cscf.sfr.net has SRV record"
+" 10 0 5062 corbas.p-cscf.sfr.net. _sip._udp.residential.p-cscf.sfr.net "
+"has SRV record 10 0 5062 trappes.p-cscf.sfr.net."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:282
+msgid "**Configuring NAT to redirect SFR/RED BOX calls to NGINX**"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:284
+msgid ""
+"To allow correct port forwarding, we will configure OPNSense to affect a "
+"**static** IP to the SFR/RED Box and we will create an alias for it."
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:287
+msgid "Services / DHCPv4 / [LAN]"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:289
+msgid "Select :menuselection:`Services --> DHCPv4 --> [LAN]`"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:291
+msgid "Click on `[+]` to add a static mapping:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:297
+msgid "Firewall / NAT / Port Forward"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:299
+msgid "Select :menuselection:`Firewall --> NAT --> Port Forward`"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:301
+msgid "Add a new forwarding rule:"
+msgstr ""
+
+#: ../../source/manual/how-tos/sfr_red_fr_ftth.rst:309
+msgid ""
+"Right now, everything should be ready. Restart the firewall, once ready "
+"plug the SFR/RED Box on your LAN and start it. You should be able to "
+"enjoy IPv4, IPv6 and Phone."
+msgstr ""
+

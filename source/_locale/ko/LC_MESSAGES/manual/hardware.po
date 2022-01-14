@@ -1,0 +1,372 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/hardware.rst:3
+msgid "Hardware sizing & setup"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:5
+msgid ""
+"The **hardware setup** requires a careful preparation and selection of "
+"the standard PC hardware components for the intended installation of "
+"OPNsense."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:9
+msgid ""
+"⚠ Computer hardware with the open source security software OPNsense® pre-"
+"installed can be purchased directly from various (online) stores."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:13
+msgid ""
+"The OPNsense development team encourage everyone looking for a turn-key "
+"solution to buy from `Deciso <https://www.deciso.com>`__ or one of the "
+"other partners listed at our partner page. **Listed partners make "
+"significant contributions back to the project.**"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:19
+msgid "Supported hardware architectures"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:21
+msgid ""
+"OPNsense® is available for `x86-64 "
+"<https://en.wikipedia.org/wiki/X86-64>`__ (amd64) bit microprocessor "
+"architectures. Full installs on `SD memory cards "
+"<https://en.wikipedia.org/wiki/Secure_Digital>`__, `solid-state disks "
+"(SSD) <https://en.wikipedia.org/wiki/Solid-state_drive>`__ or `hard disk "
+"drives (HDD) <https://en.wikipedia.org/wiki/Hard_disk_drive>`__ are "
+"intended for OPNsense."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:26
+msgid ""
+"While the range of supported devices are from embedded systems to rack "
+"mounted servers, the hardware must be capable of running 64-bit "
+"`operating systems <https://en.wikipedia.org/wiki/operating_system>`__."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:32 ../../source/manual/hardware.rst:137
+msgid "Hardware requirements"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:34
+msgid ""
+"For substantially narrowed OPNsense® functionality there is the basic "
+"specification. For full functionality there are minimum, reasonable and "
+"recommended specifications."
+msgstr ""
+
+msgid "Minimum"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:41
+msgid ""
+"The minimum specification to run all OPNsense standard features that do "
+"not need disk writes, means you can run all standard features, except for"
+" the ones that require disk writes, e.g. a caching proxy (cache) or "
+"intrusion detection and prevention (alert database)."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:47 ../../source/manual/hardware.rst:66
+#: ../../source/manual/hardware.rst:84
+msgid "Processor"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:47 ../../source/manual/hardware.rst:66
+msgid "1 GHz dual core cpu"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:49 ../../source/manual/hardware.rst:68
+#: ../../source/manual/hardware.rst:86
+msgid "RAM"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:49
+msgid "2 GB"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:51 ../../source/manual/hardware.rst:70
+#: ../../source/manual/hardware.rst:88
+msgid "Install method"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:51 ../../source/manual/hardware.rst:70
+#: ../../source/manual/hardware.rst:88
+msgid "Serial console or video (vga)"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:53 ../../source/manual/hardware.rst:72
+#: ../../source/manual/hardware.rst:90
+msgid "Install target"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:53
+msgid "SD or CF card with a minimum of 4 GB, use nano images for installation."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:56
+msgid "Table:  *Minimum hardware requirements*"
+msgstr ""
+
+msgid "Reasonable"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:61
+msgid ""
+"The reasonable specification to run all OPNsense standard features, means"
+" every feature is functional, but perhaps not with a lot of users or high"
+" loads."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:68
+msgid "4 GB"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:72
+msgid "40 GB SSD, a minimum of 2 GB memory is needed for the installer to run."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:75
+msgid "Table:  *Reasonable hardware requirements*"
+msgstr ""
+
+msgid "Recommended"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:80
+msgid ""
+"The recommended specification to run all OPNsense standard features, "
+"means every feature is functional and fits most use cases."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:84
+msgid "1.5 GHz multi core cpu"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:86
+msgid "8 GB"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:90
+msgid "120 GB SSD"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:93
+msgid "Table:  *Recommended hardware requirements*"
+msgstr ""
+
+msgid "Hardware guide"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:98
+msgid ""
+"The hardware required for your local OPNsense, will be determined by the "
+"intended minimum `throughput <#throughput>`__ and the feature set."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:104
+msgid "Impact of Feature set"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:106
+msgid ""
+"While most features do not affect hardware dimensioning, a few features "
+"have massive impact on it. The candidates are:"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:112
+msgid "`Squid <https://en.wikipedia.org/wiki/Squid_(software)>`__"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:110
+msgid ""
+"a caching web proxy which can be used for web-content control, "
+"respectively. These packages rely strongly on CPU load and disk-cache "
+"writes."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:117
+msgid "`Captive portal <https://en.wikipedia.org/wiki/Captive_portal>`__"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:115
+msgid ""
+"settings with hundreds of simultaneously served captive portal users will"
+" require more CPU power in all the hardware specifications displayed "
+"below."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:125
+msgid ""
+"`State transition tables "
+"<https://en.wikipedia.org/wiki/State_transition_table>`__"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:120
+msgid ""
+"it is a known fact, that each state table entry requires about 1 kB "
+"(kilobytes) of RAM. The average state table, filled with 1000 entries "
+"will occupy about ~10 MB (megabytes) of `RAM "
+"<https://en.wikipedia.org/wiki/Random-access_memory>`__. OPNsense usage "
+"settings with hundred of thousands of connections will require memory "
+"accordingly."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:131
+msgid "Throughput"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:133
+msgid ""
+"The main hardware-factors of the OPNsense setup involved are CPU, RAM, "
+"mass storage (disc), the number and quality of network interfaces."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:137
+msgid "Throughput (Mbps)"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:137
+msgid "Feature set"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:137
+msgid "Users / Networks"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:139 ../../source/manual/hardware.rst:141
+msgid "11-150"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:139
+msgid "Basic spec."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:139
+msgid "narrowed"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:139 ../../source/manual/hardware.rst:141
+msgid "adjusted (10-30)"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:141
+msgid "Minimum spec."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:141
+msgid "reduced"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:143
+msgid "151-350"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:143
+msgid "Reasonable spec."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:143 ../../source/manual/hardware.rst:145
+msgid "all"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:143
+msgid "substantial (30-50)"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:145
+msgid "350-750+"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:145
+msgid "Recommended spec."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:145
+msgid "substantial+ (50-150+)"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:147
+msgid "Mbps (Mbit/s or Mb/s) - Megabit per second - 1,000,000 bits per second"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:156
+msgid "Network interface cards"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:151
+msgid ""
+"As the FreeBSD hardware-lists and -recommendations say, Intel® network "
+"interface cards (NIC) for `LAN "
+"<https://en.wikipedia.org/wiki/Local_area_network>`__ connections are "
+"reliable, fast and not error-prone. Intel chipset NICs deliver higher "
+"throughput at a reduced `CPU load "
+"<https://en.wikipedia.org/wiki/Load_(computing)>`__."
+msgstr ""
+
+msgid "Supported hardware"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:161
+msgid ""
+"The HardenedBSD 11.2-RELEASE is the base of OPNsense. All HardenedBSD "
+"drivers are included in the OPNsense kernel, and the hardware "
+"compatibility is the same."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:166
+msgid ""
+"If you are looking to buy new hardware then take a look at our `partner "
+"page <https://opnsense.org/partners>`__ as these partners contribute back"
+" to OPNsense and sell hardware that is know to work well."
+msgstr ""
+
+#: ../../source/manual/hardware.rst:169
+msgid "For further help and support, see"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:171
+msgid ""
+"`FreeBSD 11.2-RELEASE Hardware Compatibility List "
+"<https://www.freebsd.org/releases/11.2R/hardware.html>`__"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:173
+msgid "`OPNsense Forum <https://forum.opnsense.org/>`__"
+msgstr ""
+
+msgid "List of references"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:178
+msgid ""
+"Schellevis, Jos; *Hardware requirements*; `OPNsense > Get started "
+"<https://opnsense.org/users/get-started/>`__ (2015)"
+msgstr ""
+
+#: ../../source/manual/hardware.rst:180
+msgid ""
+"McKusick, Marshall; Neville-Neil, George V; Warson, Robert NM; *The "
+"Design and Implementation of the FreeBSD Operating System* (2015); "
+"Addison-Wesley, New Jersey; ISBN 978-0321968975"
+msgstr ""
+

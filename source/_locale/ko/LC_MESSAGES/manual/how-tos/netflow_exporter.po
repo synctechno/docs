@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/netflow_exporter.rst:3
+msgid "Configure Netflow Exporter"
+msgstr ""
+
+#: ../../source/manual/how-tos/netflow_exporter.rst:7
+msgid ""
+"Configuring the Netflow Exporter is a simple task. Go to "
+":menuselection:`Reporting --> NetFlow`."
+msgstr ""
+
+#: ../../source/manual/how-tos/netflow_exporter.rst:9
+msgid ""
+"Select all **Interfaces** you want to collect/export data from, usually "
+"one would select all available interfaces here."
+msgstr ""
+
+#: ../../source/manual/how-tos/netflow_exporter.rst:12
+msgid ""
+"If you do not want to record traffic originating or going to the firewall"
+" itself then add the interfaces to **Egress only** to prevent double "
+"counting of the same traffic flow (See also :doc:`/manual/netflow` for "
+"more information)."
+msgstr ""
+
+#: ../../source/manual/how-tos/netflow_exporter.rst:16
+msgid "For local analysis using Insight also enable **Capture local**."
+msgstr ""
+
+#: ../../source/manual/how-tos/netflow_exporter.rst:18
+msgid ""
+"Depending on the application you would like to use select **Version** 5 "
+"or 9. Remember that version 5 does not support IPv6."
+msgstr ""
+
+#: ../../source/manual/how-tos/netflow_exporter.rst:21
+msgid ""
+"Add your **Destinations** (ip:port then enter) local IP will be added "
+"automatically if Capture local is selected."
+msgstr ""
+

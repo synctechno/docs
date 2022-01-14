@@ -1,0 +1,370 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:3
+msgid "Zenarmor (Sensei): Installing via Web Interface"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:7
+msgid ""
+"Zenarmor Free Edition is **forever free-of-charge**. We strongly "
+"recommend you register to keep in touch with updates and new features. "
+"You can register at `https://www.sunnyvalley.io/sensei "
+"<https://www.sunnyvalley.io/sensei>`_"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:9
+msgid ""
+"Zenarmor may be installed using the web interface in OPNsense or using "
+"the command line interface via SSH or local system access (see "
+":doc:`zenarmor_cmd_install`). The preferred method is the web interface "
+"because the process of installing plugins in OPNsense is simple and "
+"Zenarmor requires the use of the web interface to complete the initial "
+"configuration after installation."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:11
+msgid ""
+"To install plugins in OPNsense, you must use an account with "
+"administrative access."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:15
+msgid ""
+"Before installing Zenarmor, you should ensure you meet the minimum system"
+" requirements in order to run Zenarmor or to have the best user "
+"experience. See :doc:`zenarmor_hardwarerequirements` for more "
+"information."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:19
+msgid "Web Interface Installation"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:21
+msgid ""
+"To install Zenarmor, you must first install the Sunny Valley Networks "
+"vendor repository plugin. Go to the :menuselection:`System --> Firmware "
+"--> Plugins` page. Click on the “+” icon next to os-sunnyvalley to "
+"install the plugin."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:23
+msgid ""
+"Once the vendor plugin is installed, you should see the Zenarmor plugin "
+"available in the list of plugins as os-sensei. If you do not see the "
+"Zenarmor plugin, you may need to refresh the “Plugins” page. Click the "
+"“+” icon next to os-sensei to install the plugin."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:25
+msgid ""
+"After installing Zenarmor, you should see the Zenarmor menu in the left "
+"sidebar of the OPNsense web interface. If you do not see the new, top-"
+"level menu, you may need to refresh the page."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:30
+msgid ""
+"Next, you will need to complete the “Initial Configuration Wizard” for "
+"Zenarmor to be fully operational."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:36
+msgid "Initial Configuration Wizard"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:37
+msgid ""
+"Regardless of the installation method you used, you will need to complete"
+" the initial configuration wizard before you may start using Zenarmor."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:39
+msgid "To start the \"Initial Configuration Wizard\":"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:41
+msgid "Log in to your OPNsense web interface"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:42
+msgid "Click Zenarmor from the left menu"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:43
+msgid "Click on the Dashboard sub-menu to open the configuration wizard"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:47
+msgid "1- Welcome"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:49
+msgid ""
+"Accept the Terms of Service and Privacy Policy by clicking on the "
+"checkbox."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:54
+msgid ""
+"Click the :menuselection:`Proceed` button to continue to the "
+":menuselection:`Hardware Check` section."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:58
+msgid "2- Hardware Check"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:60
+msgid ""
+"Your hardware will be analyzed to ensure it meets the minimum "
+"requirements. You will receive one of following responses: compatible "
+"hardware, low-end hardware, incompatible hardware. The setup will not "
+"continue if you have incompatible hardware."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:65
+msgid "*Compatible*"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:70
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:97
+msgid "*Low-end*"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:75
+msgid "*Incompatible*"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:77
+msgid ""
+"Click :menuselection:`Next` to continue to the :menuselection:`Reporting "
+"Database` section."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:81
+msgid "3- Reporting Database"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:83
+msgid ""
+"Select the database you wish to use for reporting. High end systems will "
+"have 3 options, while low end systems only have 2 options."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:87
+msgid ""
+"If you wish to use a remote ElasticSearch database, you must choose it "
+"now since you cannot change this after the initial configuration wizard "
+"has been completed."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:92
+msgid "*High-end*"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:99
+msgid ""
+"If you select “Use a Remote Elasticsearch Database”, you will be prompted"
+" to enter the URL, username, and password."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:103
+msgid ""
+"If you have SOHO or higher Zenarmor paid subscription, we recommend that "
+"you install your license key before proceeding with the initial "
+"configuration wizard since this will activate a feature that will enable "
+"you to have central reporting for many firewalls from a single "
+"Elasticsearch instance. Otherwise, only a single remote ES instance can "
+"be used with a single firewall."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:108
+msgid ""
+"Click the :menuselection:`Install Database & Proceed` button to install "
+"the local database if one is chosen and continue to the "
+":menuselection:`Interface Selection` section."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:112
+msgid "4- Interface Selection"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:114
+msgid ""
+"Select the Ethernet Interface(s) to protect. To do so, click on an "
+"interface and use the right/left arrow buttons to move it to "
+"protected/unprotected interfaces combo box."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:116
+msgid ""
+"For detailed information on \"Deployment Modes\", `see here "
+"<https://www.sunnyvalley.io/docs/guides/deployment-modes>`_."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:124
+msgid ""
+"Click :menuselection:`Next` to continue to the :menuselection:`Cloud "
+"Reputation` section."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:128
+msgid "5- Cloud Reputation"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:130
+msgid ""
+"The Cloud Threat Intelligence data is queried in real-time when any "
+"connections are made through your network. This capability enables "
+"Zenarmor to respond to malware and wireless outbreaks in real-time and "
+"very quickly."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:132
+msgid ""
+"The engine processes the request, queries the **“Sunny Valley Network "
+"(SVN) Cloud”** in real-time, and decides whether it will be blocked or "
+"allowed. Zenarmor checks against 140+ million websites under 120+ "
+"categories in milliseconds."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:134
+msgid "Cloud Threat Intel settings let you:"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:136
+msgid "Enable/Disable the “Cloud Reputation & Web Categorization” engine"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:137
+msgid "Set local domain name you wish to be excluded from cloud queries"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:138
+msgid "Select the fastest Cloud Reputation Servers which are used for queries"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:143
+msgid ""
+"Click :menuselection:`Next` to continue to the :menuselection:`Sensei "
+"CLI` section."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:148
+msgid "6- Updates & Health Check"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:152
+msgid ""
+"Zenarmor uses the OPNsense package system to deliver its updates. You may"
+" configure how you prefer to receive your Zenarmor updates."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:154
+msgid ""
+"**Check for Updates Automatically:** Checks automatically for the updates"
+" and creates a notification on the Zenarmor “Status” page."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:155
+msgid ""
+"**Automatically Update Databases and Threat Intelligence Data:** Checks "
+"automatically for the updates and creates a notification on the Zenarmor "
+"“Status” page."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:156
+msgid ""
+"**Enable Generation of Support Data:** If enabled, Zenarmor collects "
+"supporting data during unusual events and crashes. You can share this "
+"data when opening a ticket with us."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:157
+msgid ""
+"**Max Swap Utilization:** You may specify how much swap space Zenarmor "
+"may utilize when the system is low on memory. It is recommended that you "
+"do not set this value too high. Otherwise, system performance may suffer."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:158
+msgid ""
+"**Health Check:** If enabled, \"Health Check\" monitors the system's "
+"memory, CPU, disk usage and core services if they're working correctly, "
+"and raises alerts if anything goes wrong. \"Health Check\" also stops the"
+" appropriate services if they're consuming excessive system resources."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:159
+msgid ""
+"**Help Sunny Valley Improve Its Products and Services:** If enabled, "
+"general system information is submitted to Sunny Valley to help improve "
+"the future development of Zenarmor."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:164
+msgid ""
+"Click :menuselection:`Next` to continue to the :menuselection:`Deployment"
+" Size` section."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:168
+msgid "7- Deployment Size"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:170
+msgid ""
+"Zenarmor may support up to 1,000 concurrent users on an average PC. You "
+"can set your Zenarmor installation’s capacity in this section."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:174
+msgid ""
+"You may see detailed information about suggested hardware at "
+":doc:`zenarmor_hardwarerequirements`"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:179
+msgid ""
+"Click :menuselection:`Next` to continue to the :menuselection:`Finish` "
+"section."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:183
+msgid "8- Finish"
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:185
+msgid ""
+"You may enter your email address if you wish to subscribe to the Sunny "
+"Valley email list to stay up to date on the latest news."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:190
+msgid ""
+"Click the :menuselection:`Finish` button to save your initial "
+"configuration data and start using Zenarmor."
+msgstr ""
+
+#: ../../source/vendor/sunnyvalley/zenarmor_install.rst:194
+msgid "**Hands-on Video**"
+msgstr ""
+

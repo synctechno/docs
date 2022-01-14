@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/diagnostics_interfaces.rst:3
+msgid "Diagnostics"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:5
+msgid ""
+"The interface diagnostics page contains various tools to help debug "
+"network issues."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:9
+msgid "ARP Table"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:11
+msgid ""
+"The `ARP <https://en.wikipedia.org/wiki/Address_Resolution_Protocol>`__ "
+"table module shows all MAC addresses known by this firewall."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:16
+msgid "IP"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:16
+msgid "IPv4 address"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:17
+#: ../../source/manual/diagnostics_interfaces.rst:40
+msgid "MAC"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:17
+#: ../../source/manual/diagnostics_interfaces.rst:40
+msgid "`MAC <https://en.wikipedia.org/wiki/MAC_address>`__ address"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:18
+#: ../../source/manual/diagnostics_interfaces.rst:41
+msgid "Manufacturer"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:18
+#: ../../source/manual/diagnostics_interfaces.rst:41
+msgid "Manufacturer looked up with the mac address above"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:19
+#: ../../source/manual/diagnostics_interfaces.rst:42
+msgid "Interface"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:19
+#: ../../source/manual/diagnostics_interfaces.rst:42
+msgid "Associated interface"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:20
+#: ../../source/manual/diagnostics_interfaces.rst:43
+msgid "Interface name"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:20
+#: ../../source/manual/diagnostics_interfaces.rst:43
+msgid "The name of the interface if found"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:21
+msgid "Hostname"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:21
+msgid "In case of a DHCPv4 client, the hostname when found in the leases file"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:26
+msgid "DNS Lookup"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:28
+msgid "Perform a quick dns lookup from the firewall."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:32
+msgid "NDP Table"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:34
+msgid ""
+"Show addresses learned by the `Neighbor Discovery Protocol "
+"<https://en.wikipedia.org/wiki/Neighbor_Discovery_Protocol>`__ for IPv6."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:39
+msgid "IPv6"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:39
+msgid "IPv6 address"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:49
+msgid "Netstat"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:51
+msgid ""
+"The netstat module contains a useful set of network status and statistics"
+" metrics, which are split into a number of topics."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:62
+msgid "In order of relevance you can find the following information here:"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:66
+msgid "Interfaces"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:68
+msgid ""
+"This section contains all (physical and virtual) attached interfaces to "
+"the system containing metrics like the number of packets and bytes send- "
+"and received per (hardware) address."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:73
+msgid "Protocol"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:75
+msgid ""
+"Contains system wide statistics for each network protocol. Examples of "
+"statistics that can be found in this region are the number of tcp "
+"listening connections, sent packets, duplicate packets, etc, etc."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:80
+msgid "Sockets"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:82
+msgid ""
+"Displays network and unix domain sockets, this basically combines "
+":code:`netstat` with :code:`sockstat` on FreeBSD in order to provide "
+"insights into which process is listening were combined with metrics known"
+" by the system."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:87
+msgid "Netisr"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:89
+msgid ""
+"Show statistics from the kernel network dispatch service, known as "
+":code:`netisr(9)`."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:93
+msgid "Memory"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:95
+msgid ""
+"Show statistics recorded by the memory management routines  "
+"(:code:`mbuf(9)`). The network manages a private pool of memory buffers."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:100
+msgid "Bpf"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:102
+msgid ""
+"Show statistics about :code:`bpf(4)` peers. This includes information "
+"like how many packets have been matched, dropped and received by the bpf "
+"device, also information about current buffer sizes and device states."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:108
+msgid "Packet capture"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:110
+msgid ""
+"The packet capture module can be used to deep dive into traffic passing a"
+" (or multiple) network interfaces. It has some options you can choose "
+"from, such as the interface to listen on, protocol you interested in and "
+"host to track."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:114
+msgid ""
+"Packet capture uses `tcpdump <https://www.tcpdump.org/>`__ and runs in "
+"the background. After a capture is performed you can either look into it "
+"using the **View capture** button or download the pcap file to inspect it"
+" in an external tool, such as `Wireshark <https://www.wireshark.org/>`__."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:119
+msgid "Ping"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:121
+msgid "Use ping to establish if a remote host can be reached using ICMP."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:125
+msgid "Port Probe"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:127
+msgid "Test if a host has a certain TCP port open and accepts connections on it."
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:131
+msgid "Trace Route"
+msgstr ""
+
+#: ../../source/manual/diagnostics_interfaces.rst:133
+msgid ""
+"Use `traceroute <https://www.freebsd.org/cgi/man.cgi?query=traceroute>`__"
+" /  `traceroute6 "
+"<https://www.freebsd.org/cgi/man.cgi?query=traceroute6>`__ to measure the"
+" path traffic would follow when trying to reach a specific host."
+msgstr ""
+

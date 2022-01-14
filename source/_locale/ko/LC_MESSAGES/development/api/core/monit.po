@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/development/api/core/monit.rst:2
+msgid "Monit"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:4
+msgid "Service (ServiceController.php)"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "Method"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "Module"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "Controller"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "Command"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "``POST``"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "monit"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "service"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "configtest"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "reconfigure"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "``GET``"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "restart"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "start"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "status"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "stop"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "``<<uses>>``"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid ""
+"*model* `Monit.xml "
+"<https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Monit/Monit.xml>`__"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:18
+msgid "Resources (SettingsController.php)"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "settings"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "addAlert"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "addService"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "addTest"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "delAlert"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "$uuid"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "delService"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "delTest"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "dirty"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "get"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "getAlert"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "$uuid=null"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "getGeneral"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "getService"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "getTest"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "``*``"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "searchAlert"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "searchService"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "searchTest"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "set"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "setAlert"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "setService"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "setTest"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "toggleAlert"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "$uuid,$enabled=null"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "toggleService"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:46
+msgid "Resources (StatusController.php)"
+msgstr ""
+
+#: ../../source/development/api/core/monit.rst:1
+msgid "$format='xml'"
+msgstr ""
+

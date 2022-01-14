@@ -403,3 +403,6 @@ lexers['php-annotations'] = PhpLexer(startinline=True)
 # inline highliting for Javascript
 lexers['Javascript'] = JavascriptLexer(startinline=True)
 lexers['Javascript-annotations'] = JavascriptLexer(startinline=True)
+
+locale_dirs = ['_locale/']   # path is example but recommended.
+gettext_compact = False     # optional.

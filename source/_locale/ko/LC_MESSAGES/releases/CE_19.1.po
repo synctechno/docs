@@ -1,0 +1,2880 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/releases/CE_19.1.rst:3
+msgid "19.1  \"Inspiring Iguana\" Series"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:7 ../../source/releases/CE_19.1.rst:673
+msgid ""
+"For more than four years now, OPNsense is driving innovation through "
+"modularising and hardening the open source firewall, with simple and "
+"reliable firmware upgrades, multi-language support, HardenedBSD security,"
+" fast adoption of upstream software updates as well as clear and stable "
+"2-Clause BSD licensing."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:13 ../../source/releases/CE_19.1.rst:679
+msgid ""
+"The 19.1 release, nicknamed \"Inspiring Iguana\", consists of a total of "
+"620 individual changes since 18.7 came out 6 months ago, spread out over "
+"12 intermediate releases including the recent release candidates.  That "
+"is the average of 2 stable releases per month, security updates and "
+"important bug fixes included!  If we had to pick a few highlights it "
+"would be: The firewall alias API is finally in place.  The migration to "
+"HardenedBSD 11.2 has been completed.  2FA now works with a remote LDAP / "
+"local TOTP combination.  And the OpenVPN client export was rewritten for "
+"full API support as well."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:23 ../../source/releases/CE_19.1.rst:689
+#: ../../source/releases/CE_19.1.rst:821
+msgid ""
+"Download links, an installation guide `[1] "
+"<https://docs.opnsense.org/manual/install.html>`__  and the checksums for"
+" the images can be found below as well."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:26 ../../source/releases/CE_19.1.rst:451
+#: ../../source/releases/CE_19.1.rst:692 ../../source/releases/CE_19.1.rst:824
+msgid "Europe: https://opnsense.c0urier.net/releases/19.1/"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:27 ../../source/releases/CE_19.1.rst:452
+#: ../../source/releases/CE_19.1.rst:693 ../../source/releases/CE_19.1.rst:825
+msgid "US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/19.1/"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:28 ../../source/releases/CE_19.1.rst:453
+#: ../../source/releases/CE_19.1.rst:694 ../../source/releases/CE_19.1.rst:826
+msgid ""
+"US West Coast: "
+"https://mirror.sfo12.us.leaseweb.net/opnsense/releases/19.1/"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:29 ../../source/releases/CE_19.1.rst:454
+#: ../../source/releases/CE_19.1.rst:695 ../../source/releases/CE_19.1.rst:827
+msgid "South America: http://mirror.upb.edu.co/opnsense/releases/19.1/"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:30 ../../source/releases/CE_19.1.rst:455
+#: ../../source/releases/CE_19.1.rst:696 ../../source/releases/CE_19.1.rst:828
+msgid "South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/19.1/"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:31 ../../source/releases/CE_19.1.rst:456
+#: ../../source/releases/CE_19.1.rst:697 ../../source/releases/CE_19.1.rst:829
+msgid "Full mirror list: https://opnsense.org/download/"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:36
+msgid "19.1.10 (July 03, 2019)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:39
+msgid ""
+"Small update as we are nearing the end of the 19.1 series.  Yes, it is "
+"that time of the year again with a release candidate only a few days away"
+" and a final release date set to July 17."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:43 ../../source/releases/CE_19.1.rst:87
+#: ../../source/releases/CE_19.1.rst:143 ../../source/releases/CE_19.1.rst:296
+#: ../../source/releases/CE_19.1.rst:411 ../../source/releases/CE_19.1.rst:510
+#: ../../source/releases/CE_19.1.rst:571 ../../source/releases/CE_19.1.rst:644
+msgid "Here are the full patch notes:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:45
+msgid "system: change certificate manager actions to POST"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:46
+msgid "system: fix account removal with missing \"-g\" option"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:47
+msgid "system: add dashboard widgets to XMLRPC sync"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:48
+msgid "firewall: fix live log rule label mismatch caused by optimisation"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:49
+msgid "firewall: fix alias import with alias references included"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:50
+msgid "firewall: change default sorting of aliases to names"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:51
+msgid "firmware: add homelab.no mirror (contributed by Thomas Jensen)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:52
+msgid "intrusion detection: when toggling rules keep the current action"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:53
+msgid "intrusion detection: suppress mystery PHP 7.2+ warning in API"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:54
+msgid "intrusion detection: show SID in alert view"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:55
+msgid "web proxy: add cache reset button"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:56
+msgid "web proxy: correct syslog export"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:57
+msgid "plugins: os-dyndns 1.6 DigitalOcean support (contributed by Dune Heishman)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:58
+msgid "plugins: os-etpro-telemetry Python 3 support"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:59
+msgid ""
+"plugins: os-frr 1.11 `[1] "
+"<https://github.com/opnsense/plugins/blob/master/net/frr/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:60
+msgid ""
+"plugins: os-nginx 1.14 `[2] "
+"<https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:61
+msgid ""
+"plugins: os-rspamd 1.7 `[3] "
+"<https://github.com/opnsense/plugins/blob/master/mail/rspamd/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:62
+msgid "plugins: os-tinc Python 3 support"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:63
+msgid "ports: ca_root_nss 3.44.1"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:64
+msgid "ports: curl 7.65.1 `[4] <https://curl.haxx.se/changes.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:65
+msgid ""
+"ports: libevent 2.1.10 `[5] "
+"<https://github.com/libevent/libevent/releases/tag/release-2.1.10-stable>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:66
+msgid ""
+"ports: libxml 2.9.9 `[6] "
+"<https://mail.gnome.org/archives/xml/2019-January/msg00000.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:67
+msgid ""
+"ports: libressl 2.9.2 `[7] "
+"<https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-2.9.1-relnotes.txt>`__"
+"  `[8] "
+"<https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-2.9.2-relnotes.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:68
+msgid ""
+"ports: phalcon 3.4.4 `[9] "
+"<https://github.com/phalcon/cphalcon/releases/tag/v3.4.4>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:69
+msgid "ports: strongswan 5.8.0 `[10] <https://wiki.strongswan.org/versions/73>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:70
+msgid ""
+"ports: unbound 1.9.2 `[11] "
+"<https://nlnetlabs.nl/projects/unbound/download/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:72
+msgid "A hotfix release was issued as 19.1.10_1:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:74
+msgid "firmware: enable upgrade path to 19.7"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:80
+msgid "19.1.9 (June 06, 2019)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:83
+msgid ""
+"Small 19.1 series update mainly focusing on LDAP group synchronisation "
+"and assorted OpenVPN improvements.  Two regressions of previous versions "
+"have been fixed as well."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:89
+msgid "system: add LDAP group synchronisation feature"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:90
+msgid "system: allow an arbitrary group for sudo like ssh login"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:91
+msgid "system: stop using a lock around resolv.conf handling"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:92
+msgid "system: rename a number of service-related functions"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:93
+msgid "system: login not using cache-safe image yet"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:94
+msgid "system: add pluginctl -s support"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:95
+msgid "system: restyle config backup page"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:96
+msgid "system: fix log split view regression of 19.1.8"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:97
+msgid "interfaces: remove DHCPv6 on delete and clear config on IPsec assignment"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:98
+msgid "interfaces: small VIP restructure and IPv6 alias to IPv6 device"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:99
+msgid "interfaces: subtle changes in IPv6 and variable naming"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:100
+msgid "interfaces: add missing does_interface_exist() checks"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:101
+msgid "firewall: support multiple interfaces per NAT port forward rule"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:102
+msgid "captive portal: use \"onestop\" to stop service"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:103
+msgid "intrusion detection: missing header ID in alerts tab"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:104
+msgid "ipsec: remove remnants of gateway group interface selection"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:105
+msgid "ipsec: use indirect plugin calls in interface code"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:106
+msgid "openvpn: add live-search to longer lists in server page"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:107
+msgid ""
+"openvpn: support --cryptoapicert export (sponsored by m.a.x. it `[1] "
+"<https://www.max-it.de/>`__ )"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:108
+msgid "opnevpn: correctly check for translation in get_carp_interface_status()"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:109
+msgid "openvpn: use waitforpid() to properly wait for instanes to come up"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:110
+msgid "openvpn: translate GUI error values when returning them"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:111
+msgid "openvpn: revamp status page"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:112
+msgid "unbound: leases watcher file rotation issue"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:113
+msgid "web proxy: squid log in readable date format (contributed by nhirokinet)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:114
+msgid "web proxy: fix non-local authentication regression of 19.1.7"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:115
+msgid ""
+"plugins: os-bind 1.5 `[2] "
+"<https://github.com/opnsense/plugins/blob/master/dns/bind/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:116
+msgid ""
+"plugins: os-clamav 1.7 `[3] "
+"<https://github.com/opnsense/plugins/blob/master/security/clamav/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:117
+msgid ""
+"plugins: os-dnscrypt-proxy 1.4 `[4] "
+"<https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:118
+msgid "plugins: os-dyndns clouldflare wildcard domain support"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:119
+msgid ""
+"plugins: os-nginx 1.13 `[5] "
+"<https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:120
+msgid ""
+"plugins: os-openconnect 1.4.0 `[6] "
+"<https://github.com/opnsense/plugins/blob/master/security/openconnect"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:121
+msgid ""
+"plugins: os-redis 1.1 `[7] "
+"<https://github.com/opnsense/plugins/blob/master/databases/redis/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:122
+msgid ""
+"plugins: os-rspamd 1.6 `[8] "
+"<https://github.com/opnsense/plugins/blob/master/mail/rspamd/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:123
+msgid "plugins: os-theme-cicada 1.18 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:124
+msgid "plugins: os-theme-tukan 1.18 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:125
+msgid "ports: curl 7.65.0 `[9] <https://curl.haxx.se/changes.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:126
+msgid ""
+"ports: lighttpd 1.4.54 `[10] "
+"<https://www.lighttpd.net/2019/5/27/1.4.54/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:127
+msgid ""
+"ports: python 3.7.3 `[11] "
+"<https://docs.python.org/release/3.7.3/whatsnew/changelog.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:128
+msgid "ports: openssl 1.0.2s `[12] <https://www.openssl.org/news/cl102.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:129
+msgid "ports: php 7.2.19 `[13] <https://www.php.net/ChangeLog-7.php#7.2.19>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:135
+msgid "19.1.8 (May 20, 2019)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:138
+msgid ""
+"This update addresses several privilege escalation issues in the access "
+"control implementation and new memory disclosure issues in Intel CPUs. We"
+" would like to thank Arnaud Cordier and Bill Marquette for the top-notch "
+"reports and coordination."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:145
+msgid ""
+"system: address CVE-2019-11816 privilege escalation bugs `[1] "
+"<https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11816>`__  "
+"(reported by Arnaud Cordier)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:146
+msgid "system: /etc/hosts generation without interface_has_gateway()"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:147
+msgid ""
+"system: show correct timestamp in config restore save message "
+"(contributed by nhirokinet)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:148
+msgid ""
+"system: list the commands for the pluginctl utility when no argument is "
+"given"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:149
+msgid ""
+"system: introduce and use userIsAdmin() helper function instead of "
+"checking for \"page-all\" privilege directly"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:150
+msgid "system: use absolute path in widget ACLs (reported by Netgate)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:151
+msgid "system: RRD-related cleanups for less code exposure"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:152
+msgid ""
+"interfaces: add EN DUID Generation using OPNsense PEN (contributed by "
+"Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:153
+msgid "interfaces: replace legacy_getall_interface_addresses() usage"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:154
+msgid "firewall: fix port validation in aliases with leading / trailing spaces"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:155
+msgid "firewall: fix outbound NAT translation display in overview page"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:156
+msgid "firewall: prevent CARP outgoing packets from using the configured gateway"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:157
+msgid ""
+"firewall: use CARP net.inet.carp.demotion to control current demotion in "
+"status page"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:158
+msgid "firewall: stop live log poller on error result"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:159
+msgid "dhcp: change rule priority to 1 to avoid IPv6 bogon clash"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:160
+msgid "dnsmasq: only admins may edit custom options field"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:161
+msgid ""
+"firmware: use insecure mode for base and kernel sets when package "
+"fingerprints are disabled"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:162
+msgid "firmware: add optional device support for base and kernel sets"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:163
+msgid "firmware: add Hostcentral mirror (HTTP, Melbourne, Australia)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:164
+msgid "ipsec: always reset rightallowany to default when writing configuration"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:165
+msgid "lang: say \"hola\" to Spanish as the newest available GUI language"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:166
+msgid ""
+"lang: updates for Chinese, Czech, Japanese, German, French, Russian and "
+"Portuguese"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:167
+msgid "network time: only admins may edit custom options field"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:168
+msgid ""
+"openvpn: call openvpn_refresh_crls() indirectly via plugin_configure() "
+"for less code exposure"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:169
+msgid ""
+"openvpn: only admins may edit custom options field to prevent privilege "
+"escalation (reported by Bill Marquette)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:170
+msgid "openvpn: remove custom options field from wizard"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:171
+msgid "unbound: only admins may edit custom options field"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:172
+msgid "wizard: translate typehint as well"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:173
+msgid ""
+"plugins: os-freeradius 1.9.3 fixes string interpolation in LDAP filters "
+"(contributed by theq86)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:174
+msgid ""
+"plugins: os-nginx 1.12 `[2] "
+"<https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:175
+msgid "plugins: os-theme-cicada 1.17 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:176
+msgid "plugins: os-theme-tukan 1.17 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:177
+msgid ""
+"src: timezone database information update `[3] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"EN-19:08.tzdata.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:178
+msgid ""
+"src: install(1) broken with partially matching relative paths `[4] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"EN-19:09.xinstall.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:179
+msgid ""
+"src: microarchitectural Data Sampling (MDS) mitigation `[5] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-SA-19:07.mds.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:180
+msgid "ports: ca_root_nss 3.44"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:181
+msgid "ports: php 7.2.18 `[6] <https://www.php.net/ChangeLog-7.php#7.2.18>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:182
+msgid "ports: sqlite 3.28.0 `[7] <https://sqlite.org/releaselog/3_28_0.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:183
+msgid "ports: strongswan custom XAuth generic patch removed"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:189
+msgid "19.1.7 (May 02, 2019)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:192
+msgid ""
+"This update features a number of improvements such as link-local support "
+"for bridges, HA sync consolidation, adding local CAs to the trusted SSL "
+"certificates for most of the system download capabilities, plugin-based "
+"PAM authentication rework for IPsec and the web proxy as well as third "
+"party fixes for hostapd / wpa_supplicant 2.8 and Suricata 4.1.4."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:198
+msgid ""
+"Python 3 migration is also underway now which requires to pull in both "
+"Python versions which may be heavy on embedded Nano installs, but we "
+"cannot see another way for this tedious task which will probably stretch "
+"into 19.7 to be fully carried out in 20.1."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:203
+msgid ""
+"And speaking of 20.1: This is the first of many reminders that 20.1 will "
+"discontinue the i386 (Intel 32 Bit) franchise as discussed a number of "
+"times within the community over the years.  Our hope is that ARM64 will "
+"make a viable replacement.  But that is for another time."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:208
+msgid ""
+"As you may have noticed the project has not been delivering releases "
+"every other week and there are a number of reasons for it:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:211
+msgid ""
+"Security-wise we have not had a lot of necessary third-party software "
+"updates.  Feature-wise we are sitting on a number of improvements for the"
+" upcoming 19.7 series that will trickle into 19.1.x now, but that have "
+"also required larger preparations and testing in the meantime.  On the "
+"community side of the spectrum, sponsored by our partner m.a.x. it, we "
+"have started to work on better default gateway switching which led to an "
+"overall gateway integration rework and then quickly to interface handling"
+" restructuring, which in turn led to improving plugin capabilities of "
+"core services (OpenVPN, IPsec, Unbound, Dnsmasq, DHCPD, Dpinger).  "
+"Looking at it now it has been the largest rework so far on code "
+"established many years ago and only occasionally patched.  We hope this "
+"shows our dedication to the code base even when things are not always "
+"100% bug free.  If you feel like pitching in now is a good time to try "
+"the development version and let us know about how it performs."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:226
+msgid "Without further ado, here are the full patch notes:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:228
+msgid ""
+"system: HA sync cleanup removes opportunistic syncs in random GUI pages "
+"(use HA status page to sync and restart remote services)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:229
+msgid "system: support for syncing alias and VHID to the slave"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:230
+msgid "system: cleanly rewrite CA root files and add local trusted CAs as well"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:231
+msgid "system: disable backup cron job when no backup is enabled"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:232
+msgid ""
+"system: more reliable load and sync for LDAP attributes (contributed by "
+"Indrajit Raychaudhuri)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:233
+msgid "system: migrate health graph scripts to Python 3.6"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:234
+msgid "interfaces: properly add and remove IPv6 trackers after interface apply"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:235
+msgid "interfaces: validate prefix ID of IPv6 trackers so that each ID is unique"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:236
+msgid ""
+"interfaces: display \"0x\" in prefix ID field so that it is clear that "
+"value is in hex"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:237
+msgid "interfaces: fix passing VLAN name in interface_virtual_create()"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:238
+msgid ""
+"interfaces: fix group-related bugs and allow digits and underscores in "
+"name, but no more than 15 characters"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:239
+msgid "interfaces: allow link-local address on bridges via optional setting"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:240
+msgid "interfaces: PPP-related code cleanups"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:241
+msgid "firewall: prevent double-escaping of text in rules page"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:242
+msgid "firewall: handle IDNA encode failures in aliases"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:243
+msgid "firewall: alias import / export option"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:244
+msgid "captive portal: update to bootstrap 3.4.1"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:245
+msgid "captive portal: fix a race in directory creation and listClients()"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:246
+msgid "dhcp: fix TFTP boot file name usage (contributed by Bjorn Kalkbrenner)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:247
+msgid "dhcp: merge static mac addresses with leases"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:248
+msgid "dhcp: prevent double-escaping of text in leases page"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:249
+msgid "firmware: add private log file for major upgrade package install step"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:250
+msgid "firmware: use a safer major upgrade package install mode"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:251
+msgid "firmware: retain /etc/motd on base updates"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:252
+msgid "ipsec: implemented wildcard includes (contributed by Mark Plomer)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:253
+msgid "ipsec: only apply mobile PFS to mobile phase 2"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:254
+msgid "ipsec: restyle mobile settings a little"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:255
+msgid "ipsec: switch XAuth to PAM"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:256
+msgid "ipsec: partial fix for static routes on routed tunnels during boot"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:257
+msgid "network time: reload RRD since NTP has a setting for it"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:258
+msgid "web proxy: fix PAC weekday match labels (contributed by Mohammed Sadiq)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:259
+msgid "web proxy: switch authentication to PAM"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:260
+msgid "backend: treat non existing key as empty string in sortDictList()"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:261
+msgid "mvc: pluggable PAM-based authentication framework"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:262
+msgid "mvc: add filter closure to searchBase()"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:263
+msgid ""
+"plugins: introduce plugins_run() for collecting structured data from "
+"plugins"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:264
+msgid ""
+"plugins: os-clamav 1.6 `[1] "
+"<https://github.com/opnsense/plugins/blob/master/security/clamav/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:265
+msgid ""
+"plugins: os-dyndns 1.5 fixes CloudFlare zone ID lookup behaviour "
+"(contributed by George Johnson)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:266
+msgid ""
+"plugins: os-frr 1.10 `[2] "
+"<https://github.com/opnsense/plugins/blob/master/net/frr/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:267
+msgid "plugins: os-netdata 1.0 (contributed by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:268
+msgid "plugins: os-nginx 1.11_2 fixes ACME support (contributed by Frank Wall)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:269
+msgid "plugins: os-rfc2136 1.5 removes unused gateway group related code"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:270
+msgid "src: move invoking of callout_stop(&lle->lle_timer) into llentry_free()"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:271
+msgid "src: ensure that IP addresses match in ICMP error packets in pf(4)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:272
+msgid "src: add bsdinstall utility for upcoming 19.7 installer replacement"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:273
+msgid ""
+"ports: dhcp6c v20190419 fixes raw options segfaults (contributed by "
+"Franck78)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:274
+msgid ""
+"ports: hostapd / wpa_supplicant 2.8 `[3] "
+"<https://w1.fi/cgit/hostap/plain/hostapd/ChangeLog>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:275
+msgid "ports: perl 5.28.2 `[4] <https://perldoc.perl.org/5.28.2/perldelta>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:276
+msgid ""
+"ports: py-yaml 5.1 `[5] "
+"<https://github.com/yaml/pyyaml/blob/master/CHANGES>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:277
+msgid ""
+"ports: suricata 4.1.4 `[6] <https://suricata-"
+"ids.org/2019/04/30/suricata-4-1-4-released/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:278
+msgid "ports: sqlite 3.27.2 `[7] <https://sqlite.org/releaselog/3_27_1.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:284
+msgid "19.1.6 (April 11, 2019)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:287
+msgid ""
+"This update brings a smaller number of fixes and improvements as well as "
+"the latest PHP version update."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:290
+msgid ""
+"With a heavy heart we disable E_WARNING messages in the PHP error "
+"reporting. It has been implemented in 2015 to improve code quality and it"
+" did just that, but with the latest PHP 7.2 jump in 19.1.5 it causes "
+"problems around the newly added count() usage warning messages.  We plan "
+"to bring back E_WARNING usage in 19.7."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:298
+msgid "system: let dashboard only accept its own POST requests"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:299
+msgid "system: remove obsolete symlink to opnsense-auth"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:300
+msgid "system: skip PHP E_WARNING log level until 19.7"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:301
+msgid "system: numerous PHP 7.2 warning fixes"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:302
+msgid "dhcp: DHCPD server check in relay only if interface is active"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:303
+msgid "dnsmasq: skip empty custom options"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:304
+msgid "intrusion prevention: do not drop flowbits:noalert rules"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:305
+msgid "unbound: add ACL entries for OpenVPN by default"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:306
+msgid "mvc: controller cleanups in firewall shaper, web proxy and captive portal"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:307
+msgid "plugins: numerous PHP 7.2 warning fixes"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:308
+msgid ""
+"plugins: os-freeradius 1.9.2 fixes LDAP group filter and EAP certificates"
+" write (contributed by Alexander Harm)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:309
+msgid ""
+"plugins: os-nginx 1.11 `[1] "
+"<https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:310
+msgid "ports: php 7.2.17 `[2] <https://php.net/ChangeLog-7.php#7.2.17>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:311
+msgid ""
+"ports: py-certifi 2019.3.9 `[3] "
+"<https://pypi.org/project/certifi/2019.3.9/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:317
+msgid "19.1.5 (April 05, 2019)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:320
+msgid ""
+"After a longer pause we are back with considerable upgrades for IPsec, a "
+"new CSR feature for local CAs, PHP 7.2 migration and a number of other "
+"considerable third party updates."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:324
+msgid "These are the full patch notes:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:326
+msgid "system: improve gateway status return when monitoring is off"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:327
+msgid ""
+"system: warn user about future deprecation of \"user-config-readonly\" "
+"privilege"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:328
+msgid "system: support certificate signing requests (contributed by nhirokinet)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:329
+msgid ""
+"system: syslog does not need to do a background startup since it "
+"backgrounds itself"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:330
+msgid ""
+"system: invalidate Nextcloud URL with trailing slash (contributed by "
+"Fabian Franz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:331
+msgid ""
+"system: avoid double encoding cert name (contributed by Indrajit "
+"Raychaudhuri)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:332
+msgid ""
+"interfaces: fix facility for rtsold log about dhcp6c (contributed by "
+"Thomas du Boys)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:333
+msgid ""
+"interfaces: take all unknown arguments as real interfaces in "
+"interfaces_addresses()"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:334
+msgid ""
+"interfaces: optionally allow interfaces_addresses() to emit subnets "
+"instead of addresses"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:335
+msgid ""
+"interfaces: move mpd.script to new location (may require interface "
+"reconfigure)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:336
+msgid "firewall: proper locking of aliases before config action on delete"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:337
+msgid "firewall: correctly set outbound NAT destination as network"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:338
+msgid "firewall: add support for DSCP in shaper (contributed by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:339
+msgid "firewall: add support for IDN in aliases (contributed by Smart-Soft)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:340
+msgid ""
+"captive portal: allow access to this host (contributed by Fredrik "
+"Ronnvall)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:341
+msgid ""
+"firmware: fix parsing of packages in multi-repo env and revoked "
+"fingerprint message"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:342
+msgid "firmware: add University of Kent to the firmware mirrors"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:343
+msgid "ipsec: only use explicit reqid when using route-based interfaces"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:344
+msgid ""
+"ipsec: correctly set install policy option on newly created phase 1 "
+"entries"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:345
+msgid "ipsec: improve split DNS and INTERNAL_DNS_DOMAIN configuration"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:346
+msgid ""
+"ipsec: added IKEv2 DH group 31 / curve 25519 (contributed by Peter "
+"Stehlin)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:347
+msgid "ipsec: properly quote UNITY_BANNER for multi-line support"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:348
+msgid "ipsec: support for dynamic remote gateways"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:349
+msgid ""
+"monit: add migration/validation for service/test type dependency "
+"(contributed by Frank Brendel)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:350
+msgid "monit: added missing \"not on\" label"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:351
+msgid "openvpn: support static-challenge formatted password"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:352
+msgid "openvpn: properly load custom config field in exporter"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:353
+msgid "openvpn: cleanups in listening address handling"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:354
+msgid "web proxy: IP address not available when address set to none"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:355
+msgid ""
+"web proxy: add sortable support for PAC proxy lists (contributed by "
+"Fabian Franz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:356
+msgid ""
+"web proxy: add dash to allowed characters in description (contributed by "
+"Fabian Franz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:357
+msgid "backend: python 2->3 iteritems() conversion in core templates"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:358
+msgid ""
+"mvc: migrate config backup rotation to handle static and MVC pages "
+"(contributed by Smart-Soft)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:359
+msgid "mvc: controller cleanups in cron, intrusion detection, routes"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:360
+msgid "mvc: obey \"user-config-readonly\" privilege in mutable controllers"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:361
+msgid "mvc: support overlays in setBase() / addBase()"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:362
+msgid ""
+"ui: remove jquery-bootgrid converters which are now included in the "
+"library"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:363
+msgid ""
+"plugins: os-acmle-client 1.23 `[1] "
+"<https://github.com/opnsense/plugins/pull/1166>`__  `[2] "
+"<https://github.com/opnsense/plugins/pull/1212>`__  `[3] "
+"<https://github.com/opnsense/plugins/pull/1263>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:364
+msgid "plugins: os-dyndns 1.14 supports wildcards for Google Domains"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:365
+msgid "plugins: os-etpro-telemetry 1.3 uses HOME_NET to anonymization"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:366
+msgid ""
+"plugins: os-freeradius 19.1.0 `[4] "
+"<https://github.com/opnsense/plugins/blob/master/net/freeradius/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:367
+msgid ""
+"plugins: os-frr 1.9 `[5] "
+"<https://github.com/opnsense/plugins/blob/master/net/frr/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:368
+msgid ""
+"plugins: os-nginx 1.10 `[6] "
+"<https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:369
+msgid ""
+"plugins: os-postfix 1.9 `[7] "
+"<https://github.com/opnsense/plugins/blob/master/mail/postfix/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:370
+msgid ""
+"plugins: os-rspamd 1.5 `[8] "
+"<https://github.com/opnsense/plugins/blob/master/mail/rspamd/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:371
+msgid ""
+"plugins: os-telegraf 1.7.5 `[9] "
+"<https://github.com/opnsense/plugins/blob/master/net-mgmt/telegraf/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:372
+msgid "plugins: os-theme-cicada 1.15 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:373
+msgid "plugins: os-theme-tukan 1.14 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:374
+msgid ""
+"plugins: os-zabbix-agent 1.5 `[10] "
+"<https://github.com/opnsense/plugins/pull/1262>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:375
+msgid "ports: ca_root_nss 3.43"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:376
+msgid "ports: curl 7.64.1"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:377
+msgid "ports: libucl 0.8.1"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:378
+msgid "ports: pcre 8.43"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:379
+msgid "ports: php 7.2.16"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:380
+msgid "ports: py-cryptography 2.6.1"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:381
+msgid "ports: phpseclib 2.0.15"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:382
+msgid "ports: python 2.7.16"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:383
+msgid "ports: unbound 1.9.1"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:385
+msgid "A hotfix release was issued as 19.1.5_1:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:387
+msgid "mvc: sync missing hasPrivilege()"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:393
+msgid "19.1.4 (March 12, 2019)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:396
+msgid ""
+"An UEFI boot panic scenario was debugged last week with the help of the "
+"community.  This update includes a fix that will allow the ones affected "
+"by this 19.1 issue to upgrade or install (and boot of course) correctly. "
+"We are also including the IPsec VTI support and the latest Suricata 4.1.3"
+" with stability and compatibility fixes."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:402
+msgid ""
+"Due to the severity of the UEFI boot panic 19.1.4 will be the new initial"
+" release for all upgrades from 18.7 within a day or two depending on "
+"additional testing and confirmation.  Last but not least there will be "
+"new images some time next week to put this fully behind us.  Thank you "
+"for your patience and understanding.  :)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:408
+msgid ""
+"Special thanks go to the team of Synacktiv for reporting a packet filter "
+"IPv6 vulnerability for which a patch was included as well."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:413
+msgid ""
+"system: remove erroneously translated hostname example (contributed by "
+"nhirokinet)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:414
+msgid "firewall: fix validation regression in outbound NAT introduced in 19.1.3"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:415
+msgid ""
+"firewall: mock labels for NAT rules in live log as pf does not offer "
+"label support"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:416
+msgid "interfaces: do not background LAGG ifconfig destroy"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:417
+msgid "installer: revert to use network connection to allow CTRL+C and resume"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:418
+msgid "ipsec: added Virtual Tunnel Interface (VTI) support"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:419
+msgid "unbound: fix nested statistics items read"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:420
+msgid ""
+"mvc: remove old Phalcon volt template workarounds from when scopes were "
+"broken"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:421
+msgid "mvc: fix bug in model relation field values merge"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:422
+msgid "plugins: os-zabbix4-proxy PSK directory fix (contributed by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:423
+msgid "plugins: os-telegraf missed invoke of setup.sh"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:424
+msgid ""
+"plugins: os-frr adds validator to OSPF prefix lists (contributed by "
+"Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:425
+msgid "plugins: os-dmidecode 1.1 fixes data parsing (contributed by Smart-Soft)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:426
+msgid ""
+"plugins: os-nginx 1.9 `[1] "
+"<https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:427
+msgid ""
+"src: do not pass pf(4) IPv6 fragments with malformed extension headers "
+"(reported by Synacktiv)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:428
+msgid ""
+"src: revert upstream commit \"protect the kernel text, data, and BSS\" to"
+" fix certain UEFI boots"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:429
+msgid "ports: monit 5.25.3 `[2] <https://mmonit.com/monit/changes/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:430
+msgid ""
+"ports: ntp 4.2.8p13 `[3] "
+"<http://support.ntp.org/bin/view/Main/NtpBug3565>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:431
+msgid "ports: php 7.1.27 `[4] <https://php.net/ChangeLog-7.php#7.1.27>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:432
+msgid ""
+"ports: suricata 4.1.3 `[5] <https://suricata-"
+"ids.org/2019/03/07/suricata-4-1-3-released/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:434
+msgid ""
+"The full list of changes of the OPNsense 19.1 series can be reviewed "
+"using their original announcements:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:437
+msgid "19.1: https://forum.opnsense.org/index.php?topic=11398.0"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:438
+msgid "19.1.1: https://forum.opnsense.org/index.php?topic=11469.0"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:439
+msgid "19.1.2: https://forum.opnsense.org/index.php?topic=11849.0"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:440
+msgid "19.1.3: https://forum.opnsense.org/index.php?topic=11941.0"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:442
+msgid ""
+"We would also like to use this opportunity to remind everyone that "
+"OPNsense is and always will be free software.  All of its source code and"
+" associated build tools can be found here:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:446
+msgid "https://github.com/opnsense"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:448
+msgid ""
+"Download links, an installation guide `[6] "
+"<https://docs.opnsense.org/manual/install.html>`__  and the checksums for"
+" the images can be found below as well."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:458 ../../source/releases/CE_19.1.rst:751
+#: ../../source/releases/CE_19.1.rst:951
+msgid "The public key for the 19.1 series is:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:495
+msgid "19.1.3 (March 07, 2019)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:498
+msgid ""
+"This is a smaller stable update consisting of LDAPS authentication server"
+" improvements, Unbound host overrides alias support, OpenSSL 1.0.2r "
+"security update and the recent PAM rework for better privilege "
+"separation."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:503
+msgid ""
+"We are currently focusing on IPsec VTI, third-party service PAM "
+"integration and investigating kernel boot crashes.  In the latter case we"
+" are aware of the update issues some people are having and recommend "
+"running 18.7 until this is taken care of.  Above all, please be patient."
+"  New images and seamless upgrade paths will be provided as soon as the "
+"problems have been pinned down."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:512
+msgid "system: improve LDAPS mode and related authentication cleanups"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:513
+msgid "system: move enable checkbox to the top in remote logging settings"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:514
+msgid "system: allow reset of tunables to to factory defaults"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:515
+msgid ""
+"system: new tunables factory default to prevent ICMP redirects being sent"
+" (net.inet.icmp.drop_redirect=1)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:516
+msgid ""
+"firewall: allow explicitly setting source hash key in outbound NAT "
+"(Fredrik Ronnvall)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:517
+msgid "interfaces: probe media before applying new settings"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:518
+msgid "interfaces: correctly compare MAC addresses"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:519
+msgid "dhcp: added TFTP bootfile-name (contributed by Bjorn Kalkbrenner)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:520
+msgid ""
+"firmware: move duty to return the correct set name / ID to opnsense-"
+"version"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:521
+msgid "firmware: finally revoke 18.7 fingerprint"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:522
+msgid "intrusion detection: minor template cleanups using helpers.empty()"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:523
+msgid ""
+"ipsec: peer identifier can now fall back to remote-gateway in manual SPD "
+"entries"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:524
+msgid ""
+"ipsec: allow easier override of colours in widget (contributed by Fabian "
+"Franz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:525
+msgid "monit: add validation for test type (contributed by Frank Brendel)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:526
+msgid "openvpn: add auth-nocache option in exporter"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:527
+msgid "openvpn: validate certificate type for servers"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:528
+msgid "unbound: add host overrides alias support"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:529
+msgid "web proxy: add auth to parent proxy (contributed by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:530
+msgid "backend: add helpers.empty() in configd"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:531
+msgid "mvc: simplify save / close / cancel button labels"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:532
+msgid "mvc: add sorting for field list types"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:533
+msgid "rc: move all template generation to early stage"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:534
+msgid "ui: improve escaping of displayed data in static pages"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:535
+msgid "ui: escape button values in static pages"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:536
+msgid "ui: avoid short PHP tags"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:537
+msgid ""
+"plugins: os-dnscrypt-proxy 1.3 `[1] "
+"<https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:538
+msgid ""
+"plugins: os-frr brings in missing area range code `[2] "
+"<https://github.com/opnsense/plugins/blob/master/net/frr/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:539
+msgid ""
+"plugins: os-postfix log file ACL and wrapper mode typo fix (contributed "
+"by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:540
+msgid ""
+"plugins: os-theme-cicada IPsec widget colour fix (contributed by Team "
+"Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:541
+msgid ""
+"plugins: os-theme-tukan IPsec widget colour fix (contributed by Team "
+"Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:542
+msgid ""
+"plugins: os-vnstat /var MFS fix `[3] "
+"<https://github.com/opnsense/plugins/blob/master/net/vnstat/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:543
+msgid "plugins: os-zabbix4-proxy 1.0 (contributed by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:544
+msgid ""
+"ports: openssl 1.0.2r `[4] "
+"<https://www.openssl.org/news/secadv/20190226.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:545
+msgid "ports: pam_opnsense 19.1.3 uses setuid for privilege separation"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:546
+msgid ""
+"ports: phalcon 3.4.3 `[5] "
+"<https://github.com/phalcon/cphalcon/releases/tag/v3.4.3>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:552
+msgid "19.1.2 (February 28, 2019)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:555
+msgid ""
+"This update is the sum of a few weeks of intense testing and debugging in"
+" areas such as WAN DHCP with very short lease times, Suricata IPS not "
+"working as expected, stacked 6RD setups that have overly long device "
+"names amongst others."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:560
+msgid ""
+"The update may be a bit bumpy this time since the web GUI session "
+"directory will be moved to a safer location.  You will be logged out "
+"during the update and the system will reboot due to the included "
+"operating system update.  As soon as it is back you will be able to log "
+"in as usual."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:565
+msgid ""
+"LibreSSL received a major upgrade from 2.7 to 2.8. If you are using "
+"LibreSSL and see any issues please do let us know because it sadly looks "
+"like third party projects such as OpenVPN, Squid, StrongSwan and NTP "
+"leave the use of LibreSSL to the few users who are able to fix the source"
+" code builds on their own and we want to ideally avoid having to patch "
+"third party software."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:573
+msgid ""
+"system: move session files into their own directory (forces the current "
+"sessions to expire)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:574
+msgid ""
+"system: add validation check for time period for Dpinger (contributed by "
+"Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:575
+msgid ""
+"system: hide \"show certificate info\" button of pending CSR (contributed"
+" by nhirokinet)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:576
+msgid ""
+"system: move opnsense-auth to libexec, but keep a symlink in sbin "
+"directory"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:577
+msgid "system: escaping issue in gateway edit page"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:578
+msgid "system: fix ACL for halt and reboot pages"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:579
+msgid "firewall: fix alias entry replacement in utility page"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:580
+msgid "firewall: prevent new alias creation when adding an address"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:581
+msgid "firewall: capture \"nat\" traffic like we do for \"rdr\" in live log"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:582
+msgid "firewall: escaping issues in schedule edit page"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:583
+msgid "interfaces: push dhclient and dhcp6c log messages to system log"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:584
+msgid ""
+"interfaces: write all nameservers via dhclient-script in multi WAN "
+"scenarios"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:585
+msgid "interfaces: check for valid alias IP in dhclient-script"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:586
+msgid ""
+"interfaces: 6RD interface naming back to 18.7 to sidestep character "
+"limits on stacked setups"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:587
+msgid "interfaces: avoid reading empty interface configurations"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:588
+msgid "firmware: bootstrap rework for HTTPS repository URL"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:589
+msgid "firmware: patch cache and assorted improvements"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:590
+msgid "firmware: minor update utility cleanups"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:591
+msgid "firmware: remove compatibility stubs for pre-19.1 version reads"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:592
+msgid "firmware: show revoked package mirror error in GUI if applicable"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:593
+msgid "firmware: bump RageNetwork mirror to HTTPS"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:594
+msgid "firmware: be more careful about parsing version info"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:595
+msgid ""
+"dhcp: fix behaviour of determining primary/secondary (contributed by "
+"Fredrik Ronnvall)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:596
+msgid ""
+"intrusion detection: set stream.inline: true as an IPS workaround for a "
+"Suricata 4.1 regression `[1] "
+"<https://redmine.openinfosecfoundation.org/issues/2811>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:597
+msgid "intrusion detection: support required rules/files in metadata package"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:598
+msgid "intrusion detection: less extensive logging"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:599
+msgid "ipsec: fix escaping issue in mobile page"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:600
+msgid "monit: fix address validation"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:601
+msgid "openvpn: obey verify-x509-name for remote access (user auth)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:602
+msgid "openvpn: proper daemonize instead of background job"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:603
+msgid "openvpn: extract full CA chain for setup"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:604
+msgid "openvpn: missing \"port\" in protocol export"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:605
+msgid "mvc: fix port validation on whitespace input"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:606
+msgid "mvc: fix compare constraint (contributed by Fabian Franz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:607
+msgid "mvc: fix read-only access on config.xml during locked runs"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:608
+msgid "mvc: prevent UserException from being pushed to PHP error log"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:609
+msgid "ui: legacy browsers accommodation (contributed by NOYB)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:610
+msgid "ui: update to Tokenize2 1.3 plus additional escaping patches"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:611
+msgid "ui: add support for Tokenize2 sortable tag"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:612
+msgid "ui: hardening of gettext() invokes in HTML tags"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:613
+msgid "ui: fix setFormData() HTML decode"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:614
+msgid ""
+"plugins: os-bind safe search google domain updates (contributed by "
+"Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:615
+msgid ""
+"plugins: os-dnscrypt-proxy 1.2 `[2] "
+"<https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/pkg-"
+"descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:616
+msgid "plugins: os-dyndns 1.13 IPv6 device lookup fix"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:617
+msgid "plugins: os-etpro-telemetry 1.2 reduces telemetry data collection"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:618
+msgid ""
+"plugins: os-frr 1.8 adds route summarization via area range (contributed "
+"by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:619
+msgid ""
+"plugins: os-haproxy 2.15 `[3] "
+"<https://github.com/opnsense/plugins/pull/1167>`__  `[4] "
+"<https://github.com/opnsense/plugins/pull/1209>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:620
+msgid ""
+"plugins: os-nginx 1.8 `[5] "
+"<https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:621
+msgid ""
+"plugins: os-ntopng 1.2 `[6] "
+"<https://github.com/opnsense/plugins/blob/master/net/ntopng/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:622
+msgid ""
+"src: clear callee-preserved registers on amd64 syscall exit `[7] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"SA-19:01.syscall.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:623
+msgid "ports: cpdup 1.20"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:624
+msgid "ports: curl 7.64.0 `[8] <https://curl.haxx.se/changes.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:625
+msgid ""
+"ports: libressl 2.8.3 `[9] "
+"<https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-2.8.3-relnotes.txt>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:626
+msgid ""
+"ports: openvpn 2.4.7 `[10] "
+"<https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn24>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:627
+msgid "ports: pam_opnsense manual page addition"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:628
+msgid "ports: sqlite 3.27.1 `[11] <https://sqlite.org/releaselog/3_27_1.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:629
+msgid ""
+"ports: squid forgery check avoidance `[12] "
+"<https://github.com/opnsense/ports/issues/66>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:630
+msgid "ports: strongswan 5.7.2 `[13] <https://wiki.strongswan.org/versions/72>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:631
+msgid ""
+"ports: unbound 1.9.0 `[14] "
+"<https://nlnetlabs.nl/projects/unbound/download/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:637
+msgid "19.1.1 (February 05, 2019)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:640
+msgid ""
+"This is a security and reliability release: WAN DHCP will no longer trust"
+" the server MTU given.  Uncoordinated cross site scripting issues have "
+"been fixed.  And the Python request library was patched due to CVE "
+"2018-18074."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:646
+msgid ""
+"system: address XSS-prone escaping issues `[1] "
+"<https://packetstormsecurity.com/files/151381/OPNsense-18.7-Cross-Site-"
+"Scripting.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:647
+msgid "firewall: add port range validation to shaper inputs"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:648
+msgid "firewall: drop description validation constraints"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:649
+msgid "interfaces: DHCP override MTU option (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:650
+msgid "interfaces: properly configure SIM PIN on custom modems"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:651
+msgid ""
+"reporting: prevent cleanup from deleting current data when future data "
+"exists"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:652
+msgid ""
+"ipsec: allow same local subnet if used in different phase 1 (contributed "
+"by Max Weller)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:653
+msgid "openvpn: multiple client export fixes"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:654
+msgid "web proxy: add ESD files to Windows cache option (contributed by R-Adrian)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:655
+msgid ""
+"plugins: os-acme-client 1.20 `[2] "
+"<https://github.com/opnsense/plugins/pull/1157>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:656
+msgid "plugins: os-dyndns fix for themed colours (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:657
+msgid "plugins: os-etpro-telemetry 1.1 adds random delay to telemetry data send"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:658
+msgid ""
+"plugins: os-nginx 1.7 `[3] "
+"<https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:659
+msgid ""
+"plugins: os-rspamd reads DKIM keys via Redis (contributed by Garrod "
+"Alwood)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:660
+msgid "plugins: os-theme-cicada 1.14 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:661
+msgid "plugins: os-theme-tukan 1.13 (contributed by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:662
+msgid "ports: ca_root_nss 3.42.1"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:663
+msgid ""
+"ports: lighttpd 1.4.53 `[4] "
+"<https://www.lighttpd.net/2019/1/27/1.4.53/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:664
+msgid ""
+"ports: py-request 2.21.0 `[5] <https://vuxml.freebsd.org/freebsd"
+"/50ad9a9a-1e28-11e9-98d7-0050562a4d7b.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:670
+msgid "19.1 (January 31, 2019)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:699
+msgid "These are the most prominent changes since version 18.7:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:701
+msgid "fully functional firewall alias API"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:702
+msgid "PIE firewall shaper support"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:703
+msgid "firewall NAT rule logging support"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:704
+msgid "2FA via LDAP-TOTP combination"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:705
+msgid "WPAD / PAC and parent proxy support in the web proxy"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:706
+msgid "P12 certificate export with custom passwords"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:707
+msgid "Dpinger is now the default gateway monitor"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:708
+msgid ""
+"ET Pro Telemetry edition plugin `[2] "
+"<https://docs.opnsense.org/manual/etpro_telemetry.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:709
+msgid "extended IPv6 DUID support"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:710
+msgid "Dnsmasq DNSSEC support"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:711
+msgid "OpenVPN client export API"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:712
+msgid "Realtek NIC driver version 1.95"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:713
+msgid "HardenedBSD 11.2, LibreSSL 2.7"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:714
+msgid "Unbound 1.8, Suricata 4.1"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:715
+msgid "Phalcon 3.4, Perl 5.28"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:716
+msgid "firmware health check extended to cover all OS files, HTTPS mirror default"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:717
+msgid "updates are browser cache-safe regarding CSS and JavaScript assets"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:718
+msgid "collapsible side bar menu in the default theme"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:719
+msgid ""
+"language updates for Chinese, Czech, French, German, Japanese, Portuguese"
+" and Russian"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:720
+msgid ""
+"new plugins for API backup export, Bind, Hardware widget, Nginx, Ntopng, "
+"VnStat, Dnscrypt-proxy"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:722
+msgid "Here are the full changes against version 19.1-RC2:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:724
+msgid "ipsec: add firewall interface as soon as phase 1 is enabled"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:725
+msgid "ipsec: phase 1 selection GUI JavaScript compatibility fix"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:726
+msgid "monit: widget improvements and bug fix (contributed by Frank Brendel)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:727
+msgid "ui: fix regression in single host or network subnet select in static pages"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:728
+msgid ""
+"plugins: os-frr 1.7 updates OSPF outbound rules (contributed by Fabian "
+"Franz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:729
+msgid "plugins: os-telegraf 1.7.4 fixes packet filter input"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:730
+msgid "plugins: os-theme-rebellion 1.8.2 adds image colour invert"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:731
+msgid ""
+"plugins: os-vnstat 1.1 `[3] "
+"<https://github.com/opnsense/plugins/blob/master/net/vnstat/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:732
+msgid "plugins: os-zabbix-agent now uses Zabbix version 4.0"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:733
+msgid ""
+"src: revert mmc_calculate_clock() as HS200/HS400 support breaks legacy "
+"support"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:734
+msgid ""
+"src: update sqlite3-3.20.0 to sqlite3-3.26.0 `[4] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"EN-19:03.sqlite.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:735
+msgid ""
+"src: import tzdata 2018h, 2018i `[5] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"EN-19:04.tzdata.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:736
+msgid ""
+"src: avoid unsynchronized updates to kn_status `[6] "
+"<https://www.freebsd.org/security/advisories/FreeBSD-"
+"EN-19:05.kqueue.asc>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:737
+msgid "ports: ca_root_nss 3.42"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:738
+msgid ""
+"ports: dhcp6c 20190128 prevent rawops double-free (contributed by Team "
+"Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:739
+msgid ""
+"ports: sudo patch to fix listpw=never `[7] "
+"<https://bugzilla.sudo.ws/show_bug.cgi?id=869>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:741
+msgid "Migration notes and minor incompatibilities to look out for:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:743
+msgid ""
+"Gateway health graphs may need a manual reset due to the Apinger to "
+"Dpinger migration.  Apinger is no longer available."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:744 ../../source/releases/CE_19.1.rst:943
+msgid ""
+"Intrusion detection GeoIP rules are automatically deactivated and need to"
+" be manually migrated to firewall alias GeoIP."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:745 ../../source/releases/CE_19.1.rst:946
+msgid ""
+"Quagga plugin has been superseded by FRR plugin.  A binary quagga package"
+" has been conserved for the time being."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:746
+msgid ""
+"Please read the FRR documentation with regard to the required system "
+"tunables `[8] <https://docs.opnsense.org/manual/dynamic_routing.html>`__ "
+"."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:747
+msgid ""
+"Bhyve VM boot may fail as a guest.  Use the \"-w\" parameter `[9] "
+"<https://forum.opnsense.org/index.php?topic=11492.0>`__  to boot."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:748
+msgid ""
+"Boot may fail due to Meltdown/Spectre mitigation.  A workaround `[10] "
+"<https://github.com/opnsense/core/issues/3177>`__  exists."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:749 ../../source/releases/CE_19.1.rst:948
+msgid "SNMP plugin has been superseded by Net-SNMP plugin."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:788
+msgid "19.1.r2 (January 23, 2019)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:791
+msgid ""
+"Small online update issued to fix known and subsequently patched issues. "
+"If you use Insight and flowd_aggregate service refuses to start go to "
+"System: Firmware: Packages and reinstall the \"flowd\" package."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:795
+msgid "These are the changes in detail:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:797
+msgid "firmware: fix invisible error in health check"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:798
+msgid "intrusion detection: avoid spurious migration error on factor reset"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:799
+msgid "monit: fix dashboard widget display and general settings save"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:800
+msgid ""
+"plugins: os-telegraf fixes checkbox for CPU time collect (contributed by "
+"chaispaquichui)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:801
+msgid "ports: flowd Python bindings runtime fix"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:804
+msgid "Stay safe, Your OPNsense team"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:809
+msgid "19.1.r1 (January 21, 2019)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:812
+msgid ""
+"For almost four years now, OPNsense is driving innovation through "
+"modularising and hardening the open source firewall, with simple and "
+"reliable firmware upgrades, multi-language support, HardenedBSD security,"
+" fast adoption of upstream software updates as well as clear and stable "
+"2-Clause BSD licensing."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:818
+msgid ""
+"We thank all of you for helping test, shape and contribute to the "
+"project! We know it would not be the same without you."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:831
+msgid "Here are the full changes against version 18.7.10:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:833
+msgid "system: console port assignment can now assign OPT without LAN"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:834
+msgid "system: anti-lockout will use OPT1 if LAN is not present"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:835
+msgid "system: allow creation of combined client/server SSL certificate"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:836
+msgid "system: gateway monitoring switches to Dpinger with Apinger removed"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:837
+msgid "system: detect unassigned gateways in static address setups"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:838
+msgid ""
+"system: more advanced gateway monitoring options for Dpinger (contributed"
+" by Team Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:839
+msgid "system: removal of the old notification system in favour of Monit"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:840
+msgid "system: only allow syslog remote binding to assigned interfaces"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:841
+msgid "system: disable IP aliases configured with VHID on temporary disable"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:842
+msgid "system: remove AHCI MSI disable workaround used in FreeBSD 11.1"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:843
+msgid "system: default gateway switching moves back to general settings"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:844
+msgid "system: beep sound notification setting moves to misc. settings"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:845
+msgid "system: limit log line length in log widget"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:846
+msgid ""
+"interfaces: change 6RD/6to4 interface prefix from internal name to "
+"physical device"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:847
+msgid "interfaces: prohibit tracking on 6RD with /64 upstream prefix"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:848
+msgid ""
+"interfaces: remove unneeded use of potentially clashing fe80::1:1 "
+"addresses for IPv6 tracking"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:849
+msgid ""
+"interfaces: clear an apparently faulty system DUID when no manual DUID is"
+" set"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:850
+msgid "interfaces: updated custom dhclient-script used for DHCPv4"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:851
+msgid "interfaces: VIP support for GRE devices"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:852
+msgid "interfaces: simplify find_interface_ip\\* functions"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:853
+msgid "interfaces: remove get_interface_subnet\\* functions"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:854
+msgid "interfaces: remove unused get_possible_listen_ips function"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:855
+msgid "interfaces: link status indicator on assignments page"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:856
+msgid "interfaces: unify interface removal code"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:857
+msgid "firewall: switch GeoIP database download to HTTPS"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:858
+msgid "firewall: find IP reference tool for aliases"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:859
+msgid "firewall: improve alias page responsiveness with large number of addresses"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:860
+msgid "firewall: show system errors when reloading aliases"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:861
+msgid "firewall: NAT port forward logging option and live view support"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:862
+msgid "firewall: optionally resolve all host names in live view"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:863
+msgid "firewall: not all states could be removed in diagnostics page"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:864
+msgid "firewall: clean up unused NAT rule association code"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:865
+msgid "reporting: improve handling of empty Insight datasets"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:866
+msgid "reporting: prepare for Python 3 conversion"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:867
+msgid "firmware: switch default mirror location to HTTPS"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:868
+msgid "firmware: health check for base and kernel files including version check"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:869
+msgid "firmware: support base and kernel file size in packages overview"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:870
+msgid ""
+"firmware: /var MFS compatibility on base installation when reboot is "
+"deferred"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:871
+msgid "firmware: command line core lock feature prevents package upgrades"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:872
+msgid "firmware: internally remember plugins installed or removed in the GUI"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:873
+msgid "firmware: show last known update log on page open"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:874
+msgid "firmware: show untrusted repository error in GUI"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:875
+msgid "firmware: separate chanelogs tab for clarity"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:876
+msgid "dhcp: refuse setup of instances that have no associated IP address"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:877
+msgid "dhcp: fix lease time local vs. UTC display in IPv6 leases"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:878
+msgid "installer: change communication from TCP to named pipes"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:879
+msgid "installer: fix sporadic segmentation faults in frontend code"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:880
+msgid "installer: allow config import from ZFS pools"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:881
+msgid "installer: allow password reset on ZFS pools"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:882
+msgid "installer: removed a number of unused modules"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:883
+msgid ""
+"ipsec: generate correct config for \"Hybrid-RSA + XAuth\" (contributed by"
+" Max Weller)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:884
+msgid "ipsec: reworked strongswan.conf generation"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:885
+msgid "ipsec: use new interface subnet retrieval code"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:886
+msgid "monit: support declaring dependencies (contributed by Alexander Werner)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:887
+msgid "monit: add Service/Test type relation (contributed by Frank Brendel)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:888
+msgid "monit: add CARP status to standard services"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:889
+msgid "monit: add gateway alerts to standard services"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:890
+msgid "monit: backend rework to simplify the service"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:891
+msgid "intrusion detection: support base ruleset overlays and improve logging"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:892
+msgid "intrusion detection: GeoIP feature in user-defined rules has been removed"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:893
+msgid "intrusion detection: obey Content-Disposition header"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:894
+msgid "openvpn: client export rewrite, new export option for The Green Bow"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:895
+msgid "unbound: reworked slab calculation"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:896
+msgid "unbound: added statistics page"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:897
+msgid ""
+"unbound: only bind to interfaces or OpenVPN instances, always bind to "
+"loopback"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:898
+msgid "unbound: fix ACL subnet calculation for OpenVPN instances"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:899
+msgid "unbound: do not generate host entries for OpenVPN instances"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:900
+msgid "unbound: improve help text wording and general settings layout"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:901
+msgid "web proxy: parent proxy support (contributed by Michael Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:902
+msgid "wizard: fix checkbox label styling"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:903
+msgid "mvc: converted reboot, halt and license page to MVC"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:904
+msgid "mvc: compared-to-field constraint (contributed by Fabian Franz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:905
+msgid ""
+"mvc: external clients which set Authorization header now receive raw JSON"
+" responses"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:906
+msgid "mvc: fix empty value check in grid (contributed by Smart-Soft)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:907
+msgid "mvc: globally lock config when multiple items are deleted at once"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:908
+msgid "mvc: volt template JavaScript cleanups"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:909
+msgid "ui: updated bootstrap-select to version 1.13.3"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:910
+msgid ""
+"ui: collapsible sidebar support in default theme (contributed by Team "
+"Rebellion)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:911
+msgid ""
+"plugins: os-acme-client 1.19 `[2] "
+"<https://github.com/opnsense/plugins/pull/1134>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:912
+msgid ""
+"plugins: os-c-icap 1.7 adds template support (contributed by Michael "
+"Muenz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:913
+msgid ""
+"plugins: os-dmidecode 1.0 hardware information widget (contributed by "
+"Smart-Soft)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:914
+msgid ""
+"plugins: os-dyndns 1.12 changes HE tunnel broker to newer API "
+"(contributed by Dusan Dragic)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:915
+msgid "plugins: os-frr switches to FRR 5.0.2, please see below"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:916
+msgid "plugins: os-l2tp 1.8 interface now selects reachable server address"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:917
+msgid "plugins: os-pptp 1.8 interface now selects reachable server address"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:918
+msgid ""
+"plugins: os-openconnect 1.3.3 `[3] "
+"<https://github.com/opnsense/plugins/blob/master/security/openconnect"
+"/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:919
+msgid "plugins: os-quagga removed, please use os-frr instead"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:920
+msgid ""
+"plugins: os-nginx 1.6 `[4] "
+"<https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:921
+msgid ""
+"plugins: os-rspamd 1.4 allows to set manual spam scores and subject "
+"(contributed by Michael Muenz and Fabian Franz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:922
+msgid "plugins: os-snmp removed, please use os-net-snmp instead"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:923
+msgid "plugins: os-theme-cicada 1.13"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:924
+msgid "plugins: os-theme-tukan 1.12"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:925
+msgid "plugins: os-wol 2.1 fixes widget link (contributed by Fabian Franz)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:926
+msgid ""
+"src: HardenedBSD 11.2-RELEASE-p7 `[5] <https://hardenedbsd.org/content"
+"/easy-feature-comparison>`__  `[6] "
+"<https://www.freebsd.org/releases/11.2R/relnotes.html>`__  `[7] "
+"<https://www.freebsd.org/releases/11.2R/errata.html>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:927
+msgid ""
+"src: fix missing transmit visibility for BPF-based listeners in native "
+"netmap mode"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:928
+msgid "src: limit the maximum number of fragments per packet in pf"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:929
+msgid "src: replace rwlock on PF_RULES_LOCK with rmlock in pf"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:930
+msgid "src: do not discard UDP6 traffic in Hyper-V adaptors"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:931
+msgid "src: fix state sync during initial bulk update in pfsync"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:932
+msgid "src: unbreak dhclient(8) option 26 processing"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:933
+msgid "src: import APU 1-3 LED kernel module"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:934
+msgid "ports: krb5 1.17 `[8] <https://web.mit.edu/kerberos/krb5-1.17/>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:935
+msgid "ports: php 7.1.26 `[9] <https://php.net/ChangeLog-7.php#7.1.26>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:936
+msgid "ports: sudo 1.8.27 `[10] <https://www.sudo.ws/stable.html#1.8.27>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:937
+msgid "ports: perl 5.28.1 `[11] <https://perldoc.perl.org/5.28.1/perldelta>`__"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:938
+msgid ""
+"ports: suricata netmap forward-compatibility patch (contributed by Sunny "
+"Valley Networks)"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:940
+msgid "Known issues and limitations:"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:942
+msgid ""
+"Gateway health graphs may need a manual reset due to the Apinger to "
+"Dpinger migration."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:944
+msgid ""
+"Monit general settings do not save.  A patch exists `[12] "
+"<https://github.com/opnsense/core/commit/a2899594>`__  to remedy this "
+"problem: opnsense-patch a2899594"
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:945
+msgid ""
+"Issue with IDS migration code creating a spurious crash report.  Patch "
+"already done for the final 19.1."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:947
+msgid ""
+"Please read the FRR documentation with regard to the required system "
+"tunables `[13] <https://docs.opnsense.org/manual/dynamic_routing.html>`__"
+" ."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:949
+msgid "ZFS guided installation pending."
+msgstr ""
+
+#: ../../source/releases/CE_19.1.rst:970
+msgid "Please let us know about your experience!"
+msgstr ""
+

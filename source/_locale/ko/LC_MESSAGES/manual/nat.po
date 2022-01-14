@@ -1,0 +1,534 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/nat.rst:3
+msgid "Network Address Translation"
+msgstr ""
+
+#: ../../source/manual/nat.rst:5
+msgid ""
+"Network Address Translation (abbreviated to NAT) is a way to separate "
+"external and internal networks (WANs and LANs), and to share an external "
+"IP between clients on the internal network. NAT can be used on IPv4 and "
+"IPv6. For IPv6, :doc:`Network Prefix Translation <nptv6>` is also "
+"available."
+msgstr ""
+
+#: ../../source/manual/nat.rst:9
+msgid ""
+"Most of the options below use three different addresses: the source, "
+"destination and redirect address. These addresses are used for the "
+"following:"
+msgstr ""
+
+#: ../../source/manual/nat.rst:13 ../../source/manual/nat.rst:65
+#: ../../source/manual/nat.rst:109 ../../source/manual/nat.rst:149
+msgid "Source"
+msgstr ""
+
+#: ../../source/manual/nat.rst:13
+msgid "Where the traffic comes from. This can often be left on “any”."
+msgstr ""
+
+#: ../../source/manual/nat.rst:14 ../../source/manual/nat.rst:70
+#: ../../source/manual/nat.rst:111 ../../source/manual/nat.rst:153
+msgid "Destination"
+msgstr ""
+
+#: ../../source/manual/nat.rst:14
+msgid ""
+"Where the traffic is headed. For incoming traffic from outside, this is "
+"usually your external IP address."
+msgstr ""
+
+#: ../../source/manual/nat.rst:15
+msgid "Redirect"
+msgstr ""
+
+#: ../../source/manual/nat.rst:15
+msgid "Where the traffic should be redirected."
+msgstr ""
+
+#: ../../source/manual/nat.rst:20
+msgid ""
+"Network Address Translation should not be relied upon as a security "
+"measure."
+msgstr ""
+
+#: ../../source/manual/nat.rst:21
+msgid "Disabling pf will also disable NAT."
+msgstr ""
+
+#: ../../source/manual/nat.rst:25
+msgid "Some terms explained"
+msgstr ""
+
+#: ../../source/manual/nat.rst:27
+msgid ""
+"**BINAT**: NAT generally works in one direction. However, if you have "
+"networks of equal size, you can also use BINAT, which is bidirectional. "
+"This can simplify your set-up. If you don't have networks of equal size, "
+"you can only use regular NAT."
+msgstr ""
+
+#: ../../source/manual/nat.rst:30
+msgid ""
+"**NAT reflection**: When a client on the internal network tries to access"
+" another client, but using the *external* IP instead of the internal one "
+"(which would the most logical), NAT reflection can rewrite this request "
+"so that it uses the internal IP, in order to avoid taking a detour and "
+"applying rules meant for actual outside traffic."
+msgstr ""
+
+#: ../../source/manual/nat.rst:35
+msgid ""
+"The NAT rules generated with enabling **NAT reflection** only include "
+"networks directly connected to your Firewall. This means if you have a "
+"private network separated from your LAN you need to add this with a "
+"manual outbound NAT rule."
+msgstr ""
+
+#: ../../source/manual/nat.rst:39
+msgid ""
+"**Pool options**: When there are multiple IPs to choose from, this option"
+" will allow regulating which IP gets used. The default, Round Robin, will"
+" simply distribute packets to one server after the other. If you only "
+"have one external IP, this option has no effect."
+msgstr ""
+
+#: ../../source/manual/nat.rst:45
+msgid "Port forwarding"
+msgstr ""
+
+#: ../../source/manual/nat.rst:47
+msgid ""
+"When multiple clients share an external IP address, any connection not "
+"initiated by one of the clients will not succeed since the firewall will "
+"not know where to send the traffic. This can be addressed by creating "
+"port forwarding rules. For example, for a web server behind the firewall "
+"to be accessible, ports 80 and 443 need to be redirected to it."
+msgstr ""
+
+#: ../../source/manual/nat.rst:52
+msgid "Port forwarding is also referred to as “Destination NAT” or “DNAT”."
+msgstr ""
+
+#: ../../source/manual/nat.rst:54
+msgid ""
+"In OPNsense, port forwarding can be set up by navigating to "
+":menuselection:`Firewall --> NAT --> Port Forward`. Here, you will see an"
+" overview of port forwarding rules. New rules can be added by clicking "
+"**Add** in the upper right corner."
+msgstr ""
+
+#: ../../source/manual/nat.rst:57 ../../source/manual/nat.rst:101
+#: ../../source/manual/nat.rst:140
+msgid "When adding a rule, the following fields are available:"
+msgstr ""
+
+#: ../../source/manual/nat.rst:60 ../../source/manual/nat.rst:104
+#: ../../source/manual/nat.rst:143
+msgid "Disabled"
+msgstr ""
+
+#: ../../source/manual/nat.rst:60 ../../source/manual/nat.rst:104
+#: ../../source/manual/nat.rst:143
+msgid "Disable this rule without removing it."
+msgstr ""
+
+#: ../../source/manual/nat.rst:61
+msgid "No RDR (NOT)"
+msgstr ""
+
+#: ../../source/manual/nat.rst:61
+msgid ""
+"Do not create a redirect rule. Leave this disabled unless you know what "
+"you are doing."
+msgstr ""
+
+#: ../../source/manual/nat.rst:62 ../../source/manual/nat.rst:105
+#: ../../source/manual/nat.rst:145
+msgid "Interface"
+msgstr ""
+
+#: ../../source/manual/nat.rst:62 ../../source/manual/nat.rst:105
+#: ../../source/manual/nat.rst:145
+msgid ""
+"Which interface this rule should apply to. Most of the time, this will be"
+" WAN."
+msgstr ""
+
+#: ../../source/manual/nat.rst:63 ../../source/manual/nat.rst:146
+msgid "TCP/IP version"
+msgstr ""
+
+#: ../../source/manual/nat.rst:63
+msgid "IPv4, IPv6 or both."
+msgstr ""
+
+#: ../../source/manual/nat.rst:64 ../../source/manual/nat.rst:147
+msgid "Protocol"
+msgstr ""
+
+#: ../../source/manual/nat.rst:64 ../../source/manual/nat.rst:147
+msgid "In typical scenarios, this will be TCP."
+msgstr ""
+
+#: ../../source/manual/nat.rst:65
+msgid ""
+"Where the traffic comes from. Click “Advanced” to see the other source "
+"settings."
+msgstr ""
+
+#: ../../source/manual/nat.rst:66
+msgid "Source / Invert"
+msgstr ""
+
+#: ../../source/manual/nat.rst:66 ../../source/manual/nat.rst:108
+#: ../../source/manual/nat.rst:148
+msgid "Invert match in “Source” field."
+msgstr ""
+
+#: ../../source/manual/nat.rst:67
+msgid "Source port range"
+msgstr ""
+
+#: ../../source/manual/nat.rst:67 ../../source/manual/nat.rst:150
+msgid ""
+"When applicable, the source port we should match on. This is usually "
+"random and almost never equal to the destination port range (and should "
+"usually be 'any')."
+msgstr ""
+
+#: ../../source/manual/nat.rst:69
+msgid "Destination / Invert"
+msgstr ""
+
+#: ../../source/manual/nat.rst:69 ../../source/manual/nat.rst:110
+#: ../../source/manual/nat.rst:152
+msgid "Invert match in “Destination” field."
+msgstr ""
+
+#: ../../source/manual/nat.rst:70
+msgid "Where the traffic is headed."
+msgstr ""
+
+#: ../../source/manual/nat.rst:71
+msgid "Destination port range"
+msgstr ""
+
+#: ../../source/manual/nat.rst:71
+msgid "Service port(s) the traffic is using"
+msgstr ""
+
+#: ../../source/manual/nat.rst:72
+msgid "Redirect target IP"
+msgstr ""
+
+#: ../../source/manual/nat.rst:72
+msgid "Where to redirect the traffic to."
+msgstr ""
+
+#: ../../source/manual/nat.rst:73
+msgid "Redirect target port"
+msgstr ""
+
+#: ../../source/manual/nat.rst:73
+msgid "Which port to use (when using tcp and/or udp)"
+msgstr ""
+
+#: ../../source/manual/nat.rst:74
+msgid "Pool Options"
+msgstr ""
+
+#: ../../source/manual/nat.rst:74 ../../source/manual/nat.rst:159
+msgid "See “Some terms explained”. The default is to use Round robin."
+msgstr ""
+
+#: ../../source/manual/nat.rst:75 ../../source/manual/nat.rst:112
+#: ../../source/manual/nat.rst:163
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/nat.rst:75 ../../source/manual/nat.rst:112
+#: ../../source/manual/nat.rst:163
+msgid "A description to easily find the rule in the overview."
+msgstr ""
+
+#: ../../source/manual/nat.rst:76 ../../source/manual/nat.rst:160
+msgid "Set local tag"
+msgstr ""
+
+#: ../../source/manual/nat.rst:76 ../../source/manual/nat.rst:160
+msgid "Set a tag that other NAT rules and filters can check for."
+msgstr ""
+
+#: ../../source/manual/nat.rst:77 ../../source/manual/nat.rst:161
+msgid "Match local tag"
+msgstr ""
+
+#: ../../source/manual/nat.rst:77 ../../source/manual/nat.rst:161
+msgid "Check for a tag set by another rule."
+msgstr ""
+
+#: ../../source/manual/nat.rst:78 ../../source/manual/nat.rst:162
+msgid "No XMLRPC sync"
+msgstr ""
+
+#: ../../source/manual/nat.rst:78 ../../source/manual/nat.rst:162
+msgid ""
+"Prevent this rule from being synced to a backup host. (Checking this on "
+"the backup host has no effect.)"
+msgstr ""
+
+#: ../../source/manual/nat.rst:79 ../../source/manual/nat.rst:113
+msgid "NAT reflection"
+msgstr ""
+
+#: ../../source/manual/nat.rst:79 ../../source/manual/nat.rst:113
+msgid ""
+"See “Some terms explained”. Leave this on the default unless you have a "
+"good reason not to."
+msgstr ""
+
+#: ../../source/manual/nat.rst:80
+msgid "Filter rule association"
+msgstr ""
+
+#: ../../source/manual/nat.rst:80
+msgid "Associate this with a regular firewall rule."
+msgstr ""
+
+#: ../../source/manual/nat.rst:93
+msgid "One-to-one"
+msgstr ""
+
+#: ../../source/manual/nat.rst:95
+msgid ""
+"One-to-one NAT will, as the name implies, translate two IPs one-to-one, "
+"rather than one-to-many as is most common. In this respect, it is similar"
+" to what NPT does for IPv6."
+msgstr ""
+
+#: ../../source/manual/nat.rst:98
+msgid ""
+"In OPNsense, one-to-one NAT can be set up by navigating to "
+":menuselection:`Firewall --> NAT --> One-to-one`. Here, you will see an "
+"overview of one-to-one rules. New rules can be added by clicking **Add** "
+"in the upper right corner."
+msgstr ""
+
+#: ../../source/manual/nat.rst:106
+msgid "Type"
+msgstr ""
+
+#: ../../source/manual/nat.rst:106
+msgid "BINAT (default) or NAT. See “Some terms explained”."
+msgstr ""
+
+#: ../../source/manual/nat.rst:107
+msgid "External network"
+msgstr ""
+
+#: ../../source/manual/nat.rst:107
+msgid ""
+"Starting address of external network, which should be used to translate "
+"addresses to/from."
+msgstr ""
+
+#: ../../source/manual/nat.rst:108
+msgid "Source / invert"
+msgstr ""
+
+#: ../../source/manual/nat.rst:109
+msgid ""
+"The internal network for this mapping, usually some `RFC 1918 "
+"<https://nl.wikipedia.org/wiki/RFC_1918>`_ range"
+msgstr ""
+
+#: ../../source/manual/nat.rst:110
+msgid "Destination / invert"
+msgstr ""
+
+#: ../../source/manual/nat.rst:111
+msgid ""
+"The destination network packages should match, when used to map external "
+"networks, this is usually :code:`any`"
+msgstr ""
+
+#: ../../source/manual/nat.rst:119
+msgid "Outbound"
+msgstr ""
+
+#: ../../source/manual/nat.rst:121
+msgid ""
+"When a client on an internal network makes an outbound request, the "
+"gateway will have to change the source IP to the external IP of the "
+"gateway, since the outside server will not be able to send an answer back"
+" otherwise."
+msgstr ""
+
+#: ../../source/manual/nat.rst:124
+msgid "Outbound NAT is also referred to as “Source NAT” or “SNAT”."
+msgstr ""
+
+#: ../../source/manual/nat.rst:126
+msgid ""
+"If you only have one external IP, then you leave the Outbound NAT options"
+" on automatic. However, if you have multiple IP addresses, you might want"
+" to change the settings and add some custom rules."
+msgstr ""
+
+#: ../../source/manual/nat.rst:129
+msgid "The main settings for outbound are as follows:"
+msgstr ""
+
+#: ../../source/manual/nat.rst:132
+msgid "Automatic outbound NAT rule generation"
+msgstr ""
+
+#: ../../source/manual/nat.rst:132
+msgid ""
+"The default. Follows the behaviour described above, and is good for most "
+"scenarios."
+msgstr ""
+
+#: ../../source/manual/nat.rst:133
+msgid "Manual outbound NAT rule generation"
+msgstr ""
+
+#: ../../source/manual/nat.rst:133
+msgid "No automatic rules are generated. They can be added manually."
+msgstr ""
+
+#: ../../source/manual/nat.rst:134
+msgid "Hybrid outbound NAT rule generation"
+msgstr ""
+
+#: ../../source/manual/nat.rst:134
+msgid ""
+"Automatic rules are added, but additional manual rules can be added as "
+"well."
+msgstr ""
+
+#: ../../source/manual/nat.rst:135
+msgid "Disable outbound NAT rule generation"
+msgstr ""
+
+#: ../../source/manual/nat.rst:135
+msgid ""
+"Disables outbound NAT. This is used for :doc:`transparent bridges <how-"
+"tos/transparent_bridge>`, for example."
+msgstr ""
+
+#: ../../source/manual/nat.rst:138
+msgid "New rules can be added by clicking **Add** in the upper right corner."
+msgstr ""
+
+#: ../../source/manual/nat.rst:144
+msgid "Do not NAT"
+msgstr ""
+
+#: ../../source/manual/nat.rst:144
+msgid ""
+"Disable NAT for all traffic matching this rule. Leave this disabled "
+"unless you know what you are doing."
+msgstr ""
+
+#: ../../source/manual/nat.rst:146
+msgid "IPv4 or IPv6"
+msgstr ""
+
+#: ../../source/manual/nat.rst:148
+msgid "Source invert"
+msgstr ""
+
+#: ../../source/manual/nat.rst:149
+msgid "The source network to match"
+msgstr ""
+
+#: ../../source/manual/nat.rst:150
+msgid "Source port"
+msgstr ""
+
+#: ../../source/manual/nat.rst:152
+msgid "Destination invert"
+msgstr ""
+
+#: ../../source/manual/nat.rst:153
+msgid "Destination network to match"
+msgstr ""
+
+#: ../../source/manual/nat.rst:154
+msgid "Destination port"
+msgstr ""
+
+#: ../../source/manual/nat.rst:154
+msgid "Service port the traffic is using"
+msgstr ""
+
+#: ../../source/manual/nat.rst:155
+msgid "Translation / target"
+msgstr ""
+
+#: ../../source/manual/nat.rst:155
+msgid "What to translate matching packets to."
+msgstr ""
+
+#: ../../source/manual/nat.rst:156
+msgid "Log"
+msgstr ""
+
+#: ../../source/manual/nat.rst:156
+msgid ""
+"Put packets matching this rule in the logs. Use this sparingly to avoid "
+"overflowing the logs."
+msgstr ""
+
+#: ../../source/manual/nat.rst:157
+msgid "Translation / port"
+msgstr ""
+
+#: ../../source/manual/nat.rst:157
+msgid "Which port to use on the target"
+msgstr ""
+
+#: ../../source/manual/nat.rst:158
+msgid "Static-port"
+msgstr ""
+
+#: ../../source/manual/nat.rst:158
+msgid "Prevents pf(4) from modifying the source port on TCP and UDP packets."
+msgstr ""
+
+#: ../../source/manual/nat.rst:159
+msgid "Pool options"
+msgstr ""
+
+#: ../../source/manual/nat.rst:169
+msgid "API access"
+msgstr ""
+
+#: ../../source/manual/nat.rst:172
+msgid ""
+"Partial API access, for outbound NAT, is provided with the :code:`os-"
+"firewall` plugin, which is described in more detail in the :doc:`firewall"
+" <../development/api/plugins/firewall>` api reference manual."
+msgstr ""
+

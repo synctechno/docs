@@ -1,0 +1,291 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/stunnel.rst:3
+msgid "Stunnel"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:5
+msgid ""
+"Stunnel in OPNsense can be used to forward tcp connections securely using"
+" TLS mutual authentication. Although the application itself supports "
+"authentication based on pre-shared keys, our plugin only supports "
+"certificate based authentication, which is more secure but comes with "
+"more (connect) overhead (https://www.stunnel.org/perf.html)."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:34
+msgid ""
+"The above diagram shows the basic functionality as provided by this "
+"plugin, the client part (not delivered by this plugin) connects to to the"
+" server at a predefined port and starts forwarding local received packets"
+" to the other end of the tunnel."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:37
+msgid ""
+"Securing http proxy traffic is one of the more common use-cases of "
+"stunnel."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:41
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:43
+msgid ""
+"Before setting up our new secured tunnel, we need to make sure we have a "
+"Certificate Authority available together with certificates which can be "
+"used for both ends of the tunnel."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:46
+msgid ""
+"The simplest way to create a CA is to use an internal self signed one, "
+"which you can do in :menuselection:`System -> Trust -> Authorities` , "
+"choose  \"Create an internal Certificate Authority\" as method and fill "
+"in all the details."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:49
+msgid ""
+"When you have a CA available, you can create a certificate for the server"
+" (this machine) and the client. Just go to :menuselection:`System -> "
+"Trust -> Certificates` and create an internal certificate, choose the "
+"right type (server for this end of the tunnel) and select the created CA "
+"from the previous step. The common name identifies both ends of the "
+"tunnel, you can choose a fully qualified domain name here for the server "
+"and a username for the client  (for example)."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:58
+msgid ""
+"The example setup assumes a proxy server is already configured and "
+"functional."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:62
+msgid ""
+"The plugin itself can be installed using the :menuselection:`System --> "
+"Firmware --> Plugins` menu (search for :code:`stunnel`)."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:66
+msgid "Configure the server"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:68
+msgid ""
+"To add a new tunnel, go to :menuselection:`VPN -> Stunnel -> "
+"Configuration` and click the [+] to add a new record."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst
+msgid "Listen address"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:72
+msgid ""
+"The address to listen on, we generally advice to use a loopback interface"
+" here and forward traffic to it using a :doc:`port forward <../nat>`. "
+"Leave this default (127.0.0.1) for our example."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:77
+msgid "When choosing a non loopback interface, make sure to use a static one."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst
+msgid "Listen port"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:81
+msgid ""
+"The portnumber to listen on (where the stunnel client connects to). For "
+"our example we choose :code:`31280` here."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst
+msgid "Target hostname"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:86
+msgid ""
+"The hostname or ip number of the service to connect to, for this example "
+"the internal ip address of the proxy server."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst
+msgid "Target port"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:90
+msgid ""
+"Port the service uses, in this case it would be :code:`3128` (the default"
+" squid proxy port)"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst
+msgid "Certificate"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:94
+msgid ""
+"This servers certificate, select the one created for the server in the "
+"prerequisites."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst
+msgid "CA to validate connections to"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:98
+msgid ""
+"Certificate authority to use, this stunnel will only accept connections "
+"which use a certificate issued by the same CA."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst
+msgid "enable CRL"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:102
+msgid ""
+"Enable certificate revocation lists, when selected a CRL with the format "
+"XXXXXXXX.r0 is required in the (:code:`/var/run/stunnel/certs/`) "
+"directory. If certificates are managed from this machine, all attached "
+"CRLs will be generated automatically. For more information about this "
+"option, see CRLpath in stunnels manual."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:109
+msgid ""
+"If configured and a valid CRL is not available, all connections will be "
+"denied. Additions may need a restart of stunnel (when the certificate was"
+" already used)."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst
+msgid "Description"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:115
+msgid ""
+"Enter a user friendly description here to identify this tunnel, something"
+" like \"corporate proxy\""
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:120
+msgid ""
+"To forward traffic to the loopback address from your :code:`wan` "
+"interface, go to :menuselection:`Firewall -> NAT -> Port Forward` and add"
+" a new rule with the following settings: Interface :code:`WAN`, Protocol "
+":code:`TCP`, Destination :code:`WAN address`, Destination port range "
+":code:`31280`, Redirect target IP :code:`127.0.0.1` and Redirect target "
+"port :code:`31280`"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:127
+msgid ""
+"For additional security you can enable :code:`chroot` mode in "
+":menuselection:`VPN -> Stunnel -> General`, there is however a downside "
+"in using this feature. If for some reason the system logging facility "
+"(syslog) is restarted, stunnel will loose connection to that facility, "
+"causing a lack of visibilty afterwards."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:133
+msgid "Configure the client"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:135
+msgid ""
+"Before configuring the client, make sure to install `stunnel "
+"<https://www.stunnel.org/>`__ for your platform, download the public key "
+"of your CA and the certificate created for this client."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:153
+msgid ""
+"client.pem contains both the public and private key part of this clients "
+"certificate."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:157
+msgid "Test"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:159
+msgid ""
+"When the tunnel connection is established, you should be able to connect "
+"to :code:`127.0.0.1:3128` on the connecting machine using your browsers "
+"proxy settings."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:165
+msgid "Enable Identd"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:167
+msgid ""
+"Our stunnel plugin is packed with an additional service providing an "
+"`ident <https://en.wikipedia.org/wiki/Ident_protocol>`__ (RFC 1413) "
+"protocol service. This service depends on a custom `patch "
+"<https://github.com/opnsense/ports/commit/1b9d7b1416046357cd9b2187c038787b19f2a813>`__"
+" we ship in stunnel, making sure authenticated TLS sessions are logged "
+"properly, so our ident service can filter them to track a user that "
+"belongs to an stunnel session."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:172
+msgid ""
+"When a TLS session is authenticated, a log record like the one below will"
+" be send to syslog."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:179
+msgid ""
+"Our ident service interprets this as :code:`127.0.0.2` connected using "
+"source port :code:`11446` as :code:`test_client.opnsense.local` (only the"
+" CN part is returned)"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:184
+msgid ""
+"Since our indent services binds to :code:`0.0.0.0:113` it's not "
+"compatible with other ident services likely using the same port, it also "
+"highly advisable to deny access to this services from other hosts than "
+"the consumers of this service (which is usually the firewall itself)."
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:188
+msgid ""
+"This functionality can easily be validated using two telnet sessions, one"
+" from the stunnel client keeping a session open, the other connecting to "
+"the same host using ident. The example log line above would result in the"
+" following request/response scenario:"
+msgstr ""
+
+#: ../../source/manual/how-tos/stunnel.rst:205
+msgid ""
+"Please note the :code:`127.0.0.2` host is the same as the service "
+"connecting to was running on, using a different address attached to the "
+"same firewall would result in a :code:`NO-USER` error."
+msgstr ""
+

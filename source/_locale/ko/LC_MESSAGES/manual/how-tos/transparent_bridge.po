@@ -1,0 +1,353 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:4
+msgid "Transparent Filtering Bridge"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:8
+msgid "Warning"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:9
+msgid ""
+"The Transparent Filtering Bridge is not compatible with Traffic Shaping. "
+"Do not enable the traffic shaper when using the filtering bridge."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:14
+msgid "Abstract"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:16
+msgid ""
+"A transparent firewall can be used to filter traffic without creating "
+"different subnets. This application is called filtering bridge as it acts"
+" as a bridge connection two interfaces and applies filtering rules on top"
+" of this."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:21
+msgid ""
+"For more information on Filtering Bridged on FreeBSD, see `filtering-"
+"bridges <https://www.freebsd.org/doc/en/articles/filtering-"
+"bridges/article.html>`__"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:26
+msgid "Requirements"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:28
+msgid ""
+"For this howto we need a basic installation of OPNsense with factory "
+"defaults as a starting point."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:30
+msgid "And an appliance with 2 physical interfaces."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:34
+msgid "Considerations"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:36
+msgid ""
+"To create this howto version OPNsense 15.7.11 has been used. Some "
+"screenshots maybe outdated, but setting should apply up to at least "
+"17.1.6. If you use a different version some options can be different."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:42
+msgid ""
+"The Menu System of the User Interface has been updated with sub items. "
+"Where tabs are shown in screenshots, these are now likely visible as "
+"submenu."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:47
+msgid "Configuration in 10 easy steps"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:54
+msgid ""
+"During the configuration you will be asked to \"Apply\" your changes "
+"several times, however this may affect the current connection. So "
+"**don't** apply anything until completely finished! You need to Save your"
+" changes for each step."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:60
+msgid "1. Disable Outbound NAT rule generation"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:62
+msgid ""
+"To disable outbound NAT, go to :menuselection:`Firewall --> NAT --> "
+"Outbound` and select “Disable Outbound NAT rule generation”."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:65
+msgid "|Filtering Bridge Step 1.png|"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:184
+msgid "Filtering Bridge Step 1.png"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:68
+msgid "2. Change system tuneables"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:70
+msgid ""
+"Enable filtering bridge by changing **net.link.bridge.pfil\\_bridge** "
+"from default to 1 in :menuselection:`System --> Settings --> System "
+"Tuneables`."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:73
+msgid "|Filtering Bridge Step 2.png|"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:186
+msgid "Filtering Bridge Step 2.png"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:75
+msgid ""
+"And disable filtering on member interfaces by changing "
+"**net.link.bridge.pfil\\_member** from default to 0 in "
+":menuselection:`System --> Settings --> System Tuneables`."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:79
+msgid "|Filtering Bridge Step2a.png|"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:189
+msgid "Filtering Bridge Step2a.png"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:82
+msgid "3. Create the bridge"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:84
+msgid ""
+"Create a bridge of LAN and WAN, go to :menuselection:`Interfaces --> "
+"Other Types --> Bridge`. Add Select LAN and WAN."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:87
+msgid "|Filtering Bridge Step 3a.png|"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:192
+msgid "Filtering Bridge Step 3a.png"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:89
+msgid "|Filtering Bridge Step 3b.png|"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:194
+msgid "Filtering Bridge Step 3b.png"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:92
+msgid "4. Assign a management IP/Interface"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:94
+msgid ""
+"To be able to configure and manage the filtering bridge (OPNsense) "
+"afterwards, we will need to assign a new interface to the bridge and "
+"setup an IP address."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:98
+msgid ""
+"Go to :menuselection:`Interfaces --> Assign --> Available network port`, "
+"select the bridge from the list and hit **+**."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:101
+msgid "|Filtering Bridge Step 4.png|"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:196
+msgid "Filtering Bridge Step 4.png"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:103
+msgid ""
+"Now Add an IP address to the interface that you would like to use to "
+"manage the bridge. Go to :menuselection:`Interfaces --> [OPT1]`, enable "
+"the interface and fill-in the ip/netmask."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:108
+msgid "5. Disable Block private networks & bogon"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:110
+msgid ""
+"For the WAN interface we nee to disable blocking of private networks & "
+"bogus IPs."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:112
+msgid ""
+"Go to :menuselection:`Interfaces --> [WAN]` and unselect **Block private "
+"networks** and **Block bogon networks**."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:115
+msgid "|Filtering Bridge Step 5.png|"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:198
+msgid "Filtering Bridge Step 5.png"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:118
+msgid "6. Disable the DHCP server on LAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:120
+msgid ""
+"To disable the DHCP server on LAN go to :menuselection:`Services --> "
+"DHCPv4 --> [LAN]` and unselect enable."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:123
+msgid "|Filtering Bridge Step 6.png|"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:200
+msgid "Filtering Bridge Step 6.png"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:126
+msgid "7. Add Allow rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:127
+#: ../../source/manual/how-tos/transparent_bridge.rst:143
+msgid ""
+"After configuring the bridge the rules on member interfaces (WAN/LAN) "
+"will be ignored. So you can skip this step."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:130
+msgid ""
+"Add the allow rules for all traffic on each of the three interfaces "
+"(WAN/LAN/OPT1)."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:132
+msgid ""
+"This step is to ensure we have a full transparent bridge without any "
+"filtering taking place. You can setup the correct rules when you have "
+"confirmed the bridge to work properly."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:136
+msgid ""
+"Go to :menuselection:`Firewall --> Rules` and add a rule per interface to"
+" allow all traffic of any type."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:139
+msgid "|Filtering Bridge Step 7.png|"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:202
+msgid "Filtering Bridge Step 7.png"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:142
+msgid "8. Disable Default Anti Lockout Rule"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:146
+msgid ""
+"As we now have setup allow rules for each interface we can safely remove "
+"the Anti Lockout rule on LAN"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:149
+msgid ""
+"Go to :menuselection:`Firewall --> Settings --> Admin Access`: Anti-"
+"lockout and select this option to disable"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:153
+msgid "9. Set LAN and WAN interface type to 'none'"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:155
+msgid ""
+"Now remove the IP subnets in use for LAN and WAN by changing the "
+"interface type to none. Go to :menuselection:`Interfaces --> [LAN]` and "
+":menuselection:`Interfaces --> [WAN]` to do so."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:159
+msgid "|Filtering Bridge Step 9.png|"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:205
+msgid "Filtering Bridge Step 9.png"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:162
+msgid "10. Now apply the changes"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:164
+msgid ""
+"If you followed each step, then you can now apply the changes. The "
+"Firewall is now converted to a filtering bridge."
+msgstr ""
+
+msgid "Done.. ready to set your own filtering rules"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:170
+msgid ""
+"Now you can create the correct firewall/filter rules and apply them. To "
+"acces the firewall you need to use the IP adress you configured for the "
+"OPT1 Interface."
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:176
+msgid ""
+"Rules need to be configured on the bridge. Rules on member interfaces "
+"will be ignored!"
+msgstr ""
+
+#: ../../source/manual/how-tos/transparent_bridge.rst:181
+msgid ""
+"Don't forget to make sure your PC/Laptop is configured with an IP adress "
+"that falls within the IP range of the OPT1 subnet!"
+msgstr ""
+

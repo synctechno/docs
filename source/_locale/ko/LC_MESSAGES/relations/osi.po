@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/relations/osi.rst:3
+msgid "Open Source Initiative"
+msgstr ""
+
+#: ../../source/relations/osi.rst:12
+msgid "About OSI"
+msgstr ""
+
+#: ../../source/relations/osi.rst:13
+msgid ""
+"\"We are the stewards of the Open Source Definition (OSD) and the "
+"community-recognized body for reviewing and approving licenses as OSD-"
+"conformant.\""
+msgstr ""
+
+#: ../../source/relations/osi.rst:16
+msgid "*source:* `opensource.org <http://opensource.org/about>`__"
+msgstr ""
+
+#: ../../source/relations/osi.rst:22
+msgid "Relation to OPNsense"
+msgstr ""
+
+#: ../../source/relations/osi.rst:23
+msgid ""
+"OPNsense is licensed under an Open Source Initiative `approved license "
+"<http://opensource.org/licenses>`__. OPNsense is and will be available "
+"with the simple 2-clause BSD license. We believe an open source project "
+"should provide the sources and the tools to build it."
+msgstr ""
+
+#: ../../source/relations/osi.rst:29
+msgid "Deciso B.V."
+msgstr ""
+
+#: ../../source/relations/osi.rst:30
+msgid ""
+"As founder, trademark owner and largest sponsor of OPNsense, Deciso is an"
+" active sponsor of the Open Source Initiative. see `OSI Corporate "
+"Sponsors & Support <http://opensource.org/sponsors>`__"
+msgstr ""
+
+#: ../../source/relations/osi.rst:33
+msgid "Deciso believes that sharing knowledge makes for better products."
+msgstr ""
+

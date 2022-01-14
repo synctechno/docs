@@ -1,0 +1,283 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2022, Deciso B.V
+# This file is distributed under the same license as the OPNsense package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OPNsense Wiki & Documentation<br/><small>351a8e2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-01-14 13:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/manual/gui.rst:3
+msgid "General User Interface"
+msgstr ""
+
+#: ../../source/manual/gui.rst:5
+msgid ""
+"This article explains the basics of the OPNsense Graphical User Interface"
+" or GUI for short."
+msgstr ""
+
+#: ../../source/manual/gui.rst:10
+msgid "User Login"
+msgstr ""
+
+#: ../../source/manual/gui.rst:11
+msgid ""
+"Before we can take a look at the GUI options we need to login. The "
+"default user is root and the password is opnsense."
+msgstr ""
+
+#: ../../source/manual/gui.rst:19
+msgid "GUI Layout & Main Components"
+msgstr ""
+
+#: ../../source/manual/gui.rst:21
+msgid "The GUI consists out of the following main components:"
+msgstr ""
+
+#: ../../source/manual/gui.rst:28
+msgid "Logo & Link to Lobby"
+msgstr ""
+
+#: ../../source/manual/gui.rst:29
+msgid ""
+"Click on the OPNsense logo wherever you are in the interface and you will"
+" be directed to the lobby and dashboard."
+msgstr ""
+
+#: ../../source/manual/gui.rst:32
+msgid "In the Lobby you can:"
+msgstr ""
+
+#: ../../source/manual/gui.rst:34
+msgid "Look at the dashboard with widgets"
+msgstr ""
+
+#: ../../source/manual/gui.rst:35
+msgid "View the 2-clause BSD license"
+msgstr ""
+
+#: ../../source/manual/gui.rst:36
+msgid "Change your password"
+msgstr ""
+
+#: ../../source/manual/gui.rst:37
+msgid "Logout"
+msgstr ""
+
+#: ../../source/manual/gui.rst:40
+msgid "Menu Area"
+msgstr ""
+
+#: ../../source/manual/gui.rst:41
+msgid ""
+"The Menu area holds all the primary menus and submenus. Here you can "
+"select what part of the system you want to watch or change."
+msgstr ""
+
+#: ../../source/manual/gui.rst:44
+msgid "You can see the layering on the menu. There are three levels:"
+msgstr ""
+
+#: ../../source/manual/gui.rst:46
+msgid "Category level"
+msgstr ""
+
+#: ../../source/manual/gui.rst:47
+msgid "Function level"
+msgstr ""
+
+#: ../../source/manual/gui.rst:48
+msgid "Configuration level *(may not exist if the function is simple)*"
+msgstr ""
+
+#: ../../source/manual/gui.rst:50
+msgid ""
+"In the following sample you see a screenshot of the Category **System**, "
+"with:"
+msgstr ""
+
+#: ../../source/manual/gui.rst:52
+msgid "Function: **Settings**"
+msgstr ""
+
+#: ../../source/manual/gui.rst:53
+msgid "Selected Configuration item: **General**"
+msgstr ""
+
+#: ../../source/manual/gui.rst:58
+msgid "Quick Navigation"
+msgstr ""
+
+#: ../../source/manual/gui.rst:59
+msgid ""
+"A faster way to navigate trough the GUI is by using the quick "
+"navigation/search box on the upper right corner of the screen. Either "
+"click on it or hit tab to select it."
+msgstr ""
+
+#: ../../source/manual/gui.rst:62
+msgid ""
+"The search field is a type-ahead field, meaning that it will guess what "
+"you are looking for and fill up while typing. Hit Enter or click on an "
+"option to select and navigate directly to the right page."
+msgstr ""
+
+#: ../../source/manual/gui.rst:70
+msgid "User & Local domain"
+msgstr ""
+
+#: ../../source/manual/gui.rst:71
+msgid ""
+"In the right corner just to the left of the quick navigation you will see"
+" your username and the full domain name the firewall is configured with "
+"(to change firewall name, go to :menuselection:`System --> Setting --> "
+"General`)."
+msgstr ""
+
+#: ../../source/manual/gui.rst:77
+msgid "Content Area"
+msgstr ""
+
+#: ../../source/manual/gui.rst:78
+msgid "The content area is used to display:"
+msgstr ""
+
+#: ../../source/manual/gui.rst:80
+msgid "Input forms"
+msgstr ""
+
+#: ../../source/manual/gui.rst:81
+msgid "Popup Forms"
+msgstr ""
+
+#: ../../source/manual/gui.rst:82
+msgid "Buttons"
+msgstr ""
+
+#: ../../source/manual/gui.rst:83
+msgid "General forms of data output graphical and text based"
+msgstr ""
+
+#: ../../source/manual/gui.rst:87
+msgid "Form View"
+msgstr ""
+
+#: ../../source/manual/gui.rst:88
+msgid "Let's take a look at how an advanced form may look like:"
+msgstr ""
+
+#: ../../source/manual/gui.rst:93
+msgid "Full Help"
+msgstr ""
+
+#: ../../source/manual/gui.rst:94
+msgid ""
+"Many forms are equipped with built-in help. In the upper right corner of "
+"the form you can select to view all help messages at once. The toggle "
+"will color green when enabled and show the help messages beneath the "
+"input items."
+msgstr ""
+
+#: ../../source/manual/gui.rst:102
+msgid "Advanced Mode"
+msgstr ""
+
+#: ../../source/manual/gui.rst:103
+msgid ""
+"Some forms have hidden advanced features, to view them toggle the "
+"**advanced mode** in the left corner of the form. Doing so will reveal "
+"all advanced options."
+msgstr ""
+
+#: ../../source/manual/gui.rst:110
+msgid "Single Item Help"
+msgstr ""
+
+#: ../../source/manual/gui.rst:111
+msgid ""
+"Show a single line help by pressing the **(i)** left of a form item. Like"
+" this:"
+msgstr ""
+
+#: ../../source/manual/gui.rst:118
+msgid "Standard Tabs"
+msgstr ""
+
+#: ../../source/manual/gui.rst:119
+msgid "A standard tab can be clicked upon to open the corresponding form."
+msgstr ""
+
+#: ../../source/manual/gui.rst:121
+msgid "A sample can be seen here:"
+msgstr ""
+
+#: ../../source/manual/gui.rst:126
+msgid "Dropdown Tabs"
+msgstr ""
+
+#: ../../source/manual/gui.rst:127
+msgid ""
+"A dropdown tab can be clicked upon to open the first menu item or you can"
+" click on the arrow next to it to show all options, like so:"
+msgstr ""
+
+#: ../../source/manual/gui.rst:136
+msgid "Data grids"
+msgstr ""
+
+#: ../../source/manual/gui.rst:138
+msgid ""
+"Many components within OPNsense use grid views to navigate through "
+"content, below is an example of a simple table view supporting the most "
+"relevant actions."
+msgstr ""
+
+#: ../../source/manual/gui.rst:144
+msgid "Fields"
+msgstr ""
+
+#: ../../source/manual/gui.rst:154
+msgid "Filter and limit"
+msgstr ""
+
+#: ../../source/manual/gui.rst:164
+msgid "Actions"
+msgstr ""
+
+#: ../../source/manual/gui.rst:180
+msgid "Page Navigation"
+msgstr ""
+
+#: ../../source/manual/gui.rst:183
+msgid ""
+"The navigation buttons :code:`« ‹ [1,2,..] › »` help scroll through the "
+"different pages that are available for the selected data."
+msgstr ""
+
+#: ../../source/manual/gui.rst:188
+msgid ""
+"Although the page numbers and last page button (:code:`»`) are always "
+"visible, they can only be used when the size of the dataset is known "
+"upfront. In case of large datasets, such as intrusion alerts and log "
+"views the number of records is not known upfront, since there's no "
+"relation between the size of the underlaying data and the number of "
+"records."
+msgstr ""
+
+#: ../../source/manual/gui.rst:192
+msgid ""
+"The record count in these cases is more or less a guestimate based on the"
+" number of records already shown."
+msgstr ""
+
